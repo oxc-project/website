@@ -5,6 +5,58 @@ outline: deep
 
 # Debugging
 
+## OXC_LOG Environment Variable
+
+The `OXC_LOG` environment variable enables runtime tracing in `oxlint` and `oxfmt`. When not set, logging is completely disabled for zero-cost operation.
+
+### Basic Usage
+
+```bash
+# Enable debug logging for oxlint
+OXC_LOG=debug oxlint
+
+# Enable debug logging for oxfmt
+OXC_LOG=debug oxfmt
+
+# Enable resolver tracing when using import plugin
+OXC_LOG=oxc_resolver oxlint --import-plugin
+
+# Enable formatter tracing
+OXC_LOG=oxc_formatter oxfmt
+```
+
+### Filter Syntax
+
+`OXC_LOG` uses [tracing-subscriber](https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html) filter syntax:
+
+| Pattern                      | Description                              |
+| ---------------------------- | ---------------------------------------- |
+| `debug`                      | Enable debug level for all modules       |
+| `trace`                      | Enable trace level for all modules       |
+| `oxc_resolver`               | Enable all logs from oxc_resolver module |
+| `oxc_resolver=debug`         | Enable debug level for oxc_resolver      |
+| `oxc_resolver=trace`         | Enable trace level for oxc_resolver      |
+| `oxc_formatter,oxc_resolver` | Enable multiple modules                  |
+
+### Output
+
+Logs are written to **stderr** to avoid interfering with the normal output of linter diagnostics or formatted code on stdout. In `oxfmt`, thread names and span timing information are included for debugging multi-threaded operations.
+
+### Common Use Cases
+
+**List all files being processed:**
+
+```bash
+OXC_LOG=debug oxlint
+OXC_LOG=debug oxfmt
+```
+
+**Debugging module resolution issues:**
+
+```bash
+OXC_LOG=oxc_resolver=debug oxlint --import-plugin
+```
+
 ## rust-lldb
 
 rust-lldb can be used to get panic information from debug builds.
