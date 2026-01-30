@@ -142,6 +142,50 @@ __decorate(
 
 This behavior aligns with TypeScript's behavior when using a type that is external.
 
+You can explicitly set the types by calling `Reflect.metadata`:
+
+::: code-group
+
+```ts [input.ts]
+import { Something1 } from "./somewhere";
+
+type Something2 = Exclude<string | number, string>;
+
+export class Foo {
+  @test
+  @Reflect.metadata("design:paramtypes", [Something1, Number])
+  foo(input1: Something1, input2: Something2) {}
+}
+```
+
+```js [output.js]
+// omit helper functions
+import { Something1 } from "./somewhere";
+var _ref;
+export class Foo {
+  foo(input1, input2) {}
+}
+_decorate(
+  [
+    test,
+    Reflect.metadata("design:paramtypes", [Something1, Number]),
+    _decorateMetadata("design:type", Function),
+    _decorateMetadata("design:paramtypes", [
+      typeof (_ref = typeof Something1 !== "undefined" && Something1) === "function"
+        ? _ref
+        : Object,
+      Object,
+    ]),
+    _decorateMetadata("design:returntype", void 0),
+  ],
+  Foo.prototype,
+  "foo",
+  null,
+);
+```
+
+:::
+
 ::::
 
 ## TSX
