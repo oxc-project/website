@@ -165,5 +165,79 @@ const result = await transform("lib.ts", sourceCode, {
 
 ## Caveats
 
+### Isolated Modules
+
 Because Oxc transformer transforms each files independently, some TypeScript features are not supported.
 To avoid using unsupported features, you should enable the [`isolatedModules`](https://www.typescriptlang.org/tsconfig/#isolatedModules) option in your `tsconfig.json` file.
+
+### Partial Namespace Support
+
+TypeScript has a legacy feature called [namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html). While [it is recommended to use ES modules for new projects](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html#using-modules), Oxc transformer has a partial support for namespaces.
+
+#### Exporting a variable using `var` or `let` is not supported
+
+Exporting a variable using `var` or `let` is not supported.
+
+```ts
+namespace Foo {
+  export let bar = 1; // [!code highlight]
+}
+console.log(Foo.bar);
+```
+
+A workaround is to use `const`. If you need the variable to be mutable, use an object with internal mutability:
+
+```ts
+namespace Foo {
+  export const bar = { value: 1 }; // [!code highlight]
+}
+console.log(Foo.bar.value);
+```
+
+#### Namespaces does not share the scope between namespaces with the same name
+
+::: code-group
+
+```ts [input.ts]
+namespace Foo {
+  export const bar = 1;
+}
+namespace Foo {
+  export const baz = bar;
+}
+```
+
+```js [output(oxc).js]
+let foo;
+(function (_Foo) {
+  const bar = (_Foo.bar = 1);
+})(Foo || (Foo = {}));
+(function (_Foo2) {
+  const baz = (_Foo2.baz = bar); // [!code highlight]
+})(Foo || (Foo = {}));
+```
+
+```js [output(typescript_compiler).js]
+var Foo;
+(function (Foo) {
+  Foo.bar = 1;
+})(Foo || (Foo = {}));
+(function (Foo) {
+  Foo.baz = Foo.bar; // [!code highlight]
+})(Foo || (Foo = {}));
+```
+
+:::
+
+In this example, the `bar` reference in the second namespace points to the `bar` variable in the first namespace for the TypeScript compiler output, but it does not for the Oxc transformer output.
+
+A workaround is to explicitly reference via the namespace object:
+
+```ts
+namespace Foo {
+  export const bar = 1;
+}
+namespace Foo {
+  export const baz = Foo.bar; // [!code highlight]
+}
+```
