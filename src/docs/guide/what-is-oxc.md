@@ -41,7 +41,7 @@ Oxc focuses on a workflow that works in real projects. Defaults should be sensib
 
 Oxc includes end-user tools and reusable compiler building blocks:
 
-- [Oxlint](/docs/guide/usage/linter) is the fastest linter for JavaScript and TypeScript.
+- [Oxlint](/docs/guide/usage/linter) is the fastest linter for JavaScript and TypeScript. It targets compatibility with the ESLint ecosystem.
 - [Oxfmt](/docs/guide/usage/formatter) is the fastest formatter. It targets Prettier-compatible formatting.
 - [Parser](/docs/guide/usage/parser) is the fastest JS and TS parser with an AST for tooling.
 - [Transformer](/docs/guide/usage/transformer) provides fastest TS, JSX, and modern JavaScript transforms.
