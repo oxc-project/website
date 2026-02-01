@@ -40,10 +40,10 @@
   "lint-staged": {
     "*": "oxfmt --no-error-on-unmatched-pattern"
   },
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@10.28.2",
   "pnpm": {
     "overrides": {
-      "vitepress>vite": "npm:vite@8.0.0-beta.9"
+      "vitepress>vite": "npm:vite@8.0.0-beta.11"
     },
     "onlyBuiltDependencies": [
       "esbuild"
