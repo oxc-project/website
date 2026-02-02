@@ -17,11 +17,14 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule prevents using string literals in ref attributes.
+This rule prevents using the deprecated behavior of string literals in ref attributes.
 
 ### Why is this bad?
 
-Using string literals in ref attributes is deprecated in React.
+Using string literals in ref attributes has been deprecated since React 16.3.0.
+
+String refs are [removed entirely in React 19](https://react.dev/blog/2024/04/25/react-19-upgrade-guide#removed-string-refs),
+and so this rule can be disabled if on React 19+.
 
 ### Examples
 

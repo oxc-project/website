@@ -11,7 +11,7 @@ search: false
 - **`    --init`** &mdash;
   Initialize `.oxfmtrc.json` with default values
 - **`    --migrate`**=_`SOURCE`_ &mdash;
-  Migrate configuration to `.oxfmtrc.json` from specified source Available sources: prettier
+  Migrate configuration to `.oxfmtrc.json` from specified source Available sources: prettier, biome
 - **`    --lsp`** &mdash;
   Start language server protocol (LSP) server
 - **`    --stdin-filepath`**=_`PATH`_ &mdash;

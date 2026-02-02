@@ -1,7 +1,7 @@
 ---
 title: "typescript/prefer-namespace-keyword"
-category: "Style"
-default: false
+category: "Correctness"
+default: true
 type_aware: false
 fix: "fixable_fix"
 ---

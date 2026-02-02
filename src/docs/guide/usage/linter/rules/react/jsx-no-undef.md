@@ -17,7 +17,10 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow undeclared variables in JSX
+Disallow undeclared variables in JSX.
+
+Note that this rule is generally unnecessary if you are using TypeScript, as
+TypeScript will catch undeclared variables for you.
 
 ### Why is this bad?
 

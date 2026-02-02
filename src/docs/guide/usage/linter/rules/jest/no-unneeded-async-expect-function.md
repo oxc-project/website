@@ -1,5 +1,5 @@
 ---
-title: "vitest/no-unneeded-async-expect-function"
+title: "jest/no-unneeded-async-expect-function"
 category: "Style"
 default: false
 type_aware: false
@@ -10,7 +10,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/no_unneeded_async_expect_function.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/no_unneeded_async_expect_function.rs`;
 </script>
 
 <RuleHeader />
@@ -43,6 +43,17 @@ Examples of **correct** code for this rule:
 await expect(doSomethingAsync()).rejects.toThrow();
 ```
 
+This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-unneeded-async-expect-function.md),
+to use it, add the following configuration to your `.oxlintrc.json`:
+
+```json
+{
+  "rules": {
+    "vitest/no-unneeded-async-expect-function": "error"
+  }
+}
+```
+
 ## How to use
 
 To **enable** this rule using the config file or in the CLI, you can use:
@@ -51,15 +62,15 @@ To **enable** this rule using the config file or in the CLI, you can use:
 
 ```json [Config (.oxlintrc.json)]
 {
-  "plugins": ["vitest"],
+  "plugins": ["jest"],
   "rules": {
-    "vitest/no-unneeded-async-expect-function": "error"
+    "jest/no-unneeded-async-expect-function": "error"
   }
 }
 ```
 
 ```bash [CLI]
-oxlint --deny vitest/no-unneeded-async-expect-function --vitest-plugin
+oxlint --deny jest/no-unneeded-async-expect-function --jest-plugin
 ```
 
 :::

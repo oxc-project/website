@@ -64,7 +64,7 @@ default: `[]`
 
 A list of glob patterns to allow unassigned imports for specific modules.
 For example:
-`{ "allow": ["*.css"] }` will allow unassigned imports for any module ending with `.css`.
+`{ "allow": ["**/*.css"] }` will allow unassigned imports for any module ending with `.css`.
 
 ## How to use
 

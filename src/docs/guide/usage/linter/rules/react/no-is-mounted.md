@@ -17,12 +17,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule prevents using `isMounted` in classes.
+This rule prevents using `isMounted` in class components.
 
 ### Why is this bad?
 
-`isMounted` is an anti-pattern, is not available when using classes,
-and it is on its way to being officially deprecated.
+`isMounted` is an anti-pattern, and is not available
+when using classes or function components.
 
 ### Examples
 
