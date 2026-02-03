@@ -1,4 +1,3 @@
-import { readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig, HeadConfig } from "vitepress";
@@ -6,9 +5,13 @@ import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-i
 import llmstxt from "vitepress-plugin-llms";
 import BLOG_SIDEBAR from "../sidebar.blog.json" with { type: "json" };
 
-function inlineScript(file: string): HeadConfig {
-  return ["script", {}, readFileSync(resolve(__dirname, `./inlined-scripts/${file}`), "utf-8")];
-}
+const latestBlog = BLOG_SIDEBAR[0];
+const bannerScript = `(() => {
+  const saved = localStorage.getItem("oxc-banner-dismissed-${latestBlog.link}");
+  if (saved === "true") {
+    document.documentElement.classList.add("banner-dismissed");
+  }
+})();`;
 
 const head: HeadConfig[] = [
   [
@@ -39,7 +42,7 @@ const head: HeadConfig[] = [
     },
   ],
   // banner
-  inlineScript("banner.js"),
+  ["script", {}, bannerScript],
   // Fathom Analytics
   [
     "script",
@@ -113,11 +116,10 @@ export const sharedConfig = defineConfig({
   themeConfig: {
     variant: "oxc",
 
-    // NOTE: Also update banner.js when changing this
     banner: {
-      id: "type-aware-alpha",
-      text: "Announcing Type-Aware Linting Alpha",
-      url: "https://oxc.rs/blog/2025-12-08-type-aware-alpha",
+      id: latestBlog.link,
+      text: `Announcing ${latestBlog.text}`,
+      url: latestBlog.link,
     },
 
     siteTitle: "Oxc",
