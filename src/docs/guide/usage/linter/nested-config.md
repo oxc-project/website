@@ -44,7 +44,7 @@ Command line options override configuration files, regardless of whether they co
 
 Passing an explicit config file location using `-c` or `--config` disables nested config lookup, and Oxlint will only use that single configuration file.
 
-You can also disable nested configs with the `--disable-nested-configs` flag.
+You can also disable nested configs with the `--disable-nested-config` flag.
 
 ## Monorepo pattern: share a base config with extends
 
