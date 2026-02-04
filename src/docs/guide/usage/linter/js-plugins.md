@@ -127,14 +127,14 @@ export default plugin;
 
 Oxlint also provides a slightly different alternative API which is more performant.
 
-Rules created with this API **remain compatible with ESLint** (see [below](#what-does-definerule-do)).
+Rules created with this API **remain compatible with ESLint** (see [below](#what-does-eslintcompatplugin-do)).
 
 Same rule as above, using the alternative API:
 
 ```js
-import { defineRule } from "oxlint";
+import { eslintCompatPlugin } from "@oxlint/plugins";
 
-const rule = defineRule({
+const rule = {
   createOnce(context) {
     // Define counter variable
     let classCount;
@@ -153,16 +153,27 @@ const rule = defineRule({
       },
     };
   },
+};
+
+const plugin = eslintCompatPlugin({
+  meta: {
+    name: "best-plugin-ever",
+  },
+  rules: {
+    "max-classes": rule,
+  },
 });
+
+export default plugin;
 ```
 
 The differences are:
 
-1. Wrap the rule object in `defineRule(...)`.
+1. Wrap the plugin object in `eslintCompatPlugin(...)`.
 
 ```diff
-- const rule = {
-+ const rule = defineRule({
+- const plugin = {
++ const plugin = eslintCompatPlugin({
 ```
 
 2. Use `createOnce` instead of `create`.
@@ -190,35 +201,18 @@ The differences are:
           }
         },
       };
-    },
-  });
 ```
 
-#### What does `defineRule` do?
+#### What does `eslintCompatPlugin` do?
 
-`defineRule` adds a `create` method to the rule, which delegates to `createOnce`.
+`eslintCompatPlugin` adds a `create` method to each rule in the plugin, which delegates to `createOnce`.
 
-**This means the rule can be used with either Oxlint or ESLint.**
+**This means the plugin can be used with either Oxlint or ESLint.**
 
 - In Oxlint, it'll get a perf boost from the faster `createOnce` API.
 - In ESLint, it'll work exactly the same as if it was written with the original ESLint `create` API.
 
-#### `definePlugin`
-
-If your plugin includes multiple rules, wrapping the whole plugin in `definePlugin` has same effect as wrapping each
-individual rule in `defineRule`.
-
-```js
-import { definePlugin } from "oxlint";
-
-const plugin = definePlugin({
-  meta: { name: "my-plugin" },
-  rules: {
-    "no-foo": rule1,
-    "no-bar": rule2,
-  },
-});
-```
+If you're publishing a plugin to NPM, add `@oxlint/plugins` as a _runtime_ dependency (not a dev dependency).
 
 #### Skipping AST traversal
 
@@ -226,7 +220,7 @@ Returning `false` from `before` hook causes the rule to skip this file.
 
 ```js
 // This rule does not run on files which start with a `// @skip-me` comment
-const rule = defineRule({
+const rule = {
   createOnce(context) {
     return {
       before() {
@@ -239,7 +233,7 @@ const rule = defineRule({
       },
     };
   },
-});
+};
 ```
 
 This is equivalent to this pattern in ESLint:
@@ -276,7 +270,7 @@ entirely, _including_ skipping the `before` hook.
 If you need code to always run once for every file, implement a `Program` visitor instead:
 
 ```js
-const rule = defineRule({
+const rule = {
   createOnce(context) {
     return {
       Program(node) {
@@ -288,7 +282,7 @@ const rule = defineRule({
       },
     };
   },
-});
+};
 ```
 
 #### `after` hook
