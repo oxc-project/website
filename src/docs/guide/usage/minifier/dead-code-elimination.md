@@ -258,15 +258,19 @@ const jQuery = $;
 
 ### Ignoring Invalid Import Statement Side Effects
 
-By default, Oxc minifier assumes that import statements have side effects. This is because import statements have side effects in the following cases:
+By default, Oxc minifier assumes that import statements doesn't have side effects. Import statements have side effects in the following cases:
 
 - the import cannot be resolved
 - the import name is not exported from the imported module
 
-You can tell Oxc minifier to ignore those possibilities by setting `compress.treeshake.invalidImportSideEffects` option to `false`.
+If these side effects need to be preserved, you can tell Oxc minifier to preserve them by setting `compress.treeshake.invalidImportSideEffects` option to `true`.
 
 ```js
 // input
+import { existing } from "cannot-be-resolved";
+import { missing } from "somewhere";
+
+// output (with `compress.treeshake.invalidImportSideEffects: true`)
 import { existing } from "cannot-be-resolved";
 import { missing } from "somewhere";
 
