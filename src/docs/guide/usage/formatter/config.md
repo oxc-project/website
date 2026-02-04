@@ -115,6 +115,8 @@ Each override entry has:
 - `excludeFiles` (optional): Glob patterns to exclude from this override
 - `options`: Formatting options to apply
 
+Glob patterns are resolved relative to the directory containing the Oxfmt config file.
+
 ## Precedence
 
 Options are applied in order (lowest to highest priority):
