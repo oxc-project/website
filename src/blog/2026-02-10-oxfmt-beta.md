@@ -132,7 +132,7 @@ console.log(code); // "let a = 42"
 
 ### [Config Changes](/docs/guide/usage/formatter/config.html)
 
-- **`overrides`** - Apply different options to specific file patterns
+- **[`overrides`](/docs/guide/usage/formatter/config.html#overrides)** - Apply different options to specific file patterns
 - **[`insertFinalNewline`](/docs/guide/usage/formatter/config.html#insertfinalnewline)** - Control trailing newlines
 - **[`.editorconfig`](/docs/guide/usage/formatter/config.html#editorconfig)** support for `insert_final_newline`
 
