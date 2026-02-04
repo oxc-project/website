@@ -280,8 +280,8 @@ const rule = defineRule({
   createOnce(context) {
     return {
       Program(node) {
-        // This always runs for every file, even if
-        // it doesn't contain any `FunctionDeclaration`s
+        // This always runs for every file, even if it
+        // doesn't contain any `FunctionDeclaration`s
       },
       FunctionDeclaration(node) {
         /* do stuff */
