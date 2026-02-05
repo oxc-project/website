@@ -15,7 +15,7 @@ See [Quickstart](./quickstart) to install Oxlint.
 - [VS Code](#vs-code) (and Cursor, etc.)
 - [Zed](#zed)
 - [JetBrains](#jetbrains)
-- [coc.nvim](#cocnvim)
+- [coc.nvim](#coc-nvim)
 - [Other editors](#other-editors)
 
 ## VS Code
