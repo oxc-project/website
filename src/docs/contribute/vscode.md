@@ -39,6 +39,7 @@ Build the project in the [oxc project](https://github.com/oxc-project/oxc) with:
 
 ```bash
 cd apps/oxlint && pnpm build-test
+cd ../oxfmt && pnpm build-test
 ```
 
 Then configure the VS Code extension to use the debug build via the extension settings in `settings.json`:
