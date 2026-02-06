@@ -16,13 +16,13 @@ Clone the [oxc-vscode](https://github.com/oxc-project/oxc-vscode) repository and
 
 ## Building and running the extension locally
 
-There are two options for running and testing your changes to the oxc VS Code extension.
+There are two options for running and testing your changes to the Oxc VS Code extension.
 
 **Via command line:**
 
-- Run `pnpm build` to compile the vscode extension and build the release version of the language server.
-- Run `pnpm install-extension` to install it on your VS Code Editor.
-- Hit `CTRL` + `SHIFT` + `P` and search for "Developer: Reload Window".
+- Run `pnpm build` to compile the VS Code extension and build the release version of the language server.
+- Run `pnpm install-extension` to install it into VS Code.
+- Press `Ctrl` + `Shift` + `P` and search for "Developer: Reload Window".
 - You are now able to manually test your changes inside VS Code.
 
 **Via VS Code itself:**
@@ -30,18 +30,18 @@ There are two options for running and testing your changes to the oxc VS Code ex
 - Open the `oxc-vscode` repository in VS Code.
 - Go to the "Run and Debug" tab in the left sidebar of your editor.
 - Select the `Launch VS Code Extension` configuration.
-- Hit the green play button at the top.
-- This will build the VS Code extension and launch a new VS Code window with the newly-built VS Code extension installed.
+- Click the green play button at the top.
+- This will build the VS Code extension and launch a new VS Code window with the newly built VS Code extension installed.
 
-### Testing unreleased Version of `oxlint`/`oxfmt`
+### Testing unreleased versions of `oxlint`/`oxfmt`
 
-You need to build the project inside [oxc project](https://github.com/oxc-project/oxc) with:
+Build the project in the [oxc project](https://github.com/oxc-project/oxc) with:
 
 ```bash
 cd apps/oxlint && pnpm build-test
 ```
 
-and tell the VSCode Extension to use the debug build with the Extension Settings in `settings.json`:
+Then configure the VS Code extension to use the debug build via the extension settings in `settings.json`:
 
 ```json
 {
@@ -50,10 +50,10 @@ and tell the VSCode Extension to use the debug build with the Extension Settings
 }
 ```
 
-### Use the Output Channel
+### Use the output channel
 
-To understand what the Extension and the Language Server is doing, you can use the `Oxc` Output Channel inside VSCode.
-The get more information use the Extension Setting inside `settings.json`:
+To see what the extension and language server are doing, use the `Oxc` output channel in VS Code.
+To get more information, enable the following extension setting in `settings.json`:
 
 ```json
 {
@@ -61,16 +61,16 @@ The get more information use the Extension Setting inside `settings.json`:
 }
 ```
 
-On `oxlint` or `oxfmt` you can use the `info!` or `error!` macro to send messages to the output channel.
+In `oxlint` or `oxfmt`, you can use the `info!` or `error!` macros to send messages to the output channel.
 
-### Writing a Test
+### Writing a test
 
-Depending on the changes, you should create a Test for it.
-Write Tests in `vscode` only when they are related to `vscode` only.
-Tests for the LSP communication with the tool should be done inside `oxlint/oxfmt` or the rust crate `oxc_language_server`.
+Depending on your changes, you should create a test.
+Write tests in the VS Code extension only when they are specific to VS Code.
+Tests for LSP communication with the tools should be added in `oxlint/oxfmt` or in the Rust crate `oxc_language_server`.
 
 Example:
 
-- VS Code: Status bar changes
-- oxlint: returned diagnostic / code action
+- VS Code: status bar changes
+- oxlint: returned diagnostics / code actions
 - oxc_language_server: workspace problems
