@@ -33,30 +33,22 @@ There are two options for running and testing your changes to the oxc VS Code ex
 - Hit the green play button at the top.
 - This will build the VS Code extension and launch a new VS Code window with the newly-built VS Code extension installed.
 
-### Building Debug Version of Server
+### Testing unreleased Version of `oxlint`/`oxfmt`
 
-Running `pnpm build` will build the release version of the server, This can take some time.
-If you want faster feedback use the follow flow:
+You need to build the project inside [oxc project](https://github.com/oxc-project/oxc) with:
 
 ```bash
-pnpm compile # transform TS Code
-pnpm server:build:debug # build the debug version of the language server
-pnpm package # package it as VSCode Extension
-pnpm install-extension
+cd apps/oxlint && pnpm build-test
 ```
 
-Make sure to tell the VSCode Extension to use the debug build with the env variable:
-`SERVER_PATH_DEV="/workspace/oxc-vscode/target/debug/oxc_language_server"`.
-
-Or use the Extension Settings with `settings.json`:
+and tell the VSCode Extension to use the debug build with the Extension Settings in `settings.json`:
 
 ```json
 {
-  "oxc.path.server": "./target/debug/oxc_language_server"
+  "oxc.path.oxlint": "/path/to/oxc/apps/oxlint/dist/cli.js",
+  "oxc.path.oxfmt": "/path/to/oxc/apps/oxfmt/dist/cli.js"
 }
 ```
-
-For Windows, the `oxc_language_server` will be provided with a `exe` extension.
 
 ### Use the Output Channel
 
@@ -69,11 +61,16 @@ The get more information use the Extension Setting inside `settings.json`:
 }
 ```
 
-On `oxc_language_server` you can use the `info!` or `error!` macro to send messages to the output channel.
+On `oxlint` or `oxfmt` you can use the `info!` or `error!` macro to send messages to the output channel.
 
 ### Writing a Test
 
 Depending on the changes, you should create a Test for it.
-Tests on the `oxc_language_server` will make sure the (Server)Linter works as expected.
-Write Tests in `vscode` when you want to test changing behavior.
-Example: expecting a lint fix to be applied, when executing a command or code action.
+Write Tests in `vscode` only when they are related to `vscode` only.
+Tests for the LSP communication with the tool should be done inside `oxlint/oxfmt` or the rust crate `oxc_language_server`.
+
+Example:
+
+- VS Code: Status bar changes
+- oxlint: returned diagnostic / code action
+- oxc_language_server: workspace problems
