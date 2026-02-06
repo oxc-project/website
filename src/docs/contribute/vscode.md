@@ -42,7 +42,7 @@ cd apps/oxlint && pnpm build-test
 cd ../oxfmt && pnpm build-test
 ```
 
-Then configure the VS Code extension to use the debug build via the extension settings in `settings.json`:
+Then configure the VS Code extension to use the local build via the extension settings in `settings.json`:
 
 ```json
 {
