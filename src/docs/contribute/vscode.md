@@ -62,7 +62,7 @@ To get more information, enable the following extension setting in `settings.jso
 }
 ```
 
-In `oxlint` or `oxfmt`, you can use the `info!` or `error!` macros to send messages to the output channel.
+In the language server integration for `oxlint`/`oxfmt` (for example, the `oxc_language_server` crate), you can use the `info!` or `error!` macros to send messages to the `Oxc` output channel in VS Code.
 
 ### Writing a test
 
