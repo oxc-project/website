@@ -369,7 +369,7 @@ export const enConfig = defineLocaleConfig("root", {
       level: [2, 3],
     },
     editLink: {
-      pattern: "https://github.com/oxc-project/oxc-project.github.io/edit/main/src/:path",
+      pattern: "https://github.com/oxc-project/website/edit/main/src/:path",
       text: "Suggest changes to this page",
     },
   },
