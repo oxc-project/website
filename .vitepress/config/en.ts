@@ -39,7 +39,7 @@ export const enConfig = defineLocaleConfig("root", {
           { text: "Learn", link: "/docs/learn/parser_in_rust/intro" },
           { text: "Team", link: "/team" },
           { text: "Releases", link: "https://github.com/oxc-project/oxc/releases" },
-          { text: "Website GitHub", link: "https://github.com/oxc-project/oxc-project.github.io" },
+          { text: "Website GitHub", link: "https://github.com/oxc-project/website" },
         ],
       },
     ],
