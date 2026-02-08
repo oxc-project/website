@@ -32,7 +32,7 @@
     "oxlint": "^1.35.0",
     "oxlint-tsgolint": "^0.11.0",
     "typescript": "~5.9.3",
-    "vitepress": "2.0.0-alpha.15",
+    "vitepress": "2.0.0-alpha.16",
     "vitepress-plugin-group-icons": "^1.7.0",
     "vitepress-plugin-llms": "^1.10.0",
     "vue": "^3.5.26"
@@ -43,7 +43,7 @@
   "packageManager": "pnpm@10.28.2",
   "pnpm": {
     "overrides": {
-      "vitepress>vite": "npm:vite@8.0.0-beta.11"
+      "vitepress>vite": "npm:vite@8.0.0-beta.13"
     },
     "onlyBuiltDependencies": [
       "esbuild",
