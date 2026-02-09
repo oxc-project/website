@@ -28,7 +28,14 @@ Example
   "globals": {
     "foo": "readonly"
   },
-  "settings": {},
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    },
+    "custom": {
+      "option": true
+    }
+  },
   "rules": {
     "eqeqeq": "warn",
     "import/no-cycle": "error",
@@ -157,7 +164,33 @@ Read more about JS plugins in
 [the docs](https://oxc.rs/docs/guide/usage/linter/js-plugins.html).
 
 Note: JS plugins are experimental and not subject to semver.
-They are not supported in the language server (and thus editor integrations) at present.
+
+Examples:
+
+Basic usage with a local plugin path.
+
+```json
+{
+  "jsPlugins": ["./custom-plugin.js"],
+  "rules": {
+    "custom/rule-name": "warn"
+  }
+}
+```
+
+Using a built-in Rust plugin alongside a JS plugin with the same name
+by giving the JS plugin an alias.
+
+```json
+{
+  "plugins": ["import"],
+  "jsPlugins": [{ "name": "import-js", "specifier": "eslint-plugin-import" }],
+  "rules": {
+    "import/no-cycle": "error",
+    "import-js/no-unresolved": "warn"
+  }
+}
+```
 
 ### jsPlugins[n]
 
@@ -231,7 +264,6 @@ Read more about JS plugins in
 [the docs](https://oxc.rs/docs/guide/usage/linter/js-plugins.html).
 
 Note: JS plugins are experimental and not subject to semver.
-They are not supported in the language server (and thus editor integrations) at present.
 
 ##### overrides[n].jsPlugins[n]
 

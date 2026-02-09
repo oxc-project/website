@@ -39,7 +39,6 @@ type: `"auto" | "off"`
 Control whether to format embedded parts (For example, CSS-in-JS, or JS-in-Vue, etc.) in the file.
 
 NOTE: XXX-in-JS support is incomplete.
-JS-in-XXX is fully supported but still be handled by Prettier.
 
 - Default: `"auto"`
 
@@ -445,7 +444,6 @@ type: `"auto" | "off"`
 Control whether to format embedded parts (For example, CSS-in-JS, or JS-in-Vue, etc.) in the file.
 
 NOTE: XXX-in-JS support is incomplete.
-JS-in-XXX is fully supported but still be handled by Prettier.
 
 - Default: `"auto"`
 
