@@ -686,10 +686,10 @@
   {
     "scope": "eslint",
     "value": "no-iterator",
-    "category": "restriction",
+    "category": "correctness",
     "type_aware": false,
     "fix": "fixable_suggestion",
-    "default": false,
+    "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-iterator.html"
   },
   {
@@ -758,10 +758,10 @@
   {
     "scope": "eslint",
     "value": "no-misleading-character-class",
-    "category": "nursery",
+    "category": "correctness",
     "type_aware": false,
     "fix": "none",
-    "default": false,
+    "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-misleading-character-class.html"
   },
   {
@@ -3865,7 +3865,7 @@
     "value": "ban-types",
     "category": "pedantic",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/ban-types.html"
   },
@@ -3886,6 +3886,15 @@
     "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-indexed-object-style.html"
+  },
+  {
+    "scope": "typescript",
+    "value": "consistent-type-assertions",
+    "category": "style",
+    "type_aware": false,
+    "fix": "conditional_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-type-assertions.html"
   },
   {
     "scope": "typescript",
@@ -5332,7 +5341,7 @@
     "value": "prefer-dom-node-dataset",
     "category": "pedantic",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-dataset.html"
   },
@@ -5512,7 +5521,7 @@
     "value": "prefer-reflect-apply",
     "category": "style",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-reflect-apply.html"
   },
@@ -5632,6 +5641,15 @@
     "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-type-error.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "relative-url-style",
+    "category": "style",
+    "type_aware": false,
+    "fix": "fixable_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/relative-url-style.html"
   },
   {
     "scope": "unicorn",
@@ -5785,6 +5803,15 @@
     "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-describe-function-title.html"
+  },
+  {
+    "scope": "vitest",
+    "value": "prefer-expect-type-of",
+    "category": "style",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-expect-type-of.html"
   },
   {
     "scope": "vitest",

@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Checks for erasing operations, e.g., `x \* 0``.
+Checks for erasing operations, e.g., `x * 0`.
 
 Based on https://rust-lang.github.io/rust-clippy/master/#/erasing_op
 

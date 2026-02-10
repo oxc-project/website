@@ -39,7 +39,6 @@ type: `"auto" | "off"`
 Control whether to format embedded parts (For example, CSS-in-JS, or JS-in-Vue, etc.) in the file.
 
 NOTE: XXX-in-JS support is incomplete.
-JS-in-XXX is fully supported but still be handled by Prettier.
 
 - Default: `"auto"`
 
@@ -89,7 +88,7 @@ type: `string[]`
 
 default: `[]`
 
-List of import name prefixes to match for this group.
+List of glob patterns to match import sources for this group.
 
 ##### experimentalSortImports.customGroups[n].groupName
 
@@ -445,7 +444,6 @@ type: `"auto" | "off"`
 Control whether to format embedded parts (For example, CSS-in-JS, or JS-in-Vue, etc.) in the file.
 
 NOTE: XXX-in-JS support is incomplete.
-JS-in-XXX is fully supported but still be handled by Prettier.
 
 - Default: `"auto"`
 
@@ -495,7 +493,7 @@ type: `string[]`
 
 default: `[]`
 
-List of import name prefixes to match for this group.
+List of glob patterns to match import sources for this group.
 
 ######## overrides[n].options.experimentalSortImports.customGroups[n].groupName
 
