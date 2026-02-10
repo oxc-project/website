@@ -1,11 +1,11 @@
 ---
 title: Nested configuration files
-description: Use multiple .oxlintrc.json files to apply different Oxlint settings to different parts of a repository.
+description: Use multiple configuration files to apply different Oxlint settings to different parts of a repository.
 ---
 
 # Nested configuration files
 
-Oxlint can use multiple configuration files in the same repository. It automatically detects configuration files named `.oxlintrc.json` and applies them based on where files live in the directory tree.
+Oxlint can use multiple configuration files in the same repository. It automatically detects configuration files named `.oxlintrc.json` or `oxlint.config.ts` and applies them based on where files live in the directory tree.
 
 This is useful in monorepos where packages need their own settings, while still keeping a shared baseline.
 
@@ -13,7 +13,7 @@ If you only need to exclude files or folders, use [Ignores](./ignore-files) inst
 
 ## How it works
 
-For each file being linted, Oxlint uses the nearest `.oxlintrc.json` relative to that file.
+For each file being linted, Oxlint uses the nearest config file (`.oxlintrc.json` or `oxlint.config.ts`) relative to that file.
 
 Given the following structure:
 
@@ -23,7 +23,7 @@ my-project/
 ├── src/
 │   ├── index.js
 ├── package1/
-│   ├── .oxlintrc.json
+│   ├── oxlint.config.ts
 │   └── index.js
 └── package2/
     ├── .oxlintrc.json
@@ -33,7 +33,7 @@ my-project/
 Configuration resolution works as follows:
 
 - `src/index.js` uses `my-project/.oxlintrc.json`
-- `package1/index.js` uses `my-project/package1/.oxlintrc.json`
+- `package1/index.js` uses `my-project/package1/oxlint.config.ts`
 - `package2/index.js` uses `my-project/package2/.oxlintrc.json`
 
 ## What to expect

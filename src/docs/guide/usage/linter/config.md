@@ -1,23 +1,23 @@
 ---
 title: Configuration
-description: Configure Oxlint using a .oxlintrc.json file.
+description: Configure Oxlint using .oxlintrc.json or oxlint.config.ts.
 ---
 
 # Configuration
 
-Oxlint works out of the box, but most teams commit a configuration file to keep linting consistent across local runs, editors, and CI.
+Oxlint works out of the box, but most teams commit a configuration file (`.oxlintrc.json` or `oxlint.config.ts`) to keep linting consistent across local runs, editors, and CI.
 
 This page focuses on project configuration: rules, categories, plugins, overrides, and shared settings.
 
 ## Create a config file
 
-To generate a starter config in the current directory:
+To generate a starter config in the current directory (JSON):
 
 ```sh
 oxlint --init
 ```
 
-Oxlint automatically looks for a `.oxlintrc.json` in the current working directory. You can also pass a config explicitly (note that this will disable nested config lookup):
+Oxlint automatically looks for a `.oxlintrc.json` or `oxlint.config.ts` in the current working directory. You can also pass a config explicitly (note that this will disable nested config lookup):
 
 ```sh
 oxlint -c ./oxlintrc.json
@@ -27,8 +27,9 @@ oxlint --config ./oxlintrc.json
 
 Notes:
 
-- Only `.json` config files are supported, but oxlint configuration files support comments (like jsonc).
+- `.oxlintrc.json` supports comments (like jsonc).
 - The configuration format aims to be compatible with ESLint v8's format (`eslintrc.json`).
+- You can use either `.oxlintrc.json` or `oxlint.config.ts` in a directory, but not both.
 
 A minimal configuration looks like this:
 
@@ -44,9 +45,33 @@ A minimal configuration looks like this:
 }
 ```
 
+### TypeScript config file (`oxlint.config.ts`)
+
+Oxlint also supports a TypeScript configuration file named `oxlint.config.ts`.
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  categories: {
+    correctness: "warn",
+  },
+  rules: {
+    "eslint/no-unused-vars": "error",
+  },
+});
+```
+
+Notes:
+
+- The file must be named `oxlint.config.ts` (including when passed via `--config`).
+- The default export must be an object and should be wrapped with `defineConfig` for typing.
+- TypeScript configs require the Node-based `oxlint` package (JS runtime). If you're using a standalone binary, use `.oxlintrc.json` instead.
+- TypeScript configs require a Node runtime that can execute TypeScript.
+
 ## Configuration file format
 
-A configuration file is a JSON object. The most common top-level fields are:
+A configuration file is either a JSON object (`.oxlintrc.json`) or a TypeScript module that default-exports a config object (`oxlint.config.ts`). The most common top-level fields are:
 
 - `rules`: Enable or disable rules, set severity, and configure rule options.
 - `categories`: Enable groups of rules with similar intent.
@@ -257,6 +282,16 @@ Paths in `extends` are resolved relative to the configuration file that declares
 {
   "extends": ["./configs/base.json", "./configs/frontend.json"]
 }
+```
+
+```ts [oxlint.config.ts]
+import baseConfig from "./configs/base.ts";
+import frontendConfig from "./configs/frontend.ts";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [baseConfig, frontendConfig],
+});
 ```
 
 ## Configure environments and globals
