@@ -1,7 +1,7 @@
 ---
 title: "eslint/no-misleading-character-class"
-category: "Nursery"
-default: false
+category: "Correctness"
+default: true
 type_aware: false
 fix: "none"
 ---

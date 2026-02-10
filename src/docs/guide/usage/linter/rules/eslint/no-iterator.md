@@ -1,7 +1,7 @@
 ---
 title: "eslint/no-iterator"
-category: "Restriction"
-default: false
+category: "Correctness"
+default: true
 type_aware: false
 fix: "fixable_suggestion"
 ---
@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow the use of the `__iterator__` property
+Disallow the use of the `__iterator__` property.
 
 ### Why is this bad?
 
