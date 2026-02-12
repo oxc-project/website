@@ -15,7 +15,7 @@ See [Quickstart](./quickstart) to install Oxlint.
 - [VS Code](#vs-code) (and Cursor, etc.)
 - [Zed](#zed)
 - [JetBrains](#jetbrains)
-- [coc.nvim](#coc-nvim)
+- [Neovim](#neovim)
 - [Other editors](#other-editors)
 
 ## VS Code
@@ -87,21 +87,31 @@ IntelliJ IDEA and WebStorm.
 
 - [oxc-project/oxc-intellij-plugin](https://github.com/oxc-project/oxc-intellij-plugin)
 
-## coc.nvim
+## Neovim
 
-### Install
+### nvim-lspconfig
+
+```sh
+npm i -g oxlint
+```
+
+```lua
+vim.lsp.enable('oxlint')
+```
+
+- [nvim-lspconfig: oxlint](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#oxlint)
+
+### coc.nvim
 
 ```vim
 :CocInstall coc-oxc
 ```
 
-### Reference
-
 - [oxc-project/coc-oxc](https://github.com/oxc-project/coc-oxc)
 
 ## Other editors
 
-For editors with LSP support (Neovim, Emacs, Helix, Sublime), configure:
+For editors with LSP support (Emacs, Helix, Sublime), configure:
 
 ```bash
 oxlint --lsp
