@@ -64,7 +64,7 @@ Running `oxfmt` without arguments formats the current directory (equivalent to `
 
 CLI options like `--no-semi` are not supported. Use the configuration file instead to ensure consistent settings across CLI and editor integrations.
 
-Globs in positional paths are not expanded (rely on your shell). However, `!`-prefixed exclude paths support glob expansion.
+To use glob patterns in positional paths, be sure to quote them. Otherwise, they may or may not be expanded depending on your environment.
 
 For the complete list of options, see the [CLI reference](/docs/guide/usage/formatter/cli.html).
 

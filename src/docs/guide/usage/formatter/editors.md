@@ -15,7 +15,7 @@ See [Quickstart](./quickstart) to install Oxfmt.
 - [VS Code](#vs-code) (and Cursor, etc.)
 - [Zed](#zed)
 - [JetBrains](#jetbrains)
-- [coc.nvim](#cocnvim)
+- [Neovim](#neovim)
 - [Other editors](#other-editors)
 
 ## VS Code
@@ -92,32 +92,57 @@ IntelliJ IDEA and WebStorm.
 
 - [oxc-project/oxc-intellij-plugin](https://github.com/oxc-project/oxc-intellij-plugin)
 
-## coc.nvim
+## Neovim
 
-### Install
+### nvim-lspconfig
+
+```sh
+npm i -g oxfmt
+```
+
+```lua
+vim.lsp.enable('oxfmt')
+```
+
+- [nvim-lspconfig: oxfmt](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#oxfmt)
+
+### conform.nvim
+
+```lua
+require("conform").setup({
+  formatters_by_ft = {
+    javascript = { "oxfmt" },
+    javascriptreact = { "oxfmt" },
+    typescript = { "oxfmt" },
+    typescriptreact = { "oxfmt" },
+    json = { "oxfmt" },
+    vue = { "oxfmt" },
+  },
+})
+```
+
+- [conform.nvim](https://github.com/stevearc/conform.nvim)
+
+### coc.nvim
 
 ```vim
 :CocInstall coc-oxc
 ```
 
-### Reference
-
 - [oxc-project/coc-oxc](https://github.com/oxc-project/coc-oxc)
 
 ## Other editors
 
-For editors with LSP support (Neovim, Emacs, Helix, Sublime), configure:
+For editors with LSP support (Emacs, Helix, Sublime), configure:
 
-```bash
+```sh
 oxfmt --lsp
 ```
 
-### Via stdin
-
-For editors without LSP support:
+Or, for editors without LSP support:
 
 ```sh
-cat foo/bar.js | oxfmt --stdin-filepath f.js --config ./path/to/config.json
+cat foo/bar.js | oxfmt --stdin-filepath dummy.js --config ./path/to/config.json
 ```
 
 ## Reference
