@@ -3871,6 +3871,15 @@
   },
   {
     "scope": "typescript",
+    "value": "class-literal-property-style",
+    "category": "style",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/class-literal-property-style.html"
+  },
+  {
+    "scope": "typescript",
     "value": "consistent-generic-constructors",
     "category": "style",
     "type_aware": false,
@@ -4093,6 +4102,15 @@
     "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-inferrable-types.html"
+  },
+  {
+    "scope": "typescript",
+    "value": "no-invalid-void-type",
+    "category": "restriction",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-invalid-void-type.html"
   },
   {
     "scope": "typescript",
@@ -5044,7 +5062,7 @@
     "value": "no-typeof-undefined",
     "category": "pedantic",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-typeof-undefined.html"
   },
@@ -5422,7 +5440,7 @@
     "value": "prefer-math-trunc",
     "category": "pedantic",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-trunc.html"
   },
