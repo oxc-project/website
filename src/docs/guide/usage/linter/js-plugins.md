@@ -368,10 +368,10 @@ Oxlint supports almost all of ESLint's API surface:
 - Scope analysis.
 - Control flow analysis (code paths).
 - Inline disable directives. (`// oxlint-disable`)
+- Language server (IDE) support + suggestions (in-editor diagnostics and quick-fixes)
 
 Not supported yet:
 
-- Language server (IDE) support + suggestions (so no in-editor diagnostics or quick-fixes yet).
 - Custom file formats and parsers (e.g. Svelte, Vue, Angular).
 
 ESLint APIs that were removed in ESLint v9 or earlier will not be implemented in most cases. If an ESLint plugin is unmaintained and was never updated to upgrade their API usage for ESLint v9, you may need to modify the plugin yourself or find an alternative.
