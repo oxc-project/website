@@ -29,7 +29,7 @@ Nesting ternary expressions can make code more difficult to understand.
 Examples of **incorrect** code for this rule:
 
 ```javascript
-const foo = i > 5 ? (i < 100 ? true : false) : true;
+const foo = i > 5 ? i < 100 ? true : false : true;
 const foo = i > 5 ? true : i < 100 ? true : i < 1000 ? true : false;
 ```
 
