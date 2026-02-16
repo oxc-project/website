@@ -1,6 +1,6 @@
 ---
 title: "jsx-a11y/no-static-element-interactions"
-category: "Nursery"
+category: "Correctness"
 default: false
 type_aware: false
 fix: "none"

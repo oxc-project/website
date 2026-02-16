@@ -18,11 +18,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Disallows the redefining of global variables such as `undefined`, `NaN`, `Infinity`,
-`eval`, and `arguments`.
+`eval`, `globalThis` and `arguments`.
 
 ### Why is this bad?
 
-Value properties of the Global Object `NaN`, `Infinity`, `undefined` as well as the strict
+Value properties of the Global Object `NaN`, `Infinity`, `undefined`, `globalThis` as well as the strict
 mode restricted identifiers `eval` and `arguments` are considered to be restricted names in
 JavaScript. Defining them to mean something else can have unintended consequences and
 confuse others reading the code. For example, there’s nothing preventing you from
@@ -48,6 +48,8 @@ var undefined = 5;
 
 try {
 } catch (eval) {}
+
+const globalThis = "foo";
 ```
 
 ```javascript
@@ -81,7 +83,7 @@ This rule accepts a configuration object with the following properties:
 
 type: `boolean`
 
-default: `false`
+default: `true`
 
 If true, also report shadowing of `globalThis`.
 

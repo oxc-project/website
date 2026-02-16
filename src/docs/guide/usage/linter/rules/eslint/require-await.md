@@ -19,6 +19,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 Disallow async functions which have no `await` expression.
 
+::: warning NOTE
+This rule is inferior to the accuracy of the type-aware
+`typescript/require-await` rule. If using type-aware
+rules, always prefer that rule over this one.
+:::
+
 ### Why is this bad?
 
 Asynchronous functions in JavaScript behave differently than other
@@ -39,14 +45,14 @@ async function fetchData(processDataItem) {
 }
 ```
 
-Asynchronous functions that don’t use await might not need to be
+Asynchronous functions that don’t use `await` might not need to be
 asynchronous functions and could be the unintentional result of
 refactoring.
 
 Note: this rule ignores async generator functions. This is because
 generators yield rather than return a value and async generators might
 yield all the values of another async generator without ever actually
-needing to use await.
+needing to use `await`.
 
 ### Examples
 

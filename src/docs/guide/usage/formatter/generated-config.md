@@ -76,6 +76,9 @@ Custom groups have a higher priority than any predefined group.
 If you want a predefined group to take precedence over a custom group,
 you must write a custom group definition that does the same as what the predefined group does, and put it first in the list.
 
+If you specify multiple conditions like `elementNamePattern`, `selector`, and `modifiers`,
+all conditions must be met for an import to match the custom group (AND logic).
+
 - Default: `[]`
 
 #### experimentalSortImports.customGroups[n]
@@ -98,6 +101,24 @@ default: `""`
 
 Name of the custom group, used in the `groups` option.
 
+##### experimentalSortImports.customGroups[n].modifiers
+
+type: `string[]`
+
+Modifiers to match the import characteristics.
+All specified modifiers must be present (AND logic).
+
+Possible values: `"side_effect"`, `"type"`, `"value"`, `"default"`, `"wildcard"`, `"named"`
+
+##### experimentalSortImports.customGroups[n].selector
+
+type: `string`
+
+Selector to match the import kind.
+
+Possible values: `"type"`, `"side_effect_style"`, `"side_effect"`, `"style"`, `"index"`,
+`"sibling"`, `"parent"`, `"subpath"`, `"internal"`, `"builtin"`, `"external"`, `"import"`
+
 ### experimentalSortImports.groups
 
 type: `array`
@@ -119,8 +140,8 @@ You may enter modifiers in any order, but the selector must always come at the e
 The list of selectors is sorted from most to least important:
 
 - `type` — TypeScript type imports.
-- `side-effect-style` — Side effect style imports.
-- `side-effect` — Side effect imports.
+- `side_effect_style` — Side effect style imports.
+- `side_effect` — Side effect imports.
 - `style` — Style imports.
 - `index` — Main file from the current directory.
 - `sibling` — Modules from the same directory.
@@ -133,16 +154,12 @@ The list of selectors is sorted from most to least important:
 
 The list of modifiers is sorted from most to least important:
 
-- `side-effect` — Side effect imports.
+- `side_effect` — Side effect imports.
 - `type` — TypeScript type imports.
 - `value` — Value imports.
 - `default` — Imports containing the default specifier.
 - `wildcard` — Imports containing the wildcard (`* as`) specifier.
 - `named` — Imports containing at least one named specifier.
-- `multiline` — Imports on multiple lines.
-- `singleline` — Imports on a single line.
-
-See also <https://perfectionist.dev/rules/sort-imports#groups> for details.
 
 - Default: See below
 
@@ -161,10 +178,6 @@ See also <https://perfectionist.dev/rules/sort-imports#groups> for details.
 #### experimentalSortImports.groups[n]
 
 type: `array | string`
-
-##### experimentalSortImports.groups[n][n]
-
-type: `string`
 
 ### experimentalSortImports.ignoreCase
 
@@ -481,6 +494,9 @@ Custom groups have a higher priority than any predefined group.
 If you want a predefined group to take precedence over a custom group,
 you must write a custom group definition that does the same as what the predefined group does, and put it first in the list.
 
+If you specify multiple conditions like `elementNamePattern`, `selector`, and `modifiers`,
+all conditions must be met for an import to match the custom group (AND logic).
+
 - Default: `[]`
 
 ####### overrides[n].options.experimentalSortImports.customGroups[n]
@@ -503,6 +519,24 @@ default: `""`
 
 Name of the custom group, used in the `groups` option.
 
+######## overrides[n].options.experimentalSortImports.customGroups[n].modifiers
+
+type: `string[]`
+
+Modifiers to match the import characteristics.
+All specified modifiers must be present (AND logic).
+
+Possible values: `"side_effect"`, `"type"`, `"value"`, `"default"`, `"wildcard"`, `"named"`
+
+######## overrides[n].options.experimentalSortImports.customGroups[n].selector
+
+type: `string`
+
+Selector to match the import kind.
+
+Possible values: `"type"`, `"side_effect_style"`, `"side_effect"`, `"style"`, `"index"`,
+`"sibling"`, `"parent"`, `"subpath"`, `"internal"`, `"builtin"`, `"external"`, `"import"`
+
 ###### overrides[n].options.experimentalSortImports.groups
 
 type: `array`
@@ -524,8 +558,8 @@ You may enter modifiers in any order, but the selector must always come at the e
 The list of selectors is sorted from most to least important:
 
 - `type` — TypeScript type imports.
-- `side-effect-style` — Side effect style imports.
-- `side-effect` — Side effect imports.
+- `side_effect_style` — Side effect style imports.
+- `side_effect` — Side effect imports.
 - `style` — Style imports.
 - `index` — Main file from the current directory.
 - `sibling` — Modules from the same directory.
@@ -538,16 +572,12 @@ The list of selectors is sorted from most to least important:
 
 The list of modifiers is sorted from most to least important:
 
-- `side-effect` — Side effect imports.
+- `side_effect` — Side effect imports.
 - `type` — TypeScript type imports.
 - `value` — Value imports.
 - `default` — Imports containing the default specifier.
 - `wildcard` — Imports containing the wildcard (`* as`) specifier.
 - `named` — Imports containing at least one named specifier.
-- `multiline` — Imports on multiple lines.
-- `singleline` — Imports on a single line.
-
-See also <https://perfectionist.dev/rules/sort-imports#groups> for details.
 
 - Default: See below
 
@@ -566,10 +596,6 @@ See also <https://perfectionist.dev/rules/sort-imports#groups> for details.
 ####### overrides[n].options.experimentalSortImports.groups[n]
 
 type: `array | string`
-
-######## overrides[n].options.experimentalSortImports.groups[n][n]
-
-type: `string`
 
 ###### overrides[n].options.experimentalSortImports.ignoreCase
 
