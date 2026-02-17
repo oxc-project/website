@@ -369,7 +369,19 @@ export const enConfig = defineLocaleConfig("root", {
       level: [2, 3],
     },
     editLink: {
-      pattern: "https://github.com/oxc-project/website/edit/main/src/:path",
+      pattern({ filePath }) {
+        // Auto-generated rule pages should link to the Rust source in the oxc repo
+        const m = filePath.match(
+          /^docs\/guide\/usage\/linter\/rules\/(?<plugin>[^/]+)\/(?<rule>[^/]+)\.md$/,
+        );
+        if (m) {
+          const plugin = m.groups!.plugin;
+          const rule = m.groups!.rule.replaceAll("-", "_");
+          return `https://github.com/oxc-project/oxc/edit/main/crates/oxc_linter/src/rules/${plugin}/${rule}.rs`;
+        }
+
+        return `https://github.com/oxc-project/website/edit/main/src/${filePath}`;
+      },
       text: "Suggest changes to this page",
     },
   },
