@@ -3,8 +3,10 @@
 Oxfmt includes sorting features for imports, Tailwind classes, and package.json.
 
 - [Sort imports](#sort-imports)
-- [Tailwind CSS class sorting](#tailwind-css-class-sorting)
+- [Sort Tailwind CSS classes](#sort-tailwind-css-classes)
 - [Sort package.json fields](#sort-package-json-fields)
+
+See [Configuration file reference](./config-file-reference) for full details.
 
 ## Sort imports
 
@@ -18,25 +20,42 @@ Disabled by default.
 
 ### Example configuration
 
-Sort imports by distance (furthest to closest):
+The same order as `eslint-plugin-perfectionist/sort-imports` default.
 
 ```json [.oxfmtrc.json]
 {
   "experimentalSortImports": {
     "groups": [
-      ["side-effect"],
-      ["builtin"],
-      ["external", "type-external"],
-      ["internal", "type-internal"],
-      ["parent", "type-parent"],
-      ["sibling", "type-sibling"],
-      ["index", "type-index"]
+      "type-import",
+      ["value-builtin", "value-external"],
+      "type-internal",
+      "value-internal",
+      ["type-parent", "type-sibling", "type-index"],
+      ["value-parent", "value-sibling", "value-index"],
+      "unknown"
     ]
   }
 }
 ```
 
-## Tailwind CSS class sorting
+Use `"newlinesBetween": false` at the top level to disable newlines between groups, then use `{ "newlinesBetween": true }` within `groups` to insert a newline at a specific point.
+
+```json [.oxfmtrc.json]
+{
+  "experimentalSortImports": {
+    "newlinesBetween": false,
+    "groups": [
+      ["value-builtin", "value-external"],
+      ["value-internal", "value-parent", "value-sibling", "value-index"],
+      { "newlinesBetween": true },
+      "type-import",
+      "unknown"
+    ]
+  }
+}
+```
+
+## Sort Tailwind CSS classes
 
 Sorts Tailwind utility classes.
 
@@ -50,14 +69,13 @@ Disabled by default.
 {
   "experimentalTailwindcss": {
     "stylesheet": "./path/to/stylesheet.css",
-    "attributes": ["class", "className"],
     "functions": ["clsx", "cn"],
     "preserveWhitespace": true
   }
 }
 ```
 
-Regex patterns for `attributes` are not supported.
+Regex patterns for `attributes` and `functions` are not supported.
 
 ## Sort package.json fields
 

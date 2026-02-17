@@ -31,3 +31,7 @@ Not supported. However, Oxfmt provides built-in alternatives:
   - Disabled by default
 
 See [Configuration file reference](./config-file-reference) for details.
+
+## Bun Runtime
+
+https://github.com/oven-sh/bun/issues/25658 to be fixed.
