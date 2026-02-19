@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows passing `1` to `Array.prototype.flat`
+Disallows passing `1` to `Array.prototype.flat`.
 
 ### Why is this bad?
 

@@ -1,5 +1,5 @@
 ---
-title: "typescript/no-use-before-define"
+title: "eslint/no-use-before-define"
 category: "Restriction"
 default: false
 type_aware: false
@@ -10,7 +10,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/typescript/no_use_before_define.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/eslint/no_use_before_define.rs`;
 </script>
 
 <RuleHeader />
@@ -109,13 +109,13 @@ To **enable** this rule using the config file or in the CLI, you can use:
 ```json [Config (.oxlintrc.json)]
 {
   "rules": {
-    "typescript/no-use-before-define": "error"
+    "no-use-before-define": "error"
   }
 }
 ```
 
 ```bash [CLI]
-oxlint --deny typescript/no-use-before-define
+oxlint --deny no-use-before-define
 ```
 
 :::

@@ -60,6 +60,15 @@ default: `false`
 When set to true, allows callbacks of methods that require a return value to
 implicitly return undefined with a return statement containing no expression.
 
+### allowVoid
+
+type: `boolean`
+
+default: `false`
+
+When set to true, rule will not report the return value with a void operator.
+Works only if `checkForEach` option is set to true.
+
 ### checkForEach
 
 type: `boolean`

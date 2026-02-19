@@ -42,18 +42,6 @@ Examples of **correct** code for this rule:
 var num = parseInt("071", 10); // 71
 ```
 
-## Configuration
-
-This rule accepts one of the following string values:
-
-### `"always"`
-
-Always require the radix parameter when using `parseInt()`.
-
-### `"as-needed"`
-
-Only require the radix parameter when necessary.
-
 ## How to use
 
 To **enable** this rule using the config file or in the CLI, you can use:
