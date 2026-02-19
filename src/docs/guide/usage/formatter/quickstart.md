@@ -44,15 +44,47 @@ Add scripts to `package.json`:
 
 Format files:
 
-```sh
+::: code-group
+
+```sh [npm]
+npm run fmt
+```
+
+```sh [pnpm]
 pnpm run fmt
 ```
 
+```sh [yarn]
+yarn run fmt
+```
+
+```sh [bun]
+bun run fmt
+```
+
+:::
+
 Check formatting without writing files:
 
-```sh
+::: code-group
+
+```sh [npm]
+npm run fmt:check
+```
+
+```sh [pnpm]
 pnpm run fmt:check
 ```
+
+```sh [yarn]
+yarn run fmt:check
+```
+
+```sh [bun]
+bun run fmt:check
+```
+
+:::
 
 ## Usage
 
