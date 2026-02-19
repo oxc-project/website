@@ -111,9 +111,9 @@ If a rule name is unique, you can configure it without a plugin prefix. For exam
 
 Oxlint accepts ESLint-style severities:
 
-- Allow rule: `"off"`, `0`, `"allow"`
-- Warning on rule: `"warn"`, `1`
-- Error on rule: `"error"`, `2`, `"deny"`
+- Allow rule: `"off"`, `"allow"`
+- Warning on rule: `"warn"`
+- Error on rule: `"error"`, `"deny"`
 
 ### Rule options
 
