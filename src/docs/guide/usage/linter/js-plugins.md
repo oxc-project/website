@@ -4,7 +4,7 @@ outline: deep
 
 # JS Plugins
 
-Oxlint supports plugins written in JS - either custom-written, or from NPM.
+Oxlint supports plugins written in JS - either custom-written, or from npm.
 
 Oxlint's plugin API is compatible with ESLint v9+, so most existing ESLint plugins should work out of the box with Oxlint.
 
@@ -373,6 +373,7 @@ Oxlint supports almost all of ESLint's API surface:
 Not supported yet:
 
 - Custom file formats and parsers (e.g. Svelte, Vue, Angular).
+- Lint rules that rely on TypeScript type-awareness.
 
 ESLint APIs that were removed in ESLint v9 or earlier will not be implemented in most cases. If an ESLint plugin is unmaintained and was never updated to upgrade their API usage for ESLint v9, you may need to modify the plugin yourself or find an alternative.
 
