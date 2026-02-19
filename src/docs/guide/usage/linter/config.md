@@ -206,7 +206,6 @@ Oxlint also supports JavaScript plugins via `jsPlugins`. This is intended for co
 Notes:
 
 - JS plugins are experimental and not subject to semver.
-- JS plugins are not supported in the language server at present.
 
 JS plugins can be declared as strings, or as objects with an alias:
 
