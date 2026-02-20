@@ -6,7 +6,7 @@ search: false
 
 This configuration is aligned with ESLint v8's configuration schema (`eslintrc.json`).
 
-Usage: `oxlint -c oxlintrc.json --import-plugin`
+Usage: `oxlint -c .oxlintrc.json --import-plugin`
 
 ::: danger NOTE
 
