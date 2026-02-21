@@ -59,15 +59,11 @@ For further information on Oxlint's type-aware support, see [the Type-Aware Lint
 
 ### JavaScript plugins
 
-If your ESLint config uses plugins that are not supported natively by Oxlint, you can retain them using JavaScript plugins.
-
-To migrate ESLint plugins along with the natively-supported plugins, use the `--js-plugins` flag:
-
-```bash
-npx @oxlint/migrate --js-plugins
-```
+If your ESLint config uses plugins that are not supported natively by Oxlint, you can retain them using JavaScript plugins. `@oxlint/migrate` will migrate these plugins for you by default.
 
 This allows you to continue using those rules via Oxlint alongside the native rules/plugins. The JS Plugins functionality does not support all ESLint plugins, but Oxlint's JavaScript plugin system covers a vast majority of the ESLint v9 API and is actively being improved. Most ESLint plugins covering JavaScript/TypeScript code should work in Oxlint without problems.
+
+If you do not want to migrate your ESLint plugins to use as JS Plugins, you can pass `--js-plugins=false`.
 
 For more information on JavaScript Plugins, see [the JS Plugins page](/docs/guide/usage/linter/js-plugins).
 
