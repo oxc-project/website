@@ -2,12 +2,6 @@
 
 This guide is for existing JavaScript and TypeScript projects that currently use ESLint and want to migrate to Oxlint.
 
-If you are starting a new project, or do not need to preserve an existing ESLint configuration, we recommend initializing a fresh Oxlint config instead:
-
-```bash
-oxlint --init
-```
-
 ## Overview
 
 Oxlint and ESLint share similar configuration concepts, but they differ in supported rules and config formats.
