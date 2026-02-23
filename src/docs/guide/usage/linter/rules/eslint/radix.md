@@ -17,7 +17,8 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce the consistent use of the radix argument when using `parseInt()`.
+Enforce the consistent use of the radix argument when using `parseInt()`,
+which specifies what base to use for parsing the number.
 
 ### Why is this bad?
 
@@ -26,20 +27,31 @@ the radix can lead to unexpected results.
 
 See the
 [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#radix)
-for more information.
+for more information on how `parseInt()` handles certain edge-cases.
+
+### Configuration
+
+Note that passing an option to this rule has no effect on its behavior.
+In v1.49.0, the config option for this rule was removed and made a no-op.
+This matches the behavior change made in ESLint v10, and the rule now
+always enforces that a radix parameter is provided to `parseInt()`.
+
+If you receive new violations due to this change, you may either opt
+to disable this rule, or add the radix parameter to all usages of
+`parseInt()` in your codebase.
 
 ### Examples
 
 Examples of **incorrect** code for this rule:
 
 ```javascript
-var num = parseInt("071"); // 57
+let num = parseInt("071"); // 57
 ```
 
 Examples of **correct** code for this rule:
 
 ```javascript
-var num = parseInt("071", 10); // 71
+let num = parseInt("071", 10); // 71
 ```
 
 ## How to use

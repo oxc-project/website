@@ -5653,6 +5653,15 @@
   },
   {
     "scope": "unicorn",
+    "value": "prefer-module",
+    "category": "restriction",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-module.html"
+  },
+  {
+    "scope": "unicorn",
     "value": "prefer-native-coercion-functions",
     "category": "pedantic",
     "type_aware": false,
@@ -5830,6 +5839,15 @@
     "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-structured-clone.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-ternary",
+    "category": "style",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-ternary.html"
   },
   {
     "scope": "unicorn",
