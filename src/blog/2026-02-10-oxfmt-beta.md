@@ -70,7 +70,7 @@ Migrate this project from Prettier to Oxfmt following https://oxc.rs/docs/guide/
 
 For more detailed instructions, check out the [Oxfmt docs](https://oxc.rs/docs/guide/usage/formatter.html).
 
-## Highlight of New Features Since Alpha
+## Highlights of New Features Since Alpha
 
 ### 100% Prettier Compatibility
 
@@ -84,7 +84,7 @@ Oxfmt now formats JavaScript, JSX, TypeScript, TSX, JSON, JSONC, JSON5, YAML, TO
 
 ### Tailwind CSS Integration
 
-Automatic [Tailwind CSS class sorting](/docs/guide/usage/formatter/sorting.html#tailwind-css-class-sorting) is supported for both JS/TS and non-JS/TS files. The functionality of `prettier-plugin-tailwindcss` is built-in, so the plugin is no longer required.
+Automatic [Tailwind CSS class sorting](/docs/guide/usage/formatter/sorting.html#sort-tailwind-css-classes) is supported for both JS/TS and non-JS/TS files. The functionality of `prettier-plugin-tailwindcss` is built-in, so the plugin is no longer required.
 
 ### Import Sorting
 
@@ -92,20 +92,21 @@ Built-in [import sorting](/docs/guide/usage/formatter/sorting.html#sort-imports)
 
 - `ignoreCase` - Case-insensitive sorting
 - `sortSideEffects` - Sort side-effect imports
-- `order` - Custom sort order
 - `newlinesBetween` - Control blank lines between import groups
+- `groups` - Custom sort order groups
 - `customGroups` - Define custom grouping rules
 
-### package.json Sorting
+For more options, please see the [full reference](/docs/guide/usage/formatter/config-file-reference.html#sortimports).
+
+### `package.json` Sorting
 
 Automatic [package.json field sorting](/docs/guide/usage/formatter/sorting.html#sort-package-json-fields) is enabled by default, keeping your package.json files consistently organized.
 
 ### Embedded Language Formatting
 
-Format code [embedded in template literals and JSX](/docs/guide/usage/formatter/embedded-formatting.html):
+Format code [embedded in template literals](/docs/guide/usage/formatter/embedded-formatting.html):
 
-- Tailwind CSS class sorting in JS/TS templates
-- CSS-in-JS with `styled-jsx` and CSS prop support
+- CSS-in-JS with styled-components-like syntaxes, `styled-jsx` and CSS prop support
 - Angular `@Component` template and styles
 
 ### Node.js API
@@ -126,15 +127,17 @@ console.log(code); // "let a = 42"
 
 ### [CLI Changes](/docs/guide/usage/formatter/cli.html)
 
-- **`--init`** - Bootstrap a new configuration file
-- **`--migrate prettier`** - Migrate from Prettier configuration
-- **`--stdin-filepath`** - Specify filepath for stdin input
+- `--init` - Bootstrap a new configuration file
+- `--migrate prettier` - Migrate from Prettier configuration
+- `--migrate biome` - Migrate from Biome configuration
+- `--stdin-filepath` - Specify filepath for stdin input
+- Glob pattern expansion support - `oxfmt './packages/**/*.{js,jsx}'`
 
 ### [Config Changes](/docs/guide/usage/formatter/config.html)
 
-- **[`overrides`](/docs/guide/usage/formatter/config.html#overrides)** - Apply different options to specific file patterns
-- **[`insertFinalNewline`](/docs/guide/usage/formatter/config.html#insertfinalnewline)** - Control trailing newlines
-- **[`.editorconfig`](/docs/guide/usage/formatter/config.html#editorconfig)** support for `insert_final_newline`
+- [`overrides`](/docs/guide/usage/formatter/config.html#overrides) - Apply different options to specific file patterns
+- [`insertFinalNewline`](/docs/guide/usage/formatter/config.html#insertfinalnewline) - Control trailing newlines
+- [`.editorconfig`](/docs/guide/usage/formatter/config.html#editorconfig) support for `insert_final_newline`
 
 ### [Editor Support](/docs/guide/usage/formatter/editors.html)
 
@@ -145,6 +148,7 @@ Oxfmt works in all supported editors: VS Code, Cursor, Zed, IntelliJ IDEA, WebSt
 We are continuing to improve Oxfmt towards a stable release:
 
 - Prettier plugins support
+- Improve xxx-in-js formatting
 - Stability
 - Performance optimizations
 
@@ -160,6 +164,6 @@ For formatting differences, please refer to the [formatting differences discussi
 
 We'd love to hear your feedback on Oxfmt. Connect with us:
 
-- **Discord**: Join our [community server](https://discord.gg/9uXCAwqQZW) for real-time discussions
-- **GitHub**: Share feedback on the [Formatter RFC](https://github.com/oxc-project/oxc/discussions/13608)
-- **Issues**: Report bugs or request features on our [issue tracker](https://github.com/oxc-project/oxc/issues)
+- Discord: Join our [community server](https://discord.gg/9uXCAwqQZW) for real-time discussions
+- GitHub: Share feedback on the [Formatter RFC](https://github.com/oxc-project/oxc/discussions/13608)
+- Issues: Report bugs or request features on our [issue tracker](https://github.com/oxc-project/oxc/issues)
