@@ -11,6 +11,8 @@ authors:
 
 We are thrilled to announce that Oxfmt has reached beta! Since the [alpha release](/blog/2025-12-01-oxfmt-alpha) in December, we have added support for additional file formats, embedded language formatting, import sorting, Tailwind CSS integration, and much more.
 
+Oxfmt is a Rust-powered, Prettier-compatible code formatter for the JavaScript ecosystem.
+
 ## Getting Started
 
 Install `oxfmt` as a dev dependency:
