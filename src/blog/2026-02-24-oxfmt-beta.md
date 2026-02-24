@@ -58,7 +58,7 @@ For the full migration guide, see [Migrate from Prettier](/docs/guide/usage/form
 
 ### AI Migration Prompt
 
-Copy this prompt to your AI coding assistant to migrate your project:
+Alternatively, you can copy this prompt to your AI coding assistant to migrate your project:
 
 ```
 Migrate this project from Prettier to Oxfmt following https://oxc.rs/docs/guide/usage/formatter.html:
