@@ -39,5 +39,5 @@ outline: deep
 
 ## Transformer
 
-- [unplugin-isolated-decl](https://www.npmjs.com/package/unplugin-isolated-decl) - A blazing-fast tool for generating isolated declarations
+- [unplugin-isolated-decl](https://npmx.dev/package/unplugin-isolated-decl) - A blazing-fast tool for generating isolated declarations
 - [stc](https://github.com/long-woo/stc) - A tool for converting OpenApi/Swagger/Apifox into code

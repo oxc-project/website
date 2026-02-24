@@ -136,8 +136,8 @@ Replace `v0.0.0` with the latest version.
 
 ### Unplugin
 
-Unplugin is supported via a [third-party package](https://www.npmjs.com/package/unplugin-oxlint)
+Unplugin is supported via a [third-party package](https://npmx.dev/package/unplugin-oxlint)
 
 ### Vite plugin
 
-A Vite plugin is supported via a [third-party package](https://www.npmjs.com/package/vite-plugin-oxlint)
+A Vite plugin is supported via a [third-party package](https://npmx.dev/package/vite-plugin-oxlint)

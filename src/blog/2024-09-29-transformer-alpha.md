@@ -30,10 +30,10 @@ In this alpha stage, we recommend to experiment with these features to speed up 
 
 ## Usage Examples
 
-### [`oxc-transform`](https://www.npmjs.com/package/oxc-transform) npm package
+### [`oxc-transform`](https://npmx.dev/package/oxc-transform) npm package
 
 Vue.js is currently [experimenting](https://github.com/vuejs/core/blob/0895b2624b707ea1e75c41f2e1f75388e7a6f101/scripts/build-types.js#L20)
-the [`oxc-transform`](https://www.npmjs.com/package/oxc-transform) npm package for isolated declarations in its build pipeline:
+the [`oxc-transform`](https://npmx.dev/package/oxc-transform) npm package for isolated declarations in its build pipeline:
 
 ```javascript
 import { isolatedDeclaration } from "oxc-transform";
@@ -103,11 +103,11 @@ On `ubuntu-latest`, an example of different lines of code are measured:
 
 Oxc downloads only 2 npm packages, a total of 2 MB.
 
-| Package                                                                                  | Size                                                                                        |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `@oxc-transform/binding-darwin-arm64`                                                    | [2.0 MB](https://www.npmjs.com/package/@oxc-transform/binding-darwin-arm64)                 |
-| `@swc/core-darwin-arm64`                                                                 | [37.5 MB](https://www.npmjs.com/package/@swc/core-darwin-arm64)                             |
-| `@babel/core` + `@babel/preset-env` + `@babel/preset-react` + `@babel/preset-typescript` | [21 MB and 170 packages](https://www.npmjs.com/package/@oxc-transform/binding-darwin-arm64) |
+| Package                                                                                  | Size                                                                                   |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `@oxc-transform/binding-darwin-arm64`                                                    | [2.0 MB](https://npmx.dev/package/@oxc-transform/binding-darwin-arm64)                 |
+| `@swc/core-darwin-arm64`                                                                 | [37.5 MB](https://npmx.dev/package/@swc/core-darwin-arm64)                             |
+| `@babel/core` + `@babel/preset-env` + `@babel/preset-react` + `@babel/preset-typescript` | [21 MB and 170 packages](https://npmx.dev/package/@oxc-transform/binding-darwin-arm64) |
 
 ## Memory Usage
 

@@ -18,7 +18,7 @@ When migrating, expect the following:
 
 ## Migrating from an ESLint flat config
 
-If your project uses an ESLint v9/v10 flat config (e.g. `eslint.config.js` or `eslint.config.mjs`), you can migrate automatically using [`@oxlint/migrate`](https://www.npmjs.com/package/@oxlint/migrate).
+If your project uses an ESLint v9/v10 flat config (e.g. `eslint.config.js` or `eslint.config.mjs`), you can migrate automatically using [`@oxlint/migrate`](https://npmx.dev/package/@oxlint/migrate).
 
 ### Run the migration tool
 
@@ -114,7 +114,7 @@ Long-term - once remaining important rules have been added in Oxlint - we strong
 
 If your project uses ESLint v8.x with legacy config files (such as `.eslintrc.js` or `.eslintrc.json`), they cannot be migrated automatically by `@oxlint/migrate`.
 
-In some cases, you can [migrate them automatically to an ESLint flat config with `@eslint/migrate-config`](https://www.npmjs.com/package/@eslint/migrate-config) first, and _then_ to Oxlint using `@oxlint/migrate`.
+In some cases, you can [migrate them automatically to an ESLint flat config with `@eslint/migrate-config`](https://npmx.dev/package/@eslint/migrate-config) first, and _then_ to Oxlint using `@oxlint/migrate`.
 
 The "legacy" ESLint v8.x configuration file shape maps closely to Oxlint’s config format, so for simple setups most rules and options can be translated directly.
 

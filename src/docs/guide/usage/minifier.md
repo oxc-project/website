@@ -44,5 +44,5 @@ Rust usage example can be found [here](https://github.com/oxc-project/oxc/blob/m
 <!-- Links -->
 
 [url-oxc-crate]: https://docs.rs/oxc
-[url-oxc-minify-npm]: https://www.npmjs.com/package/oxc-minify
+[url-oxc-minify-npm]: https://npmx.dev/package/oxc-minify
 [url-rolldown]: https://rolldown.rs
