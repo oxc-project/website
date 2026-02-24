@@ -43,9 +43,9 @@ A configuration file is a JSON object. The most common top-level fields are:
 - `singleQuote`: Use single quotes (default: false)
 - `trailingComma`: Trailing commas in multi-line structures (default: "all")
 - `ignorePatterns`: Glob patterns to exclude from formatting
-- `experimentalSortImports`: Configure import sorting (disabled by default)
-- `experimentalSortPackageJson`: Configure package.json sorting (enabled by default)
-- `experimentalTailwindcss`: Configure Tailwind class sorting (disabled by default)
+- `sortImports`: Configure import sorting (disabled by default)
+- `sortTailwindcss`: Configure Tailwind class sorting (disabled by default)
+- `sortPackageJson`: Configure package.json sorting (enabled by default)
 
 For a complete list of fields, see the [Config file reference](./config-file-reference).
 
