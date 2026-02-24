@@ -8,7 +8,7 @@ description: Control which files Oxlint lints.
 Large repositories contain files that should not be linted, such as build output, vendored code, snapshots, or generated artifacts. Oxlint provides a predictable ignore model that works well in monorepos and CI.
 
 > [!TIP]
-> It is strongly recommended to use `"ignorePatterns"` in `.oxlintrc.json` for ignoring files rather than a separate ignore file. This ensures that every developer will have the same ignores across all tools and commands running oxlint, especially IDE/editor integrations. It also keeps your configuration centralized to one file.
+> It is strongly recommended to use `"ignorePatterns"` in your Oxlint config file (`.oxlintrc.json` or `oxlint.config.ts`) for ignoring files rather than a separate ignore file. This ensures that every developer will have the same ignores across all tools and commands running Oxlint, especially IDE/editor integrations. It also keeps your configuration centralized to one file.
 
 ## Default ignores
 
@@ -22,7 +22,7 @@ Hidden files are not automatically ignored.
 
 ## `ignorePatterns`
 
-The recommended approach is to define ignores in `.oxlintrc.json` using `ignorePatterns`. This keeps ignores close to the configuration they belong to and works naturally with nested configs.
+The recommended approach is to define ignores in your config file using `ignorePatterns`. This keeps ignores close to the configuration they belong to and works naturally with nested configs.
 
 Patterns are resolved relative to the configuration file.
 
@@ -39,7 +39,7 @@ In monorepos, nested configs can ignore package specific output without affectin
 
 Oxlint also supports `.eslintignore` for compatibility with existing ESLint setups. Existing `.eslintignore` files can remain in place during migration. The syntax is compatible with `.gitignore`, including comments and negation patterns.
 
-New projects should prefer `"ignorePatterns"` in `.oxlintrc.json`, and we strongly recommend moving over to `"ignorePatterns"` soon after migrating, if not during migration.
+New projects should prefer `"ignorePatterns"` in their config file, and we strongly recommend moving over to `"ignorePatterns"` soon after migrating, if not during migration.
 
 ## Ignore from the command line
 

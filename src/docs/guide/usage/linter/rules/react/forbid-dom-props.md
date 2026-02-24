@@ -45,14 +45,33 @@ Examples of **correct** code for this rule:
 <Hello id={{color: 'red'}} />
 ```
 
-### Options
+## Configuration
 
-#### forbid
+Configuration for the `forbid-dom-props` rule.
 
-An array of strings, with the names of props that are forbidden. The default value of this option [].
-Each array element can either be a string with the property name or object specifying the property name, an optional custom message, and a DOM nodes disallowed list (e.g. <div />)
+This rule accepts a configuration object with the following properties:
 
-`{"propName": "someProp", "disallowedFor": ["DOMNode", "AnotherDOMNode"], "message": "Avoid using someProp" }`
+### forbid
+
+type: `array`
+
+An array of prop names or objects that are forbidden on DOM elements.
+
+Each array element can be a string with the property name, or an object
+with `propName`, an optional `disallowedFor` array of DOM node names,
+and an optional custom `message`.
+
+Examples:
+
+- `["error", { "forbid": ["id", "style"] }]`
+- `["error", { "forbid": [{ "propName": "className", "message": "Use class instead" }] }]`
+- `["error", { "forbid": [{ "propName": "style", "disallowedFor": ["div", "span"] }] }]`
+
+#### forbid[n]
+
+type: `string`
+
+A forbidden prop, either as a plain prop name string or with options.
 
 ## How to use
 

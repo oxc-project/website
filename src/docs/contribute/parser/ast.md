@@ -148,7 +148,7 @@ Common patterns are provided as helpers:
 
 ```rust
 impl<'a> AstBuilder<'a> {
-    pub fn expression_number_literal(&self, span: Span, value: f64) -> Expression<'a> {
+    pub fn expression_numeric_literal(&self, span: Span, value: f64) -> Expression<'a> {
         self.alloc(Expression::NumericLiteral(
             self.alloc(NumericLiteral { span, value, raw: None })
         ))

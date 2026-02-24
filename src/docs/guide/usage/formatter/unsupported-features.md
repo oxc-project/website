@@ -20,14 +20,18 @@ Note: Default `printWidth` is `100` (Prettier uses `80`).
 
 Not supported. However, Oxfmt provides built-in alternatives:
 
-- `experimentalSortImports`
+- `sortImports`
   - Based on `eslint-plugin-perfectionist/sort-imports`
   - Disabled by default
-- `experimentalSortPackageJson`
-  - Based on `prettier-plugin-packagejson`
-  - Enabled by default
-- `experimentalTailwindcss`
+- `sortTailwindcss`
   - Based on `prettier-plugin-tailwindcss`
   - Disabled by default
+- `sortPackageJson`
+  - Based on `prettier-plugin-packagejson`
+  - Enabled by default
 
 See [Configuration file reference](./config-file-reference) for details.
+
+## Bun Runtime
+
+https://github.com/oven-sh/bun/issues/25658 to be fixed.

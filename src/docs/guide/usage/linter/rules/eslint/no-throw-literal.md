@@ -19,6 +19,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 Disallows throwing literals or non-Error objects as exceptions.
 
+::: warning
+This rule has been deprecated, please instead use [typescript/only-throw-error](https://oxc.rs/docs/guide/usage/linter/rules/typescript/only-throw-error.html).
+The typescript rule is more reliable than the Javascript version, as it has less false positive, and can catch more cases.
+:::
+
 ### Why is this bad?
 
 It is considered good practice to only throw the Error object itself or an object using

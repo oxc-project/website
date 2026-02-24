@@ -44,15 +44,47 @@ Add scripts to `package.json`:
 
 Format files:
 
-```sh
+::: code-group
+
+```sh [npm]
+npm run fmt
+```
+
+```sh [pnpm]
 pnpm run fmt
 ```
 
+```sh [yarn]
+yarn run fmt
+```
+
+```sh [bun]
+bun run fmt
+```
+
+:::
+
 Check formatting without writing files:
 
-```sh
+::: code-group
+
+```sh [npm]
+npm run fmt:check
+```
+
+```sh [pnpm]
 pnpm run fmt:check
 ```
+
+```sh [yarn]
+yarn run fmt:check
+```
+
+```sh [bun]
+bun run fmt:check
+```
+
+:::
 
 ## Usage
 
@@ -64,7 +96,7 @@ Running `oxfmt` without arguments formats the current directory (equivalent to `
 
 CLI options like `--no-semi` are not supported. Use the configuration file instead to ensure consistent settings across CLI and editor integrations.
 
-Globs in positional paths are not expanded (rely on your shell). However, `!`-prefixed exclude paths support glob expansion.
+To use glob patterns in positional paths, be sure to quote them. Otherwise, they may or may not be expanded depending on your environment.
 
 For the complete list of options, see the [CLI reference](/docs/guide/usage/formatter/cli.html).
 

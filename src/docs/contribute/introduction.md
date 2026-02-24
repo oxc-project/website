@@ -99,5 +99,6 @@ Ready to contribute? Here are some great places to start:
 - 🔍 **Find an Issue**: Browse our [good first issues](https://github.com/oxc-project/oxc/contribute)
 - 💬 **Join the Community**: Connect with us on [Discord](https://discord.gg/9uXCAwqQZW)
 - 🛠️ **Pick a Tool**: Dive into [parser](./parser.md), [linter](./linter.md), [transformer](./transformer.md), or [other tools](./formatter.md)
+- ⚡️ **Open a Pull Request**: Review our [PR Rules and Policies](./rules.md) to get started.
 
 We can't wait to see what you'll build with us! 🚀

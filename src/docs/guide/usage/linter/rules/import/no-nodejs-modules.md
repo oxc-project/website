@@ -47,7 +47,7 @@ var _ = require("lodash");
 var foo = require("foo");
 var foo = require("./foo");
 
-/* eslint import/no-nodejs-modules: ["error", {"allow": ["path"]}] */
+/* import/no-nodejs-modules: ["error", {"allow": ["path"]}] */
 import path from "path";
 ```
 

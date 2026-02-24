@@ -12,59 +12,49 @@ To download the extension, see the [Visual Studio Marketplace](https://marketpla
 
 ## Development
 
-Make sure you setup the `oxc` project with `just init`. Some tools are required for that.
-More information inside the `justfile` located on the root `oxc` project.
-
-After `just init` run `pnpm install` inside `editors/vscode` directory.
+Clone the [oxc-vscode](https://github.com/oxc-project/oxc-vscode) repository and run `pnpm install`.
 
 ## Building and running the extension locally
 
-There are two options for running and testing your changes to the oxc VS Code extension.
+There are two options for running and testing your changes to the Oxc VS Code extension.
 
 **Via command line:**
 
-- Inside `editors/vscode`, run `pnpm build` to compile the vscode extension and build the release version of the language server.
-- Run `pnpm install-extension` to install it on your VS Code Editor.
-- Hit `CTRL` + `SHIFT` + `P` and the search for "Developer: Reload Window".
+- Run `pnpm build` to compile the VS Code extension and build the release version of the language server.
+- Run `pnpm install-extension` to install it into VS Code.
+- Press `Ctrl` + `Shift` + `P` and search for "Developer: Reload Window".
 - You are now able to manually test your changes inside VS Code.
 
 **Via VS Code itself:**
 
-- Open the `oxc` repository in VS Code.
+- Open the `oxc-vscode` repository in VS Code.
 - Go to the "Run and Debug" tab in the left sidebar of your editor.
 - Select the `Launch VS Code Extension` configuration.
-- Hit the green play button at the top.
-- This will build the VS Code extension and launch a new VS Code window with the newly-built VS Code extension installed.
+- Click the green play button at the top.
+- This will build the VS Code extension and launch a new VS Code window with the newly built VS Code extension installed.
 
-### Building Debug Version of Server
+### Testing unreleased versions of `oxlint`/`oxfmt`
 
-Running `pnpm build` will build the release version of the server, This can take some time.
-If you want faster feedback use the follow flow:
+Build the project in the [oxc project](https://github.com/oxc-project/oxc) with:
 
 ```bash
-pnpm compile # transform TS Code
-pnpm server:build:debug # build the debug version of the language server
-pnpm package # package it as VSCode Extension
-pnpm install-extension
+cd apps/oxlint && pnpm build-test
+cd ../oxfmt && pnpm build-test
 ```
 
-Make sure to tell the VSCode Extension to use the debug build with the env variable:
-`SERVER_PATH_DEV="/workspace/editors/vscode/target/debug/oxc_language_server"`.
-
-Or use the Extension Settings with `settings.json`:
+Then configure the VS Code extension to use the local build via the extension settings in `settings.json`:
 
 ```json
 {
-  "oxc.path.oxlint": "./editors/vscode/target/debug/oxc_language_server"
+  "oxc.path.oxlint": "/path/to/oxc/apps/oxlint/dist/cli.js",
+  "oxc.path.oxfmt": "/path/to/oxc/apps/oxfmt/dist/cli.js"
 }
 ```
 
-For Windows, the `oxc_language_server` will be provided with a `exe` extension.
+### Use the output channel
 
-### Use the Output Channel
-
-To understand what the Extension and the Language Server is doing, you can use the `Oxc` Output Channel inside VSCode.
-The get more information use the Extension Setting inside `settings.json`:
+To see what the extension and language server are doing, use the `Oxc` output channel in VS Code.
+To get more information, enable the following extension setting in `settings.json`:
 
 ```json
 {
@@ -72,11 +62,16 @@ The get more information use the Extension Setting inside `settings.json`:
 }
 ```
 
-On `oxc_language_server` you can use the `info!` or `error!` macro to send messages to the output channel.
+In the language server integration for `oxlint`/`oxfmt` (for example, the `oxc_language_server` crate), you can use the `info!` or `error!` macros to send messages to the `Oxc` output channel in VS Code.
 
-### Writing a Test
+### Writing a test
 
-Depending on the changes, you should create a Test for it.
-Tests on the `oxc_language_server` will make sure the (Server)Linter works as expected.
-Write Tests in `vscode` when you want to test changing behavior.
-Example: expecting a lint fix to be applied, when executing a command or code action.
+Depending on your changes, you should create a test.
+Write tests in the VS Code extension only when they are specific to VS Code.
+Tests for LSP communication with the tools should be added in `oxlint/oxfmt` or in the Rust crate `oxc_language_server`.
+
+Example:
+
+- VS Code: status bar changes
+- oxlint: returned diagnostics / code actions
+- oxc_language_server: workspace problems

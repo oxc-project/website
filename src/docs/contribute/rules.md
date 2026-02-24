@@ -1,9 +1,9 @@
 ---
-title: Rules and Policy
+title: PR Rules and Policies
 outline: deep
 ---
 
-# Introduction
+# PR Rules and Policies
 
 ## PR Rules
 

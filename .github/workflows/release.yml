@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Tools
-        uses: taiki-e/install-action@650c5ca14212efbbf3e580844b04bdccf68dac31 # v2.67.18
+        uses: taiki-e/install-action@f92912fad184299a31e22ad070a5059fd07d4f59 # v2.68.7
         with:
           tool: just
 

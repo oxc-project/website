@@ -21,7 +21,7 @@ Disallow usage of unknown DOM properties.
 
 ### Why is this bad?
 
-You can use unknown property name that has no effect.
+DOM properties should only be used if they are valid for a given HTML element.
 
 ### Examples
 

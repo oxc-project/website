@@ -62,13 +62,21 @@ let foo = (bar, baz, qux) => {
 
 This rule accepts a configuration object with the following properties:
 
+### countThis
+
+This option controls when to count a `this` parameter.
+
+- "always": always count `this`
+- "never": never count `this`
+- "except-void": count `this` only when it is not type `void`
+
 ### countVoidThis
 
 type: `boolean`
 
 default: `false`
 
-This option is for counting the `this` parameter if it is of type `void`.
+Deprecated alias for `countThis`.
 
 For example `{ "countVoidThis": true }` would mean that having a function
 take a `this` parameter of type `void` is counted towards the maximum number of parameters.

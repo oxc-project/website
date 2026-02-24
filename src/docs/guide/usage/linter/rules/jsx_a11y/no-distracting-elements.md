@@ -47,6 +47,20 @@ Examples of **correct** code for this rule:
 <Blink />
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### elements
+
+type: `array`
+
+List of distracting elements to check for.
+
+#### elements[n]
+
+type: `"marquee" | "blink"`
+
 ## How to use
 
 To **enable** this rule using the config file or in the CLI, you can use:

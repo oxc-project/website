@@ -39,7 +39,7 @@ export const enConfig = defineLocaleConfig("root", {
           { text: "Learn", link: "/docs/learn/parser_in_rust/intro" },
           { text: "Team", link: "/team" },
           { text: "Releases", link: "https://github.com/oxc-project/oxc/releases" },
-          { text: "Website GitHub", link: "https://github.com/oxc-project/oxc-project.github.io" },
+          { text: "Website GitHub", link: "https://github.com/oxc-project/website" },
         ],
       },
     ],
@@ -360,7 +360,7 @@ export const enConfig = defineLocaleConfig("root", {
         },
         { text: "Debugging", link: "/docs/contribute/debugging" },
         { text: "Profiling", link: "/docs/contribute/profiling" },
-        { text: "Rules and Policy", link: "/docs/contribute/rules" },
+        { text: "PR Rules and Policies", link: "/docs/contribute/rules" },
         { text: "Security Policy", link: "/docs/contribute/security" },
       ],
       "/blog/": BLOG_SIDEBAR,
@@ -369,7 +369,19 @@ export const enConfig = defineLocaleConfig("root", {
       level: [2, 3],
     },
     editLink: {
-      pattern: "https://github.com/oxc-project/oxc-project.github.io/edit/main/src/:path",
+      pattern({ filePath }) {
+        // Auto-generated rule pages should link to the Rust source in the oxc repo
+        const m = filePath.match(
+          /^docs\/guide\/usage\/linter\/rules\/(?<plugin>[^/]+)\/(?<rule>[^/]+)\.md$/,
+        );
+        if (m) {
+          const plugin = m.groups!.plugin;
+          const rule = m.groups!.rule.replaceAll("-", "_");
+          return `https://github.com/oxc-project/oxc/edit/main/crates/oxc_linter/src/rules/${plugin}/${rule}.rs`;
+        }
+
+        return `https://github.com/oxc-project/website/edit/main/src/${filePath}`;
+      },
       text: "Suggest changes to this page",
     },
   },

@@ -44,15 +44,47 @@ Add lint commands to `package.json`:
 
 Run it:
 
-```sh
+::: code-group
+
+```sh [npm]
+npm run lint
+```
+
+```sh [pnpm]
 pnpm run lint
 ```
 
+```sh [yarn]
+yarn run lint
+```
+
+```sh [bun]
+bun run lint
+```
+
+:::
+
 Apply fixes:
 
-```sh
+::: code-group
+
+```sh [npm]
+npm run lint:fix
+```
+
+```sh [pnpm]
 pnpm run lint:fix
 ```
+
+```sh [yarn]
+yarn run lint:fix
+```
+
+```sh [bun]
+bun run lint:fix
+```
+
+:::
 
 ## Usage
 
@@ -68,13 +100,41 @@ If `PATH` is omitted, Oxlint lints the current working directory.
 
 ### Pre-commit with [lint-staged](https://github.com/lint-staged/lint-staged)
 
-```json [package.json]
+::: code-group
+
+```json [npm]
+{
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "npm run lint"
+  }
+}
+```
+
+```json [pnpm]
 {
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
   }
 }
 ```
+
+```json [yarn]
+{
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "yarn run lint"
+  }
+}
+```
+
+```json [bun]
+{
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "bun run lint"
+  }
+}
+```
+
+:::
 
 ### Create a config file
 
@@ -83,6 +143,10 @@ Initialize the `.oxlintrc.json` config with default values:
 ```sh
 oxlint --init
 ```
+
+Then customize `.oxlintrc.json` as needed. See [Configuration](/docs/guide/usage/linter/config).
+
+Alternatively, Oxlint supports a TypeScript config file named `oxlint.config.ts`. See [Configuration](/docs/guide/usage/linter/config#typescript-config) for details.
 
 Then run Oxlint:
 

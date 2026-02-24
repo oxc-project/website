@@ -73,18 +73,6 @@ const bool = Boolean(x || y);
 
 This rule accepts a configuration object with the following properties:
 
-### allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing
-
-type: `boolean`
-
-default: `false`
-
-Unless this is set to `true`, the rule will error on every file whose
-`tsconfig.json` does _not_ have the `strictNullChecks` compiler option
-(or `strict`) set to `true`.
-
-It is _not_ recommended to enable this config option.
-
 ### ignoreBooleanCoercion
 
 type: `boolean`
