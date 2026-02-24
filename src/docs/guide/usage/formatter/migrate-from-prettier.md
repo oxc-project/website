@@ -3,7 +3,7 @@
 This guide covers migrating from Prettier to Oxfmt.
 
 :::warning
-Oxfmt is in alpha and may not suit complex setups.
+Oxfmt is in beta and may not suit particularly complex setups.
 :::
 
 ## Quick start
