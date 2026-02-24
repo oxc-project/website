@@ -13,6 +13,8 @@ We are thrilled to announce that Oxfmt has reached beta! Since the [alpha releas
 
 Oxfmt is a Rust-powered, Prettier-compatible code formatter for the JavaScript ecosystem.
 
+Oxfmt is more than 30× faster than Prettier and 3× faster than Biome on an initial run without a cache ([**benchmark**](https://github.com/oxc-project/bench-formatter)).
+
 ## Getting Started
 
 Install `oxfmt` as a dev dependency:
