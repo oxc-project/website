@@ -9,11 +9,15 @@ authors:
 
 <AppBlogPostHeader />
 
-We are thrilled to announce that Oxfmt has reached beta! Since the [alpha release](/blog/2025-12-01-oxfmt-alpha) in December, we have added support for additional file formats, embedded language formatting, import sorting, Tailwind CSS integration, and much more.
+We are excited to announce that Oxfmt has reached beta.
 
-Oxfmt is a Rust-powered, Prettier-compatible code formatter for the JavaScript ecosystem.
+Oxfmt is a Rust-powered, Prettier-compatible code formatter built for the JavaScript ecosystem. It is designed to deliver full compatibility with modern tooling while dramatically improving performance.
 
-Oxfmt is more than 30× faster than Prettier and 3× faster than Biome on an initial run without a cache ([**benchmark**](https://github.com/oxc-project/bench-formatter)).
+In independent benchmarks, Oxfmt is more than 30× faster than Prettier and 3× faster than Biome on an initial run without caching. See the full [benchmark](https://github.com/oxc-project/bench-formatter) results.
+
+Since the December alpha release, we have expanded support for additional file formats, added embedded language formatting, introduced import sorting, integrated Tailwind CSS support, and delivered numerous stability and compatibility improvements.
+
+Oxfmt has already seen broad adoption across the ecosystem. Projects using Oxfmt include: [openclaw/openclaw](https://github.com/openclaw/openclaw), [vuejs/core](https://github.com/vuejs/core), [vercel/turborepo](https://github.com/vercel/turborepo), [huggingface/huggingface.js](https://github.com/huggingface/huggingface.js), [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript), [npmx-dev/npmx.dev](https://github.com/npmx-dev/npmx.dev) and many more.
 
 ## Getting Started
 

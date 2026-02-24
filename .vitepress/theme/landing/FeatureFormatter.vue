@@ -3,7 +3,7 @@
     <div class="px-5 py-6 md:p-10 flex flex-col justify-center gap-15">
       <div class="flex flex-col gap-5">
         <span class="text-grey text-xs font-mono uppercase tracking-wide"
-          >Formatter<span class="text-aqua"> (Alpha)</span></span
+          >Formatter<span class="text-aqua"> (Beta)</span></span
         >
         <h4 class="text-white">Oxfmt: Prettier-compatible formatter</h4>
         <p class="text-white/70 text-base max-w-[25rem] text-pretty">
@@ -11,10 +11,10 @@
         </p>
         <ul class="checkmark-list">
           <li>
-            3x faster than <code class="mx-1 outline-none bg-nickel/50 text-aqua">Biome</code>
+            30x faster than <code class="mx-1 outline-none bg-nickel/50 text-aqua">Prettier</code>
           </li>
           <li>
-            35x faster than <code class="mx-1 outline-none bg-nickel/50 text-aqua">Prettier</code>
+            3x faster than <code class="mx-1 outline-none bg-nickel/50 text-aqua">Biome</code>
           </li>
           <li>Tailwind class sorting support</li>
         </ul>
