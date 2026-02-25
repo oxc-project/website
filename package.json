@@ -27,6 +27,7 @@
     "knip": "^5.78.0",
     "lint-staged": "16.2.7",
     "markdown-it-container": "^4.0.0",
+    "markdown-it-task-lists": "^2.1.1",
     "oxc-minify": "^0.115.0",
     "oxfmt": "^0.35.0",
     "oxlint": "^1.35.0",

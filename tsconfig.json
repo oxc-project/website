@@ -15,6 +15,6 @@
       "@data/*": ["./.vitepress/data/*"]
     }
   },
-  "include": ["src/**/*", ".vitepress/**/*"],
+  "include": ["src/**/*", ".vitepress/**/*", "types/**/*.d.ts"],
   "exclude": ["node_modules", "build", ".vitepress/cache"]
 }

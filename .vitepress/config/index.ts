@@ -5,6 +5,7 @@ import { rssConfig } from "./rss";
 import { sharedConfig } from "./shared";
 
 import { extendConfig } from "@voidzero-dev/vitepress-theme/config";
+import taskLists from "markdown-it-task-lists";
 
 export default extendConfig(
   defineConfig({
@@ -13,6 +14,11 @@ export default extendConfig(
     head: [...sharedConfig.head!, ...rssConfig.head!],
     locales: {
       ...enConfig,
+    },
+    markdown: {
+      config(md) {
+        md.use(taskLists);
+      },
     },
   }),
 );
