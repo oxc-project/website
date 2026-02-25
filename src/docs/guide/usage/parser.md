@@ -14,7 +14,7 @@ This is production ready.
 - 3x faster than swc parser ([benchmark][url-benchmark]).
 - Parses `.js(x)` and `.ts(x)`.
 - Passes all parser tests from Test262 and 99% from Babel and TypeScript.
-- Returns ESM information directly, no need for [`es-module-lexer`](https://github.com/guybedford/es-module-lexer).
+- Returns ESM information directly, no need for [`es-module-lexer`](https://npmx.dev/package/es-module-lexer).
 - [✅ works with checker.ts](https://x.com/robpalmer2/status/1805502964435505559)
 
 ## Installation

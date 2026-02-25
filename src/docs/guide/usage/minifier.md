@@ -39,7 +39,7 @@ Rust usage example can be found [here](https://github.com/oxc-project/oxc/blob/m
 
 ## Integrations
 
-- [`unplugin-oxc`](https://github.com/unplugin/unplugin-oxc)
+- [`unplugin-oxc`](https://npmx.dev/package/unplugin-oxc)
 
 <!-- Links -->
 

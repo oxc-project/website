@@ -59,7 +59,7 @@ await fs.writeFile("out.js", transformed.code);
 await fs.writeFile("out.d.ts", transformed.declaration);
 ```
 
-### [`unplugin-isolated-decl`](https://github.com/unplugin/unplugin-isolated-decl)
+### [`unplugin-isolated-decl`](https://npmx.dev/package/unplugin-isolated-decl)
 
 `vue-macros` [uses](https://github.com/vue-macros/vue-macros/blob/4247c7ba9189c630111e058245ce1412c8da9229/tsup.config.ts#L10) `unplugin-isolated-decl` as the integration tool for its esbuild plugin.
 

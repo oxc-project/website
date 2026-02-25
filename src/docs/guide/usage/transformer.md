@@ -24,8 +24,8 @@ Rust usage example can be found [here](https://github.com/oxc-project/oxc/blob/m
 
 ## Integrations
 
-- [`unplugin-oxc`](https://github.com/unplugin/unplugin-oxc)
-- [`unplugin-isolated-decl`](https://github.com/unplugin/unplugin-isolated-decl)
+- [`unplugin-oxc`](https://npmx.dev/package/unplugin-oxc)
+- [`unplugin-isolated-decl`](https://npmx.dev/package/unplugin-isolated-decl)
 
 <!-- Links -->
 

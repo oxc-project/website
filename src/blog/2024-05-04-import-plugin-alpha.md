@@ -7,14 +7,14 @@ authors:
 
 <AppBlogPostHeader />
 
-We are excited to announce an alpha release for `oxlint --import-plugin`, a port of [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import).
+We are excited to announce an alpha release for `oxlint --import-plugin`, a port of [`eslint-plugin-import`](https://npmx.dev/package/eslint-plugin-import).
 
 This port aims to resolve all known issues associated with `eslint-plugin-import`:
 
 - Performance - execution time exceeding one minute when certain rules are enabled
 - Dependency size - 188 dependencies totaling 30M
 - Backwards compatibility - the necessity to [support Node.js v4.0.0](https://github.com/import-js/eslint-plugin-import/pull/2447#issuecomment-1117384140)
-- Dependency compatibility - the need to replace it with [`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x)
+- Dependency compatibility - the need to replace it with [`eslint-plugin-import-x`](https://npmx.dev/package/eslint-plugin-import-x)
 - [Upgrading to ESLint v9](https://github.com/import-js/eslint-plugin-import/issues/2948)
 
 ## What's in the release?

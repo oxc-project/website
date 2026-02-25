@@ -131,7 +131,7 @@ To auto-format staged files, use `oxfmt --no-error-on-unmatched-pattern`. This f
 
 Use `--check` to verify formatting without writing files.
 
-For [lint-staged](https://github.com/lint-staged/lint-staged), add to `package.json`:
+For [lint-staged](https://npmx.dev/package/lint-staged), add to `package.json`:
 
 ```json [package.json]
 {

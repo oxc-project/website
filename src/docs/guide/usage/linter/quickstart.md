@@ -98,7 +98,7 @@ If `PATH` is omitted, Oxlint lints the current working directory.
 
 ## Common workflows
 
-### Pre-commit with [lint-staged](https://github.com/lint-staged/lint-staged)
+### Pre-commit with [lint-staged](https://npmx.dev/package/lint-staged)
 
 ::: code-group
 

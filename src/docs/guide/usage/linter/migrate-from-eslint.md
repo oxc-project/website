@@ -100,7 +100,7 @@ oxlint && eslint
 
 ### Disabling overlapping rules in ESLint
 
-You can use [`eslint-plugin-oxlint`](https://github.com/oxc-project/eslint-plugin-oxlint) to disable ESLint rules that are already handled by Oxlint:
+You can use [`eslint-plugin-oxlint`](https://npmx.dev/package/eslint-plugin-oxlint) to disable ESLint rules that are already handled by Oxlint:
 
 ```bash
 npm install --save-dev eslint-plugin-oxlint

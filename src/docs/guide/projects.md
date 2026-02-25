@@ -28,7 +28,7 @@ outline: deep
 - [swc-node](https://github.com/swc-project/swc-node) - Faster ts-node without typecheck
 - [Biome](https://biomejs.dev) - for loading configuration
 - [turborepo](https://github.com/vercel/turborepo/pull/9134) - for `turbo-trace`
-- [dts-resolver](https://github.com/sxzz/dts-resolver) - Resolves TypeScript declaration files for dependencies
+- [dts-resolver](https://npmx.dev/package/dts-resolver) - Resolves TypeScript declaration files for dependencies
 - [codemod](https://github.com/codemod/codemod) - For module resolution in jssg codemods
 
 ## Parser

@@ -82,7 +82,7 @@ Each source file is linted with the nearest applicable configuration, and you ca
 You can also extend shared configs to keep teams consistent.
 
 For projects already using ESLint, [oxlint-migrate](https://github.com/oxc-project/oxlint-migrate) can be used to migrate an existing ESLint flat-config file to Oxlint.
-Additionally, [eslint-plugin-oxlint](https://github.com/oxc-project/eslint-plugin-oxlint) can disable overlapping ESLint rules while both linters are used together.
+Additionally, [eslint-plugin-oxlint](https://npmx.dev/package/eslint-plugin-oxlint) can disable overlapping ESLint rules while both linters are used together.
 It is recommended to run `oxlint && eslint` to benefit from Oxlint's faster feedback cycle.
 
 For more detailed instructions on how to use Oxlint and integrate it with your project or editor, check out the [installation guide](https://oxc.rs/docs/guide/usage/linter).
