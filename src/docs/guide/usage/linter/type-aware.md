@@ -45,15 +45,44 @@ bun add -D oxlint-tsgolint@latest
 
 ## Running type-aware linting
 
-To run Oxlint with type-aware linting, you must pass the `--type-aware` flag:
+You can enable type-aware linting in either place:
+
+- CLI flag: `--type-aware`
+- Root config: `options.typeAware: true`
+
+CLI:
 
 ```bash
 oxlint --type-aware
 ```
 
+Root config (`.oxlintrc.json`):
+
+```json [.oxlintrc.json]
+{
+  "options": {
+    "typeAware": true
+  }
+}
+```
+
+Root config (`oxlint.config.ts`):
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  options: {
+    typeAware: true,
+  },
+});
+```
+
 When enabled, Oxlint runs standard rules and type-aware rules in the `typescript/*` namespace.
 
-Type-aware linting is opt-in and does not run unless the flag is provided.
+`--type-aware` takes precedence over config files. For example, `oxlint --type-aware -c .oxlintrc.json` enables type-aware linting even if that config sets `options.typeAware` to `false`.
+
+`options.typeAware` is only supported in the root config file. Nested configs should not set this field.
 
 In editor and LSP-based integrations like VS Code, type-aware linting can be enabled by setting the `typeAware` option to `true`, see the [Editors](./editors) page for more information.
 

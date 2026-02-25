@@ -83,8 +83,27 @@ A configuration file is either a JSON object (`.oxlintrc.json`) or a TypeScript 
 - `env`: Enable predefined globals for common environments.
 - `globals`: Declare custom globals as read-only or writable.
 - `settings`: Plugin-wide configuration shared by multiple rules.
+- `options`: Linter-level options (for example, `options.typeAware`).
 
 For a complete list of fields, see the [Config file reference](/docs/guide/usage/linter/config-file-reference.html).
+
+## Configure linter options
+
+Use `options` for linter-level behavior.
+
+Example:
+
+```json [.oxlintrc.json]
+{
+  "options": {
+    "typeAware": true
+  }
+}
+```
+
+`options.typeAware` is equivalent to passing `--type-aware` on the CLI. The CLI flag takes precedence when both are present.
+
+`options.typeAware` is only supported in the root config file.
 
 ## Configure rules
 

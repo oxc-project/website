@@ -46,6 +46,8 @@ Passing an explicit config file location using `-c` or `--config` disables neste
 
 You can also disable nested configs with the `--disable-nested-config` flag.
 
+`options.typeAware` is root-config-only. If it is set in a nested config file, Oxlint reports an error.
+
 ## Monorepo pattern: share a base config with extends
 
 In a monorepo, you often want one shared baseline at the root, and small package specific adjustments.
