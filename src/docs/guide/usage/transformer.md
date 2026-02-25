@@ -26,6 +26,7 @@ Rust usage example can be found [here](https://github.com/oxc-project/oxc/blob/m
 
 - [`unplugin-oxc`](https://npmx.dev/package/unplugin-oxc)
 - [`unplugin-isolated-decl`](https://npmx.dev/package/unplugin-isolated-decl)
+- [`oxc-webpack-loader`](https://npmx.dev/package/oxc-webpack-loader)
 
 <!-- Links -->
 
