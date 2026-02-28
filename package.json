@@ -41,7 +41,7 @@
   "lint-staged": {
     "*": "oxfmt --no-error-on-unmatched-pattern"
   },
-  "packageManager": "pnpm@10.30.0",
+  "packageManager": "pnpm@10.30.2",
   "pnpm": {
     "overrides": {
       "vitepress>vite": "npm:vite@8.0.0-beta.15"
