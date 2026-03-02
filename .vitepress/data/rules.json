@@ -1183,7 +1183,7 @@
     "value": "no-unused-vars",
     "category": "correctness",
     "type_aware": false,
-    "fix": "fixable_dangerous_suggestion",
+    "fix": "conditional_dangerous_fix_or_suggestion",
     "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-vars.html"
   },
@@ -1237,7 +1237,7 @@
     "value": "no-useless-concat",
     "category": "suspicious",
     "type_aware": false,
-    "fix": "none",
+    "fix": "pending",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-concat.html"
   },
@@ -4792,7 +4792,7 @@
     "value": "switch-exhaustiveness-check",
     "category": "pedantic",
     "type_aware": true,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/switch-exhaustiveness-check.html"
   },

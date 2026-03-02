@@ -54,6 +54,12 @@ var Hello = createReactClass({
 });
 ```
 
+## Configuration
+
+This rule accepts one of the following string values:
+
+type: `"allowed" | "disallow-in-func"`
+
 ## How to use
 
 To **enable** this rule using the config file or in the CLI, you can use:

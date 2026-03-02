@@ -128,6 +128,15 @@ data["y"] = 3; // excused because of calculated property access
 
 This rule accepts a configuration object with the following properties:
 
+### checkGeneric
+
+type: `boolean`
+
+default: `true`
+
+Whether to check TypeScript generic type parameter names.
+Defaults to `true`.
+
 ### exceptionPatterns
 
 type: `string[]`
