@@ -1,6 +1,9 @@
 # Inline ignore comments
 
-For JS/TS files, use `oxfmt-ignore` to skip formatting the next statement:
+For JS/TS files, use `oxfmt-ignore` or `prettier-ignore` to skip formatting:
+
+- the next statement / expression, or
+- the current statement / expression when the comment is trailing on the same line.
 
 <!-- prettier-ignore-start -->
 ```js
@@ -14,6 +17,9 @@ const x = () => { return 2; };
   {/* oxfmt-ignore */}
   <span   ugly   format=""   />
 </>;
+
+const config={ retries:10, timeout:5000 }; // oxfmt-ignore
+const data=[1,2,3]; /* prettier-ignore */
 ```
 <!-- prettier-ignore-end -->
 
@@ -23,5 +29,5 @@ Currently, TOML files do not support ignore comments.
 
 ## Prettier compatibility
 
-- `prettier-ignore` comment is also supported
-- Trailing ignore comments in JS/TS files are not supported for performance reasons
+- `prettier-ignore` comments are supported for JS/TS
+- Trailing ignore comments in JS/TS files are supported

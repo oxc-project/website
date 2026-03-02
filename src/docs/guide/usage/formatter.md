@@ -80,6 +80,8 @@ pnpm run fmt:check
 
 - [Quickstart](./formatter/quickstart)
 - [Configuration](./formatter/config)
+- [Ignore files](./formatter/ignore-files)
+- [Inline ignore comments](./formatter/ignore-comments)
 - [Setup editors](./formatter/editors)
 - [Setup CI](./formatter/ci)
 

@@ -136,7 +136,7 @@ See [migrate from prettier](./migrate-from-prettier) for details.
 oxfmt --list-different
 ```
 
-This is useful for configuring [files to ignore](./ignore-files).
+This is useful for configuring [files to ignore](./ignore-files). For per-line and per-node suppression, see [inline ignore comments](./ignore-comments).
 
 ### Piping file contents
 
