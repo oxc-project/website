@@ -82,7 +82,7 @@ When enabled, Oxlint runs standard rules and type-aware rules in the `typescript
 
 `--type-aware` takes precedence over config files. For example, `oxlint --type-aware -c .oxlintrc.json` enables type-aware linting even if that config sets `options.typeAware` to `false`.
 
-`options.typeAware` is only supported in the root config file. Nested configs should not set this field.
+`options.typeAware` and `options.typeCheck` are only supported in the root config file. Nested configs should not set these fields.
 
 In editor and LSP-based integrations like VS Code, type-aware linting can be enabled by setting the `typeAware` option to `true`, see the [Editors](./editors) page for more information.
 
@@ -108,6 +108,19 @@ Enable type checking to report TypeScript errors alongside lint results:
 ```bash
 oxlint --type-aware --type-check
 ```
+
+Or enable it in the root config:
+
+```json [.oxlintrc.json]
+{
+  "options": {
+    "typeAware": true,
+    "typeCheck": true
+  }
+}
+```
+
+`--type-check` takes precedence over config files. For example, `oxlint --type-check -c .oxlintrc.json` enables type checking even if that config sets `options.typeCheck` to `false`.
 
 This mode can replace a separate `tsc --noEmit` step in CI:
 
