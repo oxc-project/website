@@ -2,10 +2,6 @@
 
 This guide covers migrating from Prettier to Oxfmt.
 
-:::warning
-Oxfmt is in beta and may not suit particularly complex setups.
-:::
-
 ## Quick start
 
 For simple setups, migrate with a single command:

@@ -24,7 +24,7 @@ What's considered a **non-breaking** change:
 
 ## Features Not Subject to Semver
 
-The following features are **experimental** and are not subject to semantic versioning. They may introduce breaking changes at any time, even in patch or minor releases:
+The following features are not subject to semantic versioning. They may introduce breaking changes at any time, even in patch or minor releases:
 
 - **JavaScript custom plugins** - The plugin API and behavior may change without notice.
 - **Type-aware linting** - Type-aware rules and their behavior may change as this feature evolves.

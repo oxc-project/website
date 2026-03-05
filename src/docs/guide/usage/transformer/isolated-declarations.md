@@ -1,6 +1,6 @@
 # Isolated Declarations Emit
 
-Oxc transformer supports emitting TypeScript declarations without using the TypeScript compiler for projects with [isolated declarations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-beta/#isolated-declarations) enabled.
+Oxc transformer supports emitting TypeScript declarations without using the TypeScript compiler for projects with [isolated declarations](https://www.typescriptlang.org/tsconfig/#isolatedDeclarations) enabled.
 
 ## Example
 

@@ -83,23 +83,23 @@ Only default plugins support being disabled. Non-default plugins can simply be o
 
 This table lists the built-in plugins and where they come from.
 
-| Plugin name  | Default | Source                                                                                                                                                           |
-| ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `eslint`     | Yes     | ESLint core rules                                                                                                                                                |
-| `typescript` | Yes     | TypeScript rules from typescript-eslint (aka `@typescript-eslint/plugin`). Type-aware rules are available in alpha using [the type-aware mode](./type-aware.md). |
-| `unicorn`    | Yes     | eslint-plugin-unicorn                                                                                                                                            |
-| `react`      | No      | eslint-plugin-react and eslint-plugin-react-hooks                                                                                                                |
-| `react-perf` | No      | eslint-plugin-react-perf                                                                                                                                         |
-| `nextjs`     | No      | @next/eslint-plugin-next                                                                                                                                         |
-| `oxc`        | Yes     | Oxc-specific rules and selected rules ported from deepscan                                                                                                       |
-| `import`     | No      | eslint-plugin-import (also equivalent to eslint-plugin-import-x)                                                                                                 |
-| `jsdoc`      | No      | eslint-plugin-jsdoc                                                                                                                                              |
-| `jsx-a11y`   | No      | eslint-plugin-jsx-a11y                                                                                                                                           |
-| `node`       | No      | eslint-plugin-n                                                                                                                                                  |
-| `promise`    | No      | eslint-plugin-promise                                                                                                                                            |
-| `jest`       | No      | eslint-plugin-jest                                                                                                                                               |
-| `vitest`     | No      | @vitest/eslint-plugin aka eslint-plugin-vitest                                                                                                                   |
-| `vue`        | No      | eslint-plugin-vue rules that work with script tags                                                                                                               |
+| Plugin name  | Default | Source                                                                                                                                                  |
+| ------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `eslint`     | Yes     | ESLint core rules                                                                                                                                       |
+| `typescript` | Yes     | TypeScript rules from typescript-eslint (aka `@typescript-eslint/plugin`). Type-aware rules are available using [the type-aware mode](./type-aware.md). |
+| `unicorn`    | Yes     | eslint-plugin-unicorn                                                                                                                                   |
+| `react`      | No      | eslint-plugin-react and eslint-plugin-react-hooks                                                                                                       |
+| `react-perf` | No      | eslint-plugin-react-perf                                                                                                                                |
+| `nextjs`     | No      | @next/eslint-plugin-next                                                                                                                                |
+| `oxc`        | Yes     | Oxc-specific rules and selected rules ported from deepscan                                                                                              |
+| `import`     | No      | eslint-plugin-import (also equivalent to eslint-plugin-import-x)                                                                                        |
+| `jsdoc`      | No      | eslint-plugin-jsdoc                                                                                                                                     |
+| `jsx-a11y`   | No      | eslint-plugin-jsx-a11y                                                                                                                                  |
+| `node`       | No      | eslint-plugin-n                                                                                                                                         |
+| `promise`    | No      | eslint-plugin-promise                                                                                                                                   |
+| `jest`       | No      | eslint-plugin-jest                                                                                                                                      |
+| `vitest`     | No      | @vitest/eslint-plugin aka eslint-plugin-vitest                                                                                                          |
+| `vue`        | No      | eslint-plugin-vue rules that work with script tags                                                                                                      |
 
 For the current status of rule coverage, see the linter [product plan issue](https://github.com/oxc-project/oxc/issues/481).
 

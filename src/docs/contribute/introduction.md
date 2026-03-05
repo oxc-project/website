@@ -59,7 +59,7 @@ Oxc is organized into several crates:
 - **`oxc_linter`**: Fast linting engine with 650+ rules
 - **`oxc_transformer`**: TypeScript and JSX transformation
 - **`oxc_minifier`**: JavaScript minification (in development)
-- **`oxc_formatter`**: Code formatting, compatible with Prettier (in alpha)
+- **`oxc_formatter`**: Code formatting, compatible with Prettier
 
 ### Your First Contribution
 
