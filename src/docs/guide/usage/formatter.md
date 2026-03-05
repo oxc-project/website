@@ -41,7 +41,7 @@ The `oxfmt` CLI behaves similarly to Prettier by default, allowing adoption with
 
 Oxfmt matches Prettier’s JavaScript formatting. When migrating from recent versions of Prettier, formatting differences should not occur; any differences are considered bugs.
 
-Oxfmt currently passes approximately 95% of Prettier's JavaScript and TypeScript test suite. The remaining cases are niche scenarios, and we work with the Prettier team to converge on formatting over time.
+Oxfmt now passes 100% of Prettier's JavaScript and TypeScript conformance tests. For any remaining formatting inconsistencies, we have [reported them to the Prettier team](https://github.com/oxc-project/oxc/issues/18717) and are collaborating to converge on expected behavior.
 
 No additional dependencies or configuration needed.
 
