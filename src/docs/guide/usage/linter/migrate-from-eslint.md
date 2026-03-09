@@ -16,6 +16,16 @@ When migrating, expect the following:
 - Oxlint is designed for incremental adoption; a full migration is not required upfront
 - Oxlint's JS Plugins allow usage of ESLint plugins that are not implemented natively by Oxlint
 
+## Migrate with Skills
+
+You can migrate interactively using the [`migrate-oxlint`](https://skills.sh/oxc-project/oxc/migrate-oxlint) skill:
+
+```bash
+npx skills add https://github.com/oxc-project/oxc --skill migrate-oxlint
+```
+
+Once installed, run `/migrate-oxlint` and the agent will walk you through the full migration.
+
 ## Migrating from an ESLint flat config
 
 If your project uses an ESLint v9/v10 flat config (e.g. `eslint.config.js` or `eslint.config.mjs`), you can migrate automatically using [`@oxlint/migrate`](https://npmx.dev/package/@oxlint/migrate).
