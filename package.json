@@ -28,7 +28,7 @@
     "lint-staged": "16.3.2",
     "markdown-it-container": "^4.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "oxc-minify": "^0.116.0",
+    "oxc-minify": "^0.117.0",
     "oxfmt": "^0.36.0",
     "oxlint": "^1.51.0",
     "oxlint-tsgolint": "^0.16.0",
