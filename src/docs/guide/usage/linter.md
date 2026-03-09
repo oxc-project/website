@@ -65,7 +65,7 @@ When enabled, Oxlint builds a project-wide module graph and shares parsing and r
 
 See: [Multi-file analysis](/docs/guide/usage/linter/multi-file-analysis.md)
 
-## Human *and* AI-friendly diagnostics
+## Human _and_ AI-friendly diagnostics
 
 Oxlint diagnostics are designed to be both human-readable and machine-actionable.
 
