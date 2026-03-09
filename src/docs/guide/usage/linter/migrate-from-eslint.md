@@ -6,7 +6,7 @@ This guide is for existing JavaScript and TypeScript projects that currently use
 
 Oxlint and ESLint share similar configuration concepts, but they differ in supported rules and config formats.
 
-Oxlint already supports more than 600 rules from ESLint core and various popular plugins. We intend to support nearly all existing ESLint core rules, and this work is ongoing.
+Oxlint already supports more than 650 rules from ESLint core and various popular plugins. We intend to support nearly all existing ESLint core rules, and this work is ongoing.
 
 When migrating, expect the following:
 
