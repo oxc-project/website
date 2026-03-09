@@ -37,6 +37,7 @@ Since the first technical preview, we have:
 
 - Implemented almost the entirety of ESLint's plugin API.
 - Added support for plugins written in TypeScript.
+- Added support for auto-fixes and suggestions.
 - Linked JS plugins into the language server, for immediate feedback in your IDE.
 - Greatly improved performance.
 
