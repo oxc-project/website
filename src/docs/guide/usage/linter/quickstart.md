@@ -232,7 +232,7 @@ Select an output format:
 oxlint -f json
 ```
 
-Available formats include: `default`, `json`, `unix`, `checkstyle`, `github`, `gitlab`, `junit`, `stylish`.
+Available formats include: `default`, `json`, `unix`, `checkstyle`, `github`, `gitlab`, `junit`, and `stylish`. See [Output formats](/docs/guide/usage/linter/output-formats) for more info.
 
 ### Inspect the effective configuration
 
@@ -244,7 +244,7 @@ oxlint --print-config path/to/file.ts
 
 ### List available rules
 
-List registered rules, including those enabled by your current oxlint config:
+List registered rules, including those enabled by your current Oxlint config:
 
 ```sh
 oxlint --rules
