@@ -8,16 +8,16 @@ const fixEmoji = (fix: string) => {
       return "💡";
     case "fixable_dangerous_fix":
     case "conditional_dangerous_fix":
-      return "⚠️🛠️";
+      return "⚠️ 🛠️";
     case "fixable_dangerous_suggestion":
     case "conditional_dangerous_suggestion":
-      return "⚠️💡";
+      return "⚠️ 💡";
     case "conditional_safe_fix_or_suggestion":
     case "fixable_safe_fix_or_suggestion":
-      return "🛠️💡";
+      return "🛠️ 💡";
     case "fixable_dangerous_fix_or_suggestion":
     case "conditional_dangerous_fix_or_suggestion":
-      return "⚠️🛠️💡";
+      return "⚠️ 🛠 💡";
     case "pending":
       return "🚧";
     case "none":

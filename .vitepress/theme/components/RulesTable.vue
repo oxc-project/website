@@ -1,27 +1,8 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 // Import the generated rules data
 import rules from "@data/rules.json" with { type: "json" };
 import fixEmoji from "./utils/fixEmoji";
-
-// Filters
-const categoryFilter = ref("all");
-const scopeFilter = ref("all");
-const includeTypeAware = ref(true);
-const hasFixOnly = ref(false);
-
-// Sorting
-const sortColumn = ref<"name" | "source" | "category" | "default" | "fix">("name");
-const sortDirection = ref<"asc" | "desc">("asc");
-
-const toggleSort = (column: "name" | "source" | "category" | "default" | "fix") => {
-  if (sortColumn.value === column) {
-    sortDirection.value = sortDirection.value === "asc" ? "desc" : "asc";
-  } else {
-    sortColumn.value = column;
-    sortDirection.value = "asc";
-  }
-};
 
 // Derive available filter options
 const categories = computed(() => {
@@ -34,12 +15,91 @@ const scopes = computed(() => {
   return Array.from(set).sort((a, b) => a.localeCompare(b));
 });
 
+// Sorting and filtering state
+type SortColumn = "name" | "source" | "category" | "default" | "fix";
+type SortDirection = "asc" | "desc";
+
+const allowedColumns = new Set(["name", "source", "category", "default", "fix"]);
+const allowedDirs = new Set(["asc", "desc"]);
+
+const sortColumn = ref<SortColumn>("name");
+const sortDirection = ref<SortDirection>("asc");
+const categoryFilter = ref("all");
+const scopeFilter = ref("all");
+const includeTypeAware = ref(true);
+const hasFixOnly = ref(false);
+
+const toggleSort = (column: SortColumn) => {
+  if (sortColumn.value === column) {
+    sortDirection.value = sortDirection.value === "asc" ? "desc" : "asc";
+  } else {
+    sortColumn.value = column;
+    sortDirection.value = "asc";
+  }
+};
+
+const resetFilters = () => {
+  // Workaround for VoidZero base button focus style issue
+  (window.document.activeElement as HTMLButtonElement)?.blur();
+
+  categoryFilter.value = "all";
+  scopeFilter.value = "all";
+  includeTypeAware.value = true;
+  hasFixOnly.value = false;
+};
+
+const handleInitialQueryParams = () => {
+  const params = new URLSearchParams(location.search);
+  const sortKey = params.get("sort") ?? "name";
+  const directionKey = params.get("dir") ?? "asc";
+  const categoryKey = params.get("category") ?? "all";
+  const scopeKey = params.get("scope") ?? "all";
+
+  if (sortKey && allowedColumns.has(sortKey)) {
+    sortColumn.value = sortKey as SortColumn;
+  }
+
+  if (directionKey && allowedDirs.has(directionKey)) {
+    sortDirection.value = directionKey as SortDirection;
+  }
+
+  if (categoryKey && categories.value.includes(categoryKey)) {
+    categoryFilter.value = categoryKey;
+  }
+
+  if (scopeKey && scopes.value.includes(scopeKey)) {
+    scopeFilter.value = scopeKey;
+  }
+};
+
+handleInitialQueryParams();
+
+watch([sortColumn, sortDirection, categoryFilter, scopeFilter], () => {
+  const params = new URLSearchParams(location.search);
+  params.set("sort", sortColumn.value);
+  params.set("dir", sortDirection.value);
+
+  if (categoryFilter.value !== "all") {
+    params.set("category", categoryFilter.value);
+  } else {
+    params.delete("category");
+  }
+
+  if (scopeFilter.value !== "all") {
+    params.set("scope", scopeFilter.value);
+  } else {
+    params.delete("scope");
+  }
+
+  const searchParams = params.toString();
+  const url = location.pathname + (searchParams ? `?${searchParams}` : "") + location.hash;
+
+  history.replaceState(null, "", url);
+});
+
 // Helpers
 const hasFix = (fix: string) => {
-  if (fix === "none" || fix === "pending") {
-    return false;
-  }
-  return true;
+  return !(fix === "none" || fix === "pending");
 };
 
 const fixTitle = (fix: string) => {
@@ -150,16 +210,7 @@ const pluginDisplayNames: Record<string, string> = {
 </script>
 
 <template>
-  <div
-    class="rules-controls"
-    style="
-      margin: 1rem 0;
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      align-items: end;
-    "
-  >
+  <div class="rules-controls">
     <div>
       <label for="categoryFilter"><strong>Category</strong></label>
       <select id="categoryFilter" v-model="categoryFilter">
@@ -179,16 +230,18 @@ const pluginDisplayNames: Record<string, string> = {
       </select>
     </div>
 
-    <div>
-      <label style="display: flex; gap: 0.5rem; align-items: center">
-        <input type="checkbox" v-model="includeTypeAware" />
-        Include type-aware rules
-      </label>
-      <label style="display: flex; gap: 0.5rem; align-items: center; margin-top: 0.25rem">
-        <input type="checkbox" v-model="hasFixOnly" />
-        Has fix available
-      </label>
-    </div>
+    <button type="button" class="button" @click="resetFilters">Reset filters</button>
+  </div>
+
+  <div class="rules-checkboxes">
+    <label>
+      <input type="checkbox" v-model="includeTypeAware" />
+      Include type-aware rules
+    </label>
+    <label>
+      <input type="checkbox" v-model="hasFixOnly" />
+      Has fix available
+    </label>
   </div>
 
   <table>
@@ -264,9 +317,9 @@ const pluginDisplayNames: Record<string, string> = {
         </td>
         <td>{{ pluginDisplayNames[r.scope] || r.scope }}</td>
         <td>{{ r.category }}</td>
-        <td v-if="r.default"><span title="Default enabled">✅</span></td>
+        <td style="text-align: center" v-if="r.default"><span title="Default enabled">✅</span></td>
         <td v-else></td>
-        <td :title="fixTitle(r.fix)">{{ fixEmoji(r.fix) }}</td>
+        <td style="text-align: center" :title="fixTitle(r.fix)">{{ fixEmoji(r.fix) }}</td>
       </tr>
       <tr v-if="filteredAndSorted.length === 0">
         <td colspan="5" style="opacity: 0.7">No rules match current filters.</td>
@@ -304,6 +357,35 @@ select:focus {
 input[type="checkbox"]:focus {
   outline: 1px solid var(--vp-c-brand-1);
   outline-offset: 1px;
+}
+
+.rules-controls {
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr) auto;
+  align-items: end;
+}
+
+@media (width <= 640px) {
+  .rules-controls {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+}
+
+.rules-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.75rem;
+  align-items: center;
+}
+
+.rules-checkboxes label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
 }
 
 .sortable {
