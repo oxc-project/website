@@ -119,7 +119,7 @@ A rule value is either:
 - a severity (`"off"`, `"warn"`, `"error"`), or
 - an array of `[severity, options]`
 
-If a rule name is unique, you can configure it without a plugin prefix. For example, `no-console` is the same as `eslint/no-console`.
+If a rule is from ESLint core and its name is unique, you can configure it without a plugin prefix. For example, `no-console` is the same as `eslint/no-console`.
 
 ```json [.oxlintrc.json]
 {
