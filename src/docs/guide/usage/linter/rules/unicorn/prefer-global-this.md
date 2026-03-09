@@ -19,15 +19,17 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 Enforces the use of [`globalThis`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis) instead of
 environment‑specific global object aliases (`window`, `self`, or `global`).
+
 Using the standard `globalThis` makes your code portable across browsers, Web Workers, Node.js,
 and future JavaScript runtimes.
 
 ### Why is this bad?
 
-• **Portability** – `window` is only defined in browser main threads, `self` is used in Web Workers,
+**Portability** – `window` is only defined in browser main threads, `self` is used in Web Workers,
 and `global` is Node‑specific. Choosing the wrong alias causes runtime crashes when the code is
 executed outside of its original environment.
-• **Clarity** – `globalThis` clearly communicates that you are referring to the global object itself
+
+**Clarity** – `globalThis` clearly communicates that you are referring to the global object itself
 rather than a particular platform.
 
 ### Examples

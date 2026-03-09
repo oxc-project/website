@@ -17,9 +17,13 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce explicitly comparing the length or size property of a value.
+Enforce explicitly comparing the `length` or `size` property of a value.
 
 ### Why is this bad?
+
+Using the explicit `length` or `size` properties can help make code clearer
+and easier to understand, as it avoids relying on implicit truthy/falsy
+evaluations.
 
 ### Examples
 
@@ -41,6 +45,11 @@ Examples of **correct** code for this rule:
 
 ```javascript
 const isEmpty = foo.length === 0;
+
+if (foo.length > 0 || bar.length > 0) {
+}
+
+const unicorn = foo.length > 0 ? 1 : 2;
 ```
 
 ## Configuration

@@ -17,11 +17,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows useless default cases in switch statements.
+Disallows useless `default` cases in `switch` statements.
 
 ### Why is this bad?
 
-An empty case before the last default case is useless.
+An empty case before the last `default` case is useless, as the
+`default` case will catch it regardless.
 
 ### Examples
 

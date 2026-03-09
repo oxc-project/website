@@ -17,11 +17,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow classes that only have static members.
+Disallow `class` declarations that exclusively contain `static` members.
 
 ### Why is this bad?
 
-A class with only static members could just be an object instead.
+A `class` with only `static` members should just be defined as an object instead.
 
 ### Examples
 

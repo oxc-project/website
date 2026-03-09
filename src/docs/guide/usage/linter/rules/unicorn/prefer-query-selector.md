@@ -17,7 +17,8 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()`.
+Prefer `.querySelector()` over `.getElementById()`. And prefer `.querySelectorAll()`
+over `.getElementsByClassName()`, `.getElementsByTagName()`, and `.getElementsByName()`.
 
 ### Why is this bad?
 
@@ -33,6 +34,7 @@ document.getElementById("foo");
 document.getElementsByClassName("foo bar");
 document.getElementsByTagName("main");
 document.getElementsByClassName(fn());
+document.getElementsByName("foo");
 ```
 
 Examples of **correct** code for this rule:

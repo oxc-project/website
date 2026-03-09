@@ -386,7 +386,11 @@ by including a `{ "newlinesBetween": boolean }` marker object in the `groups` li
 
 ####### overrides[n].options.sortImports.groups[n]
 
-type: `array | string`
+type: `object | array | string`
+
+######## overrides[n].options.sortImports.groups[n].newlinesBetween
+
+type: `boolean`
 
 ###### overrides[n].options.sortImports.ignoreCase
 
@@ -771,7 +775,11 @@ by including a `{ "newlinesBetween": boolean }` marker object in the `groups` li
 
 #### sortImports.groups[n]
 
-type: `array | string`
+type: `object | array | string`
+
+##### sortImports.groups[n].newlinesBetween
+
+type: `boolean`
 
 ### sortImports.ignoreCase
 

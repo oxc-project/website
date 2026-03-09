@@ -1246,7 +1246,7 @@
     "value": "no-useless-constructor",
     "category": "suspicious",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-constructor.html"
   },
@@ -4384,6 +4384,15 @@
   },
   {
     "scope": "typescript",
+    "value": "no-unnecessary-type-conversion",
+    "category": "nursery",
+    "type_aware": true,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-conversion.html"
+  },
+  {
+    "scope": "typescript",
     "value": "no-unnecessary-type-parameters",
     "category": "nursery",
     "type_aware": true,
@@ -5809,7 +5818,7 @@
     "value": "prefer-string-slice",
     "category": "pedantic",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-slice.html"
   },

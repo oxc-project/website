@@ -109,13 +109,45 @@ logical expression (with `&&`).
 
 ### ignorePrimitives
 
-type: `boolean`
+type: `object | boolean`
 
 Represents the different ways `ignorePrimitives` can be specified in JSON.
 Can be:
 
 - `true` - ignore all primitive types
 - An object specifying which primitives to ignore
+
+#### ignorePrimitives.bigint
+
+type: `boolean`
+
+default: `false`
+
+Ignore bigint primitive types.
+
+#### ignorePrimitives.boolean
+
+type: `boolean`
+
+default: `false`
+
+Ignore boolean primitive types.
+
+#### ignorePrimitives.number
+
+type: `boolean`
+
+default: `false`
+
+Ignore number primitive types.
+
+#### ignorePrimitives.string
+
+type: `boolean`
+
+default: `false`
+
+Ignore string primitive types.
 
 ### ignoreTernaryTests
 

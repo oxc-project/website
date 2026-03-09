@@ -17,12 +17,16 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce maximum number of props in Vue component.
+Enforce a maximum number of props defined for a given Vue component.
 
 ### Why is this bad?
 
-This rule enforces a maximum number of props in a Vue SFC,
-in order to aid in maintainability and reduce complexity.
+A large number of props on a component can indicate that it is trying
+to do too much and may be difficult to maintain or understand.
+
+By limiting the number of props, developers are encouraged to avoid
+overly complex components and instead create smaller, more focused
+components that are easier to reason about.
 
 ### Examples
 
@@ -57,7 +61,7 @@ type: `integer`
 
 default: `1`
 
-The maximum number of props allowed in a Vue Single File Component (SFC).
+The maximum number of props allowed in a Vue SFC.
 
 ## How to use
 

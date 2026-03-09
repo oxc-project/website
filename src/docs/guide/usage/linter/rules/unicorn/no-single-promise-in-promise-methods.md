@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow passing single-element arrays to Promise methods
+Disallow passing single-element arrays to `Promise` methods.
 
 ### Why is this bad?
 

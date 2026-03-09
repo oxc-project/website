@@ -17,12 +17,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow `then` property
+Disallow defining a `then` property.
 
 ### Why is this bad?
 
 If an object is defined as "thenable", once it's accidentally
-used in an await expression, it may cause problems:
+used in an `await` expression, it may cause problems.
 
 ### Examples
 
@@ -37,7 +37,7 @@ async function example() {
 
   const { unicorn } = await foo;
 
-  console.log("after"); //<- This will never execute
+  console.log("after"); // <- This will never execute
 }
 ```
 

@@ -69,9 +69,29 @@ Examples:
 
 #### forbid[n]
 
-type: `string`
+type: `object | string`
 
 A forbidden prop, either as a plain prop name string or with options.
+
+##### forbid[n].disallowedFor
+
+type: `string[]`
+
+A list of DOM element names (e.g. `["div", "span"]`) on which this
+prop is forbidden. If empty or omitted, the prop is forbidden on all
+DOM elements.
+
+##### forbid[n].message
+
+type: `string`
+
+A custom message to display when this prop is used.
+
+##### forbid[n].propName
+
+type: `string`
+
+The name of the prop to forbid.
 
 ## How to use
 

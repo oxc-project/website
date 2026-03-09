@@ -35,7 +35,7 @@ Given
 ```javascript
 // foo.js
 export default "foo";
-export const bar = "baz";
+export const bar = true;
 ```
 
 Examples of **incorrect** code for this rule:
@@ -51,6 +51,16 @@ Examples of **correct** code for this rule:
 // Valid: correctly importing default export with a non-conflicting name.
 import foo from "./foo.js";
 ```
+
+### Differences compared to `eslint-plugin-import`
+
+If you see differences between this rule implementation and the original `eslint-plugin-import`
+rule, please note that the behavior may differ in certain cases due to differences in how
+module resolution is implemented and configured.
+
+For example, the original rule may require additional resolver configuration to handle certain
+imports, especially when TypeScript paths are used or in monorepo setups with multiple
+`tsconfig.json` files.
 
 ## How to use
 

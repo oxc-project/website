@@ -17,12 +17,16 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforces the use of [`KeyboardEvent#key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) over [`KeyboardEvent#keyCode`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode) which is deprecated.
+Enforces the use of [`KeyboardEvent#key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
+over [`KeyboardEvent#keyCode`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode),
+which is deprecated.
+
 The `.key` property is also more semantic and readable.
 
 ### Why is this bad?
 
-The `keyCode`, `which`, and `charCode` properties are deprecated and should be avoided in favor of the `key` property.
+The `keyCode`, `which`, and `charCode` properties are deprecated
+and should be avoided in favor of the `key` property.
 
 ### Examples
 
