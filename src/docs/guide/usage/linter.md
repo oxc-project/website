@@ -36,16 +36,16 @@ Oxlint is useful out of the box. By default, it prioritizes high-signal correctn
 
 Additional rules can be enabled incrementally as requirements evolve.
 
-## A large and growing rule set
+## A large ruleset with a focus on compatibility
 
-Oxlint includes [more than {{ ruleCountRounded }} rules](/docs/guide/usage/linter/rules.md), with coverage across the plugins most teams already use, including:
+To make migration simple, Oxlint includes [more than {{ ruleCountRounded }} rules](/docs/guide/usage/linter/rules.md), with coverage across the linter plugins most teams already use, including:
 
 - ESLint core rules
-- TypeScript rules
+- TypeScript rules (including type-aware rules)
 - Popular plugins such as React, Jest, Unicorn, and jsx-a11y
-- Custom JS plugins compatible with the ESLint plugin ecosystem
+- Custom [JS plugins](/docs/guide/usage/linter/js-plugins) compatible with the ESLint plugin ecosystem
 
-This breadth makes migration straightforward without sacrificing rule coverage.
+This breadth makes migration straightforward without sacrificing rule coverage. And tooling has been built [to migrate your entire linter config for you](/docs/guide/usage/linter/migrate-from-eslint).
 
 ## Type-aware linting
 
@@ -65,11 +65,11 @@ When enabled, Oxlint builds a project-wide module graph and shares parsing and r
 
 See: [Multi-file analysis](/docs/guide/usage/linter/multi-file-analysis.md)
 
-## AI-friendly diagnostics
+## Human *and* AI-friendly diagnostics
 
 Oxlint diagnostics are designed to be both human-readable and machine-actionable.
 
-In addition to clear messages, diagnostics include structured information such as precise spans and contextual data. This helps AI to understand issues and apply fixes reliably.
+In addition to clear messages, diagnostics include structured information such as precise spans, contextual data, and links to relevant documentation. This helps AI to understand issues and apply fixes reliably.
 
 ## Reliability as a priority
 
@@ -116,7 +116,7 @@ Choose the approach that fits your repository:
 
 - **Replace ESLint (recommended for most projects).** Use Oxlint as your primary linter.
   - Use tooling such as [`@oxlint/migrate`](https://github.com/oxc-project/oxlint-migrate) to migrate your existing ESLint config.
-- **Migrate incrementally (recommended for large repos).** Run Oxlint first, then run ESLint with overlapping rules disabled. This keeps CI fast while you migrate.
+- **Migrate incrementally (recommended for especially large and complex repos).** Run Oxlint first, then run ESLint with overlapping rules disabled. This keeps CI fast while you migrate.
   - Use [`eslint-plugin-oxlint`](https://npmx.dev/package/eslint-plugin-oxlint) to disable overlapping ESLint rules while running both.
   - You can - and should - also use [`@oxlint/migrate`](https://github.com/oxc-project/oxlint-migrate) for this approach as well.
 
