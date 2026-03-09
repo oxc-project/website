@@ -188,7 +188,7 @@ See the [TypeScript migration guide](https://github.com/microsoft/TypeScript/iss
 
 Type-aware linting:
 
-- Rule coverage is incomplete
+- Rule coverage is incomplete (but very close)
 - Very large codebases may encounter high memory usage
 - Performance continues to improve
 
