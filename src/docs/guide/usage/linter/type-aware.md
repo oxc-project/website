@@ -5,9 +5,9 @@ description: Linting with type information.
 
 # Type-Aware Linting
 
-Type-aware linting enables rules that rely on TypeScript’s type system, such as detecting unhandled promises or unsafe assignments. In Oxlint, type-aware linting is provided by [`tsgolint`](https://github.com/oxc-project/tsgolint) and integrated into the Oxlint CLI and configuration system.
+Type-aware linting enables rules that rely on TypeScript’s type system, such as detecting unhandled promises or unsafe assignments. In Oxlint, type-aware linting is provided by [`tsgolint`](https://github.com/oxc-project/tsgolint) and is integrated into the Oxlint CLI and configuration system.
 
-Rule coverage, performance, and compatibility continue to improve.
+Type-aware linting currently supports [59 out of 61](https://github.com/oxc-project/tsgolint/tree/main?tab=readme-ov-file#implemented-rules) type-aware rules from typescript-eslint. Rule coverage, performance, and compatibility continue to improve.
 
 ## Overview
 
