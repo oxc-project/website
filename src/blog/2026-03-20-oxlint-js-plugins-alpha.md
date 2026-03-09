@@ -92,9 +92,9 @@ Or manually create a config file:
 
 ```json [.oxlintrc.json]
 {
-  "jsPlugins": ["eslint-plugin-react-hooks"],
+  "jsPlugins": ["eslint-plugin-testing-library"],
   "rules": {
-    "react-hooks/error-boundaries": "error"
+    "testing-library/no-render-in-lifecycle": "error"
   }
 }
 ```
