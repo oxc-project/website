@@ -42,7 +42,7 @@ To make migration simple, Oxlint includes [more than {{ ruleCountRounded }} rule
 
 - ESLint core rules
 - TypeScript rules (including type-aware rules)
-- Popular plugins such as React, Jest, Unicorn, and jsx-a11y
+- Popular plugins such as React, Jest, Vitest, Import, Unicorn, and jsx-a11y
 - Custom [JS plugins](/docs/guide/usage/linter/js-plugins) compatible with the ESLint plugin ecosystem
 
 This breadth makes migration straightforward without sacrificing rule coverage. And tooling has been built [to migrate your entire linter config for you](/docs/guide/usage/linter/migrate-from-eslint).
