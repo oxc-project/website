@@ -7,8 +7,8 @@
 ### Contributing
 
 ```sh
-pnpm i
-pnpm run dev
+vp i
+vp dev
 ```
 
 ### Source code for the playground

@@ -25,10 +25,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: taiki-e/checkout-action@83ed61bfbe2b8abbb3c66e8b65b1335484c70009 # v1.4.1
-      - uses: oxc-project/setup-node@8958a8e040102244b619c4a94fccb657a44b1c21 # v1.0.6
-      - run: pnpm run lint --format github
-      - run: pnpm run fmt
-      - run: pnpm run knip
+      - uses: voidzero-dev/setup-vp@4a524139920f87f9f7080d3b8545acac019e1852 # v1
+        with:
+          cache: ${{ github.ref_name == 'main' }}
+      - run: vp run lint --format github
+      - run: vp run fmt
+      - run: vp run knip
       - run: git diff --exit-code # Must commit everything
       - uses: crate-ci/typos@631208b7aac2daa8b707f55e7331f9112b0e062d # v1.44.0
         with:
@@ -42,8 +44,10 @@ jobs:
       contents: write
     steps:
       - uses: taiki-e/checkout-action@83ed61bfbe2b8abbb3c66e8b65b1335484c70009 # v1.4.1
-      - uses: oxc-project/setup-node@8958a8e040102244b619c4a94fccb657a44b1c21 # v1.0.6
-      - run: pnpm run build
+      - uses: voidzero-dev/setup-vp@4a524139920f87f9f7080d3b8545acac019e1852 # v1
+        with:
+          cache: ${{ github.ref_name == 'main' }}
+      - run: vp run build
         env:
           REDIRECT: true
       - uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
