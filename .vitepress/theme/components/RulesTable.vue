@@ -54,6 +54,8 @@ const handleInitialQueryParams = () => {
   const directionKey = params.get("dir") ?? "asc";
   const categoryKey = params.get("category") ?? "all";
   const scopeKey = params.get("scope") ?? "all";
+  const typeAwareKey = params.get("type_aware");
+  const hasFixKey = params.get("has_fix");
 
   if (sortKey && allowedColumns.has(sortKey)) {
     sortColumn.value = sortKey as SortColumn;
@@ -70,32 +72,55 @@ const handleInitialQueryParams = () => {
   if (scopeKey && scopes.value.includes(scopeKey)) {
     scopeFilter.value = scopeKey;
   }
+
+  if (typeAwareKey !== null) {
+    includeTypeAware.value = typeAwareKey !== "false";
+  }
+
+  if (hasFixKey !== null) {
+    hasFixOnly.value = hasFixKey === "true";
+  }
 };
 
 handleInitialQueryParams();
 
-watch([sortColumn, sortDirection, categoryFilter, scopeFilter], () => {
-  const params = new URLSearchParams(location.search);
-  params.set("sort", sortColumn.value);
-  params.set("dir", sortDirection.value);
+watch(
+  [sortColumn, sortDirection, categoryFilter, scopeFilter, includeTypeAware, hasFixOnly],
+  () => {
+    const params = new URLSearchParams(location.search);
+    params.set("sort", sortColumn.value);
+    params.set("dir", sortDirection.value);
 
-  if (categoryFilter.value !== "all") {
-    params.set("category", categoryFilter.value);
-  } else {
-    params.delete("category");
-  }
+    if (categoryFilter.value !== "all") {
+      params.set("category", categoryFilter.value);
+    } else {
+      params.delete("category");
+    }
 
-  if (scopeFilter.value !== "all") {
-    params.set("scope", scopeFilter.value);
-  } else {
-    params.delete("scope");
-  }
+    if (scopeFilter.value !== "all") {
+      params.set("scope", scopeFilter.value);
+    } else {
+      params.delete("scope");
+    }
 
-  const searchParams = params.toString();
-  const url = location.pathname + (searchParams ? `?${searchParams}` : "") + location.hash;
+    if (!includeTypeAware.value) {
+      params.set("type_aware", "false");
+    } else {
+      params.delete("type_aware");
+    }
 
-  history.replaceState(null, "", url);
-});
+    if (hasFixOnly.value) {
+      params.set("has_fix", "true");
+    } else {
+      params.delete("has_fix");
+    }
+
+    const searchParams = params.toString();
+    const url = location.pathname + (searchParams ? `?${searchParams}` : "") + location.hash;
+
+    history.replaceState(null, "", url);
+  },
+);
 
 // Helpers
 const hasFix = (fix: string) => {
