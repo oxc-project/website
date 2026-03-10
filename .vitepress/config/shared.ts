@@ -116,10 +116,16 @@ export const sharedConfig = defineConfig({
   themeConfig: {
     variant: "oxc",
 
+    // TEMPORARY CHANGE TO VITE+ ALPHA ANNOUNCEMENT
+    // banner: {
+    //   id: latestBlog.link,
+    //   text: `Announcing ${latestBlog.text}`,
+    //   url: latestBlog.link,
+    // },
     banner: {
-      id: latestBlog.link,
-      text: `Announcing ${latestBlog.text}`,
-      url: latestBlog.link,
+      id: "viteplus-alpha",
+      text: "Announcing Vite+ Alpha: Open source. Unified. Next-gen.",
+      url: "https://voidzero.dev/posts/announcing-vite-plus-alpha?utm_source=oxc&utm_content=top_banner",
     },
 
     siteTitle: "Oxc",
