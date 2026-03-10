@@ -384,6 +384,11 @@ input[type="checkbox"]:focus {
   outline-offset: 1px;
 }
 
+.button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
 .rules-controls {
   margin: 1rem 0;
   display: grid;
