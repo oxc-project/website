@@ -255,7 +255,7 @@ Bringing JS plugins up to this milestone has been the work of many hands. In par
 - [@Sysix](https://github.com/Sysix) for tireless work on the language server integration.
 - [@lilnasy](https://github.com/lilnasy) for building out many of the APIs.
 
-## Join the Community
+## Join the community
 
 We'd love to hear your feedback on Oxlint JS plugins, and are excited to see how it helps improve your development workflow.
 
