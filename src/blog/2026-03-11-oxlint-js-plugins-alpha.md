@@ -40,7 +40,7 @@ Oxlint JS plugins support is tested against the full test suite of ESLint itself
 
 <small>\* excluding type-aware rules</small>
 
-If a plugin isn't in the list above, it will very likely still work - it just isn't included in our conformance test suite yet.
+If a plugin isn't in the list above, it will very likely still work - it just isn't included in [our conformance test suite](https://github.com/oxc-project/oxc/tree/13606c3ab16cc273a6fad7e2de964ffa0ad0a241/apps/oxlint/conformance) yet.
 
 ESLint's own tests cover the entire API surface, so a 100% pass rate gives us confidence that we've covered corner cases, as well as the happy path. Please try it out and let us know!
 
