@@ -211,11 +211,11 @@ Obviously, we would recommend [Oxfmt](../docs/guide/usage/formatter)! Oxlint and
 
 ### Perf tip 2: Choose plugins wisely
 
-Contrary to what many believe, it is perfectly possible to write extremely performant JavaScript code. Oxlint is not fast just because it's written in Rust, it's also carefully designed with performance in mind.
+Contrary to what many believe, it is perfectly possible to write extremely performant JavaScript code. Oxlint is not fast just because it's written in Rust - it's also carefully designed with performance in mind.
 
-The code of JS plugins you select to use in your project is not under Oxlint's control, and to get good performance out of Oxlint overall requires the JS code you ask Oxlint to run to perform well too.
+The code of JS plugins themselves is not under Oxlint's control. To get good performance out of Oxlint overall requires the JS plugins you select to perform well too.
 
-If a plugin uses inefficient algorithms or, for example, performs a lot of filesystem operations, it'll likely be slow in ESLint, and it will be slow in Oxlint too. What Oxlint _can_ do is provide a lightning-fast parser and performant APIs for plugins to interface with, but it can't magically make slow JS code faster.
+If a plugin uses inefficient algorithms or performs a lot of filesystem operations, it'll be slow in ESLint, and slow in Oxlint too. What Oxlint _can_ do is provide a lightning-fast parser and performant APIs for plugins to interface with, but it can't magically make slow JS code faster.
 
 We will in future provide a utility to diagnose which plugins/rules are the performance bottlenecks in your project, if you find that linting is not as fast as you'd like.
 
