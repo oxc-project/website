@@ -18,20 +18,12 @@ Since the [first technical preview](./2025-10-09-oxlint-js-plugins) last year, w
 
 This alpha release marks the point where we feel JS plugins are ready for adoption in real world projects.
 
-### What you can do
+### Features
 
-Oxlint now supports:
-
-- Running most existing ESLint plugins without modification.
-- Writing your own custom lint rules in JavaScript or TypeScript.
-
-Since the first technical preview, we have:
-
-- Implemented almost the entirety of ESLint's plugin API.
-- Added support for plugins written in TypeScript.
-- Added support for auto-fixes and suggestions.
-- Linked JS plugins into the language server, for immediate feedback in your IDE.
-- Greatly improved performance.
+- Run most existing ESLint plugins without modification.
+- Write your own custom lint rules in JavaScript or TypeScript.
+- Get auto-fixes and suggestions from JS plugin rules.
+- See JS plugin diagnostics live in your IDE via the language server.
 
 ### How reliable is it?
 
