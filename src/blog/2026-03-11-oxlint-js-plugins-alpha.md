@@ -185,7 +185,7 @@ Projects which currently use TypeScript-ESLint or `eslint-plugin-import` will li
 
 ### Future perf improvements
 
-However, this is just the beginning!
+This is just the beginning!
 
 While Oxlint with JS plugins is already significantly faster than ESLint, we have many more optimizations in the pipeline.
 
