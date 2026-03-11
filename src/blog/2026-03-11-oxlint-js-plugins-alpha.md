@@ -133,7 +133,7 @@ This unlocks rules like `no-restricted-syntax` which are not yet implemented nat
 }
 ```
 
-Oxlint also implements a subset of rules from plugins like [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc) natively, but there are gaps. To use a rule from `eslint-plugin-jsdoc` package directly, this is the recommended pattern:
+Oxlint also implements a subset of rules from plugins like [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc) natively. For rules which aren't implemented in Oxlint itself, you can use the `eslint-plugin-jsdoc` package directly. This is the recommended pattern:
 
 ```jsonc [.oxlintrc.json]
 {
