@@ -16,7 +16,11 @@ Oxlint already has over 650 popular lint rules implemented in Rust, running at n
 
 Since the [first technical preview](./2025-10-09-oxlint-js-plugins) last year, we've filled out almost the entire ESLint plugin API, added TypeScript plugin support, auto-fixes, IDE integration, and [major performance gains](#performance).
 
+This means many teams can replace ESLint with Oxlint, without rewriting their lint rules.
+
 This alpha release marks the point where we feel JS plugins are ready for adoption in real world projects.
+
+Most projects should find that Oxlint can now act as a drop-in replacement for ESLint, with straightforward migration, and large reduction in linting time.
 
 ### Features
 
@@ -68,15 +72,7 @@ Add a script to `package.json`:
 }
 ```
 
-If migrating from ESLint, the simplest route is via the `@oxlint/migrate` tool.
-
-```sh
-npx @oxlint/migrate eslint.config.js
-```
-
-See the [migration guide](../docs/guide/usage/linter/migrate-from-eslint) for more details.
-
-Or manually create a config file:
+Create a config file (or use [our migration tool](#migrating-from-eslint)):
 
 ```json [.oxlintrc.json]
 {
@@ -92,6 +88,20 @@ Lint your project:
 ```sh
 pnpm run lint
 ```
+
+### Migrating from ESLint
+
+Most projects should find that migrating from ESLint is straightforward.
+
+The simplest route is via the `@oxlint/migrate` tool.
+
+```sh
+npx @oxlint/migrate eslint.config.js
+```
+
+Or ask your coding agent to do it for you with the [`migrate-oxlint` skill](https://skills.sh/oxc-project/oxc/migrate-oxlint).
+
+See the [migration guide](../docs/guide/usage/linter/migrate-from-eslint) for more details.
 
 ## ESLint rules
 
