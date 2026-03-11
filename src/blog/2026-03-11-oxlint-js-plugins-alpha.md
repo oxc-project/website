@@ -10,21 +10,13 @@ authors:
 
 <br>
 
-**We're excited to announce the alpha release of JavaScript plugins for Oxlint!**
+**JavaScript plugins for Oxlint have reached alpha - and we expect 80% of ESLint users can now switch to Oxlint and have it "just work".**
 
-For a long time, users have asked for a way to customize the behavior of Oxlint.
+Oxlint already has over 650 popular lint rules implemented in Rust, running at native speed. JS plugins fill in the gaps - letting you run existing ESLint plugins and write your own custom rules, all within Oxlint. Native performance for most rules, full flexibility for the rest.
 
-Last year, we released the first technical preview of our solution - support for Oxlint plugins written in JavaScript, _and_ compatible with ESLint's plugin API.
+Since the [first technical preview](./2025-10-09-oxlint-js-plugins) last year, we've filled out almost the entire ESLint plugin API, added TypeScript plugin support, auto-fixes, IDE integration, and [major performance gains](#performance).
 
-However, that initial preview was incomplete. Many APIs were not implemented yet.
-
-Since then, we've been working hard on filling out the whole API surface, ramping up performance, and thoroughly testing the implementation with popular ESLint plugins. At this point, we feel it's ready to try out in real world projects.
-
-We expect 80% of users will find they are now able to switch from ESLint to Oxlint and it should "just work".
-
-Oxlint supports over 650 popular rules re-implemented in Rust, which run at native speed. JS plugins aim to "fill in the gaps" where Oxlint does not yet support all the rules users need. The combination of raw native performance for the majority of lint rules, and the flexibility of JS plugins for the rest, aims to make Oxlint "the best of both worlds".
-
-Many projects have seen significant performance improvements switching from ESLint to Oxlint. See [performance](#performance) section below.
+This alpha release marks the point where we feel JS plugins are ready for adoption in real world projects.
 
 ### What you can do
 
