@@ -136,7 +136,7 @@ Oxlint supports:
 - [Inline ignore comments](/docs/guide/usage/linter/ignore-comments) for ignoring rules within a file.
 - [Multi-file analysis](/docs/guide/usage/linter/multi-file-analysis) for rules that require project-wide context such as import analysis like [no-cycle](/docs/guide/usage/linter/rules/import/no-cycle.html).
 - [Type-aware linting](/docs/guide/usage/linter/type-aware) for rules that require TypeScript type information.
-- [JS plugins](/docs/guide/usage/linter/js-plugins) (**experimental**) for compatibility with existing ESLint plugins.
+- [JS plugins](/docs/guide/usage/linter/js-plugins) (**alpha**) for compatibility with existing ESLint plugins.
 
 ## Projects using Oxlint
 

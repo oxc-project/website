@@ -8,12 +8,10 @@ Oxlint supports plugins written in JS - either custom-written, or from npm.
 
 Oxlint's plugin API is compatible with ESLint v9+, so most existing ESLint plugins should work out of the box with Oxlint.
 
-We are working towards implementing _all_ of ESLint's plugin APIs, and Oxlint will soon be able to run
-_any_ ESLint plugin.
+Almost the entirety of ESLint's plugin API is now implemented (see [below](#api-support)), so most existing ESLint plugins should work out of the box.
 
 :::warning
-JS plugins are currently in technical preview, and remain under heavy development.
-Almost all of ESLint's plugin API is implemented (see [below](#api-support)).
+JS plugins are currently in alpha, and remain under active development.
 
 All APIs should behave identically to ESLint. If you find any differences in behavior,
 that's a bug - please [report it](https://github.com/oxc-project/oxc/issues/new?template=linter_bug_report.yaml).

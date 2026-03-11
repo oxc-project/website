@@ -76,7 +76,7 @@ A configuration file is either a JSON object (`.oxlintrc.json`) or a TypeScript 
 - `rules`: Enable or disable rules, set severity, and configure rule options.
 - `categories`: Enable groups of rules with similar intent.
 - `plugins`: Enable built-in plugins that provide additional rules.
-- `jsPlugins`: Configure JavaScript plugins (experimental).
+- `jsPlugins`: Configure JavaScript plugins (alpha).
 - `overrides`: Apply different configuration to different file patterns.
 - `extends`: Inherit configuration from other files.
 - `ignorePatterns`: Ignore additional files from the config file.
@@ -223,13 +223,13 @@ To disable all default plugins:
 
 For plugin details and CLI flags such as `--import-plugin`, see [Native Plugins](/docs/guide/usage/linter/plugins).
 
-## Configure JS plugins (experimental)
+## Configure JS plugins (alpha)
 
 Oxlint also supports JavaScript plugins via `jsPlugins`. This is intended for compatibility with existing ESLint plugins and advanced integrations.
 
 Notes:
 
-- JS plugins are experimental and not subject to semver.
+- JS plugins are in alpha and not subject to semver.
 
 JS plugins can be declared as strings, or as objects with an alias:
 
@@ -257,7 +257,7 @@ Use `overrides` to apply different configuration to different files, such as tes
 - `env`: environment configuration (same shape as top-level `env`)
 - `globals`: globals configuration (same shape as top-level `globals`)
 - `plugins`: optionally change what plugins are enabled for this override
-- `jsPlugins`: JS plugins for this override (experimental)
+- `jsPlugins`: JS plugins for this override (alpha)
 
 Example:
 
