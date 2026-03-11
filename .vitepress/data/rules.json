@@ -3601,6 +3601,15 @@
   },
   {
     "scope": "react",
+    "value": "no-clone-element",
+    "category": "restriction",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-clone-element.html"
+  },
+  {
+    "scope": "react",
     "value": "no-danger",
     "category": "restriction",
     "type_aware": false,
@@ -3670,6 +3679,15 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-namespace.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-react-children",
+    "category": "restriction",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-react-children.html"
   },
   {
     "scope": "react",

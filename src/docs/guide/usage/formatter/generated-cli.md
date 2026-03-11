@@ -29,7 +29,7 @@ search: false
 ## Config Options
 
 - **`-c`**, **`--config`**=_`PATH`_ &mdash;
-  Path to the configuration file
+  Path to the configuration file (.json, .jsonc, .ts, .mts, .cts, .js, .mjs, .cjs)
 
 ## Ignore Options
 

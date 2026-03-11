@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforces a maximum cyclomatic complexity in a program, which is the number
+Enforces a maximum [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) in a program, which is the number
 of linearly independent paths in a program.
 
 ### Why is this bad?
