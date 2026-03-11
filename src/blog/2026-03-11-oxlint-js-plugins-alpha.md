@@ -95,7 +95,7 @@ pnpm run lint
 
 ## ESLint rules
 
-Oxlint already natively implements most of ESLint's built-in rules, rewritten in Rust, but there are gaps in support.
+Oxlint already natively implements most of ESLint's built-in rules, rewritten in Rust, but not all rules are implemented yet.
 
 For this purpose, we provide [oxlint-plugin-eslint](https://www.npmjs.com/package/oxlint-plugin-eslint), which contains all ESLint's built-in rules packaged as an Oxlint JS plugin.
 
