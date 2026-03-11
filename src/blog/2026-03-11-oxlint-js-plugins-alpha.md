@@ -97,7 +97,7 @@ pnpm run lint
 
 Oxlint already natively implements most of ESLint's built-in rules, rewritten in Rust, but not all rules are implemented yet.
 
-For this purpose, we provide [oxlint-plugin-eslint](https://www.npmjs.com/package/oxlint-plugin-eslint), which contains all ESLint's built-in rules packaged as an Oxlint JS plugin.
+To bridge this gap, we provide [oxlint-plugin-eslint](https://www.npmjs.com/package/oxlint-plugin-eslint), which contains all ESLint's built-in rules packaged as an Oxlint JS plugin.
 
 This unlocks rules like `no-restricted-syntax` which are not yet implemented natively in Oxlint.
 
