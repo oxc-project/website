@@ -45,12 +45,16 @@ Since the first technical preview, we have:
 
 Oxlint JS plugins support is tested against the full test suite of ESLint itself, and also against a wide selection of ESLint plugins, including:
 
-- ESLint built-in rules: 33,000 tests, 100% pass.
-- [React hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) (including React Compiler rules): 5,000 tests, 100% pass.
-- [ESLint Stylistic](https://eslint.style/): 18,000 tests, 99.99% pass.
-- [Testing Library](https://www.npmjs.com/package/eslint-plugin-testing-library): 17,000 tests, 100% pass.
-- [SonarJS](https://www.npmjs.com/package/eslint-plugin-sonarjs): 4,000 tests, 99.6% pass (excluding type-aware rules).
-- [e18e](https://www.npmjs.com/package/@e18e/eslint-plugin): 500 tests, 100% pass (excluding type-aware rules).
+| Plugin                                                                                                  |  Tests | Pass rate |
+| ------------------------------------------------------------------------------------------------------- | -----: | --------: |
+| ESLint built-in rules                                                                                   | 33,000 |      100% |
+| [React hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) (including React Compiler rules) |  5,000 |      100% |
+| [ESLint Stylistic](https://eslint.style/)                                                               | 18,000 |    99.99% |
+| [Testing Library](https://www.npmjs.com/package/eslint-plugin-testing-library)                          | 17,000 |      100% |
+| [SonarJS](https://www.npmjs.com/package/eslint-plugin-sonarjs)                                          |  4,000 |   99.6%\* |
+| [e18e](https://www.npmjs.com/package/@e18e/eslint-plugin)                                               |    500 |    100%\* |
+
+<small>\* excluding type-aware rules</small>
 
 Just because a plugin isn't included in the list above, doesn't mean it doesn't work. Very likely it does! It just isn't included in our conformance test suite.
 
