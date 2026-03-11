@@ -48,6 +48,8 @@ If a plugin isn't in the list above, it will very likely still work - it just is
 
 ESLint's own tests cover the entire API surface, so a 100% pass rate gives us confidence that we've covered corner cases, as well as the happy path. Please try it out and let us know!
 
+Oxlint is already used in production by many companies and projects, including [Midjourney](https://x.com/_chenglou/status/2026408795857981610), [Preact](https://github.com/preactjs/preact), [Posthog](https://github.com/PostHog/posthog), [Outline](https://github.com/outline/outline), and [Actual](https://github.com/actualbudget/actual).
+
 ### What it can't do (yet)
 
 - Limited support for front-end frameworks' custom file formats (e.g. Svelte, Vue, Angular) - coming later this year.
