@@ -47,7 +47,7 @@ ESLint's own tests cover the entire API surface, so a 100% pass rate gives us co
 ### What it can't do (yet)
 
 - Limited support for front-end frameworks' custom file formats (e.g. Svelte, Vue, Angular) - coming later this year.
-- No custom type-aware rules (TypeScript ESLint's rules are already built into Oxlint via [type-aware linting](../docs/guide/usage/linter/type-aware)).
+- No custom type-aware rules (TypeScript-ESLint's rules are already built into Oxlint via [type-aware linting](../docs/guide/usage/linter/type-aware)).
 - Some users have found the experience on Windows sub-par. Out of memory errors are [a known issue](https://github.com/oxc-project/oxc/issues/19395), specifically on Windows. We're working on it. In the meantime, if you hit this problem, we recommend running Oxlint in WSL, if that's an option.
 
 ## Getting Started
