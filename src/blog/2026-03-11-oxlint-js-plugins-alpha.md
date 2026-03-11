@@ -237,6 +237,17 @@ If your project has specific needs, it's simple to create a custom JS plugin for
 
 Please see the [JS plugin guide](../docs/guide/usage/linter/js-plugins).
 
+# FAQ
+
+**Can Oxlint run ESLint plugins?**
+Yes. Most plugins work without modification.
+
+**Is Oxlint faster than ESLint?**
+Yes. Benchmarks typically show 4x–100x speedups.
+
+**Can I migrate gradually?**
+Yes. You can run Oxlint alongside ESLint.
+
 ## Thanks to
 
 Bringing JS plugins up to this milestone has been the work of many hands. In particular, we'd like to thank:
