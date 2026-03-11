@@ -201,15 +201,17 @@ Projects which currently use TypeScript-ESLint or `eslint-plugin-import` will li
 
 However, this is just the beginning!
 
-While Oxlint with JS plugins is already significantly faster than ESLint, we still have many optimizations in the pipeline.
+While Oxlint with JS plugins is already significantly faster than ESLint, we have many more optimizations in the pipeline.
 
-The basis of Oxlint's performance in running JS plugins is our "secret weapon" - a new, highly optimized, low-level API for communicating between Rust and JS, which we call "raw transfer". This technique completely destroys the traditional language barrier, reducing the cost of moving data between the "two worlds" of JS and Rust almost to zero.
+The key to Oxlint's JS plugin performance is a new, highly optimized, low-level mechanism for communicating between Rust and JS, which we call "raw transfer".
 
-This barrier has always been the fundamental problem for native tooling supporting JS plugins. The native code may well run at the speed of light, but the cost of sending data back and forth to JS is so high that it can offset much of that gain. We believe that finally have a solution to this problem.
+The Rust/JS boundary has always been the fundamental problem for native tooling supporting JS plugins. Native code is fast, but the cost of sending data back and forth between Rust and JS can be so high that it offsets that gain, resulting in mediocre performance overall.
 
-The first iteration of "raw transfer" is already at work under the hood of Oxlint, but we've only just begun leveraging what it can do. As we continue this work, we expect to achieve a leap in performance which will astonish many who say that it's impossible to make JavaScript run fast. We believe we can achieve the seemingly impossible - bring JS plugins up to _almost_ the same level of performance as Rust.
+Raw transfer reduces the cost of moving data between Rust and JS almost to zero, finally enabling native code and JS plugins to work effectively in tandem.
 
-If you're interested in the nerdy details, core team member [@overlookmotel](https://github.com/overlookmotel) gave [a talk at ViteConf 2025](https://www.youtube.com/watch?v=ofQV3xiBgT8) on the subject.
+The first iteration of raw transfer is already at work under the hood of Oxlint, but we've only just begun leveraging what it can do. As we continue this work, we expect to see a further step-change in performance, bringing JS plugins close to native Rust performance.
+
+If you're interested in the details, Oxc core team member [@overlookmotel](https://github.com/overlookmotel) gave [a talk at ViteConf 2025](https://www.youtube.com/watch?v=ofQV3xiBgT8) on this subject.
 
 In short: Oxlint is already the fastest JS/TS linter in existence. It's going to get a lot faster.
 
