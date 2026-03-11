@@ -233,7 +233,9 @@ We will in future provide a utility to diagnose which plugins/rules are the perf
 
 ## Creating custom plugins
 
-TODO
+If your project has specific needs, it's simple to create a custom JS plugin for Oxlint.
+
+Please see the [JS plugin authors guide](../docs/guide/usage/linter/js-plugins).
 
 ## Thanks to
 
