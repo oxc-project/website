@@ -10,7 +10,7 @@ Oxlint's plugin API is compatible with ESLint v9+, so most existing ESLint plugi
 
 Almost the entirety of ESLint's plugin API is now implemented (see [below](#api-support)), so most existing ESLint plugins should work out of the box.
 
-:::warning
+:::info
 JS plugins are currently in alpha, and remain under active development.
 
 All APIs should behave identically to ESLint. If you find any differences in behavior,
