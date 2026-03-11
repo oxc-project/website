@@ -47,12 +47,12 @@ Oxlint JS plugins support is tested against the full test suite of ESLint itself
 
 | Plugin                                                                                                  |  Tests | Pass rate |
 | ------------------------------------------------------------------------------------------------------- | -----: | --------: |
-| ESLint built-in rules                                                                                   | 33,000 |      100% |
-| [React hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) (including React Compiler rules) |  5,000 |      100% |
-| [ESLint Stylistic](https://eslint.style/)                                                               | 18,000 |    99.99% |
-| [Testing Library](https://www.npmjs.com/package/eslint-plugin-testing-library)                          | 17,000 |      100% |
-| [SonarJS](https://www.npmjs.com/package/eslint-plugin-sonarjs)                                          |  4,000 |   99.6%\* |
-| [e18e](https://www.npmjs.com/package/@e18e/eslint-plugin)                                               |    500 |    100%\* |
+| ESLint built-in rules                                                                                   | 33,006 |      100% |
+| [React hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) (including React Compiler rules) |  5,007 |      100% |
+| [ESLint Stylistic](https://eslint.style/)                                                               | 18,310 |    99.99% |
+| [Testing Library](https://www.npmjs.com/package/eslint-plugin-testing-library)                          | 17,016 |      100% |
+| [SonarJS](https://www.npmjs.com/package/eslint-plugin-sonarjs)                                          |  3,951 |   99.6%\* |
+| [e18e](https://www.npmjs.com/package/@e18e/eslint-plugin)                                               |    474 |    100%\* |
 
 <small>\* excluding type-aware rules</small>
 
