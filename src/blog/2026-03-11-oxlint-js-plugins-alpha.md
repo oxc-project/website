@@ -197,6 +197,8 @@ hyperfine -i --warmup 1 --runs 5 "node --run oxlint"
 
 Projects which currently use TypeScript-ESLint or `eslint-plugin-import` will likely see **much larger** performance gains. Gains of up to 100x have been reported.
 
+### Future perf improvements
+
 However, this is just the beginning!
 
 While Oxlint with JS plugins is already significantly faster than ESLint, we still have many optimizations in the pipeline.
