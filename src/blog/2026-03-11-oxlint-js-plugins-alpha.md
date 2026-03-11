@@ -154,7 +154,7 @@ When migrating from ESLint, `@oxlint/migrate` will automatically set up any such
 
 Since the first technical preview, we have "Rustified" large chunks of the code powering JS plugins, which has delivered significant performance gains. In particular, plugins which rely on tokens APIs (e.g. ESLint Stylistic) are up to 5 times faster than before.
 
-As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a large project utilizing many custom lint rules, as well as several heavy ESLint plugins.
+As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a large project utilizing many custom lint rules, as well as several heavy ESLint plugins (98 JS rules in total).
 
 | Linter | Time                 | Speed-up |
 | ------ | -------------------- | -------- |
@@ -168,6 +168,10 @@ As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a l
 :::info
 
 - Benchmark repo: https://github.com/overlookmotel/node
+- 6298 files linted
+- 104 built-in Oxlint rules (Rust)
+- 75 rules from JS plugins (JS)
+- 23 custom rules (JS)
 - Benchmarked on Mac Mini M4, 48GB RAM
 
 - ESLint benchmark:
