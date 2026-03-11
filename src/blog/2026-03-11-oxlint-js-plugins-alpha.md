@@ -205,9 +205,9 @@ While Oxlint with JS plugins is already significantly faster than ESLint, we sti
 
 The basis of Oxlint's performance in running JS plugins is our "secret weapon" - a new, highly optimized, low-level API for communicating between Rust and JS, which we call "raw transfer". This technique completely destroys the traditional language barrier, reducing the cost of moving data between the "two worlds" of JS and Rust almost to zero.
 
-This barrier has always been the fundamental problem for native tooling supporting JS plugins. The native code may well run at the speed of light, but the cost of sending data back and forth to JS is so high that it can offset much of that gain. We believe that we have finally solved this problem.
+This barrier has always been the fundamental problem for native tooling supporting JS plugins. The native code may well run at the speed of light, but the cost of sending data back and forth to JS is so high that it can offset much of that gain. We believe that finally have a solution to this problem.
 
-The first iteration of "raw transfer" is already at work under the hood of Oxlint. But we've only just begun leveraging what it can do. As we continue this work, we expect to achieve a leap in performance which will astonish many who say that it's impossible to make JavaScript run fast. We believe we can achieve the seemingly impossible - bring JS plugins up to _almost_ the same level of performance as Rust.
+The first iteration of "raw transfer" is already at work under the hood of Oxlint, but we've only just begun leveraging what it can do. As we continue this work, we expect to achieve a leap in performance which will astonish many who say that it's impossible to make JavaScript run fast. We believe we can achieve the seemingly impossible - bring JS plugins up to _almost_ the same level of performance as Rust.
 
 If you're interested in the nerdy details, core team member [@overlookmotel](https://github.com/overlookmotel) gave [a talk at ViteConf 2025](https://www.youtube.com/watch?v=ofQV3xiBgT8) on the subject.
 
@@ -244,7 +244,7 @@ Bringing JS plugins up to this milestone has been the work of many hands. In par
 
 ## Join the Community
 
-We'd love to hear your feedback on `oxlint` and JS plugins and are excited to see how it helps improve your development workflow.
+We'd love to hear your feedback on Oxlint JS plugins, and are excited to see how it helps improve your development workflow.
 
 Connect with us:
 
