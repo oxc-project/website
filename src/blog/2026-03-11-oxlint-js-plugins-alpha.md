@@ -180,6 +180,7 @@ As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a l
 
 ```sh
 git checkout bench-eslint
+npm ci
 hyperfine -i --warmup 1 --runs 5 "node --run eslint"
 ```
 
@@ -187,6 +188,7 @@ hyperfine -i --warmup 1 --runs 5 "node --run eslint"
 
 ```sh
 git checkout bench-oxlint
+npm ci
 hyperfine -i --warmup 1 --runs 5 "node --run oxlint"
 ```
 
