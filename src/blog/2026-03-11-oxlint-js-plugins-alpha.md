@@ -215,11 +215,11 @@ In short: Oxlint is already the fastest JS/TS linter in existence. It's going to
 
 ### Perf tip 1: Use a formatter
 
-We strongly recommend moving from using the linter for code formatting, to using a dedicated formatter, if you can.
+We strongly recommend moving from using the linter for code formatting, to using [Oxfmt](../docs/guide/usage/formatter) (or your preferred formatter), if you can.
 
-A dedicated formatter written in a native language will be an order of magnitude faster than linter plugins like ESLint Stylistic or `eslint-plugin-prettier`.
+Oxfmt is 30x faster than Prettier, and will also dramatically reduce linting time vs linter plugins like ESLint Stylistic.
 
-Obviously, we would recommend [Oxfmt](../docs/guide/usage/formatter)! Oxlint and Oxfmt make a very strong team.
+Oxlint and Oxfmt make a very strong team!
 
 ### Perf tip 2: Choose plugins wisely
 
