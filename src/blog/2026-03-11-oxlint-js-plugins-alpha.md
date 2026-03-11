@@ -158,7 +158,7 @@ As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a l
 - 104 built-in Oxlint rules (Rust)
 - 75 rules from JS plugins (JS)
 - 23 custom rules (JS)
-- Benchmarked on Mac Mini M4, 48GB RAM
+- Benchmarked on Mac Mini M4, 48GB RAM, Node.js 24.14.0
 
 - ESLint benchmark:
 
