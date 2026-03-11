@@ -153,7 +153,7 @@ As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a l
 
 :::info
 
-- Benchmark repo: https://github.com/overlookmotel/node
+- [Benchmark repo](https://github.com/overlookmotel/node)
 - 6298 files linted
 - 104 built-in Oxlint rules (Rust)
 - 75 rules from JS plugins (JS)
