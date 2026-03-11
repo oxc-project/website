@@ -12,7 +12,7 @@ authors:
 
 **JavaScript plugins for Oxlint have reached alpha - and we expect 80% of ESLint users can now switch to Oxlint and have it "just work".**
 
-Oxlint already has over 650 popular lint rules implemented in Rust, running at native speed. JS plugins fill in the gaps - letting you run existing ESLint plugins and write your own custom rules, all within Oxlint. Native performance for most rules, full flexibility for the rest.
+Oxlint already has over 650 popular lint rules implemented in Rust, running at native speed. JS plugins fill in the gaps - an ESLint-compatible plugin API, letting you run existing ESLint plugins and write your own custom rules, all within Oxlint. Native performance for most rules, full flexibility for the rest.
 
 Since the [first technical preview](./2025-10-09-oxlint-js-plugins) last year, we've filled out almost the entire ESLint plugin API, added TypeScript plugin support, auto-fixes, IDE integration, and [major performance gains](#performance).
 
