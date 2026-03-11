@@ -152,8 +152,6 @@ Oxlint also implements a subset of rules from plugins like [eslint-plugin-jsdoc]
 }
 ```
 
-When migrating from ESLint, `@oxlint/migrate` will automatically set up any such rules in your config to run as JS plugins.
-
 ## Performance
 
 Since the first technical preview, we have "Rustified" large chunks of the code powering JS plugins, which has delivered significant performance gains. In particular, plugins which rely on tokens APIs (e.g. ESLint Stylistic) are up to 5 times faster than before.
