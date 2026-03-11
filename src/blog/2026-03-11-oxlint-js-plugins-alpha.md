@@ -156,7 +156,7 @@ Oxlint also implements a subset of rules from plugins like [eslint-plugin-jsdoc]
 
 Since the first technical preview, we have "Rustified" large chunks of the code powering JS plugins, which has delivered significant performance gains. In particular, plugins which rely on tokens APIs (e.g. ESLint Stylistic) are up to 5 times faster than before.
 
-As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a large project utilizing many custom lint rules, as well as several heavy ESLint plugins (98 JS rules in total).
+As a benchmark, we migrated Node.js's repo from ESLint to Oxlint. Node.js is a large project utilizing many custom lint rules, as well as several heavy ESLint plugins (98 JS lint rules in total).
 
 | Linter | Time                 | Speed-up |
 | ------ | -------------------- | -------- |
