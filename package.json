@@ -11,7 +11,7 @@
     "lint": "vp lint --deny-warnings",
     "lint:fix": "vp run lint --fix && typos -w",
     "fmt": "vp fmt",
-    "knip": "knip",
+    "knip": "knip --no-config-hints",
     "sponsors": "degit Boshen/sponsors sponsors --force && node scripts/generate-sponsors.js",
     "prepare": "vp config"
   },
