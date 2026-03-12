@@ -224,6 +224,10 @@ export const enConfig = defineLocaleConfig("root", {
               text: "Isolated Declarations",
               link: "/docs/guide/usage/transformer/isolated-declarations",
             },
+            {
+              text: "Runtime Helpers",
+              link: "/docs/guide/usage/transformer/runtime-helpers",
+            },
           ],
         },
         {
