@@ -1,7 +1,7 @@
 # Embedded Formatting
 
 :::warning
-Not fully implemented. See [tracking issue](https://github.com/oxc-project/oxc/issues/15180).
+See tracking issues for details: [xxx-in-js](https://github.com/oxc-project/oxc/issues/15180), [js-in-xxx](https://github.com/oxc-project/oxc/issues/16608).
 :::
 
 Formats code embedded in JS/TS files (CSS in template literals, GraphQL in template literals, JavaScript/TypeScript/CSS/etc in Markdown).
@@ -27,9 +27,29 @@ CSS inside a tagged template literal:
 const styles = css`
   .container {
     background: blue;
-    color: red;
+    color: ${theme.color};
   }
 `;
+```
+
+Styled-components:
+
+```js
+const Button = styled.button`
+  background: ${(props) => props.primary};
+  color: white;
+`;
+```
+
+Styled JSX:
+
+```jsx
+<style jsx>{`
+  .container {
+    background: blue;
+    color: red;
+  }
+`}</style>
 ```
 
 GraphQL inside a tagged template literal:
@@ -51,6 +71,7 @@ const query2 = graphql(`
       name
     }
   }
+  ${fragments.all}
 `);
 ```
 
@@ -77,11 +98,15 @@ const x = 1; // This will be formatted if embedded formatting is enabled.
 Wow!
 ````
 
-CSS inside a Vue file:
+JavaScript and CSS inside a Vue file:
 
 ```vue
+<script setup>
+import { ref } from "vue";
+import MyComponent from "./MyComponent.vue";
+</script>
+
 <style>
-/* This CSS will be formatted if embedded formatting is enabled. */
 .container {
   background: blue;
   color: red;

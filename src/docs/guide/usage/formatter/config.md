@@ -17,19 +17,35 @@ To generate a starter config in the current directory:
 oxfmt --init
 ```
 
-Oxfmt automatically looks for `.oxfmtrc.json` or `.oxfmtrc.jsonc` starting from the current directory and walking up the tree. You can also pass a config explicitly:
+Oxfmt automatically looks for the following files starting from the current directory and walking up the tree:
+
+- `.oxfmtrc.json`
+- `.oxfmtrc.jsonc`
+- `oxfmt.config.ts`
+
+You can also pass a config explicitly with `-c`. This accepts any supported format (`.json`, `.jsonc`, `.ts`, `.mts`, `.cts`, `.js`, `.mjs`, `.cjs`):
 
 ```sh
 oxfmt -c path/to/yourconfig.json
 ```
 
-A minimal configuration looks like this:
+A minimal JSON configuration looks like this:
 
 ```json [.oxfmtrc.json]
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "printWidth": 80
 }
+```
+
+JavaScript / TypeScript config files use a default export. `defineConfig` is optional but gives you type checking and editor autocomplete:
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  printWidth: 80,
+});
 ```
 
 ## Configuration file format
