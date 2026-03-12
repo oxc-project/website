@@ -84,3 +84,28 @@ oxlint --report-unused-disable-directives-severity error
 ```
 
 Only one of these options can be used at a time.
+
+This can also be set in the Oxlint configuration file:
+
+::: code-group
+
+```jsonc [.oxlintrc.json]
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "options": {
+    "reportUnusedDisableDirectives": "error", // or "off" or "warn"
+  },
+}
+```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  options: {
+    reportUnusedDisableDirectives: "error", // or "off" or "warn"
+  },
+});
+```
+
+:::
