@@ -113,7 +113,7 @@ Expect to see:
   `----
 ```
 
-For further details on authoring plugins, see [the docs](/docs/guide/usage/linter/js-plugins.html).
+For further details on authoring plugins, see [the docs](/docs/guide/usage/linter/writing-js-plugins.html).
 
 ## Alternative API
 
@@ -212,7 +212,7 @@ whereas `createOnce` is called once only.
 All other APIs behave exactly the same as in ESLint.
 
 The reasons why this alternative API has potential to greatly improve performance are explained in
-[the docs](/docs/guide/usage/linter/js-plugins.html#why-is-the-alternative-api-faster).
+[the docs](/docs/guide/usage/linter/writing-js-plugins.html#why-is-the-alternative-api-faster).
 
 ## Performance
 
@@ -333,7 +333,7 @@ We believe that through a combination of different approaches, we've found a way
 
 ### Alternative API
 
-See explanation [in docs](/docs/guide/usage/linter/js-plugins.html#why-is-the-alternative-api-faster)
+See explanation [in docs](/docs/guide/usage/linter/writing-js-plugins.html#why-is-the-alternative-api-faster)
 of why this API unlocks potential for higher performance.
 
 ### Raw transfer

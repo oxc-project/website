@@ -92,6 +92,7 @@ export const enConfig = defineLocaleConfig("root", {
                 },
                 { text: "Type-aware linting", link: "/docs/guide/usage/linter/type-aware" },
                 { text: "JS plugins", link: "/docs/guide/usage/linter/js-plugins" },
+                { text: "Writing JS plugins", link: "/docs/guide/usage/linter/writing-js-plugins" },
               ],
             },
             {
