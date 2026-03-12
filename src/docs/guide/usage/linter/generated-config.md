@@ -192,7 +192,7 @@ JS plugins, allows usage of ESLint plugins with Oxlint.
 Read more about JS plugins in
 [the docs](https://oxc.rs/docs/guide/usage/linter/js-plugins.html).
 
-Note: JS plugins are experimental and not subject to semver.
+Note: JS plugins are in alpha and not subject to semver.
 
 Examples:
 
@@ -342,7 +342,7 @@ JS plugins for this override, allows usage of ESLint plugins with Oxlint.
 Read more about JS plugins in
 [the docs](https://oxc.rs/docs/guide/usage/linter/js-plugins.html).
 
-Note: JS plugins are experimental and not subject to semver.
+Note: JS plugins are in alpha and not subject to semver.
 
 ##### overrides[n].jsPlugins[n]
 
