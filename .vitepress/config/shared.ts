@@ -1,9 +1,14 @@
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { defineConfig, HeadConfig } from "vitepress";
+import { HeadConfig } from "vitepress";
+import type { MarkdownEnv, UserConfig } from "vitepress";
 import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import llmstxt from "vitepress-plugin-llms";
 import BLOG_SIDEBAR from "../sidebar.blog.json" with { type: "json" };
+
+type AsyncMarkdownRenderer = {
+  renderAsync(src: string, env?: MarkdownEnv): Promise<string>;
+};
 
 const latestBlog = BLOG_SIDEBAR[0];
 const bannerScript = `(() => {
@@ -59,7 +64,7 @@ if (process.env.NODE_ENV === "production" && process.env.REDIRECT) {
   head.unshift(["meta", { "http-equiv": "refresh", content: "0; URL=https://oxc.rs" }]);
 }
 
-export const sharedConfig = defineConfig({
+export const sharedConfig = {
   srcDir: "src",
   srcExclude: [],
   outDir: "build",
@@ -127,7 +132,7 @@ export const sharedConfig = defineConfig({
     search: {
       provider: "local",
       options: {
-        async _render(src, env, md) {
+        async _render(src: string, env: MarkdownEnv, md: AsyncMarkdownRenderer) {
           const html = await md.renderAsync(src, env);
           // Filter out pages with `search: false` in the frontmatter.
           if (env.frontmatter?.search === false) {
@@ -231,4 +236,4 @@ export const sharedConfig = defineConfig({
       ],
     },
   },
-});
+} as UserConfig;
