@@ -88,9 +88,9 @@ This table lists the built-in plugins and where they come from.
 | `eslint`     | Yes     | [ESLint](https://eslint.org/) core rules                                                                                                                |
 | `typescript` | Yes     | TypeScript rules from [typescript-eslint](https://typescript-eslint.io/) (aka `@typescript-eslint/plugin`). Type-aware rules are available using [the type-aware mode](./type-aware.md). |
 | `unicorn`    | Yes     | [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                                                          |
-| `react`      | No      | [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react), [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks), and [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) |
+| `react`      | No      | [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react), [eslint-plugin-react-hooks](https://www.npmx.dev/package/eslint-plugin-react-hooks), and [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) |
 | `react-perf` | No      | [eslint-plugin-react-perf](https://github.com/cvazac/eslint-plugin-react-perf)                                                                         |
-| `nextjs`     | No      | [@next/eslint-plugin-next](https://www.npmjs.com/package/@next/eslint-plugin-next)                                                                      |
+| `nextjs`     | No      | [@next/eslint-plugin-next](https://www.npmx.dev/package/@next/eslint-plugin-next)                                                                      |
 | `oxc`        | Yes     | Oxc-specific rules and selected rules ported from deepscan                                                                                              |
 | `import`     | No      | [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import) (also equivalent to [eslint-plugin-import-x](https://github.com/un-ts/eslint-plugin-import-x)) |
 | `jsdoc`      | No      | [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                    |
