@@ -142,11 +142,14 @@ Oxlint supports:
 
 Oxlint is used in production by popular projects such as:
 
+- [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript)
+- [renovatebot/renovate](https://github.com/renovatebot/renovate)
 - [preactjs/preact](https://github.com/preactjs/preact)
 - [date-fns/date-fns](https://github.com/date-fns/date-fns)
 - [outline/outline](https://github.com/outline/outline)
 - [PostHog/posthog](https://github.com/PostHog/posthog)
 - [actualbudget/actual](https://github.com/actualbudget/actual)
+- [cloudflare/agents](https://github.com/cloudflare/agents)
 
 ## Migration
 
