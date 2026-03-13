@@ -142,6 +142,7 @@ Oxlint supports:
 
 Oxlint is used in production by popular projects such as:
 
+- [elastic/kibana](https://github.com/elastic/kibana)
 - [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript)
 - [renovatebot/renovate](https://github.com/renovatebot/renovate)
 - [preactjs/preact](https://github.com/preactjs/preact)
