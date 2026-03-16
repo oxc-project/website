@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-When testing a specific function, this rule aims to enforce passing a named function to describe()
+When testing a specific function, this rule aims to enforce passing a named function to `describe()`
 instead of an equivalent hardcoded string.
 
 ### Why is this bad?

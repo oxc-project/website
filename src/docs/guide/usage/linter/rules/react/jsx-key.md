@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce `key` prop for elements in array
+Enforce `key` prop for elements in array.
 
 ### Why is this bad?
 

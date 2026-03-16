@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prevents passing a function reference directly to iterator methods
+Prevents passing a function reference directly to iterator methods.
 
 ### Why is this bad?
 

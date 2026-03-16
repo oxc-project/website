@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce return statements in callbacks of array methods
+Enforce return statements in callbacks of array methods.
 
 ### Why is this bad?
 

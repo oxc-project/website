@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow comparisons where both sides are exactly the same
+Disallow comparisons where both sides are exactly the same.
 
 ### Why is this bad?
 

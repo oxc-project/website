@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce a maximum number of classes per file
+Enforce a maximum number of classes per file.
 
 ### Why is this bad?
 

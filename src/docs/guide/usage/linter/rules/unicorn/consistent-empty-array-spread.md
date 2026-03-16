@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-When spreading a ternary in an array, we can use both [] and '' as fallbacks,
+When spreading a ternary in an array, we can use both `[]` and `''` as fallbacks,
 but it's better to have consistent types in both branches.
 
 ### Why is this bad?

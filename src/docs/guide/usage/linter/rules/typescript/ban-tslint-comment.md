@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule disallows `tslint:<rule-flag>` comments
+This rule disallows `tslint:<rule-flag>` comments.
 
 ### Why is this bad?
 

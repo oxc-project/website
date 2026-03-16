@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow confusing usages of jest.setTimeout
+Disallow confusing usages of `jest.setTimeout`.
 
 ### Why is this bad?
 

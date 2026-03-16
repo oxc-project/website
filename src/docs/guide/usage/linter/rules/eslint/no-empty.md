@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows empty block statements
+Disallows empty block statements.
 
 ### Why is this bad?
 

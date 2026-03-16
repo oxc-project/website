@@ -17,12 +17,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow the use of `undefined` as an identifier
+Disallow the use of `undefined` as an identifier.
 
 ### Why is this bad?
 
-Using undefined directly can lead to bugs, since it can be shadowed or overwritten in JavaScript.
-It's safer and more intentional to use null or rely on implicit undefined (e.g., missing return) to avoid accidental issues.
+Using `undefined` directly can lead to bugs, since it can be shadowed or overwritten in JavaScript.
+It's safer and more intentional to use `null` or rely on implicit `undefined` (e.g., missing return) to avoid accidental issues.
 
 ### Examples
 

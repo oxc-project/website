@@ -32,7 +32,7 @@ writing:
 var undefined = "foo";
 ```
 
-Then any code used within the same scope would not get the global undefined, but rather the
+Then any code used within the same scope would not get the global `undefined`, but rather the
 local version with a very different meaning.
 
 ### Examples

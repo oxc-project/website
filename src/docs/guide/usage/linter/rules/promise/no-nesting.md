@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow nested then() or catch() statements.
+Disallow nested `then()` or `catch()` statements.
 
 ### Why is this bad?
 

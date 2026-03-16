@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow constant expressions in conditions
+Disallow constant expressions in conditions.
 
 ### Why is this bad?
 

@@ -17,15 +17,15 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal
+Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal
 literals.
 
 ### Why is this bad?
 
-The parseInt() and Number.parseInt() functions can be used to turn binary, octal, and
+The `parseInt()` and `Number.parseInt()` functions can be used to turn binary, octal, and
 hexadecimal strings into integers. As binary, octal, and hexadecimal literals are supported
-in ES2015, this rule encourages use of those numeric literals instead of parseInt() or
-Number.parseInt().
+in ES2015, this rule encourages use of those numeric literals instead of `parseInt()` or
+`Number.parseInt()`.
 
 ### Examples
 

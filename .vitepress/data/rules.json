@@ -2944,6 +2944,15 @@
   },
   {
     "scope": "node",
+    "value": "handle-callback-err",
+    "category": "restriction",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/handle-callback-err.html"
+  },
+  {
+    "scope": "node",
     "value": "no-exports-assign",
     "category": "style",
     "type_aware": false,

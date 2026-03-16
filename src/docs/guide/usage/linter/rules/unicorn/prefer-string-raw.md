@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefers use of String.raw to avoid escaping \.
+Prefers use of `String.raw` to avoid escaping `\`.
 
 ### Why is this bad?
 

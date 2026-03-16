@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Checks for usage of the `debugger` statement
+Checks for usage of the `debugger` statement.
 
 ### Why is this bad?
 

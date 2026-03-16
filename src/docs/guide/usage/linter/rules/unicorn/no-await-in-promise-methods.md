@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow using `await` in `Promise` method parameters
+Disallow using `await` in `Promise` method parameters.
 
 ### Why is this bad?
 

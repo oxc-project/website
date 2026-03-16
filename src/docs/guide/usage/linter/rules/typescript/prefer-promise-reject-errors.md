@@ -18,7 +18,7 @@ const tsgolintSource = `https://github.com/oxc-project/tsgolint/blob/main/intern
 
 ### What it does
 
-This rule enforces passing an Error object to Promise.reject().
+This rule enforces passing an Error object to `Promise.reject()`.
 
 ### Why is this bad?
 

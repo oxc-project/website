@@ -30,7 +30,7 @@ See: https://github.com/microsoft/TypeScript/issues/54500, https://github.com/mi
 
 ### Why is this bad?
 
-Namespaces are an outdated way to organize TypeScript code. ES2015 module syntax is now preferred (import/export).
+Namespaces are an outdated way to organize TypeScript code. ES2015 module syntax is now preferred (`import`/`export`).
 For projects still using custom modules / namespaces, it's preferred to refer to them as namespaces.
 
 ### Examples

@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean
+Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean.
 
 ### Why is this bad?
 

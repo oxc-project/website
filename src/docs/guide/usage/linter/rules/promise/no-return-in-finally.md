@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow return statements in a finally() callback of a promise.
+Disallow return statements in a `finally()` callback of a promise.
 
 ### Why is this bad?
 

@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow calls to the Object constructor without an argument
+Disallow calls to the Object constructor without an argument.
 
 ### Why is this bad?
 

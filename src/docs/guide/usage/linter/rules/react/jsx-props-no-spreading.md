@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow JSX prop spreading
+Disallow JSX prop spreading.
 
 ### Why is this bad?
 

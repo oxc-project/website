@@ -17,14 +17,14 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow unnecessary calls to .bind()
+Disallow unnecessary calls to `.bind()`.
 
 ### Why is this bad?
 
-This rule is aimed at avoiding the unnecessary use of bind()
-and as such will warn whenever an immediately-invoked function expression (IIFE) is using bind()
-and doesn’t have an appropriate this value.
-This rule won’t flag usage of bind() that includes function argument binding.
+This rule is aimed at avoiding the unnecessary use of `bind()`
+and as such will warn whenever an immediately-invoked function expression (IIFE) is using `bind()`
+and doesn’t have an appropriate `this` value.
+This rule won’t flag usage of `bind()` that includes function argument binding.
 
 ### Examples
 

@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce PascalCase for user-defined JSX components
+Enforce PascalCase for user-defined JSX components.
 
 ### Why is this bad?
 

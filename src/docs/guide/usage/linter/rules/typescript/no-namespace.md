@@ -23,7 +23,7 @@ Disallow TypeScript namespaces.
 
 TypeScript historically allowed a form of code organization called "custom modules" (module Example {}),
 later renamed to "namespaces" (namespace Example). Namespaces are an outdated way to organize TypeScript code.
-ES2015 module syntax is now preferred (import/export).
+ES2015 module syntax is now preferred (`import`/`export`).
 
 ### Examples
 

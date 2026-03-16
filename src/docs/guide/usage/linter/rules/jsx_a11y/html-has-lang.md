@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Ensures that every HTML document has a lang attribute
+Ensures that every HTML document has a lang attribute.
 
 ### Why is this bad?
 

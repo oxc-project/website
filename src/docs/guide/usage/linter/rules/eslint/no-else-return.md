@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow `else` blocks after `return` statements in `if` statements
+Disallow `else` blocks after `return` statements in `if` statements.
 
 ### Why is this bad?
 

@@ -17,11 +17,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefer using structuredClone to create a deep clone.
+Prefer using `structuredClone` to create a deep clone.
 
 ### Why is this bad?
 
-structuredClone is the modern way to create a deep clone of a value.
+`structuredClone` is the modern way to create a deep clone of a value.
 
 ### Examples
 

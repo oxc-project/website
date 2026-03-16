@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow `if` statements as the only statement in `else` blocks
+Disallow `if` statements as the only statement in `else` blocks.
 
 ### Why is this bad?
 

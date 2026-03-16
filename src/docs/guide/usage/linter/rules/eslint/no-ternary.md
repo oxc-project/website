@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow ternary operators
+Disallow ternary operators.
 
 ### Why is this bad?
 

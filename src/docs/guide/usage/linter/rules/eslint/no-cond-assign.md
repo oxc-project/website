@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow assignment operators in conditional expressions
+Disallow assignment operators in conditional expressions.
 
 ### Why is this bad?
 

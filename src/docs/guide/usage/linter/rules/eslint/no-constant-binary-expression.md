@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow expressions where the operation doesn't affect the value
+Disallow expressions where the operation doesn't affect the value.
 
 ### Why is this bad?
 

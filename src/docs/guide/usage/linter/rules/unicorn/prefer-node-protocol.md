@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefer using the `node:protocol` when importing Node.js builtin modules
+Prefer using the `node:protocol` when importing Node.js builtin modules.
 
 ### Why is this bad?
 

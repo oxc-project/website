@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Require `require()` calls to be placed at top-level module scope
+Require `require()` calls to be placed at top-level module scope.
 
 ### Why is this bad?
 

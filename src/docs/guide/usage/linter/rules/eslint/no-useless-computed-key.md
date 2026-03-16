@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow unnecessary computed property keys in objects and classes
+Disallow unnecessary computed property keys in objects and classes.
 
 ### Why is this bad?
 

@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow `continue` statements
+Disallow `continue` statements.
 
 ### Why is this bad?
 

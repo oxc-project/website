@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Require grouped accessor pairs in object literals and classes
+Require grouped accessor pairs in object literals and classes.
 
 ### Why is this bad?
 

@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule enforces non-empty attribute list in import/export statements and import() expressions.
+This rule enforces non-empty attribute list in `import`/`export` statements and `import()` expressions.
 
 ### Why is this bad?
 

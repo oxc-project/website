@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefer `await` to `then()`/`catch()`/`finally()` for reading Promise values
+Prefer `await` to `then()`/`catch()`/`finally()` for reading Promise values.
 
 ### Why is this bad?
 

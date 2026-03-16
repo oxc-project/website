@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow duplicate conditions in if-else-if chains
+Disallow duplicate conditions in if-else-if chains.
 
 ### Why is this bad?
 
