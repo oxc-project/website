@@ -18,12 +18,12 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-container": "4.0.0",
-    "@types/node": "^25.4.0",
-    "@voidzero-dev/vitepress-theme": "^4.8.2",
+    "@types/node": "^25.5.0",
+    "@voidzero-dev/vitepress-theme": "^4.8.4",
     "degit": "^2.8.4",
     "esbuild": "0.27.4",
     "feed": "^5.2.0",
-    "knip": "^5.86.0",
+    "knip": "^6.0.2",
     "markdown-it-container": "^4.0.0",
     "markdown-it-task-lists": "^2.1.1",
     "oxc-minify": "^0.121.0",
@@ -31,7 +31,7 @@
     "vite-plus": "catalog:",
     "vitepress": "2.0.0-alpha.17",
     "vitepress-plugin-group-icons": "^1.7.1",
-    "vitepress-plugin-llms": "^1.11.0",
+    "vitepress-plugin-llms": "^1.12.0",
     "vue": "^3.5.30"
   },
   "packageManager": "pnpm@10.32.0"
