@@ -67,7 +67,7 @@ Notes:
 - The file must be named `oxlint.config.ts` (including when passed via `--config`).
 - The default export must be an object and should be wrapped with `defineConfig` for typing.
 - TypeScript configs require the Node-based `oxlint` package (JS runtime). If you're using a standalone binary, use `.oxlintrc.json` instead.
-- TypeScript configs require a Node runtime that can execute TypeScript.
+- TypeScript configs require a Node runtime that can execute TypeScript (Node v22.18+ or v24+).
 
 ## Configuration file format
 
