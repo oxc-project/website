@@ -89,22 +89,39 @@ For a complete list of fields, see the [Config file reference](/docs/guide/usage
 
 ## Configure linter options
 
-Use `options` for linter-level behavior.
+Use `options` for linter-level behavior. See the [Config file reference](/docs/guide/usage/linter/config-file-reference.html#options) for the full list.
 
 Example:
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
   "options": {
     "typeAware": true,
-    "typeCheck": true
+    "typeCheck": true,
+    "maxWarnings": 10
   }
 }
 ```
 
-`options.typeAware` is equivalent to passing `--type-aware` on the CLI.
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
 
-`options.typeCheck` is equivalent to passing `--type-check` on the CLI.
+export default defineConfig({
+  options: {
+    typeAware: true,
+    typeCheck: true,
+    maxWarnings: 10,
+  },
+});
+```
+
+:::
+
+- `options.typeAware` is equivalent to passing `--type-aware` on the CLI.
+- `options.typeCheck` (experimental) is equivalent to passing `--type-check` on the CLI.
+- `options.maxWarnings` is equivalent to passing `--max-warnings` on the CLI.
 
 CLI flags take precedence when both CLI and config values are present.
 
@@ -121,23 +138,41 @@ A rule value is either:
 
 If a rule is from ESLint core and its name is unique, you can configure it without a plugin prefix. For example, `no-console` is the same as `eslint/no-console`.
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "rules": {
     "no-alert": "error",
     "oxc/approx-constant": "warn",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    "eslint/prefer-const": ["error", { "destructuring": "any" }]
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  rules: {
+    "no-alert": "error",
+    "oxc/approx-constant": "warn",
+    "no-plusplus": "off",
+    "eslint/prefer-const": ["error", { destructuring: "any" }],
+  },
+});
+```
+
+:::
 
 ### Severity values
 
 Oxlint accepts ESLint-style severities:
 
-- Allow rule: `"off"`, `"allow"`
+- Disable rule: `"off"` or `"allow"`
 - Warning on rule: `"warn"`
-- Error on rule: `"error"`, `"deny"`
+- Error on rule: `"error"` or `"deny"`
 
 ### Rule options
 
