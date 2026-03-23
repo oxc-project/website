@@ -21,11 +21,20 @@ const source = computed(() => {
 });
 
 const tsgolintSource = computed(() => {
-  if (!hasTsgolint.value) return "";
+  if (!hasTsgolint.value) {
+    return "";
+  }
   const slashIdx = title.value.indexOf("/");
   const ruleName = slashIdx !== -1 ? title.value.slice(slashIdx + 1) : title.value;
   const snaked = toSnakeCase(ruleName);
   return `https://github.com/oxc-project/tsgolint/blob/main/internal/rules/${snaked}/${snaked}.go`;
+});
+
+const playgroundUrl = computed(() => {
+  if (hasTsgolint.value) {
+    return "";
+  }
+  return `https://playground.oxc.rs/?lintRules=${encodeURIComponent(title.value)}`;
 });
 </script>
 
@@ -36,6 +45,9 @@ const tsgolintSource = computed(() => {
     </li>
     <li v-if="hasTsgolint">
       <a :href="tsgolintSource" target="_blank" rel="noreferrer">Rule Source (tsgolint)</a>
+    </li>
+    <li v-if="!hasTsgolint">
+      <a :href="playgroundUrl" target="_blank" rel="noreferrer">Open rule in Oxc Playground</a>
     </li>
   </ul>
 </template>
