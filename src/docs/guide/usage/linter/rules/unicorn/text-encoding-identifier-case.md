@@ -78,24 +78,8 @@ If `true`, prefer `utf-8` over `utf8`.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/text-encoding-identifier-case": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/text-encoding-identifier-case
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

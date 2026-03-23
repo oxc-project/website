@@ -95,25 +95,8 @@ An array of hook function names that are permitted for use.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/no-hooks": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/no-hooks --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

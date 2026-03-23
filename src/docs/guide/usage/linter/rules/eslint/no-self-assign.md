@@ -92,24 +92,8 @@ obj[a] = obj[a];
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-self-assign": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-self-assign
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

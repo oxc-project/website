@@ -49,25 +49,8 @@ test("foo", () => {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["vitest"],
-  "rules": {
-    "vitest/prefer-called-times": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny vitest/prefer-called-times --vitest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

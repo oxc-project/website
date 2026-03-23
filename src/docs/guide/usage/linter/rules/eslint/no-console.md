@@ -74,24 +74,8 @@ console.info("foo");
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-console": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-console
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

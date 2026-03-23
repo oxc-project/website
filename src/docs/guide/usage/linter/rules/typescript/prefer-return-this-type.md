@@ -93,25 +93,8 @@ class ExtendedBuilder extends Builder {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/prefer-return-this-type": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --type-aware --deny typescript/prefer-return-this-type
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
-- <a v-bind:href="tsgolintSource" target="_blank" rel="noreferrer">Rule Source (tsgolint)</a>
+<RuleReferences />

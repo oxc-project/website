@@ -55,25 +55,8 @@ Pattern doesn't have a default value, you must provide one.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["vitest"],
-  "rules": {
-    "vitest/consistent-test-filename": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny vitest/consistent-test-filename --vitest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

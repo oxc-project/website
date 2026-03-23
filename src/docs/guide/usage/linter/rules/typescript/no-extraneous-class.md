@@ -112,24 +112,8 @@ Allow classes with decorators.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-extraneous-class": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/no-extraneous-class
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

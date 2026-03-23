@@ -4924,6 +4924,15 @@
   },
   {
     "scope": "unicorn",
+    "value": "custom-error-definition",
+    "category": "style",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/custom-error-definition.html"
+  },
+  {
+    "scope": "unicorn",
     "value": "empty-brace-spaces",
     "category": "style",
     "type_aware": false,
@@ -6091,6 +6100,15 @@
     "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-import-in-mock.html"
+  },
+  {
+    "scope": "vitest",
+    "value": "prefer-strict-boolean-matchers",
+    "category": "style",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-strict-boolean-matchers.html"
   },
   {
     "scope": "vitest",

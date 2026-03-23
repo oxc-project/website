@@ -87,25 +87,8 @@ default: `"enforce"`
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["react"],
-  "rules": {
-    "react/jsx-props-no-spreading": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny react/jsx-props-no-spreading --react-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -59,25 +59,8 @@ import { bar } from "./bar"; // Correct: accessing named export directly
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["import"],
-  "rules": {
-    "import/no-named-as-default-member": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny import/no-named-as-default-member --import-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

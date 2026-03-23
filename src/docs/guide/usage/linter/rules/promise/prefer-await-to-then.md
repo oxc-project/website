@@ -65,25 +65,8 @@ If true, enforces the rule even after an `await` or `yield` expression.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["promise"],
-  "rules": {
-    "promise/prefer-await-to-then": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny promise/prefer-await-to-then --promise-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -62,25 +62,8 @@ export default function Index() {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["nextjs"],
-  "rules": {
-    "nextjs/no-script-component-in-head": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny nextjs/no-script-component-in-head --nextjs-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

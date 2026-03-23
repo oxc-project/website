@@ -40,24 +40,8 @@ var foo2 = /^abc[123]/;
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-empty-character-class": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-empty-character-class
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

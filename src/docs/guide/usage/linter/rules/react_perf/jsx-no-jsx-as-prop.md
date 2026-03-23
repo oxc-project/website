@@ -46,25 +46,8 @@ Examples of **correct** code for this rule:
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["react-perf"],
-  "rules": {
-    "react-perf/jsx-no-jsx-as-prop": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny react-perf/jsx-no-jsx-as-prop --react-perf-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

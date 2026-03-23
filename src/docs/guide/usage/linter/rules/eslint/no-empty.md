@@ -55,24 +55,8 @@ If set to `true`, allows an empty `catch` block without triggering the linter.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-empty": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-empty
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

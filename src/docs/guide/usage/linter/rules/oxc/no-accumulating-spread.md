@@ -69,24 +69,8 @@ for (let i = 0; i < 10; i++) {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "oxc/no-accumulating-spread": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny oxc/no-accumulating-spread
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

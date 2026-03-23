@@ -121,24 +121,8 @@ This is common in TypeScript: `type Foo = ...; const Foo = ...;`
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-shadow": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-shadow
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

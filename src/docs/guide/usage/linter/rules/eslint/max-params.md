@@ -91,24 +91,8 @@ Maximum number of parameters allowed in function definitions.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "max-params": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny max-params
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

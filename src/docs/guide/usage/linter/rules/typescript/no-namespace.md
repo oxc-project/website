@@ -122,24 +122,8 @@ declare module "foo" {}
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-namespace": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/no-namespace
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -108,24 +108,8 @@ If `true`, allows returning `void` expressions (e.g., `return void resolve()`).
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-promise-executor-return": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-promise-executor-return
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -52,25 +52,8 @@ describe(myFunction, () => {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["vitest"],
-  "rules": {
-    "vitest/prefer-describe-function-title": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny vitest/prefer-describe-function-title --vitest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

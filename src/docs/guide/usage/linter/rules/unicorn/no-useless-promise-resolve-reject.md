@@ -59,24 +59,8 @@ If set to `true`, allows the use of `Promise.reject` in async functions and prom
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-useless-promise-resolve-reject": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-useless-promise-resolve-reject
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

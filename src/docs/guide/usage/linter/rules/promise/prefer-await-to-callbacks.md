@@ -53,25 +53,8 @@ eventEmitter.on("error", (err) => {});
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["promise"],
-  "rules": {
-    "promise/prefer-await-to-callbacks": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny promise/prefer-await-to-callbacks --promise-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

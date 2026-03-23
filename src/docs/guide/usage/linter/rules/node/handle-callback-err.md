@@ -85,25 +85,8 @@ type: `string`
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["node"],
-  "rules": {
-    "node/handle-callback-err": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny node/handle-callback-err --node-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

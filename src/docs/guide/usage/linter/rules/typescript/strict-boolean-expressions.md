@@ -160,25 +160,8 @@ Whether to allow string types in boolean contexts (checks for non-empty strings)
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/strict-boolean-expressions": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --type-aware --deny typescript/strict-boolean-expressions
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
-- <a v-bind:href="tsgolintSource" target="_blank" rel="noreferrer">Rule Source (tsgolint)</a>
+<RuleReferences />

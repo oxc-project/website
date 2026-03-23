@@ -78,25 +78,8 @@ A mapping of restricted Jest method names to custom messages - or
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/no-restricted-jest-methods": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/no-restricted-jest-methods --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

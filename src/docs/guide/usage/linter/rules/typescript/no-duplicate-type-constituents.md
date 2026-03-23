@@ -78,25 +78,8 @@ When true, allows `type T = A | A`.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-duplicate-type-constituents": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --type-aware --deny typescript/no-duplicate-type-constituents
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
-- <a v-bind:href="tsgolintSource" target="_blank" rel="noreferrer">Rule Source (tsgolint)</a>
+<RuleReferences />

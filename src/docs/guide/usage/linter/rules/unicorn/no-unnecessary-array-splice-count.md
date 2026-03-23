@@ -45,24 +45,8 @@ array.toSpliced(1);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-unnecessary-array-splice-count": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-unnecessary-array-splice-count
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

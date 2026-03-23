@@ -48,24 +48,8 @@ const bar = new Array(1, 2, 3);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/new-for-builtins": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/new-for-builtins
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

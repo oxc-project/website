@@ -80,24 +80,8 @@ Configuration option to specify whether to check for constant conditions in loop
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-constant-condition": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-constant-condition
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

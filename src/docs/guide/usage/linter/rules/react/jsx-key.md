@@ -21,7 +21,8 @@ Enforce `key` prop for elements in array.
 
 ### Why is this bad?
 
-React requires a `key` prop for elements in an array to help identify which items have changed, are added, or are removed.
+React requires a `key` prop for elements in an array to help identify which
+items have changed, are added, or are removed.
 
 ### Examples
 
@@ -29,15 +30,19 @@ Examples of **incorrect** code for this rule:
 
 ```jsx
 [1, 2, 3].map((x) => <App />);
-[1, 2, 3]?.map((x) => <BabelEslintApp />);
+[1, 2, 3]?.map((x) => <ListItem />);
 ```
 
 Examples of **correct** code for this rule:
 
 ```jsx
 [1, 2, 3].map((x) => <App key={x} />);
-[1, 2, 3]?.map((x) => <BabelEslintApp key={x} />);
+[1, 2, 3]?.map((x) => <ListItem key={x} />);
 ```
+
+NOTE: This rule's option defaults differ from the defaults in the original ESLint plugin. It is recommended to keep
+all options set to `true` for correctness reasons, but you may want to set them back to `false` to get behavior
+parity when migrating from ESLint.
 
 ## Configuration
 
@@ -69,25 +74,8 @@ When true, warn on duplicate key values
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["react"],
-  "rules": {
-    "react/jsx-key": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny react/jsx-key --react-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

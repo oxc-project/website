@@ -110,24 +110,8 @@ class SomeClass {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-useless-computed-key": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-useless-computed-key
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

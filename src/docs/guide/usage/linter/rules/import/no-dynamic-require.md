@@ -57,25 +57,8 @@ When `true`, also check `import()` expressions for dynamic module specifiers.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["import"],
-  "rules": {
-    "import/no-dynamic-require": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny import/no-dynamic-require --import-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

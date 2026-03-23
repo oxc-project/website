@@ -105,24 +105,8 @@ Determines whether the object destructuring rule applies to renamed variables.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "prefer-destructuring": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny prefer-destructuring
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

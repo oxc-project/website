@@ -63,24 +63,8 @@ for (key in foo) {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "guard-for-in": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny guard-for-in
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

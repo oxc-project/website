@@ -42,24 +42,8 @@ class Bar {}
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-unsafe-declaration-merging": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/no-unsafe-declaration-merging
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

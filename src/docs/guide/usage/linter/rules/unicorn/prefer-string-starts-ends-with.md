@@ -41,24 +41,8 @@ foo.startsWith("abc");
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/prefer-string-starts-ends-with": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/prefer-string-starts-ends-with
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />
