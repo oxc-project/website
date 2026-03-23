@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import { HeadConfig } from "vitepress";
 import type { MarkdownEnv, UserConfig } from "vitepress";
 import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
+import { ruleHowToUseMdPlugin } from "../plugins/ruleHowToUse";
 import llmstxt from "vitepress-plugin-llms";
 import BLOG_SIDEBAR from "../sidebar.blog.json" with { type: "json" };
 
@@ -217,6 +218,7 @@ export const sharedConfig = {
   },
   markdown: {
     config(md) {
+      md.use(ruleHowToUseMdPlugin);
       md.use(groupIconMdPlugin);
     },
   },

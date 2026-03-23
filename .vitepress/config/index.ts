@@ -16,7 +16,9 @@ export default extendConfig(
       ...enConfig,
     },
     markdown: {
+      ...sharedConfig.markdown,
       config(md) {
+        sharedConfig.markdown?.config?.(md);
         md.use(taskLists);
       },
     },
