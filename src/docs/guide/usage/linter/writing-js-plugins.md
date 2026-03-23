@@ -65,10 +65,11 @@ import { defineConfig } from "oxlint";
 export default defineConfig({
   jsPlugins: ["./plugin.js"],
   rules: {
-    "best-plugin-ever/max-classes": "error"
-  }
+    "best-plugin-ever/max-classes": "error",
+  },
 });
 ```
+
 :::
 
 ## Alternative API

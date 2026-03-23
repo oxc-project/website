@@ -35,8 +35,8 @@ Paths are resolved relative to the config file itself.
     "my-plugin/rule2": "warn",
     "whatever/rule1": "error",
     "whatever/rule2": "warn",
-    "@foobar/rule1": "error"
-  }
+    "@foobar/rule1": "error",
+  },
   // ... other config ...
 }
 ```
@@ -51,11 +51,12 @@ export default defineConfig({
     "my-plugin/rule2": "warn",
     "whatever/rule1": "error",
     "whatever/rule2": "warn",
-    "@foobar/rule1": "error"
-  }
+    "@foobar/rule1": "error",
+  },
   // ... other config ...
 });
 ```
+
 :::
 
 ### Plugin aliases
@@ -74,21 +75,21 @@ You can also define a different name (alias) for a plugin. This is useful if:
     // `jsdoc` is a reserved name, as Oxlint supports it natively
     {
       "name": "jsdoc-js",
-      "specifier": "eslint-plugin-jsdoc"
+      "specifier": "eslint-plugin-jsdoc",
     },
     // Shorten name
     {
       "name": "short",
-      "specifier": "eslint-plugin-with-name-so-very-very-long"
+      "specifier": "eslint-plugin-with-name-so-very-very-long",
     },
     // List plugins you don't want to alias as just specifiers
-    "eslint-plugin-whatever"
+    "eslint-plugin-whatever",
   ],
   "rules": {
     "jsdoc-js/check-alignment": "error",
     "short/rule1": "error",
-    "whatever/rule2": "error"
-  }
+    "whatever/rule2": "error",
+  },
 }
 ```
 
@@ -100,21 +101,21 @@ export default defineConfig({
     // `jsdoc` is a reserved name, as Oxlint supports it natively
     {
       name: "jsdoc-js",
-      specifier: "eslint-plugin-jsdoc"
+      specifier: "eslint-plugin-jsdoc",
     },
     // Shorten name
     {
       name: "short",
-      specifier: "eslint-plugin-with-name-so-very-very-long"
+      specifier: "eslint-plugin-with-name-so-very-very-long",
     },
     // List plugins you don't want to alias as just specifiers
-    "eslint-plugin-whatever"
+    "eslint-plugin-whatever",
   ],
   rules: {
     "jsdoc-js/check-alignment": "error",
     "short/rule1": "error",
-    "whatever/rule2": "error"
-  }
+    "whatever/rule2": "error",
+  },
 });
 ```
 
