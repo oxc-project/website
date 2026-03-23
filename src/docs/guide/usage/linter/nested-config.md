@@ -52,7 +52,7 @@ You can also disable nested configs with the `--disable-nested-config` flag.
 
 In a monorepo, you often want one shared baseline at the root, and small package specific adjustments.
 
-You do this by keeping a root `.oxlintrc.json`, then having package configs extend it.
+You do this by keeping a root config file (either `.oxlintrc.json` or `oxlint.config.ts`), then having package configs extend it.
 
 ::: code-group
 
