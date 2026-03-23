@@ -72,6 +72,8 @@ You can apply safe fixes with type-aware linting enabled like so:
 oxlint --type-aware --fix
 ```
 
+Or with just `oxlint --fix` if you have type-aware linting enabled via your config file.
+
 ## JS Plugins
 
 [JS Plugins](/docs/guide/usage/linter/js-plugins) that provide fixers or suggestions can also be applied by Oxlint.
