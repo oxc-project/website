@@ -48,8 +48,9 @@ const plugin = {
 export default plugin;
 ```
 
-```json
-// .oxlintrc.json
+::: code-group
+
+```json [.oxlintrc.json]
 {
   "jsPlugins": ["./plugin.js"],
   "rules": {
@@ -57,6 +58,18 @@ export default plugin;
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  jsPlugins: ["./plugin.js"],
+  rules: {
+    "best-plugin-ever/max-classes": "error"
+  }
+});
+```
+:::
 
 ## Alternative API
 

@@ -107,7 +107,7 @@ This keeps the shared baseline in one place and makes package configs small and 
 
 A config can reuse settings from other files using `extends`. The value is an array of file paths, resolved relative to the config file that declares them.
 
-Extended files can have any name. They do not need to be named `.oxlintrc.json`, as long as they are valid JSON configuration files.
+Extended files can have any name. They do not need to be named `.oxlintrc.json`, as long as they are valid JSON configuration files. For `oxlint.config.ts`, the file with the `extends` property must be named `oxlint.config.ts`.
 
 Example:
 

@@ -25,10 +25,9 @@ that's a bug - please [report it](https://github.com/oxc-project/oxc/issues/new?
 The path can be any valid import specifier e.g. `./plugin.js`, `eslint-plugin-foo`, or `@foo/eslint-plugin`.
 Paths are resolved relative to the config file itself.
 
-<!-- TODO: Add an example here for oxlint.config.ts as well. -->
+::: code-group
 
-```json
-// .oxlintrc.json
+```jsonc [.oxlintrc.json]
 {
   "jsPlugins": ["./path/to/my-plugin.js", "eslint-plugin-whatever", "@foobar/eslint-plugin"],
   "rules": {
@@ -42,6 +41,23 @@ Paths are resolved relative to the config file itself.
 }
 ```
 
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  jsPlugins: ["./path/to/my-plugin.js", "eslint-plugin-whatever", "@foobar/eslint-plugin"],
+  rules: {
+    "my-plugin/rule1": "error",
+    "my-plugin/rule2": "warn",
+    "whatever/rule1": "error",
+    "whatever/rule2": "warn",
+    "@foobar/rule1": "error"
+  }
+  // ... other config ...
+});
+```
+:::
+
 ### Plugin aliases
 
 You can also define a different name (alias) for a plugin. This is useful if:
@@ -50,7 +66,9 @@ You can also define a different name (alias) for a plugin. This is useful if:
 - The default plugin name is very long.
 - You want to use a plugin that Oxlint supports natively, but a specific rule you need is not yet implemented in Oxlint's native version.
 
-```json
+::: code-group
+
+```jsonc [.oxlintrc.json]
 {
   "jsPlugins": [
     // `jsdoc` is a reserved name, as Oxlint supports it natively
@@ -73,6 +91,34 @@ You can also define a different name (alias) for a plugin. This is useful if:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  jsPlugins: [
+    // `jsdoc` is a reserved name, as Oxlint supports it natively
+    {
+      name: "jsdoc-js",
+      specifier: "eslint-plugin-jsdoc"
+    },
+    // Shorten name
+    {
+      name: "short",
+      specifier: "eslint-plugin-with-name-so-very-very-long"
+    },
+    // List plugins you don't want to alias as just specifiers
+    "eslint-plugin-whatever"
+  ],
+  "rules": {
+    "jsdoc-js/check-alignment": "error",
+    "short/rule1": "error",
+    "whatever/rule2": "error"
+  }
+});
+```
+
+:::
 
 See the [Writing JS Plugins](./writing-js-plugins) page for information on writing your own JS plugins and custom rules for Oxlint.
 

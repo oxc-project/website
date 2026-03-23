@@ -56,7 +56,9 @@ CLI:
 oxlint --type-aware
 ```
 
-Root config (`.oxlintrc.json`):
+Root config:
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
@@ -65,8 +67,6 @@ Root config (`.oxlintrc.json`):
   }
 }
 ```
-
-Root config (`oxlint.config.ts`):
 
 ```ts [oxlint.config.ts]
 import { defineConfig } from "oxlint";
@@ -77,6 +77,8 @@ export default defineConfig({
   },
 });
 ```
+
+:::
 
 When enabled, Oxlint runs standard rules and type-aware rules in the `typescript/*` namespace.
 
