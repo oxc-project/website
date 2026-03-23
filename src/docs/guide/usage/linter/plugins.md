@@ -21,7 +21,7 @@ It is **strongly recommended** to use a config file to enable plugins, as it mak
 
 ### Enable in a config file
 
-You can also enable plugins in `.oxlintrc.json` using the `plugins` field:
+You can also enable plugins in your config file using the `plugins` field:
 
 ::: code-group
 
