@@ -55,6 +55,8 @@ Download the official Oxc VS Code extension from:
 
 To enable it for the whole project, set it in the root Oxlint config:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "options": {
@@ -62,6 +64,18 @@ To enable it for the whole project, set it in the root Oxlint config:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  options: {
+    typeAware: true,
+  },
+});
+```
+
+:::
 
 Or set it in `.vscode/settings.json`:
 

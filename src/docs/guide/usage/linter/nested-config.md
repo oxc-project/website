@@ -54,6 +54,8 @@ In a monorepo, you often want one shared baseline at the root, and small package
 
 You do this by keeping a root `.oxlintrc.json`, then having package configs extend it.
 
+::: code-group
+
 ```json [my-project/.oxlintrc.json]
 {
   "rules": {
@@ -61,6 +63,20 @@ You do this by keeping a root `.oxlintrc.json`, then having package configs exte
   }
 }
 ```
+
+```ts [my-project/oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  rules: {
+    "no-debugger": "error",
+  },
+});
+```
+
+:::
+
+::: code-group
 
 ```json [my-project/package1/.oxlintrc.json]
 {
@@ -70,6 +86,20 @@ You do this by keeping a root `.oxlintrc.json`, then having package configs exte
   }
 }
 ```
+
+```ts [my-project/package1/oxlint.config.ts]
+import baseConfig from "../oxlint.config.ts";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [baseConfig],
+  rules: {
+    "no-console": "off",
+  },
+});
+```
+
+:::
 
 This keeps the shared baseline in one place and makes package configs small and focused.
 
@@ -81,6 +111,8 @@ Extended files can have any name. They do not need to be named `.oxlintrc.json`,
 
 Example:
 
+::: code-group
+
 ```json [oxlint-typescript.json]
 {
   "plugins": ["typescript"],
@@ -90,6 +122,21 @@ Example:
 }
 ```
 
+```ts [oxlint-typescript.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["typescript"],
+  rules: {
+    "typescript/no-explicit-any": "error",
+  },
+});
+```
+
+:::
+
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "extends": ["oxlint-typescript.json"],
@@ -98,6 +145,20 @@ Example:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import typescriptConfig from "./oxlint-typescript.config.ts";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [typescriptConfig],
+  rules: {
+    "no-unused-vars": "warn",
+  },
+});
+```
+
+:::
 
 Only some properties can be extended. The supported properties are:
 

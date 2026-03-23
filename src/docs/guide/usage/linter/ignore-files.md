@@ -26,12 +26,24 @@ The recommended approach is to define ignores in your config file using `ignoreP
 
 Patterns are resolved relative to the configuration file.
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "ignorePatterns": ["dist/**", "coverage/**", "vendor/**", "test/snapshots/**"]
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  ignorePatterns: ["dist/**", "coverage/**", "vendor/**", "test/snapshots/**"],
+});
+```
+
+:::
 
 In monorepos, nested configs can ignore package specific output without affecting the rest of the repository.
 
@@ -65,12 +77,24 @@ Ignore files support negation patterns, which allow a directory to be ignored wh
 
 To ignore everything under `build/` except one file, ignore the contents rather than the directory itself:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "ignorePatterns": ["build/**/*", "!build/keep.js"]
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  ignorePatterns: ["build/**/*", "!build/keep.js"],
+});
+```
+
+:::
 
 This keeps traversal possible while still ignoring almost everything.
 

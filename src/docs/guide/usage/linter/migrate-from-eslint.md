@@ -83,12 +83,24 @@ If you use local custom ESLint plugins from within your own repo (e.g. `import p
 
 However, they can be added manually to the `.oxlintrc.json` after running the migration script:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "jsPlugins": ["./eslint-plugin-company/lib/index.js"]
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  jsPlugins: ["./eslint-plugin-company/lib/index.js"],
+});
+```
+
+:::
 
 ## Running Oxlint and ESLint together
 

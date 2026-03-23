@@ -111,6 +111,8 @@ oxlint --type-aware --type-check
 
 Or enable it in the root config:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "options": {
@@ -119,6 +121,19 @@ Or enable it in the root config:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  options: {
+    typeAware: true,
+    typeCheck: true,
+  },
+});
+```
+
+:::
 
 `--type-check` takes precedence over config files. For example, `oxlint --type-check -c .oxlintrc.json` enables type checking even if that config sets `options.typeCheck` to `false`.
 
@@ -137,6 +152,8 @@ oxlint --type-aware --type-check
 
 Type-aware rules are configured like other Oxlint rules.
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "plugins": ["typescript"],
@@ -147,7 +164,23 @@ Type-aware rules are configured like other Oxlint rules.
 }
 ```
 
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["typescript"],
+  rules: {
+    "typescript/no-floating-promises": "error",
+    "typescript/no-unsafe-assignment": "warn",
+  },
+});
+```
+
+:::
+
 Rules support the same options as their `typescript-eslint` equivalents.
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
@@ -157,6 +190,19 @@ Rules support the same options as their `typescript-eslint` equivalents.
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["typescript"],
+  rules: {
+    "typescript/no-floating-promises": ["error", { ignoreVoid: true }],
+  },
+});
+```
+
+:::
 
 ## Disable comments
 

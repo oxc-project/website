@@ -31,6 +31,8 @@ Import cycles:
 - make refactors harder
 - can cause imported values to be `undefined` due to evaluation order
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
@@ -40,6 +42,19 @@ Import cycles:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["import"],
+  rules: {
+    "import/no-cycle": ["error", { maxDepth: 3 }],
+  },
+});
+```
+
+:::
 
 ## TypeScript path aliases
 

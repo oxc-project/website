@@ -178,6 +178,8 @@ Oxlint accepts ESLint-style severities:
 
 To configure rule options, use an array:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "rules": {
@@ -185,6 +187,18 @@ To configure rule options, use an array:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  rules: {
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+  },
+});
+```
+
+:::
 
 All available rules, and their configuration options, are listed in the [Rules reference](/docs/guide/usage/linter/rules).
 
@@ -208,6 +222,8 @@ Categories let you enable or disable sets of rules with similar intent. By defau
 
 Configure categories using `categories`:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "categories": {
@@ -217,6 +233,20 @@ Configure categories using `categories`:
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  categories: {
+    correctness: "error",
+    suspicious: "warn",
+    pedantic: "off",
+  },
+});
+```
+
+:::
 
 Available categories include:
 
@@ -242,19 +272,43 @@ Oxlint supports many popular plugins natively in Rust. This provides broad rule 
 
 Configure plugins using `plugins`. Setting `plugins` overwrites the default plugin set, so the array should include everything you want enabled:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "plugins": ["unicorn", "typescript", "oxc"]
 }
 ```
 
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["unicorn", "typescript", "oxc"],
+});
+```
+
+:::
+
 To disable all default plugins:
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
   "plugins": []
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: [],
+});
+```
+
+:::
 
 For plugin details and CLI flags such as `--import-plugin`, see [Native Plugins](/docs/guide/usage/linter/plugins).
 
@@ -268,6 +322,8 @@ Notes:
 
 JS plugins can be declared as strings, or as objects with an alias:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "jsPlugins": [
@@ -276,6 +332,19 @@ JS plugins can be declared as strings, or as objects with an alias:
   ]
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  jsPlugins: [
+    "eslint-plugin-playwright",
+    { name: "my-eslint-react", specifier: "eslint-plugin-react" },
+  ],
+});
+```
+
+:::
 
 Some plugin names are reserved because they are implemented natively in Rust (for example `react`, `unicorn`, `typescript`, `oxc`, `import`, `jest`, `vitest`, `jsx-a11y`, `nextjs`). If you need the JavaScript version of a reserved plugin, give it a custom `name` to avoid conflicts.
 
@@ -295,6 +364,8 @@ Use `overrides` to apply different configuration to different files, such as tes
 - `jsPlugins`: JS plugins for this override (alpha)
 
 Example:
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
@@ -330,11 +401,50 @@ Example:
 }
 ```
 
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  rules: {
+    "no-console": "error",
+  },
+  overrides: [
+    {
+      files: ["scripts/*.js"],
+      rules: {
+        "no-console": "off",
+      },
+    },
+    {
+      files: ["**/*.{ts,tsx}"],
+      plugins: ["typescript"],
+      rules: {
+        "typescript/no-explicit-any": "error",
+      },
+    },
+    {
+      files: ["**/test/**"],
+      plugins: ["jest"],
+      env: {
+        jest: true,
+      },
+      rules: {
+        "jest/no-disabled-tests": "off",
+      },
+    },
+  ],
+});
+```
+
+:::
+
 ## Extend shared configs
 
 Use `extends` to inherit from other configuration files.
 
 Paths in `extends` are resolved relative to the configuration file that declares `extends`. Configs are merged from first to last, with later entries overriding earlier ones.
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
@@ -352,11 +462,15 @@ export default defineConfig({
 });
 ```
 
+:::
+
 ## Configure environments and globals
 
 Use `env` to enable predefined globals for common environments such as browser or node.
 
 Use `globals` to declare project-specific globals, mark them writable or readonly, or disable a global that would otherwise be present.
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
@@ -370,6 +484,22 @@ Use `globals` to declare project-specific globals, mark them writable or readonl
 }
 ```
 
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  env: {
+    es6: true,
+  },
+  globals: {
+    MY_GLOBAL: "readonly",
+    Promise: "off",
+  },
+});
+```
+
+:::
+
 `globals` accepts:
 
 - `"readonly"` or `"readable"` or `false`
@@ -381,6 +511,8 @@ Use `globals` to declare project-specific globals, mark them writable or readonl
 Use `settings` for plugin-wide configuration shared by multiple rules.
 
 Example (monorepo + React + jsx-a11y):
+
+::: code-group
 
 ```json [.oxlintrc.json]
 {
@@ -400,6 +532,29 @@ Example (monorepo + React + jsx-a11y):
   }
 }
 ```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  settings: {
+    next: {
+      rootDir: "apps/dashboard/",
+    },
+    react: {
+      linkComponents: [{ name: "Link", linkAttribute: "to" }],
+    },
+    "jsx-a11y": {
+      components: {
+        Link: "a",
+        Button: "button",
+      },
+    },
+  },
+});
+```
+
+:::
 
 ## Next steps
 
