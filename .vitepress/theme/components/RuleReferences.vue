@@ -6,7 +6,7 @@ import { data } from "../../../src/docs/guide/usage/linter/rules/version.data.js
 const { frontmatter } = useData();
 
 const title = computed(() => frontmatter.value.title as string);
-const hasTsgolint = computed(() => frontmatter.value.tsgolint === true);
+const hasTsgolint = computed(() => frontmatter.value.type_aware === true);
 
 function toSnakeCase(str: string): string {
   return str.replace(/-/g, "_");
