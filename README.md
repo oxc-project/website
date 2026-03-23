@@ -12,7 +12,7 @@ Then run:
 
 ```sh
 vp install
-vp dev
+vp run dev
 ```
 
 ### Source code for the playground
