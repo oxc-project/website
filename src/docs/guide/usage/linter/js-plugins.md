@@ -110,7 +110,7 @@ export default defineConfig({
     // List plugins you don't want to alias as just specifiers
     "eslint-plugin-whatever"
   ],
-  "rules": {
+  rules: {
     "jsdoc-js/check-alignment": "error",
     "short/rule1": "error",
     "whatever/rule2": "error"
