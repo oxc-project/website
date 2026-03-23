@@ -81,7 +81,7 @@ For more information on JavaScript Plugins, see [the JS Plugins page](/docs/guid
 
 If you use local custom ESLint plugins from within your own repo (e.g. `import pluginMyCompany from './eslint-plugin-my-company/lib/index.js'`), these will not be migrated automatically by `@oxlint/migrate` right now.
 
-However, they can be added manually to the oxlint config file after running the migration script:
+However, they can be added manually to the Oxlint config file after running the migration script:
 
 ::: code-group
 
