@@ -148,24 +148,8 @@ Array of function names that are exempt from requiring return type annotations.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/explicit-function-return-type": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/explicit-function-return-type
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

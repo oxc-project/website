@@ -227,24 +227,8 @@ When true, numeric literals used to index TypeScript types are ignored.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-magic-numbers": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-magic-numbers
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -65,10 +65,13 @@ Examples of **incorrect** code for this rule with the `"multi"` option:
 ```js
 /* curly: ["error", "multi"] */
 
-if (foo) foo();
+if (foo) {
+  foo();
+}
+
+if (foo) bar();
 else {
-  bar();
-  baz();
+  foo();
 }
 ```
 
@@ -91,7 +94,7 @@ Examples of **incorrect** code for this rule with the `"multi-line"` option:
 if (foo) foo();
 else bar();
 
-while (foo) foo();
+if (foo) foo(bar, baz);
 ```
 
 Examples of **correct** code for this rule with the `"multi-line"` option:
@@ -117,9 +120,13 @@ Examples of **incorrect** code for this rule with the `"multi-or-nest"` option:
 ```js
 /* curly: ["error", "multi-or-nest"] */
 
-if (foo) if (bar) bar();
+while (true)
+  if (foo) foo();
+  else bar();
 
-while (foo) while (bar) bar();
+if (foo) {
+  foo++;
+}
 ```
 
 Examples of **correct** code for this rule with the `"multi-or-nest"` option:
@@ -260,24 +267,8 @@ Require braces when the block is nested or spans multiple lines
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "curly": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny curly
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

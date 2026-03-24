@@ -64,25 +64,8 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/require-to-throw-message": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/require-to-throw-message --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -56,24 +56,8 @@ if (index !== -1) {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/consistent-existence-index-check": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/consistent-existence-index-check
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

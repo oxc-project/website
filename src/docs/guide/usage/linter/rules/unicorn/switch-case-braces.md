@@ -71,24 +71,8 @@ Allow braces only when needed for scoping (e.g., variable or function declaratio
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/switch-case-braces": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/switch-case-braces
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

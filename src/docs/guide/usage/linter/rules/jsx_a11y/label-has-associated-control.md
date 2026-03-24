@@ -97,25 +97,8 @@ Custom JSX components to be treated as labels.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jsx-a11y"],
-  "rules": {
-    "jsx-a11y/label-has-associated-control": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jsx-a11y/label-has-associated-control --jsx-a11y-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

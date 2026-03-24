@@ -69,24 +69,8 @@ Whether to check for useless `undefined` in arrow function bodies.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-useless-undefined": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-useless-undefined
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

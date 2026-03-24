@@ -52,24 +52,8 @@ type: `"fields" | "getters"`
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/class-literal-property-style": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/class-literal-property-style
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -53,25 +53,8 @@ Do not allow ES2015 class-style, prefer `createReactClass`.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["react"],
-  "rules": {
-    "react/prefer-es6-class": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny react/prefer-es6-class --react-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -51,24 +51,8 @@ async function good() {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-single-promise-in-promise-methods": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-single-promise-in-promise-methods
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

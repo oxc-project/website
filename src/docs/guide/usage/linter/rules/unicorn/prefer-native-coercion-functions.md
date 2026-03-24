@@ -45,24 +45,8 @@ array.some(Boolean);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/prefer-native-coercion-functions": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/prefer-native-coercion-functions
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

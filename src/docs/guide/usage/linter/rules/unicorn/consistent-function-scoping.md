@@ -117,24 +117,8 @@ Whether to check scoping with arrow functions.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/consistent-function-scoping": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/consistent-function-scoping
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

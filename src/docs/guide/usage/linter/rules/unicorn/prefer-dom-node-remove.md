@@ -40,24 +40,8 @@ childNode.remove();
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/prefer-dom-node-remove": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/prefer-dom-node-remove
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

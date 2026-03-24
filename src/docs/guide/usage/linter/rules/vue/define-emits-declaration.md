@@ -113,25 +113,8 @@ using an array or object, e.g. `defineEmits(['event1', 'event2'])`.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["vue"],
-  "rules": {
-    "vue/define-emits-declaration": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny vue/define-emits-declaration --vue-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

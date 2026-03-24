@@ -44,24 +44,8 @@ var s_radix_16 = x.toString(16);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "oxc/number-arg-out-of-range": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny oxc/number-arg-out-of-range
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

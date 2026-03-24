@@ -113,24 +113,8 @@ Whether to ignore methods that are overridden.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "class-methods-use-this": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny class-methods-use-this
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

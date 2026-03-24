@@ -94,25 +94,8 @@ describe("suite", () => {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["vitest"],
-  "rules": {
-    "vitest/hoisted-apis-on-top": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny vitest/hoisted-apis-on-top --vitest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

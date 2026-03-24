@@ -113,25 +113,8 @@ List of JSDoc tags that exempt functions from `@param` checking.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jsdoc"],
-  "rules": {
-    "jsdoc/require-param": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jsdoc/require-param --jsdoc-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

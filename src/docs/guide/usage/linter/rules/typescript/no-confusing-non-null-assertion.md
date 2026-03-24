@@ -43,24 +43,8 @@ a === b;
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-confusing-non-null-assertion": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/no-confusing-non-null-assertion
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

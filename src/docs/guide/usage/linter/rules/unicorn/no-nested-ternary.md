@@ -42,24 +42,8 @@ const foo = i > 5 ? (i < 100 ? true : false) : i < 100 ? true : false;
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-nested-ternary": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-nested-ternary
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -69,24 +69,8 @@ Configuration option to specify how non-zero length checks should be enforced.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/explicit-length-check": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/explicit-length-check
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

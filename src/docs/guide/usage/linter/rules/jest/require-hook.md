@@ -158,25 +158,8 @@ An array of function names that are allowed to be called outside of hooks.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/require-hook": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/require-hook --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

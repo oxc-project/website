@@ -90,24 +90,8 @@ Use natural sort order so that, for example, "a2" comes before "a10".
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "sort-keys": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny sort-keys
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

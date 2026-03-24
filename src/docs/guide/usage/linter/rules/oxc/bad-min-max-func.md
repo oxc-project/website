@@ -43,24 +43,8 @@ Math.min(1000, Math.max(0, z));
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "oxc/bad-min-max-func": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny oxc/bad-min-max-func
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

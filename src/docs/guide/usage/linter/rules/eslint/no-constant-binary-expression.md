@@ -57,24 +57,8 @@ const isEmpty = x.length === 0;
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-constant-binary-expression": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-constant-binary-expression
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

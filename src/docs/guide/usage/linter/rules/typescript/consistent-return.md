@@ -63,25 +63,8 @@ Treat explicit `return undefined` as equivalent to an unspecified return.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/consistent-return": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --type-aware --deny typescript/consistent-return
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
-- <a v-bind:href="tsgolintSource" target="_blank" rel="noreferrer">Rule Source (tsgolint)</a>
+<RuleReferences />

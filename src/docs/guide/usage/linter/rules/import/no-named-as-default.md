@@ -64,25 +64,8 @@ imports, especially when TypeScript paths are used or in monorepo setups with mu
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["import"],
-  "rules": {
-    "import/no-named-as-default": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny import/no-named-as-default --import-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

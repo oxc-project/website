@@ -43,25 +43,8 @@ expect(mock).toHaveBeenCalledTimes(1);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/prefer-to-have-been-called": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/prefer-to-have-been-called --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

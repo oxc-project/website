@@ -68,24 +68,8 @@ import type { A as AA, B as BB } from "mod";
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-import-type-side-effects": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/no-import-type-side-effects
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -75,25 +75,8 @@ When set, also disallows `setState` calls in nested functions within `componentD
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["react"],
-  "rules": {
-    "react/no-did-mount-set-state": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny react/no-did-mount-set-state --react-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

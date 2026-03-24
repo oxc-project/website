@@ -53,25 +53,8 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/no-commented-out-tests": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/no-commented-out-tests --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

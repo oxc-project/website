@@ -72,24 +72,8 @@ function combine(a: number, b?: number, c: number = 3) {}
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "default-param-last": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny default-param-last
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

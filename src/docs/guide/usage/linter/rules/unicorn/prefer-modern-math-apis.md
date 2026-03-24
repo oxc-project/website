@@ -46,24 +46,8 @@ Math.hypot(a, b);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/prefer-modern-math-apis": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/prefer-modern-math-apis
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

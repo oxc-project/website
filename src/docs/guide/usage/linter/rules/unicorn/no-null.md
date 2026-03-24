@@ -55,24 +55,8 @@ When set to `true`, the rule will also check strict equality/inequality comparis
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-null": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-null
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

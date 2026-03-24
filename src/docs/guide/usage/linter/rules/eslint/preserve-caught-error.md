@@ -61,24 +61,8 @@ When set to `true`, requires that catch clauses always have a parameter.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "preserve-caught-error": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny preserve-caught-error
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

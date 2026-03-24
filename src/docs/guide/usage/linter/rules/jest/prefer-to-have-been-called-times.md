@@ -46,25 +46,8 @@ expect(method.mock.calls[0][0]).toStrictEqual(value);
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/prefer-to-have-been-called-times": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/prefer-to-have-been-called-times --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

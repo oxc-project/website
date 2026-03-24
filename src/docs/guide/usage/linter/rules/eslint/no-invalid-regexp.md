@@ -56,24 +56,8 @@ Case-sensitive array of flags that will be allowed.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-invalid-regexp": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-invalid-regexp
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -117,24 +117,8 @@ Only applies when mode is set to `"never"`.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "init-declarations": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny init-declarations
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

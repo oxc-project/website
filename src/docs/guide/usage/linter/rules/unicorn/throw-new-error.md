@@ -46,24 +46,8 @@ throw new lib.TypeError("unicorn");
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/throw-new-error": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/throw-new-error
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

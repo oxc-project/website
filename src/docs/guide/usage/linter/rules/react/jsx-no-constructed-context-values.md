@@ -60,25 +60,8 @@ const Component = () => <MyContext.Provider value="Some string" />;
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["react"],
-  "rules": {
-    "react/jsx-no-constructed-context-values": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny react/jsx-no-constructed-context-values --react-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

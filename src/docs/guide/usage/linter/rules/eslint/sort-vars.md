@@ -54,24 +54,8 @@ When `true`, the rule ignores case-sensitivity when sorting variables.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "sort-vars": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny sort-vars
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

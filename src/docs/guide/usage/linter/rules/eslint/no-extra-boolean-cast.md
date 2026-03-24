@@ -76,24 +76,8 @@ cast inside inner expressions.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-extra-boolean-cast": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-extra-boolean-cast
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

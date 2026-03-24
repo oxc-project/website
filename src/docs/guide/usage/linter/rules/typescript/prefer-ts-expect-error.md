@@ -54,24 +54,8 @@ const multiLine: number = "value";
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/prefer-ts-expect-error": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/prefer-ts-expect-error
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

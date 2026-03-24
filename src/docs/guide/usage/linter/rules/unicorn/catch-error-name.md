@@ -85,24 +85,8 @@ to something other than `'error'` (e.g., `'exception'`).
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/catch-error-name": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/catch-error-name
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

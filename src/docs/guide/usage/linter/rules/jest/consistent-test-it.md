@@ -93,25 +93,8 @@ If only `fn` is provided, this will default to the value of `fn`.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/consistent-test-it": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/consistent-test-it --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -52,24 +52,8 @@ variable that is not declared (commonly checked via `typeof foo === "undefined"`
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "unicorn/no-typeof-undefined": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny unicorn/no-typeof-undefined
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

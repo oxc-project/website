@@ -52,25 +52,8 @@ export default {
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["vue"],
-  "rules": {
-    "vue/no-this-in-before-route-enter": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny vue/no-this-in-before-route-enter --vue-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

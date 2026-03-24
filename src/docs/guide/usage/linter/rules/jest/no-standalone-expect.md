@@ -66,25 +66,8 @@ An array of function names that should also be treated as test blocks.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["jest"],
-  "rules": {
-    "jest/no-standalone-expect": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny jest/no-standalone-expect --jest-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

@@ -69,25 +69,8 @@ Prefer `import { type Foo } from 'foo'` for type imports.
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "plugins": ["import"],
-  "rules": {
-    "import/consistent-type-specifier-style": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny import/consistent-type-specifier-style --import-plugin
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

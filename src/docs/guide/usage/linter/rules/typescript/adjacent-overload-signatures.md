@@ -67,24 +67,8 @@ export function foo(sn: string | number): void;
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/adjacent-overload-signatures": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/adjacent-overload-signatures
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

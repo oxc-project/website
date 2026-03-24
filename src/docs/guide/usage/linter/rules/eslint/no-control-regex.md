@@ -56,24 +56,8 @@ var pattern8 = new RegExp("\\n");
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "no-control-regex": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny no-control-regex
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

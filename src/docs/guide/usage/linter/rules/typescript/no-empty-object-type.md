@@ -126,24 +126,8 @@ type TypeProps = {};
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "typescript/no-empty-object-type": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny typescript/no-empty-object-type
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />

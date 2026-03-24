@@ -40,24 +40,8 @@ const list = new Array(5).fill().map((_) => createElement());
 
 ## How to use
 
-To **enable** this rule using the config file or in the CLI, you can use:
-
-::: code-group
-
-```json [Config (.oxlintrc.json)]
-{
-  "rules": {
-    "oxc/uninvoked-array-callback": "error"
-  }
-}
-```
-
-```bash [CLI]
-oxlint --deny oxc/uninvoked-array-callback
-```
-
-:::
+<RuleHowToUse />
 
 ## References
 
-- <a v-bind:href="source" target="_blank" rel="noreferrer">Rule Source</a>
+<RuleReferences />
