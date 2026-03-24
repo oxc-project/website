@@ -1,7 +1,7 @@
 # Unsupported features
 
 :::info
-These features are planned. Follow our [milestone](https://github.com/oxc-project/oxc/milestone/15).
+These features are planned. Follow our [milestone](https://github.com/oxc-project/oxc/milestone/19).
 :::
 
 ## Configuration limitations
@@ -9,7 +9,6 @@ These features are planned. Follow our [milestone](https://github.com/oxc-projec
 Not currently supported:
 
 - `prettier` field in `package.json`
-- Config file format other than `.json` and `.jsonc`
 - Nested configs in sub directories
 - Nested `.editorconfig` in sub directories
 - `experimentalTernaries` and `experimentalOperatorPosition` options
