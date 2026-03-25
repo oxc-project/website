@@ -37,9 +37,9 @@ Oxfmt includes built-in features that typically require external Prettier plugin
 
 Oxfmt integrates into existing Prettier-based workflows.
 
-The `oxfmt` CLI behaves similarly to Prettier by default, allowing adoption with minimal changes to scripts and tooling.
+The Oxfmt CLI follows Prettier's conventions closely enough that most scripts and tooling require little or no modification, though some defaults and CLI options differ.
 
-Oxfmt matches Prettier’s JavaScript formatting. When migrating from recent versions of Prettier, formatting differences should not occur; any differences are considered bugs.
+Oxfmt matches Prettier’s JavaScript formatting. When migrating from recent versions of Prettier, formatting differences should not occur; any formatting differences are considered bugs.
 
 Oxfmt now passes 100% of Prettier's JavaScript and TypeScript conformance tests. For any remaining formatting inconsistencies, we have [reported them to the Prettier team](https://github.com/oxc-project/oxc/issues/18717) and are collaborating to converge on expected behavior.
 

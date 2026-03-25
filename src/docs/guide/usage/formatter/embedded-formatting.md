@@ -1,9 +1,5 @@
 # Embedded Formatting
 
-:::warning
-See tracking issues for details: [xxx-in-js](https://github.com/oxc-project/oxc/issues/15180), [js-in-xxx](https://github.com/oxc-project/oxc/issues/16608).
-:::
-
 Formats code embedded in JS/TS files (CSS in template literals, GraphQL in template literals, JavaScript/TypeScript/CSS/etc in Markdown).
 
 ## Configuration
@@ -81,7 +77,7 @@ HTML inside a tagged template literal:
 const template = html`
   <div class="container">
     <h1>Hello</h1>
-    <p>World</p>
+    <p>${world}</p>
   </div>
 `;
 ```

@@ -28,5 +28,8 @@ Not supported. However, Oxfmt provides built-in alternatives:
 - `sortPackageJson`
   - Based on `prettier-plugin-packagejson`
   - Enabled by default
+- `jsdoc`
+  - Based on `prettier-plugin-jsdoc`
+  - Disabled by default
 
 See [Configuration file reference](./config-file-reference) for details.
