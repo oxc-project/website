@@ -9,6 +9,12 @@ authors:
 
 <AppBlogPostHeader />
 
+<Alert type="info">
+
+**This post announces the alpha release of Oxfmt.** Oxfmt has since reached beta! See the [Oxfmt Beta announcement](/blog/2026-02-24-oxfmt-beta) for the latest features and improvements.
+
+</Alert>
+
 We’re excited to announce the alpha release of **Oxfmt**, a Rust-powered, Prettier-compatible code formatter. This first release focuses on JavaScript and TypeScript, with support for additional languages coming soon.
 
 Oxfmt is designed with these goals in mind:

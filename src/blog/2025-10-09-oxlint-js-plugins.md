@@ -7,6 +7,12 @@ authors:
 
 <AppBlogPostHeader />
 
+<Alert type="info">
+
+**This post announces the preview release of Oxlint JS Plugins.** JS Plugins have since reached alpha! See the [Oxlint JS Plugins Alpha announcement](/blog/2026-03-11-oxlint-js-plugins-alpha) for the latest features and improvements.
+
+</Alert>
+
 <br>
 
 Earlier this year [we asked for input from the community](https://github.com/oxc-project/oxc/discussions/10342)
