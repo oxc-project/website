@@ -30,6 +30,23 @@ You can also set `jsx: 'preserve'` to disable JSX transformation.
 
 Oxc transformer also supports JSX pragma comments, which is also supported by [Babel](https://babeljs.io/docs/babel-preset-react/) and [esbuild](https://esbuild.github.io/api/#jsx). Pragma comments are useful for configuring JSX options on a per-file basis.
 
+### Pragma Comment Scanning
+
+Oxc only scans comments that appear **before the first statement** in a file for JSX pragmas. This means pragma comments placed inside functions, classes, or after any statement are ignored.
+
+```jsx
+// @jsx h  ← ✅ This pragma is recognized (before first statement)
+
+import { h } from "preact";
+
+// @jsx React.createElement  ← ❌ This pragma is ignored (after first statement)
+function App() {
+  return <div />;
+}
+```
+
+This behavior aligns with TypeScript and SWC, which both restrict pragma scanning to leading comments. Note that Babel and esbuild scan all comments in a file (with the last one winning).
+
 ## Runtime
 
 By default, the automatic runtime transform is used. This transform was [introduced in React 17+](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html). This transform injects the required `import` statements automatically.
