@@ -173,10 +173,10 @@ pub struct Node {
 }
 ```
 
-It was [pointed out to me](https://github.com/Boshen/oxc/pull/4#pullrequestreview-1294538874) that I can safely change `usize` to `u32`
+It was [pointed out to me](https://github.com/oxc-project/oxc/pull/4#pullrequestreview-1294538874) that I can safely change `usize` to `u32`
 to reduce peak memory because larger than `u32` is a 4GB file.
 
-Changing to `u32` improved the performance [up to 5% performance on large files](https://github.com/Boshen/oxc/pull/31).
+Changing to `u32` improved the performance [up to 5% performance on large files](https://github.com/oxc-project/oxc/pull/31).
 
 ### Strings and Identifiers
 
@@ -429,7 +429,7 @@ pub enum TokenValue<'a> {
 
 While using a string slice instead of String in `TokenValue` would reduce memory usage, it does come with the downside of adding a lifetime annotation.
 This can lead to issues with the borrow checker and the lifetime annotation will propagate to the rest of the codebase, making our code somewhat difficult to manage.
-I lost the borrow checking game 8 months ago but [finally won](https://github.com/Boshen/oxc/pull/174) when I revisited this.
+I lost the borrow checking game 8 months ago but [finally won](https://github.com/oxc-project/oxc/pull/174) when I revisited this.
 
 When it makes sense, we can always go for the owned version of the immutable data instead of using references.
 For example `Box<str>` for `String` and `Box<[u8]>` for `Vec<u8>`.
@@ -478,8 +478,8 @@ So it turns out this has been done before, in a JSON parser called RapidJSON,
 which [uses SIMD to remove whitespaces](https://rapidjson.org/md_doc_internals.html#SkipwhitespaceWithSIMD).
 
 So eventually with the help of portable-SIMD and RapidJSON's code,
-not only did I manage to [skip whitespaces](https://github.com/Boshen/oxc/pull/26),
-I also managed to [skip multi-line comments](https://github.com/Boshen/oxc/pull/23) as well.
+not only did I manage to [skip whitespaces](https://github.com/oxc-project/oxc/pull/26),
+I also managed to [skip multi-line comments](https://github.com/oxc-project/oxc/pull/23) as well.
 
 Both changes improved the performance by a few percent.
 
@@ -510,9 +510,9 @@ it describes its [keyword matching code](https://source.chromium.org/chromium/ch
 > Since the list of keywords is static, we can compute a perfect hash function that for each identifier gives us at most one candidate keyword. V8 uses gperf to compute this function. The result computes a hash from the length and first two identifier characters to find the single candidate keyword. We only compare the identifier with the keyword if the length of that keyword matches the input identifier length.
 
 So a quick hash plus an integer comparison should be faster than 84 string comparisons.
-But we tried [again](https://github.com/Boshen/oxc/pull/140) and [again](https://github.com/Boshen/oxc/pull/171) to no avail.
+But we tried [again](https://github.com/oxc-project/oxc/pull/140) and [again](https://github.com/oxc-project/oxc/pull/171) to no avail.
 
-As it turns out, [LLVM already optimized our code](https://github.com/Boshen/oxc/issues/151#issuecomment-1464818336).
+As it turns out, [LLVM already optimized our code](https://github.com/oxc-project/oxc/issues/151#issuecomment-1464818336).
 By using `--emit=llvm-ir` on `rustc`, we find the relevant code:
 
 ```
@@ -650,7 +650,7 @@ for node in nodes {
 }
 ```
 
-A full example is provided [here](https://github.com/Boshen/oxc/blob/main/crates/oxc_linter/examples/linter.rs).
+A full example is provided [here](https://github.com/oxc-project/oxc/blob/main/crates/oxc_linter/examples/linter.rs).
 
 At first glance, this process may seem slow and inefficient.
 However, visiting the typed AST through a memory arena and pushing a pointer into `indextree` are efficient linear memory access patterns.
@@ -664,7 +664,7 @@ it supports `.gitignore` and adds additional ignore files such as `.eslintignore
 A small problem with this crate is that it does not have a parallel interface,
 There is no `par_iter` for `ignore::Walk::new(".")`.
 
-Instead, [primitives need to be used](https://github.com/Boshen/oxc/blob/b51c2df3cc43b9f7d57380acc1552fac7db75fab/crates/oxc_cli/src/lint/runner.rs#L116-L139)
+Instead, [primitives need to be used](https://github.com/oxc-project/oxc/blob/b51c2df3cc43b9f7d57380acc1552fac7db75fab/crates/oxc_cli/src/lint/runner.rs#L116-L139)
 
 ```rust
 let walk = Walk::new(&self.options);

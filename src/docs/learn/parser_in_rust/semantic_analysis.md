@@ -161,7 +161,7 @@ https://github.com/acornjs/acorn/blob/11735729c4ebe590e406f952059813f250a4cbd1/a
 :::info
 One of the downsides of this approach is that for arrow functions,
 we may need to create a temporary scope and then drop it afterwards if it is not an arrow function but a sequence expression.
-This is detailed in [cover grammar](/docs/learn/ecmascript/grammar.html#cover-grammar).
+This is detailed in [cover grammar](/docs/learn/ecmascript/grammar#cover-grammar).
 :::
 
 ### The Visitor Pattern

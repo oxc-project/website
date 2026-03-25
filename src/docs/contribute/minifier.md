@@ -75,7 +75,7 @@ Key strategies for maintaining performance:
 #### Playgrounds
 
 - esbuild: https://esbuild.github.io/try
-- rollup: https://rollupjs.org/rep
+- rollup: https://rollupjs.org/repl
 - swc: https://play.swc.rs
 - terser: https://try.terser.org
 - closure compiler: https://jscompressor.treblereel.dev

@@ -14,7 +14,7 @@ outline: deep
 
 ## JavaScript Parsers
 
-- Rust: [swc](https://swc.rs), [biome](https://biomejs.dev), [jsparagus](https://github.com/mozilla-spidermonkey/jsparagus), [ratel](https://github.com/ratel-rust/ratel-core), [boa](https://github.com/lastmjs/boa-azle),
+- Rust: [swc](https://swc.rs), [biome](https://biomejs.dev), [jsparagus](https://github.com/mozilla-spidermonkey/jsparagus), [ratel](https://github.com/ratel-rust/ratel-core), [boa](https://github.com/boa-dev/boa),
 - JavaScript: [acorn](https://github.com/acornjs/acorn), [babel](https://babeljs.io)
 - Go: [esbuild](https://esbuild.github.io)
 - C++: [quick-lint-js](https://github.com/quick-lint/quick-lint-js)

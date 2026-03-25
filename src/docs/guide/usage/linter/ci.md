@@ -124,7 +124,7 @@ If you use [pre-commit](https://pre-commit.com/) to manage git hooks, you can se
 ```yaml [.pre-commit-config.yaml]
 repos:
   - repo: https://github.com/oxc-project/mirrors-oxlint
-    rev: v0.0.0
+    rev: v1.57.0
     hooks:
       - id: oxlint
         verbose: true
