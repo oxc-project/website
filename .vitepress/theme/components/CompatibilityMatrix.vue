@@ -292,7 +292,7 @@ function useFootnotes(
 
     <!-- Filters -->
     <div
-      class="mb-6 flex flex-col gap-4 rounded-xl border border-stroke bg-white p-4 sm:p-5 dark:border-nickel dark:bg-primary"
+      class="mb-6 flex flex-col gap-4 border border-stroke bg-white p-4 sm:p-5 dark:border-nickel dark:bg-primary"
     >
       <!-- Search -->
       <div class="flex items-center gap-2">
@@ -379,7 +379,7 @@ function useFootnotes(
     </div>
 
     <!-- Table -->
-    <div class="overflow-x-auto rounded-xl border border-stroke dark:border-nickel">
+    <div class="overflow-x-auto border border-stroke dark:border-nickel">
       <table class="w-full table-fixed border-collapse">
         <thead>
           <tr class="border-b-2 border-stroke dark:border-nickel">
@@ -480,7 +480,7 @@ function useFootnotes(
     <!-- Footnotes -->
     <div
       v-if="footnoteData.footnotes.length > 0"
-      class="mt-6 rounded-xl border border-stroke p-5 dark:border-nickel"
+      class="mt-6 border border-stroke p-5 dark:border-nickel"
     >
       <div
         v-for="(toolFootnotes, toolName) in footnoteData.footnotesByTool"
