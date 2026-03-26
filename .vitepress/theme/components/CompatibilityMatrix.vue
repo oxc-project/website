@@ -75,7 +75,7 @@ function useCompatData() {
       textClass: "text-white",
     },
     "n/a": {
-      label: "N/A",
+      label: "Out of Scope",
       icon: "mdi:minus-circle",
       colorClass: "bg-[#6b7280]",
       textClass: "text-white",
@@ -379,19 +379,19 @@ function useFootnotes(
     </div>
 
     <!-- Table -->
-    <div class="overflow-x-auto border border-stroke dark:border-nickel">
-      <table class="w-full table-fixed border-collapse">
+    <div class="border border-stroke dark:border-nickel">
+      <table class="w-full table-fixed border-separate border-spacing-0">
         <thead>
-          <tr class="border-b-2 border-stroke dark:border-nickel">
+          <tr>
             <th
-              class="sticky left-0 z-20 w-40 bg-white px-4 py-3 text-left text-sm font-semibold text-grey sm:w-[220px] dark:bg-primary"
+              class="sticky left-0 top-12 z-30 w-40 border-b-2 border-stroke bg-white px-4 py-3 text-left text-sm font-semibold text-grey sm:w-[220px] lg:top-[calc(var(--vp-banner-height,0px)+var(--vp-nav-height)-1px)] dark:border-nickel dark:bg-primary"
             >
               Framework / File Type
             </th>
             <th
               v-for="tool in tools"
               :key="tool.id"
-              class="px-4 py-3 text-center text-sm font-bold text-primary dark:text-white"
+              class="sticky top-12 z-20 border-b-2 border-stroke bg-white px-4 py-3 text-center text-sm font-bold text-primary lg:top-[calc(var(--vp-banner-height,0px)+var(--vp-nav-height)-1px)] dark:border-nickel dark:bg-primary dark:text-white"
             >
               {{ tool.name }}
             </th>
