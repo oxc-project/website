@@ -16,6 +16,7 @@
     "prepare": "vp config"
   },
   "devDependencies": {
+    "@iconify/vue": "^5.0.0",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-container": "4.0.0",
     "@types/node": "^25.5.0",

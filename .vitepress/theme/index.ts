@@ -7,12 +7,14 @@ import RulesTable from "./components/RulesTable.vue";
 import RuleHeader from "./components/RuleHeader.vue";
 import RuleReferences from "./components/RuleReferences.vue";
 import Alert from "./components/Alert.vue";
+import CompatibilityMatrix from "./components/CompatibilityMatrix.vue";
 import "./styles.css";
 
 export default {
   extends: OxcTheme as unknown as any,
   async enhanceApp({ app }) {
     app.component("Alert", Alert);
+    app.component("CompatibilityMatrix", CompatibilityMatrix);
     app.component("AppBlogPostHeader", AppBlogPostHeader);
     app.component("AppBlogList", AppBlogList);
     app.component("RulesTable", RulesTable);

@@ -35,6 +35,7 @@ export const enConfig = defineLocaleConfig("root", {
         text: "Resources",
         items: [
           { text: "Release Blog", link: BLOG_SIDEBAR[0].link },
+          { text: "Compatibility", link: "/compatibility" },
           { text: "Endorsements", link: "/endorsements" },
           { text: "Learn", link: "/docs/learn/parser_in_rust/intro" },
           { text: "Team", link: "/team" },
