@@ -384,7 +384,7 @@ function useFootnotes(
         <thead>
           <tr class="border-b-2 border-stroke dark:border-nickel">
             <th
-              class="sticky left-0 z-20 w-[160px] bg-white px-4 py-3 text-left text-sm font-semibold text-grey sm:w-[220px] dark:bg-primary"
+              class="sticky left-0 z-20 w-40 bg-white px-4 py-3 text-left text-sm font-semibold text-grey sm:w-[220px] dark:bg-primary"
             >
               Framework / File Type
             </th>
@@ -414,7 +414,7 @@ function useFootnotes(
             >
               <th
                 scope="row"
-                class="sticky left-0 z-10 w-[160px] bg-white px-4 py-3 text-left transition-colors sm:w-[220px] group-hover:bg-beige dark:bg-primary dark:group-hover:bg-slate/50"
+                class="sticky left-0 z-10 w-40 bg-white px-4 py-3 text-left transition-colors sm:w-[220px] group-hover:bg-beige dark:bg-primary dark:group-hover:bg-slate/50"
               >
                 <span class="flex items-center gap-3 text-primary dark:text-white">
                   <Icon :icon="framework.icon" width="22" class="shrink-0" aria-hidden="true" />
