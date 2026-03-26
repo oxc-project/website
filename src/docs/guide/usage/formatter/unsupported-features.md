@@ -33,3 +33,5 @@ Not supported. However, Oxfmt provides built-in alternatives:
   - Disabled by default
 
 See [Configuration file reference](./config-file-reference) for details.
+
+For what Oxfmt does support across frameworks and file types, see the [compatibility matrix](/compatibility).

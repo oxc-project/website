@@ -46,7 +46,7 @@ Key differences:
 - Prettier plugins are not supported (though some popular plugins have been implemented natively)
 - Some options are not supported (see [config reference](/docs/guide/usage/formatter/config-file-reference.html))
 
-See [Unsupported features](/docs/guide/usage/formatter/unsupported-features) for details.
+See [Unsupported features](/docs/guide/usage/formatter/unsupported-features) for details, and the [compatibility matrix](/compatibility) for file type support.
 
 ## Step 1: Upgrade Prettier to v3.8 (optional)
 

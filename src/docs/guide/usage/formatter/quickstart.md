@@ -166,4 +166,5 @@ console.log(code); // "let a = 42"
 - [Setup editors](./editors)
 - [Setup CI](./ci)
 - Learn advanced features: [sorting](./sorting), [embedded formatting](./embedded-formatting)
+- [Compatibility matrix](/compatibility)
 - Check [CLI reference](./cli)

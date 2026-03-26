@@ -125,7 +125,7 @@ This table lists the built-in plugins and where they come from.
 | `vitest`     | No      | [@vitest/eslint-plugin](https://github.com/vitest-dev/eslint-plugin-vitest) aka eslint-plugin-vitest                                                                                                                                                         |
 | `vue`        | No      | [eslint-plugin-vue](https://eslint.vuejs.org/) rules that work with script tags                                                                                                                                                                              |
 
-For the current status of rule coverage, see the linter [product plan issue](https://github.com/oxc-project/oxc/issues/481).
+For the current status of rule coverage, see the linter [product plan issue](https://github.com/oxc-project/oxc/issues/481). For framework and file type support, see the [compatibility matrix](/compatibility).
 
 ## Adding new plugins
 

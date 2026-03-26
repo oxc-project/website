@@ -259,4 +259,5 @@ The full list is in the [Rules reference](/docs/guide/usage/linter/rules).
 - [Setup CI](/docs/guide/usage/linter/ci)
 - Learn advanced features: [Multi-file analysis](/docs/guide/usage/linter/multi-file-analysis), [Type-aware linting](/docs/guide/usage/linter/type-aware), [JS plugins](/docs/guide/usage/linter/js-plugins)
 - Migrate: [From ESLint](/docs/guide/usage/linter/migrate-from-eslint) <!-- , [From Biome](/docs/guide/usage/linter/migrate-from-biome) -->
+- [Compatibility matrix](/compatibility)
 - [CLI reference](/docs/guide/usage/linter/cli)

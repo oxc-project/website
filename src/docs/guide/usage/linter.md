@@ -128,6 +128,8 @@ Oxlint supports:
 - JSX and TSX (`.jsx`, `.tsx`)
 - Framework files (`.vue`, `.svelte`, `.astro`) by linting only their `<script>` blocks
 
+See the [compatibility matrix](/compatibility) for detailed framework support.
+
 ## Features
 
 - [Native plugins](/docs/guide/usage/linter/plugins) for broad rule coverage with {{ ruleCount }} built-in rules, without a large JavaScript dependency tree.
