@@ -33,7 +33,7 @@ const noTemplateLintNote = {
 };
 const compilerRulesNote = {
   noteId: NOTE_ID_COMPILER_RULES,
-  notes: "Compiler-related rules available via JS plugins",
+  notes: "React Compiler-related rules available via JS plugins",
   sources: [oxlintPlugins],
 };
 const solidRulesNote = {
