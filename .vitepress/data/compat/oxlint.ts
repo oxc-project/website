@@ -28,7 +28,7 @@ export const NOTE_ID_SOLID_RULES = 4;
 
 const noTemplateLintNote = {
   noteId: NOTE_ID_NO_TEMPLATE_LINT,
-  notes: "No template linting",
+  notes: "No template linting yet",
   sources: [oxlintPlugins, sfcIssue],
 };
 const compilerRulesNote = {
