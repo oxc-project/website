@@ -60,6 +60,12 @@ export const oxlintEntries: CompatEntry[] = [
     status: {
       level: "full",
       notes: "Can run type-aware rules (based on typescript-eslint) and do type-checking via ts-go",
+      sources: [
+        {
+          title: "Type-Aware Linting",
+          url: "https://oxc.rs/docs/guide/usage/linter/type-aware.html",
+        },
+      ],
     },
   },
   {
