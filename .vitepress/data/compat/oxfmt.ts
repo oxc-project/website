@@ -47,6 +47,8 @@ const angularHtmlNote = {
 };
 
 export const oxfmtEntries: CompatEntry[] = [
+  { frameworkId: "javascript", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
+  { frameworkId: "typescript", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "react", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "vue", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   {

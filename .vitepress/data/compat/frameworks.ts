@@ -1,6 +1,21 @@
 import type { Framework } from "./types";
 
 export const frameworks: Framework[] = [
+  // Base
+  {
+    id: "javascript",
+    name: "JavaScript",
+    category: "base",
+    icon: "logos:javascript",
+    website: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    id: "typescript",
+    name: "TypeScript",
+    category: "base",
+    icon: "logos:typescript-icon",
+    website: "https://www.typescriptlang.org",
+  },
   // Frontend Frameworks
   {
     id: "react",

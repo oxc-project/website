@@ -44,6 +44,25 @@ const solidRulesNote = {
 
 export const oxlintEntries: CompatEntry[] = [
   {
+    frameworkId: "javascript",
+    toolId: "oxlint",
+    featureId: "lint",
+    status: {
+      level: "full",
+      notes: "Full ESLint plugin compatibility",
+      sources: [oxlintPlugins],
+    },
+  },
+  {
+    frameworkId: "typescript",
+    toolId: "oxlint",
+    featureId: "lint",
+    status: {
+      level: "full",
+      notes: "Can run type-aware rules (based on typescript-eslint) and do type-checking via ts-go",
+    },
+  },
+  {
     frameworkId: "react",
     toolId: "oxlint",
     featureId: "lint",

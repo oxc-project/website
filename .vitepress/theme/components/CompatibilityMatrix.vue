@@ -28,12 +28,14 @@ const activeTooltip = ref<string | null>(null);
 
 const categories: { id: FrameworkCategory | "all"; label: string }[] = [
   { id: "all", label: "All" },
+  { id: "base", label: "Base" },
   { id: "frontend", label: "Frontend" },
   { id: "meta-framework", label: "Meta-Frameworks" },
   { id: "file-type", label: "File Types" },
 ];
 
 const categoryLabels: Record<FrameworkCategory, string> = {
+  base: "Base",
   frontend: "Frontend Frameworks",
   "meta-framework": "Meta-Frameworks",
   "file-type": "File Types",
@@ -168,6 +170,7 @@ function useFilters(
 
   const groupedFrameworks = computed(() => {
     const groups: Record<string, Framework[]> = {
+      base: [],
       frontend: [],
       "meta-framework": [],
       "file-type": [],
