@@ -81,7 +81,7 @@ Whether to insert a final newline at the end of the file.
 
 ## jsdoc
 
-type: `object`
+type: `object | boolean`
 
 Enable JSDoc comment formatting.
 
@@ -89,7 +89,7 @@ When enabled, JSDoc comments are normalized and reformatted:
 tag aliases are canonicalized, descriptions are capitalized,
 long lines are wrapped, and short comments are collapsed to single-line.
 
-Pass an object (`jsdoc: {}`) to enable with defaults, or omit to disable.
+Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
 - Default: Disabled
 
@@ -302,7 +302,7 @@ Whether to insert a final newline at the end of the file.
 
 ##### overrides[n].options.jsdoc
 
-type: `object`
+type: `object | boolean`
 
 Enable JSDoc comment formatting.
 
@@ -310,7 +310,7 @@ When enabled, JSDoc comments are normalized and reformatted:
 tag aliases are canonicalized, descriptions are capitalized,
 long lines are wrapped, and short comments are collapsed to single-line.
 
-Pass an object (`jsdoc: {}`) to enable with defaults, or omit to disable.
+Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
 - Default: Disabled
 
@@ -487,12 +487,14 @@ For JSX, you can set the `jsxSingleQuote` option.
 
 ##### overrides[n].options.sortImports
 
-type: `object`
+type: `object | boolean`
 
 Sort import statements.
 
 Using the similar algorithm as [eslint-plugin-perfectionist/sort-imports](https://perfectionist.dev/rules/sort-imports).
 For details, see each field's documentation.
+
+Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
 - Default: Disabled
 
@@ -713,13 +715,15 @@ Sort the `scripts` field alphabetically.
 
 ##### overrides[n].options.sortTailwindcss
 
-type: `object`
+type: `object | boolean`
 
 Sort Tailwind CSS classes.
 
 Using the same algorithm as [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
 Option names omit the `tailwind` prefix used in the original plugin (e.g., `config` instead of `tailwindConfig`).
 For details, see each field's documentation.
+
+Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
 - Default: Disabled
 
@@ -876,12 +880,14 @@ For JSX, you can set the `jsxSingleQuote` option.
 
 ## sortImports
 
-type: `object`
+type: `object | boolean`
 
 Sort import statements.
 
 Using the similar algorithm as [eslint-plugin-perfectionist/sort-imports](https://perfectionist.dev/rules/sort-imports).
 For details, see each field's documentation.
+
+Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
 - Default: Disabled
 
@@ -1102,13 +1108,15 @@ Sort the `scripts` field alphabetically.
 
 ## sortTailwindcss
 
-type: `object`
+type: `object | boolean`
 
 Sort Tailwind CSS classes.
 
 Using the same algorithm as [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
 Option names omit the `tailwind` prefix used in the original plugin (e.g., `config` instead of `tailwindConfig`).
 For details, see each field's documentation.
+
+Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
 - Default: Disabled
 

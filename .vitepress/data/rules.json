@@ -1228,7 +1228,7 @@
     "value": "no-useless-computed-key",
     "category": "style",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-computed-key.html"
   },
@@ -4601,7 +4601,7 @@
   {
     "scope": "typescript",
     "value": "prefer-find",
-    "category": "nursery",
+    "category": "style",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4682,7 +4682,7 @@
   {
     "scope": "typescript",
     "value": "prefer-readonly",
-    "category": "nursery",
+    "category": "style",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4709,7 +4709,7 @@
   {
     "scope": "typescript",
     "value": "prefer-regexp-exec",
-    "category": "nursery",
+    "category": "style",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4727,7 +4727,7 @@
   {
     "scope": "typescript",
     "value": "prefer-string-starts-ends-with",
-    "category": "nursery",
+    "category": "style",
     "type_aware": true,
     "fix": "none",
     "default": true,
@@ -6058,6 +6058,15 @@
   },
   {
     "scope": "vitest",
+    "value": "prefer-called-exactly-once-with",
+    "category": "style",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-called-exactly-once-with.html"
+  },
+  {
+    "scope": "vitest",
     "value": "prefer-called-once",
     "category": "style",
     "type_aware": false,
@@ -6139,12 +6148,39 @@
   },
   {
     "scope": "vitest",
+    "value": "require-awaited-expect-poll",
+    "category": "correctness",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-awaited-expect-poll.html"
+  },
+  {
+    "scope": "vitest",
     "value": "require-local-test-context-for-concurrent-snapshots",
     "category": "correctness",
     "type_aware": false,
     "fix": "pending",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-local-test-context-for-concurrent-snapshots.html"
+  },
+  {
+    "scope": "vitest",
+    "value": "require-mock-type-parameters",
+    "category": "correctness",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-mock-type-parameters.html"
+  },
+  {
+    "scope": "vitest",
+    "value": "require-test-timeout",
+    "category": "restriction",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-test-timeout.html"
   },
   {
     "scope": "vitest",

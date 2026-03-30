@@ -1,6 +1,6 @@
 ---
 title: "typescript/prefer-string-starts-ends-with"
-category: "Nursery"
+category: "Style"
 default: true
 type_aware: true
 fix: "none"

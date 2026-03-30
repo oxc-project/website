@@ -17,7 +17,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule enforces using a dynamic `import()` in `vi.mock()`, which improves type information and IntelliSense for the mocked module.
+This rule enforces using a dynamic `import()` in `vi.mock()` or `vi.doMock()`, which improves type information and IntelliSense for the mocked module.
 
 ### Why is this bad?
 
@@ -29,12 +29,14 @@ Examples of **incorrect** code for this rule:
 
 ```js
 vi.mock("./path/to/module");
+vi.doMock("./path/to/module");
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
 vi.mock(import("./path/to/module"));
+vi.doMock(import("./path/to/module"));
 ```
 
 ## Configuration
