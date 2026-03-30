@@ -89,6 +89,12 @@ export const oxfmtEntries: CompatEntry[] = [
     featureId: "format",
     status: { level: "none", ...needsPluginSupport },
   },
+  {
+    frameworkId: "tanstack-start",
+    toolId: "oxfmt",
+    featureId: "format",
+    status: { level: "full" },
+  },
   { frameworkId: "css", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "scss", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "html", toolId: "oxfmt", featureId: "format", status: { level: "full" } },

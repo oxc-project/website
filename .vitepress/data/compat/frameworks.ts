@@ -123,6 +123,13 @@ export const frameworks: Framework[] = [
     icon: "logos:svelte-icon",
     website: "https://svelte.dev/docs/kit",
   },
+  {
+    id: "tanstack-start",
+    name: "TanStack Start",
+    category: "meta-framework",
+    icon: "simple-icons:tanstack",
+    website: "https://tanstack.com/start",
+  },
   // File Types
   {
     id: "css",
