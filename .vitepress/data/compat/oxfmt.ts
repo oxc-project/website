@@ -102,6 +102,12 @@ export const oxfmtEntries: CompatEntry[] = [
     status: { level: "full" },
   },
   {
+    frameworkId: "react-router",
+    toolId: "oxfmt",
+    featureId: "format",
+    status: { level: "full" },
+  },
+  {
     frameworkId: "analogjs",
     toolId: "oxfmt",
     featureId: "format",

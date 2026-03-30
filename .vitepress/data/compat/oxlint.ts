@@ -175,6 +175,12 @@ export const oxlintEntries: CompatEntry[] = [
     status: { level: "full" },
   },
   {
+    frameworkId: "react-router",
+    toolId: "oxlint",
+    featureId: "lint",
+    status: { level: "full" },
+  },
+  {
     frameworkId: "analogjs",
     toolId: "oxlint",
     featureId: "lint",

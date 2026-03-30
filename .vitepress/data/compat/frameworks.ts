@@ -131,6 +131,13 @@ export const frameworks: Framework[] = [
     website: "https://tanstack.com/start",
   },
   {
+    id: "react-router",
+    name: "React Router",
+    category: "meta-framework",
+    icon: "logos:react-router",
+    website: "https://reactrouter.com",
+  },
+  {
     id: "analogjs",
     name: "Analog",
     category: "meta-framework",
