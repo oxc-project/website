@@ -12,7 +12,7 @@ export interface SupportStatus {
   sources?: Source[];
 }
 
-export type FrameworkCategory = "base" | "frontend" | "meta-framework" | "file-type";
+export type FrameworkCategory = "base" | "frontend" | "meta-framework" | "mobile" | "file-type";
 
 export interface Framework {
   id: string;

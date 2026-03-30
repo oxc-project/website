@@ -87,13 +87,6 @@ export const frameworks: Framework[] = [
     icon: "logos:alpinejs-icon",
     website: "https://alpinejs.dev",
   },
-  {
-    id: "react-native",
-    name: "React Native",
-    category: "frontend",
-    icon: "logos:react",
-    website: "https://reactnative.dev",
-  },
   // Meta-Frameworks
   {
     id: "nextjs",
@@ -136,6 +129,14 @@ export const frameworks: Framework[] = [
     category: "meta-framework",
     icon: "simple-icons:tanstack",
     website: "https://tanstack.com/start",
+  },
+  // Mobile Frameworks
+  {
+    id: "react-native",
+    name: "React Native",
+    category: "mobile",
+    icon: "logos:react",
+    website: "https://reactnative.dev",
   },
   // File Types
   {

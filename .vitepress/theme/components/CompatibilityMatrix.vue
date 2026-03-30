@@ -31,6 +31,7 @@ const categories: { id: FrameworkCategory | "all"; label: string }[] = [
   { id: "base", label: "Base" },
   { id: "frontend", label: "Frontend" },
   { id: "meta-framework", label: "Meta-Frameworks" },
+  { id: "mobile", label: "Mobile" },
   { id: "file-type", label: "File Types" },
 ];
 
@@ -38,6 +39,7 @@ const categoryLabels: Record<FrameworkCategory, string> = {
   base: "Base",
   frontend: "Frontend Frameworks",
   "meta-framework": "Meta-Frameworks",
+  mobile: "Mobile Frameworks",
   "file-type": "File Types",
 };
 
@@ -173,6 +175,7 @@ function useFilters(
       base: [],
       frontend: [],
       "meta-framework": [],
+      mobile: [],
       "file-type": [],
     };
     for (const framework of filteredFrameworks.value) {
