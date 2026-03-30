@@ -87,6 +87,13 @@ export const frameworks: Framework[] = [
     icon: "logos:alpinejs-icon",
     website: "https://alpinejs.dev",
   },
+  {
+    id: "react-native",
+    name: "React Native",
+    category: "frontend",
+    icon: "logos:react",
+    website: "https://reactnative.dev",
+  },
   // Meta-Frameworks
   {
     id: "nextjs",

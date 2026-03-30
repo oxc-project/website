@@ -129,6 +129,16 @@ export const oxlintEntries: CompatEntry[] = [
     status: { level: "full" },
   },
   {
+    frameworkId: "react-native",
+    toolId: "oxlint",
+    featureId: "lint",
+    status: {
+      level: "full",
+      notes: "Expo-specific rules available via JS plugins",
+      sources: [oxlintPlugins],
+    },
+  },
+  {
     frameworkId: "nextjs",
     toolId: "oxlint",
     featureId: "lint",
