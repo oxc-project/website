@@ -130,6 +130,13 @@ export const frameworks: Framework[] = [
     icon: "simple-icons:tanstack",
     website: "https://tanstack.com/start",
   },
+  {
+    id: "analogjs",
+    name: "Analog",
+    category: "meta-framework",
+    icon: "logos:analog",
+    website: "https://analogjs.org",
+  },
   // Mobile Frameworks
   {
     id: "react-native",

@@ -174,6 +174,12 @@ export const oxlintEntries: CompatEntry[] = [
     featureId: "lint",
     status: { level: "full" },
   },
+  {
+    frameworkId: "analogjs",
+    toolId: "oxlint",
+    featureId: "lint",
+    status: { level: "partial", ...noTemplateLintNote },
+  },
   { frameworkId: "css", toolId: "oxlint", featureId: "lint", status: { level: "n/a" } },
   { frameworkId: "scss", toolId: "oxlint", featureId: "lint", status: { level: "n/a" } },
   { frameworkId: "html", toolId: "oxlint", featureId: "lint", status: { level: "n/a" } },

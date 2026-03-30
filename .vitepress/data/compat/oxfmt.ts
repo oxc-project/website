@@ -101,6 +101,12 @@ export const oxfmtEntries: CompatEntry[] = [
     featureId: "format",
     status: { level: "full" },
   },
+  {
+    frameworkId: "analogjs",
+    toolId: "oxfmt",
+    featureId: "format",
+    status: { level: "partial", ...angularHtmlNote },
+  },
   { frameworkId: "css", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "scss", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "html", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
