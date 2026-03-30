@@ -44,6 +44,18 @@ function generateCodeGroup(frontmatter: Record<string, unknown>): string {
   jsonLines.push("  }");
   jsonLines.push("}");
 
+  const tsLines: string[] = [
+    "import { defineConfig } from 'oxlint';",
+    "",
+    "export default defineConfig({",
+    ...(typeAware ? ["  options: { typeAware: true },"] : []),
+    ...(isBuiltin ? [] : [`  plugins: ["${plugin}"],`]),
+    "  rules: {",
+    `    "${configRuleName}": "error",`,
+    "  },",
+    "});",
+  ];
+
   // Build CLI command
   let cli = "oxlint";
   if (typeAware) cli += " --type-aware";
@@ -57,6 +69,9 @@ function generateCodeGroup(frontmatter: Record<string, unknown>): string {
     "",
     "```json [Config (.oxlintrc.json)]",
     ...jsonLines,
+    "```",
+    "```ts [Config (oxlint.config.ts)]",
+    ...tsLines,
     "```",
     "",
     "```bash [CLI]",
