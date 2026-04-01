@@ -45,7 +45,7 @@ function generateCodeGroup(frontmatter: Record<string, unknown>): string {
   jsonLines.push("}");
 
   const tsLines: string[] = [
-    "import { defineConfig } from 'oxlint';",
+    'import { defineConfig } from "oxlint";',
     "",
     "export default defineConfig({",
     ...(typeAware ? ["  options: { typeAware: true },"] : []),
