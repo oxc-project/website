@@ -11,7 +11,7 @@
           <li>
             50~100x faster than <code class="mx-1 outline-none bg-nickel/50 text-aqua">ESLint</code>
           </li>
-          <li>650+ rules and growing</li>
+          <li>700+ rules and growing</li>
           <li>
             True type-aware Linting powered by
             <code class="mx-1 outline-none bg-nickel/50 text-aqua">tsgo</code>
