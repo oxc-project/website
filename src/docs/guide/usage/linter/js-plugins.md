@@ -123,6 +123,25 @@ export default defineConfig({
 
 See the [Writing JS Plugins](./writing-js-plugins) page for information on writing your own JS plugins and custom rules for Oxlint.
 
+## Known-supported ESLint plugins
+
+We run conformance tests on a number of popular ESLint plugins to ensure they work with Oxlint. These include:
+
+- `eslint-plugin-cypress` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/cypress.md))
+- `@e18e/eslint-plugin` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/e18e.md))
+- `eslint-plugin-mocha` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/mocha.md))
+- `eslint-plugin-playwright` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/playwright.md))
+- `eslint-plugin-react-hooks` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/react-hooks.md)): Note that some of these rules are already supported natively in Oxlint, and so those should generally be used instead
+- `eslint-plugin-regexp` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/regexp.md))
+- `eslint-plugin-sonarjs` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/sonarjs.md))
+- `eslint-plugin-storybook` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/storybook.md))
+- `@stylistic/eslint-plugin` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/stylistic.md))
+- `eslint-plugin-testing-library` ([conformance test results](https://github.com/oxc-project/oxc/blob/main/apps/oxlint/conformance/snapshots/testing_library.md))
+
+Note that the above list is not exhaustive, and _many_ other ESLint plugins will work with Oxlint as well. These are just some popular plugins that we have explicitly tested.
+
+You can see more info about plugins that are known to work with Oxlint in the [GitHub Discussion](https://github.com/oxc-project/oxc/discussions/20245).
+
 ## API Support
 
 Oxlint supports almost all of ESLint's API surface:
