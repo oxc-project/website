@@ -7,6 +7,7 @@ strager = "strager"
 trivias = "trivias"
 trivia = "trivia"
 inferrable = "inferrable"
+writeable = "writeable"
 
 [files]
 extend-exclude = ["src/docs/guide/usage/linter/rules", "pnpm-lock.yaml", "*.svg"]
