@@ -1,6 +1,6 @@
 ---
 title: "typescript/consistent-type-exports"
-category: "Nursery"
+category: "Style"
 default: false
 type_aware: true
 fix: "none"

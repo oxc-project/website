@@ -792,7 +792,7 @@ type: `integer`
 Specify the number of spaces per indentation-level.
 
 - Default: `2`
-- Overrides `.editorconfig.indent_size`
+- Overrides `.editorconfig.indent_size` (falls back to `.editorconfig.tab_width`)
 
 ##### overrides[n].options.trailingComma
 
@@ -1185,7 +1185,7 @@ type: `integer`
 Specify the number of spaces per indentation-level.
 
 - Default: `2`
-- Overrides `.editorconfig.indent_size`
+- Overrides `.editorconfig.indent_size` (falls back to `.editorconfig.tab_width`)
 
 ## trailingComma
 

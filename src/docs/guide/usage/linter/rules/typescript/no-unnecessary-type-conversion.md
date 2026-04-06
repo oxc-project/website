@@ -1,6 +1,6 @@
 ---
 title: "typescript/no-unnecessary-type-conversion"
-category: "Nursery"
+category: "Suspicious"
 default: false
 type_aware: true
 fix: "none"
