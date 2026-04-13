@@ -1,6 +1,6 @@
 ---
 title: "typescript/strict-void-return"
-category: "Nursery"
+category: "Pedantic"
 default: false
 type_aware: true
 fix: "none"

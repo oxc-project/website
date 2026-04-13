@@ -210,6 +210,8 @@ This option is an object with the following properties:
 
 #### generators
 
+type: `"always" | "as-needed" | "never"`
+
 Configuration for generator function expressions. If not specified, uses the
 primary configuration.
 

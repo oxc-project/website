@@ -63,6 +63,22 @@ default: `"either"`
 
 The type of association required between the label and the control.
 
+#### `"htmlFor"`
+
+Assert that the label uses `htmlFor` to associate a control.
+
+#### `"nesting"`
+
+Assert that the label has a nested control
+
+#### `"both"`
+
+Assert that the label uses both `htmlFor` and nesting for associating a control
+
+#### `"either"`
+
+Assert that the label uses either `htmlFor` or nesting for associating a control
+
 ### controlComponents
 
 type: `string[]`

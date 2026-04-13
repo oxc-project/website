@@ -25,44 +25,18 @@ Using the `Array` type directly is not idiomatic. Instead, use the array type `T
 
 ### Examples
 
-Examples of **incorrect** code for this rule:
+Examples of **incorrect** code for this rule (with default configuration):
 
 ```typescript
-/*oxlint array-type: ["error", { "default": "array" }] */
 const arr: Array<number> = new Array<number>();
+const readonlyArr: ReadonlyArray<number> = [1, 2, 3];
 ```
 
+Examples of **correct** code for this rule (with default configuration):
+
 ```typescript
-/*oxlint array-type: ["error", { "default": "generic" }] */
 const arr: number[] = new Array<number>();
-```
-
-```typescript
-/*oxlint array-type: ["error", { "default": "array-simple" }] */
-const a: (string | number)[] = ["a", "b"];
-const b: { prop: string }[] = [{ prop: "a" }];
-const c: Array<MyType> = ["a", "b"];
-const d: Array<string> = ["a", "b"];
-```
-
-Examples of **correct** code for this rule:
-
-```typescript
-/*oxlint array-type: ["error", { "default": "array" }] */
-const arr: number[] = new Array<number>();
-```
-
-```typescript
-/*oxlint array-type: ["error", { "default": "generic" }] */
-const arr: Array<number> = new Array<number>();
-```
-
-```typescript
-/*oxlint array-type: ["error", { "default": "array-simple" }] */
-const a: Array<string | number> = ["a", "b"];
-const b: Array<{ prop: string }> = [{ prop: "a" }];
-const c: string[] = ["a", "b"];
-const d: MyType[] = ["a", "b"];
+const readonlyArr: readonly number[] = [1, 2, 3];
 ```
 
 ## Configuration
@@ -76,6 +50,60 @@ type: `"array" | "array-simple" | "generic"`
 default: `"array"`
 
 The array type expected for mutable cases.
+
+#### `"array"`
+
+Enforce using `T[]` for all array types.
+
+Example of **incorrect** code for this option:
+
+```ts
+const arr: Array<number> = new Array<number>();
+```
+
+Example of **correct** code for this option:
+
+```ts
+const arr: number[] = new Array<number>();
+```
+
+#### `"array-simple"`
+
+Enforce using `T[]` for simple types, and `Array<T>` for complex types.
+
+Example of **incorrect** code for this option:
+
+```ts
+const a: (string | number)[] = ["a", "b"];
+const b: { prop: string }[] = [{ prop: "a" }];
+const c: Array<MyType> = ["a", "b"];
+const d: Array<string> = ["a", "b"];
+```
+
+Example of **correct** code for this option:
+
+```ts
+const a: Array<string | number> = ["a", "b"];
+const b: Array<{ prop: string }> = [{ prop: "a" }];
+const c: string[] = ["a", "b"];
+const d: MyType[] = ["a", "b"];
+```
+
+#### `"generic"`
+
+Enforce using `Array<T>` for all array types.
+
+Example of **incorrect** code for this option:
+
+```ts
+const arr: number[] = new Array<number>();
+```
+
+Example of **correct** code for this option:
+
+```ts
+const arr: Array<number> = new Array<number>();
+```
 
 ### readonly
 

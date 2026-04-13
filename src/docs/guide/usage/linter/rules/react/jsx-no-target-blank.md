@@ -72,6 +72,14 @@ default: `"always"`
 
 Whether to enforce dynamic links or enforce static links.
 
+#### `"always"`
+
+Always enforce dynamic links.
+
+#### `"never"`
+
+Always enforce static links.
+
 ### forms
 
 type: `boolean`

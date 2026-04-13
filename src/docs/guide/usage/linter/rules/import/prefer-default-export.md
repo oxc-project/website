@@ -65,8 +65,13 @@ default: `"single"`
 
 Configuration option to specify the target type for preferring default exports.
 
-- `"single"`: Prefer default export when there is only one export in the module.
-- `"any"`: Prefer default export in any module that has exports.
+#### `"single"`
+
+Prefer default export when there is only one export in the module.
+
+#### `"any"`
+
+Prefer default export in any module that has exports.
 
 ## How to use
 

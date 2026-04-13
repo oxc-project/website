@@ -73,8 +73,13 @@ default: `"loose"`
 
 Controls which built-in constructors are checked.
 
-- `"loose"` (default): Only checks Array, Function, Error (if `useErrorIsError` is true), and primitive wrappers
-- `"strict"`: Additionally checks Error types, collections, typed arrays, and other built-in constructors
+#### `"strict"`
+
+Additionally checks Error types, collections, typed arrays, and other built-in constructors.
+
+#### `"loose"`
+
+Only checks Array, Function, Error (if `useErrorIsError` is true), and primitive wrappers.
 
 ### useErrorIsError
 

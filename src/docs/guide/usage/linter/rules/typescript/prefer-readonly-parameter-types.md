@@ -1,6 +1,6 @@
 ---
 title: "typescript/prefer-readonly-parameter-types"
-category: "Nursery"
+category: "Pedantic"
 default: false
 type_aware: true
 fix: "none"

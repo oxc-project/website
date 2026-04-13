@@ -196,7 +196,13 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 
 This rule accepts one of the following string values:
 
-type: `"always" | "multi"`
+### `"always"`
+
+Require a hint to always be provided when using external snapshot matchers.
+
+### `"multi"`
+
+Require a hint to be provided when there are multiple external snapshot matchers within the scope (meaning it includes nested calls).
 
 ## How to use
 

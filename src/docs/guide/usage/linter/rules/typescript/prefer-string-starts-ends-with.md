@@ -49,9 +49,17 @@ This rule accepts a configuration object with the following properties:
 
 type: `"always" | "never"`
 
-default: `null`
+default: `"never"`
 
 Whether equality checks against the first/last character are allowed.
+
+#### `"always"`
+
+Always allow equality checks against the first or last character.
+
+#### `"never"`
+
+Never allow equality checks against the first or last character.
 
 ## How to use
 

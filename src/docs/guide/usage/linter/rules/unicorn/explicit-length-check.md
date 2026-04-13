@@ -64,8 +64,13 @@ default: `"greater-than"`
 
 Configuration option to specify how non-zero length checks should be enforced.
 
-`greater-than`: Enforces non-zero to be checked with `foo.length > 0`
-`not-equal`: Enforces non-zero to be checked with `foo.length !== 0`
+#### `"greater-than"`
+
+Enforces non-zero to be checked with `foo.length > 0`.
+
+#### `"not-equal"`
+
+Enforces non-zero to be checked with `foo.length !== 0`.
 
 ## How to use
 

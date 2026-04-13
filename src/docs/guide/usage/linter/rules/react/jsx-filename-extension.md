@@ -57,6 +57,14 @@ default: `"always"`
 When to allow a JSX filename extension. By default all files may have a JSX extension.
 Set this to `as-needed` to only allow JSX file extensions in files that contain JSX syntax.
 
+#### `"always"`
+
+Always allow a `.jsx` file extension.
+
+#### `"as-needed"`
+
+Only allow `.jsx` file extension for files that contain JSX syntax.
+
 ### extensions
 
 type: `string[]`

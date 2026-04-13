@@ -85,9 +85,13 @@ A forbidden element, either as a plain element name or with a custom message.
 
 type: `string`
 
+The element name to forbid.
+
 ##### forbid[n].message
 
 type: `string`
+
+The message to display when this element is found
 
 ## How to use
 

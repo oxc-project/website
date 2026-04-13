@@ -484,6 +484,7 @@ Use single quotes instead of double quotes.
 For JSX, you can set the `jsxSingleQuote` option.
 
 - Default: `false`
+- Overrides `.editorconfig.quote_type`
 
 ##### overrides[n].options.sortImports
 
@@ -877,6 +878,7 @@ Use single quotes instead of double quotes.
 For JSX, you can set the `jsxSingleQuote` option.
 
 - Default: `false`
+- Overrides `.editorconfig.quote_type`
 
 ## sortImports
 

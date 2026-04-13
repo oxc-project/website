@@ -176,8 +176,15 @@ type: `"always" | "never"`
 
 default: `"always"`
 
-When set to `"never"`, property names are not checked for length.
-When set to `"always"` (default), property names are checked just like other identifiers.
+Whether to check property names for length.
+
+#### `"always"`
+
+Property names are checked just like other identifiers
+
+#### `"never"`
+
+Property names are not checked for length.
 
 ## How to use
 

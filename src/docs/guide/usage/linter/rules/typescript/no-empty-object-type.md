@@ -74,11 +74,17 @@ default: `"never"`
 
 Whether to allow empty interfaces.
 
-Allowed values are:
+#### `"never"`
 
-- `'always'`: to always allow interfaces with no fields
-- `'never'` _(default)_: to never allow interfaces with no fields
-- `'with-single-extends'`: to allow empty interfaces that `extend` from a single base interface
+Never allow interfaces with no fields.
+
+#### `"always"`
+
+Always allow interfaces with no fields.
+
+#### `"with-single-extends"`
+
+Allow empty interfaces that `extend` from a single base interface.
 
 Examples of **correct** code for this rule with `{ allowInterfaces: 'with-single-extends' }`:
 
@@ -97,10 +103,13 @@ default: `"never"`
 
 Whether to allow empty object type literals.
 
-Allowed values are:
+#### `"never"`
 
-- `'always'`: to always allow object type literals with no fields
-- `'never'` _(default)_: to never allow object type literals with no fields
+Never allow object type literals with no fields.
+
+#### `"always"`
+
+Always allow object type literals with no fields.
 
 ### allowWithName
 

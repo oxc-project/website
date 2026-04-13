@@ -63,17 +63,25 @@ This rule accepts a configuration object with the following properties:
 
 type: `"for" | "each"`
 
+Preferred method to create parameterized tests for `describe` blocks.
+
 ### it
 
 type: `"for" | "each"`
+
+Preferred method to create parameterized tests for `it` blocks.
 
 ### suite
 
 type: `"for" | "each"`
 
+Preferred method to create parameterized tests for `suite` blocks.
+
 ### test
 
 type: `"for" | "each"`
+
+Preferred method to create parameterized tests for `test` blocks.
 
 ## How to use
 

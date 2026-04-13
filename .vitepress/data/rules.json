@@ -517,7 +517,7 @@
     "value": "no-empty-function",
     "category": "restriction",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-function.html"
   },
@@ -2143,6 +2143,15 @@
   },
   {
     "scope": "jest",
+    "value": "prefer-ending-with-an-expect",
+    "category": "style",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-ending-with-an-expect.html"
+  },
+  {
+    "scope": "jest",
     "value": "prefer-equality-matcher",
     "category": "style",
     "type_aware": false,
@@ -2176,6 +2185,15 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-hooks-on-top.html"
+  },
+  {
+    "scope": "jest",
+    "value": "prefer-importing-jest-globals",
+    "category": "style",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-importing-jest-globals.html"
   },
   {
     "scope": "jest",
@@ -2335,9 +2353,18 @@
     "value": "valid-expect",
     "category": "correctness",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/valid-expect.html"
+  },
+  {
+    "scope": "jest",
+    "value": "valid-expect-in-promise",
+    "category": "correctness",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/valid-expect-in-promise.html"
   },
   {
     "scope": "jest",
@@ -4430,7 +4457,7 @@
   {
     "scope": "typescript",
     "value": "no-unnecessary-qualifier",
-    "category": "nursery",
+    "category": "style",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4484,7 +4511,7 @@
   {
     "scope": "typescript",
     "value": "no-unnecessary-type-parameters",
-    "category": "nursery",
+    "category": "suspicious",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4583,10 +4610,10 @@
   {
     "scope": "typescript",
     "value": "no-useless-default-assignment",
-    "category": "nursery",
+    "category": "correctness",
     "type_aware": true,
     "fix": "none",
-    "default": false,
+    "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-useless-default-assignment.html"
   },
   {
@@ -4754,7 +4781,7 @@
   {
     "scope": "typescript",
     "value": "prefer-readonly-parameter-types",
-    "category": "nursery",
+    "category": "pedantic",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4880,7 +4907,7 @@
   {
     "scope": "typescript",
     "value": "strict-void-return",
-    "category": "nursery",
+    "category": "pedantic",
     "type_aware": true,
     "fix": "none",
     "default": false,
@@ -4984,6 +5011,15 @@
     "fix": "pending",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-function-scoping.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-template-literal-escape",
+    "category": "style",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-template-literal-escape.html"
   },
   {
     "scope": "unicorn",
@@ -5647,7 +5683,7 @@
     "value": "prefer-default-parameters",
     "category": "style",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-default-parameters.html"
   },

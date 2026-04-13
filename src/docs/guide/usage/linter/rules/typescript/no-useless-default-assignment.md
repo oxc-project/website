@@ -1,7 +1,7 @@
 ---
 title: "typescript/no-useless-default-assignment"
-category: "Nursery"
-default: false
+category: "Correctness"
+default: true
 type_aware: true
 fix: "none"
 ---

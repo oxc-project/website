@@ -77,23 +77,12 @@ Enforce this rule for class fields that are functions.
 
 ### exceptMethods
 
-type: `array`
+type: `string[]`
 
 default: `[]`
 
-List of method names to exempt from this rule.
-
-#### exceptMethods[n]
-
-type: `object`
-
-##### exceptMethods[n].name
-
-type: `string`
-
-##### exceptMethods[n].private
-
-type: `boolean`
+List of method names to exempt from this rule. Names can include the hash for private methods.
+Example: `save`, `#rerender`
 
 ### ignoreClassesWithImplements
 
@@ -102,6 +91,14 @@ type: `"all" | "public-fields"`
 default: `null`
 
 Whether to ignore classes that implement interfaces.
+
+#### `"all"`
+
+Ignores all classes that implement interfaces
+
+#### `"public-fields"`
+
+Only ignores public fields in classes that implement interfaces
 
 ### ignoreOverrideMethods
 

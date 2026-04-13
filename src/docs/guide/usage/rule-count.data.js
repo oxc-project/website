@@ -1,5 +1,5 @@
 export default {
   load() {
-    return 716;
+    return 720;
   },
 };
