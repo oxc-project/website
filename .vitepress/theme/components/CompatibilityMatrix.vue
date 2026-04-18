@@ -133,7 +133,7 @@ function useCompatData() {
       label: "Partial",
       icon: "mdi:alert-circle",
       colorClass: "bg-[#eab308]",
-      textClass: "text-black",
+      textClass: "text-white",
     },
     none: {
       label: "Not Supported",
