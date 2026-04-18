@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import { Icon } from "@iconify/vue";
 import { compatData } from "@data/compat";
 import type { Framework, FrameworkCategory, SupportLevel, SupportStatus, Tool } from "@data/compat";
@@ -25,6 +25,37 @@ const { footnoteData, getFootnoteRef, formatFrameworkNames } = useFootnotes(
 );
 
 const activeTooltip = ref<string | null>(null);
+
+const targetedFootnoteId = ref<string | null>(null);
+
+function readTargetFromHash() {
+  if (typeof window === "undefined") return;
+  const hash = window.location.hash.slice(1);
+  targetedFootnoteId.value = hash.startsWith("footnote-") ? hash : null;
+}
+
+function handleFootnoteClick(event: MouseEvent, footnoteId: number) {
+  const id = `footnote-${footnoteId}`;
+  if (targetedFootnoteId.value === id) {
+    targetedFootnoteId.value = null;
+    requestAnimationFrame(() => {
+      targetedFootnoteId.value = id;
+    });
+  } else {
+    targetedFootnoteId.value = id;
+  }
+}
+
+onMounted(() => {
+  readTargetFromHash();
+  window.addEventListener("hashchange", readTargetFromHash);
+});
+
+onBeforeUnmount(() => {
+  if (typeof window !== "undefined") {
+    window.removeEventListener("hashchange", readTargetFromHash);
+  }
+});
 
 const categories: { id: FrameworkCategory | "all"; label: string }[] = [
   { id: "all", label: "All" },
@@ -452,6 +483,7 @@ function useFootnotes(
                     :href="`#footnote-${getFootnoteRef(framework.id, tool.id)!.id}`"
                     class="absolute -top-1 left-full ml-0.5 text-[10px] text-grey hover:text-(--vp-c-brand-1)"
                     :aria-label="`See footnote ${getFootnoteRef(framework.id, tool.id)!.id}`"
+                    @click="handleFootnoteClick($event, getFootnoteRef(framework.id, tool.id)!.id)"
                   >
                     {{ getFootnoteRef(framework.id, tool.id)!.id }}
                   </a>
@@ -499,7 +531,8 @@ function useFootnotes(
             v-for="footnote in toolFootnotes"
             :id="`footnote-${footnote.id}`"
             :key="footnote.id"
-            class="flex gap-2 text-sm text-grey"
+            class="footnote-item flex gap-2 text-sm text-grey"
+            :class="{ 'footnote-item-active': targetedFootnoteId === `footnote-${footnote.id}` }"
           >
             <span class="flex shrink-0 items-center gap-1">
               <a
@@ -534,3 +567,40 @@ function useFootnotes(
     </div>
   </div>
 </template>
+
+<style scoped>
+.footnote-item {
+  scroll-margin-top: calc(var(--vp-nav-height, 64px) + 1rem);
+  padding: 0.5rem;
+  margin: -0.5rem;
+  border-radius: 4px;
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.footnote-item:target,
+.footnote-item-active {
+  background-color: var(--vp-c-brand-soft);
+  box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
+  animation: footnote-pulse 1.4s ease-out;
+}
+
+@keyframes footnote-pulse {
+  0% {
+    background-color: color-mix(in srgb, var(--vp-c-brand-1) 35%, transparent);
+  }
+  100% {
+    background-color: var(--vp-c-brand-soft);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footnote-item,
+  .footnote-item:target,
+  .footnote-item-active {
+    transition: none;
+    animation: none;
+  }
+}
+</style>
