@@ -144,7 +144,7 @@ function useCompatData() {
       label: "Partial",
       icon: "mdi:alert-circle",
       colorClass: "bg-[#eab308]",
-      textClass: "text-white",
+      textClass: "text-black",
     },
     none: {
       label: "Not Supported",
