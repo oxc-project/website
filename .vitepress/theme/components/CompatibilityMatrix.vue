@@ -27,6 +27,8 @@ const { footnoteData, getFootnoteRef, formatFrameworkNames } = useFootnotes(
 const activeTooltip = ref<string | null>(null);
 
 const targetedFootnoteId = ref<string | null>(null);
+const highlightedRefIds = ref<Set<string>>(new Set());
+let refHighlightTimer: ReturnType<typeof setTimeout> | null = null;
 
 function readTargetFromHash() {
   if (typeof window === "undefined") return;
@@ -46,6 +48,18 @@ function handleFootnoteClick(event: MouseEvent, footnoteId: number) {
   }
 }
 
+function handleBackToRefClick(refIds: string[]) {
+  if (refHighlightTimer) clearTimeout(refHighlightTimer);
+  highlightedRefIds.value = new Set();
+  requestAnimationFrame(() => {
+    highlightedRefIds.value = new Set(refIds);
+  });
+  refHighlightTimer = setTimeout(() => {
+    highlightedRefIds.value = new Set();
+    refHighlightTimer = null;
+  }, 2500);
+}
+
 onMounted(() => {
   readTargetFromHash();
   window.addEventListener("hashchange", readTargetFromHash);
@@ -55,6 +69,7 @@ onBeforeUnmount(() => {
   if (typeof window !== "undefined") {
     window.removeEventListener("hashchange", readTargetFromHash);
   }
+  if (refHighlightTimer) clearTimeout(refHighlightTimer);
 });
 
 const categories: { id: FrameworkCategory | "all"; label: string }[] = [
@@ -462,8 +477,14 @@ function useFootnotes(
                 <div class="relative inline-flex items-center justify-center">
                   <button
                     type="button"
-                    class="flex size-8 items-center justify-center rounded-lg transition-transform hover:scale-110"
-                    :class="getCellData(framework.id, tool.id).config.colorClass"
+                    class="status-cell flex size-8 items-center justify-center rounded-lg transition-transform hover:scale-110"
+                    :class="[
+                      getCellData(framework.id, tool.id).config.colorClass,
+                      getFootnoteRef(framework.id, tool.id) &&
+                      highlightedRefIds.has(getFootnoteRef(framework.id, tool.id)!.refId)
+                        ? 'status-cell-active'
+                        : '',
+                    ]"
                     :aria-label="`${framework.name} ${tool.name}: ${getCellData(framework.id, tool.id).config.label}${getCellData(framework.id, tool.id).status.notes ? ` — ${getCellData(framework.id, tool.id).status.notes}` : ''}`"
                     @mouseenter="activeTooltip = `${framework.id}-${tool.id}`"
                     @mouseleave="activeTooltip = null"
@@ -481,7 +502,12 @@ function useFootnotes(
                     v-if="getFootnoteRef(framework.id, tool.id)"
                     :id="getFootnoteRef(framework.id, tool.id)!.refId"
                     :href="`#footnote-${getFootnoteRef(framework.id, tool.id)!.id}`"
-                    class="absolute -top-1 left-full ml-0.5 text-[10px] text-grey hover:text-(--vp-c-brand-1)"
+                    class="footnote-ref absolute -top-1 left-full ml-0.5 text-[10px] hover:text-(--vp-c-brand-1)"
+                    :class="
+                      highlightedRefIds.has(getFootnoteRef(framework.id, tool.id)!.refId)
+                        ? 'footnote-ref-active text-(--vp-c-brand-1)'
+                        : 'text-grey'
+                    "
                     :aria-label="`See footnote ${getFootnoteRef(framework.id, tool.id)!.id}`"
                     @click="handleFootnoteClick($event, getFootnoteRef(framework.id, tool.id)!.id)"
                   >
@@ -539,6 +565,7 @@ function useFootnotes(
                 :href="`#${footnote.refIds[0]}`"
                 class="text-grey hover:text-(--vp-c-brand-1)"
                 :aria-label="`Back to reference ${footnote.id}`"
+                @click="handleBackToRefClick(footnote.refIds)"
                 >&#8593;</a
               >
               <span class="font-medium text-grey">{{ footnote.id }}.</span>
@@ -595,12 +622,57 @@ function useFootnotes(
   }
 }
 
+.footnote-ref {
+  transition: color 0.3s ease;
+}
+
+.footnote-ref-active {
+  font-weight: 700;
+  animation: footnote-ref-pulse 2.5s ease-out;
+  transform-origin: left center;
+}
+
+.status-cell-active {
+  animation: status-cell-glow 2.5s ease-out;
+}
+
+@keyframes status-cell-glow {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  30% {
+    box-shadow: 0 0 10px 3px var(--vp-c-brand-1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes footnote-ref-pulse {
+  0% {
+    transform: scale(1.6);
+    text-shadow: 0 0 6px var(--vp-c-brand-1);
+  }
+  40% {
+    transform: scale(1.2);
+    text-shadow: 0 0 3px var(--vp-c-brand-soft);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .footnote-item,
   .footnote-item:target,
-  .footnote-item-active {
+  .footnote-item-active,
+  .footnote-ref,
+  .footnote-ref-active,
+  .status-cell-active {
     transition: none;
     animation: none;
+    transform: none;
   }
 }
 </style>
