@@ -18,6 +18,8 @@ Disabled by default.
 
 The same order as `eslint-plugin-perfectionist/sort-imports` default.
 
+::: code-group
+
 ```json [.oxfmtrc.json]
 {
   "sortImports": {
@@ -34,7 +36,29 @@ The same order as `eslint-plugin-perfectionist/sort-imports` default.
 }
 ```
 
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  sortImports: {
+    groups: [
+      "type-import",
+      ["value-builtin", "value-external"],
+      "type-internal",
+      "value-internal",
+      ["type-parent", "type-sibling", "type-index"],
+      ["value-parent", "value-sibling", "value-index"],
+      "unknown",
+    ],
+  },
+});
+```
+
+:::
+
 Use `"newlinesBetween": false` at the top level to disable newlines between groups, then use `{ "newlinesBetween": true }` within `groups` to insert a newline at a specific point.
+
+::: code-group
 
 ```json [.oxfmtrc.json]
 {
@@ -51,7 +75,28 @@ Use `"newlinesBetween": false` at the top level to disable newlines between grou
 }
 ```
 
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  sortImports: {
+    newlinesBetween: false,
+    groups: [
+      ["value-builtin", "value-external"],
+      ["value-internal", "value-parent", "value-sibling", "value-index"],
+      { newlinesBetween: true },
+      "type-import",
+      "unknown",
+    ],
+  },
+});
+```
+
+:::
+
 Use `customGroups` to define your own groups for matching specific imports. Each custom group has a `groupName` that can be referenced in `groups`. The `elementNamePattern` accepts glob patterns to match import sources.
+
+::: code-group
 
 ```json [.oxfmtrc.json]
 {
@@ -73,6 +118,30 @@ Use `customGroups` to define your own groups for matching specific imports. Each
 }
 ```
 
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  sortImports: {
+    customGroups: [
+      {
+        groupName: "react-libs",
+        elementNamePattern: ["react", "react-**"],
+      },
+    ],
+    groups: [
+      "react-libs",
+      ["value-builtin", "value-external"],
+      "value-internal",
+      ["value-parent", "value-sibling", "value-index"],
+      "unknown",
+    ],
+  },
+});
+```
+
+:::
+
 ## Sort Tailwind CSS classes
 
 Sorts Tailwind utility classes.
@@ -83,6 +152,8 @@ Disabled by default.
 
 ### Example configuration
 
+::: code-group
+
 ```json [.oxfmtrc.json]
 {
   "sortTailwindcss": {
@@ -92,6 +163,20 @@ Disabled by default.
   }
 }
 ```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  sortTailwindcss: {
+    stylesheet: "./path/to/stylesheet.css",
+    functions: ["clsx", "cn"],
+    preserveWhitespace: true,
+  },
+});
+```
+
+:::
 
 Regex patterns for `attributes` and `functions` are not supported.
 
@@ -107,13 +192,27 @@ Enabled by default.
 
 To disable:
 
+::: code-group
+
 ```json [.oxfmtrc.json]
 {
   "sortPackageJson": false
 }
 ```
 
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  sortPackageJson: false,
+});
+```
+
+:::
+
 To sort `scripts` alphabetically:
+
+::: code-group
 
 ```json [.oxfmtrc.json]
 {
@@ -122,3 +221,15 @@ To sort `scripts` alphabetically:
   }
 }
 ```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  sortPackageJson: {
+    sortScripts: true,
+  },
+});
+```
+
+:::

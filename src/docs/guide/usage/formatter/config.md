@@ -104,6 +104,8 @@ Oxfmt uses only the nearest `.editorconfig` from the current directory:
 
 Use the `overrides` field to apply different formatting options to specific files:
 
+::: code-group
+
 ```json [.oxfmtrc.json]
 {
   "printWidth": 100,
@@ -124,6 +126,31 @@ Use the `overrides` field to apply different formatting options to specific file
   ]
 }
 ```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  printWidth: 100,
+  overrides: [
+    {
+      files: ["*.test.js", "*.spec.ts"],
+      options: {
+        printWidth: 120,
+      },
+    },
+    {
+      files: ["*.md", "*.html"],
+      excludeFiles: ["*.min.js"],
+      options: {
+        tabWidth: 4,
+      },
+    },
+  ],
+});
+```
+
+:::
 
 Each override entry has:
 
@@ -161,11 +188,23 @@ Oxfmt defaults to `printWidth: 100` (Prettier uses 80). Reasons:
 
 To match Prettier's default:
 
+::: code-group
+
 ```json [.oxfmtrc.json]
 {
   "printWidth": 80
 }
 ```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  printWidth: 80,
+});
+```
+
+:::
 
 ## Next steps
 

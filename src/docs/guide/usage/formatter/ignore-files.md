@@ -4,13 +4,25 @@ Oxfmt provides several ways to exclude files from formatting.
 
 ## `ignorePatterns`
 
-The recommended way to ignore files. Add to `.oxfmtrc.json`:
+The recommended way to ignore files. Add to your Oxfmt config:
+
+::: code-group
 
 ```json [.oxfmtrc.json]
 {
   "ignorePatterns": ["dist/**", "*.min.js"]
 }
 ```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  ignorePatterns: ["dist/**", "*.min.js"],
+});
+```
+
+:::
 
 - Uses `.gitignore` syntax
 - Paths are resolved relative to the directory containing the Oxfmt config file

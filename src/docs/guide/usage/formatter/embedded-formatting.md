@@ -4,11 +4,23 @@ Formats code embedded in JS/TS files (CSS in template literals, GraphQL in templ
 
 ## Configuration
 
+::: code-group
+
 ```json [.oxfmtrc.json]
 {
   "embeddedLanguageFormatting": "auto"
 }
 ```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  embeddedLanguageFormatting: "auto",
+});
+```
+
+:::
 
 ### Values
 
