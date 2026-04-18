@@ -28,23 +28,39 @@ const activeTooltip = ref<string | null>(null);
 
 const targetedFootnoteId = ref<string | null>(null);
 const highlightedRefIds = ref<Set<string>>(new Set());
+let footnoteHighlightTimer: ReturnType<typeof setTimeout> | null = null;
 let refHighlightTimer: ReturnType<typeof setTimeout> | null = null;
+const HIGHLIGHT_MS = 1500;
+
+function setTargetedFootnote(id: string | null) {
+  if (footnoteHighlightTimer) {
+    clearTimeout(footnoteHighlightTimer);
+    footnoteHighlightTimer = null;
+  }
+  targetedFootnoteId.value = id;
+  if (id) {
+    footnoteHighlightTimer = setTimeout(() => {
+      targetedFootnoteId.value = null;
+      footnoteHighlightTimer = null;
+    }, HIGHLIGHT_MS);
+  }
+}
 
 function readTargetFromHash() {
   if (typeof window === "undefined") return;
   const hash = window.location.hash.slice(1);
-  targetedFootnoteId.value = hash.startsWith("footnote-") ? hash : null;
+  setTargetedFootnote(hash.startsWith("footnote-") ? hash : null);
 }
 
 function handleFootnoteClick(event: MouseEvent, footnoteId: number) {
   const id = `footnote-${footnoteId}`;
   if (targetedFootnoteId.value === id) {
-    targetedFootnoteId.value = null;
+    setTargetedFootnote(null);
     requestAnimationFrame(() => {
-      targetedFootnoteId.value = id;
+      setTargetedFootnote(id);
     });
   } else {
-    targetedFootnoteId.value = id;
+    setTargetedFootnote(id);
   }
 }
 
@@ -69,6 +85,7 @@ onBeforeUnmount(() => {
   if (typeof window !== "undefined") {
     window.removeEventListener("hashchange", readTargetFromHash);
   }
+  if (footnoteHighlightTimer) clearTimeout(footnoteHighlightTimer);
   if (refHighlightTimer) clearTimeout(refHighlightTimer);
 });
 
@@ -606,19 +623,22 @@ function useFootnotes(
     box-shadow 0.4s ease;
 }
 
-.footnote-item:target,
 .footnote-item-active {
-  background-color: var(--vp-c-brand-soft);
-  box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
-  animation: footnote-pulse 1.4s ease-out;
+  animation: footnote-pulse 1.5s ease-out forwards;
 }
 
 @keyframes footnote-pulse {
   0% {
     background-color: color-mix(in srgb, var(--vp-c-brand-1) 35%, transparent);
+    box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
+  }
+  15% {
+    background-color: var(--vp-c-brand-soft);
+    box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
   }
   100% {
-    background-color: var(--vp-c-brand-soft);
+    background-color: transparent;
+    box-shadow: inset 3px 0 0 transparent;
   }
 }
 
@@ -665,7 +685,6 @@ function useFootnotes(
 
 @media (prefers-reduced-motion: reduce) {
   .footnote-item,
-  .footnote-item:target,
   .footnote-item-active,
   .footnote-ref,
   .footnote-ref-active,
