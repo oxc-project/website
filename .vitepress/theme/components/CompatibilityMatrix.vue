@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 import { Icon } from "@iconify/vue";
 import { compatData } from "@data/compat";
 import type { Framework, FrameworkCategory, SupportLevel, SupportStatus, Tool } from "@data/compat";
@@ -52,11 +52,11 @@ function readTargetFromHash() {
   setTargetedFootnote(hash.startsWith("footnote-") ? hash : null);
 }
 
-function handleFootnoteClick(event: MouseEvent, footnoteId: number) {
+function handleFootnoteClick(footnoteId: number) {
   const id = `footnote-${footnoteId}`;
   if (targetedFootnoteId.value === id) {
     setTargetedFootnote(null);
-    requestAnimationFrame(() => {
+    nextTick(() => {
       setTargetedFootnote(id);
     });
   } else {
@@ -67,13 +67,24 @@ function handleFootnoteClick(event: MouseEvent, footnoteId: number) {
 function handleBackToRefClick(refIds: string[]) {
   if (refHighlightTimer) clearTimeout(refHighlightTimer);
   highlightedRefIds.value = new Set();
-  requestAnimationFrame(() => {
+  nextTick(() => {
     highlightedRefIds.value = new Set(refIds);
   });
   refHighlightTimer = setTimeout(() => {
     highlightedRefIds.value = new Set();
     refHighlightTimer = null;
   }, 2500);
+}
+
+function getCellContext(framework: Framework, tool: Tool) {
+  const cellData = getCellData(framework.id, tool.id);
+  const footnoteRef = getFootnoteRef(framework.id, tool.id);
+  return {
+    cellData,
+    footnoteRef,
+    tooltipKey: `${framework.id}-${tool.id}`,
+    isRefHighlighted: footnoteRef !== null && highlightedRefIds.value.has(footnoteRef.refId),
+  };
 }
 
 onMounted(() => {
@@ -491,61 +502,57 @@ function useFootnotes(
                 </span>
               </th>
               <td v-for="tool in tools" :key="tool.id" class="px-4 py-3 text-center">
-                <div class="relative inline-flex items-center justify-center">
-                  <button
-                    type="button"
-                    class="status-cell flex size-8 items-center justify-center rounded-lg transition-transform hover:scale-110"
-                    :class="[
-                      getCellData(framework.id, tool.id).config.colorClass,
-                      getFootnoteRef(framework.id, tool.id) &&
-                      highlightedRefIds.has(getFootnoteRef(framework.id, tool.id)!.refId)
-                        ? 'status-cell-active'
-                        : '',
-                    ]"
-                    :aria-label="`${framework.name} ${tool.name}: ${getCellData(framework.id, tool.id).config.label}${getCellData(framework.id, tool.id).status.notes ? ` — ${getCellData(framework.id, tool.id).status.notes}` : ''}`"
-                    @mouseenter="activeTooltip = `${framework.id}-${tool.id}`"
-                    @mouseleave="activeTooltip = null"
-                    @focus="activeTooltip = `${framework.id}-${tool.id}`"
-                    @blur="activeTooltip = null"
-                  >
-                    <Icon
-                      :icon="getCellData(framework.id, tool.id).config.icon"
-                      width="20"
-                      :class="getCellData(framework.id, tool.id).config.textClass"
-                      aria-hidden="true"
-                    />
-                  </button>
-                  <a
-                    v-if="getFootnoteRef(framework.id, tool.id)"
-                    :id="getFootnoteRef(framework.id, tool.id)!.refId"
-                    :href="`#footnote-${getFootnoteRef(framework.id, tool.id)!.id}`"
-                    class="footnote-ref absolute -top-1 left-full ml-0.5 text-[10px] hover:text-(--vp-c-brand-1)"
-                    :class="
-                      highlightedRefIds.has(getFootnoteRef(framework.id, tool.id)!.refId)
-                        ? 'footnote-ref-active text-(--vp-c-brand-1)'
-                        : 'text-grey'
-                    "
-                    :aria-label="`See footnote ${getFootnoteRef(framework.id, tool.id)!.id}`"
-                    @click="handleFootnoteClick($event, getFootnoteRef(framework.id, tool.id)!.id)"
-                  >
-                    {{ getFootnoteRef(framework.id, tool.id)!.id }}
-                  </a>
-                  <!-- Tooltip -->
-                  <div
-                    v-if="
-                      activeTooltip === `${framework.id}-${tool.id}` &&
-                      getCellData(framework.id, tool.id).status.notes
-                    "
-                    class="absolute bottom-full left-1/2 z-50 mb-2 w-48 -translate-x-1/2 rounded-lg bg-primary px-3 py-2 text-center text-xs text-white shadow-lg pointer-events-none dark:border dark:border-nickel dark:bg-slate"
-                    role="tooltip"
-                  >
-                    {{ getCellData(framework.id, tool.id).status.notes }}
+                <template v-for="ctx in [getCellContext(framework, tool)]" :key="ctx.tooltipKey">
+                  <div class="relative inline-flex items-center justify-center">
+                    <button
+                      type="button"
+                      class="status-cell flex size-8 items-center justify-center rounded-lg transition-transform hover:scale-110"
+                      :class="[
+                        ctx.cellData.config.colorClass,
+                        ctx.isRefHighlighted ? 'status-cell-active' : '',
+                      ]"
+                      :aria-label="`${framework.name} ${tool.name}: ${ctx.cellData.config.label}${ctx.cellData.status.notes ? ` — ${ctx.cellData.status.notes}` : ''}`"
+                      @mouseenter="activeTooltip = ctx.tooltipKey"
+                      @mouseleave="activeTooltip = null"
+                      @focus="activeTooltip = ctx.tooltipKey"
+                      @blur="activeTooltip = null"
+                    >
+                      <Icon
+                        :icon="ctx.cellData.config.icon"
+                        width="20"
+                        :class="ctx.cellData.config.textClass"
+                        aria-hidden="true"
+                      />
+                    </button>
+                    <a
+                      v-if="ctx.footnoteRef"
+                      :id="ctx.footnoteRef.refId"
+                      :href="`#footnote-${ctx.footnoteRef.id}`"
+                      class="footnote-ref absolute -top-1 left-full ml-0.5 text-[10px] hover:text-(--vp-c-brand-1)"
+                      :class="
+                        ctx.isRefHighlighted
+                          ? 'footnote-ref-active text-(--vp-c-brand-1)'
+                          : 'text-grey'
+                      "
+                      :aria-label="`See footnote ${ctx.footnoteRef.id}`"
+                      @click="handleFootnoteClick(ctx.footnoteRef.id)"
+                    >
+                      {{ ctx.footnoteRef.id }}
+                    </a>
+                    <!-- Tooltip -->
                     <div
-                      class="absolute -bottom-1 left-1/2 size-2 -translate-x-1/2 rotate-45 bg-primary dark:bg-slate"
-                      aria-hidden="true"
-                    />
+                      v-if="activeTooltip === ctx.tooltipKey && ctx.cellData.status.notes"
+                      class="absolute bottom-full left-1/2 z-50 mb-2 w-48 -translate-x-1/2 rounded-lg bg-primary px-3 py-2 text-center text-xs text-white shadow-lg pointer-events-none dark:border dark:border-nickel dark:bg-slate"
+                      role="tooltip"
+                    >
+                      {{ ctx.cellData.status.notes }}
+                      <div
+                        class="absolute -bottom-1 left-1/2 size-2 -translate-x-1/2 rotate-45 bg-primary dark:bg-slate"
+                        aria-hidden="true"
+                      />
+                    </div>
                   </div>
-                </div>
+                </template>
               </td>
             </tr>
           </template>
