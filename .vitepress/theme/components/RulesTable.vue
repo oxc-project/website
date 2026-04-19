@@ -4,6 +4,17 @@ import { computed, ref, watch } from "vue";
 import rules from "@data/rules.json" with { type: "json" };
 import fixEmoji from "./utils/fixEmoji";
 
+// Comapre two semver versions like "0.1.3" and "1.23.5"
+const compareVersions = (a: string, b: string) => {
+  const pa = a.split(".").map(Number);
+  const pb = b.split(".").map(Number);
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    const diff = (pa[i] ?? 0) - (pb[i] ?? 0);
+    if (diff !== 0) return diff;
+  }
+  return 0;
+};
+
 // Derive available filter options
 const categories = computed(() => {
   const set = new Set(rules.map((r) => r.category));
@@ -16,10 +27,10 @@ const scopes = computed(() => {
 });
 
 // Sorting and filtering state
-type SortColumn = "name" | "source" | "category" | "default" | "fix";
+type SortColumn = "name" | "source" | "category" | "default" | "fix" | "version";
 type SortDirection = "asc" | "desc";
 
-const allowedColumns = new Set(["name", "source", "category", "default", "fix"]);
+const allowedColumns = new Set(["name", "source", "category", "default", "fix", "version"]);
 const allowedDirs = new Set(["asc", "desc"]);
 
 const sortColumn = ref<SortColumn>("name");
@@ -222,6 +233,18 @@ const filteredAndSorted = computed(() => {
 
         break;
       }
+      case "version": {
+        // Rules without a version sort last.
+        if (a.version && b.version) {
+          comparison = compareVersions(a.version, b.version);
+        } else if (a.version) {
+          comparison = -1;
+        } else if (b.version) {
+          comparison = 1;
+        }
+        if (comparison === 0) comparison = a.value.localeCompare(b.value);
+        break;
+      }
     }
 
     return sortDirection.value === "asc" ? comparison : -comparison;
@@ -253,7 +276,9 @@ const pluginDisplayNames: Record<string, string> = {
       <label for="scopeFilter"><strong>Source/Plugin</strong></label>
       <select id="scopeFilter" v-model="scopeFilter">
         <option value="all">All</option>
-        <option v-for="s in scopes" :key="s" :value="s">{{ pluginDisplayNames[s] || s }}</option>
+        <option v-for="s in scopes" :key="s" :value="s">
+          {{ pluginDisplayNames[s] || s }}
+        </option>
       </select>
     </div>
 
@@ -334,22 +359,41 @@ const pluginDisplayNames: Record<string, string> = {
             {{ sortDirection === "asc" ? "▲" : "▼" }}
           </span>
         </th>
+        <th
+          @click="toggleSort('version')"
+          @keydown.enter="toggleSort('version')"
+          @keydown.space.prevent="toggleSort('version')"
+          tabindex="0"
+          class="sortable"
+        >
+          Version
+          <span v-if="sortColumn === 'version'" class="sort-indicator">
+            {{ sortDirection === "asc" ? "▲" : "▼" }}
+          </span>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="r in filteredAndSorted" :key="`${r.scope}:${r.value}`">
-        <td>
+        <td class="rule-name-cell">
           <a :href="`/docs/guide/usage/linter/rules/${r.scope}/${r.value}`">{{ r.value }}</a>
-          <span v-if="r.type_aware" title="Type-aware rule" style="margin-left: 0.4rem">💭</span>
+          <span v-if="r.type_aware" title="Type-aware rule">💭</span>
         </td>
         <td>{{ pluginDisplayNames[r.scope] || r.scope }}</td>
         <td>{{ r.category }}</td>
-        <td style="text-align: center" v-if="r.default"><span title="Default enabled">✅</span></td>
+        <td style="text-align: center" v-if="r.default">
+          <span title="Default enabled">✅</span>
+        </td>
         <td v-else></td>
-        <td style="text-align: center" :title="fixTitle(r.fix)">{{ fixEmoji(r.fix) }}</td>
+        <td style="text-align: center" :title="fixTitle(r.fix)">
+          {{ fixEmoji(r.fix) }}
+        </td>
+        <td class="rule-version-cell" :title="r.version ? `Added in ${r.version}` : undefined">
+          {{ r.version ? `v${r.version}` : "" }}
+        </td>
       </tr>
       <tr v-if="filteredAndSorted.length === 0">
-        <td colspan="5" style="opacity: 0.7">No rules match current filters.</td>
+        <td colspan="6" style="opacity: 0.7">No rules match current filters.</td>
       </tr>
     </tbody>
   </table>
@@ -439,5 +483,17 @@ input[type="checkbox"]:focus {
 .sort-indicator {
   margin-left: 0.25rem;
   font-size: 0.75em;
+}
+
+.rule-version-cell {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.rule-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 </style>
