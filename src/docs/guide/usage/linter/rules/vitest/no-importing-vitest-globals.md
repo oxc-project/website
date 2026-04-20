@@ -17,12 +17,16 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-The rule disallows import any vitest global function.
+The rule disallows importing any vitest global functions.
 
 ### Why is this bad?
 
-If the project is configured to use globals from vitest, the rule ensure
-that never imports the globals from `import` or `require`.
+If a project is [configured to provide Vitest functions as globals](https://vitest.dev/config/globals.html),
+this rule can be used to ensure that the globals are never imported
+via `import` or `require`.
+
+Note that this rule should _not_ be used if the `globals` config
+option is set to `false` in Vitest (`false` is the default configuration).
 
 ### Examples
 

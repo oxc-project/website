@@ -72,6 +72,9 @@ This rule accepts a configuration object with the following properties:
 type: `object`
 
 Jest configuration options.
+Deprecated config, it will be removed in future versions.
+Use please instead { "settings": { "jest": {"version": 29 } } } in `Oxlint config file`.
+Beware the value from the config have higher priority than the rule config.
 
 #### jest.version
 

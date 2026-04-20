@@ -30,6 +30,8 @@ search: false
 
 - **`-c`**, **`--config`**=_`PATH`_ &mdash;
   Path to the configuration file (.json, .jsonc, .ts, .mts, .cts, .js, .mjs, .cjs)
+- **`    --disable-nested-config`** &mdash;
+  Do not search for configuration files in subdirectories
 
 ## Ignore Options
 

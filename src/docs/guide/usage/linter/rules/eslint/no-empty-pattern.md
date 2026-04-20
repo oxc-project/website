@@ -71,6 +71,19 @@ function foo({a = {}}) {}
 function foo({a = []}) {}
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### allowObjectPatternsAsParameters
+
+type: `boolean`
+
+default: `false`
+
+When set to `true`, this rule allows empty object patterns used directly as function
+parameters, including parameters defaulted to an empty object literal.
+
 ## How to use
 
 <RuleHowToUse />
