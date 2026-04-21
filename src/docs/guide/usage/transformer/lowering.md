@@ -118,9 +118,17 @@ const result = await transform("lib.js", "const foo = a ?? b;", {
 
 The following assumptions are supported.
 
+### `ignoreFunctionLength`
+
+Assume that no code relies on the `.length` property of function objects. When enabled, helpers may introduce default parameter patterns that do not preserve the original function length.
+
 ### `noDocumentAll`
 
 Assume that the deprecated `document.all` with its special behavior is not used.
+
+### `objectRestNoSymbols`
+
+Assume that object rest/spread properties do not include Symbol keys. This allows the compiler to avoid copying Symbol properties when spreading, producing smaller output.
 
 ### `pureGetters`
 

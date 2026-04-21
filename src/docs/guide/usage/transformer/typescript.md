@@ -13,6 +13,8 @@ const result = await transform("lib.ts", sourceCode, {
     allowNamespaces: true,
     removeClassFieldsWithoutInitializer: false,
     rewriteImportExtensions: false,
+    optimizeConstEnums: false,
+    optimizeEnums: false,
   },
 });
 ```
@@ -57,14 +59,14 @@ const result = await transform("lib.ts", sourceCode, {
 
 Oxc transformer supports transforming legacy decorators. This is called experimental decorators in TypeScript.
 
-If you are using the [`experimentalDecorators`](https://www.typescriptlang.org/tsconfig/#experimentalDecorators) option in the tsconfig, you can use the `decorators.legacy` option.
-If you are using the [`emitDecoratorMetadata`](https://www.typescriptlang.org/tsconfig/#emitDecoratorMetadata) option in the tsconfig, you can use the `decorators.emitDecoratorMetadata` option.
+If you are using the [`experimentalDecorators`](https://www.typescriptlang.org/tsconfig/#experimentalDecorators) option in the tsconfig, you can use the `decorator.legacy` option.
+If you are using the [`emitDecoratorMetadata`](https://www.typescriptlang.org/tsconfig/#emitDecoratorMetadata) option in the tsconfig, you can use the `decorator.emitDecoratorMetadata` option.
 
 ```js
 import { transform } from "oxc-transform";
 
 const result = await transform("lib.ts", sourceCode, {
-  decorators: {
+  decorator: {
     legacy: true,
     emitDecoratorMetadata: true,
   },
@@ -197,14 +199,65 @@ See [JSX transform](./jsx) for more information.
 
 If you are using the [`rewriteImportExtensions`](https://www.typescriptlang.org/tsconfig/#rewriteImportExtensions) option in the tsconfig, you can use the `typescript.rewriteImportExtensions` option.
 
+- `"rewrite"` or `true` — rewrites `.ts`, `.mts`, `.cts` extensions to `.js`, `.mjs`, `.cjs`.
+- `"remove"` — removes `.ts`/`.mts`/`.cts`/`.tsx` extensions entirely.
+- `false` (default) — no changes.
+
 ```js
 import { transform } from "oxc-transform";
 
 const result = await transform("lib.ts", sourceCode, {
   typescript: {
-    rewriteImportExtensions: "rewrite", // or "remove"
+    rewriteImportExtensions: "rewrite", // or "remove", true, false
   },
 });
+```
+
+## Optimize Const Enums
+
+When enabled, const enum values are inlined at usage sites and the enum declaration is removed.
+
+```js
+import { transform } from "oxc-transform";
+
+const result = await transform("lib.ts", sourceCode, {
+  typescript: {
+    optimizeConstEnums: true,
+  },
+});
+```
+
+## Optimize Enums
+
+When enabled, regular (non-const) enum member accesses are inlined at usage sites when all members satisfy const enum constraints (i.e., their values are statically evaluable). Non-exported enum declarations are also removed when all members are evaluable and no references to the enum as a runtime value exist.
+
+```js
+import { transform } from "oxc-transform";
+
+const result = await transform("lib.ts", sourceCode, {
+  typescript: {
+    optimizeEnums: true,
+  },
+});
+```
+
+## Declaration
+
+Generate `.d.ts` declaration files alongside the transform output. The source file must be compliant with all [`isolatedDeclarations`](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-5.html#isolated-declarations) requirements.
+
+```js
+import { transform } from "oxc-transform";
+
+const result = await transform("lib.ts", sourceCode, {
+  typescript: {
+    declaration: {
+      stripInternal: false,
+    },
+  },
+});
+
+console.log(result.declaration); // the .d.ts content
+console.log(result.declarationMap); // the declaration source map (if sourcemap is enabled)
 ```
 
 ## Caveats
