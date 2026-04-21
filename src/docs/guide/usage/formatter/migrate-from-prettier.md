@@ -80,7 +80,7 @@ $ deno add -D npm:oxfmt@latest
 
 ## Step 3: Migrate configuration
 
-Oxfmt uses `.oxfmtrc.json` or `.oxfmtrc.jsonc`. Basic example:
+Oxfmt uses `.oxfmtrc.json`, `.oxfmtrc.jsonc`, or `oxfmt.config.ts`. Basic example:
 
 ```jsonc [.oxfmtrc.jsonc]
 {
@@ -102,15 +102,16 @@ module.exports = {
 };
 ```
 
-After (`.oxfmtrc.jsonc`):
+After (`oxfmt.config.ts`):
 
-```jsonc [.oxfmtrc.jsonc]
-{
-  "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "singleQuote": true,
-  "jsxSingleQuote": true,
-  "printWidth": 80,
-}
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  singleQuote: true,
+  jsxSingleQuote: true,
+  printWidth: 80,
+});
 ```
 
 ### `prettierrc.yaml` example
@@ -203,4 +204,4 @@ Add the reformatting commit SHA to `.git-blame-ignore-revs` to hide it from `git
 
 ### Replace `.prettierignore` with `"ignorePatterns"`
 
-If you no longer use Prettier, you can optionally move its contents from `.prettierignore` to `"ignorePatterns"` in your Oxfmt config. See [Ignore files](/docs/guide/usage/formatter/ignore-files) for more information.
+If you no longer use Prettier, you can optionally move its contents from `.prettierignore` to `"ignorePatterns"` in your Oxfmt config. Note that `.prettierignore` applies globally, while `ignorePatterns` is scoped to the config file it belongs to. In a [nested config](./config#create-a-config-file) setup, this may change which files are ignored. See [Ignore files](/docs/guide/usage/formatter/ignore-files) for more information.

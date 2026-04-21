@@ -9,7 +9,6 @@ These features are planned. Follow our [milestone](https://github.com/oxc-projec
 Not currently supported:
 
 - `prettier` field in `package.json`
-- Nested configs in sub directories
 - Nested `.editorconfig` in sub directories
 - `experimentalTernaries` and `experimentalOperatorPosition` options
 

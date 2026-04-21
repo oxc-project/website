@@ -2,6 +2,16 @@
 
 Oxfmt provides several ways to exclude files from formatting.
 
+Some ignore mechanisms apply globally, while others are scoped to the config file they belong to:
+
+| Mechanism                           | Scope                 |
+| ----------------------------------- | --------------------- |
+| CLI paths with `!` prefix           | Global                |
+| `.prettierignore` / `--ignore-path` | Global                |
+| `ignorePatterns` in config          | Scoped to that config |
+
+When using [nested config](./config#create-a-config-file), `ignorePatterns` only applies to files that are resolved by that particular config file. Global mechanisms always apply regardless of which config file is in effect.
+
 ## `ignorePatterns`
 
 The recommended way to ignore files. Add to your Oxfmt config:

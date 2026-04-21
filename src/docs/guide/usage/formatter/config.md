@@ -17,13 +17,29 @@ To generate a starter config in the current directory:
 oxfmt --init
 ```
 
-Oxfmt automatically looks for the following files starting from the current directory and walking up the tree:
+Oxfmt automatically looks for the following files starting from the directory of the file being formatted and walking up the tree:
 
 - `.oxfmtrc.json`
 - `.oxfmtrc.jsonc`
 - `oxfmt.config.ts`
 
-You can also pass a config explicitly with `-c`. This accepts any supported format (`.json`, `.jsonc`, `.ts`, `.mts`, `.cts`, `.js`, `.mjs`, `.cjs`):
+The nearest config file to each formatted file wins. This means you can place different config files at different levels of your project tree.
+For example, a root config for the whole repo and a more specific one inside a subdirectory:
+
+```
+my-repo/
+├── oxfmt.config.ts         # default for the whole repo
+├── src/
+│   └── app.ts              # uses root config
+└── packages/
+    └── fancy-app/
+        ├── .oxfmtrc.json   # overrides for this package
+        └── index.ts        # uses packages/fancy-app/.oxfmtrc.json
+```
+
+If you don't need nested config, pass `--disable-nested-config` to only look upward from the current working directory. This is faster because Oxfmt can resolve the config once instead of per file.
+
+You can also pass a config explicitly with `-c`, which also disables nested config lookup. This accepts any supported format (`.json`, `.jsonc`, `.ts`, `.mts`, `.cts`, `.js`, `.mjs`, `.cjs`):
 
 ```sh
 oxfmt -c path/to/yourconfig.json
@@ -165,8 +181,8 @@ Glob patterns are resolved relative to the directory containing the Oxfmt config
 Options are applied in order (lowest to highest priority):
 
 1. Defaults
-2. `.oxfmtrc.json(c)` root options
-3. `.oxfmtrc.json(c)` `overrides` options
+2. Config file root options
+3. Config file `overrides` options
 4. fallback to options supported by `.editorconfig` for unset fields
 
 ## Oxfmt-specific options
