@@ -199,7 +199,7 @@ See [JSX transform](./jsx) for more information.
 
 If you are using the [`rewriteRelativeImportExtensions`](https://www.typescriptlang.org/tsconfig/#rewriteRelativeImportExtensions) option in the tsconfig, you can use the `typescript.rewriteImportExtensions` option.
 
-- `"rewrite"` or `true`: rewrites `.ts`, `.tsx`, `.mts`, `.cts` extensions to `.js`, `.jsx`, `.mjs`, `.cjs`.
+- `"rewrite"` or `true`: rewrites `.ts` and `.tsx` to `.js`, `.mts` to `.mjs`, and `.cts` to `.cjs`.
 - `"remove"`: removes `.ts`/`.tsx`/`.mts`/`.cts` extensions entirely.
 - `false` (default): no changes.
 

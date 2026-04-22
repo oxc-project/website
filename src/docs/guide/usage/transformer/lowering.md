@@ -124,10 +124,10 @@ The following assumptions are supported.
 
 ### `ignoreFunctionLength`
 
-Assume that no code relies on the `.length` property of function objects. When enabled, helpers may introduce default parameter patterns that do not preserve the original function length.
+Assume that no code relies on the `.length` property of function objects.
 
 ::: info Note
-This assumption is currently accepted but has no effect. It is reserved for future use.
+This assumption is not fully implemented yet. In particular, enabling it with object rest/spread currently produces a transform error.
 :::
 
 ### `noDocumentAll`
@@ -136,10 +136,10 @@ Assume that the deprecated `document.all` with its special behavior is not used.
 
 ### `objectRestNoSymbols`
 
-Assume that object rest/spread properties do not include Symbol keys. This allows the compiler to avoid copying Symbol properties when spreading, producing smaller output.
+Assume that object rest/spread properties do not include Symbol keys.
 
 ::: info Note
-This assumption is currently accepted but has no effect. It is reserved for future use.
+This assumption is not fully implemented yet. In particular, enabling it with object rest/spread currently produces a transform error.
 :::
 
 ### `pureGetters`
