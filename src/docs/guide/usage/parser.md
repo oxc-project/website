@@ -7,7 +7,7 @@ outline: deep
 
 <AppBadgeList />
 
-This is production ready.
+A high-performance JavaScript / TypeScript parser written in Rust, powering other tools in the Oxc project.
 
 ## Features
 
