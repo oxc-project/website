@@ -6,6 +6,10 @@ Oxc transformer includes built-in support for popular transformation plugins to 
 
 When enabled, `</script>` sequences inside tagged template literals are escaped to prevent browsers from prematurely closing a surrounding `<script>` tag. This avoids parsing errors and potential XSS vulnerabilities when JavaScript is embedded directly in HTML.
 
+::: tip Recommendation
+This option should always be enabled. Without it, tagged template literals containing `</script>` can break when the output is embedded in HTML `<script>` tags. See [oxc-project/oxc#15306](https://github.com/oxc-project/oxc/issues/15306) for details.
+:::
+
 ```javascript
 import { transform } from "oxc-transform";
 

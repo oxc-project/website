@@ -197,11 +197,11 @@ See [JSX transform](./jsx) for more information.
 
 ## Rewriting import extensions
 
-If you are using the [`rewriteImportExtensions`](https://www.typescriptlang.org/tsconfig/#rewriteImportExtensions) option in the tsconfig, you can use the `typescript.rewriteImportExtensions` option.
+If you are using the [`rewriteRelativeImportExtensions`](https://www.typescriptlang.org/tsconfig/#rewriteRelativeImportExtensions) option in the tsconfig, you can use the `typescript.rewriteImportExtensions` option.
 
-- `"rewrite"` or `true` — rewrites `.ts`, `.mts`, `.cts` extensions to `.js`, `.mjs`, `.cjs`.
-- `"remove"` — removes `.ts`/`.mts`/`.cts`/`.tsx` extensions entirely.
-- `false` (default) — no changes.
+- `"rewrite"` or `true`: rewrites `.ts`, `.tsx`, `.mts`, `.cts` extensions to `.js`, `.jsx`, `.mjs`, `.cjs`.
+- `"remove"`: removes `.ts`/`.tsx`/`.mts`/`.cts` extensions entirely.
+- `false` (default): no changes.
 
 ```js
 import { transform } from "oxc-transform";
@@ -213,9 +213,12 @@ const result = await transform("lib.ts", sourceCode, {
 });
 ```
 
-## Optimize Const Enums
+## Optimize Enums
 
-When enabled, const enum values are inlined at usage sites and the enum declaration is removed.
+Oxc transformer can optimize enums by inlining their member values at usage sites.
+
+- `optimizeConstEnums`: inlines `const enum` values and removes the declaration.
+- `optimizeEnums`: inlines regular (non-const) enum member accesses when all members satisfy const enum constraints (i.e., their values are statically evaluable). Non-exported enum declarations are also removed when all members are evaluable and no references to the enum as a runtime value exist.
 
 ```js
 import { transform } from "oxc-transform";
@@ -223,19 +226,6 @@ import { transform } from "oxc-transform";
 const result = await transform("lib.ts", sourceCode, {
   typescript: {
     optimizeConstEnums: true,
-  },
-});
-```
-
-## Optimize Enums
-
-When enabled, regular (non-const) enum member accesses are inlined at usage sites when all members satisfy const enum constraints (i.e., their values are statically evaluable). Non-exported enum declarations are also removed when all members are evaluable and no references to the enum as a runtime value exist.
-
-```js
-import { transform } from "oxc-transform";
-
-const result = await transform("lib.ts", sourceCode, {
-  typescript: {
     optimizeEnums: true,
   },
 });
