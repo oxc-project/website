@@ -36,4 +36,10 @@ const result = await isolatedDeclaration("lib.ts", sourceCode, {
   sourcemap: false,
   stripInternal: false,
 });
+
+console.log(result.code); // the .d.ts content
+console.log(result.map); // the source map (if sourcemap is enabled)
+console.log(result.errors); // parse and transformation errors
 ```
+
+A synchronous `isolatedDeclarationSync` variant is also available with the same signature.

@@ -24,11 +24,15 @@ Each target environment is an environment name followed by a version number. The
 
 The values that are supported by [esbuild's target option](https://esbuild.github.io/api/#target) are supported, excluding ES5.
 
+You can pass a single string or an array of strings:
+
 ```js
 import { transform } from "oxc-transform";
 
 const result = await transform("lib.js", "const foo = a ?? b;", {
-  target: ["chrome87", "es2022"],
+  target: "es2020",
+  // or multiple targets:
+  // target: ["chrome87", "es2022"],
 });
 ```
 
