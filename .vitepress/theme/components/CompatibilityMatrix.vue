@@ -122,6 +122,7 @@ interface StatusConfig {
   icon: string;
   colorClass: string;
   textClass: string;
+  ringClass: string;
 }
 
 interface CellData {
@@ -139,24 +140,28 @@ function useCompatData() {
       icon: "mdi:check-circle",
       colorClass: "bg-[#22c55e]",
       textClass: "text-white",
+      ringClass: "ring-[#22c55e]/60",
     },
     partial: {
       label: "Partial",
       icon: "mdi:alert-circle",
       colorClass: "bg-[#eab308]",
       textClass: "text-black",
+      ringClass: "ring-[#eab308]/60",
     },
     none: {
       label: "Not Supported",
       icon: "mdi:close-circle",
       colorClass: "bg-[#ef4444]",
       textClass: "text-white",
+      ringClass: "ring-[#ef4444]/60",
     },
     "n/a": {
       label: "Out of Scope",
       icon: "mdi:minus-circle",
       colorClass: "bg-[#6b7280]",
       textClass: "text-white",
+      ringClass: "ring-[#6b7280]/60",
     },
   };
 
@@ -506,10 +511,10 @@ function useFootnotes(
                   <div class="relative inline-flex items-center justify-center">
                     <button
                       type="button"
-                      class="status-cell flex size-8 items-center justify-center rounded-lg transition-transform hover:scale-110"
+                      class="flex size-8 items-center justify-center rounded-lg transition-[transform,box-shadow] duration-500 hover:scale-110 motion-reduce:transition-none"
                       :class="[
                         ctx.cellData.config.colorClass,
-                        ctx.isRefHighlighted ? 'status-cell-active' : '',
+                        ctx.isRefHighlighted ? `ring-4 ${ctx.cellData.config.ringClass}` : '',
                       ]"
                       :aria-label="`${framework.name} ${tool.name}: ${ctx.cellData.config.label}${ctx.cellData.status.notes ? ` — ${ctx.cellData.status.notes}` : ''}`"
                       @mouseenter="activeTooltip = ctx.tooltipKey"
@@ -528,10 +533,10 @@ function useFootnotes(
                       v-if="ctx.footnoteRef"
                       :id="ctx.footnoteRef.refId"
                       :href="`#footnote-${ctx.footnoteRef.id}`"
-                      class="footnote-ref absolute -top-1 left-full ml-0.5 text-[10px] hover:text-(--vp-c-brand-1)"
+                      class="absolute -top-1 left-full ml-0.5 origin-left text-[10px] transition-[transform,color] duration-500 hover:text-(--vp-c-brand-1) motion-reduce:transition-none"
                       :class="
                         ctx.isRefHighlighted
-                          ? 'footnote-ref-active text-(--vp-c-brand-1)'
+                          ? 'scale-150 font-bold text-(--vp-c-brand-1) motion-reduce:scale-100'
                           : 'text-grey'
                       "
                       :aria-label="`See footnote ${ctx.footnoteRef.id}`"
@@ -581,8 +586,12 @@ function useFootnotes(
             v-for="footnote in toolFootnotes"
             :id="`footnote-${footnote.id}`"
             :key="footnote.id"
-            class="footnote-item flex gap-2 text-sm text-grey"
-            :class="{ 'footnote-item-active': targetedFootnoteId === `footnote-${footnote.id}` }"
+            class="-m-2 flex gap-2 rounded p-2 text-sm text-grey scroll-mt-[calc(var(--vp-nav-height,64px)+1rem)] transition-[background-color,box-shadow] duration-700 motion-reduce:transition-none"
+            :class="
+              targetedFootnoteId === `footnote-${footnote.id}`
+                ? 'bg-(--vp-c-brand-soft) shadow-[inset_3px_0_0_var(--vp-c-brand-1)]'
+                : ''
+            "
           >
             <span class="flex shrink-0 items-center gap-1">
               <a
@@ -618,87 +627,3 @@ function useFootnotes(
     </div>
   </div>
 </template>
-
-<style scoped>
-.footnote-item {
-  scroll-margin-top: calc(var(--vp-nav-height, 64px) + 1rem);
-  padding: 0.5rem;
-  margin: -0.5rem;
-  border-radius: 4px;
-  transition:
-    background-color 0.4s ease,
-    box-shadow 0.4s ease;
-}
-
-.footnote-item-active {
-  animation: footnote-pulse 1.5s ease-out forwards;
-}
-
-@keyframes footnote-pulse {
-  0% {
-    background-color: color-mix(in srgb, var(--vp-c-brand-1) 35%, transparent);
-    box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
-  }
-  15% {
-    background-color: var(--vp-c-brand-soft);
-    box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
-  }
-  100% {
-    background-color: transparent;
-    box-shadow: inset 3px 0 0 transparent;
-  }
-}
-
-.footnote-ref {
-  transition: color 0.3s ease;
-}
-
-.footnote-ref-active {
-  font-weight: 700;
-  animation: footnote-ref-pulse 2.5s ease-out;
-  transform-origin: left center;
-}
-
-.status-cell-active {
-  animation: status-cell-glow 2.5s ease-out;
-}
-
-@keyframes status-cell-glow {
-  0% {
-    box-shadow: 0 0 0 0 transparent;
-  }
-  30% {
-    box-shadow: 0 0 10px 3px var(--vp-c-brand-1);
-  }
-  100% {
-    box-shadow: 0 0 0 0 transparent;
-  }
-}
-
-@keyframes footnote-ref-pulse {
-  0% {
-    transform: scale(1.6);
-    text-shadow: 0 0 6px var(--vp-c-brand-1);
-  }
-  40% {
-    transform: scale(1.2);
-    text-shadow: 0 0 3px var(--vp-c-brand-soft);
-  }
-  100% {
-    transform: scale(1);
-    text-shadow: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .footnote-item,
-  .footnote-item-active,
-  .footnote-ref,
-  .footnote-ref-active,
-  .status-cell-active {
-    transition: none;
-    animation: none;
-    transform: none;
-  }
-}
-</style>
