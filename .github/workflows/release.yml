@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Tools
-        uses: taiki-e/install-action@055f5df8c3f65ea01cd41e9dc855becd88953486 # v2.75.18
+        uses: taiki-e/install-action@cf525cb33f51aca27cd6fa02034117ab963ff9f1 # v2.75.22
         with:
           tool: just
 
@@ -42,7 +42,7 @@ jobs:
       - run: cd oxc && just website ..
       - run: rm -rf oxc
 
-      - uses: voidzero-dev/setup-vp@8ecb39174989ce55af90f45cf55b02738599831d # v1.6.0
+      - uses: voidzero-dev/setup-vp@4f5aa3e38c781f1b01e78fb9255527cee8a6efa6 # v1.8.0
       - run: vp run fmt
 
       - uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
