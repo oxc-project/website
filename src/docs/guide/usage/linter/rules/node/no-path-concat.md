@@ -1,6 +1,7 @@
 ---
 title: "node/no-path-concat"
 category: "Restriction"
+version: "1.49.0"
 default: false
 type_aware: false
 fix: "none"
@@ -57,6 +58,10 @@ const fullPath6 = `${__filename}.test.js`;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

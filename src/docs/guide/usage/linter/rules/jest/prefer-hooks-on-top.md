@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-hooks-on-top"
 category: "Style"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "none"
@@ -152,6 +153,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

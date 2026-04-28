@@ -1,6 +1,7 @@
 ---
 title: "unicorn/switch-case-break-position"
 category: "Style"
+version: "1.59.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -52,6 +53,10 @@ switch (foo) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.59.0.
 
 ## References
 

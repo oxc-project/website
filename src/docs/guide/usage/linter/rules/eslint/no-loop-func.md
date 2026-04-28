@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-loop-func"
 category: "Pedantic"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "none"
@@ -53,6 +54,10 @@ for (let i = 0; i < 10; i++) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

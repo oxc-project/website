@@ -1,6 +1,7 @@
 ---
 title: "vue/no-import-compiler-macros"
 category: "Restriction"
+version: "1.21.0"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -54,6 +55,10 @@ import { ref } from "vue";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.21.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "oxc/bad-object-literal-comparison"
 category: "Correctness"
+version: "0.1.1"
 default: true
 type_aware: false
 fix: "none"
@@ -48,6 +49,10 @@ if (Array.isArray(x) && x.length === 0) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-spread"
 category: "Style"
+version: "0.0.17"
 default: false
 type_aware: false
 fix: "none"
@@ -67,6 +68,10 @@ obj.foo.apply(obj, [1, 2, 3]);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.17.
 
 ## References
 

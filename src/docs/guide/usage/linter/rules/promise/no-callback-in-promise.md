@@ -1,6 +1,7 @@
 ---
 title: "promise/no-callback-in-promise"
 category: "Correctness"
+version: "0.10.0"
 default: false
 type_aware: false
 fix: "none"
@@ -85,6 +86,10 @@ Boolean as to whether callbacks in timeout functions like `setTimeout` will err.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.10.0.
 
 ## References
 

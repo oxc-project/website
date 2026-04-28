@@ -1,6 +1,7 @@
 ---
 title: "typescript/consistent-type-imports"
 category: "Style"
+version: "0.5.2"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -149,6 +150,10 @@ Will enforce that you always use `import Foo from '...'`
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.2.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-duplicate-type-constituents"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "fixable_fix"
@@ -79,6 +80,10 @@ When true, allows `type T = A | A`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

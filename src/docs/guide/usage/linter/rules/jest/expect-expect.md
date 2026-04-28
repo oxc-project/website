@@ -1,6 +1,7 @@
 ---
 title: "jest/expect-expect"
 category: "Correctness"
+version: "0.0.12"
 default: false
 type_aware: false
 fix: "none"
@@ -34,17 +35,6 @@ it("should be a test", () => {
 test("should assert something", () => {});
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/v1.1.9/docs/rules/expect-expect.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/expect-expect": "error"
-  }
-}
-```
-
 ## Configuration
 
 This rule accepts a configuration object with the following properties:
@@ -71,6 +61,10 @@ NOTE: The default value is `["expect"]` for Jest and
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.12.
 
 ## References
 

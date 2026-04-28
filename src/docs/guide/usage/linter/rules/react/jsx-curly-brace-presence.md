@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-curly-brace-presence"
 category: "Style"
+version: "0.7.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -283,6 +284,10 @@ Whether to enforce or disallow curly braces for props on JSX elements.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

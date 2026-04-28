@@ -1,6 +1,7 @@
 ---
 title: "promise/param-names"
 category: "Style"
+version: "0.6.1"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ is used instead of the default `^_?resolve$` check.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.6.1.
 
 ## References
 

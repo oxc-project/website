@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-for-of"
 category: "Style"
+version: "0.2.16"
 default: false
 type_aware: false
 fix: "pending"
@@ -46,6 +47,10 @@ for (const item of arr) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.16.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/no-set-state"
 category: "Style"
+version: "0.5.2"
 default: false
 type_aware: false
 fix: "none"
@@ -51,6 +52,10 @@ var Hello = createReactClass({
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.2.
 
 ## References
 

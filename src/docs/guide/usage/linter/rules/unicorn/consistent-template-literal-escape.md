@@ -1,6 +1,7 @@
 ---
 title: "unicorn/consistent-template-literal-escape"
 category: "Style"
+version: "1.60.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -44,6 +45,10 @@ const foo = `\${a}`;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.60.0.
 
 ## References
 

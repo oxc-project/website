@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-invalid-fetch-options"
 category: "Correctness"
+version: "0.15.12"
 default: true
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ const request = new Request("/", { method: "POST", body: "foo=bar" });
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.12.
 
 ## References
 

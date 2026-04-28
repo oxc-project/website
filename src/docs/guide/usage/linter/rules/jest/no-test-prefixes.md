@@ -1,6 +1,7 @@
 ---
 title: "jest/no-test-prefixes"
 category: "Style"
+version: "0.0.7"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -55,6 +56,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.7.
 
 ## References
 

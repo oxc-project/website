@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-type-conversion"
 category: "Suspicious"
+version: "1.49.0"
 default: false
 type_aware: true
 fix: "none"
@@ -42,6 +43,10 @@ const value = "asdf";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

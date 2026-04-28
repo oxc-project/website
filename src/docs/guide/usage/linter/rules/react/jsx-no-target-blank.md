@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-target-blank"
 category: "Pedantic"
+version: "0.2.5"
 default: false
 type_aware: false
 fix: "pending"
@@ -107,6 +108,10 @@ Whether to warn when spread attributes are used.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.5.
 
 ## References
 

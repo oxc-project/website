@@ -1,6 +1,7 @@
 ---
 title: "jest/require-to-throw-message"
 category: "Correctness"
+version: "0.2.9"
 default: false
 type_aware: false
 fix: "none"
@@ -65,6 +66,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.9.
 
 ## References
 

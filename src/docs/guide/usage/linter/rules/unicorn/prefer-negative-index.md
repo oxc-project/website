@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-negative-index"
 category: "Style"
+version: "0.13.2"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -43,6 +44,10 @@ foo.at(-1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.2.
 
 ## References
 

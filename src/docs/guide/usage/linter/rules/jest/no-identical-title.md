@@ -1,6 +1,7 @@
 ---
 title: "jest/no-identical-title"
 category: "Style"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -40,20 +41,13 @@ describe("baz", () => {
 });
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/v1.1.9/docs/rules/no-identical-title.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/no-identical-title": "error"
-  }
-}
-```
-
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/operator-assignment"
 category: "Style"
+version: "0.15.13"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -79,6 +80,10 @@ Disallows assignment operator shorthand.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.13.
 
 ## References
 

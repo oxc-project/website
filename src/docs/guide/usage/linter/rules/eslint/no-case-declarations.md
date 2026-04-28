@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-case-declarations"
 category: "Pedantic"
+version: "0.0.4"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -70,6 +71,10 @@ switch (foo) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.4.
 
 ## References
 

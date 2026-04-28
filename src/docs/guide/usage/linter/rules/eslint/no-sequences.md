@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-sequences"
 category: "Restriction"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "none"
@@ -79,6 +80,10 @@ Default is `true`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

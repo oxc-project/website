@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-regex-spaces"
 category: "Restriction"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -40,6 +41,10 @@ var re = /foo   bar/;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "vue/define-props-destructuring"
 category: "Style"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "none"
@@ -73,6 +74,10 @@ Requires using a variable to store props and prohibits destructuring
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

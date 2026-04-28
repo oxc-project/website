@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-compare-neg-zero"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "conditional_safe_fix_or_suggestion"
@@ -64,6 +65,10 @@ if (0 > x) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

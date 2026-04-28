@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-nested-ternary"
 category: "Style"
+version: "0.15.4"
 default: false
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ if (condition1) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.4.
 
 ## References
 

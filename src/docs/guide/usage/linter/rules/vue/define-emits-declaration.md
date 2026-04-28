@@ -1,6 +1,7 @@
 ---
 title: "vue/define-emits-declaration"
 category: "Style"
+version: "1.15.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -114,6 +115,10 @@ using an array or object, e.g. `defineEmits(['event1', 'event2'])`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.15.0.
 
 ## References
 

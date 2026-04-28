@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-empty-interface"
 category: "Style"
+version: "0.0.6"
 default: false
 type_aware: false
 fix: "pending"
@@ -60,6 +61,10 @@ When set to `true`, allows empty interfaces that extend a single interface.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.6.
 
 ## References
 

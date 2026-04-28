@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-array-some"
 category: "Pedantic"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -49,6 +50,10 @@ foo.some((element) => element.bar === 1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

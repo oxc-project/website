@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-multi-str"
 category: "Style"
+version: "0.5.3"
 default: false
 type_aware: false
 fix: "none"
@@ -37,6 +38,10 @@ var x =
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.3.
 
 ## References
 

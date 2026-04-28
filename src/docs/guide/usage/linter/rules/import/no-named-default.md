@@ -1,6 +1,7 @@
 ---
 title: "import/no-named-default"
 category: "Style"
+version: "0.15.3"
 default: false
 type_aware: false
 fix: "none"
@@ -43,6 +44,10 @@ import foo, { bar } from "./foo.js";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.3.
 
 ## References
 

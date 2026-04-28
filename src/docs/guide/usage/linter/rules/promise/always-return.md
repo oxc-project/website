@@ -1,6 +1,7 @@
 ---
 title: "promise/always-return"
 category: "Suspicious"
+version: "1.13.0"
 default: false
 type_aware: false
 fix: "none"
@@ -162,6 +163,10 @@ function foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.13.0.
 
 ## References
 

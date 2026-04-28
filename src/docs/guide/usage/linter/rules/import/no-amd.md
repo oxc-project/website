@@ -1,6 +1,7 @@
 ---
 title: "import/no-amd"
 category: "Restriction"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "none"
@@ -46,6 +47,10 @@ require(`../name`);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

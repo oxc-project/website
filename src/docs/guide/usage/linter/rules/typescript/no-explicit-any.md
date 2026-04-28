@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-explicit-any"
 category: "Restriction"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -82,6 +83,10 @@ Whether to ignore rest parameter arrays.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

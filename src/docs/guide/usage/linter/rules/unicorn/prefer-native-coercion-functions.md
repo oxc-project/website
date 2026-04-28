@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-native-coercion-functions"
 category: "Pedantic"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "pending"
@@ -46,6 +47,10 @@ array.some(Boolean);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

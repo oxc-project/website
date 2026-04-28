@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-ts-expect-error"
 category: "Pedantic"
+version: "0.2.11"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -55,6 +56,10 @@ const multiLine: number = "value";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.11.
 
 ## References
 

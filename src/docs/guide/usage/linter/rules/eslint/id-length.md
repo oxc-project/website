@@ -1,6 +1,7 @@
 ---
 title: "eslint/id-length"
 category: "Style"
+version: "1.4.0"
 default: false
 type_aware: false
 fix: "none"
@@ -157,7 +158,7 @@ For example, `["x", "y", "z"]` would allow single-letter identifiers "x", "y", a
 
 type: `integer`
 
-default: `18446744073709551615`
+default: `Infinity`
 
 The maximum number of graphemes allowed in an identifier.
 Defaults to no maximum (effectively unlimited).
@@ -189,6 +190,10 @@ Property names are not checked for length.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.4.0.
 
 ## References
 

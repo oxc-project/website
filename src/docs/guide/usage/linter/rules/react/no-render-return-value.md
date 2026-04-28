@@ -1,6 +1,7 @@
 ---
 title: "react/no-render-return-value"
 category: "Correctness"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "none"
@@ -48,6 +49,10 @@ ReactDOM.render(<App />, document.body);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

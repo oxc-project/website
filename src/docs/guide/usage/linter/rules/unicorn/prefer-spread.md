@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-spread"
 category: "Style"
+version: "0.0.17"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -42,6 +43,10 @@ Array.from(...argumentsArray);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.17.
 
 ## References
 

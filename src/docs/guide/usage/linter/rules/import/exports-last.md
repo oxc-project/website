@@ -1,6 +1,7 @@
 ---
 title: "import/exports-last"
 category: "Style"
+version: "0.15.14"
 default: false
 type_aware: false
 fix: "none"
@@ -49,6 +50,10 @@ export function func() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.14.
 
 ## References
 

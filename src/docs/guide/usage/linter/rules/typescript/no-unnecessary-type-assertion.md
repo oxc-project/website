@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-type-assertion"
 category: "Suspicious"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "fixable_fix"
@@ -87,6 +88,10 @@ Example: `["Foo", "Bar"]` to allow `x as Foo` or `x as Bar`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

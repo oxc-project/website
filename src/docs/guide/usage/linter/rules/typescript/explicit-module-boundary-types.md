@@ -1,6 +1,7 @@
 ---
 title: "typescript/explicit-module-boundary-types"
 category: "Restriction"
+version: "1.9.0"
 default: false
 type_aware: false
 fix: "none"
@@ -142,6 +143,10 @@ return values checked.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.9.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-dupe-keys"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -60,6 +61,10 @@ var foo = {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

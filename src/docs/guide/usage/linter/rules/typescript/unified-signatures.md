@@ -1,6 +1,7 @@
 ---
 title: "typescript/unified-signatures"
 category: "Style"
+version: "1.48.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ even if the signatures themselves are identical.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.48.0.
 
 ## References
 

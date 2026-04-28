@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-called-once"
 category: "Style"
+version: "1.39.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -22,9 +23,9 @@ Substitute `toBeCalledTimes(1)` and `toHaveBeenCalledTimes(1)` with
 
 ### Why is this bad?
 
-The \*Times method required to read the arguments to know how many times
-is expected a spy to be called. Most of the times you expecting a method is called
-once.
+The `*Times` matchers require reading the argument to know how many
+times a spy is expected to be called. Most of the time, you expect a
+method to be called once.
 
 ### Examples
 
@@ -53,6 +54,10 @@ test("foo", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.39.0.
 
 ## References
 

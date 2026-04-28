@@ -1,6 +1,7 @@
 ---
 title: "unicorn/require-number-to-fixed-digits-argument"
 category: "Pedantic"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -42,6 +43,10 @@ number.toFixed(2);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

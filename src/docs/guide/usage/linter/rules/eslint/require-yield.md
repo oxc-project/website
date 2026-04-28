@@ -1,6 +1,7 @@
 ---
 title: "eslint/require-yield"
 category: "Correctness"
+version: "0.0.4"
 default: true
 type_aware: false
 fix: "none"
@@ -36,6 +37,10 @@ function* foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.4.
 
 ## References
 

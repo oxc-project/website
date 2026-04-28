@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/click-events-have-key-events"
 category: "Correctness"
+version: "0.2.1"
 default: false
 type_aware: false
 fix: "none"
@@ -41,6 +42,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.1.
 
 ## References
 

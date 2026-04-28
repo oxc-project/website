@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-confusing-non-null-assertion"
 category: "Suspicious"
+version: "0.6.1"
 default: false
 type_aware: false
 fix: "pending"
@@ -44,6 +45,10 @@ a === b;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.6.1.
 
 ## References
 

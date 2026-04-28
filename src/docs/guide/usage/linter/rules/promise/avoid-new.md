@@ -1,6 +1,7 @@
 ---
 title: "promise/avoid-new"
 category: "Style"
+version: "0.6.1"
 default: false
 type_aware: false
 fix: "none"
@@ -48,6 +49,10 @@ const bar = await Promise.all([baz(), bang()]);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.6.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/aria-proptypes"
 category: "Correctness"
+version: "1.36.0"
 default: false
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.36.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-meaningless-void-operator"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "fixable_safe_fix_or_suggestion"
@@ -75,6 +76,10 @@ Whether to check `void` applied to expressions of type `never`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

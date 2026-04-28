@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-typos"
 category: "Correctness"
+version: "0.2.1"
 default: false
 type_aware: false
 fix: "pending"
@@ -46,6 +47,10 @@ export async function getServerSideProps() {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.1.
 
 ## References
 

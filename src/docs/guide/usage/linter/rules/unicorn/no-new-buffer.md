@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-new-buffer"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -40,6 +41,10 @@ const buffer = Buffer.alloc(10);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

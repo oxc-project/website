@@ -1,6 +1,7 @@
 ---
 title: "unicorn/text-encoding-identifier-case"
 category: "Style"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -79,6 +80,10 @@ If `true`, prefer `utf-8` over `utf8`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

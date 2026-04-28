@@ -1,6 +1,7 @@
 ---
 title: "eslint/preserve-caught-error"
 category: "Suspicious"
+version: "1.16.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -62,6 +63,10 @@ When set to `true`, requires that catch clauses always have a parameter.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.16.0.
 
 ## References
 

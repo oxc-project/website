@@ -1,6 +1,7 @@
 ---
 title: "import/export"
 category: "Nursery"
+version: "0.0.21"
 default: false
 type_aware: false
 fix: "none"
@@ -46,6 +47,10 @@ export * from "./export-all"; // No conflict if export-all.js also exports foo
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.21.
 
 ## References
 

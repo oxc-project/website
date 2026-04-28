@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-async-promise-executor"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -84,6 +85,10 @@ const result = Promise.resolve(foo);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

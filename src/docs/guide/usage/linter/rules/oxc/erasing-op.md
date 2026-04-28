@@ -1,6 +1,7 @@
 ---
 title: "oxc/erasing-op"
 category: "Correctness"
+version: "0.1.1"
 default: true
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -44,6 +45,10 @@ let y = 0;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

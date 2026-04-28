@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-reflect-apply"
 category: "Style"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -42,6 +43,10 @@ Reflect.apply(foo, null);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-nested-ternary"
 category: "Style"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -43,6 +44,10 @@ const foo = i > 5 ? (i < 100 ? true : false) : i < 100 ? true : false;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

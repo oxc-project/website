@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-promise-reject-errors"
 category: "Style"
+version: "0.15.7"
 default: false
 type_aware: false
 fix: "none"
@@ -77,6 +78,10 @@ Whether to allow calls to `Promise.reject()` with no arguments.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.7.
 
 ## References
 

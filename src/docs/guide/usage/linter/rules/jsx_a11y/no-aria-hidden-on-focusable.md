@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/no-aria-hidden-on-focusable"
 category: "Correctness"
+version: "0.0.22"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -40,6 +41,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.22.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "import/no-commonjs"
 category: "Restriction"
+version: "0.11.0"
 default: false
 type_aware: false
 fix: "none"
@@ -111,6 +112,10 @@ but `module.exports` is reported as usual.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.0.
 
 ## References
 

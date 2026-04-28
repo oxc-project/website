@@ -1,6 +1,7 @@
 ---
 title: "import/named"
 category: "Nursery"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "none"
@@ -79,6 +80,10 @@ import { SomeNonsenseThatDoesntExist } from "react";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

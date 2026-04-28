@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-loss-of-precision"
 category: "Correctness"
+version: "0.0.7"
 default: true
 type_aware: false
 fix: "none"
@@ -79,6 +80,10 @@ var x = 0x1fff_ffff_fff_fff;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.7.
 
 ## References
 

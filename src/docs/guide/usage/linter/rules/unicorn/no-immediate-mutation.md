@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-immediate-mutation"
 category: "Pedantic"
+version: "1.35.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -61,6 +62,10 @@ const map = new Map([
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.35.0.
 
 ## References
 

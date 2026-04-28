@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-extra-boolean-cast"
 category: "Correctness"
+version: "0.0.8"
 default: true
 type_aware: false
 fix: "conditional_safe_fix_or_suggestion"
@@ -77,6 +78,10 @@ cast inside inner expressions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

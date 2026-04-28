@@ -1,6 +1,7 @@
 ---
 title: "typescript/non-nullable-type-assertion-style"
 category: "Restriction"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "fixable_fix"
@@ -71,6 +72,10 @@ const str = unknown as string; // This is a different type, not just removing nu
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

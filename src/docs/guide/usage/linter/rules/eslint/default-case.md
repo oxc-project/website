@@ -1,6 +1,7 @@
 ---
 title: "eslint/default-case"
 category: "Restriction"
+version: "0.4.0"
 default: false
 type_aware: false
 fix: "none"
@@ -101,6 +102,10 @@ switch (a) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.0.
 
 ## References
 

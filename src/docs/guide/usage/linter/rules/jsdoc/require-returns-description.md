@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/require-returns-description"
 category: "Pedantic"
+version: "0.4.0"
 default: false
 type_aware: false
 fix: "none"
@@ -43,6 +44,10 @@ function quux(foo) {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.0.
 
 ## References
 

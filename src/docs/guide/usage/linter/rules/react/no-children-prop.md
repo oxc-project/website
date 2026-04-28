@@ -1,6 +1,7 @@
 ---
 title: "react/no-children-prop"
 category: "Correctness"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -55,6 +56,10 @@ React.createElement("div", 'Child 1', 'Child 2')
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

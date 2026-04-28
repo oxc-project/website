@@ -1,6 +1,7 @@
 ---
 title: "react/prefer-es6-class"
 category: "Style"
+version: "0.5.0"
 default: false
 type_aware: false
 fix: "none"
@@ -54,6 +55,10 @@ Do not allow ES2015 class-style, prefer `createReactClass`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unmodified-loop-condition"
 category: "Suspicious"
+version: "1.48.0"
 default: false
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ while (!done) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.48.0.
 
 ## References
 

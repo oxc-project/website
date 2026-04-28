@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unused-vars"
 category: "Correctness"
+version: "0.7.0"
 default: true
 type_aware: false
 fix: "conditional_dangerous_fix_or_suggestion"
@@ -541,6 +542,10 @@ console.log(b);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

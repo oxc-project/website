@@ -1,6 +1,7 @@
 ---
 title: "promise/valid-params"
 category: "Correctness"
+version: "0.7.1"
 default: false
 type_aware: false
 fix: "none"
@@ -43,6 +44,10 @@ Promise.resolve(1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.1.
 
 ## References
 

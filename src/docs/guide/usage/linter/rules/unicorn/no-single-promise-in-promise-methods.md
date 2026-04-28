@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-single-promise-in-promise-methods"
 category: "Correctness"
+version: "0.2.18"
 default: true
 type_aware: false
 fix: "conditional_fix"
@@ -52,6 +53,10 @@ async function good() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.18.
 
 ## References
 

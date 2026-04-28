@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-param-reassign"
 category: "Restriction"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "none"
@@ -68,6 +69,10 @@ When true, also check for modifications to properties of parameters.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

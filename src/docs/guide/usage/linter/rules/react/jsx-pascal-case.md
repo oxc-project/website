@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-pascal-case"
 category: "Style"
+version: "1.19.0"
 default: false
 type_aware: false
 fix: "none"
@@ -112,6 +113,10 @@ List of component names to ignore.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.19.0.
 
 ## References
 

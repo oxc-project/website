@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-unreadable-iife"
 category: "Pedantic"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "none"
@@ -50,6 +51,10 @@ const foo = ((bar) => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "import/first"
 category: "Style"
+version: "0.11.1"
 default: false
 type_aware: false
 fix: "pending"
@@ -74,6 +75,10 @@ This is the default behavior.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.1.
 
 ## References
 

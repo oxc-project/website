@@ -1,6 +1,7 @@
 ---
 title: "react/no-will-update-set-state"
 category: "Correctness"
+version: "1.37.0"
 default: false
 type_aware: false
 fix: "none"
@@ -69,6 +70,10 @@ Makes this rule more strict by disallowing calls to `this.setState`` even within
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.37.0.
 
 ## References
 

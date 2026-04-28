@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-non-null-asserted-optional-chain"
 category: "Correctness"
+version: "0.0.6"
 default: true
 type_aware: false
 fix: "fixable_suggestion"
@@ -50,6 +51,10 @@ foo.bar!;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.6.
 
 ## References
 

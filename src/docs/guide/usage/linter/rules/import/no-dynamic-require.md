@@ -1,6 +1,7 @@
 ---
 title: "import/no-dynamic-require"
 category: "Restriction"
+version: "0.9.3"
 default: false
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ When `true`, also check `import()` expressions for dynamic module specifiers.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.3.
 
 ## References
 

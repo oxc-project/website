@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-type-arguments"
 category: "Suspicious"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "fixable_fix"
@@ -78,6 +79,10 @@ const container2: Container<string> = { value: "hello" };
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

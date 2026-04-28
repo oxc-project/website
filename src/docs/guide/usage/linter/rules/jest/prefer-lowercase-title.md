@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-lowercase-title"
 category: "Style"
+version: "0.15.9"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -173,6 +174,10 @@ describe("MyClass", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.9.
 
 ## References
 

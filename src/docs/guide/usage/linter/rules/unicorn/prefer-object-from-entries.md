@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-object-from-entries"
 category: "Style"
+version: "0.16.12"
 default: false
 type_aware: false
 fix: "pending"
@@ -63,6 +64,10 @@ Additional functions to treat as equivalents to `Object.fromEntries`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.12.
 
 ## References
 

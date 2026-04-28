@@ -1,6 +1,7 @@
 ---
 title: "react/display-name"
 category: "Pedantic"
+version: "1.42.0"
 default: false
 type_aware: false
 fix: "none"
@@ -67,6 +68,10 @@ and require a `displayName` property in this case.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.42.0.
 
 ## References
 

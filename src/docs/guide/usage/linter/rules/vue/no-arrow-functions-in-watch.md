@@ -1,6 +1,7 @@
 ---
 title: "vue/no-arrow-functions-in-watch"
 category: "Correctness"
+version: "1.39.0"
 default: false
 type_aware: false
 fix: "none"
@@ -67,6 +68,10 @@ export default {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.39.0.
 
 ## References
 

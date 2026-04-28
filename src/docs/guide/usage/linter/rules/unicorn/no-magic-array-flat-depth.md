@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-magic-array-flat-depth"
 category: "Restriction"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "none"
@@ -48,6 +49,10 @@ array.flat(Infinity);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-called-exactly-once-with"
 category: "Style"
+version: "1.58.0"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -17,12 +18,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-It checks when a target is expected with `toHaveBeenCalledOnce` and `toHaveBeenCalledWith` instead of
+It checks when a target is asserted with both `toHaveBeenCalledOnce` and `toHaveBeenCalledWith` instead of
 `toHaveBeenCalledExactlyOnceWith`.
 
 ### Why is this bad?
 
-The user must deduct from both expects that the spy function is called once and with a specific arguments.
+The reader must deduce from both expectations that the spy function is called once and with specific arguments.
 
 ### Examples
 
@@ -50,6 +51,10 @@ test("foo", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.58.0.
 
 ## References
 

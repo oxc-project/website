@@ -1,6 +1,7 @@
 ---
 title: "typescript/triple-slash-reference"
 category: "Correctness"
+version: "0.2.0"
 default: true
 type_aware: false
 fix: "none"
@@ -99,6 +100,10 @@ import { bar } from "foo";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

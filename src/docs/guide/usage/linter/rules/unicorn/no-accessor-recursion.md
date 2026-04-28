@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-accessor-recursion"
 category: "Suspicious"
+version: "0.16.5"
 default: false
 type_aware: false
 fix: "none"
@@ -62,6 +63,10 @@ const baz = {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.5.
 
 ## References
 

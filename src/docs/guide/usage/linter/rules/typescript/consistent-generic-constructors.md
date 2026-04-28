@@ -1,6 +1,7 @@
 ---
 title: "typescript/consistent-generic-constructors"
 category: "Style"
+version: "0.14.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -69,6 +70,10 @@ Type arguments that only appear on the constructor are disallowed.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.14.0.
 
 ## References
 

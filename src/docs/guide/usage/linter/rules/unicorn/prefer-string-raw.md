@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-string-raw"
 category: "Style"
+version: "0.12.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -42,6 +43,10 @@ const regexp = new RegExp(String.raw`foo\.bar`);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.12.0.
 
 ## References
 

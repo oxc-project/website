@@ -1,6 +1,7 @@
 ---
 title: "node/no-process-env"
 category: "Restriction"
+version: "1.23.0"
 default: false
 type_aware: false
 fix: "none"
@@ -59,6 +60,10 @@ Variable names which are allowed to be accessed on `process.env`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.23.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-number-properties"
 category: "Restriction"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -70,6 +71,10 @@ If set to `true`, checks for usage of `NaN` as a global variable.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

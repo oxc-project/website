@@ -1,6 +1,7 @@
 ---
 title: "vue/no-required-prop-with-default"
 category: "Suspicious"
+version: "1.17.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -62,6 +63,10 @@ const props = withDefaults(
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.17.0.
 
 ## References
 

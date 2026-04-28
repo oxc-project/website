@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-invalid-void-type"
 category: "Restriction"
+version: "1.47.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ type: `string`
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.47.0.
 
 ## References
 

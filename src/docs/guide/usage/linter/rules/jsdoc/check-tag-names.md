@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/check-tag-names"
 category: "Correctness"
+version: "0.3.2"
 default: false
 type_aware: false
 fix: "pending"
@@ -116,6 +117,10 @@ If typed is `true`, disallow tags that are unnecessary/duplicative of TypeScript
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.2.
 
 ## References
 

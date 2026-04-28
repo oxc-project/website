@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-useless-fragment"
 category: "Pedantic"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -57,6 +58,10 @@ Allow fragments with a single expression child.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

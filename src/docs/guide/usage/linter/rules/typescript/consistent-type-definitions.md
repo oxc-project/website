@@ -1,6 +1,7 @@
 ---
 title: "typescript/consistent-type-definitions"
 category: "Style"
+version: "0.2.17"
 default: false
 type_aware: false
 fix: "conditional_dangerous_fix"
@@ -71,6 +72,10 @@ type T = { x: number };
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.17.
 
 ## References
 

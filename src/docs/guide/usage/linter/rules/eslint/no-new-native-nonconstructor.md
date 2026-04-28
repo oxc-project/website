@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-new-native-nonconstructor"
 category: "Correctness"
+version: "0.3.3"
 default: true
 type_aware: false
 fix: "none"
@@ -51,6 +52,10 @@ let result = BigInt(9007199254740991);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

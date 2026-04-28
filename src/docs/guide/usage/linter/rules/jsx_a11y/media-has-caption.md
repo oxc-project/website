@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/media-has-caption"
 category: "Correctness"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "none"
@@ -72,6 +73,10 @@ Element names to treat as `<video>` elements
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

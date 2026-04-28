@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-set-has"
 category: "Perf"
+version: "0.13.2"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -47,6 +48,10 @@ const hasOne = array.includes(1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.2.
 
 ## References
 

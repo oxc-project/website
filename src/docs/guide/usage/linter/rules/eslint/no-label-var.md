@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-label-var"
 category: "Style"
+version: "0.6.0"
 default: false
 type_aware: false
 fix: "none"
@@ -56,6 +57,10 @@ function bar() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.6.0.
 
 ## References
 

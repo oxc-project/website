@@ -1,6 +1,7 @@
 ---
 title: "vitest/hoisted-apis-on-top"
 category: "Correctness"
+version: "1.39.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -17,14 +18,21 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce hoisted APIs to be on top of the file.
+Requires [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) Vitest APIs
+(`vi.mock`, `vi.unmock`, and `vi.hoisted`) to appear in the top-level of the file.
 
 ### Why is this bad?
 
-Some Vitest APIs are hoisted automatically during the transform process. Using this APIs
-in look like runtime code can lead to unexpected results running tests.
+Vitest hoists certain APIs to the top of the file during transformation, so they always
+run before any imports — regardless of where they appear in the source. Writing them
+inside conditionals, test bodies, or other runtime locations can be misleading and confusing.
+
+The code looks like it executes at runtime, but it actually runs first. This rule ensures
+that these hoisted APIs are not allowed in confusing contexts.
 
 ### Examples
+
+<!-- TODO: Add comments to these example code snippets explaining what their problems are. -->
 
 Examples of **incorrect** code for this rule:
 
@@ -95,6 +103,10 @@ describe("suite", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.39.0.
 
 ## References
 

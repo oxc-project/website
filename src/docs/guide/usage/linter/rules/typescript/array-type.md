@@ -1,6 +1,7 @@
 ---
 title: "typescript/array-type"
 category: "Style"
+version: "0.2.8"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -116,6 +117,10 @@ The array type expected for readonly cases. If omitted, the value for `default` 
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.8.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/rules-of-hooks"
 category: "Pedantic"
+version: "0.3.3"
 default: false
 type_aware: false
 fix: "none"
@@ -78,6 +79,10 @@ function useCustomHook() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

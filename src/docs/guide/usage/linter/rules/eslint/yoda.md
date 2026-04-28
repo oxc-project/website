@@ -1,6 +1,7 @@
 ---
 title: "eslint/yoda"
 category: "Style"
+version: "0.14.1"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -205,6 +206,10 @@ both options are not useful together.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.14.1.
 
 ## References
 

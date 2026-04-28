@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-extra-bind"
 category: "Suspicious"
+version: "1.1.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -54,6 +55,10 @@ const y = function (a) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.1.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-debugger"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "fixable_fix"
@@ -48,6 +49,10 @@ async function main() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

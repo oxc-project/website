@@ -1,6 +1,7 @@
 ---
 title: "jest/padding-around-test-blocks"
 category: "Style"
+version: "1.13.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -64,6 +65,10 @@ it("bar", () => {});
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.13.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/no-danger-with-children"
 category: "Correctness"
+version: "0.9.6"
 default: false
 type_aware: false
 fix: "none"
@@ -42,6 +43,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.6.
 
 ## References
 

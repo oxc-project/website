@@ -1,6 +1,7 @@
 ---
 title: "jest/no-jasmine-globals"
 category: "Style"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -58,6 +59,10 @@ test("my test", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

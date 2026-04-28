@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-destructuring"
 category: "Style"
+version: "1.10.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -106,6 +107,10 @@ Determines whether the object destructuring rule applies to renamed variables.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.10.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-console"
 category: "Restriction"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "conditional_suggestion"
@@ -75,6 +76,10 @@ console.info("foo");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

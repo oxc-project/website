@@ -1,6 +1,7 @@
 ---
 title: "typescript/ban-tslint-comment"
 category: "Style"
+version: "0.2.9"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -42,6 +43,10 @@ someCode();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.9.
 
 ## References
 

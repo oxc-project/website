@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/no-access-key"
 category: "Correctness"
+version: "0.0.21"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -41,6 +42,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.21.
 
 ## References
 

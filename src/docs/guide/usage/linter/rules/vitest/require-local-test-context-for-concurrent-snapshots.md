@@ -1,6 +1,7 @@
 ---
 title: "vitest/require-local-test-context-for-concurrent-snapshots"
 category: "Correctness"
+version: "0.8.0"
 default: false
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ test.concurrent("myLogic", (context) => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.8.0.
 
 ## References
 

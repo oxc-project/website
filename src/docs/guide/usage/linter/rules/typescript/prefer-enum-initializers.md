@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-enum-initializers"
 category: "Pedantic"
+version: "0.3.2"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -47,6 +48,10 @@ enum Status {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.2.
 
 ## References
 

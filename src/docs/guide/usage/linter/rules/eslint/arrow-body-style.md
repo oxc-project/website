@@ -1,6 +1,7 @@
 ---
 title: "eslint/arrow-body-style"
 category: "Style"
+version: "1.4.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -179,6 +180,10 @@ default: `false`
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.4.0.
 
 ## References
 

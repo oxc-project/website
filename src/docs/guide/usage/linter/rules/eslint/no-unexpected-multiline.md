@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unexpected-multiline"
 category: "Suspicious"
+version: "0.9.7"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -60,6 +61,10 @@ foo;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.7.
 
 ## References
 

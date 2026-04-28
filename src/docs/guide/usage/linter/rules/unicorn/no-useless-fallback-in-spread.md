@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-fallback-in-spread"
 category: "Correctness"
+version: "0.0.16"
 default: true
 type_aware: false
 fix: "conditional_fix"
@@ -41,6 +42,10 @@ const object = { ...(foo || { not: "empty" }) };
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

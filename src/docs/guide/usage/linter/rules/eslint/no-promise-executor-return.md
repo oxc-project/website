@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-promise-executor-return"
 category: "Pedantic"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -109,6 +110,10 @@ If `true`, allows returning `void` expressions (e.g., `return void resolve()`).
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

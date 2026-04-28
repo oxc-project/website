@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-array-method-this-argument"
 category: "Style"
+version: "0.16.12"
 default: false
 type_aware: false
 fix: "pending"
@@ -53,6 +54,10 @@ array.map(function (x) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.12.
 
 ## References
 

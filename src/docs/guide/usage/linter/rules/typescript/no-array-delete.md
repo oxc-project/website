@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-array-delete"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "fixable_suggestion"
@@ -50,6 +51,10 @@ delete obj.a;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

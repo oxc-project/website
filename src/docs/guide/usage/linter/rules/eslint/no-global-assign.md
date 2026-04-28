@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-global-assign"
 category: "Correctness"
+version: "0.0.7"
 default: true
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ Globals listed here can be assigned to without triggering warnings.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.7.
 
 ## References
 

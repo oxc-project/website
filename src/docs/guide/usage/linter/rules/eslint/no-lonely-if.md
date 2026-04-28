@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-lonely-if"
 category: "Pedantic"
+version: "0.16.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -84,6 +85,10 @@ if (condition) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.0.
 
 ## References
 

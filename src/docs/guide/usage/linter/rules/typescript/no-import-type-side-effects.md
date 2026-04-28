@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-import-type-side-effects"
 category: "Restriction"
+version: "0.5.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -69,6 +70,10 @@ import type { A as AA, B as BB } from "mod";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.0.
 
 ## References
 

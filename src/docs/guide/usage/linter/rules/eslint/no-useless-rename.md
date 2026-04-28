@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-rename"
 category: "Correctness"
+version: "0.2.14"
 default: true
 type_aware: false
 fix: "fixable_fix"
@@ -72,6 +73,10 @@ When set to `true`, allows renaming imports to the same name.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

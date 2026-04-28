@@ -1,6 +1,7 @@
 ---
 title: "jest/no-standalone-expect"
 category: "Correctness"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "none"
@@ -10,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/no_standalone_expect/mod.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/no_standalone_expect.rs`;
 </script>
 
 <RuleHeader />
@@ -41,17 +42,6 @@ describe("a test", () => {
 });
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-standalone-expect.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/no-standalone-expect": "error"
-  }
-}
-```
-
 ## Configuration
 
 This rule accepts a configuration object with the following properties:
@@ -67,6 +57,10 @@ An array of function names that should also be treated as test blocks.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

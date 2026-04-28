@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-lone-blocks"
 category: "Style"
+version: "0.15.6"
 default: false
 type_aware: false
 fix: "none"
@@ -49,6 +50,10 @@ if (condition) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.6.
 
 ## References
 

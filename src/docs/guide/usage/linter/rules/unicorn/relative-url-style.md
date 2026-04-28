@@ -1,6 +1,7 @@
 ---
 title: "unicorn/relative-url-style"
 category: "Style"
+version: "1.44.0"
 default: false
 type_aware: false
 fix: "fixable_safe_fix_or_suggestion"
@@ -64,6 +65,10 @@ Always add a `./` prefix to the relative URL when possible.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.44.0.
 
 ## References
 

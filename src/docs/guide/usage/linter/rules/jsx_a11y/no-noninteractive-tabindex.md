@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/no-noninteractive-tabindex"
 category: "Correctness"
+version: "0.15.4"
 default: false
 type_aware: false
 fix: "none"
@@ -85,6 +86,10 @@ An array of custom HTML elements that should be considered interactive.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.4.
 
 ## References
 

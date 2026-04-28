@@ -1,6 +1,7 @@
 ---
 title: "promise/no-nesting"
 category: "Style"
+version: "0.15.13"
 default: false
 type_aware: false
 fix: "pending"
@@ -69,6 +70,10 @@ doThing().then((a) => getB(a).then((b) => getC(a, b)));
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.13.
 
 ## References
 

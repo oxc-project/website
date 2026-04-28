@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unsafe-declaration-merging"
 category: "Correctness"
+version: "0.0.11"
 default: true
 type_aware: false
 fix: "none"
@@ -43,6 +44,10 @@ class Bar {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.11.
 
 ## References
 

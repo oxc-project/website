@@ -1,6 +1,7 @@
 ---
 title: "eslint/max-lines"
 category: "Pedantic"
+version: "0.2.14"
 default: false
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ Whether to ignore comments when counting.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

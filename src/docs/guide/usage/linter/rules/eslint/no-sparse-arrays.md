@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-sparse-arrays"
 category: "Correctness"
+version: "0.0.4"
 default: true
 type_aware: false
 fix: "none"
@@ -64,6 +65,10 @@ var colors = ["red", "blue"];
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.4.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "promise/no-return-wrap"
 category: "Style"
+version: "0.15.14"
 default: false
 type_aware: false
 fix: "pending"
@@ -124,6 +125,10 @@ myPromise()
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.14.
 
 ## References
 

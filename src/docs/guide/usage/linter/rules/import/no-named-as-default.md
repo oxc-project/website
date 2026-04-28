@@ -1,6 +1,7 @@
 ---
 title: "import/no-named-as-default"
 category: "Suspicious"
+version: "0.2.3"
 default: false
 type_aware: false
 fix: "none"
@@ -65,6 +66,10 @@ imports, especially when TypeScript paths are used or in monorepo setups with mu
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.3.
 
 ## References
 

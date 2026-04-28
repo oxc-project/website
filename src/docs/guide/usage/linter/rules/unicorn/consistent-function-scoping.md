@@ -1,6 +1,7 @@
 ---
 title: "unicorn/consistent-function-scoping"
 category: "Suspicious"
+version: "0.8.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -118,6 +119,10 @@ Whether to check scoping with arrow functions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.8.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/require-post-message-target-origin"
 category: "Suspicious"
+version: "0.15.15"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -50,6 +51,10 @@ window.postMessage(message, "*");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.15.
 
 ## References
 

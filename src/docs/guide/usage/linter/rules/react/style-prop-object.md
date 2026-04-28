@@ -1,6 +1,7 @@
 ---
 title: "react/style-prop-object"
 category: "Suspicious"
+version: "0.11.0"
 default: false
 type_aware: false
 fix: "none"
@@ -70,6 +71,10 @@ List of component names on which to allow `style` prop values of any type.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.0.
 
 ## References
 

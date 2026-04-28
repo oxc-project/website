@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/anchor-has-content"
 category: "Correctness"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "conditional_suggestion"
@@ -49,6 +50,10 @@ Examples of **incorrect** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

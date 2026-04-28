@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-structured-clone"
 category: "Style"
+version: "0.9.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -54,6 +55,10 @@ List of functions that are allowed to be used for deep cloning instead of struct
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.0.
 
 ## References
 

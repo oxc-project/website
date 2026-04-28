@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-img-element"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -58,6 +59,10 @@ export function MyComponent() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

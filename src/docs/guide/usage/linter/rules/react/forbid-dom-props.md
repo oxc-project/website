@@ -1,6 +1,7 @@
 ---
 title: "react/forbid-dom-props"
 category: "Restriction"
+version: "1.24.0"
 default: false
 type_aware: false
 fix: "none"
@@ -96,6 +97,10 @@ The name of the prop to forbid.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.24.0.
 
 ## References
 

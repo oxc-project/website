@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/no-static-element-interactions"
 category: "Correctness"
+version: "1.37.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ An array of event handler names that should trigger this rule (e.g., `onClick`, 
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.37.0.
 
 ## References
 

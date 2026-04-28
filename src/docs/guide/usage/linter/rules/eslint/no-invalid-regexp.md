@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-invalid-regexp"
 category: "Correctness"
+version: "0.9.4"
 default: true
 type_aware: false
 fix: "none"
@@ -57,6 +58,10 @@ Case-sensitive array of flags that will be allowed.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.4.
 
 ## References
 

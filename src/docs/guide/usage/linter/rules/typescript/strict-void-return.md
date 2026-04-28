@@ -1,6 +1,7 @@
 ---
 title: "typescript/strict-void-return"
 category: "Pedantic"
+version: "0.0.8"
 default: false
 type_aware: true
 fix: "none"
@@ -63,6 +64,10 @@ Allow callbacks that return `any` in places that expect a `void` callback.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

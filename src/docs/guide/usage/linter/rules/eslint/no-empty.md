@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-empty"
 category: "Restriction"
+version: "0.0.3"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -56,6 +57,10 @@ If set to `true`, allows an empty `catch` block without triggering the linter.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

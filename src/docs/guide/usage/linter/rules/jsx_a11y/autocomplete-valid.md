@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/autocomplete-valid"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -52,6 +53,10 @@ List of custom component names that should be treated as input elements.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

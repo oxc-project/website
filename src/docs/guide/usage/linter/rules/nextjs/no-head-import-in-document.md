@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-head-import-in-document"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -74,6 +75,10 @@ export default MyDocument;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

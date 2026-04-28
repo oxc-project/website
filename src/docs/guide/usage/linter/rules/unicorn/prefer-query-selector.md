@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-query-selector"
 category: "Pedantic"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -51,6 +52,10 @@ document.querySelector("li").querySelectorAll("a");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

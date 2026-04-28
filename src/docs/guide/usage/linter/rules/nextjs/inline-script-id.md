@@ -1,6 +1,7 @@
 ---
 title: "nextjs/inline-script-id"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -89,6 +90,10 @@ export default function Page() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

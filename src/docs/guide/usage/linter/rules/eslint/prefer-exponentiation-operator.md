@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-exponentiation-operator"
 category: "Style"
+version: "0.4.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -42,6 +43,10 @@ a ** b;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.0.
 
 ## References
 

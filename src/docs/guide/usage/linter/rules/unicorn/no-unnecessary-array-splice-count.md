@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-unnecessary-array-splice-count"
 category: "Pedantic"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -46,6 +47,10 @@ array.toSpliced(1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-restricted-imports"
 category: "Restriction"
+version: "0.15.0"
 default: false
 type_aware: false
 fix: "none"
@@ -344,6 +345,10 @@ import { isEmpty } from "utils/collection-utils";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.0.
 
 ## References
 

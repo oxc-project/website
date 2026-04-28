@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unused-expressions"
 category: "Correctness"
+version: "0.14.0"
 default: true
 type_aware: false
 fix: "none"
@@ -78,6 +79,10 @@ When set to `true`, enforces the rule for unused JSX expressions also.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.14.0.
 
 ## References
 

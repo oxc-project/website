@@ -1,6 +1,7 @@
 ---
 title: "typescript/unbound-method"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "none"
@@ -112,6 +113,10 @@ When true, static methods can be referenced without binding.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

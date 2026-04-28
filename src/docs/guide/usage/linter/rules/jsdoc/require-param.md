@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/require-param"
 category: "Pedantic"
+version: "0.4.3"
 default: false
 type_aware: false
 fix: "pending"
@@ -114,6 +115,10 @@ List of JSDoc tags that exempt functions from `@param` checking.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.3.
 
 ## References
 

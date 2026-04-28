@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-array-for-each"
 category: "Restriction"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "pending"
@@ -52,6 +53,10 @@ for (const element of foo) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

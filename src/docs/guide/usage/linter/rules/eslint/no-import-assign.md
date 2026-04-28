@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-import-assign"
 category: "Correctness"
+version: "0.0.5"
 default: true
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ Object.assign(mod_ns, { foo: "foo" }); // ERROR: The members of 'mod_ns' are rea
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

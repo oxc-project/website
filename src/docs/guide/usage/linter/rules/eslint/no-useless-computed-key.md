@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-computed-key"
 category: "Style"
+version: "1.16.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -111,6 +112,10 @@ class SomeClass {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.16.0.
 
 ## References
 

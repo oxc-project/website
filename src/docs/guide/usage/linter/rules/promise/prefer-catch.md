@@ -1,6 +1,7 @@
 ---
 title: "promise/prefer-catch"
 category: "Style"
+version: "0.15.14"
 default: false
 type_aware: false
 fix: "pending"
@@ -53,6 +54,10 @@ prom.catch(fn2);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.14.
 
 ## References
 

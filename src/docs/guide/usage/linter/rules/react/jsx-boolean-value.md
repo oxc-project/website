@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-boolean-value"
 category: "Style"
+version: "0.7.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -108,6 +109,10 @@ Only necessary when main mode is `"always"`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

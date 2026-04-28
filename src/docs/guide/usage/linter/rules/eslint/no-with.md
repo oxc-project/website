@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-with"
 category: "Correctness"
+version: "0.2.14"
 default: true
 type_aware: false
 fix: "none"
@@ -42,6 +43,10 @@ with (point) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

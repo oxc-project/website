@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-redeclare"
 category: "Pedantic"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "none"
@@ -56,6 +57,10 @@ When set `true`, it flags redeclaring built-in globals (e.g., `let Object = 1;`)
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

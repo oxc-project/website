@@ -1,6 +1,7 @@
 ---
 title: "oxc/only-used-in-recursion"
 category: "Correctness"
+version: "0.1.1"
 default: true
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -52,6 +53,10 @@ function f(a: number): number {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

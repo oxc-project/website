@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-function-type"
 category: "Style"
+version: "0.2.11"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -78,6 +79,10 @@ type Intersection = ((data: string) => number) & ((id: number) => string);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.11.
 
 ## References
 

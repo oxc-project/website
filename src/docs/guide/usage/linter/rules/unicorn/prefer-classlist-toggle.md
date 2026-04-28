@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-classlist-toggle"
 category: "Style"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -50,6 +51,10 @@ element.classList.toggle("className", condition);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

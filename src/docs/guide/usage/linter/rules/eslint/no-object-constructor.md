@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-object-constructor"
 category: "Pedantic"
+version: "0.13.2"
 default: false
 type_aware: false
 fix: "pending"
@@ -44,6 +45,10 @@ const createObject = (Object) => new Object();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.2.
 
 ## References
 

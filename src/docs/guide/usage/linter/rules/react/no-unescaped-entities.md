@@ -1,6 +1,7 @@
 ---
 title: "react/no-unescaped-entities"
 category: "Pedantic"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "pending"
@@ -44,6 +45,10 @@ Correct
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

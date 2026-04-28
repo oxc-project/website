@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-misused-promises"
 category: "Pedantic"
+version: "1.11.0"
 default: false
 type_aware: true
 fix: "none"
@@ -143,6 +144,10 @@ Whether to check Promise-returning functions assigned to variables typed as void
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.11.0.
 
 ## References
 

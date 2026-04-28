@@ -1,6 +1,7 @@
 ---
 title: "typescript/class-literal-property-style"
 category: "Style"
+version: "1.47.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -95,6 +96,10 @@ class C {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.47.0.
 
 ## References
 

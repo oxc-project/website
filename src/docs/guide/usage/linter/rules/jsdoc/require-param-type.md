@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/require-param-type"
 category: "Pedantic"
+version: "0.4.4"
 default: false
 type_aware: false
 fix: "pending"
@@ -42,6 +43,10 @@ function quux(foo) {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.4.
 
 ## References
 

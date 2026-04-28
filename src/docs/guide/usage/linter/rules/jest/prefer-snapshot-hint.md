@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-snapshot-hint"
 category: "Correctness"
+version: "1.59.0"
 default: false
 type_aware: false
 fix: "none"
@@ -207,6 +208,10 @@ Require a hint to be provided when there are multiple external snapshot matchers
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.59.0.
 
 ## References
 

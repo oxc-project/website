@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-spread"
 category: "Correctness"
+version: "0.0.19"
 default: true
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -86,6 +87,10 @@ function foo(bar) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "import/no-namespace"
 category: "Style"
+version: "0.12.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -73,6 +74,10 @@ For example, `["*.json"]` will ignore all JSON imports.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.12.0.
 
 ## References
 

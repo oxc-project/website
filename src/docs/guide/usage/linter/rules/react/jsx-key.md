@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-key"
 category: "Correctness"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -75,6 +76,10 @@ When true, warn on duplicate key values
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

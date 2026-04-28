@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-fragments"
 category: "Style"
+version: "1.12.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -83,6 +84,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

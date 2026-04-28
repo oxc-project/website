@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/heading-has-content"
 category: "Correctness"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ These will be validated in addition to the standard h1-h6 elements.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unsafe-negation"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "fixable_fix"
@@ -67,6 +68,10 @@ when what is really intended is `!(a < b)`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

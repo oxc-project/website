@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-extraneous-class"
 category: "Suspicious"
+version: "0.7.0"
 default: false
 type_aware: false
 fix: "fixable_dangerous_suggestion"
@@ -113,6 +114,10 @@ Allow classes with decorators.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-instanceof-array"
 category: "Pedantic"
+version: "0.0.8"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -43,6 +44,10 @@ Array.isArray([1, 2, 3]);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

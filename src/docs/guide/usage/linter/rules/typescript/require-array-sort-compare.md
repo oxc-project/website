@@ -1,6 +1,7 @@
 ---
 title: "typescript/require-array-sort-compare"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "none"
@@ -83,6 +84,10 @@ Whether to ignore arrays in which all elements are strings.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

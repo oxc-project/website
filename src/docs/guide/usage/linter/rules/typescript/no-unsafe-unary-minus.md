@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unsafe-unary-minus"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "none"
@@ -69,6 +70,10 @@ const result4 = -Number(str); // safe conversion
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

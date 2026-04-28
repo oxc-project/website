@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-at"
 category: "Pedantic"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -71,6 +72,10 @@ These functions will be checked for `.at(-1)` usage.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

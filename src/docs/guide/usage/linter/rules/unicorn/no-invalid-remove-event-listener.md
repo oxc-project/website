@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-invalid-remove-event-listener"
 category: "Correctness"
+version: "0.0.16"
 default: true
 type_aware: false
 fix: "none"
@@ -42,6 +43,10 @@ el.removeEventListener("click", handler.bind(this));
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

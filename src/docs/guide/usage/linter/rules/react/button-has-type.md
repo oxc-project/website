@@ -1,6 +1,7 @@
 ---
 title: "react/button-has-type"
 category: "Restriction"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "none"
@@ -72,6 +73,10 @@ If true, allow `type="submit"`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

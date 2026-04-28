@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-duplicate-enum-values"
 category: "Correctness"
+version: "0.0.8"
 default: true
 type_aware: false
 fix: "none"
@@ -72,6 +73,10 @@ enum E {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

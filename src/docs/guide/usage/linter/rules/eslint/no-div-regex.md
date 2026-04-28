@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-div-regex"
 category: "Restriction"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -45,6 +46,10 @@ function bar() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

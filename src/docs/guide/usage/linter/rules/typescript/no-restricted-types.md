@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-restricted-types"
 category: "Restriction"
+version: "1.31.0"
 default: false
 type_aware: false
 fix: "fixable_safe_fix_or_suggestion"
@@ -66,6 +67,10 @@ A mapping of type names to ban configurations.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.31.0.
 
 ## References
 

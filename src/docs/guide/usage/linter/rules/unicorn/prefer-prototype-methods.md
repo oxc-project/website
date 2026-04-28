@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-prototype-methods"
 category: "Pedantic"
+version: "0.0.21"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -45,6 +46,10 @@ const maxValue = Math.max.apply(Math, numbers);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.21.
 
 ## References
 

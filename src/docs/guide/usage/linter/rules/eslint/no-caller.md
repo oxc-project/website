@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-caller"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -75,6 +76,10 @@ function foo(n) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

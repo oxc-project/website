@@ -1,6 +1,7 @@
 ---
 title: "import/no-default-export"
 category: "Restriction"
+version: "0.2.14"
 default: false
 type_aware: false
 fix: "none"
@@ -48,6 +49,10 @@ export const bar = "bar";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

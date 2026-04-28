@@ -1,6 +1,7 @@
 ---
 title: "jest/require-hook"
 category: "Style"
+version: "0.3.2"
 default: false
 type_aware: false
 fix: "none"
@@ -159,6 +160,10 @@ An array of function names that are allowed to be called outside of hooks.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.2.
 
 ## References
 

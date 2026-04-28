@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-top-level-await"
 category: "Pedantic"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -52,6 +53,10 @@ try {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

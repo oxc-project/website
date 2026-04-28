@@ -1,6 +1,7 @@
 ---
 title: "import/no-absolute-path"
 category: "Suspicious"
+version: "0.15.13"
 default: false
 type_aware: false
 fix: "pending"
@@ -113,6 +114,10 @@ import foo from "/foo"; // reported
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.13.
 
 ## References
 

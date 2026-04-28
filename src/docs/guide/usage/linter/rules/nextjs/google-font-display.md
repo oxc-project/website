@@ -1,6 +1,7 @@
 ---
 title: "nextjs/google-font-display"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -61,6 +62,10 @@ export default Test = () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

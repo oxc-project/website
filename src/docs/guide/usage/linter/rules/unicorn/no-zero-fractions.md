@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-zero-fractions"
 category: "Style"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -45,6 +46,10 @@ const foo = 1.1;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

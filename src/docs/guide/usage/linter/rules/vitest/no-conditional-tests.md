@@ -1,6 +1,7 @@
 ---
 title: "vitest/no-conditional-tests"
 category: "Correctness"
+version: "0.8.0"
 default: false
 type_aware: false
 fix: "none"
@@ -53,6 +54,10 @@ describe("my tests", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.8.0.
 
 ## References
 

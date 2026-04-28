@@ -1,6 +1,7 @@
 ---
 title: "unicorn/numeric-separators-style"
 category: "Style"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -152,6 +153,10 @@ grouping will be enforced for eligible numbers even if they don't include separa
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-array-flat-map"
 category: "Perf"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -40,6 +41,10 @@ const bar = [1, 2, 3].flatMap((i) => [i]);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

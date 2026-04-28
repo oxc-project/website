@@ -1,6 +1,7 @@
 ---
 title: "import/unambiguous"
 category: "Restriction"
+version: "0.11.1"
 default: false
 type_aware: false
 fix: "none"
@@ -57,6 +58,10 @@ export {}; // simple way to mark side-effects-only file as 'module' without any 
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/require-array-join-separator"
 category: "Style"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -41,6 +42,10 @@ foo.join(",");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

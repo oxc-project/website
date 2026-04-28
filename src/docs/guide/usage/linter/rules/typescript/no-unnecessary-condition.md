@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-condition"
 category: "Nursery"
+version: "1.48.0"
 default: false
 type_aware: true
 fix: "none"
@@ -92,6 +93,10 @@ Whether to check type predicate functions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.48.0.
 
 ## References
 

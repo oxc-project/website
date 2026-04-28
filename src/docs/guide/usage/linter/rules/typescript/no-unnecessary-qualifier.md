@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-qualifier"
 category: "Style"
+version: "1.49.0"
 default: false
 type_aware: true
 fix: "none"
@@ -47,6 +48,10 @@ namespace A {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

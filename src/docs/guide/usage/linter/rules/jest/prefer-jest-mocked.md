@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-jest-mocked"
 category: "Style"
+version: "0.5.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -60,6 +61,10 @@ jest.mocked([].foo).mockReturnValue(1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.0.
 
 ## References
 

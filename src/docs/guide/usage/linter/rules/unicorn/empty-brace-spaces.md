@@ -1,6 +1,7 @@
 ---
 title: "unicorn/empty-brace-spaces"
 category: "Style"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -49,6 +50,10 @@ class A {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

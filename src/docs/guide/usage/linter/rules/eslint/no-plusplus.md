@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-plusplus"
 category: "Restriction"
+version: "0.9.5"
 default: false
 type_aware: false
 fix: "conditional_suggestion"
@@ -83,6 +84,10 @@ Whether to allow `++` and `--` in for loop afterthoughts.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.5.
 
 ## References
 

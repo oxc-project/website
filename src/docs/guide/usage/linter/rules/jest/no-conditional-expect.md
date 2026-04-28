@@ -1,6 +1,7 @@
 ---
 title: "jest/no-conditional-expect"
 category: "Correctness"
+version: "0.0.12"
 default: false
 type_aware: false
 fix: "none"
@@ -17,13 +18,13 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule prevents the use of expect in conditional blocks, such as ifs & catch(s).
-This includes using expect in callbacks to functions named catch, which are assumed to be promises.
+This rule prevents the use of `expect` in conditional blocks, such as `if` and `catch`.
+This includes using `expect` in callbacks to functions named `catch`, which are assumed to be promises.
 
 ### Why is this bad?
 
 Jest only considers a test to have failed if it throws an error, meaning if calls to
-assertion functions like expect occur in conditional code such as a catch statement,
+assertion functions like `expect` occur in conditional code such as a `catch` statement,
 tests can end up passing but not actually test anything. Additionally, conditionals
 tend to make tests more brittle and complex, as they increase the amount of mental
 thinking needed to understand what is actually being tested.
@@ -88,20 +89,13 @@ it("throws an error", async () => {
 });
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-expect.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/no-conditional-expect": "error"
-  }
-}
-```
-
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.12.
 
 ## References
 

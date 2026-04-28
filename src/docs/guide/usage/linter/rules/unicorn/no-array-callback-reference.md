@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-array-callback-reference"
 category: "Pedantic"
+version: "1.19.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -52,6 +53,10 @@ const bar = array.filter(Boolean);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.19.0.
 
 ## References
 

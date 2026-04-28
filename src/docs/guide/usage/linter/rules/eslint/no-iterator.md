@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-iterator"
 category: "Correctness"
+version: "0.2.15"
 default: true
 type_aware: false
 fix: "fixable_suggestion"
@@ -60,6 +61,10 @@ Foo.prototype[Symbol.iterator] = function () {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.15.
 
 ## References
 

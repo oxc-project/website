@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-mock-promise-shorthand"
 category: "Style"
+version: "0.2.16"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -69,6 +70,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.16.
 
 ## References
 

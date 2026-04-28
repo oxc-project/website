@@ -1,6 +1,7 @@
 ---
 title: "import/no-anonymous-default-export"
 category: "Style"
+version: "0.15.14"
 default: false
 type_aware: false
 fix: "none"
@@ -146,6 +147,10 @@ Allow anonymous object as default export.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.14.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "vitest/consistent-vitest-vi"
 category: "Style"
+version: "1.37.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -57,6 +58,10 @@ Decides whether to prefer vitest function accessor
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.37.0.
 
 ## References
 

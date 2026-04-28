@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-return-assign"
 category: "Style"
+version: "0.9.10"
 default: false
 type_aware: false
 fix: "none"
@@ -62,6 +63,10 @@ This is the default mode.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.10.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-bigint-literals"
 category: "Style"
+version: "1.30.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -54,6 +55,10 @@ BigInt("1.23");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.30.0.
 
 ## References
 

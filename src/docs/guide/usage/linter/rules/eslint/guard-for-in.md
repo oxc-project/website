@@ -1,6 +1,7 @@
 ---
 title: "eslint/guard-for-in"
 category: "Style"
+version: "0.2.14"
 default: false
 type_aware: false
 fix: "none"
@@ -64,6 +65,10 @@ for (key in foo) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

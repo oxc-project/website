@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-namespace-keyword"
 category: "Correctness"
+version: "0.7.0"
 default: true
 type_aware: false
 fix: "fixable_fix"
@@ -50,6 +51,10 @@ namespace Example {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

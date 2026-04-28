@@ -1,6 +1,7 @@
 ---
 title: "react/forbid-elements"
 category: "Restriction"
+version: "0.16.11"
 default: false
 type_aware: false
 fix: "none"
@@ -96,6 +97,10 @@ The message to display when this element is found
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.11.
 
 ## References
 

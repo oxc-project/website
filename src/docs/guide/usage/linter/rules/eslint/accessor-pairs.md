@@ -1,6 +1,7 @@
 ---
 title: "eslint/accessor-pairs"
 category: "Pedantic"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "none"
@@ -104,6 +105,10 @@ Report a setter without a getter.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

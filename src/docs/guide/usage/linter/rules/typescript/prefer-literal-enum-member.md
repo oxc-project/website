@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-literal-enum-member"
 category: "Restriction"
+version: "0.3.2"
 default: false
 type_aware: false
 fix: "none"
@@ -55,6 +56,10 @@ This includes bitwise NOT (`~`), AND (`&`), OR (`|`), XOR (`^`), and shift opera
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.2.
 
 ## References
 

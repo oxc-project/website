@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-extend-native"
 category: "Suspicious"
+version: "0.9.7"
 default: false
 type_aware: false
 fix: "none"
@@ -73,6 +74,10 @@ A list of objects which are allowed to be exceptions to the rule.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.7.
 
 ## References
 

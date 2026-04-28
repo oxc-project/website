@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/require-returns"
 category: "Pedantic"
+version: "0.4.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -99,6 +100,10 @@ Whether to require a `@returns` tag for async functions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.0.
 
 ## References
 

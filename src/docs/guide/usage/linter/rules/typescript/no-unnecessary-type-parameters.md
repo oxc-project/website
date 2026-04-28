@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-type-parameters"
 category: "Suspicious"
+version: "1.49.0"
 default: false
 type_aware: true
 fix: "none"
@@ -50,6 +51,10 @@ function identity<T>(value: T): T {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

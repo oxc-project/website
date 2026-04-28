@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-await-in-promise-methods"
 category: "Correctness"
+version: "0.2.18"
 default: true
 type_aware: false
 fix: "fixable_suggestion"
@@ -52,6 +53,10 @@ async function foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.18.
 
 ## References
 

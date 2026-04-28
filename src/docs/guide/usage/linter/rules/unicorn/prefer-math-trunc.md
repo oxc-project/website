@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-math-trunc"
 category: "Pedantic"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -48,6 +49,10 @@ const foo = Math.trunc(1.1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

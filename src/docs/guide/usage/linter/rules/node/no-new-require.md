@@ -1,6 +1,7 @@
 ---
 title: "node/no-new-require"
 category: "Restriction"
+version: "0.10.0"
 default: false
 type_aware: false
 fix: "none"
@@ -42,6 +43,10 @@ var appHeader = new AppHeader();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.10.0.
 
 ## References
 

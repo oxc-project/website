@@ -1,6 +1,7 @@
 ---
 title: "jest/no-done-callback"
 category: "Style"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "pending"
@@ -62,6 +63,10 @@ test("myFunction()", function (done) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

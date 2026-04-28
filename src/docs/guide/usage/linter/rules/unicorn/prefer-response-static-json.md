@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-response-static-json"
 category: "Style"
+version: "1.29.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -44,6 +45,10 @@ const response = Response.json(data, { status: 200 });
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.29.0.
 
 ## References
 

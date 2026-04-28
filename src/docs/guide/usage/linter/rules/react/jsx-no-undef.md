@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-undef"
 category: "Correctness"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "none"
@@ -38,6 +39,10 @@ const C = <B />;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

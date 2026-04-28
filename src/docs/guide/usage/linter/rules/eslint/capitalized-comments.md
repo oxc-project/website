@@ -1,6 +1,7 @@
 ---
 title: "eslint/capitalized-comments"
 category: "Style"
+version: "1.34.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -126,6 +127,10 @@ A regex pattern. Comments that match the pattern will not cause violations.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.34.0.
 
 ## References
 

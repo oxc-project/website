@@ -1,6 +1,7 @@
 ---
 title: "vitest/consistent-test-filename"
 category: "Style"
+version: "1.36.0"
 default: false
 type_aware: false
 fix: "none"
@@ -56,6 +57,10 @@ Pattern doesn't have a default value, you must provide one.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.36.0.
 
 ## References
 

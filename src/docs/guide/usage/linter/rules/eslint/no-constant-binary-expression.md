@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-constant-binary-expression"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ const isEmpty = x.length === 0;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

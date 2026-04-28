@@ -1,6 +1,7 @@
 ---
 title: "react/exhaustive-deps"
 category: "Correctness"
+version: "0.12.0"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix_or_suggestion"
@@ -63,6 +64,10 @@ Optionally provide a regex of additional hooks to check.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.12.0.
 
 ## References
 

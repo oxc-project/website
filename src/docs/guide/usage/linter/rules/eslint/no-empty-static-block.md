@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-empty-static-block"
 category: "Correctness"
+version: "0.0.19"
 default: true
 type_aware: false
 fix: "fixable_suggestion"
@@ -53,6 +54,10 @@ class Bar {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

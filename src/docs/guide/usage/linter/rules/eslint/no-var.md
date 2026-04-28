@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-var"
 category: "Restriction"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -45,6 +46,10 @@ const CONFIG = {};
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

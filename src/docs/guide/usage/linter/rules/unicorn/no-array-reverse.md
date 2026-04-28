@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-array-reverse"
 category: "Suspicious"
+version: "1.15.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -60,6 +61,10 @@ array.reverse();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.15.0.
 
 ## References
 

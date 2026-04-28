@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-length-as-slice-end"
 category: "Restriction"
+version: "0.7.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -40,6 +41,10 @@ foo.slice(1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

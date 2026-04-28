@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-prototype-builtins"
 category: "Pedantic"
+version: "0.0.5"
 default: false
 type_aware: false
 fix: "pending"
@@ -42,6 +43,10 @@ var barIsEnumerable = foo.propertyIsEnumerable("bar");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

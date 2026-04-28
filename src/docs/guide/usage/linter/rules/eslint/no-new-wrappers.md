@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-new-wrappers"
 category: "Pedantic"
+version: "0.2.10"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -53,6 +54,10 @@ var symbolObject = Symbol("foo");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.10.
 
 ## References
 

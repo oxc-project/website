@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-css-tags"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ import styles from './Button.module.css'
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

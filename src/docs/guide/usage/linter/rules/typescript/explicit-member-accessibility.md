@@ -1,6 +1,7 @@
 ---
 title: "typescript/explicit-member-accessibility"
 category: "Restriction"
+version: "1.61.0"
 default: false
 type_aware: false
 fix: "conditional_safe_fix_or_suggestion"
@@ -207,6 +208,10 @@ Which member accessibility modifier requirements to apply for properties.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.61.0.
 
 ## References
 

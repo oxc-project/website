@@ -1,6 +1,7 @@
 ---
 title: "react/no-string-refs"
 category: "Correctness"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "none"
@@ -85,6 +86,10 @@ Disallow template literals in addition to string literals.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

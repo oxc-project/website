@@ -1,6 +1,7 @@
 ---
 title: "react/no-array-index-key"
 category: "Perf"
+version: "0.13.0"
 default: false
 type_aware: false
 fix: "none"
@@ -43,6 +44,10 @@ things.map((thing, index) => <Hello key={thing.id} />);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.0.
 
 ## References
 

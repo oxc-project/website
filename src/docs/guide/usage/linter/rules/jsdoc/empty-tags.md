@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/empty-tags"
 category: "Restriction"
+version: "0.2.16"
 default: false
 type_aware: false
 fix: "pending"
@@ -75,6 +76,10 @@ Additional tags to check for their descriptions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.16.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "import/no-empty-named-blocks"
 category: "Suspicious"
+version: "0.16.1"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -43,6 +44,10 @@ import Default, { mod } from "mod";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-require-imports"
 category: "Restriction"
+version: "0.13.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -110,6 +111,10 @@ import foo from "foo";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.0.
 
 ## References
 

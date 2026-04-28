@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-constructor"
 category: "Suspicious"
+version: "0.4.4"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -77,6 +78,10 @@ class D extends A {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.4.
 
 ## References
 

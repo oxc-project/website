@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-string-slice"
 category: "Pedantic"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -40,6 +41,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

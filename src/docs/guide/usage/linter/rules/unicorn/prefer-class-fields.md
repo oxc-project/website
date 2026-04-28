@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-class-fields"
 category: "Style"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "conditional_safe_fix_or_suggestion"
@@ -70,6 +71,10 @@ class Foo {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

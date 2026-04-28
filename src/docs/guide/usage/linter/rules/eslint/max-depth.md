@@ -1,6 +1,7 @@
 ---
 title: "eslint/max-depth"
 category: "Pedantic"
+version: "0.15.12"
 default: false
 type_aware: false
 fix: "none"
@@ -90,6 +91,10 @@ The `max` enforces a maximum depth that blocks can be nested
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.12.
 
 ## References
 

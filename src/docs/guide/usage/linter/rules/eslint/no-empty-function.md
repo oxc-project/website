@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-empty-function"
 category: "Restriction"
+version: "0.3.3"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -226,6 +227,10 @@ class Foo extends Base {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

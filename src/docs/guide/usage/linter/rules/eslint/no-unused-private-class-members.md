@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unused-private-class-members"
 category: "Correctness"
+version: "0.1.1"
 default: true
 type_aware: false
 fix: "none"
@@ -88,6 +89,10 @@ class C {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-unreadable-array-destructuring"
 category: "Style"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "pending"
@@ -48,6 +49,10 @@ const [, foo] = parts;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

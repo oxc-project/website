@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-import-in-mock"
 category: "Style"
+version: "1.49.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -21,7 +22,7 @@ This rule enforces using a dynamic `import()` in `vi.mock()` or `vi.doMock()`, w
 
 ### Why is this bad?
 
-A lack of type information and IntelliSense increase the risk of mismatches between the real module and it's mock.
+A lack of type information and IntelliSense increases the risk of mismatches between the real module and its mock.
 
 ### Examples
 
@@ -54,6 +55,10 @@ Whether the rule should generate fixes or not.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

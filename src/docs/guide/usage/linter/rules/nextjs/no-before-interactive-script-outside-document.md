@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-before-interactive-script-outside-document"
 category: "Correctness"
+version: "0.2.7"
 default: false
 type_aware: false
 fix: "none"
@@ -82,6 +83,10 @@ export default MyDocument;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.7.
 
 ## References
 

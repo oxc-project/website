@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-deprecated"
 category: "Pedantic"
+version: "1.26.0"
 default: false
 type_aware: true
 fix: "none"
@@ -132,6 +133,10 @@ If omitted, all files will be matched.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.26.0.
 
 ## References
 

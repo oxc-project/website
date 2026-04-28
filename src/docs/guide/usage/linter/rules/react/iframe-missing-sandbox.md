@@ -1,6 +1,7 @@
 ---
 title: "react/iframe-missing-sandbox"
 category: "Suspicious"
+version: "0.10.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -54,6 +55,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.10.0.
 
 ## References
 

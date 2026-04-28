@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-props-no-spreading"
 category: "Style"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "none"
@@ -88,6 +89,10 @@ default: `"enforce"`
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

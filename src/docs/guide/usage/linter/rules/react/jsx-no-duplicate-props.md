@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-duplicate-props"
 category: "Correctness"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -49,6 +50,10 @@ is allowed). This is intentional, as props are case-sensitive in JSX.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

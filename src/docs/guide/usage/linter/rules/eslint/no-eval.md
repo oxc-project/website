@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-eval"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -88,6 +89,10 @@ compared to direct calls, as they do not invoke JavaScript's scope chain.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

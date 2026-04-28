@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-empty-object-type"
 category: "Restriction"
+version: "0.12.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -136,6 +137,10 @@ type TypeProps = {};
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.12.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/parameter-properties"
 category: "Style"
+version: "1.48.0"
 default: false
 type_aware: false
 fix: "none"
@@ -95,6 +96,10 @@ Whether to prefer parameter properties or class properties.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.48.0.
 
 ## References
 

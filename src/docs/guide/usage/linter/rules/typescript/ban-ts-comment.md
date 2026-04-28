@@ -1,6 +1,7 @@
 ---
 title: "typescript/ban-ts-comment"
 category: "Pedantic"
+version: "0.0.8"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -88,6 +89,10 @@ How to handle the `@ts-nocheck` directive.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

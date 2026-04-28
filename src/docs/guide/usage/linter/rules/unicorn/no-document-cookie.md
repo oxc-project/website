@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-document-cookie"
 category: "Restriction"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ async function storeCookies() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

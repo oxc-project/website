@@ -1,6 +1,7 @@
 ---
 title: "eslint/sort-vars"
 category: "Pedantic"
+version: "0.9.3"
 default: false
 type_aware: false
 fix: "pending"
@@ -55,6 +56,10 @@ When `true`, the rule ignores case-sensitivity when sorting variables.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.3.
 
 ## References
 

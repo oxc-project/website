@@ -1,6 +1,7 @@
 ---
 title: "typescript/switch-exhaustiveness-check"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "conditional_suggestion"
@@ -153,6 +154,10 @@ When true, switches with non-exhaustive union types must have a default case.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

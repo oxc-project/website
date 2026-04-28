@@ -1,6 +1,7 @@
 ---
 title: "eslint/eqeqeq"
 category: "Pedantic"
+version: "0.0.3"
 default: false
 type_aware: false
 fix: "conditional_dangerous_fix"
@@ -204,6 +205,10 @@ Ignore null comparisons, allow either `== null`/`!= null` or `=== null`/`!== nul
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

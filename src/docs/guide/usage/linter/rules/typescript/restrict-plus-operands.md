@@ -1,6 +1,7 @@
 ---
 title: "typescript/restrict-plus-operands"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -125,6 +126,10 @@ Whether to skip compound assignments (e.g., `a += b`).
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

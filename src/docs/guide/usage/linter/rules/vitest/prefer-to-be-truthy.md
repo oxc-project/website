@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-to-be-truthy"
 category: "Style"
+version: "0.7.1"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -45,6 +46,10 @@ expectTypeOf(foo).toBeTruthy();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.1.
 
 ## References
 

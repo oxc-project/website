@@ -1,6 +1,7 @@
 ---
 title: "react/no-did-mount-set-state"
 category: "Correctness"
+version: "1.36.0"
 default: false
 type_aware: false
 fix: "none"
@@ -76,6 +77,10 @@ When set, also disallows `setState` calls in nested functions within `componentD
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.36.0.
 
 ## References
 

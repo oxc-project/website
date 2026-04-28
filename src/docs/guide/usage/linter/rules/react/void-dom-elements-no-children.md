@@ -1,6 +1,7 @@
 ---
 title: "react/void-dom-elements-no-children"
 category: "Correctness"
+version: "0.2.11"
 default: false
 type_aware: false
 fix: "none"
@@ -51,6 +52,10 @@ React.createElement('div', { dangerouslySetInnerHTML: { __html: 'HTML' } })
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.11.
 
 ## References
 

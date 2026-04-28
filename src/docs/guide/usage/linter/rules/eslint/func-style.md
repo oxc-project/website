@@ -1,6 +1,7 @@
 ---
 title: "eslint/func-style"
 category: "Style"
+version: "0.15.11"
 default: false
 type_aware: false
 fix: "pending"
@@ -185,6 +186,10 @@ default: `null`
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.11.
 
 ## References
 

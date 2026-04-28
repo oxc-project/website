@@ -1,6 +1,7 @@
 ---
 title: "react/self-closing-comp"
 category: "Style"
+version: "0.9.3"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -70,6 +71,10 @@ Whether to enforce self-closing for native HTML elements.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.3.
 
 ## References
 

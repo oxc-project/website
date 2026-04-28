@@ -1,6 +1,7 @@
 ---
 title: "unicorn/error-message"
 category: "Style"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ throw new TypeError("Number expected");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

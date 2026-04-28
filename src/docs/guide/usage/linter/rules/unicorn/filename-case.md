@@ -1,6 +1,7 @@
 ---
 title: "unicorn/filename-case"
 category: "Style"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -169,6 +170,10 @@ parts of the extension rather than parts of the filename.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

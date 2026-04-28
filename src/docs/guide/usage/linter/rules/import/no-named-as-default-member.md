@@ -1,6 +1,7 @@
 ---
 title: "import/no-named-as-default-member"
 category: "Suspicious"
+version: "0.2.1"
 default: false
 type_aware: false
 fix: "none"
@@ -60,6 +61,10 @@ import { bar } from "./bar"; // Correct: accessing named export directly
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.1.
 
 ## References
 

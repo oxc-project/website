@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-to-be-object"
 category: "Style"
+version: "0.9.2"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -45,6 +46,10 @@ expectTypeOf({}).toBeObject();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.2.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-assignment"
 category: "Nursery"
+version: "1.59.0"
 default: false
 type_aware: false
 fix: "none"
@@ -87,6 +88,10 @@ function fn3() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.59.0.
 
 ## References
 

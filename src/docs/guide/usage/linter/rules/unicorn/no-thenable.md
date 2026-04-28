@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-thenable"
 category: "Correctness"
+version: "0.0.13"
 default: true
 type_aware: false
 fix: "none"
@@ -59,6 +60,10 @@ async function example() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

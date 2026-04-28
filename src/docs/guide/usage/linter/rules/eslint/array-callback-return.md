@@ -1,6 +1,7 @@
 ---
 title: "eslint/array-callback-return"
 category: "Pedantic"
+version: "0.0.3"
 default: false
 type_aware: false
 fix: "pending"
@@ -80,6 +81,10 @@ When set to true, rule will also report forEach callbacks that return a value.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

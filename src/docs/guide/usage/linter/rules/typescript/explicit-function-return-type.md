@@ -1,6 +1,7 @@
 ---
 title: "typescript/explicit-function-return-type"
 category: "Restriction"
+version: "0.4.4"
 default: false
 type_aware: false
 fix: "none"
@@ -149,6 +150,10 @@ Array of function names that are exempt from requiring return type annotations.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.4.
 
 ## References
 

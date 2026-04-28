@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-nullish-coalescing"
 category: "Pedantic"
+version: "1.33.0"
 default: false
 type_aware: true
 fix: "fixable_fix"
@@ -161,6 +162,10 @@ using the nullish coalescing operator.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

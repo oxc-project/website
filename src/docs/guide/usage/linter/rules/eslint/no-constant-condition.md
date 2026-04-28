@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-constant-condition"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -81,6 +82,10 @@ Configuration option to specify whether to check for constant conditions in loop
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-const"
 category: "Style"
+version: "1.43.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -87,6 +88,10 @@ This is mainly useful for preventing conflicts with the `typescript/no-use-befor
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.43.0.
 
 ## References
 

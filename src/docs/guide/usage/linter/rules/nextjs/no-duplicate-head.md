@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-duplicate-head"
 category: "Correctness"
+version: "0.3.3"
 default: false
 type_aware: false
 fix: "none"
@@ -71,6 +72,10 @@ export default MyDocument;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

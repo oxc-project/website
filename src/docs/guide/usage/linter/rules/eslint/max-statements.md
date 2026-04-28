@@ -1,6 +1,7 @@
 ---
 title: "eslint/max-statements"
 category: "Style"
+version: "1.35.0"
 default: false
 type_aware: false
 fix: "none"
@@ -176,6 +177,10 @@ Maximum number of statements allowed per function.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.35.0.
 
 ## References
 

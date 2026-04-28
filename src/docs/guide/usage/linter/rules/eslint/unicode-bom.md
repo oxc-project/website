@@ -1,6 +1,7 @@
 ---
 title: "eslint/unicode-bom"
 category: "Restriction"
+version: "0.3.3"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -51,6 +52,10 @@ This is the default option.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

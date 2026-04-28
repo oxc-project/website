@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-this-before-super"
 category: "Correctness"
+version: "0.2.6"
 default: true
 type_aware: false
 fix: "none"
@@ -44,6 +45,10 @@ class A1 extends B {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.6.
 
 ## References
 

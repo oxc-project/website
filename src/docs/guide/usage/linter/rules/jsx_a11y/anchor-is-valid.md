@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/anchor-is-valid"
 category: "Correctness"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "none"
@@ -103,6 +104,10 @@ List of strings that are valid href values.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

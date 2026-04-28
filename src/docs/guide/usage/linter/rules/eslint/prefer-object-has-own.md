@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-object-has-own"
 category: "Style"
+version: "0.11.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -59,6 +60,10 @@ const hasProperty = Object.hasOwn(object, property);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-confusing-void-expression"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "fixable_safe_fix_or_suggestion"
@@ -96,6 +97,10 @@ When true, allows expressions like `x = voidReturningFunction()`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

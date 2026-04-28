@@ -1,6 +1,7 @@
 ---
 title: "eslint/complexity"
 category: "Restriction"
+version: "1.37.0"
 default: false
 type_aware: false
 fix: "none"
@@ -119,6 +120,10 @@ complexity by 1 irrespective of the number of `case` statements
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.37.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-misused-spread"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "fixable_suggestion"
@@ -135,6 +136,10 @@ If omitted, all files will be matched.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

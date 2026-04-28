@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/check-property-names"
 category: "Correctness"
+version: "0.2.18"
 default: false
 type_aware: false
 fix: "pending"
@@ -58,6 +59,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.18.
 
 ## References
 

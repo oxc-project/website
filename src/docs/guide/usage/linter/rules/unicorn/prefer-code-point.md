@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-code-point"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -45,6 +46,10 @@ String.fromCodePoint(0x1f984);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

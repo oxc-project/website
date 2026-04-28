@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unsafe-optional-chaining"
 category: "Correctness"
+version: "0.0.5"
 default: true
 type_aware: false
 fix: "none"
@@ -54,6 +55,10 @@ If this is true, this rule warns arithmetic operations on optional chaining expr
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

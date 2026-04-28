@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-logical-operator-over-ternary"
 category: "Style"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -42,6 +43,10 @@ console.log(foo ?? bar);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

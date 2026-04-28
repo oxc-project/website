@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-object-as-default-parameter"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "none"
@@ -40,6 +41,10 @@ function foo({ a = false } = {}) {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

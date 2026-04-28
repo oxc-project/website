@@ -1,6 +1,7 @@
 ---
 title: "import/no-self-import"
 category: "Suspicious"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ import bar from "./bar.js"; // Correct: module imports another module
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "import/max-dependencies"
 category: "Pedantic"
+version: "0.5.0"
 default: false
 type_aware: false
 fix: "none"
@@ -77,6 +78,10 @@ Maximum number of dependencies allowed in a file.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.0.
 
 ## References
 

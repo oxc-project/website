@@ -1,6 +1,7 @@
 ---
 title: "eslint/max-params"
 category: "Style"
+version: "0.2.14"
 default: false
 type_aware: false
 fix: "none"
@@ -94,6 +95,10 @@ Maximum number of parameters allowed in function definitions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

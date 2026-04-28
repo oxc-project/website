@@ -1,6 +1,7 @@
 ---
 title: "react/no-find-dom-node"
 category: "Correctness"
+version: "0.0.15"
 default: false
 type_aware: false
 fix: "none"
@@ -46,6 +47,10 @@ class MyComponent extends Component {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.15.
 
 ## References
 

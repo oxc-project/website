@@ -1,6 +1,7 @@
 ---
 title: "nextjs/next-script-for-ga"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -72,6 +73,10 @@ import Script from 'next/script'
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

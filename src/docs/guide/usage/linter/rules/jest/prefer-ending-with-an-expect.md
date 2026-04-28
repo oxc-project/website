@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-ending-with-an-expect"
 category: "Style"
+version: "1.60.0"
 default: false
 type_aware: false
 fix: "none"
@@ -128,6 +129,10 @@ A list of function names that should be treated as assertion functions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.60.0.
 
 ## References
 

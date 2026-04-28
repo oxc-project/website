@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-module"
 category: "Restriction"
+version: "1.50.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -44,6 +45,10 @@ export default foo;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.50.0.
 
 ## References
 

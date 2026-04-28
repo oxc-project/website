@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/require-yields"
 category: "Correctness"
+version: "0.3.2"
 default: false
 type_aware: false
 fix: "none"
@@ -80,6 +81,10 @@ When `true`, require `@yields` when a `@generator` tag is present.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.2.
 
 ## References
 

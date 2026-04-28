@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-includes"
 category: "Pedantic"
+version: "1.29.0"
 default: false
 type_aware: true
 fix: "fixable_fix"
@@ -87,6 +88,10 @@ if (/world/i.test(str)) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.29.0.
 
 ## References
 

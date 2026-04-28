@@ -1,6 +1,7 @@
 ---
 title: "promise/prefer-await-to-then"
 category: "Style"
+version: "0.7.1"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ If true, enforces the rule even after an `await` or `yield` expression.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/escape-case"
 category: "Pedantic"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -48,6 +49,10 @@ const foo = "\cA";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

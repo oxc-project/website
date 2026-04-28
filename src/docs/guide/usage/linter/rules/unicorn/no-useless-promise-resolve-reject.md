@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-promise-resolve-reject"
 category: "Pedantic"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -60,6 +61,10 @@ If set to `true`, allows the use of `Promise.reject` in async functions and prom
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

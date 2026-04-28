@@ -1,6 +1,7 @@
 ---
 title: "jest/consistent-test-it"
 category: "Style"
+version: "0.5.3"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -59,17 +60,6 @@ describe("foo", function () {
 });
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/v1.1.9/docs/rules/consistent-test-it.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/consistent-test-it": "error"
-  }
-}
-```
-
 ## Configuration
 
 This rule accepts a configuration object with the following properties:
@@ -94,6 +84,10 @@ If only `fn` is provided, this will default to the value of `fn`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.3.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/sort-keys"
 category: "Style"
+version: "0.9.4"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -91,6 +92,10 @@ Use natural sort order so that, for example, "a2" comes before "a10".
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.4.
 
 ## References
 

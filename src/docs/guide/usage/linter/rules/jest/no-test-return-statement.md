@@ -1,6 +1,7 @@
 ---
 title: "jest/no-test-return-statement"
 category: "Style"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -57,6 +58,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

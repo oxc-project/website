@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unsafe-assignment"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -72,6 +73,10 @@ const anything: any = unknownValue;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/radix"
 category: "Pedantic"
+version: "0.3.3"
 default: false
 type_aware: false
 fix: "conditional_dangerous_fix"
@@ -57,6 +58,10 @@ let num = parseInt("071", 10); // 71
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

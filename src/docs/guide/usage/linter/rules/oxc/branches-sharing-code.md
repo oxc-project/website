@@ -1,6 +1,7 @@
 ---
 title: "oxc/branches-sharing-code"
-category: "Nursery"
+category: "Pedantic"
+version: "1.22.0"
 default: false
 type_aware: false
 fix: "none"
@@ -67,6 +68,10 @@ cleanup();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.22.0.
 
 ## References
 

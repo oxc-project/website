@@ -1,6 +1,7 @@
 ---
 title: "import/no-nodejs-modules"
 category: "Style"
+version: "1.43.0"
 default: false
 type_aware: false
 fix: "none"
@@ -64,6 +65,10 @@ Array of names of allowed modules. Defaults to an empty array.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.43.0.
 
 ## References
 

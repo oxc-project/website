@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-inner-declarations"
 category: "Pedantic"
+version: "0.0.5"
 default: false
 type_aware: false
 fix: "none"
@@ -79,6 +80,10 @@ Disallow function declarations in nested blocks regardless of strict mode.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

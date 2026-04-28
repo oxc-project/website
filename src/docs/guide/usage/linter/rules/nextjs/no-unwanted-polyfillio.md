@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-unwanted-polyfillio"
 category: "Correctness"
+version: "0.2.7"
 default: false
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ Examples of **incorrect** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.7.
 
 ## References
 

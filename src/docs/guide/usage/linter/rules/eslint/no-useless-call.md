@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-call"
 category: "Perf"
+version: "0.15.9"
 default: false
 type_aware: false
 fix: "none"
@@ -63,6 +64,10 @@ obj.foo.apply(obj, args);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.9.
 
 ## References
 

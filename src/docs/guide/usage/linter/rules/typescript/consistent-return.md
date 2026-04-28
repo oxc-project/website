@@ -1,6 +1,7 @@
 ---
 title: "typescript/consistent-return"
 category: "Suspicious"
+version: "0.0.8"
 default: false
 type_aware: true
 fix: "none"
@@ -64,6 +65,10 @@ Treat explicit `return undefined` as equivalent to an unspecified return.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

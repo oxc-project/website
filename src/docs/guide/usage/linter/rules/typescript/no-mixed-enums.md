@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-mixed-enums"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -70,6 +71,10 @@ enum Color {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/react-in-jsx-scope"
 category: "Suspicious"
+version: "0.0.20"
 default: false
 type_aware: false
 fix: "none"
@@ -53,6 +54,10 @@ const a = <a />;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.20.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/no-direct-mutation-state"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -82,6 +83,10 @@ class Hello extends React.Component {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

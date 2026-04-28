@@ -1,6 +1,7 @@
 ---
 title: "promise/no-return-in-finally"
 category: "Nursery"
+version: "0.7.1"
 default: false
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ Promise.resolve(1).finally(() => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.1.
 
 ## References
 

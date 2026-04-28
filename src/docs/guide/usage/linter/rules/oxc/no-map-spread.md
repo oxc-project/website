@@ -1,6 +1,7 @@
 ---
 title: "oxc/no-map-spread"
 category: "Perf"
+version: "0.11.0"
 default: false
 type_aware: false
 fix: "conditional_safe_fix_or_suggestion"
@@ -256,6 +257,10 @@ In these cases, `Object.assign` is not really more performant than spreads.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.0.
 
 ## References
 

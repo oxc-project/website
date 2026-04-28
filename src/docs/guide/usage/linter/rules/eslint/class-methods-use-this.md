@@ -1,6 +1,7 @@
 ---
 title: "eslint/class-methods-use-this"
 category: "Restriction"
+version: "1.16.0"
 default: false
 type_aware: false
 fix: "none"
@@ -111,6 +112,10 @@ Whether to ignore methods that are overridden.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.16.0.
 
 ## References
 

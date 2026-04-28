@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-type-constraint"
 category: "Suspicious"
+version: "0.0.6"
 default: false
 type_aware: false
 fix: "pending"
@@ -68,6 +69,10 @@ class Baz<T> {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.6.
 
 ## References
 

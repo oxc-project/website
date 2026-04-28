@@ -1,6 +1,7 @@
 ---
 title: "typescript/strict-boolean-expressions"
 category: "Pedantic"
+version: "1.25.0"
 default: false
 type_aware: true
 fix: "pending"
@@ -161,6 +162,10 @@ Whether to allow string types in boolean contexts (checks for non-empty strings)
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.25.0.
 
 ## References
 

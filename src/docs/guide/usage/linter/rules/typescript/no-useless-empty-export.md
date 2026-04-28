@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-useless-empty-export"
 category: "Correctness"
+version: "0.4.4"
 default: true
 type_aware: false
 fix: "fixable_fix"
@@ -55,6 +56,10 @@ export const value = "Hello, world!";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.4.
 
 ## References
 

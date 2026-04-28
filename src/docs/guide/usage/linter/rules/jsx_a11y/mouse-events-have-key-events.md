@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/mouse-events-have-key-events"
 category: "Correctness"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "none"
@@ -61,6 +62,10 @@ List of hover-out mouse event handlers that require corresponding keyboard event
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

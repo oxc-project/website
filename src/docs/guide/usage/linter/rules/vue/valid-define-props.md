@@ -1,6 +1,7 @@
 ---
 title: "vue/valid-define-props"
 category: "Correctness"
+version: "1.15.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -101,6 +102,10 @@ defineProps();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.15.0.
 
 ## References
 

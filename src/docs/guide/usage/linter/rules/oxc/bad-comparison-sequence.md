@@ -1,6 +1,7 @@
 ---
 title: "oxc/bad-comparison-sequence"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ if (a == b && b == c) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

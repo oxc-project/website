@@ -1,6 +1,7 @@
 ---
 title: "promise/spec-only"
 category: "Restriction"
+version: "0.9.2"
 default: false
 type_aware: false
 fix: "none"
@@ -52,6 +53,10 @@ List of Promise static methods that are allowed to be used.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.2.
 
 ## References
 

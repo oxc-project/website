@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-floating-promises"
 category: "Correctness"
+version: "1.11.0"
 default: true
 type_aware: true
 fix: "fixable_suggestion"
@@ -244,6 +245,10 @@ Ignore Promises that are void expressions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.11.0.
 
 ## References
 

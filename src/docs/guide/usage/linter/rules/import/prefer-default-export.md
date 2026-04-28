@@ -1,6 +1,7 @@
 ---
 title: "import/prefer-default-export"
 category: "Style"
+version: "1.4.0"
 default: false
 type_aware: false
 fix: "none"
@@ -76,6 +77,10 @@ Prefer default export in any module that has exports.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.4.0.
 
 ## References
 

@@ -351,6 +351,16 @@ Equivalent to passing `--report-unused-disable-directives-severity` on the CLI.
 CLI flags take precedence over this value when both are set.
 Only supported in the root configuration file.
 
+### options.respectEslintDisableDirectives
+
+type: `boolean`
+
+Whether oxlint should respect `eslint-disable*` and `eslint-enable*`
+directives in addition to its native `oxlint-*` directives.
+
+Defaults to `true`.
+Only supported in the root configuration file.
+
 ### options.typeAware
 
 type: `boolean`
@@ -529,7 +539,7 @@ configuration for a full reference.
 
 #### settings.jest.version
 
-type: `integer`
+type: `integer | string`
 
 default: `null`
 

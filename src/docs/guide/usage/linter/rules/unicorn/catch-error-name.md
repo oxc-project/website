@@ -1,6 +1,7 @@
 ---
 title: "unicorn/catch-error-name"
 category: "Style"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -86,6 +87,10 @@ to something other than `'error'` (e.g., `'exception'`).
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

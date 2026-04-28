@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-fallthrough"
 category: "Pedantic"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "pending"
@@ -215,6 +216,10 @@ Whether to report unused fallthrough comments.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

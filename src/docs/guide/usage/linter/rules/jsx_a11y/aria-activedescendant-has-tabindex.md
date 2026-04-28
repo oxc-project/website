@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/aria-activedescendant-has-tabindex"
 category: "Correctness"
+version: "0.2.1"
 default: false
 type_aware: false
 fix: "none"
@@ -61,6 +62,10 @@ const Good = (
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.1.
 
 ## References
 

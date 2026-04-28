@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-promise-reject-errors"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -165,6 +166,10 @@ Whether to allow rejecting Promises with values typed as `unknown`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

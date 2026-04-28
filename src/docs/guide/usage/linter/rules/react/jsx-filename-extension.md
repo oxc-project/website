@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-filename-extension"
 category: "Restriction"
+version: "0.15.14"
 default: false
 type_aware: false
 fix: "pending"
@@ -85,6 +86,10 @@ If enabled, files that do not contain code (i.e. are empty, contain only whitesp
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.14.
 
 ## References
 

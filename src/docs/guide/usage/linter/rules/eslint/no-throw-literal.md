@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-throw-literal"
 category: "Pedantic"
+version: "0.9.10"
 default: false
 type_aware: false
 fix: "conditional_suggestion"
@@ -71,6 +72,10 @@ try {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.10.
 
 ## References
 

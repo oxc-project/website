@@ -1,6 +1,7 @@
 ---
 title: "oxc/bad-min-max-func"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -44,6 +45,10 @@ Math.min(1000, Math.max(0, z));
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

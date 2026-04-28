@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-self-assign"
 category: "Correctness"
+version: "0.0.5"
 default: true
 type_aware: false
 fix: "none"
@@ -93,6 +94,10 @@ obj[a] = obj[a];
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

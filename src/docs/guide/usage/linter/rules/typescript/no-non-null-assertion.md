@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-non-null-assertion"
 category: "Restriction"
+version: "0.5.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -44,6 +45,10 @@ x.y;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.0.
 
 ## References
 

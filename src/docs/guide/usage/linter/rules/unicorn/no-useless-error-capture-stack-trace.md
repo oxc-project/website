@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-error-capture-stack-trace"
 category: "Restriction"
+version: "1.20.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -49,6 +50,10 @@ class MyError extends Error {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.20.0.
 
 ## References
 

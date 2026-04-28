@@ -1,6 +1,7 @@
 ---
 title: "eslint/max-classes-per-file"
 category: "Pedantic"
+version: "0.3.4"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ The maximum number of classes allowed per file.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.4.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "promise/no-new-statics"
 category: "Correctness"
+version: "0.6.1"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -41,6 +42,10 @@ const x = Promise.resolve(value);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.6.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "vue/require-typed-ref"
 category: "Style"
+version: "1.17.0"
 default: false
 type_aware: false
 fix: "none"
@@ -44,6 +45,10 @@ const a = ref(0);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.17.0.
 
 ## References
 

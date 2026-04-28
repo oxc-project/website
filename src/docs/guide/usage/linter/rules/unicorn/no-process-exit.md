@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-process-exit"
 category: "Restriction"
+version: "0.2.9"
 default: false
 type_aware: false
 fix: "pending"
@@ -52,6 +53,10 @@ if (problem) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.9.
 
 ## References
 

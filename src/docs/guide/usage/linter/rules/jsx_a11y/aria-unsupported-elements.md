@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/aria-unsupported-elements"
 category: "Correctness"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -44,6 +45,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

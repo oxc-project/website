@@ -1,6 +1,7 @@
 ---
 title: "unicorn/custom-error-definition"
 category: "Style"
+version: "1.57.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -105,6 +106,10 @@ class CustomError extends Error {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.57.0.
 
 ## References
 

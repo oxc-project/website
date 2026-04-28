@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/no-autofocus"
 category: "Correctness"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -58,6 +59,10 @@ Determines if developer-created components are checked.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

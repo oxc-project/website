@@ -1,6 +1,7 @@
 ---
 title: "node/no-exports-assign"
 category: "Style"
+version: "0.9.3"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -53,6 +54,10 @@ exports = module.exports = {};
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.3.
 
 ## References
 

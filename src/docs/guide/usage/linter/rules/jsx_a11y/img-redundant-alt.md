@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/img-redundant-alt"
 category: "Correctness"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "none"
@@ -69,6 +70,10 @@ Words considered redundant in alt text that should trigger a warning.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

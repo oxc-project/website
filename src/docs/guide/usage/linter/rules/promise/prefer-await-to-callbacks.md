@@ -1,6 +1,7 @@
 ---
 title: "promise/prefer-await-to-callbacks"
 category: "Style"
+version: "0.9.10"
 default: false
 type_aware: false
 fix: "none"
@@ -54,6 +55,10 @@ eventEmitter.on("error", (err) => {});
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.10.
 
 ## References
 

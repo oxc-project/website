@@ -1,6 +1,7 @@
 ---
 title: "vue/valid-define-emits"
 category: "Correctness"
+version: "1.14.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -101,6 +102,10 @@ defineEmits();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.14.0.
 
 ## References
 

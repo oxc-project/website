@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/aria-role"
 category: "Correctness"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "none"
@@ -89,6 +90,10 @@ Determines if developer-created components are checked.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

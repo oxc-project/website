@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-alert"
 category: "Restriction"
+version: "0.9.3"
 default: false
 type_aware: false
 fix: "none"
@@ -54,6 +55,10 @@ function foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.3.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-constructed-context-values"
 category: "Perf"
+version: "1.48.0"
 default: false
 type_aware: false
 fix: "none"
@@ -61,6 +62,10 @@ const Component = () => <MyContext.Provider value="Some string" />;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.48.0.
 
 ## References
 

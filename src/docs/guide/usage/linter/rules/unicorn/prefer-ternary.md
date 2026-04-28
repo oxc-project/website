@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-ternary"
 category: "Style"
+version: "1.50.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -57,6 +58,10 @@ Only enforce ternary usage when the condition and both branches are single-line.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.50.0.
 
 ## References
 

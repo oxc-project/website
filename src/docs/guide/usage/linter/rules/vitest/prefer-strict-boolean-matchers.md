@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-strict-boolean-matchers"
 category: "Style"
+version: "1.57.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -47,6 +48,10 @@ expectTypeOf(foo).toBe(false);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.57.0.
 
 ## References
 

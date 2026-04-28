@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-to-contain"
 category: "Style"
+version: "0.2.14"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -44,20 +45,13 @@ expect(a).toContain(b);
 expect(a).not.toContain(b);
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-contain.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/prefer-to-contain": "error"
-  }
-}
-```
-
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

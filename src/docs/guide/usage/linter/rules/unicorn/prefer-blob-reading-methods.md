@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-blob-reading-methods"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "pending"
@@ -53,6 +54,10 @@ async function good() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

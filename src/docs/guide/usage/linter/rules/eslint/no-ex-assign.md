@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-ex-assign"
 category: "Correctness"
+version: "0.0.4"
 default: true
 type_aware: false
 fix: "none"
@@ -52,6 +53,10 @@ try {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.4.
 
 ## References
 

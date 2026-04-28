@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-html-link-for-pages"
 category: "Correctness"
+version: "1.7.0"
 default: false
 type_aware: false
 fix: "none"
@@ -78,6 +79,10 @@ function HomePage() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.7.0.
 
 ## References
 

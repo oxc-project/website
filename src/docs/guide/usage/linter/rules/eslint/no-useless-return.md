@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-return"
 category: "Pedantic"
+version: "1.32.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -69,6 +70,10 @@ function baz() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.32.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-length-check"
 category: "Correctness"
+version: "0.0.19"
 default: true
 type_aware: false
 fix: "pending"
@@ -49,6 +50,10 @@ if (array.every(Boolean)) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

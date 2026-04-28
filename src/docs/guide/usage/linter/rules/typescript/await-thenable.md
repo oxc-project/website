@@ -1,6 +1,7 @@
 ---
 title: "typescript/await-thenable"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "fixable_suggestion"
@@ -62,6 +63,10 @@ await getPromise();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

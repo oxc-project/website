@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-optional-chain"
 category: "Nursery"
+version: "1.39.0"
 default: false
 type_aware: true
 fix: "fixable_dangerous_fix_or_suggestion"
@@ -130,6 +131,10 @@ Skip operands that are not typed with `null` and/or `undefined` when inspecting
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.39.0.
 
 ## References
 

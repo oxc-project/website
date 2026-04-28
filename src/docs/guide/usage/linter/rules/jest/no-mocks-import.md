@@ -1,6 +1,7 @@
 ---
 title: "jest/no-mocks-import"
 category: "Style"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "none"
@@ -17,7 +18,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule reports imports from a path containing a **mocks** component.
+This rule reports imports from a path containing a `__mocks__` component.
 
 ### Why is this bad?
 
@@ -43,20 +44,13 @@ import thing from "thing";
 require("thing");
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-mocks-import.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/no-mocks-import": "error"
-  }
-}
-```
-
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

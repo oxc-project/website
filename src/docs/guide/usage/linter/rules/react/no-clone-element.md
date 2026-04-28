@@ -1,6 +1,7 @@
 ---
 title: "react/no-clone-element"
 category: "Restriction"
+version: "1.53.0"
 default: false
 type_aware: false
 fix: "none"
@@ -70,6 +71,10 @@ function List({ items, renderItem }) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.53.0.
 
 ## References
 

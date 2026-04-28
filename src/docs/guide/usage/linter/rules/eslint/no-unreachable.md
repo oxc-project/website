@@ -1,7 +1,8 @@
 ---
 title: "eslint/no-unreachable"
-category: "Nursery"
-default: false
+category: "Correctness"
+version: "0.4.4"
+default: true
 type_aware: false
 fix: "none"
 ---
@@ -49,6 +50,10 @@ function foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.4.
 
 ## References
 

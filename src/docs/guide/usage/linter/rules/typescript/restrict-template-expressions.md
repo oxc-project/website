@@ -1,6 +1,7 @@
 ---
 title: "typescript/restrict-template-expressions"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "none"
@@ -207,6 +208,10 @@ Whether to allow RegExp values in template expressions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

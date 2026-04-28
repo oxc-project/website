@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-self-compare"
 category: "Pedantic"
+version: "0.0.3"
 default: false
 type_aware: false
 fix: "none"
@@ -38,6 +39,10 @@ if (x === x) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

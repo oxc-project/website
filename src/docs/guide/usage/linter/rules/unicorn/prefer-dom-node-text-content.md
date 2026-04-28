@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-dom-node-text-content"
 category: "Style"
+version: "0.0.21"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -44,6 +45,10 @@ const text = foo.textContent;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.21.
 
 ## References
 

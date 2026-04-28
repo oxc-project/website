@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-negation-in-equality-check"
 category: "Pedantic"
+version: "0.5.3"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -48,6 +49,10 @@ if (!(foo === bar)) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.3.
 
 ## References
 

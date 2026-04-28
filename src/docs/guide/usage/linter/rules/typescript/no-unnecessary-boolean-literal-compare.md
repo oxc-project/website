@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-boolean-literal-compare"
 category: "Suspicious"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "pending"
@@ -95,6 +96,10 @@ When false, `x === true` where x is `boolean | null` will be flagged.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

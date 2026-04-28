@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-modern-dom-apis"
 category: "Style"
+version: "0.0.20"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -49,6 +50,10 @@ parentNode.replaceChild(newChildNode, oldChildNode);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.20.
 
 ## References
 

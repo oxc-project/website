@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-global-this"
 category: "Style"
+version: "0.16.12"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -62,6 +63,10 @@ globalThis.postMessage("done");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.12.
 
 ## References
 

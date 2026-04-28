@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-irregular-whitespace"
 category: "Correctness"
+version: "0.1.1"
 default: true
 type_aware: false
 fix: "none"
@@ -44,9 +45,57 @@ function example() {
 }
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### skipComments
+
+type: `boolean`
+
+default: `true`
+
+Whether to skip irregular whitespace in comments.
+
+### skipJSXText
+
+type: `boolean`
+
+default: `true`
+
+Whether to skip irregular whitespace in JSX text.
+
+### skipRegExps
+
+type: `boolean`
+
+default: `true`
+
+Whether to skip irregular whitespace in regular expression literals.
+
+### skipStrings
+
+type: `boolean`
+
+default: `true`
+
+Whether to skip irregular whitespace in string literals.
+
+### skipTemplates
+
+type: `boolean`
+
+default: `true`
+
+Whether to skip irregular whitespace in template literals.
+
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

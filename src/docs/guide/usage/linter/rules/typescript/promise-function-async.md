@@ -1,6 +1,7 @@
 ---
 title: "typescript/promise-function-async"
 category: "Restriction"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "conditional_fix"
@@ -136,6 +137,10 @@ Whether to check method declarations for missing `async` keyword.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

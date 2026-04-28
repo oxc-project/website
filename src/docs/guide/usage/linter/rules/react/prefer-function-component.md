@@ -1,6 +1,7 @@
 ---
 title: "react/prefer-function-component"
 category: "Restriction"
+version: "1.59.0"
 default: false
 type_aware: false
 fix: "none"
@@ -85,6 +86,10 @@ If `true`, classes that contain JSX but do not extend `Component` or
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.59.0.
 
 ## References
 

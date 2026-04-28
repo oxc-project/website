@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-unnecessary-await"
 category: "Correctness"
+version: "0.0.12"
 default: true
 type_aware: false
 fix: "conditional_fix"
@@ -44,6 +45,10 @@ async function bad() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.12.
 
 ## References
 

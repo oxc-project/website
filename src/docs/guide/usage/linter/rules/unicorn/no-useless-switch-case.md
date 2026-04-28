@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-switch-case"
 category: "Pedantic"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "pending"
@@ -51,6 +52,10 @@ switch (foo) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-handler-names"
 category: "Style"
+version: "1.13.0"
 default: false
 type_aware: false
 fix: "none"
@@ -98,6 +99,10 @@ Component names to ignore when checking for event handler prefixes.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.13.0.
 
 ## References
 

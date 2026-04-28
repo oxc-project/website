@@ -1,6 +1,7 @@
 ---
 title: "jest/max-expects"
 category: "Style"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "none"
@@ -49,17 +50,6 @@ it("should not pass", () => {
 });
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-expects.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/max-expects": "error"
-  }
-}
-```
-
 ## Configuration
 
 This rule accepts a configuration object with the following properties:
@@ -75,6 +65,10 @@ Maximum number of `expect()` assertion calls allowed within a single test.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

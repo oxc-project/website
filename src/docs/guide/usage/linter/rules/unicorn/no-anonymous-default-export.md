@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-anonymous-default-export"
 category: "Restriction"
+version: "0.3.3"
 default: false
 type_aware: false
 fix: "pending"
@@ -56,6 +57,10 @@ module.exports = foo;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.3.
 
 ## References
 

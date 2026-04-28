@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-abusive-eslint-disable"
 category: "Restriction"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "none"
@@ -73,6 +74,10 @@ console.log(message);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

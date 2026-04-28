@@ -1,6 +1,7 @@
 ---
 title: "jest/no-untyped-mock-factory"
 category: "Style"
+version: "0.2.15"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -81,6 +82,10 @@ jest.mock(
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.15.
 
 ## References
 

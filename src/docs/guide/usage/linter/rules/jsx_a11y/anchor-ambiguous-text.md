@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/anchor-ambiguous-text"
 category: "Restriction"
+version: "0.13.2"
 default: false
 type_aware: false
 fix: "none"
@@ -62,6 +63,10 @@ List of ambiguous words or phrases that should be flagged in anchor text.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.2.
 
 ## References
 

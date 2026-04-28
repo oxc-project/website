@@ -1,6 +1,7 @@
 ---
 title: "typescript/related-getter-setter-pairs"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -86,6 +87,10 @@ class WriteOnlyProperty {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

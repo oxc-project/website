@@ -1,6 +1,7 @@
 ---
 title: "oxc/no-barrel-file"
 category: "Restriction"
+version: "0.3.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,6 +67,10 @@ before the rule is triggered.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.0.
 
 ## References
 

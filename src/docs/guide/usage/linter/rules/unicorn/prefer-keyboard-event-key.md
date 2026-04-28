@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-keyboard-event-key"
 category: "Style"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -61,6 +62,10 @@ window.addEventListener("click", (event) => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

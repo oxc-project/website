@@ -1,6 +1,7 @@
 ---
 title: "unicorn/throw-new-error"
 category: "Style"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -47,6 +48,10 @@ throw new lib.TypeError("unicorn");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

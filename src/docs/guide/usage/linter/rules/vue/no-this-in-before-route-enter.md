@@ -1,6 +1,7 @@
 ---
 title: "vue/no-this-in-before-route-enter"
 category: "Correctness"
+version: "1.37.0"
 default: false
 type_aware: false
 fix: "none"
@@ -53,6 +54,10 @@ export default {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.37.0.
 
 ## References
 

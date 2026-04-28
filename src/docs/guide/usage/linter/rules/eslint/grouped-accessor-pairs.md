@@ -1,6 +1,7 @@
 ---
 title: "eslint/grouped-accessor-pairs"
 category: "Style"
+version: "0.15.12"
 default: false
 type_aware: false
 fix: "pending"
@@ -172,6 +173,10 @@ type Bar = {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.12.
 
 ## References
 

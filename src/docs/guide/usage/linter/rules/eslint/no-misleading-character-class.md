@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-misleading-character-class"
 category: "Correctness"
+version: "1.17.0"
 default: true
 type_aware: false
 fix: "pending"
@@ -95,6 +96,10 @@ new RegExp("[\\u{1F1EF}\\u{1F1F5}]", "u");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.17.0.
 
 ## References
 

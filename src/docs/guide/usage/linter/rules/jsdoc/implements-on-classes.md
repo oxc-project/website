@@ -1,6 +1,7 @@
 ---
 title: "jsdoc/implements-on-classes"
 category: "Correctness"
+version: "0.3.2"
 default: false
 type_aware: false
 fix: "none"
@@ -54,6 +55,10 @@ function quux() {}
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.2.
 
 ## References
 

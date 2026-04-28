@@ -1,6 +1,7 @@
 ---
 title: "eslint/require-await"
 category: "Pedantic"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -75,6 +76,10 @@ async function foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-return-this-type"
 category: "Style"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "fixable_fix"
@@ -94,6 +95,10 @@ class ExtendedBuilder extends Builder {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

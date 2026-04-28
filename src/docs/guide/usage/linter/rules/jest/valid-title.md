@@ -1,6 +1,7 @@
 ---
 title: "jest/valid-title"
 category: "Correctness"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -71,6 +72,10 @@ interface Options {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

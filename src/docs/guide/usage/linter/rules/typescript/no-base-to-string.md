@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-base-to-string"
 category: "Correctness"
+version: "1.12.0"
 default: true
 type_aware: true
 fix: "none"
@@ -85,6 +86,10 @@ provide a custom implementation.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

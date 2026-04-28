@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-var-requires"
 category: "Restriction"
+version: "0.0.7"
 default: false
 type_aware: false
 fix: "none"
@@ -36,6 +37,10 @@ let foo = require("foo");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.7.
 
 ## References
 

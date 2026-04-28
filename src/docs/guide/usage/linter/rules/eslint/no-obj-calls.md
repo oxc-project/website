@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-obj-calls"
 category: "Correctness"
+version: "0.0.7"
 default: true
 type_aware: false
 fix: "none"
@@ -60,6 +61,10 @@ let segmenterFrom = Intl.Segmenter("fr", { granularity: "word" });
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.7.
 
 ## References
 

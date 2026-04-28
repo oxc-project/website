@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-unnecessary-array-flat-depth"
 category: "Pedantic"
+version: "0.16.12"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -40,6 +41,10 @@ foo.flat();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.12.
 
 ## References
 

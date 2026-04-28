@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-concat"
 category: "Suspicious"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "pending"
@@ -48,6 +49,10 @@ var foo = "a" + "b" + "c";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-inferrable-types"
 category: "Style"
+version: "0.14.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -66,6 +67,10 @@ When set to `true`, ignores type annotations on class properties.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.14.0.
 
 ## References
 

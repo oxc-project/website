@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-find"
 category: "Style"
+version: "1.49.0"
 default: false
 type_aware: true
 fix: "none"
@@ -42,6 +43,10 @@ const first = list.find((item) => item.active);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

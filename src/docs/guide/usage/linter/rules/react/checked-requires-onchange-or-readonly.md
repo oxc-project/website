@@ -1,6 +1,7 @@
 ---
 title: "react/checked-requires-onchange-or-readonly"
 category: "Pedantic"
+version: "0.2.15"
 default: false
 type_aware: false
 fix: "none"
@@ -78,6 +79,10 @@ Ignore the requirement to provide either `onChange` or `readOnly` when the `chec
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.15.
 
 ## References
 

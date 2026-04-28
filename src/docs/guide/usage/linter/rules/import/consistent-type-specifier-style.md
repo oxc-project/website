@@ -1,6 +1,7 @@
 ---
 title: "import/consistent-type-specifier-style"
 category: "Style"
+version: "0.16.11"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -70,6 +71,10 @@ Prefer `import { type Foo } from 'foo'` for type imports.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.11.
 
 ## References
 

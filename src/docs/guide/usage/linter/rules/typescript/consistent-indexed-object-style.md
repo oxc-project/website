@@ -1,6 +1,7 @@
 ---
 title: "typescript/consistent-indexed-object-style"
 category: "Style"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -88,6 +89,10 @@ When set to `index-signature`, enforces the use of indexed signature types, e.g.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

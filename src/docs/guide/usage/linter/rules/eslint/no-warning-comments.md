@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-warning-comments"
 category: "Pedantic"
+version: "1.24.0"
 default: false
 type_aware: false
 fix: "none"
@@ -82,6 +83,10 @@ Useful for ignoring common comment decorations like `*` in JSDoc-style comments.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.24.0.
 
 ## References
 

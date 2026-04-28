@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-modern-math-apis"
 category: "Restriction"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "pending"
@@ -47,6 +48,10 @@ Math.hypot(a, b);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

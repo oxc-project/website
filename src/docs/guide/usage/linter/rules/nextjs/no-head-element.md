@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-head-element"
 category: "Correctness"
+version: "0.2.1"
 default: false
 type_aware: false
 fix: "none"
@@ -65,6 +66,10 @@ export default Index;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "jest/padding-around-after-all-blocks"
 category: "Style"
+version: "1.59.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -47,6 +48,10 @@ afterAll(() => {});
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.59.0.
 
 ## References
 

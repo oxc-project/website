@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-inline-comments"
 category: "Pedantic"
+version: "1.34.0"
 default: false
 type_aware: false
 fix: "none"
@@ -67,6 +68,10 @@ Example configuration:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.34.0.
 
 ## References
 

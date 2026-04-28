@@ -1,6 +1,7 @@
 ---
 title: "react/no-react-children"
 category: "Restriction"
+version: "1.53.0"
 default: false
 type_aware: false
 fix: "none"
@@ -85,6 +86,10 @@ function Card({ children }) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.53.0.
 
 ## References
 

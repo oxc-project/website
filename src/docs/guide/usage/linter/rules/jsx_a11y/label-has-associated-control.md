@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/label-has-associated-control"
 category: "Correctness"
+version: "0.9.1"
 default: false
 type_aware: false
 fix: "none"
@@ -114,6 +115,10 @@ Custom JSX components to be treated as labels.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.1.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "import/no-cycle"
 category: "Restriction"
+version: "0.0.13"
 default: false
 type_aware: false
 fix: "none"
@@ -108,6 +109,10 @@ Maximum dependency depth to traverse
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.13.
 
 ## References
 

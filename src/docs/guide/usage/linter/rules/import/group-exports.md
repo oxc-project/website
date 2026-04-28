@@ -1,6 +1,7 @@
 ---
 title: "import/group-exports"
 category: "Style"
+version: "0.16.6"
 default: false
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ export { first, second };
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.6.
 
 ## References
 

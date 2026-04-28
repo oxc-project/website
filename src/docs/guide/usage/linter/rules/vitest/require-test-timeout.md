@@ -1,6 +1,7 @@
 ---
 title: "vitest/require-test-timeout"
 category: "Restriction"
+version: "1.58.0"
 default: false
 type_aware: false
 fix: "none"
@@ -60,6 +61,10 @@ test("slow test", async () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.58.0.
 
 ## References
 

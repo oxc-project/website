@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unneeded-ternary"
 category: "Suspicious"
+version: "0.15.12"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -66,6 +67,10 @@ are allowed and not reported.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.12.
 
 ## References
 

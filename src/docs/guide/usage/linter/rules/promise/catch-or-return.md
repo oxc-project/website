@@ -1,6 +1,7 @@
 ---
 title: "promise/catch-or-return"
 category: "Restriction"
+version: "0.9.2"
 default: false
 type_aware: false
 fix: "none"
@@ -77,6 +78,10 @@ List of allowed termination methods (e.g., `catch`, `done`).
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.2.
 
 ## References
 

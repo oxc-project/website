@@ -1,6 +1,7 @@
 ---
 title: "unicorn/new-for-builtins"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "pending"
@@ -49,6 +50,10 @@ const bar = new Array(1, 2, 3);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

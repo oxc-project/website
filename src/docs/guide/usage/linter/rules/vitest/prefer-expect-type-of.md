@@ -1,6 +1,7 @@
 ---
 title: "vitest/prefer-expect-type-of"
 category: "Style"
+version: "1.44.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -17,11 +18,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce using `expectTypeOf` instead of `expect(typeof ...)`
+Enforce using [`expectTypeOf`](https://vitest.dev/api/expect-typeof) instead of `expect(typeof ...)`.
 
 ### Why is this bad?
 
-Vitest provide a more expressive type-safe way to test type than using `expect(typeof ...)`
+Vitest provides a more expressive, type-safe way to test types than using `expect(typeof ...)`.
 
 ### Examples
 
@@ -58,6 +59,10 @@ test("type checking", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.44.0.
 
 ## References
 

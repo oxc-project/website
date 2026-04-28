@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-date-now"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -41,6 +42,10 @@ const ts = Date.now();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

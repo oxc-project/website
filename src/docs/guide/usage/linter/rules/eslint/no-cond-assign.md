@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-cond-assign"
 category: "Correctness"
+version: "0.0.5"
 default: true
 type_aware: false
 fix: "none"
@@ -64,6 +65,10 @@ Disallow all assignments in conditional expressions.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

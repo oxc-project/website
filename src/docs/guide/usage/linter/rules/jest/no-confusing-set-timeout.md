@@ -1,6 +1,7 @@
 ---
 title: "jest/no-confusing-set-timeout"
 category: "Style"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -58,6 +59,10 @@ describe("unit test", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "node/global-require"
 category: "Style"
+version: "1.36.0"
 default: false
 type_aware: false
 fix: "none"
@@ -108,6 +109,10 @@ var x = require("x"),
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.36.0.
 
 ## References
 

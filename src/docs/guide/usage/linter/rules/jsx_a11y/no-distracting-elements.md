@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/no-distracting-elements"
 category: "Correctness"
+version: "0.0.22"
 default: false
 type_aware: false
 fix: "none"
@@ -64,6 +65,10 @@ type: `"marquee" | "blink"`
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.22.
 
 ## References
 

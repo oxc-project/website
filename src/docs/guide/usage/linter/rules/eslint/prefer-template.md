@@ -1,6 +1,7 @@
 ---
 title: "eslint/prefer-template"
 category: "Style"
+version: "1.12.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -43,6 +44,10 @@ const str4 = "Hello, " + "World!";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-lonely-if"
 category: "Pedantic"
+version: "0.0.18"
 default: false
 type_aware: false
 fix: "pending"
@@ -46,6 +47,10 @@ if (foo && bar) baz();
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.18.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "eslint/init-declarations"
 category: "Style"
+version: "0.15.11"
 default: false
 type_aware: false
 fix: "none"
@@ -118,6 +119,10 @@ Only applies when mode is set to `"never"`.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.11.
 
 ## References
 

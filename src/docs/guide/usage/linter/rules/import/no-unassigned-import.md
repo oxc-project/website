@@ -1,6 +1,7 @@
 ---
 title: "import/no-unassigned-import"
 category: "Suspicious"
+version: "0.16.11"
 default: false
 type_aware: false
 fix: "none"
@@ -69,6 +70,10 @@ For example:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.11.
 
 ## References
 

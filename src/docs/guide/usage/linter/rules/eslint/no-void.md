@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-void"
 category: "Restriction"
+version: "0.2.5"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -56,6 +57,10 @@ If set to `true`, using `void` as a standalone statement is allowed.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.5.
 
 ## References
 

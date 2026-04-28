@@ -1,6 +1,7 @@
 ---
 title: "oxc/no-accumulating-spread"
 category: "Perf"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "none"
@@ -70,6 +71,10 @@ for (let i = 0; i < 10; i++) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

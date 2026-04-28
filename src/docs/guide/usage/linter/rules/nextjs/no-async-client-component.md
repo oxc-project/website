@@ -1,6 +1,7 @@
 ---
 title: "nextjs/no-async-client-component"
 category: "Correctness"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "none"
@@ -87,6 +88,10 @@ export default function MyComponent() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

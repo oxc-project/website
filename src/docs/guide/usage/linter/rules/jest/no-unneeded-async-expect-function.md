@@ -1,6 +1,7 @@
 ---
 title: "jest/no-unneeded-async-expect-function"
 category: "Style"
+version: "1.39.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -57,6 +58,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.39.0.
 
 ## References
 

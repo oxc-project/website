@@ -1,6 +1,7 @@
 ---
 title: "vitest/require-awaited-expect-poll"
 category: "Correctness"
+version: "1.58.0"
 default: false
 type_aware: false
 fix: "none"
@@ -55,6 +56,10 @@ test("element exists", async () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.58.0.
 
 ## References
 

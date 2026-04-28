@@ -1,6 +1,7 @@
 ---
 title: "jsx-a11y/alt-text"
 category: "Correctness"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "none"
@@ -86,6 +87,10 @@ Custom components to check for alt text on `object` elements.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "react/no-is-mounted"
 category: "Correctness"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "none"
@@ -44,6 +45,10 @@ class Hello extends React.Component {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

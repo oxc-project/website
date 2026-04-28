@@ -1,6 +1,7 @@
 ---
 title: "oxc/bad-char-at-comparison"
 category: "Correctness"
+version: "0.0.22"
 default: true
 type_aware: false
 fix: "none"
@@ -42,6 +43,10 @@ a.charAt(4) === "\n";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.22.
 
 ## References
 

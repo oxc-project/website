@@ -1,6 +1,7 @@
 ---
 title: "import/no-named-export"
 category: "Style"
+version: "1.19.0"
 default: false
 type_aware: false
 fix: "none"
@@ -47,6 +48,10 @@ export { foo as default }
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.19.0.
 
 ## References
 

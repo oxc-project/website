@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-static-only-class"
 category: "Pedantic"
+version: "0.0.16"
 default: false
 type_aware: false
 fix: "fixable_dangerous_fix"
@@ -60,6 +61,10 @@ class X {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

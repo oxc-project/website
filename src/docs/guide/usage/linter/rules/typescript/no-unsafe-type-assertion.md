@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unsafe-type-assertion"
 category: "Suspicious"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -57,6 +58,10 @@ const number = items[0] as number | string | undefined;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

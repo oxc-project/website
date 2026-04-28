@@ -1,6 +1,7 @@
 ---
 title: "vue/define-props-declaration"
 category: "Style"
+version: "1.15.0"
 default: false
 type_aware: false
 fix: "none"
@@ -78,6 +79,10 @@ Enforce runtime declaration.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.15.0.
 
 ## References
 

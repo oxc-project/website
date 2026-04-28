@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-instanceof-builtins"
 category: "Suspicious"
+version: "0.16.12"
 default: false
 type_aware: false
 fix: "conditional_suggestion"
@@ -94,6 +95,10 @@ to be available.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.12.
 
 ## References
 

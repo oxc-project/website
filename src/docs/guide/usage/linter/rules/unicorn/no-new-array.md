@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-new-array"
 category: "Correctness"
+version: "0.0.16"
 default: true
 type_aware: false
 fix: "pending"
@@ -43,6 +44,10 @@ const array = [42];
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.16.
 
 ## References
 

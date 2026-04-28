@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-unnecessary-slice-end"
 category: "Pedantic"
+version: "0.16.10"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -46,6 +47,10 @@ const foo = string.slice(1);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.10.
 
 ## References
 

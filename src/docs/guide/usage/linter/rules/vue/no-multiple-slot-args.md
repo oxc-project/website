@@ -1,6 +1,7 @@
 ---
 title: "vue/no-multiple-slot-args"
 category: "Restriction"
+version: "1.15.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -59,6 +60,10 @@ export default {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.15.0.
 
 ## References
 

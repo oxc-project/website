@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-useless-default-assignment"
 category: "Correctness"
+version: "1.49.0"
 default: true
 type_aware: true
 fix: "none"
@@ -42,6 +43,10 @@ Examples of **correct** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.49.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "vue/require-default-export"
 category: "Suspicious"
+version: "1.21.0"
 default: false
 type_aware: false
 fix: "none"
@@ -51,6 +52,10 @@ export default {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.21.0.
 
 ## References
 

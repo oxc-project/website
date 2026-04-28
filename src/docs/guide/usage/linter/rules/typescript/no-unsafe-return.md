@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unsafe-return"
 category: "Pedantic"
+version: "1.12.0"
 default: false
 type_aware: true
 fix: "none"
@@ -71,6 +72,10 @@ function safeGetString(): string | null {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.12.0.
 
 ## References
 

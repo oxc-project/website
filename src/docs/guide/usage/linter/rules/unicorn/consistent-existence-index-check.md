@@ -1,6 +1,7 @@
 ---
 title: "unicorn/consistent-existence-index-check"
 category: "Style"
+version: "0.12.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -57,6 +58,10 @@ if (index !== -1) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.12.0.
 
 ## References
 

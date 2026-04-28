@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-undefined"
 category: "Restriction"
+version: "0.5.3"
 default: false
 type_aware: false
 fix: "none"
@@ -63,6 +64,10 @@ bar(void 0, "lorem");
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.3.
 
 ## References
 

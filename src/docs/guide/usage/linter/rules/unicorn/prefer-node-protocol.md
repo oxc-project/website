@@ -1,6 +1,7 @@
 ---
 title: "unicorn/prefer-node-protocol"
 category: "Restriction"
+version: "0.0.19"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -40,6 +41,10 @@ import fs from "node:fs";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.19.
 
 ## References
 

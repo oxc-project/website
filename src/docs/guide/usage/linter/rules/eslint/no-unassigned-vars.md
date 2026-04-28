@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unassigned-vars"
 category: "Correctness"
+version: "1.10.0"
 default: true
 type_aware: false
 fix: "none"
@@ -49,6 +50,10 @@ console.log(user.name);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.10.0.
 
 ## References
 

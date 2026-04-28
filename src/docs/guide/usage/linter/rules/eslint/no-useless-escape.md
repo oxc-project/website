@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-useless-escape"
 category: "Correctness"
+version: "0.0.5"
 default: true
 type_aware: false
 fix: "fixable_fix"
@@ -81,6 +82,10 @@ Each string in this array must be a single character.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

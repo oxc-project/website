@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-dynamic-delete"
 category: "Restriction"
+version: "0.5.2"
 default: false
 type_aware: false
 fix: "none"
@@ -44,6 +45,10 @@ delete container.aab;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.5.2.
 
 ## References
 

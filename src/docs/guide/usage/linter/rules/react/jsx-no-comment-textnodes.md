@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-comment-textnodes"
 category: "Suspicious"
+version: "0.0.14"
 default: false
 type_aware: false
 fix: "none"
@@ -51,6 +52,10 @@ const Hello = () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.14.
 
 ## References
 

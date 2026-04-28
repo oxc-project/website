@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-string-starts-ends-with"
 category: "Style"
+version: "0.0.8"
 default: true
 type_aware: true
 fix: "none"
@@ -64,6 +65,10 @@ Never allow equality checks against the first or last character.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

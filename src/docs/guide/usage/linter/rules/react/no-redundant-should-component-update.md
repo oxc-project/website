@@ -1,6 +1,7 @@
 ---
 title: "react/no-redundant-should-component-update"
 category: "Style"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "none"
@@ -91,6 +92,10 @@ class Qux extends React.PureComponent {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

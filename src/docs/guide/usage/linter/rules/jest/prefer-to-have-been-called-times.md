@@ -1,6 +1,7 @@
 ---
 title: "jest/prefer-to-have-been-called-times"
 category: "Style"
+version: "1.34.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -58,6 +59,10 @@ to use it, add the following configuration to your `.oxlintrc.json`:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.34.0.
 
 ## References
 

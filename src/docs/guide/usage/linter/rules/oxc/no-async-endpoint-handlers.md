@@ -1,6 +1,7 @@
 ---
 title: "oxc/no-async-endpoint-handlers"
 category: "Suspicious"
+version: "0.9.2"
 default: false
 type_aware: false
 fix: "none"
@@ -124,6 +125,10 @@ An array of names that are allowed to be async.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.9.2.
 
 ## References
 

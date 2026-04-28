@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unnecessary-parameter-property-assignment"
 category: "Correctness"
+version: "0.15.13"
 default: true
 type_aware: false
 fix: "fixable_suggestion"
@@ -48,6 +49,10 @@ class Foo {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.15.13.
 
 ## References
 

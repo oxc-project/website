@@ -1,6 +1,7 @@
 ---
 title: "unicorn/consistent-assert"
 category: "Pedantic"
+version: "0.16.9"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -48,6 +49,10 @@ assert.ok(divide(10, 2) === 5);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.9.
 
 ## References
 

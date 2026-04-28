@@ -1,6 +1,7 @@
 ---
 title: "import/namespace"
 category: "Correctness"
+version: "0.2.11"
 default: false
 type_aware: false
 fix: "none"
@@ -83,6 +84,10 @@ Whether to allow computed references to an imported namespace.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.11.
 
 ## References
 

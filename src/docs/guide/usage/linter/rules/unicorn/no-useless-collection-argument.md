@@ -1,6 +1,7 @@
 ---
 title: "unicorn/no-useless-collection-argument"
 category: "Style"
+version: "1.28.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -58,6 +59,10 @@ const set = new Set(foo);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.28.0.
 
 ## References
 

@@ -1,6 +1,7 @@
 ---
 title: "promise/no-promise-in-callback"
 category: "Suspicious"
+version: "0.13.1"
 default: false
 type_aware: false
 fix: "none"
@@ -46,6 +47,10 @@ promisify(doSomething)().then(doSomethingElse).then(console.log).catch(console.e
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.1.
 
 ## References
 

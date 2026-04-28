@@ -1,6 +1,7 @@
 ---
 title: "eslint/func-names"
 category: "Style"
+version: "0.7.0"
 default: false
 type_aware: false
 fix: "conditional_safe_fix_or_suggestion"
@@ -229,6 +230,10 @@ function* foobar(i) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

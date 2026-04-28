@@ -1,6 +1,7 @@
 ---
 title: "react/jsx-no-script-url"
 category: "Suspicious"
+version: "0.13.2"
 default: false
 type_aware: false
 fix: "pending"
@@ -66,6 +67,10 @@ Whether to include components from settings.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.13.2.
 
 ## References
 

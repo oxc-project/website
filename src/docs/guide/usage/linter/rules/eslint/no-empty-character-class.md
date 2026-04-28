@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-empty-character-class"
 category: "Correctness"
+version: "0.0.7"
 default: true
 type_aware: false
 fix: "none"
@@ -41,6 +42,10 @@ var foo2 = /^abc[123]/;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.7.
 
 ## References
 

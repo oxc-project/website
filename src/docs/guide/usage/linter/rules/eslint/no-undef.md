@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-undef"
 category: "Nursery"
+version: "0.0.8"
 default: false
 type_aware: false
 fix: "none"
@@ -51,6 +52,10 @@ When set to `true`, warns on undefined variables used in a `typeof` expression.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

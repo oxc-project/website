@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-unsafe-finally"
 category: "Correctness"
+version: "0.0.5"
 default: true
 type_aware: false
 fix: "none"
@@ -50,6 +51,10 @@ Examples of **incorrect** code for this rule:
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.5.
 
 ## References
 

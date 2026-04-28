@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-nonoctal-decimal-escape"
 category: "Correctness"
+version: "0.2.10"
 default: true
 type_aware: false
 fix: "fixable_suggestion"
@@ -42,6 +43,10 @@ let y = "\\9";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.10.
 
 ## References
 

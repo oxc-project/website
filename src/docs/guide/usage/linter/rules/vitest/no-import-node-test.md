@@ -1,6 +1,7 @@
 ---
 title: "vitest/no-import-node-test"
 category: "Style"
+version: "0.7.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -52,6 +53,10 @@ test("foo", () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.7.0.
 
 ## References
 

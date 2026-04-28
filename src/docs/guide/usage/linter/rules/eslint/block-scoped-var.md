@@ -1,6 +1,7 @@
 ---
 title: "eslint/block-scoped-var"
 category: "Suspicious"
+version: "0.16.9"
 default: false
 type_aware: false
 fix: "none"
@@ -109,6 +110,10 @@ function doTry() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.9.
 
 ## References
 

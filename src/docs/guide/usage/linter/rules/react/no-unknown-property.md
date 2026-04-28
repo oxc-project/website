@@ -1,6 +1,7 @@
 ---
 title: "react/no-unknown-property"
 category: "Restriction"
+version: "0.2.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -70,6 +71,10 @@ Require `data-*` attributes to be lowercase, e.g. `data-foobar` instead of `data
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.0.
 
 ## References
 

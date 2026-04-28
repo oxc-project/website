@@ -1,6 +1,7 @@
 ---
 title: "typescript/no-unsafe-function-type"
 category: "Pedantic"
+version: "0.11.1"
 default: false
 type_aware: false
 fix: "none"
@@ -54,6 +55,10 @@ identity = (value) => value;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.11.1.
 
 ## References
 

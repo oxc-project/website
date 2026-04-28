@@ -1,6 +1,7 @@
 ---
 title: "react/forward-ref-uses-ref"
 category: "Correctness"
+version: "0.16.9"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -53,6 +54,10 @@ function Component(props) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.16.9.
 
 ## References
 

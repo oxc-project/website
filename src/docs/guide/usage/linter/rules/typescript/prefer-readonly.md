@@ -1,6 +1,7 @@
 ---
 title: "typescript/prefer-readonly"
 category: "Style"
+version: "0.0.8"
 default: false
 type_aware: true
 fix: "none"
@@ -66,6 +67,10 @@ Restrict checks to members immediately initialized with inline lambda values.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.8.
 
 ## References
 

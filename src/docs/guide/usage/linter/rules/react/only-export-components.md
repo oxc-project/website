@@ -1,6 +1,7 @@
 ---
 title: "react/only-export-components"
 category: "Restriction"
+version: "1.23.0"
 default: false
 type_aware: false
 fix: "none"
@@ -143,6 +144,10 @@ identifiers here to avoid false positives.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.23.0.
 
 ## References
 

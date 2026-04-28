@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-proto"
 category: "Restriction"
+version: "0.2.14"
 default: false
 type_aware: false
 fix: "pending"
@@ -45,6 +46,10 @@ obj["__proto__"] = b;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.2.14.
 
 ## References
 

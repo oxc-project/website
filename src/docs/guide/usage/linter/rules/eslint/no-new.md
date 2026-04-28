@@ -1,6 +1,7 @@
 ---
 title: "eslint/no-new"
 category: "Suspicious"
+version: "0.4.0"
 default: false
 type_aware: false
 fix: "none"
@@ -45,6 +46,10 @@ var a = new Date()(() => new Date());
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.0.
 
 ## References
 
