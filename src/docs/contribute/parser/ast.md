@@ -106,14 +106,41 @@ For transformations, use the mutable visitor:
 
 ```rust
 use oxc_ast::visit::{VisitMut, walk_mut};
+use oxc_ast::AstBuilder;
 
-struct MyTransformer;
+struct MyTransformer<'a> {
+    pub builder: &'a AstBuilder<'a>,
+}
+
+impl<'a> VisitMut<'a> for MyTransformer {
+    fn visit_expression(&mut self, expr: &mut BinaryExpression<'a>) {
+        // Detect the expression type which you want to modify
+        match it {
+            Expression::BinaryExpression(expr)
+                if expr.operator == BinaryOperator::Addition => {
+                    let new_expr = self.builder.expression_string_literal(SPAN, "", Some(Str::new_const("''")));
+                    *it = new_expr;
+                },
+            _ => walk_mut::walk_expression(self, it),
+        }
+    }
+}
+```
+
+or if you want to modify only nested nodes of the expression, you can have a bit simpler setup.
+
+```rust
+use oxc_ast::visit::{VisitMut, walk_mut};
+use oxc_ast::AstBuilder;
+
+struct MyTransformer<'a> {
+    pub builder: &'a AstBuilder<'a>,
+}
 
 impl<'a> VisitMut<'a> for MyTransformer {
     fn visit_binary_expression(&mut self, expr: &mut BinaryExpression<'a>) {
-        // Transform the expression
         if expr.operator == BinaryOperator::Addition {
-            // Modify the AST node
+            // Modify the AST node. You can modify only left/right and operator parts, not the type of expression itself.
         }
         walk_mut::walk_binary_expression_mut(self, expr);
     }
