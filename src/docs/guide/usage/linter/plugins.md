@@ -127,7 +127,7 @@ This table lists the built-in plugins and where they come from.
 
 For the current status of rule coverage, see the linter [product plan issue](https://github.com/oxc-project/oxc/issues/481). For framework and file type support, see the [compatibility matrix](/compatibility).
 
-* eslint-plugin-react-hooks does not implement the compiler rules by default. Please check [here](https://github.com/TheAlexLichter/oxlint-react-compiler-rules) for an example on how to do this.
+\* eslint-plugin-react-hooks does not implement the compiler rules by default. Please check [here](https://github.com/TheAlexLichter/oxlint-react-compiler-rules) for an example on how to do this.
 
 ## Adding new plugins
 
