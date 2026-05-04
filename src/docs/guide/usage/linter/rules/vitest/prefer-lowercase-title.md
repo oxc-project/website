@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-lowercase-title"
+title: "vitest/prefer-lowercase-title"
 category: "Style"
 version: "0.15.9"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_lowercase_title.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_lowercase_title.rs`;
 </script>
 
 <RuleHeader />

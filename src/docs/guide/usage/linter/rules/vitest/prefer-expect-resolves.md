@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-expect-resolves"
+title: "vitest/prefer-expect-resolves"
 category: "Style"
 version: "0.2.14"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_expect_resolves.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_expect_resolves.rs`;
 </script>
 
 <RuleHeader />

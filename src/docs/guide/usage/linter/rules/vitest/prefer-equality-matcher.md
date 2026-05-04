@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-equality-matcher"
+title: "vitest/prefer-equality-matcher"
 category: "Style"
 version: "0.2.9"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_suggestion"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_equality_matcher.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_equality_matcher.rs`;
 </script>
 
 <RuleHeader />

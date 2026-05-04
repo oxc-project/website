@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-strict-equal"
+title: "vitest/prefer-strict-equal"
 category: "Style"
 version: "0.2.13"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_strict_equal.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_strict_equal.rs`;
 </script>
 
 <RuleHeader />

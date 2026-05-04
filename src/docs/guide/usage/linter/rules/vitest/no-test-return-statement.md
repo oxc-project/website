@@ -1,5 +1,5 @@
 ---
-title: "jest/no-test-return-statement"
+title: "vitest/no-test-return-statement"
 category: "Style"
 version: "0.2.0"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/no_test_return_statement.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/no_test_return_statement.rs`;
 </script>
 
 <RuleHeader />

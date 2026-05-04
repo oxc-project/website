@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-to-be"
+title: "vitest/prefer-to-be"
 category: "Style"
 version: "0.2.14"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_to_be.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_to_be.rs`;
 </script>
 
 <RuleHeader />

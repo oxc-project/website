@@ -1,5 +1,5 @@
 ---
-title: "jest/no-test-prefixes"
+title: "vitest/no-test-prefixes"
 category: "Style"
 version: "0.0.7"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/no_test_prefixes.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/no_test_prefixes.rs`;
 </script>
 
 <RuleHeader />

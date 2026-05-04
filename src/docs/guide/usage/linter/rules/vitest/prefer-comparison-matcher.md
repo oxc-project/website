@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-comparison-matcher"
+title: "vitest/prefer-comparison-matcher"
 category: "Style"
 version: "0.2.15"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_comparison_matcher.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_comparison_matcher.rs`;
 </script>
 
 <RuleHeader />

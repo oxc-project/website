@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-hooks-on-top"
+title: "vitest/prefer-hooks-on-top"
 category: "Style"
 version: "0.4.2"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_hooks_on_top.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_hooks_on_top.rs`;
 </script>
 
 <RuleHeader />

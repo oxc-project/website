@@ -1,5 +1,5 @@
 ---
-title: "jest/require-hook"
+title: "vitest/require-hook"
 category: "Style"
 version: "0.3.2"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/require_hook.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/require_hook.rs`;
 </script>
 
 <RuleHeader />

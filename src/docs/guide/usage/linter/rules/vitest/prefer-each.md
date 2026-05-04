@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-each"
+title: "vitest/prefer-each"
 category: "Style"
 version: "0.9.0"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_each.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_each.rs`;
 </script>
 
 <RuleHeader />

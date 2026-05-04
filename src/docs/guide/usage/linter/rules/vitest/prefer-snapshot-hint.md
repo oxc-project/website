@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-snapshot-hint"
+title: "vitest/prefer-snapshot-hint"
 category: "Correctness"
 version: "1.59.0"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_snapshot_hint.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_snapshot_hint.rs`;
 </script>
 
 <RuleHeader />

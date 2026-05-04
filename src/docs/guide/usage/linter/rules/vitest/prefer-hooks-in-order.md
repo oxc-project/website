@@ -1,7 +1,7 @@
 ---
-title: "jest/prefer-hooks-on-top"
+title: "vitest/prefer-hooks-in-order"
 category: "Style"
-version: "0.4.2"
+version: "0.6.0"
 default: false
 type_aware: false
 fix: "none"
@@ -11,24 +11,27 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_hooks_on_top.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_hooks_in_order.rs`;
 </script>
 
 <RuleHeader />
 
 ### What it does
 
-While hooks can be setup anywhere in a test file, they are always called in a
-specific order, which means it can be confusing if they're intermixed with test
-cases.
+Ensures that hooks are in the order that they are called in.
 
 ### Why is this bad?
 
-When hooks are mixed with test cases, it becomes harder to understand
-the test setup and execution order. This can lead to confusion about
-which hooks apply to which tests and when they run. Grouping hooks at
-the top of each `describe` block makes the test structure clearer and
-more maintainable.
+While hooks can be setup in any order, they're always called by `jest` in this
+specific order:
+
+1. `beforeAll`
+2. `beforeEach`
+3. `afterEach`
+4. `afterAll`
+
+This rule aims to make that more obvious by enforcing grouped hooks be setup in
+that order within tests.
 
 ### Examples
 
@@ -39,46 +42,36 @@ describe("foo", () => {
   beforeEach(() => {
     seedMyDatabase();
   });
-
-  it("accepts this input", () => {
-    // ...
-  });
-
   beforeAll(() => {
     createMyDatabase();
   });
-
+  it("accepts this input", () => {
+    // ...
+  });
   it("returns that value", () => {
     // ...
   });
-
   describe("when the database has specific values", () => {
     const specificValue = "...";
     beforeEach(() => {
       seedMyDatabase(specificValue);
     });
-
     it("accepts that input", () => {
       // ...
     });
-
     it("throws an error", () => {
       // ...
     });
-
     afterEach(() => {
       clearLogger();
     });
-
     beforeEach(() => {
       mockLogger();
     });
-
     it("logs a message", () => {
       // ...
     });
   });
-
   afterAll(() => {
     removeMyDatabase();
   });
@@ -92,49 +85,38 @@ describe("foo", () => {
   beforeAll(() => {
     createMyDatabase();
   });
-
   beforeEach(() => {
     seedMyDatabase();
   });
-
-  afterAll(() => {
-    clearMyDatabase();
-  });
-
   it("accepts this input", () => {
     // ...
   });
-
   it("returns that value", () => {
     // ...
   });
-
   describe("when the database has specific values", () => {
     const specificValue = "...";
-
     beforeEach(() => {
       seedMyDatabase(specificValue);
     });
-
-    beforeEach(() => {
-      mockLogger();
-    });
-
-    afterEach(() => {
-      clearLogger();
-    });
-
     it("accepts that input", () => {
       // ...
     });
-
     it("throws an error", () => {
       // ...
     });
-
+    beforeEach(() => {
+      mockLogger();
+    });
+    afterEach(() => {
+      clearLogger();
+    });
     it("logs a message", () => {
       // ...
     });
+  });
+  afterAll(() => {
+    removeMyDatabase();
   });
 });
 ```
@@ -145,7 +127,7 @@ describe("foo", () => {
 
 ## Version
 
-This rule was added in v0.4.2.
+This rule was added in v0.6.0.
 
 ## References
 

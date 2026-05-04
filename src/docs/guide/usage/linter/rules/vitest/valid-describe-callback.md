@@ -1,5 +1,5 @@
 ---
-title: "jest/valid-describe-callback"
+title: "vitest/valid-describe-callback"
 category: "Correctness"
 version: "0.0.8"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/valid_describe_callback.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/valid_describe_callback.rs`;
 </script>
 
 <RuleHeader />

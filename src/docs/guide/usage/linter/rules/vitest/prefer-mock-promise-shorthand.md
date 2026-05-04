@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-mock-promise-shorthand"
+title: "vitest/prefer-mock-promise-shorthand"
 category: "Style"
 version: "0.2.16"
 default: false
@@ -11,7 +11,7 @@ fix: "conditional_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_mock_promise_shorthand.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_mock_promise_shorthand.rs`;
 </script>
 
 <RuleHeader />

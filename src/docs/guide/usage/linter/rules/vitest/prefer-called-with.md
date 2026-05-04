@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-called-with"
+title: "vitest/prefer-called-with"
 category: "Style"
 version: "0.2.5"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_called_with.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_called_with.rs`;
 </script>
 
 <RuleHeader />

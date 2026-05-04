@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-to-have-been-called-times"
+title: "vitest/prefer-to-have-been-called-times"
 category: "Style"
 version: "1.34.0"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_to_have_been_called_times.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_to_have_been_called_times.rs`;
 </script>
 
 <RuleHeader />

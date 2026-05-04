@@ -1,5 +1,5 @@
 ---
-title: "jest/require-to-throw-message"
+title: "vitest/require-to-throw-message"
 category: "Correctness"
 version: "0.2.9"
 default: false
@@ -11,7 +11,7 @@ fix: "none"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/require_to_throw_message.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/require_to_throw_message.rs`;
 </script>
 
 <RuleHeader />

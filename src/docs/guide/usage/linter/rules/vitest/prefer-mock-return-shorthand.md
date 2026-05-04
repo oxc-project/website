@@ -1,5 +1,5 @@
 ---
-title: "jest/prefer-mock-return-shorthand"
+title: "vitest/prefer-mock-return-shorthand"
 category: "Style"
 version: "1.49.0"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_mock_return_shorthand.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/prefer_mock_return_shorthand.rs`;
 </script>
 
 <RuleHeader />

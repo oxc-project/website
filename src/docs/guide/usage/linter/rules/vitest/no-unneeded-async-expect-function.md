@@ -1,5 +1,5 @@
 ---
-title: "jest/no-unneeded-async-expect-function"
+title: "vitest/no-unneeded-async-expect-function"
 category: "Style"
 version: "1.39.0"
 default: false
@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/no_unneeded_async_expect_function.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/vitest/no_unneeded_async_expect_function.rs`;
 </script>
 
 <RuleHeader />
