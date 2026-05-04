@@ -112,7 +112,7 @@ This table lists the built-in plugins and where they come from.
 | `eslint`     | Yes     | [ESLint](https://eslint.org/) core rules                                                                                                                                                                                                                     |
 | `typescript` | Yes     | TypeScript rules from [typescript-eslint](https://typescript-eslint.io/) (aka `@typescript-eslint/plugin`). Type-aware rules are available using [the type-aware mode](./type-aware.md).                                                                     |
 | `unicorn`    | Yes     | [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)                                                                                                                                                                               |
-| `react`      | No      | [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react), [eslint-plugin-react-hooks](https://www.npmx.dev/package/eslint-plugin-react-hooks), and [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) |
+| `react`      | No      | [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react), [eslint-plugin-react-hooks](https://www.npmx.dev/package/eslint-plugin-react-hooks)*, and [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) |
 | `react-perf` | No      | [eslint-plugin-react-perf](https://github.com/cvazac/eslint-plugin-react-perf)                                                                                                                                                                               |
 | `nextjs`     | No      | [@next/eslint-plugin-next](https://www.npmx.dev/package/@next/eslint-plugin-next)                                                                                                                                                                            |
 | `oxc`        | Yes     | Oxc-specific rules and selected rules ported from deepscan                                                                                                                                                                                                   |
@@ -126,6 +126,8 @@ This table lists the built-in plugins and where they come from.
 | `vue`        | No      | [eslint-plugin-vue](https://eslint.vuejs.org/) rules that work with script tags                                                                                                                                                                              |
 
 For the current status of rule coverage, see the linter [product plan issue](https://github.com/oxc-project/oxc/issues/481). For framework and file type support, see the [compatibility matrix](/compatibility).
+
+* eslint-plugin-react-hooks does not implement the compiler rules by default. Please check [here](https://github.com/TheAlexLichter/oxlint-react-compiler-rules) for an example on how to do this.
 
 ## Adding new plugins
 
