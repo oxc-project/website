@@ -44,17 +44,6 @@ Examples of **correct** code for this rule:
 await expect(doSomethingAsync()).rejects.toThrow();
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-unneeded-async-expect-function.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/no-unneeded-async-expect-function": "error"
-  }
-}
-```
-
 ## How to use
 
 <RuleHowToUse />

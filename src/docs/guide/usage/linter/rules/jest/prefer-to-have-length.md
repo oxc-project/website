@@ -42,17 +42,6 @@ Examples of **correct** code for this rule:
 expect(files).toHaveLength(1);
 ```
 
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-length.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/prefer-to-have-length": "error"
-  }
-}
-```
-
 ## How to use
 
 <RuleHowToUse />

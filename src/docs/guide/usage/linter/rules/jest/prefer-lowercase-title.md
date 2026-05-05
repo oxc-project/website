@@ -11,7 +11,7 @@ fix: "fixable_fix"
 
 <script setup>
 import { data } from '../version.data.js';
-const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_lowercase_title/mod.rs`;
+const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_linter/src/rules/jest/prefer_lowercase_title.rs`;
 </script>
 
 <RuleHeader />
@@ -42,17 +42,6 @@ Examples of **correct** code for this rule:
 it("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
 });
-```
-
-This rule is compatible with [eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-lowercase-title.md),
-to use it, add the following configuration to your `.oxlintrc.json`:
-
-```json
-{
-  "rules": {
-    "vitest/prefer-lowercase-title": "error"
-  }
-}
 ```
 
 ## Configuration

@@ -275,7 +275,12 @@ by giving the JS plugin an alias.
 ```json
 {
   "plugins": ["import"],
-  "jsPlugins": [{ "name": "import-js", "specifier": "eslint-plugin-import" }],
+  "jsPlugins": [
+    {
+      "name": "import-js",
+      "specifier": "eslint-plugin-import"
+    }
+  ],
   "rules": {
     "import/no-cycle": "error",
     "import-js/no-unresolved": "warn"
@@ -546,7 +551,8 @@ default: `null`
 Jest version — accepts a number (`29`) or a semver string (`"29.1.0"` or `"v29.1.0"`),
 storing only the major version.
 ::: warning
-Using this config will override the `no-deprecated-functions`' config set.
+Using this config will override the `no-deprecated-functions` config set.
+:::
 
 ### settings.jsdoc
 

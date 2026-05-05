@@ -115,7 +115,7 @@ Arguments:
 ## Output
 
 - **`-f`**, **`--format`**=_`ARG`_ &mdash;
-  Use a specific output format. Possible values: `checkstyle`, `default`, `github`, `gitlab`, `json`, `junit`, `stylish`, `unix`
+  Use a specific output format. Possible values: `checkstyle`, `default`, `agent`, `github`, `gitlab`, `json`, `junit`, `sarif`, `stylish`, `unix`
 
 ## Miscellaneous
 

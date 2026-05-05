@@ -61,7 +61,12 @@ Example configuration:
 
 ```json
 {
-  "no-inline-comments": ["error", { "ignorePattern": "webpackChunkName" }]
+  "no-inline-comments": [
+    "error",
+    {
+      "ignorePattern": "webpackChunkName"
+    }
+  ]
 }
 ```
 
