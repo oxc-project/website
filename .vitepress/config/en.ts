@@ -112,6 +112,10 @@ export const enConfig = defineLocaleConfig("root", {
                   text: "Config file reference",
                   link: "/docs/guide/usage/linter/config-file-reference",
                 },
+                {
+                  text: "LSP config reference",
+                  link: "/docs/guide/usage/linter/lsp-config-reference",
+                },
                 { text: "Versioning", link: "/docs/guide/usage/linter/versioning" },
               ],
             },

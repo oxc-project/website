@@ -139,12 +139,10 @@ vim.lsp.enable('oxlint')
 
 ## Other editors
 
-For editors with LSP support (Emacs, Helix, Sublime), configure:
-
-```bash
-oxlint --lsp
-```
+For editors with LSP support (Emacs, Helix, Sublime), you can use `oxlint --lsp` as your language server.
+To configure it, refer to the [LSP configuration reference](./lsp-config-reference.md) for the supported options.
 
 ## Reference
 
 - [oxc_language_server](https://github.com/oxc-project/oxc/tree/main/crates/oxc_language_server)
+- [LSP configuration reference](/docs/guide/usage/linter/lsp-config-reference.md)
