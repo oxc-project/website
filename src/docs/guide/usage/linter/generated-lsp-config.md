@@ -2,12 +2,11 @@
 search: false
 ---
 
-# LSP Options for linting, which can be defined for each workspace folder separately.
+These options can be defined for each workspace folder separately.
+File references in the options (e.g. `configPath`, `tsConfigPath`) are resolved relative to the workspace folder.
 
-It can be sent by the client in `initialize` or `workspace/didChangeConfiguration` requests.
+They can be sent by the client in `initialize` or `workspace/didChangeConfiguration` requests.
 If the client supports `workspace/configuration`, the server will request the options from the client.
-
-## Example
 
 Example of `initialize` request:
 
