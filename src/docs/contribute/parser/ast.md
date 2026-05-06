@@ -102,7 +102,7 @@ visitor.visit_program(&program);
 
 ### Mutable Visitor
 
-For transformations, use the mutable visitor:
+For transformations like replacing constant "a" + "b" to "ab", use the mutable visitor:
 
 ```rust
 use oxc_ast::visit::{VisitMut, walk_mut};
@@ -114,14 +114,25 @@ struct MyTransformer<'a> {
 
 impl<'a> VisitMut<'a> for MyTransformer {
     fn visit_expression(&mut self, expr: &mut BinaryExpression<'a>) {
-        // Detect the expression type which you want to modify
+        walk_mut::walk_expression(self, it);
+        // Detect the expression type which you want to modify when changing from one enum variant to another. 
         match it {
-            Expression::BinaryExpression(expr)
-                if expr.operator == BinaryOperator::Addition => {
-                    let new_expr = self.builder.expression_string_literal(SPAN, "", Some(Str::new_const("''")));
-                    *it = new_expr;
+            // In this example a BinaryExpression was changed to StringLiteral, so it is necessary to match on the enum variant rather than on the expression type itself.
+            Expression::BinaryExpression(expr) =>
+                match (expr.operator, &expr.left, &expr.right) {
+                    (BinaryOperator::Addition, Expression::StringLiteral(sl), Expression::StringLiteral(sr)) => {
+                                let value = Str::from_strs_array_in([sl.value.as_str(), sr.value.as_str()], self.builder.allocator);
+                                let raw_value =
+                                    Str::from_strs_array_in(["'", sl.value.as_str(), sr.value.as_str(), "'"], self.builder.allocator);
+                                *it = 
+                                    self.builder.expression_string_literal(
+                                        SPAN, 
+                                        value,
+                                        Some(raw_value));
+                            },
+                        _ => {},
                 },
-            _ => walk_mut::walk_expression(self, it),
+            _ => {},
         }
     }
 }
