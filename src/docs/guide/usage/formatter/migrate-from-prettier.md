@@ -210,4 +210,4 @@ If you no longer use Prettier, you can optionally move its contents from `.prett
 
 Oxfmt supports `// prettier-ignore` comments, but also supports `// oxfmt-ignore` comments.
 
-However, `// oxfmt-ignore` will only work for JS and TS files.
+However, `// oxfmt-ignore` will only work for JS and TS files. See [Inline ignore comments](/docs/guide/usage/formatter/ignore-comments) for more information.
