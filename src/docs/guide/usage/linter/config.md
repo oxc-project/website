@@ -444,6 +444,8 @@ Use `extends` to inherit from other configuration files.
 
 Paths in `extends` are resolved relative to the configuration file that declares `extends`. Configs are merged from first to last, with later entries overriding earlier ones.
 
+Use `oxlint.config.ts` when extending config objects imported from a shared package. Package imports are not supported in the `.oxlintrc.json` format.
+
 ::: code-group
 
 ```json [.oxlintrc.json]
@@ -463,6 +465,17 @@ export default defineConfig({
 ```
 
 :::
+
+For example, a shared package can export a config object that you import and extend:
+
+```ts [oxlint.config.ts]
+import config from "@example-org/oxlint-config";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [config],
+});
+```
 
 ## Configure environments and globals
 

@@ -105,9 +105,11 @@ This keeps the shared baseline in one place and makes package configs small and 
 
 ## Extending configuration files
 
-A config can reuse settings from other files using `extends`. The value is an array of file paths, resolved relative to the config file that declares them.
+A config can reuse settings from other configs using `extends`.
 
-Extended files can have any name. They do not need to be named `.oxlintrc.json`, as long as they are valid JSON configuration files. For `oxlint.config.ts`, the file with the `extends` property must be named `oxlint.config.ts`.
+In `.oxlintrc.json`, `extends` is an array of file paths, resolved relative to the config file that declares them. Extended files can have any name. They do not need to be named `.oxlintrc.json`, as long as they are valid JSON configuration files. Package imports are not supported in the `.oxlintrc.json` format.
+
+In `oxlint.config.ts`, import the config objects you want to extend and pass them to `extends`. Use `oxlint.config.ts` when extending config objects imported from a shared package.
 
 Example:
 
@@ -159,6 +161,17 @@ export default defineConfig({
 ```
 
 :::
+
+Shared packages work the same way in `oxlint.config.ts`:
+
+```ts [oxlint.config.ts]
+import sharedConfig from "@example-org/oxlint-config";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [sharedConfig],
+});
+```
 
 Only some properties can be extended. The supported properties are:
 
