@@ -109,7 +109,7 @@ A config can reuse settings from other configs using `extends`.
 
 In `.oxlintrc.json`, `extends` is an array of file paths, resolved relative to the config file that declares them. Extended files can have any name. They do not need to be named `.oxlintrc.json`, as long as they are valid JSON configuration files. Package imports are not supported in the `.oxlintrc.json` format.
 
-In `oxlint.config.ts`, import the config objects you want to extend and pass them to `extends`. Use `oxlint.config.ts` when extending config objects imported from a shared package.
+In `oxlint.config.ts`, import the config objects you want to extend and pass them to `extends`. The file with the `extends` property must be named `oxlint.config.ts`. Use `oxlint.config.ts` when extending config objects imported from a shared package.
 
 Example:
 
