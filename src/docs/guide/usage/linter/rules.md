@@ -26,7 +26,7 @@ The progress of all rule implementations is tracked [here](https://github.com/ox
 - Rules turned on by default: {{ defaultCount }}
 - Rules with fixes available: {{ fixableCount }}
 
-::: details About rule categories
+::: details Rule categories
 
 Categories group rules by intent and can be enabled together in configuration. See [Enable groups of rules with categories](/docs/guide/usage/linter/config.html#enable-groups-of-rules-with-categories) for details.
 
