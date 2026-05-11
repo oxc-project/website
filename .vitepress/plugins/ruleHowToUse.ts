@@ -20,14 +20,14 @@ function parseFrontmatter(src: string): Record<string, string> {
 }
 
 function generateCodeGroup(frontmatter: Record<string, unknown>): string {
-  const title = frontmatter.title as string;
+  const rule = frontmatter.rule as string;
   const typeAware = frontmatter.type_aware === "true";
 
-  const slashIdx = title.indexOf("/");
-  const plugin = slashIdx !== -1 ? title.slice(0, slashIdx) : "eslint";
+  const slashIdx = rule.indexOf("/");
+  const plugin = slashIdx !== -1 ? rule.slice(0, slashIdx) : "eslint";
   const isBuiltin = BUILTIN_PLUGINS.includes(plugin);
 
-  const configRuleName = plugin === "eslint" && slashIdx !== -1 ? title.slice(slashIdx + 1) : title;
+  const configRuleName = plugin === "eslint" && slashIdx !== -1 ? rule.slice(slashIdx + 1) : rule;
 
   // Build JSON config
   const jsonLines: string[] = ["{"];
