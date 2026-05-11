@@ -1,5 +1,5 @@
 ---
-title: Setup CI and other integrations
+title: "Setup CI and other integrations | Oxlint"
 description: Run Oxlint in CI or as a git hook.
 ---
 

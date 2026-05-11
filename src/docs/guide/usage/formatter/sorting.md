@@ -1,3 +1,7 @@
+---
+title: "Sorting | Oxfmt"
+---
+
 # Sorting
 
 Oxfmt includes sorting features for imports, Tailwind classes, and package.json.

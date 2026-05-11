@@ -1,5 +1,5 @@
 ---
-title: Configuration
+title: "Configuration | Oxfmt"
 description: Configure Oxfmt using a .oxfmtrc.json file.
 ---
 

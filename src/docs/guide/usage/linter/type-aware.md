@@ -1,5 +1,5 @@
 ---
-title: Type-Aware Linting
+title: "Type-Aware Linting | Oxlint"
 description: Linting with type information.
 ---
 

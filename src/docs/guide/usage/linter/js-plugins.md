@@ -1,4 +1,5 @@
 ---
+title: "JS Plugins | Oxlint"
 outline: deep
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Configuration file reference | Oxfmt"
 editLink: false
 ---
 

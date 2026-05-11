@@ -1,4 +1,5 @@
 ---
+title: "LSP Options | Oxlint"
 editLink: false
 ---
 

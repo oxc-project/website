@@ -1,5 +1,5 @@
 ---
-title: Built-in Plugins
+title: "Built-in Plugins | Oxlint"
 description: Enable built in plugin rule sets and extend Oxlint with ESLint compatible JavaScript plugins.
 ---
 

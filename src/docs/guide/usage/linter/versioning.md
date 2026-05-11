@@ -1,5 +1,5 @@
 ---
-title: Versioning policy
+title: "Versioning policy | Oxlint"
 editLink: false
 ---
 

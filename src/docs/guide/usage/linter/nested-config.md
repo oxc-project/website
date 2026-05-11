@@ -1,5 +1,5 @@
 ---
-title: Nested configuration files
+title: "Nested configuration files | Oxlint"
 description: Use multiple configuration files to apply different Oxlint settings to different parts of a repository.
 ---
 
