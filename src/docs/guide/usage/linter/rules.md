@@ -28,7 +28,7 @@ The progress of all rule implementations is tracked [here](https://github.com/ox
 
 ::: details About rule categories
 
-Categories group rules by intent and can be enabled together in configuration. See [Enable groups of rules with categories](/docs/guide/usage/linter/config.html#enable-groups-of-rules-with-categories) for examples.
+Categories group rules by intent and can be enabled together in configuration. See [Enable groups of rules with categories](/docs/guide/usage/linter/config.html#enable-groups-of-rules-with-categories) for details.
 
 :::
 
