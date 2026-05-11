@@ -1,5 +1,6 @@
 ---
-title: "react/no-unsafe"
+title: "react/no-unsafe | Oxlint"
+rule: "react/no-unsafe"
 category: "Correctness"
 version: "1.35.0"
 default: false

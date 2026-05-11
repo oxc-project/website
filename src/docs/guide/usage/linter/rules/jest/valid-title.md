@@ -1,5 +1,6 @@
 ---
-title: "jest/valid-title"
+title: "jest/valid-title | Oxlint"
+rule: "jest/valid-title"
 category: "Correctness"
 version: "0.0.14"
 default: false

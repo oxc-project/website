@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-template-expression"
+title: "typescript/no-unnecessary-template-expression | Oxlint"
+rule: "typescript/no-unnecessary-template-expression"
 category: "Suspicious"
 version: "1.12.0"
 default: false

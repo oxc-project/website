@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-undefined"
+title: "unicorn/no-useless-undefined | Oxlint"
+rule: "unicorn/no-useless-undefined"
 category: "Pedantic"
 version: "0.6.1"
 default: false

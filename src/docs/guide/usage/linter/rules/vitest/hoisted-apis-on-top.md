@@ -1,5 +1,6 @@
 ---
-title: "vitest/hoisted-apis-on-top"
+title: "vitest/hoisted-apis-on-top | Oxlint"
+rule: "vitest/hoisted-apis-on-top"
 category: "Correctness"
 version: "1.39.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/require-param-type"
+title: "jsdoc/require-param-type | Oxlint"
+rule: "jsdoc/require-param-type"
 category: "Pedantic"
 version: "0.4.4"
 default: false

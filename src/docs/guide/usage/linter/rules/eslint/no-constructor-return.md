@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-constructor-return"
+title: "eslint/no-constructor-return | Oxlint"
+rule: "eslint/no-constructor-return"
 category: "Pedantic"
 version: "0.4.3"
 default: false

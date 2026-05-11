@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-typeof-undefined"
+title: "unicorn/no-typeof-undefined | Oxlint"
+rule: "unicorn/no-typeof-undefined"
 category: "Pedantic"
 version: "0.0.18"
 default: false

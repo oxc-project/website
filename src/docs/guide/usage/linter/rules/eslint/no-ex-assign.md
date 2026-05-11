@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-ex-assign"
+title: "eslint/no-ex-assign | Oxlint"
+rule: "eslint/no-ex-assign"
 category: "Correctness"
 version: "0.0.4"
 default: true

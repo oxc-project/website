@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-script-component-in-head"
+title: "nextjs/no-script-component-in-head | Oxlint"
+rule: "nextjs/no-script-component-in-head"
 category: "Correctness"
 version: "0.2.0"
 default: false

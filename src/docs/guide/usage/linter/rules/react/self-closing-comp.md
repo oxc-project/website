@@ -1,5 +1,6 @@
 ---
-title: "react/self-closing-comp"
+title: "react/self-closing-comp | Oxlint"
+rule: "react/self-closing-comp"
 category: "Style"
 version: "0.9.3"
 default: false

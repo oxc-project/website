@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-statements"
+title: "eslint/max-statements | Oxlint"
+rule: "eslint/max-statements"
 category: "Style"
 version: "1.35.0"
 default: false

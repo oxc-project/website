@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/no-aria-hidden-on-focusable"
+title: "jsx-a11y/no-aria-hidden-on-focusable | Oxlint"
+rule: "jsx-a11y/no-aria-hidden-on-focusable"
 category: "Correctness"
 version: "0.0.22"
 default: false

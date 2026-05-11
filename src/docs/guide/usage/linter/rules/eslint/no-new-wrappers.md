@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-new-wrappers"
+title: "eslint/no-new-wrappers | Oxlint"
+rule: "eslint/no-new-wrappers"
 category: "Pedantic"
 version: "0.2.10"
 default: false

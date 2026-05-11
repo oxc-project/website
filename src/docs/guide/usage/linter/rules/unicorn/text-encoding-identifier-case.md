@@ -1,5 +1,6 @@
 ---
-title: "unicorn/text-encoding-identifier-case"
+title: "unicorn/text-encoding-identifier-case | Oxlint"
+rule: "unicorn/text-encoding-identifier-case"
 category: "Style"
 version: "0.0.15"
 default: false

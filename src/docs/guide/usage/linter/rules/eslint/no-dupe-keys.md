@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-dupe-keys"
+title: "eslint/no-dupe-keys | Oxlint"
+rule: "eslint/no-dupe-keys"
 category: "Correctness"
 version: "0.0.3"
 default: true

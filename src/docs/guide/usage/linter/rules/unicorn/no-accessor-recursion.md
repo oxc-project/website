@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-accessor-recursion"
+title: "unicorn/no-accessor-recursion | Oxlint"
+rule: "unicorn/no-accessor-recursion"
 category: "Suspicious"
 version: "0.16.5"
 default: false

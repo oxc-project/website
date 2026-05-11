@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-describe-function-title"
+title: "vitest/prefer-describe-function-title | Oxlint"
+rule: "vitest/prefer-describe-function-title"
 category: "Style"
 version: "1.39.0"
 default: false

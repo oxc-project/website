@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-misused-promises"
+title: "typescript/no-misused-promises | Oxlint"
+rule: "typescript/no-misused-promises"
 category: "Pedantic"
 version: "1.11.0"
 default: false

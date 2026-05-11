@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-undef"
+title: "eslint/no-undef | Oxlint"
+rule: "eslint/no-undef"
 category: "Nursery"
 version: "0.0.8"
 default: false

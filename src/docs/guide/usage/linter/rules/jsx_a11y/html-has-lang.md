@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/html-has-lang"
+title: "jsx-a11y/html-has-lang | Oxlint"
+rule: "jsx-a11y/html-has-lang"
 category: "Correctness"
 version: "0.0.18"
 default: false

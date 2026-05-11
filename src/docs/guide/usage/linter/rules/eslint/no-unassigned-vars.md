@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unassigned-vars"
+title: "eslint/no-unassigned-vars | Oxlint"
+rule: "eslint/no-unassigned-vars"
 category: "Correctness"
 version: "1.10.0"
 default: true

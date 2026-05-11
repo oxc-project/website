@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-to-have-length"
+title: "jest/prefer-to-have-length | Oxlint"
+rule: "jest/prefer-to-have-length"
 category: "Style"
 version: "0.2.13"
 default: false

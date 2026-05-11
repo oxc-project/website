@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-document-cookie"
+title: "unicorn/no-document-cookie | Oxlint"
+rule: "unicorn/no-document-cookie"
 category: "Restriction"
 version: "0.0.18"
 default: false

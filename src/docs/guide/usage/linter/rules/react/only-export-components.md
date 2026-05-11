@@ -1,5 +1,6 @@
 ---
-title: "react/only-export-components"
+title: "react/only-export-components | Oxlint"
+rule: "react/only-export-components"
 category: "Restriction"
 version: "1.23.0"
 default: false

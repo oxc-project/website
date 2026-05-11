@@ -1,5 +1,6 @@
 ---
-title: "react/prefer-function-component"
+title: "react/prefer-function-component | Oxlint"
+rule: "react/prefer-function-component"
 category: "Restriction"
 version: "1.59.0"
 default: false

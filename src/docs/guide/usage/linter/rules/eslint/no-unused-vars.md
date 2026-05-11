@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unused-vars"
+title: "eslint/no-unused-vars | Oxlint"
+rule: "eslint/no-unused-vars"
 category: "Correctness"
 version: "0.7.0"
 default: true
@@ -302,6 +303,8 @@ Fine-grained auto-fix controls for `no-unused-vars`.
 
 type: `"off" | "suggestion" | "fix" | "safe-fix"`
 
+Controls auto-fixes for unused imports.
+
 ##### `"off"`
 
 Disable auto-fixes for this symbol kind.
@@ -322,6 +325,8 @@ Only applicable for imports, unavailable for variables.
 #### fix.variables
 
 type: `"off" | "suggestion" | "fix" | "safe-fix"`
+
+Controls auto-fixes for unused variables (including catch bindings).
 
 ##### `"off"`
 

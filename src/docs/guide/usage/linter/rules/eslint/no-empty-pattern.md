@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-empty-pattern"
+title: "eslint/no-empty-pattern | Oxlint"
+rule: "eslint/no-empty-pattern"
 category: "Correctness"
 version: "0.0.3"
 default: true

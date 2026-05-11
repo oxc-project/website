@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-query-selector"
+title: "unicorn/prefer-query-selector | Oxlint"
+rule: "unicorn/prefer-query-selector"
 category: "Pedantic"
 version: "0.0.15"
 default: false

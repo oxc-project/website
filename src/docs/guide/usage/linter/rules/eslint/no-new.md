@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-new"
+title: "eslint/no-new | Oxlint"
+rule: "eslint/no-new"
 category: "Suspicious"
 version: "0.4.0"
 default: false

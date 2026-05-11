@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-mocks-import"
+title: "vitest/no-mocks-import | Oxlint"
+rule: "vitest/no-mocks-import"
 category: "Style"
 version: "0.0.13"
 default: false

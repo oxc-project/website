@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-alert"
+title: "eslint/no-alert | Oxlint"
+rule: "eslint/no-alert"
 category: "Restriction"
 version: "0.9.3"
 default: false

@@ -132,6 +132,8 @@ Example
 
 type: `Record<string, boolean>`
 
+Environments enable and disable collections of global variables.
+
 Predefine global variables.
 
 Environments specify what global variables are predefined.
@@ -193,6 +195,8 @@ overriding the previous ones.
 ## globals
 
 type: `Record<string, string>`
+
+Enabled or disabled specific global variables.
 
 Add or remove global variables.
 
@@ -328,6 +332,8 @@ Path or package name of the plugin
 
 type: `object`
 
+Oxlint config options.
+
 Options for the linter.
 
 ### options.denyWarnings
@@ -390,6 +396,8 @@ Note that this requires the `oxlint-tsgolint` package to be installed.
 
 type: `array`
 
+Add, remove, or otherwise reconfigure rules for specific files or groups of files.
+
 ### overrides[n]
 
 type: `object`
@@ -404,7 +412,14 @@ Environments enable and disable collections of global variables.
 
 type: `string[]`
 
+A list of glob patterns to override.
+
+## Example
+
+`[ "*.test.ts", "*.spec.ts" ]`
+
 A set of glob patterns.
+Patterns are matched against paths relative to the configuration file's directory.
 
 #### overrides[n].globals
 
@@ -499,11 +514,38 @@ type: `"eslint" | "react" | "unicorn" | "typescript" | "oxc" | "import" | "jsdoc
 
 type: `object`
 
+Example
+
+`.oxlintrc.json`
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "rules": {
+    "eqeqeq": "warn",
+    "import/no-cycle": "error",
+    "prefer-const": [
+      "error",
+      {
+        "ignoreReadBeforeAssign": true
+      }
+    ]
+  }
+}
+```
+
+See [Oxlint Rules](https://oxc.rs/docs/guide/usage/linter/rules.html) for the list of
+rules.
+
 See [Oxlint Rules](https://oxc.rs/docs/guide/usage/linter/rules.html)
 
 ## settings
 
 type: `object`
+
+Plugin-specific configuration for both built-in and custom plugins.
+This includes settings for built-in plugins such as `react` and `jsdoc`
+as well as configuring settings for JS custom plugins loaded via `jsPlugins`.
 
 Configure the behavior of linter plugins.
 
@@ -703,6 +745,23 @@ Configure Next.js plugin rules.
 #### settings.next.rootDir
 
 type: `array | string`
+
+The root directory of the Next.js project.
+
+This is particularly useful when you have a monorepo and your Next.js
+project is in a subfolder.
+
+Example:
+
+```json
+{
+  "settings": {
+    "next": {
+      "rootDir": "apps/dashboard/"
+    }
+  }
+}
+```
 
 ##### settings.next.rootDir[n]
 

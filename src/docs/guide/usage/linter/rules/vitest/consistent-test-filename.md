@@ -1,5 +1,6 @@
 ---
-title: "vitest/consistent-test-filename"
+title: "vitest/consistent-test-filename | Oxlint"
+rule: "vitest/consistent-test-filename"
 category: "Style"
 version: "1.36.0"
 default: false

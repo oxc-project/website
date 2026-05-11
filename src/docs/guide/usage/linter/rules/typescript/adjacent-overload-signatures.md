@@ -1,5 +1,6 @@
 ---
-title: "typescript/adjacent-overload-signatures"
+title: "typescript/adjacent-overload-signatures | Oxlint"
+rule: "typescript/adjacent-overload-signatures"
 category: "Style"
 version: "0.0.7"
 default: false

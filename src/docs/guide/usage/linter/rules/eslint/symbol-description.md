@@ -1,5 +1,6 @@
 ---
-title: "eslint/symbol-description"
+title: "eslint/symbol-description | Oxlint"
+rule: "eslint/symbol-description"
 category: "Pedantic"
 version: "0.4.0"
 default: false

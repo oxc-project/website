@@ -1,5 +1,6 @@
 ---
-title: "typescript/consistent-type-assertions"
+title: "typescript/consistent-type-assertions | Oxlint"
+rule: "typescript/consistent-type-assertions"
 category: "Style"
 version: "1.44.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "import/no-named-export"
+title: "import/no-named-export | Oxlint"
+rule: "import/no-named-export"
 category: "Style"
 version: "1.19.0"
 default: false

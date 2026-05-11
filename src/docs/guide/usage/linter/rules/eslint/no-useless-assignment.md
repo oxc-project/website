@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-assignment"
+title: "eslint/no-useless-assignment | Oxlint"
+rule: "eslint/no-useless-assignment"
 category: "Nursery"
 version: "1.59.0"
 default: false

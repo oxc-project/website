@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/img-redundant-alt"
+title: "jsx-a11y/img-redundant-alt | Oxlint"
+rule: "jsx-a11y/img-redundant-alt"
 category: "Correctness"
 version: "0.0.19"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "import/group-exports"
+title: "import/group-exports | Oxlint"
+rule: "import/group-exports"
 category: "Style"
 version: "0.16.6"
 default: false

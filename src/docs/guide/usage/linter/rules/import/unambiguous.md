@@ -1,5 +1,6 @@
 ---
-title: "import/unambiguous"
+title: "import/unambiguous | Oxlint"
+rule: "import/unambiguous"
 category: "Restriction"
 version: "0.11.1"
 default: false

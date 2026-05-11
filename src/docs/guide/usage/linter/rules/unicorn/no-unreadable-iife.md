@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-unreadable-iife"
+title: "unicorn/no-unreadable-iife | Oxlint"
+rule: "unicorn/no-unreadable-iife"
 category: "Pedantic"
 version: "0.0.19"
 default: false

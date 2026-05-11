@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/implements-on-classes"
+title: "jsdoc/implements-on-classes | Oxlint"
+rule: "jsdoc/implements-on-classes"
 category: "Correctness"
 version: "0.3.2"
 default: false

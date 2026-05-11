@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-bitwise"
+title: "eslint/no-bitwise | Oxlint"
+rule: "eslint/no-bitwise"
 category: "Restriction"
 version: "0.0.3"
 default: false

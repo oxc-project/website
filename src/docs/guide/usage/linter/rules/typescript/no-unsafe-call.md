@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-call"
+title: "typescript/no-unsafe-call | Oxlint"
+rule: "typescript/no-unsafe-call"
 category: "Pedantic"
 version: "1.12.0"
 default: false

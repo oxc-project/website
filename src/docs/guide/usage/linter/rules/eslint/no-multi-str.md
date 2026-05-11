@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-multi-str"
+title: "eslint/no-multi-str | Oxlint"
+rule: "eslint/no-multi-str"
 category: "Style"
 version: "0.5.3"
 default: false

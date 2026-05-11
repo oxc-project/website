@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/no-autofocus"
+title: "jsx-a11y/no-autofocus | Oxlint"
+rule: "jsx-a11y/no-autofocus"
 category: "Correctness"
 version: "0.0.19"
 default: false

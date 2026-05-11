@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-structured-clone"
+title: "unicorn/prefer-structured-clone | Oxlint"
+rule: "unicorn/prefer-structured-clone"
 category: "Style"
 version: "0.9.0"
 default: false

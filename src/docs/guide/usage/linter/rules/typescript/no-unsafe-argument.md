@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-argument"
+title: "typescript/no-unsafe-argument | Oxlint"
+rule: "typescript/no-unsafe-argument"
 category: "Pedantic"
 version: "1.12.0"
 default: false

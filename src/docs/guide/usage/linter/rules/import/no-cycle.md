@@ -1,5 +1,6 @@
 ---
-title: "import/no-cycle"
+title: "import/no-cycle | Oxlint"
+rule: "import/no-cycle"
 category: "Restriction"
 version: "0.0.13"
 default: false

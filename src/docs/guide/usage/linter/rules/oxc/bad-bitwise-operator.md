@@ -1,5 +1,6 @@
 ---
-title: "oxc/bad-bitwise-operator"
+title: "oxc/bad-bitwise-operator | Oxlint"
+rule: "oxc/bad-bitwise-operator"
 category: "Restriction"
 version: "0.0.3"
 default: false

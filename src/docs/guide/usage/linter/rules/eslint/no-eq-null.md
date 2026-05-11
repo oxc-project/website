@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-eq-null"
+title: "eslint/no-eq-null | Oxlint"
+rule: "eslint/no-eq-null"
 category: "Restriction"
 version: "0.2.14"
 default: false

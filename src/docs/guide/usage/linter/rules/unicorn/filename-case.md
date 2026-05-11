@@ -1,5 +1,6 @@
 ---
-title: "unicorn/filename-case"
+title: "unicorn/filename-case | Oxlint"
+rule: "unicorn/filename-case"
 category: "Style"
 version: "0.0.14"
 default: false

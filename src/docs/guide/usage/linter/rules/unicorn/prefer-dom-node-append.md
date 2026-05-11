@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-dom-node-append"
+title: "unicorn/prefer-dom-node-append | Oxlint"
+rule: "unicorn/prefer-dom-node-append"
 category: "Pedantic"
 version: "0.0.18"
 default: false

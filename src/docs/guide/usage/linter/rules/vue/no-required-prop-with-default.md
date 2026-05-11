@@ -1,5 +1,6 @@
 ---
-title: "vue/no-required-prop-with-default"
+title: "vue/no-required-prop-with-default | Oxlint"
+rule: "vue/no-required-prop-with-default"
 category: "Suspicious"
 version: "1.17.0"
 default: false

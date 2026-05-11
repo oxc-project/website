@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-nonoctal-decimal-escape"
+title: "eslint/no-nonoctal-decimal-escape | Oxlint"
+rule: "eslint/no-nonoctal-decimal-escape"
 category: "Correctness"
 version: "0.2.10"
 default: true

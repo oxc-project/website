@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-return"
+title: "typescript/no-unsafe-return | Oxlint"
+rule: "typescript/no-unsafe-return"
 category: "Pedantic"
 version: "1.12.0"
 default: false

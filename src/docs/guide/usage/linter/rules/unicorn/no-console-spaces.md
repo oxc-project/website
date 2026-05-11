@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-console-spaces"
+title: "unicorn/no-console-spaces | Oxlint"
+rule: "unicorn/no-console-spaces"
 category: "Style"
 version: "0.0.14"
 default: false

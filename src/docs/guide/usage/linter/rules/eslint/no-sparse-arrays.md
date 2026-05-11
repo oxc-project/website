@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-sparse-arrays"
+title: "eslint/no-sparse-arrays | Oxlint"
+rule: "eslint/no-sparse-arrays"
 category: "Correctness"
 version: "0.0.4"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-math-min-max"
+title: "unicorn/prefer-math-min-max | Oxlint"
+rule: "unicorn/prefer-math-min-max"
 category: "Pedantic"
 version: "0.10.1"
 default: false

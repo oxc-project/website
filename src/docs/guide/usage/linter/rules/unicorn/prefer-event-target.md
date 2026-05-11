@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-event-target"
+title: "unicorn/prefer-event-target | Oxlint"
+rule: "unicorn/prefer-event-target"
 category: "Pedantic"
 version: "0.0.18"
 default: false

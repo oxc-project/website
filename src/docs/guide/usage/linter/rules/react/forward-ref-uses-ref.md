@@ -1,5 +1,6 @@
 ---
-title: "react/forward-ref-uses-ref"
+title: "react/forward-ref-uses-ref | Oxlint"
+rule: "react/forward-ref-uses-ref"
 category: "Correctness"
 version: "0.16.9"
 default: false

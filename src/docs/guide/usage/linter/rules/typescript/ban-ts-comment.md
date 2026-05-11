@@ -1,5 +1,6 @@
 ---
-title: "typescript/ban-ts-comment"
+title: "typescript/ban-ts-comment | Oxlint"
+rule: "typescript/ban-ts-comment"
 category: "Pedantic"
 version: "0.0.8"
 default: false

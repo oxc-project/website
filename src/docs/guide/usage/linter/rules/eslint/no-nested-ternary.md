@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-nested-ternary"
+title: "eslint/no-nested-ternary | Oxlint"
+rule: "eslint/no-nested-ternary"
 category: "Style"
 version: "0.15.4"
 default: false

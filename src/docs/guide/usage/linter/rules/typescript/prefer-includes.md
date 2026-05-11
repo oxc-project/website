@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-includes"
+title: "typescript/prefer-includes | Oxlint"
+rule: "typescript/prefer-includes"
 category: "Pedantic"
 version: "1.29.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-sequences"
+title: "eslint/no-sequences | Oxlint"
+rule: "eslint/no-sequences"
 category: "Restriction"
 version: "1.33.0"
 default: false

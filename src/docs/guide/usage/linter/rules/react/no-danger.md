@@ -1,5 +1,6 @@
 ---
-title: "react/no-danger"
+title: "react/no-danger | Oxlint"
+rule: "react/no-danger"
 category: "Restriction"
 version: "0.0.14"
 default: false

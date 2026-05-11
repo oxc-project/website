@@ -1,5 +1,6 @@
 ---
-title: "jest/consistent-test-it"
+title: "jest/consistent-test-it | Oxlint"
+rule: "jest/consistent-test-it"
 category: "Style"
 version: "0.5.3"
 default: false

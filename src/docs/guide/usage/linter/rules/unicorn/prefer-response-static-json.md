@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-response-static-json"
+title: "unicorn/prefer-response-static-json | Oxlint"
+rule: "unicorn/prefer-response-static-json"
 category: "Style"
 version: "1.29.0"
 default: false

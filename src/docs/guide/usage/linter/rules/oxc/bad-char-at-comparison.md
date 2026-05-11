@@ -1,5 +1,6 @@
 ---
-title: "oxc/bad-char-at-comparison"
+title: "oxc/bad-char-at-comparison | Oxlint"
+rule: "oxc/bad-char-at-comparison"
 category: "Correctness"
 version: "0.0.22"
 default: true

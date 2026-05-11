@@ -1,5 +1,6 @@
 ---
-title: "react/no-multi-comp"
+title: "react/no-multi-comp | Oxlint"
+rule: "react/no-multi-comp"
 category: "Restriction"
 version: "1.43.0"
 default: false

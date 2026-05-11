@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-await-expression-member"
+title: "unicorn/no-await-expression-member | Oxlint"
+rule: "unicorn/no-await-expression-member"
 category: "Style"
 version: "0.0.19"
 default: false

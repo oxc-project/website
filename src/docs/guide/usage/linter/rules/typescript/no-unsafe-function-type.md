@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-function-type"
+title: "typescript/no-unsafe-function-type | Oxlint"
+rule: "typescript/no-unsafe-function-type"
 category: "Pedantic"
 version: "0.11.1"
 default: false

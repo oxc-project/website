@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-be-object"
+title: "vitest/prefer-to-be-object | Oxlint"
+rule: "vitest/prefer-to-be-object"
 category: "Style"
 version: "0.9.2"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/interactive-supports-focus"
+title: "jsx-a11y/interactive-supports-focus | Oxlint"
+rule: "jsx-a11y/interactive-supports-focus"
 category: "Correctness"
 version: "1.63.0"
 default: false

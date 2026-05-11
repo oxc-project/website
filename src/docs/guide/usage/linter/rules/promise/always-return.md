@@ -1,5 +1,6 @@
 ---
-title: "promise/always-return"
+title: "promise/always-return | Oxlint"
+rule: "promise/always-return"
 category: "Suspicious"
 version: "1.13.0"
 default: false

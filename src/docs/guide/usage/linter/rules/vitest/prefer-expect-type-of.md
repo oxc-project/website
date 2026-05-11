@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-expect-type-of"
+title: "vitest/prefer-expect-type-of | Oxlint"
+rule: "vitest/prefer-expect-type-of"
 category: "Style"
 version: "1.44.0"
 default: false

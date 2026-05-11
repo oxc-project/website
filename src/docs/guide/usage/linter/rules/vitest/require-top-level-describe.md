@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-top-level-describe"
+title: "vitest/require-top-level-describe | Oxlint"
+rule: "vitest/require-top-level-describe"
 category: "Style"
 version: "0.4.2"
 default: false

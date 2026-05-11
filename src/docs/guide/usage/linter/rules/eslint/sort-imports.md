@@ -1,5 +1,6 @@
 ---
-title: "eslint/sort-imports"
+title: "eslint/sort-imports | Oxlint"
+rule: "eslint/sort-imports"
 category: "Style"
 version: "0.4.4"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-irregular-whitespace"
+title: "eslint/no-irregular-whitespace | Oxlint"
+rule: "eslint/no-irregular-whitespace"
 category: "Correctness"
 version: "0.1.1"
 default: true

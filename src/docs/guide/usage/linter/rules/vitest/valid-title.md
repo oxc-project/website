@@ -1,5 +1,6 @@
 ---
-title: "vitest/valid-title"
+title: "vitest/valid-title | Oxlint"
+rule: "vitest/valid-title"
 category: "Correctness"
 version: "0.0.14"
 default: false

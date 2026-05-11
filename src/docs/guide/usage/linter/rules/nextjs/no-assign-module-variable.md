@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-assign-module-variable"
+title: "nextjs/no-assign-module-variable | Oxlint"
+rule: "nextjs/no-assign-module-variable"
 category: "Correctness"
 version: "0.2.0"
 default: false

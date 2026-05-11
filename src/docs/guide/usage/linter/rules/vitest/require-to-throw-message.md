@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-to-throw-message"
+title: "vitest/require-to-throw-message | Oxlint"
+rule: "vitest/require-to-throw-message"
 category: "Correctness"
 version: "0.2.9"
 default: false

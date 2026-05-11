@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-type-error"
+title: "unicorn/prefer-type-error | Oxlint"
+rule: "unicorn/prefer-type-error"
 category: "Pedantic"
 version: "0.0.16"
 default: false

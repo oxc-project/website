@@ -1,5 +1,6 @@
 ---
-title: "unicorn/consistent-empty-array-spread"
+title: "unicorn/consistent-empty-array-spread | Oxlint"
+rule: "unicorn/consistent-empty-array-spread"
 category: "Pedantic"
 version: "0.10.1"
 default: false

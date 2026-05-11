@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-destructuring"
+title: "eslint/prefer-destructuring | Oxlint"
+rule: "eslint/prefer-destructuring"
 category: "Style"
 version: "1.10.0"
 default: false

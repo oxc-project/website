@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-be-truthy"
+title: "vitest/prefer-to-be-truthy | Oxlint"
+rule: "vitest/prefer-to-be-truthy"
 category: "Style"
 version: "0.7.1"
 default: false

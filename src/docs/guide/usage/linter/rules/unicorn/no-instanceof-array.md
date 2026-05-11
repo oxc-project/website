@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-instanceof-array"
+title: "unicorn/no-instanceof-array | Oxlint"
+rule: "unicorn/no-instanceof-array"
 category: "Pedantic"
 version: "0.0.8"
 default: false

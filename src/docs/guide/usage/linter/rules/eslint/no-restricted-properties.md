@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-restricted-properties"
+title: "eslint/no-restricted-properties | Oxlint"
+rule: "eslint/no-restricted-properties"
 category: "Restriction"
 version: "1.63.0"
 default: false

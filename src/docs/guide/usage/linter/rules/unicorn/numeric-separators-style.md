@@ -1,5 +1,6 @@
 ---
-title: "unicorn/numeric-separators-style"
+title: "unicorn/numeric-separators-style | Oxlint"
+rule: "unicorn/numeric-separators-style"
 category: "Style"
 version: "0.0.19"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "promise/no-return-wrap"
+title: "promise/no-return-wrap | Oxlint"
+rule: "promise/no-return-wrap"
 category: "Style"
 version: "0.15.14"
 default: false

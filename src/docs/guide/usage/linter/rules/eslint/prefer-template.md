@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-template"
+title: "eslint/prefer-template | Oxlint"
+rule: "eslint/prefer-template"
 category: "Style"
 version: "1.12.0"
 default: false

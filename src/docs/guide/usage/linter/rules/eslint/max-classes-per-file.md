@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-classes-per-file"
+title: "eslint/max-classes-per-file | Oxlint"
+rule: "eslint/max-classes-per-file"
 category: "Pedantic"
 version: "0.3.4"
 default: false

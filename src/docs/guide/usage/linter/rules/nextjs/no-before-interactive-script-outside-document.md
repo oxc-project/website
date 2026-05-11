@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-before-interactive-script-outside-document"
+title: "nextjs/no-before-interactive-script-outside-document | Oxlint"
+rule: "nextjs/no-before-interactive-script-outside-document"
 category: "Correctness"
 version: "0.2.7"
 default: false

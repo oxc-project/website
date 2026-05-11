@@ -1,5 +1,6 @@
 ---
-title: "typescript/explicit-module-boundary-types"
+title: "typescript/explicit-module-boundary-types | Oxlint"
+rule: "typescript/explicit-module-boundary-types"
 category: "Restriction"
 version: "1.9.0"
 default: false

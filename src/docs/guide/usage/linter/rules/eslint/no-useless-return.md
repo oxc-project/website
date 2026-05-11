@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-return"
+title: "eslint/no-useless-return | Oxlint"
+rule: "eslint/no-useless-return"
 category: "Pedantic"
 version: "1.32.0"
 default: false

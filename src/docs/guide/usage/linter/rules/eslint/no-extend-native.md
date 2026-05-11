@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-extend-native"
+title: "eslint/no-extend-native | Oxlint"
+rule: "eslint/no-extend-native"
 category: "Suspicious"
 version: "0.9.7"
 default: false

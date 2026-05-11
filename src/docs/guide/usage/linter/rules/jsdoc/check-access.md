@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/check-access"
+title: "jsdoc/check-access | Oxlint"
+rule: "jsdoc/check-access"
 category: "Restriction"
 version: "0.2.16"
 default: false

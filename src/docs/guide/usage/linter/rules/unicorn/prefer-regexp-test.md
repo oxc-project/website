@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-regexp-test"
+title: "unicorn/prefer-regexp-test | Oxlint"
+rule: "unicorn/prefer-regexp-test"
 category: "Pedantic"
 version: "0.0.16"
 default: false

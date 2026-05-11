@@ -1,5 +1,6 @@
 ---
-title: "oxc/approx-constant"
+title: "oxc/approx-constant | Oxlint"
+rule: "oxc/approx-constant"
 category: "Suspicious"
 version: "0.1.1"
 default: false

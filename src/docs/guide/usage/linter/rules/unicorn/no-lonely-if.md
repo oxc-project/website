@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-lonely-if"
+title: "unicorn/no-lonely-if | Oxlint"
+rule: "unicorn/no-lonely-if"
 category: "Pedantic"
 version: "0.0.18"
 default: false

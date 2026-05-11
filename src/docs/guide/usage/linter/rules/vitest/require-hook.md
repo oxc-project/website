@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-hook"
+title: "vitest/require-hook | Oxlint"
+rule: "vitest/require-hook"
 category: "Style"
 version: "0.3.2"
 default: false

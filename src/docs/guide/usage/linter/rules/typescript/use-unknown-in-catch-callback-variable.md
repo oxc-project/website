@@ -1,5 +1,6 @@
 ---
-title: "typescript/use-unknown-in-catch-callback-variable"
+title: "typescript/use-unknown-in-catch-callback-variable | Oxlint"
+rule: "typescript/use-unknown-in-catch-callback-variable"
 category: "Restriction"
 version: "1.12.0"
 default: false

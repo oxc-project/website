@@ -1,5 +1,6 @@
 ---
-title: "eslint/default-case"
+title: "eslint/default-case | Oxlint"
+rule: "eslint/default-case"
 category: "Restriction"
 version: "0.4.0"
 default: false

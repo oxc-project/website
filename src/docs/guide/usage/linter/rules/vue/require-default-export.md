@@ -1,5 +1,6 @@
 ---
-title: "vue/require-default-export"
+title: "vue/require-default-export | Oxlint"
+rule: "vue/require-default-export"
 category: "Suspicious"
 version: "1.21.0"
 default: false

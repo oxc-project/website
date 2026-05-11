@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-large-snapshots"
+title: "vitest/no-large-snapshots | Oxlint"
+rule: "vitest/no-large-snapshots"
 category: "Style"
 version: "0.4.3"
 default: false

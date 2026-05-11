@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-async-await"
+title: "oxc/no-async-await | Oxlint"
+rule: "oxc/no-async-await"
 category: "Restriction"
 version: "0.4.2"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-declaration-merging"
+title: "typescript/no-unsafe-declaration-merging | Oxlint"
+rule: "typescript/no-unsafe-declaration-merging"
 category: "Correctness"
 version: "0.0.11"
 default: true

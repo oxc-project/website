@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-meaningless-void-operator"
+title: "typescript/no-meaningless-void-operator | Oxlint"
+rule: "typescript/no-meaningless-void-operator"
 category: "Correctness"
 version: "1.12.0"
 default: true

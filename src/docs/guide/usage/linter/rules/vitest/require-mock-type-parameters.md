@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-mock-type-parameters"
+title: "vitest/require-mock-type-parameters | Oxlint"
+rule: "vitest/require-mock-type-parameters"
 category: "Correctness"
 version: "1.58.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-called-once"
+title: "vitest/prefer-called-once | Oxlint"
+rule: "vitest/prefer-called-once"
 category: "Style"
 version: "1.39.0"
 default: false

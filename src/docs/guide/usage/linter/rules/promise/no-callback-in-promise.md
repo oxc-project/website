@@ -1,5 +1,6 @@
 ---
-title: "promise/no-callback-in-promise"
+title: "promise/no-callback-in-promise | Oxlint"
+rule: "promise/no-callback-in-promise"
 category: "Correctness"
 version: "0.10.0"
 default: false

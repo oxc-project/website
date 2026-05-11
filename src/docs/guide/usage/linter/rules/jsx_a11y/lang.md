@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/lang"
+title: "jsx-a11y/lang | Oxlint"
+rule: "jsx-a11y/lang"
 category: "Correctness"
 version: "0.1.1"
 default: false

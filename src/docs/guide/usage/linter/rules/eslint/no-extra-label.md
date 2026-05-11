@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-extra-label"
+title: "eslint/no-extra-label | Oxlint"
+rule: "eslint/no-extra-label"
 category: "Style"
 version: "0.15.4"
 default: false

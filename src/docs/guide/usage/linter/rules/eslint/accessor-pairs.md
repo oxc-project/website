@@ -1,5 +1,6 @@
 ---
-title: "eslint/accessor-pairs"
+title: "eslint/accessor-pairs | Oxlint"
+rule: "eslint/accessor-pairs"
 category: "Pedantic"
 version: "1.33.0"
 default: false

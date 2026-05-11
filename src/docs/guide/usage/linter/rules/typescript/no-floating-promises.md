@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-floating-promises"
+title: "typescript/no-floating-promises | Oxlint"
+rule: "typescript/no-floating-promises"
 category: "Correctness"
 version: "1.11.0"
 default: true
@@ -136,9 +137,13 @@ Supports four types of specifiers:
 
 type: `"file"`
 
+Must be "file"
+
 ##### allowForKnownSafeCalls[n].name
 
 type: `array | string`
+
+The name(s) of the type or value to match
 
 Name specifier that can be a single string or array of strings
 
@@ -201,9 +206,13 @@ Supports four types of specifiers:
 
 type: `"file"`
 
+Must be "file"
+
 ##### allowForKnownSafePromises[n].name
 
 type: `array | string`
+
+The name(s) of the type or value to match
 
 Name specifier that can be a single string or array of strings
 

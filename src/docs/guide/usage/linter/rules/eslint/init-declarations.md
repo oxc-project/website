@@ -1,5 +1,6 @@
 ---
-title: "eslint/init-declarations"
+title: "eslint/init-declarations | Oxlint"
+rule: "eslint/init-declarations"
 category: "Style"
 version: "0.15.11"
 default: false

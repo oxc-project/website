@@ -1,5 +1,6 @@
 ---
-title: "vue/no-import-compiler-macros"
+title: "vue/no-import-compiler-macros | Oxlint"
+rule: "vue/no-import-compiler-macros"
 category: "Restriction"
 version: "1.21.0"
 default: false

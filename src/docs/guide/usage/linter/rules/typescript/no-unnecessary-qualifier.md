@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-qualifier"
+title: "typescript/no-unnecessary-qualifier | Oxlint"
+rule: "typescript/no-unnecessary-qualifier"
 category: "Style"
 version: "1.49.0"
 default: false

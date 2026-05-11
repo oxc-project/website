@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-iterator-to-array"
+title: "unicorn/no-useless-iterator-to-array | Oxlint"
+rule: "unicorn/no-useless-iterator-to-array"
 category: "Nursery"
 version: "1.59.0"
 default: false

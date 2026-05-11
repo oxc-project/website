@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-condition"
+title: "typescript/no-unnecessary-condition | Oxlint"
+rule: "typescript/no-unnecessary-condition"
 category: "Nursery"
 version: "1.48.0"
 default: false

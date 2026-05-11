@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unsafe-finally"
+title: "eslint/no-unsafe-finally | Oxlint"
+rule: "eslint/no-unsafe-finally"
 category: "Correctness"
 version: "0.0.5"
 default: true

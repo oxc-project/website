@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-extra-boolean-cast"
+title: "eslint/no-extra-boolean-cast | Oxlint"
+rule: "eslint/no-extra-boolean-cast"
 category: "Correctness"
 version: "0.0.8"
 default: true

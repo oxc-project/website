@@ -1,5 +1,6 @@
 ---
-title: "oxc/bad-array-method-on-arguments"
+title: "oxc/bad-array-method-on-arguments | Oxlint"
+rule: "oxc/bad-array-method-on-arguments"
 category: "Correctness"
 version: "0.0.3"
 default: true

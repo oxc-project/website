@@ -1,5 +1,6 @@
 ---
-title: "node/global-require"
+title: "node/global-require | Oxlint"
+rule: "node/global-require"
 category: "Style"
 version: "1.36.0"
 default: false

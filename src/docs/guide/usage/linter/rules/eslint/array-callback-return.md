@@ -1,5 +1,6 @@
 ---
-title: "eslint/array-callback-return"
+title: "eslint/array-callback-return | Oxlint"
+rule: "eslint/array-callback-return"
 category: "Pedantic"
 version: "0.0.3"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-props-no-spread-multi"
+title: "react/jsx-props-no-spread-multi | Oxlint"
+rule: "react/jsx-props-no-spread-multi"
 category: "Correctness"
 version: "0.7.2"
 default: false

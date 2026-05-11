@@ -1,5 +1,6 @@
 ---
-title: "eslint/constructor-super"
+title: "eslint/constructor-super | Oxlint"
+rule: "eslint/constructor-super"
 category: "Correctness"
 version: "0.0.3"
 default: true

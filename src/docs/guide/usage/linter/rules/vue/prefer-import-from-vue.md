@@ -1,5 +1,6 @@
 ---
-title: "vue/prefer-import-from-vue"
+title: "vue/prefer-import-from-vue | Oxlint"
+rule: "vue/prefer-import-from-vue"
 category: "Correctness"
 version: "1.20.0"
 default: false

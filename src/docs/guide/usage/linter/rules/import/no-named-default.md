@@ -1,5 +1,6 @@
 ---
-title: "import/no-named-default"
+title: "import/no-named-default | Oxlint"
+rule: "import/no-named-default"
 category: "Style"
 version: "0.15.3"
 default: false

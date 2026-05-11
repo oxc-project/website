@@ -1,5 +1,6 @@
 ---
-title: "typescript/ban-tslint-comment"
+title: "typescript/ban-tslint-comment | Oxlint"
+rule: "typescript/ban-tslint-comment"
 category: "Style"
 version: "0.2.9"
 default: false

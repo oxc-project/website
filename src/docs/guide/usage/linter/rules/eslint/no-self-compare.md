@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-self-compare"
+title: "eslint/no-self-compare | Oxlint"
+rule: "eslint/no-self-compare"
 category: "Pedantic"
 version: "0.0.3"
 default: false

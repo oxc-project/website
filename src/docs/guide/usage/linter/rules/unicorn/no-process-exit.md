@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-process-exit"
+title: "unicorn/no-process-exit | Oxlint"
+rule: "unicorn/no-process-exit"
 category: "Restriction"
 version: "0.2.9"
 default: false

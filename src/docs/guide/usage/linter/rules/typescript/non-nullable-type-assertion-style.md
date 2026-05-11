@@ -1,5 +1,6 @@
 ---
-title: "typescript/non-nullable-type-assertion-style"
+title: "typescript/non-nullable-type-assertion-style | Oxlint"
+rule: "typescript/non-nullable-type-assertion-style"
 category: "Restriction"
 version: "1.12.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/valid-expect"
+title: "vitest/valid-expect | Oxlint"
+rule: "vitest/valid-expect"
 category: "Correctness"
 version: "0.0.14"
 default: false

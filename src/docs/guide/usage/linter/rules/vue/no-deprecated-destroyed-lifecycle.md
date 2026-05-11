@@ -1,5 +1,6 @@
 ---
-title: "vue/no-deprecated-destroyed-lifecycle"
+title: "vue/no-deprecated-destroyed-lifecycle | Oxlint"
+rule: "vue/no-deprecated-destroyed-lifecycle"
 category: "Correctness"
 version: "1.35.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/preserve-caught-error"
+title: "eslint/preserve-caught-error | Oxlint"
+rule: "eslint/preserve-caught-error"
 category: "Suspicious"
 version: "1.16.0"
 default: false

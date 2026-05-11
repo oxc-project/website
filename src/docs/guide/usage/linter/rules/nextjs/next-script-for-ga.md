@@ -1,5 +1,6 @@
 ---
-title: "nextjs/next-script-for-ga"
+title: "nextjs/next-script-for-ga | Oxlint"
+rule: "nextjs/next-script-for-ga"
 category: "Correctness"
 version: "0.2.0"
 default: false

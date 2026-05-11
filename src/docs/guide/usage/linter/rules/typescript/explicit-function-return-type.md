@@ -1,5 +1,6 @@
 ---
-title: "typescript/explicit-function-return-type"
+title: "typescript/explicit-function-return-type | Oxlint"
+rule: "typescript/explicit-function-return-type"
 category: "Restriction"
 version: "0.4.4"
 default: false

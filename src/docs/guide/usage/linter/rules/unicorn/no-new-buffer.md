@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-new-buffer"
+title: "unicorn/no-new-buffer | Oxlint"
+rule: "unicorn/no-new-buffer"
 category: "Pedantic"
 version: "0.0.16"
 default: false

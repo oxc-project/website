@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-spy-on"
+title: "vitest/prefer-spy-on | Oxlint"
+rule: "vitest/prefer-spy-on"
 category: "Style"
 version: "0.2.14"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-logical-operator-over-ternary"
+title: "unicorn/prefer-logical-operator-over-ternary | Oxlint"
+rule: "unicorn/prefer-logical-operator-over-ternary"
 category: "Style"
 version: "0.0.15"
 default: false

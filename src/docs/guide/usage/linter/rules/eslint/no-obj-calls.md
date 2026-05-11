@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-obj-calls"
+title: "eslint/no-obj-calls | Oxlint"
+rule: "eslint/no-obj-calls"
 category: "Correctness"
 version: "0.0.7"
 default: true

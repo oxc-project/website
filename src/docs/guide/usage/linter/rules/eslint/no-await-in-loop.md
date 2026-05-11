@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-await-in-loop"
+title: "eslint/no-await-in-loop | Oxlint"
+rule: "eslint/no-await-in-loop"
 category: "Perf"
 version: "0.3.2"
 default: false

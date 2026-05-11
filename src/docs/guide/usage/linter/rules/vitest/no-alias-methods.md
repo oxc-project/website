@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-alias-methods"
+title: "vitest/no-alias-methods | Oxlint"
+rule: "vitest/no-alias-methods"
 category: "Style"
 version: "0.0.12"
 default: false

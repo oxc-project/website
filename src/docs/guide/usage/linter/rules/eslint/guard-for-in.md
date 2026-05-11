@@ -1,5 +1,6 @@
 ---
-title: "eslint/guard-for-in"
+title: "eslint/guard-for-in | Oxlint"
+rule: "eslint/guard-for-in"
 category: "Style"
 version: "0.2.14"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-img-element"
+title: "nextjs/no-img-element | Oxlint"
+rule: "nextjs/no-img-element"
 category: "Correctness"
 version: "0.2.0"
 default: false

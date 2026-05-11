@@ -1,5 +1,6 @@
 ---
-title: "unicorn/switch-case-braces"
+title: "unicorn/switch-case-braces | Oxlint"
+rule: "unicorn/switch-case-braces"
 category: "Style"
 version: "0.0.15"
 default: false

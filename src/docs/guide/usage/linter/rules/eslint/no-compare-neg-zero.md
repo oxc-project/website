@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-compare-neg-zero"
+title: "eslint/no-compare-neg-zero | Oxlint"
+rule: "eslint/no-compare-neg-zero"
 category: "Correctness"
 version: "0.0.3"
 default: true

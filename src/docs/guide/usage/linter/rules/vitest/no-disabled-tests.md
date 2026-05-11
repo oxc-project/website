@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-disabled-tests"
+title: "vitest/no-disabled-tests | Oxlint"
+rule: "vitest/no-disabled-tests"
 category: "Correctness"
 version: "0.0.7"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/aria-proptypes"
+title: "jsx-a11y/aria-proptypes | Oxlint"
+rule: "jsx-a11y/aria-proptypes"
 category: "Correctness"
 version: "1.36.0"
 default: false

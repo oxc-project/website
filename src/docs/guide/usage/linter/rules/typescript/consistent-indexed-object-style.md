@@ -1,5 +1,6 @@
 ---
-title: "typescript/consistent-indexed-object-style"
+title: "typescript/consistent-indexed-object-style | Oxlint"
+rule: "typescript/consistent-indexed-object-style"
 category: "Style"
 version: "0.4.2"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vue/no-deprecated-vue-config-keycodes"
+title: "vue/no-deprecated-vue-config-keycodes | Oxlint"
+rule: "vue/no-deprecated-vue-config-keycodes"
 category: "Correctness"
 version: "1.62.0"
 default: false

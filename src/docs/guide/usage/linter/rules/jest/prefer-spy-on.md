@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-spy-on"
+title: "jest/prefer-spy-on | Oxlint"
+rule: "jest/prefer-spy-on"
 category: "Style"
 version: "0.2.14"
 default: false

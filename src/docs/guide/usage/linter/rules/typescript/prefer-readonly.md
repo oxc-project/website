@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-readonly"
+title: "typescript/prefer-readonly | Oxlint"
+rule: "typescript/prefer-readonly"
 category: "Style"
 version: "0.0.8"
 default: false

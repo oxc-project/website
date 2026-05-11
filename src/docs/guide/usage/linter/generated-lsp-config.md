@@ -64,6 +64,24 @@ type: `"safe_fix" | "safe_fix_or_suggestion" | "dangerous_fix" | "dangerous_fix_
 
 What kind of fixes to generate for code actions.
 
+## rulesCustomization
+
+type: `Record<string, object>`
+
+Customization for individual rules, allows to override the linter's diagnostics and autofix.
+Example of lowering the severity of "no-unused-vars" rule to "hint" and disabling autofix for it:
+
+```json
+{
+  "rulesCustomization": {
+    "no-unused-vars": {
+      "severity": "hint",
+      "autofix": false
+    }
+  }
+}
+```
+
 ## run
 
 type: `"onSave" | "onType"`

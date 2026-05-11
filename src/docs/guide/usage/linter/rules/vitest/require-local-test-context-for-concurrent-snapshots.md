@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-local-test-context-for-concurrent-snapshots"
+title: "vitest/require-local-test-context-for-concurrent-snapshots | Oxlint"
+rule: "vitest/require-local-test-context-for-concurrent-snapshots"
 category: "Correctness"
 version: "0.8.0"
 default: false

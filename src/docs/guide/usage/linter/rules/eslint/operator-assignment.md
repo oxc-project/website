@@ -1,5 +1,6 @@
 ---
-title: "eslint/operator-assignment"
+title: "eslint/operator-assignment | Oxlint"
+rule: "eslint/operator-assignment"
 category: "Style"
 version: "0.15.13"
 default: false

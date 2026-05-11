@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-import-meta-properties"
+title: "unicorn/prefer-import-meta-properties | Oxlint"
+rule: "unicorn/prefer-import-meta-properties"
 category: "Pedantic"
 version: "1.59.0"
 default: false

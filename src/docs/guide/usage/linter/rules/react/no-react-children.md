@@ -1,5 +1,6 @@
 ---
-title: "react/no-react-children"
+title: "react/no-react-children | Oxlint"
+rule: "react/no-react-children"
 category: "Restriction"
 version: "1.53.0"
 default: false

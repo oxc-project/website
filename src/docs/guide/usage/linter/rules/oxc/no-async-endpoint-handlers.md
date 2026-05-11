@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-async-endpoint-handlers"
+title: "oxc/no-async-endpoint-handlers | Oxlint"
+rule: "oxc/no-async-endpoint-handlers"
 category: "Suspicious"
 version: "0.9.2"
 default: false

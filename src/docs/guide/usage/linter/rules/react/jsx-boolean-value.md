@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-boolean-value"
+title: "react/jsx-boolean-value | Oxlint"
+rule: "react/jsx-boolean-value"
 category: "Style"
 version: "0.7.0"
 default: false

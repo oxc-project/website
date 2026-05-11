@@ -1,5 +1,6 @@
 ---
-title: "typescript/restrict-plus-operands"
+title: "typescript/restrict-plus-operands | Oxlint"
+rule: "typescript/restrict-plus-operands"
 category: "Pedantic"
 version: "1.12.0"
 default: false

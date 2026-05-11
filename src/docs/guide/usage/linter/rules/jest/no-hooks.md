@@ -1,5 +1,6 @@
 ---
-title: "jest/no-hooks"
+title: "jest/no-hooks | Oxlint"
+rule: "jest/no-hooks"
 category: "Style"
 version: "0.0.16"
 default: false

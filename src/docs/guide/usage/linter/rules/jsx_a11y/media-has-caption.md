@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/media-has-caption"
+title: "jsx-a11y/media-has-caption | Oxlint"
+rule: "jsx-a11y/media-has-caption"
 category: "Correctness"
 version: "0.1.1"
 default: false

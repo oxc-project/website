@@ -1,5 +1,6 @@
 ---
-title: "eslint/yoda"
+title: "eslint/yoda | Oxlint"
+rule: "eslint/yoda"
 category: "Style"
 version: "0.14.1"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "promise/no-new-statics"
+title: "promise/no-new-statics | Oxlint"
+rule: "promise/no-new-statics"
 category: "Correctness"
 version: "0.6.1"
 default: false

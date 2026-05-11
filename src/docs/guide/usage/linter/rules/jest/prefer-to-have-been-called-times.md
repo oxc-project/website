@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-to-have-been-called-times"
+title: "jest/prefer-to-have-been-called-times | Oxlint"
+rule: "jest/prefer-to-have-been-called-times"
 category: "Style"
 version: "1.34.0"
 default: false

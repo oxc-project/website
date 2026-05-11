@@ -1,5 +1,6 @@
 ---
-title: "promise/param-names"
+title: "promise/param-names | Oxlint"
+rule: "promise/param-names"
 category: "Style"
 version: "0.6.1"
 default: false

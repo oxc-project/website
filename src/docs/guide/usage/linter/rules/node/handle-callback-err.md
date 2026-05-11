@@ -1,5 +1,6 @@
 ---
-title: "node/handle-callback-err"
+title: "node/handle-callback-err | Oxlint"
+rule: "node/handle-callback-err"
 category: "Restriction"
 version: "1.56.0"
 default: false

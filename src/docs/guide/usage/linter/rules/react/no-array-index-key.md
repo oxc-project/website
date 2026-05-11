@@ -1,5 +1,6 @@
 ---
-title: "react/no-array-index-key"
+title: "react/no-array-index-key | Oxlint"
+rule: "react/no-array-index-key"
 category: "Perf"
 version: "0.13.0"
 default: false

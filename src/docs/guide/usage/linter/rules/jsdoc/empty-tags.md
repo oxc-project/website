@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/empty-tags"
+title: "jsdoc/empty-tags | Oxlint"
+rule: "jsdoc/empty-tags"
 category: "Restriction"
 version: "0.2.16"
 default: false

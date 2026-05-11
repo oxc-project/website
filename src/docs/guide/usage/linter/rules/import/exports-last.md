@@ -1,5 +1,6 @@
 ---
-title: "import/exports-last"
+title: "import/exports-last | Oxlint"
+rule: "import/exports-last"
 category: "Style"
 version: "0.15.14"
 default: false

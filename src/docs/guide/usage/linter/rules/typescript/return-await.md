@@ -1,5 +1,6 @@
 ---
-title: "typescript/return-await"
+title: "typescript/return-await | Oxlint"
+rule: "typescript/return-await"
 category: "Pedantic"
 version: "1.12.0"
 default: false

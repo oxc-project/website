@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-regex-spaces"
+title: "eslint/no-regex-spaces | Oxlint"
+rule: "eslint/no-regex-spaces"
 category: "Restriction"
 version: "0.0.18"
 default: false

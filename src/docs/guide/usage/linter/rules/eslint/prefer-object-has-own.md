@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-object-has-own"
+title: "eslint/prefer-object-has-own | Oxlint"
+rule: "eslint/prefer-object-has-own"
 category: "Style"
 version: "0.11.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-strict-equal"
+title: "vitest/prefer-strict-equal | Oxlint"
+rule: "vitest/prefer-strict-equal"
 category: "Style"
 version: "0.2.13"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-length-as-slice-end"
+title: "unicorn/no-length-as-slice-end | Oxlint"
+rule: "unicorn/no-length-as-slice-end"
 category: "Restriction"
 version: "0.7.0"
 default: false

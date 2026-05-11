@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-array-delete"
+title: "typescript/no-array-delete | Oxlint"
+rule: "typescript/no-array-delete"
 category: "Correctness"
 version: "1.12.0"
 default: true

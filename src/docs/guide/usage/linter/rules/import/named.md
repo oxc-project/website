@@ -1,5 +1,6 @@
 ---
-title: "import/named"
+title: "import/named | Oxlint"
+rule: "import/named"
 category: "Nursery"
 version: "0.0.13"
 default: false

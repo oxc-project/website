@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-add-event-listener"
+title: "unicorn/prefer-add-event-listener | Oxlint"
+rule: "unicorn/prefer-add-event-listener"
 category: "Suspicious"
 version: "0.0.16"
 default: false

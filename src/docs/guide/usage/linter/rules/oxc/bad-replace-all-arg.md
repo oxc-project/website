@@ -1,5 +1,6 @@
 ---
-title: "oxc/bad-replace-all-arg"
+title: "oxc/bad-replace-all-arg | Oxlint"
+rule: "oxc/bad-replace-all-arg"
 category: "Correctness"
 version: "0.0.22"
 default: true

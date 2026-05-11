@@ -1,5 +1,6 @@
 ---
-title: "eslint/curly"
+title: "eslint/curly | Oxlint"
+rule: "eslint/curly"
 category: "Style"
 version: "0.15.13"
 default: false

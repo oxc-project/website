@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-commented-out-tests"
+title: "vitest/no-commented-out-tests | Oxlint"
+rule: "vitest/no-commented-out-tests"
 category: "Suspicious"
 version: "0.0.8"
 default: false

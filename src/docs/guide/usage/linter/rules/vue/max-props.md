@@ -1,5 +1,6 @@
 ---
-title: "vue/max-props"
+title: "vue/max-props | Oxlint"
+rule: "vue/max-props"
 category: "Restriction"
 version: "1.19.0"
 default: false

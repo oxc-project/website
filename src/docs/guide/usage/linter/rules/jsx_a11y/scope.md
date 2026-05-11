@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/scope"
+title: "jsx-a11y/scope | Oxlint"
+rule: "jsx-a11y/scope"
 category: "Correctness"
 version: "0.0.19"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vue/define-emits-declaration"
+title: "vue/define-emits-declaration | Oxlint"
+rule: "vue/define-emits-declaration"
 category: "Style"
 version: "1.15.0"
 default: false

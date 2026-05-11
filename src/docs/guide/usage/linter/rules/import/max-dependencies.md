@@ -1,5 +1,6 @@
 ---
-title: "import/max-dependencies"
+title: "import/max-dependencies | Oxlint"
+rule: "import/max-dependencies"
 category: "Pedantic"
 version: "0.5.0"
 default: false

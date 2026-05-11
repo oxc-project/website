@@ -1,5 +1,6 @@
 ---
-title: "eslint/new-cap"
+title: "eslint/new-cap | Oxlint"
+rule: "eslint/new-cap"
 category: "Style"
 version: "0.15.5"
 default: false

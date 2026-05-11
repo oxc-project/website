@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-expect-assertions"
+title: "jest/prefer-expect-assertions | Oxlint"
+rule: "jest/prefer-expect-assertions"
 category: "Style"
 version: "1.62.0"
 default: false

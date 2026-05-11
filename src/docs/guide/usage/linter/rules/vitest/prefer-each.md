@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-each"
+title: "vitest/prefer-each | Oxlint"
+rule: "vitest/prefer-each"
 category: "Style"
 version: "0.9.0"
 default: false

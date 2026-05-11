@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-static-only-class"
+title: "unicorn/no-static-only-class | Oxlint"
+rule: "unicorn/no-static-only-class"
 category: "Pedantic"
 version: "0.0.16"
 default: false

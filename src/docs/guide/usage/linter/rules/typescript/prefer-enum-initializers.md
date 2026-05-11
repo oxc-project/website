@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-enum-initializers"
+title: "typescript/prefer-enum-initializers | Oxlint"
+rule: "typescript/prefer-enum-initializers"
 category: "Pedantic"
 version: "0.3.2"
 default: false

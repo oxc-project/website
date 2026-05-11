@@ -1,5 +1,6 @@
 ---
-title: "import/extensions"
+title: "import/extensions | Oxlint"
+rule: "import/extensions"
 category: "Restriction"
 version: "1.2.0"
 default: false
@@ -242,6 +243,8 @@ type: `object`
 ##### pathGroupOverrides[n].action
 
 type: `"enforce" | "ignore"`
+
+Action to take when pattern matches.
 
 Action to take for path group overrides.
 

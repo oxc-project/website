@@ -1,5 +1,6 @@
 ---
-title: "unicorn/consistent-assert"
+title: "unicorn/consistent-assert | Oxlint"
+rule: "unicorn/consistent-assert"
 category: "Pedantic"
 version: "0.16.9"
 default: false

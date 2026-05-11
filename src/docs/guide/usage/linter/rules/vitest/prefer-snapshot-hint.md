@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-snapshot-hint"
+title: "vitest/prefer-snapshot-hint | Oxlint"
+rule: "vitest/prefer-snapshot-hint"
 category: "Correctness"
 version: "1.59.0"
 default: false

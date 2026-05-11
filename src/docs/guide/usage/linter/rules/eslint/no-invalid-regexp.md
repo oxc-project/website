@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-invalid-regexp"
+title: "eslint/no-invalid-regexp | Oxlint"
+rule: "eslint/no-invalid-regexp"
 category: "Correctness"
 version: "0.9.4"
 default: true

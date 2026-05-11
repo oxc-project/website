@@ -1,5 +1,6 @@
 ---
-title: "unicorn/relative-url-style"
+title: "unicorn/relative-url-style | Oxlint"
+rule: "unicorn/relative-url-style"
 category: "Style"
 version: "1.44.0"
 default: false

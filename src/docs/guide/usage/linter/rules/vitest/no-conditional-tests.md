@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-conditional-tests"
+title: "vitest/no-conditional-tests | Oxlint"
+rule: "vitest/no-conditional-tests"
 category: "Correctness"
 version: "0.8.0"
 default: false

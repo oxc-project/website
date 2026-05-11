@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unexpected-multiline"
+title: "eslint/no-unexpected-multiline | Oxlint"
+rule: "eslint/no-unexpected-multiline"
 category: "Suspicious"
 version: "0.9.7"
 default: false

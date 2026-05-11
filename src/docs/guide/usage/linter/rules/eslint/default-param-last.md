@@ -1,5 +1,6 @@
 ---
-title: "eslint/default-param-last"
+title: "eslint/default-param-last | Oxlint"
+rule: "eslint/default-param-last"
 category: "Style"
 version: "0.2.15"
 default: false

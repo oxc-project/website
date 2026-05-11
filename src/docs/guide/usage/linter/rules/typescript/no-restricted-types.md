@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-restricted-types"
+title: "typescript/no-restricted-types | Oxlint"
+rule: "typescript/no-restricted-types"
 category: "Restriction"
 version: "1.31.0"
 default: false

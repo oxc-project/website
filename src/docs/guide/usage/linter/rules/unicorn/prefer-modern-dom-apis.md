@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-modern-dom-apis"
+title: "unicorn/prefer-modern-dom-apis | Oxlint"
+rule: "unicorn/prefer-modern-dom-apis"
 category: "Style"
 version: "0.0.20"
 default: false

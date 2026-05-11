@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-empty-object-type"
+title: "typescript/no-empty-object-type | Oxlint"
+rule: "typescript/no-empty-object-type"
 category: "Restriction"
 version: "0.12.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-label-var"
+title: "eslint/no-label-var | Oxlint"
+rule: "eslint/no-label-var"
 category: "Style"
 version: "0.6.0"
 default: false

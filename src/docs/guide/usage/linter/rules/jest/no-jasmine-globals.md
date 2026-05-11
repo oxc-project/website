@@ -1,5 +1,6 @@
 ---
-title: "jest/no-jasmine-globals"
+title: "jest/no-jasmine-globals | Oxlint"
+rule: "jest/no-jasmine-globals"
 category: "Style"
 version: "0.0.13"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jest/no-conditional-expect"
+title: "jest/no-conditional-expect | Oxlint"
+rule: "jest/no-conditional-expect"
 category: "Correctness"
 version: "0.0.12"
 default: false

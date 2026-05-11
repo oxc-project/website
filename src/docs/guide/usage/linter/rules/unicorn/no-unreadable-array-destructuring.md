@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-unreadable-array-destructuring"
+title: "unicorn/no-unreadable-array-destructuring | Oxlint"
+rule: "unicorn/no-unreadable-array-destructuring"
 category: "Style"
 version: "0.0.19"
 default: false

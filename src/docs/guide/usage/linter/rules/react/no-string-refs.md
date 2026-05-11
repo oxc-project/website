@@ -1,5 +1,6 @@
 ---
-title: "react/no-string-refs"
+title: "react/no-string-refs | Oxlint"
+rule: "react/no-string-refs"
 category: "Correctness"
 version: "0.0.15"
 default: false

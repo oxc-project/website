@@ -1,5 +1,6 @@
 ---
-title: "jest/valid-describe-callback"
+title: "jest/valid-describe-callback | Oxlint"
+rule: "jest/valid-describe-callback"
 category: "Correctness"
 version: "0.0.8"
 default: false

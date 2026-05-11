@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-switch-case"
+title: "unicorn/no-useless-switch-case | Oxlint"
+rule: "unicorn/no-useless-switch-case"
 category: "Pedantic"
 version: "0.0.18"
 default: false

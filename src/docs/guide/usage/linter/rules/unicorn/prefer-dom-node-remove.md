@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-dom-node-remove"
+title: "unicorn/prefer-dom-node-remove | Oxlint"
+rule: "unicorn/prefer-dom-node-remove"
 category: "Pedantic"
 version: "0.0.18"
 default: false

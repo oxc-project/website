@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-string-replace-all"
+title: "unicorn/prefer-string-replace-all | Oxlint"
+rule: "unicorn/prefer-string-replace-all"
 category: "Pedantic"
 version: "0.0.18"
 default: false

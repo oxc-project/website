@@ -1,5 +1,6 @@
 ---
-title: "unicorn/new-for-builtins"
+title: "unicorn/new-for-builtins | Oxlint"
+rule: "unicorn/new-for-builtins"
 category: "Pedantic"
 version: "0.0.16"
 default: false

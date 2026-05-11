@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-misleading-character-class"
+title: "eslint/no-misleading-character-class | Oxlint"
+rule: "eslint/no-misleading-character-class"
 category: "Correctness"
 version: "1.17.0"
 default: true

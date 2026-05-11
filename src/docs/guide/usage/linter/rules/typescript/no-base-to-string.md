@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-base-to-string"
+title: "typescript/no-base-to-string | Oxlint"
+rule: "typescript/no-base-to-string"
 category: "Correctness"
 version: "1.12.0"
 default: true

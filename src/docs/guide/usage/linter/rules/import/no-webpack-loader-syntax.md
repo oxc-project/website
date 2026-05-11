@@ -1,5 +1,6 @@
 ---
-title: "import/no-webpack-loader-syntax"
+title: "import/no-webpack-loader-syntax | Oxlint"
+rule: "import/no-webpack-loader-syntax"
 category: "Restriction"
 version: "0.7.0"
 default: false

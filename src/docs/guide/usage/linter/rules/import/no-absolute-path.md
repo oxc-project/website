@@ -1,5 +1,6 @@
 ---
-title: "import/no-absolute-path"
+title: "import/no-absolute-path | Oxlint"
+rule: "import/no-absolute-path"
 category: "Suspicious"
 version: "0.15.13"
 default: false

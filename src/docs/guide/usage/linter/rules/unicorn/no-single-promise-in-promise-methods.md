@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-single-promise-in-promise-methods"
+title: "unicorn/no-single-promise-in-promise-methods | Oxlint"
+rule: "unicorn/no-single-promise-in-promise-methods"
 category: "Correctness"
 version: "0.2.18"
 default: true

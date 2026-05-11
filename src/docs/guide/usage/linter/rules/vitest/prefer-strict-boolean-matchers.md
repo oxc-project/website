@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-strict-boolean-matchers"
+title: "vitest/prefer-strict-boolean-matchers | Oxlint"
+rule: "vitest/prefer-strict-boolean-matchers"
 category: "Style"
 version: "1.57.0"
 default: false

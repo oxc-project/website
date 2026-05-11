@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-equality-matcher"
+title: "vitest/prefer-equality-matcher | Oxlint"
+rule: "vitest/prefer-equality-matcher"
 category: "Style"
 version: "0.2.9"
 default: false

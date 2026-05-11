@@ -1,5 +1,6 @@
 ---
-title: "typescript/class-literal-property-style"
+title: "typescript/class-literal-property-style | Oxlint"
+rule: "typescript/class-literal-property-style"
 category: "Style"
 version: "1.47.0"
 default: false

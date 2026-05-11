@@ -1,5 +1,6 @@
 ---
-title: "unicorn/custom-error-definition"
+title: "unicorn/custom-error-definition | Oxlint"
+rule: "unicorn/custom-error-definition"
 category: "Style"
 version: "1.57.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "react/react-in-jsx-scope"
+title: "react/react-in-jsx-scope | Oxlint"
+rule: "react/react-in-jsx-scope"
 category: "Suspicious"
 version: "0.0.20"
 default: false

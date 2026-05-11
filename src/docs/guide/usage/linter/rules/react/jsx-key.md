@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-key"
+title: "react/jsx-key | Oxlint"
+rule: "react/jsx-key"
 category: "Correctness"
 version: "0.0.14"
 default: false
@@ -18,12 +19,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce `key` prop for elements in array.
+Enforce `key` prop for elements in an array.
 
 ### Why is this bad?
 
-React requires a `key` prop for elements in an array to help identify which
-items have changed, are added, or are removed.
+React [requires a `key` prop](https://react.dev/learn/rendering-lists#rendering-data-from-arrays)
+for elements in an array to help identify which items have changed, are added, or are removed.
 
 ### Examples
 

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-ternary"
+title: "eslint/no-ternary | Oxlint"
+rule: "eslint/no-ternary"
 category: "Style"
 version: "0.2.14"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-use-before-define"
+title: "eslint/no-use-before-define | Oxlint"
+rule: "eslint/no-use-before-define"
 category: "Restriction"
 version: "1.49.0"
 default: false

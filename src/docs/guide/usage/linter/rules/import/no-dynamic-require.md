@@ -1,5 +1,6 @@
 ---
-title: "import/no-dynamic-require"
+title: "import/no-dynamic-require | Oxlint"
+rule: "import/no-dynamic-require"
 category: "Restriction"
 version: "0.9.3"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/strict-boolean-expressions"
+title: "typescript/strict-boolean-expressions | Oxlint"
+rule: "typescript/strict-boolean-expressions"
 category: "Pedantic"
 version: "1.25.0"
 default: false

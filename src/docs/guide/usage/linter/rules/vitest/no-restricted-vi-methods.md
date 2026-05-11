@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-restricted-vi-methods"
+title: "vitest/no-restricted-vi-methods | Oxlint"
+rule: "vitest/no-restricted-vi-methods"
 category: "Style"
 version: "0.2.3"
 default: false

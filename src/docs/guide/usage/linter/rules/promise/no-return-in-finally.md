@@ -1,5 +1,6 @@
 ---
-title: "promise/no-return-in-finally"
+title: "promise/no-return-in-finally | Oxlint"
+rule: "promise/no-return-in-finally"
 category: "Nursery"
 version: "0.7.1"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-reflect-apply"
+title: "unicorn/prefer-reflect-apply | Oxlint"
+rule: "unicorn/prefer-reflect-apply"
 category: "Style"
 version: "0.0.19"
 default: false

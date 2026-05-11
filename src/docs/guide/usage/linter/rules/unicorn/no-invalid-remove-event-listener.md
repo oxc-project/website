@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-invalid-remove-event-listener"
+title: "unicorn/no-invalid-remove-event-listener | Oxlint"
+rule: "unicorn/no-invalid-remove-event-listener"
 category: "Correctness"
 version: "0.0.16"
 default: true

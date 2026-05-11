@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-magic-numbers"
+title: "eslint/no-magic-numbers | Oxlint"
+rule: "eslint/no-magic-numbers"
 category: "Style"
 version: "0.9.3"
 default: false

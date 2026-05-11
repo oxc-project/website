@@ -1,5 +1,6 @@
 ---
-title: "react/no-unknown-property"
+title: "react/no-unknown-property | Oxlint"
+rule: "react/no-unknown-property"
 category: "Restriction"
 version: "0.2.0"
 default: false

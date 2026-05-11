@@ -1,5 +1,6 @@
 ---
-title: "eslint/complexity"
+title: "eslint/complexity | Oxlint"
+rule: "eslint/complexity"
 category: "Restriction"
 version: "1.37.0"
 default: false

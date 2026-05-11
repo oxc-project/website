@@ -1,5 +1,6 @@
 ---
-title: "react/no-is-mounted"
+title: "react/no-is-mounted | Oxlint"
+rule: "react/no-is-mounted"
 category: "Correctness"
 version: "0.0.19"
 default: false

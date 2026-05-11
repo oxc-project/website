@@ -1,5 +1,6 @@
 ---
-title: "vue/no-arrow-functions-in-watch"
+title: "vue/no-arrow-functions-in-watch | Oxlint"
+rule: "vue/no-arrow-functions-in-watch"
 category: "Correctness"
 version: "1.39.0"
 default: false

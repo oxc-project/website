@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unused-private-class-members"
+title: "eslint/no-unused-private-class-members | Oxlint"
+rule: "eslint/no-unused-private-class-members"
 category: "Correctness"
 version: "0.1.1"
 default: true

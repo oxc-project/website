@@ -1,5 +1,6 @@
 ---
-title: "react/no-find-dom-node"
+title: "react/no-find-dom-node | Oxlint"
+rule: "react/no-find-dom-node"
 category: "Correctness"
 version: "0.0.15"
 default: false

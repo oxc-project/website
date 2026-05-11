@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-fallback-in-spread"
+title: "unicorn/no-useless-fallback-in-spread | Oxlint"
+rule: "unicorn/no-useless-fallback-in-spread"
 category: "Correctness"
 version: "0.0.16"
 default: true

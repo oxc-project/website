@@ -1,5 +1,6 @@
 ---
-title: "import/no-amd"
+title: "import/no-amd | Oxlint"
+rule: "import/no-amd"
 category: "Restriction"
 version: "0.0.16"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/require-number-to-fixed-digits-argument"
+title: "unicorn/require-number-to-fixed-digits-argument | Oxlint"
+rule: "unicorn/require-number-to-fixed-digits-argument"
 category: "Pedantic"
 version: "0.0.15"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-module"
+title: "unicorn/prefer-module | Oxlint"
+rule: "unicorn/prefer-module"
 category: "Restriction"
 version: "1.50.0"
 default: false

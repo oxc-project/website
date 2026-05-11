@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-negation-in-equality-check"
+title: "unicorn/no-negation-in-equality-check | Oxlint"
+rule: "unicorn/no-negation-in-equality-check"
 category: "Pedantic"
 version: "0.5.3"
 default: false

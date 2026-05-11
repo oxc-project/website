@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-anonymous-default-export"
+title: "unicorn/no-anonymous-default-export | Oxlint"
+rule: "unicorn/no-anonymous-default-export"
 category: "Restriction"
 version: "0.3.3"
 default: false

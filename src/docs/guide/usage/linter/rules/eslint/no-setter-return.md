@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-setter-return"
+title: "eslint/no-setter-return | Oxlint"
+rule: "eslint/no-setter-return"
 category: "Correctness"
 version: "0.0.3"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "jest/no-large-snapshots"
+title: "jest/no-large-snapshots | Oxlint"
+rule: "jest/no-large-snapshots"
 category: "Style"
 version: "0.4.3"
 default: false

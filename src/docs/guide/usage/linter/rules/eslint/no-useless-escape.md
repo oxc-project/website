@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-escape"
+title: "eslint/no-useless-escape | Oxlint"
+rule: "eslint/no-useless-escape"
 category: "Correctness"
 version: "0.0.5"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-delete-var"
+title: "eslint/no-delete-var | Oxlint"
+rule: "eslint/no-delete-var"
 category: "Correctness"
 version: "0.0.4"
 default: true

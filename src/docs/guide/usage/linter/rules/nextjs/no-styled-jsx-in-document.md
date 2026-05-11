@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-styled-jsx-in-document"
+title: "nextjs/no-styled-jsx-in-document | Oxlint"
+rule: "nextjs/no-styled-jsx-in-document"
 category: "Correctness"
 version: "0.3.3"
 default: false

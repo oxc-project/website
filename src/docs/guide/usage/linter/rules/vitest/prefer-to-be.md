@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-be"
+title: "vitest/prefer-to-be | Oxlint"
+rule: "vitest/prefer-to-be"
 category: "Style"
 version: "0.2.14"
 default: false

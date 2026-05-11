@@ -1,5 +1,6 @@
 ---
-title: "vitest/warn-todo"
+title: "vitest/warn-todo | Oxlint"
+rule: "vitest/warn-todo"
 category: "Correctness"
 version: "1.37.0"
 default: false

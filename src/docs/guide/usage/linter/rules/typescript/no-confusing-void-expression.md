@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-confusing-void-expression"
+title: "typescript/no-confusing-void-expression | Oxlint"
+rule: "typescript/no-confusing-void-expression"
 category: "Pedantic"
 version: "1.12.0"
 default: false

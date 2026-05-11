@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-object-as-default-parameter"
+title: "unicorn/no-object-as-default-parameter | Oxlint"
+rule: "unicorn/no-object-as-default-parameter"
 category: "Pedantic"
 version: "0.0.16"
 default: false

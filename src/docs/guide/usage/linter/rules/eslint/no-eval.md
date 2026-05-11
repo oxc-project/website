@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-eval"
+title: "eslint/no-eval | Oxlint"
+rule: "eslint/no-eval"
 category: "Correctness"
 version: "0.0.3"
 default: true

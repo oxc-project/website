@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/anchor-is-valid"
+title: "jsx-a11y/anchor-is-valid | Oxlint"
+rule: "jsx-a11y/anchor-is-valid"
 category: "Correctness"
 version: "0.0.19"
 default: false

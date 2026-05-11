@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-magic-array-flat-depth"
+title: "unicorn/no-magic-array-flat-depth | Oxlint"
+rule: "unicorn/no-magic-array-flat-depth"
 category: "Restriction"
 version: "0.4.2"
 default: false

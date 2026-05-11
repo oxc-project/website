@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-type-conversion"
+title: "typescript/no-unnecessary-type-conversion | Oxlint"
+rule: "typescript/no-unnecessary-type-conversion"
 category: "Suspicious"
 version: "1.49.0"
 default: false

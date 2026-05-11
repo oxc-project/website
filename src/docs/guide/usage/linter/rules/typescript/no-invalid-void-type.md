@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-invalid-void-type"
+title: "typescript/no-invalid-void-type | Oxlint"
+rule: "typescript/no-invalid-void-type"
 category: "Restriction"
 version: "1.47.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/parameter-properties"
+title: "typescript/parameter-properties | Oxlint"
+rule: "typescript/parameter-properties"
 category: "Style"
 version: "1.48.0"
 default: false

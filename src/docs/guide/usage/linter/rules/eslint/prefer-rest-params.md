@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-rest-params"
+title: "eslint/prefer-rest-params | Oxlint"
+rule: "eslint/prefer-rest-params"
 category: "Style"
 version: "0.15.4"
 default: false

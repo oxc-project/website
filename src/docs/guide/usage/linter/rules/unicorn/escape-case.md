@@ -1,5 +1,6 @@
 ---
-title: "unicorn/escape-case"
+title: "unicorn/escape-case | Oxlint"
+rule: "unicorn/escape-case"
 category: "Pedantic"
 version: "0.0.19"
 default: false

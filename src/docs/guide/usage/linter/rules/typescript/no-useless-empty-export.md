@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-useless-empty-export"
+title: "typescript/no-useless-empty-export | Oxlint"
+rule: "typescript/no-useless-empty-export"
 category: "Correctness"
 version: "0.4.4"
 default: true

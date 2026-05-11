@@ -1,5 +1,6 @@
 ---
-title: "jest/expect-expect"
+title: "jest/expect-expect | Oxlint"
+rule: "jest/expect-expect"
 category: "Correctness"
 version: "0.0.12"
 default: false

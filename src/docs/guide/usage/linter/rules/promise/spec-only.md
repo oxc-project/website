@@ -1,5 +1,6 @@
 ---
-title: "promise/spec-only"
+title: "promise/spec-only | Oxlint"
+rule: "promise/spec-only"
 category: "Restriction"
 version: "0.9.2"
 default: false

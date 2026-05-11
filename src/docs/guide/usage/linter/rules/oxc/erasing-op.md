@@ -1,5 +1,6 @@
 ---
-title: "oxc/erasing-op"
+title: "oxc/erasing-op | Oxlint"
+rule: "oxc/erasing-op"
 category: "Correctness"
 version: "0.1.1"
 default: true

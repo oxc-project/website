@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-each"
+title: "jest/prefer-each | Oxlint"
+rule: "jest/prefer-each"
 category: "Style"
 version: "0.9.0"
 default: false

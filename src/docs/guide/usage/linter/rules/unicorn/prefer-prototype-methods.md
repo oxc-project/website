@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-prototype-methods"
+title: "unicorn/prefer-prototype-methods | Oxlint"
+rule: "unicorn/prefer-prototype-methods"
 category: "Pedantic"
 version: "0.0.21"
 default: false

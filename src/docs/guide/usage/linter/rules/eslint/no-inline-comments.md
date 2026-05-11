@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-inline-comments"
+title: "eslint/no-inline-comments | Oxlint"
+rule: "eslint/no-inline-comments"
 category: "Pedantic"
 version: "1.34.0"
 default: false

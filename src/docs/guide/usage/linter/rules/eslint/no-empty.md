@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-empty"
+title: "eslint/no-empty | Oxlint"
+rule: "eslint/no-empty"
 category: "Restriction"
 version: "0.0.3"
 default: false

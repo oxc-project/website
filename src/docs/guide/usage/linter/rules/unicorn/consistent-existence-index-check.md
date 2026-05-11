@@ -1,5 +1,6 @@
 ---
-title: "unicorn/consistent-existence-index-check"
+title: "unicorn/consistent-existence-index-check | Oxlint"
+rule: "unicorn/consistent-existence-index-check"
 category: "Style"
 version: "0.12.0"
 default: false

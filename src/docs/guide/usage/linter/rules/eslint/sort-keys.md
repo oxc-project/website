@@ -1,5 +1,6 @@
 ---
-title: "eslint/sort-keys"
+title: "eslint/sort-keys | Oxlint"
+rule: "eslint/sort-keys"
 category: "Style"
 version: "0.9.4"
 default: false

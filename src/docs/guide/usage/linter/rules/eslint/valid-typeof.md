@@ -1,5 +1,6 @@
 ---
-title: "eslint/valid-typeof"
+title: "eslint/valid-typeof | Oxlint"
+rule: "eslint/valid-typeof"
 category: "Correctness"
 version: "0.0.3"
 default: true

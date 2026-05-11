@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-for-of"
+title: "typescript/prefer-for-of | Oxlint"
+rule: "typescript/prefer-for-of"
 category: "Style"
 version: "0.2.16"
 default: false

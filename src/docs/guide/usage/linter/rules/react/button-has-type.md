@@ -1,5 +1,6 @@
 ---
-title: "react/button-has-type"
+title: "react/button-has-type | Oxlint"
+rule: "react/button-has-type"
 category: "Restriction"
 version: "0.1.1"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/iframe-has-title"
+title: "jsx-a11y/iframe-has-title | Oxlint"
+rule: "jsx-a11y/iframe-has-title"
 category: "Correctness"
 version: "0.0.19"
 default: false

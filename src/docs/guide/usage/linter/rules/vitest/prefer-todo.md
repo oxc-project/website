@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-todo"
+title: "vitest/prefer-todo | Oxlint"
+rule: "vitest/prefer-todo"
 category: "Style"
 version: "0.0.16"
 default: false

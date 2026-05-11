@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-array-flat"
+title: "unicorn/prefer-array-flat | Oxlint"
+rule: "unicorn/prefer-array-flat"
 category: "Pedantic"
 version: "0.0.20"
 default: false

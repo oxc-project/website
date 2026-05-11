@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/tabindex-no-positive"
+title: "jsx-a11y/tabindex-no-positive | Oxlint"
+rule: "jsx-a11y/tabindex-no-positive"
 category: "Correctness"
 version: "0.0.21"
 default: false

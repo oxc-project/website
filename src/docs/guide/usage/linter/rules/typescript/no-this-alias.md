@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-this-alias"
+title: "typescript/no-this-alias | Oxlint"
+rule: "typescript/no-this-alias"
 category: "Correctness"
 version: "0.0.7"
 default: true

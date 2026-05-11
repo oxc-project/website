@@ -1,5 +1,6 @@
 ---
-title: "import/no-nodejs-modules"
+title: "import/no-nodejs-modules | Oxlint"
+rule: "import/no-nodejs-modules"
 category: "Style"
 version: "1.43.0"
 default: false

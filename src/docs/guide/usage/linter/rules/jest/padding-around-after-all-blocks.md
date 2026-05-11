@@ -1,5 +1,6 @@
 ---
-title: "jest/padding-around-after-all-blocks"
+title: "jest/padding-around-after-all-blocks | Oxlint"
+rule: "jest/padding-around-after-all-blocks"
 category: "Style"
 version: "1.59.0"
 default: false

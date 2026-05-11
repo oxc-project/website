@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-ts-expect-error"
+title: "typescript/prefer-ts-expect-error | Oxlint"
+rule: "typescript/prefer-ts-expect-error"
 category: "Pedantic"
 version: "0.2.11"
 default: false

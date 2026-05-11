@@ -1,5 +1,6 @@
 ---
-title: "react-perf/jsx-no-new-function-as-prop"
+title: "react-perf/jsx-no-new-function-as-prop | Oxlint"
+rule: "react-perf/jsx-no-new-function-as-prop"
 category: "Perf"
 version: "0.2.3"
 default: false

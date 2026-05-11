@@ -1,5 +1,6 @@
 ---
-title: "jest/no-restricted-jest-methods"
+title: "jest/no-restricted-jest-methods | Oxlint"
+rule: "jest/no-restricted-jest-methods"
 category: "Style"
 version: "0.2.3"
 default: false

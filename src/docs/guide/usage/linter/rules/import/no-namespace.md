@@ -1,5 +1,6 @@
 ---
-title: "import/no-namespace"
+title: "import/no-namespace | Oxlint"
+rule: "import/no-namespace"
 category: "Style"
 version: "0.12.0"
 default: false

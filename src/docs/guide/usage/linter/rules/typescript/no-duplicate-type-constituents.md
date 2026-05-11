@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-duplicate-type-constituents"
+title: "typescript/no-duplicate-type-constituents | Oxlint"
+rule: "typescript/no-duplicate-type-constituents"
 category: "Correctness"
 version: "1.12.0"
 default: true

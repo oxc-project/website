@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-deprecated"
+title: "typescript/no-deprecated | Oxlint"
+rule: "typescript/no-deprecated"
 category: "Pedantic"
 version: "1.26.0"
 default: false
@@ -113,9 +114,13 @@ Supports four types of specifiers:
 
 type: `"file"`
 
+Must be "file"
+
 ##### allow[n].name
 
 type: `array | string`
+
+The name(s) of the type or value to match
 
 Name specifier that can be a single string or array of strings
 

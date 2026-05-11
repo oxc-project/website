@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-at"
+title: "unicorn/prefer-at | Oxlint"
+rule: "unicorn/prefer-at"
 category: "Pedantic"
 version: "1.20.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-void"
+title: "eslint/no-void | Oxlint"
+rule: "eslint/no-void"
 category: "Restriction"
 version: "0.2.5"
 default: false

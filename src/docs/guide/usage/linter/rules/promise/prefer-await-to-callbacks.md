@@ -1,5 +1,6 @@
 ---
-title: "promise/prefer-await-to-callbacks"
+title: "promise/prefer-await-to-callbacks | Oxlint"
+rule: "promise/prefer-await-to-callbacks"
 category: "Style"
 version: "0.9.10"
 default: false

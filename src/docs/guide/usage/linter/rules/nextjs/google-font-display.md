@@ -1,5 +1,6 @@
 ---
-title: "nextjs/google-font-display"
+title: "nextjs/google-font-display | Oxlint"
+rule: "nextjs/google-font-display"
 category: "Correctness"
 version: "0.2.0"
 default: false

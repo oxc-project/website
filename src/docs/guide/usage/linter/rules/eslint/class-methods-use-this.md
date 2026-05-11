@@ -1,5 +1,6 @@
 ---
-title: "eslint/class-methods-use-this"
+title: "eslint/class-methods-use-this | Oxlint"
+rule: "eslint/class-methods-use-this"
 category: "Restriction"
 version: "1.16.0"
 default: false

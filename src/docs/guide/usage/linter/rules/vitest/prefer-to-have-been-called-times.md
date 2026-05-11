@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-have-been-called-times"
+title: "vitest/prefer-to-have-been-called-times | Oxlint"
+rule: "vitest/prefer-to-have-been-called-times"
 category: "Style"
 version: "1.34.0"
 default: false

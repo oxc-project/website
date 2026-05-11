@@ -1,5 +1,6 @@
 ---
-title: "react/no-did-mount-set-state"
+title: "react/no-did-mount-set-state | Oxlint"
+rule: "react/no-did-mount-set-state"
 category: "Correctness"
 version: "1.36.0"
 default: false

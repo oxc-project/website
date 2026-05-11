@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-func-assign"
+title: "eslint/no-func-assign | Oxlint"
+rule: "eslint/no-func-assign"
 category: "Correctness"
 version: "0.0.3"
 default: true

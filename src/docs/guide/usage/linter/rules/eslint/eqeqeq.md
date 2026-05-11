@@ -1,5 +1,6 @@
 ---
-title: "eslint/eqeqeq"
+title: "eslint/eqeqeq | Oxlint"
+rule: "eslint/eqeqeq"
 category: "Pedantic"
 version: "0.0.3"
 default: false
@@ -188,6 +189,9 @@ This option is an object with the following properties:
 #### null
 
 type: `"always" | "never" | "ignore"`
+
+Configuration for whether to allow/disallow comparisons against `null`,
+e.g. `foo == null` or `foo != null`
 
 ##### `"always"`
 

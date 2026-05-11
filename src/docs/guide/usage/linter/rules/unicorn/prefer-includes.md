@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-includes"
+title: "unicorn/prefer-includes | Oxlint"
+rule: "unicorn/prefer-includes"
 category: "Style"
 version: "0.0.18"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "react/no-danger-with-children"
+title: "react/no-danger-with-children | Oxlint"
+rule: "react/no-danger-with-children"
 category: "Correctness"
 version: "0.9.6"
 default: false

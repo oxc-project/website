@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-array-find"
+title: "unicorn/prefer-array-find | Oxlint"
+rule: "unicorn/prefer-array-find"
 category: "Perf"
 version: "0.16.12"
 default: false

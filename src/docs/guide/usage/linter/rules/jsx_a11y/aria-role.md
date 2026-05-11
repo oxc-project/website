@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/aria-role"
+title: "jsx-a11y/aria-role | Oxlint"
+rule: "jsx-a11y/aria-role"
 category: "Correctness"
 version: "0.1.1"
 default: false

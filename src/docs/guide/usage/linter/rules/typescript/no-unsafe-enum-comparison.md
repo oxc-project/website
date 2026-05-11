@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-enum-comparison"
+title: "typescript/no-unsafe-enum-comparison | Oxlint"
+rule: "typescript/no-unsafe-enum-comparison"
 category: "Suspicious"
 version: "1.12.0"
 default: false

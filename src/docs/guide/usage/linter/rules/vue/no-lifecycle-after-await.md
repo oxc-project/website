@@ -1,5 +1,6 @@
 ---
-title: "vue/no-lifecycle-after-await"
+title: "vue/no-lifecycle-after-await | Oxlint"
+rule: "vue/no-lifecycle-after-await"
 category: "Correctness"
 version: "1.39.0"
 default: false

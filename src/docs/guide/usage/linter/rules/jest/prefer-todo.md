@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-todo"
+title: "jest/prefer-todo | Oxlint"
+rule: "jest/prefer-todo"
 category: "Style"
 version: "0.0.16"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/related-getter-setter-pairs"
+title: "typescript/related-getter-setter-pairs | Oxlint"
+rule: "typescript/related-getter-setter-pairs"
 category: "Pedantic"
 version: "1.12.0"
 default: false

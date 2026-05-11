@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-catch"
+title: "eslint/no-useless-catch | Oxlint"
+rule: "eslint/no-useless-catch"
 category: "Correctness"
 version: "0.0.5"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "import/prefer-default-export"
+title: "import/prefer-default-export | Oxlint"
+rule: "import/prefer-default-export"
 category: "Style"
 version: "1.4.0"
 default: false

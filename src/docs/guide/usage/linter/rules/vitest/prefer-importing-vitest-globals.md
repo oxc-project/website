@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-importing-vitest-globals"
+title: "vitest/prefer-importing-vitest-globals | Oxlint"
+rule: "vitest/prefer-importing-vitest-globals"
 category: "Style"
 version: "1.59.0"
 default: false

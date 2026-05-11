@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-error-capture-stack-trace"
+title: "unicorn/no-useless-error-capture-stack-trace | Oxlint"
+rule: "unicorn/no-useless-error-capture-stack-trace"
 category: "Restriction"
 version: "1.20.0"
 default: false

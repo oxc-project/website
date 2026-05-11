@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-div-regex"
+title: "eslint/no-div-regex | Oxlint"
+rule: "eslint/no-div-regex"
 category: "Restriction"
 version: "0.4.2"
 default: false

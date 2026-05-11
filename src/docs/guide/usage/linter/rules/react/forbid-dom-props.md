@@ -1,5 +1,6 @@
 ---
-title: "react/forbid-dom-props"
+title: "react/forbid-dom-props | Oxlint"
+rule: "react/forbid-dom-props"
 category: "Restriction"
 version: "1.24.0"
 default: false
@@ -18,7 +19,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule prevents passing of props to elements. This rule only applies to DOM Nodes (e.g. <div />) and not Components (e.g. <Component />). The list of forbidden props can be customized with the forbid option.
+This rule prevents passing of props to elements. This rule only applies to DOM Nodes (e.g. `<div />`) and not Components (e.g. `<Component />`). The list of forbidden props can be customized with the forbid option.
 
 ### Why is this bad?
 

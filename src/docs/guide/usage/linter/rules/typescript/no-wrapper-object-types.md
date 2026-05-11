@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-wrapper-object-types"
+title: "typescript/no-wrapper-object-types | Oxlint"
+rule: "typescript/no-wrapper-object-types"
 category: "Correctness"
 version: "0.8.0"
 default: true

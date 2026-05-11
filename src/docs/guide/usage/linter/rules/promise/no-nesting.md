@@ -1,5 +1,6 @@
 ---
-title: "promise/no-nesting"
+title: "promise/no-nesting | Oxlint"
+rule: "promise/no-nesting"
 category: "Style"
 version: "0.15.13"
 default: false

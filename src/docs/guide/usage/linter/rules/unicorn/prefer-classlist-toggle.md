@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-classlist-toggle"
+title: "unicorn/prefer-classlist-toggle | Oxlint"
+rule: "unicorn/prefer-classlist-toggle"
 category: "Style"
 version: "1.20.0"
 default: false

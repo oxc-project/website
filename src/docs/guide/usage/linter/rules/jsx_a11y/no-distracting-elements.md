@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/no-distracting-elements"
+title: "jsx-a11y/no-distracting-elements | Oxlint"
+rule: "jsx-a11y/no-distracting-elements"
 category: "Correctness"
 version: "0.0.22"
 default: false

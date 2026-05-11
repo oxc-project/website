@@ -1,5 +1,6 @@
 ---
-title: "react/state-in-constructor"
+title: "react/state-in-constructor | Oxlint"
+rule: "react/state-in-constructor"
 category: "Style"
 version: "1.26.0"
 default: false

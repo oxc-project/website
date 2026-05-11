@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/no-redundant-roles"
+title: "jsx-a11y/no-redundant-roles | Oxlint"
+rule: "jsx-a11y/no-redundant-roles"
 category: "Correctness"
 version: "0.2.1"
 default: false
@@ -32,14 +33,14 @@ This rule applies for the following elements and their implicit roles:
 
 - `<nav>`: `navigation`
 - `<button>`: `button`
-- `<body>`: `document`
+- `<main>`: `main`
 
 Examples of **incorrect** code for this rule:
 
 ```jsx
 <nav role="navigation"></nav>
 <button role="button"></button>
-<body role="document"></body>
+<main role="main"></main>
 ```
 
 Examples of **correct** code for this rule:
@@ -47,7 +48,7 @@ Examples of **correct** code for this rule:
 ```jsx
 <nav></nav>
 <button></button>
-<body></body>
+<main></main>
 ```
 
 ## How to use

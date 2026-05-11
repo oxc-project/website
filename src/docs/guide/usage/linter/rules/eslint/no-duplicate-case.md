@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-duplicate-case"
+title: "eslint/no-duplicate-case | Oxlint"
+rule: "eslint/no-duplicate-case"
 category: "Correctness"
 version: "0.0.3"
 default: true

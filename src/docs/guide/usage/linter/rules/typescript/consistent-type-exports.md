@@ -1,5 +1,6 @@
 ---
-title: "typescript/consistent-type-exports"
+title: "typescript/consistent-type-exports | Oxlint"
+rule: "typescript/consistent-type-exports"
 category: "Style"
 version: "0.0.8"
 default: false

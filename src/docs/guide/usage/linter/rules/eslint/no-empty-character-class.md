@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-empty-character-class"
+title: "eslint/no-empty-character-class | Oxlint"
+rule: "eslint/no-empty-character-class"
 category: "Correctness"
 version: "0.0.7"
 default: true

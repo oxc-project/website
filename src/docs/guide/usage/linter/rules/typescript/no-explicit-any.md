@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-explicit-any"
+title: "typescript/no-explicit-any | Oxlint"
+rule: "typescript/no-explicit-any"
 category: "Restriction"
 version: "0.0.13"
 default: false

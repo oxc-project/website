@@ -1,5 +1,6 @@
 ---
-title: "jest/max-expects"
+title: "jest/max-expects | Oxlint"
+rule: "jest/max-expects"
 category: "Style"
 version: "0.0.18"
 default: false

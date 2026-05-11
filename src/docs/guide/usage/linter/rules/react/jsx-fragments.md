@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-fragments"
+title: "react/jsx-fragments | Oxlint"
+rule: "react/jsx-fragments"
 category: "Style"
 version: "1.12.0"
 default: false

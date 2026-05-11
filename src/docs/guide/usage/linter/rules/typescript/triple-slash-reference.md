@@ -1,5 +1,6 @@
 ---
-title: "typescript/triple-slash-reference"
+title: "typescript/triple-slash-reference | Oxlint"
+rule: "typescript/triple-slash-reference"
 category: "Correctness"
 version: "0.2.0"
 default: true

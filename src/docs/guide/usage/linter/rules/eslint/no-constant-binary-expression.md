@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-constant-binary-expression"
+title: "eslint/no-constant-binary-expression | Oxlint"
+rule: "eslint/no-constant-binary-expression"
 category: "Correctness"
 version: "0.0.3"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-this-in-exported-function"
+title: "oxc/no-this-in-exported-function | Oxlint"
+rule: "oxc/no-this-in-exported-function"
 category: "Suspicious"
 version: "1.33.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-control-regex"
+title: "eslint/no-control-regex | Oxlint"
+rule: "eslint/no-control-regex"
 category: "Correctness"
 version: "0.0.7"
 default: true

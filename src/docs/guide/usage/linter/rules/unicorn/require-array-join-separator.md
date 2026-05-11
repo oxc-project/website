@@ -1,5 +1,6 @@
 ---
-title: "unicorn/require-array-join-separator"
+title: "unicorn/require-array-join-separator | Oxlint"
+rule: "unicorn/require-array-join-separator"
 category: "Style"
 version: "0.0.19"
 default: false

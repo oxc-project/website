@@ -1,5 +1,6 @@
 ---
-title: "unicorn/catch-error-name"
+title: "unicorn/catch-error-name | Oxlint"
+rule: "unicorn/catch-error-name"
 category: "Style"
 version: "0.0.14"
 default: false

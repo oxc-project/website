@@ -1,5 +1,6 @@
 ---
-title: "react/rules-of-hooks"
+title: "react/rules-of-hooks | Oxlint"
+rule: "react/rules-of-hooks"
 category: "Pedantic"
 version: "0.3.3"
 default: false

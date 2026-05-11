@@ -1,5 +1,6 @@
 ---
-title: "oxc/bad-comparison-sequence"
+title: "oxc/bad-comparison-sequence | Oxlint"
+rule: "oxc/bad-comparison-sequence"
 category: "Correctness"
 version: "0.0.3"
 default: true

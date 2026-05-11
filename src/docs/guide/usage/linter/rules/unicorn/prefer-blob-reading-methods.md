@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-blob-reading-methods"
+title: "unicorn/prefer-blob-reading-methods | Oxlint"
+rule: "unicorn/prefer-blob-reading-methods"
 category: "Pedantic"
 version: "0.0.16"
 default: false

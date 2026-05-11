@@ -1,5 +1,6 @@
 ---
-title: "eslint/block-scoped-var"
+title: "eslint/block-scoped-var | Oxlint"
+rule: "eslint/block-scoped-var"
 category: "Suspicious"
 version: "0.16.9"
 default: false
