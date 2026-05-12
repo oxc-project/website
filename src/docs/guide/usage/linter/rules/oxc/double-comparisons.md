@@ -1,5 +1,6 @@
 ---
-title: "oxc/double-comparisons"
+title: "oxc/double-comparisons | Oxlint"
+rule: "oxc/double-comparisons"
 category: "Correctness"
 version: "0.0.22"
 default: true

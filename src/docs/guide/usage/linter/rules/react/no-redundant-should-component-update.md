@@ -1,5 +1,6 @@
 ---
-title: "react/no-redundant-should-component-update"
+title: "react/no-redundant-should-component-update | Oxlint"
+rule: "react/no-redundant-should-component-update"
 category: "Style"
 version: "1.33.0"
 default: false

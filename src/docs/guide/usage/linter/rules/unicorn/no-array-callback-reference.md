@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-array-callback-reference"
+title: "unicorn/no-array-callback-reference | Oxlint"
+rule: "unicorn/no-array-callback-reference"
 category: "Pedantic"
 version: "1.19.0"
 default: false

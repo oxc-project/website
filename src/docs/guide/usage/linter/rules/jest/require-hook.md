@@ -1,5 +1,6 @@
 ---
-title: "jest/require-hook"
+title: "jest/require-hook | Oxlint"
+rule: "jest/require-hook"
 category: "Style"
 version: "0.3.2"
 default: false

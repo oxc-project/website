@@ -1,5 +1,5 @@
 ---
-title: Setup editors
+title: "Setup editors | Oxlint"
 description: Configure Oxlint in VS Code, Zed, JetBrains, and other editors.
 outline: 2
 ---

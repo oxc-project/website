@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-numeric-literals"
+title: "eslint/prefer-numeric-literals | Oxlint"
+rule: "eslint/prefer-numeric-literals"
 category: "Style"
 version: "0.7.0"
 default: false

@@ -1,5 +1,5 @@
 ---
-title: Configuration
+title: "Configuration | Oxlint"
 description: Configure Oxlint using .oxlintrc.json or oxlint.config.ts.
 ---
 

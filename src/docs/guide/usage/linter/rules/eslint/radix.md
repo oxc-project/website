@@ -1,5 +1,6 @@
 ---
-title: "eslint/radix"
+title: "eslint/radix | Oxlint"
+rule: "eslint/radix"
 category: "Pedantic"
 version: "0.3.3"
 default: false

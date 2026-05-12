@@ -1,5 +1,6 @@
 ---
-title: "promise/no-promise-in-callback"
+title: "promise/no-promise-in-callback | Oxlint"
+rule: "promise/no-promise-in-callback"
 category: "Suspicious"
 version: "0.13.1"
 default: false
@@ -43,6 +44,16 @@ Examples of **correct** code for this rule:
 ```js
 promisify(doSomething)().then(doSomethingElse).then(console.log).catch(console.error);
 ```
+
+## Configuration
+
+### exemptDeclarations
+
+type: `boolean`
+
+default: `false`
+
+Whether or not to exempt function declarations. Defaults to `false`.
 
 ## How to use
 

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/anchor-has-content"
+title: "jsx-a11y/anchor-has-content | Oxlint"
+rule: "jsx-a11y/anchor-has-content"
 category: "Correctness"
 version: "0.0.18"
 default: false

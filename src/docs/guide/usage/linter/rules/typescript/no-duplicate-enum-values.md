@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-duplicate-enum-values"
+title: "typescript/no-duplicate-enum-values | Oxlint"
+rule: "typescript/no-duplicate-enum-values"
 category: "Correctness"
 version: "0.0.8"
 default: true

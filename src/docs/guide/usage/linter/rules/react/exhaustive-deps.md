@@ -1,5 +1,6 @@
 ---
-title: "react/exhaustive-deps"
+title: "react/exhaustive-deps | Oxlint"
+rule: "react/exhaustive-deps"
 category: "Correctness"
 version: "0.12.0"
 default: false

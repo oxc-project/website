@@ -1,5 +1,6 @@
 ---
-title: "jest/no-test-return-statement"
+title: "jest/no-test-return-statement | Oxlint"
+rule: "jest/no-test-return-statement"
 category: "Style"
 version: "0.2.0"
 default: false

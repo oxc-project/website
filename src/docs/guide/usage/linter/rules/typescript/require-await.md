@@ -1,5 +1,6 @@
 ---
-title: "typescript/require-await"
+title: "typescript/require-await | Oxlint"
+rule: "typescript/require-await"
 category: "Pedantic"
 version: "1.12.0"
 default: false

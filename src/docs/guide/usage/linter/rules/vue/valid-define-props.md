@@ -1,5 +1,6 @@
 ---
-title: "vue/valid-define-props"
+title: "vue/valid-define-props | Oxlint"
+rule: "vue/valid-define-props"
 category: "Correctness"
 version: "1.15.0"
 default: false

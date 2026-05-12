@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unsafe-optional-chaining"
+title: "eslint/no-unsafe-optional-chaining | Oxlint"
+rule: "eslint/no-unsafe-optional-chaining"
 category: "Correctness"
 version: "0.0.5"
 default: true

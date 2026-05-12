@@ -1,5 +1,6 @@
 ---
-title: "typescript/array-type"
+title: "typescript/array-type | Oxlint"
+rule: "typescript/array-type"
 category: "Style"
 version: "0.2.8"
 default: false

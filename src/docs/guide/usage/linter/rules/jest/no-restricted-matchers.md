@@ -1,5 +1,6 @@
 ---
-title: "jest/no-restricted-matchers"
+title: "jest/no-restricted-matchers | Oxlint"
+rule: "jest/no-restricted-matchers"
 category: "Style"
 version: "0.2.3"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/consistent-vitest-vi"
+title: "vitest/consistent-vitest-vi | Oxlint"
+rule: "vitest/consistent-vitest-vi"
 category: "Style"
 version: "1.37.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/valid-describe-callback"
+title: "vitest/valid-describe-callback | Oxlint"
+rule: "vitest/valid-describe-callback"
 category: "Correctness"
 version: "0.0.8"
 default: false
@@ -21,10 +22,10 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 This rule validates that the second parameter of a `describe()` function is a
 callback function. This callback function:
 
-- should not be
-  [async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 - should not contain any parameters
 - should not contain any `return` statements
+
+Vitest supports async `describe()` callbacks, so this rule allows them.
 
 ### Why is this bad?
 
@@ -36,11 +37,6 @@ errors.
 Examples of **incorrect** code for this rule:
 
 ```javascript
-// Async callback functions are not allowed
-describe("myFunction()", async () => {
-  // ...
-});
-
 // Callback function parameters are not allowed
 describe("myFunction()", (done) => {
   // ...

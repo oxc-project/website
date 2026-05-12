@@ -1,5 +1,6 @@
 ---
-title: "promise/avoid-new"
+title: "promise/avoid-new | Oxlint"
+rule: "promise/avoid-new"
 category: "Style"
 version: "0.6.1"
 default: false

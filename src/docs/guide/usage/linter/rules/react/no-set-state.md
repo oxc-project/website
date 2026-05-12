@@ -1,5 +1,6 @@
 ---
-title: "react/no-set-state"
+title: "react/no-set-state | Oxlint"
+rule: "react/no-set-state"
 category: "Style"
 version: "0.5.2"
 default: false

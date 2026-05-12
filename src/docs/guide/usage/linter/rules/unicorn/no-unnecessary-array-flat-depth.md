@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-unnecessary-array-flat-depth"
+title: "unicorn/no-unnecessary-array-flat-depth | Oxlint"
+rule: "unicorn/no-unnecessary-array-flat-depth"
 category: "Pedantic"
 version: "0.16.12"
 default: false

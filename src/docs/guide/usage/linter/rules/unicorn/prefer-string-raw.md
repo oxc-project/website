@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-string-raw"
+title: "unicorn/prefer-string-raw | Oxlint"
+rule: "unicorn/prefer-string-raw"
 category: "Style"
 version: "0.12.0"
 default: false

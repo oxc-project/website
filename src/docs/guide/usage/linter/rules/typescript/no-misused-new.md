@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-misused-new"
+title: "typescript/no-misused-new | Oxlint"
+rule: "typescript/no-misused-new"
 category: "Correctness"
 version: "0.0.7"
 default: true

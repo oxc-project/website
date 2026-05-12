@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-hooks-on-top"
+title: "vitest/prefer-hooks-on-top | Oxlint"
+rule: "vitest/prefer-hooks-on-top"
 category: "Style"
 version: "0.4.2"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/no-static-element-interactions"
+title: "jsx-a11y/no-static-element-interactions | Oxlint"
+rule: "jsx-a11y/no-static-element-interactions"
 category: "Correctness"
 version: "1.37.0"
 default: false

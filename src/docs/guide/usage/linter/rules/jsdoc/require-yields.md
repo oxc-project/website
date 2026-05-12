@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/require-yields"
+title: "jsdoc/require-yields | Oxlint"
+rule: "jsdoc/require-yields"
 category: "Correctness"
 version: "0.3.2"
 default: false

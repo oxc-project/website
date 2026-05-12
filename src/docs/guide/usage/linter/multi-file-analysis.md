@@ -1,5 +1,5 @@
 ---
-title: Multi-file analysis
+title: "Multi-file analysis | Oxlint"
 description: Project-wide linting for import cycles and cross-file issues
 ---
 

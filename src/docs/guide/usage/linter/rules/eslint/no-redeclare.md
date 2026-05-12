@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-redeclare"
+title: "eslint/no-redeclare | Oxlint"
+rule: "eslint/no-redeclare"
 category: "Pedantic"
 version: "0.0.13"
 default: false

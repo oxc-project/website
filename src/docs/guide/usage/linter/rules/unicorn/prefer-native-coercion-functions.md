@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-native-coercion-functions"
+title: "unicorn/prefer-native-coercion-functions | Oxlint"
+rule: "unicorn/prefer-native-coercion-functions"
 category: "Pedantic"
 version: "0.0.19"
 default: false

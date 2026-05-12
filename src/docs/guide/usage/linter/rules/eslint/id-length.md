@@ -1,5 +1,6 @@
 ---
-title: "eslint/id-length"
+title: "eslint/id-length | Oxlint"
+rule: "eslint/id-length"
 category: "Style"
 version: "1.4.0"
 default: false

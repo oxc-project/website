@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-negated-condition"
+title: "eslint/no-negated-condition | Oxlint"
+rule: "eslint/no-negated-condition"
 category: "Pedantic"
 version: "0.0.18"
 default: false

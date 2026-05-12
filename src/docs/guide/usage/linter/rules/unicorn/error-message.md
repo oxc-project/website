@@ -1,5 +1,6 @@
 ---
-title: "unicorn/error-message"
+title: "unicorn/error-message | Oxlint"
+rule: "unicorn/error-message"
 category: "Style"
 version: "0.0.14"
 default: false

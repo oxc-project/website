@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-immediate-mutation"
+title: "unicorn/no-immediate-mutation | Oxlint"
+rule: "unicorn/no-immediate-mutation"
 category: "Pedantic"
 version: "1.35.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-handler-names"
+title: "react/jsx-handler-names | Oxlint"
+rule: "react/jsx-handler-names"
 category: "Style"
 version: "1.13.0"
 default: false

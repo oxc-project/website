@@ -1,5 +1,6 @@
 ---
-title: "promise/no-multiple-resolved"
+title: "promise/no-multiple-resolved | Oxlint"
+rule: "promise/no-multiple-resolved"
 category: "Suspicious"
 version: "1.19.0"
 default: false

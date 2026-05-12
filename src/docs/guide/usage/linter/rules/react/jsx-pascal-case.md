@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-pascal-case"
+title: "react/jsx-pascal-case | Oxlint"
+rule: "react/jsx-pascal-case"
 category: "Style"
 version: "1.19.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-continue"
+title: "eslint/no-continue | Oxlint"
+rule: "eslint/no-continue"
 category: "Style"
 version: "0.2.14"
 default: false

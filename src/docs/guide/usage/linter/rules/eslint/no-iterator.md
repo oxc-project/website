@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-iterator"
+title: "eslint/no-iterator | Oxlint"
+rule: "eslint/no-iterator"
 category: "Correctness"
 version: "0.2.15"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "react/no-unescaped-entities"
+title: "react/no-unescaped-entities | Oxlint"
+rule: "react/no-unescaped-entities"
 category: "Pedantic"
 version: "0.0.15"
 default: false

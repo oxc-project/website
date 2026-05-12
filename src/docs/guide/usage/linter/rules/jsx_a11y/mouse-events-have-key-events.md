@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/mouse-events-have-key-events"
+title: "jsx-a11y/mouse-events-have-key-events | Oxlint"
+rule: "jsx-a11y/mouse-events-have-key-events"
 category: "Correctness"
 version: "0.1.1"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-object-from-entries"
+title: "unicorn/prefer-object-from-entries | Oxlint"
+rule: "unicorn/prefer-object-from-entries"
 category: "Style"
 version: "0.16.12"
 default: false

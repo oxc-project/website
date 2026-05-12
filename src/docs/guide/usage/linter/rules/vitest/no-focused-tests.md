@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-focused-tests"
+title: "vitest/no-focused-tests | Oxlint"
+rule: "vitest/no-focused-tests"
 category: "Correctness"
 version: "0.0.8"
 default: false

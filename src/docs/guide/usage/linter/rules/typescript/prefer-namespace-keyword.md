@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-namespace-keyword"
+title: "typescript/prefer-namespace-keyword | Oxlint"
+rule: "typescript/prefer-namespace-keyword"
 category: "Correctness"
 version: "0.7.0"
 default: true

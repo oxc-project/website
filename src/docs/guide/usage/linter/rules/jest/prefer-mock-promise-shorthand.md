@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-mock-promise-shorthand"
+title: "jest/prefer-mock-promise-shorthand | Oxlint"
+rule: "jest/prefer-mock-promise-shorthand"
 category: "Style"
 version: "0.2.16"
 default: false

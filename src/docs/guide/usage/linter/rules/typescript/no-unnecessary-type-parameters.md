@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-type-parameters"
+title: "typescript/no-unnecessary-type-parameters | Oxlint"
+rule: "typescript/no-unnecessary-type-parameters"
 category: "Suspicious"
 version: "1.49.0"
 default: false

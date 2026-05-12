@@ -1,5 +1,5 @@
 ---
-title: Ignores
+title: "Ignore files | Oxlint"
 description: Control which files Oxlint lints.
 ---
 

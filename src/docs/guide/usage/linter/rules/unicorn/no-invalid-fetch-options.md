@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-invalid-fetch-options"
+title: "unicorn/no-invalid-fetch-options | Oxlint"
+rule: "unicorn/no-invalid-fetch-options"
 category: "Correctness"
 version: "0.15.12"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "jest/no-export"
+title: "jest/no-export | Oxlint"
+rule: "jest/no-export"
 category: "Correctness"
 version: "0.0.13"
 default: false

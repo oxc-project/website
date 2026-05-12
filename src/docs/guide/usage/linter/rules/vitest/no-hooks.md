@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-hooks"
+title: "vitest/no-hooks | Oxlint"
+rule: "vitest/no-hooks"
 category: "Style"
 version: "0.0.16"
 default: false

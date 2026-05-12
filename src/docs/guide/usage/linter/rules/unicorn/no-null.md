@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-null"
+title: "unicorn/no-null | Oxlint"
+rule: "unicorn/no-null"
 category: "Style"
 version: "0.0.21"
 default: false

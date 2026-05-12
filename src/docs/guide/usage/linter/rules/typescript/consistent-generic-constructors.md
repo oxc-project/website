@@ -1,5 +1,6 @@
 ---
-title: "typescript/consistent-generic-constructors"
+title: "typescript/consistent-generic-constructors | Oxlint"
+rule: "typescript/consistent-generic-constructors"
 category: "Style"
 version: "0.14.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-for-in-array"
+title: "typescript/no-for-in-array | Oxlint"
+rule: "typescript/no-for-in-array"
 category: "Correctness"
 version: "1.12.0"
 default: true

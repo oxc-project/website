@@ -1,5 +1,6 @@
 ---
-title: "jest/no-test-prefixes"
+title: "jest/no-test-prefixes | Oxlint"
+rule: "jest/no-test-prefixes"
 category: "Style"
 version: "0.0.7"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vue/return-in-computed-property"
+title: "vue/return-in-computed-property | Oxlint"
+rule: "vue/return-in-computed-property"
 category: "Correctness"
 version: "1.63.0"
 default: false

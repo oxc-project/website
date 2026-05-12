@@ -1,5 +1,6 @@
 ---
-title: "react/no-this-in-sfc"
+title: "react/no-this-in-sfc | Oxlint"
+rule: "react/no-this-in-sfc"
 category: "Correctness"
 version: "1.37.0"
 default: false

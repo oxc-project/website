@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-parameter-property-assignment"
+title: "typescript/no-unnecessary-parameter-property-assignment | Oxlint"
+rule: "typescript/no-unnecessary-parameter-property-assignment"
 category: "Correctness"
 version: "0.15.13"
 default: true

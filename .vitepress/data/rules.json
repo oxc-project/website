@@ -485,7 +485,7 @@
     "category": "correctness",
     "version": "0.0.3",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-debugger.html"
   },
@@ -1608,6 +1608,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-promise-reject-errors.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-regex-literals",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-regex-literals.html"
   },
   {
     "scope": "eslint",
@@ -3118,6 +3128,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-distracting-elements.html"
+  },
+  {
+    "scope": "jsx_a11y",
+    "value": "no-noninteractive-element-to-interactive-role",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-noninteractive-element-to-interactive-role.html"
   },
   {
     "scope": "jsx_a11y",

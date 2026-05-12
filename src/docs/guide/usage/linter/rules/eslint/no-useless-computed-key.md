@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-computed-key"
+title: "eslint/no-useless-computed-key | Oxlint"
+rule: "eslint/no-useless-computed-key"
 category: "Style"
 version: "1.16.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/strict-void-return"
+title: "typescript/strict-void-return | Oxlint"
+rule: "typescript/strict-void-return"
 category: "Pedantic"
 version: "0.0.8"
 default: false

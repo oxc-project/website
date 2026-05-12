@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-constant-condition"
+title: "eslint/no-constant-condition | Oxlint"
+rule: "eslint/no-constant-condition"
 category: "Correctness"
 version: "0.0.3"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unused-expressions"
+title: "eslint/no-unused-expressions | Oxlint"
+rule: "eslint/no-unused-expressions"
 category: "Correctness"
 version: "0.14.0"
 default: true

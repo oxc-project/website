@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-new-func"
+title: "eslint/no-new-func | Oxlint"
+rule: "eslint/no-new-func"
 category: "Style"
 version: "0.9.2"
 default: false

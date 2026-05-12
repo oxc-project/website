@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-conditional-in-test"
+title: "vitest/no-conditional-in-test | Oxlint"
+rule: "vitest/no-conditional-in-test"
 category: "Pedantic"
 version: "0.8.0"
 default: false

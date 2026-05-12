@@ -1,5 +1,6 @@
 ---
-title: "vue/no-deprecated-events-api"
+title: "vue/no-deprecated-events-api | Oxlint"
+rule: "vue/no-deprecated-events-api"
 category: "Correctness"
 version: "1.62.0"
 default: false

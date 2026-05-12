@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-negative-index"
+title: "unicorn/prefer-negative-index | Oxlint"
+rule: "unicorn/prefer-negative-index"
 category: "Style"
 version: "0.13.2"
 default: false

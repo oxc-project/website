@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-to-be"
+title: "jest/prefer-to-be | Oxlint"
+rule: "jest/prefer-to-be"
 category: "Style"
 version: "0.2.14"
 default: false

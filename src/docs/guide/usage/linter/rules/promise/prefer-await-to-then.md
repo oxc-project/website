@@ -1,5 +1,6 @@
 ---
-title: "promise/prefer-await-to-then"
+title: "promise/prefer-await-to-then | Oxlint"
+rule: "promise/prefer-await-to-then"
 category: "Style"
 version: "0.7.1"
 default: false

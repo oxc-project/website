@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-modern-math-apis"
+title: "unicorn/prefer-modern-math-apis | Oxlint"
+rule: "unicorn/prefer-modern-math-apis"
 category: "Restriction"
 version: "0.1.1"
 default: false

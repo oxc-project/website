@@ -1,5 +1,6 @@
 ---
-title: "jest/no-confusing-set-timeout"
+title: "jest/no-confusing-set-timeout | Oxlint"
+rule: "jest/no-confusing-set-timeout"
 category: "Style"
 version: "0.0.14"
 default: false

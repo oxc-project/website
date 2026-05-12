@@ -1,5 +1,6 @@
 ---
-title: "react/hook-use-state"
+title: "react/hook-use-state | Oxlint"
+rule: "react/hook-use-state"
 category: "Style"
 version: "1.59.0"
 default: false

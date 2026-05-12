@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-type-assertion"
+title: "typescript/no-unsafe-type-assertion | Oxlint"
+rule: "typescript/no-unsafe-type-assertion"
 category: "Suspicious"
 version: "1.12.0"
 default: false

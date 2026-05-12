@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-hooks-on-top"
+title: "jest/prefer-hooks-on-top | Oxlint"
+rule: "jest/prefer-hooks-on-top"
 category: "Style"
 version: "0.4.2"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/logical-assignment-operators"
+title: "eslint/logical-assignment-operators | Oxlint"
+rule: "eslint/logical-assignment-operators"
 category: "Style"
 version: "1.63.0"
 default: false

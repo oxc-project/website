@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-script-url"
+title: "eslint/no-script-url | Oxlint"
+rule: "eslint/no-script-url"
 category: "Style"
 version: "0.2.15"
 default: false

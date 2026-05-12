@@ -1,5 +1,6 @@
 ---
-title: "vue/no-deprecated-model-definition"
+title: "vue/no-deprecated-model-definition | Oxlint"
+rule: "vue/no-deprecated-model-definition"
 category: "Correctness"
 version: "1.63.0"
 default: false

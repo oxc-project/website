@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-import-node-test"
+title: "vitest/no-import-node-test | Oxlint"
+rule: "vitest/no-import-node-test"
 category: "Style"
 version: "0.7.0"
 default: false

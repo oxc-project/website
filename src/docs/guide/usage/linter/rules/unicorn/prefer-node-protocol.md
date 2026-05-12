@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-node-protocol"
+title: "unicorn/prefer-node-protocol | Oxlint"
+rule: "unicorn/prefer-node-protocol"
 category: "Restriction"
 version: "0.0.19"
 default: false

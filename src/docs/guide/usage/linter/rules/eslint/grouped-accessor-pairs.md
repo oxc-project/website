@@ -1,5 +1,6 @@
 ---
-title: "eslint/grouped-accessor-pairs"
+title: "eslint/grouped-accessor-pairs | Oxlint"
+rule: "eslint/grouped-accessor-pairs"
 category: "Style"
 version: "0.15.12"
 default: false

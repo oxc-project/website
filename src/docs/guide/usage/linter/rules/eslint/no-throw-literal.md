@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-throw-literal"
+title: "eslint/no-throw-literal | Oxlint"
+rule: "eslint/no-throw-literal"
 category: "Pedantic"
 version: "0.9.10"
 default: false

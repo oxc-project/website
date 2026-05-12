@@ -1,5 +1,6 @@
 ---
-title: "oxc/uninvoked-array-callback"
+title: "oxc/uninvoked-array-callback | Oxlint"
+rule: "oxc/uninvoked-array-callback"
 category: "Correctness"
 version: "0.0.3"
 default: true

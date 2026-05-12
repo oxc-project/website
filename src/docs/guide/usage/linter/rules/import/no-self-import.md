@@ -1,5 +1,6 @@
 ---
-title: "import/no-self-import"
+title: "import/no-self-import | Oxlint"
+rule: "import/no-self-import"
 category: "Suspicious"
 version: "0.0.13"
 default: false

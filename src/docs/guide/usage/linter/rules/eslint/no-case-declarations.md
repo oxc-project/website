@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-case-declarations"
+title: "eslint/no-case-declarations | Oxlint"
+rule: "eslint/no-case-declarations"
 category: "Pedantic"
 version: "0.0.4"
 default: false

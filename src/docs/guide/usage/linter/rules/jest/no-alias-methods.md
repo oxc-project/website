@@ -1,5 +1,6 @@
 ---
-title: "jest/no-alias-methods"
+title: "jest/no-alias-methods | Oxlint"
+rule: "jest/no-alias-methods"
 category: "Style"
 version: "0.0.12"
 default: false

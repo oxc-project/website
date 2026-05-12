@@ -1,4 +1,5 @@
 ---
+title: "Config file reference | Oxlint"
 editLink: false
 ---
 

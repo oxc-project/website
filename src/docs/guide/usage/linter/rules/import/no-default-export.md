@@ -1,5 +1,6 @@
 ---
-title: "import/no-default-export"
+title: "import/no-default-export | Oxlint"
+rule: "import/no-default-export"
 category: "Restriction"
 version: "0.2.14"
 default: false

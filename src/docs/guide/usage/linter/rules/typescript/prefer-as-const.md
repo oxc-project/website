@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-as-const"
+title: "typescript/prefer-as-const | Oxlint"
+rule: "typescript/prefer-as-const"
 category: "Correctness"
 version: "0.0.8"
 default: true

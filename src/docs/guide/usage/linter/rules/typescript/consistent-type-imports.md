@@ -1,5 +1,6 @@
 ---
-title: "typescript/consistent-type-imports"
+title: "typescript/consistent-type-imports | Oxlint"
+rule: "typescript/consistent-type-imports"
 category: "Style"
 version: "0.5.2"
 default: false

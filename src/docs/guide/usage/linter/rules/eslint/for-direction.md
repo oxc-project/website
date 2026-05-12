@@ -1,5 +1,6 @@
 ---
-title: "eslint/for-direction"
+title: "eslint/for-direction | Oxlint"
+rule: "eslint/for-direction"
 category: "Correctness"
 version: "0.0.3"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-var-requires"
+title: "typescript/no-var-requires | Oxlint"
+rule: "typescript/no-var-requires"
 category: "Restriction"
 version: "0.0.7"
 default: false

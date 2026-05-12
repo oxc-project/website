@@ -1,5 +1,6 @@
 ---
-title: "import/export"
+title: "import/export | Oxlint"
+rule: "import/export"
 category: "Nursery"
 version: "0.0.21"
 default: false

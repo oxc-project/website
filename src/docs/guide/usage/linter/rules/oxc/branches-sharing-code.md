@@ -1,5 +1,6 @@
 ---
-title: "oxc/branches-sharing-code"
+title: "oxc/branches-sharing-code | Oxlint"
+rule: "oxc/branches-sharing-code"
 category: "Pedantic"
 version: "1.22.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-thenable"
+title: "unicorn/no-thenable | Oxlint"
+rule: "unicorn/no-thenable"
 category: "Correctness"
 version: "0.0.13"
 default: true

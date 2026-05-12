@@ -1,5 +1,6 @@
 ---
-title: "import/no-empty-named-blocks"
+title: "import/no-empty-named-blocks | Oxlint"
+rule: "import/no-empty-named-blocks"
 category: "Suspicious"
 version: "0.16.1"
 default: false

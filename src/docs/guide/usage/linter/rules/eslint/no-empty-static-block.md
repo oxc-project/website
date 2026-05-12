@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-empty-static-block"
+title: "eslint/no-empty-static-block | Oxlint"
+rule: "eslint/no-empty-static-block"
 category: "Correctness"
 version: "0.0.19"
 default: true

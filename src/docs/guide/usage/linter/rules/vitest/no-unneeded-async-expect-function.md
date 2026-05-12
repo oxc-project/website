@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-unneeded-async-expect-function"
+title: "vitest/no-unneeded-async-expect-function | Oxlint"
+rule: "vitest/no-unneeded-async-expect-function"
 category: "Style"
 version: "1.39.0"
 default: false

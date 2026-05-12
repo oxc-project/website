@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-lines"
+title: "eslint/max-lines | Oxlint"
+rule: "eslint/max-lines"
 category: "Pedantic"
 version: "0.2.14"
 default: false

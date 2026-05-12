@@ -1,5 +1,6 @@
 ---
-title: "react/checked-requires-onchange-or-readonly"
+title: "react/checked-requires-onchange-or-readonly | Oxlint"
+rule: "react/checked-requires-onchange-or-readonly"
 category: "Pedantic"
 version: "0.2.15"
 default: false

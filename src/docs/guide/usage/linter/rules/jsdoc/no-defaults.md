@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/no-defaults"
+title: "jsdoc/no-defaults | Oxlint"
+rule: "jsdoc/no-defaults"
 category: "Correctness"
 version: "0.3.2"
 default: false

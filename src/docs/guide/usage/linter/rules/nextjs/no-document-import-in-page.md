@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-document-import-in-page"
+title: "nextjs/no-document-import-in-page | Oxlint"
+rule: "nextjs/no-document-import-in-page"
 category: "Correctness"
 version: "0.2.1"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "import/no-duplicates"
+title: "import/no-duplicates | Oxlint"
+rule: "import/no-duplicates"
 category: "Style"
 version: "0.2.11"
 default: false

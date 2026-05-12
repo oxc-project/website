@@ -1,5 +1,6 @@
 ---
-title: "vitest/consistent-each-for"
+title: "vitest/consistent-each-for | Oxlint"
+rule: "vitest/consistent-each-for"
 category: "Correctness"
 version: "1.39.0"
 default: false

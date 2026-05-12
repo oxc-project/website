@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/role-has-required-aria-props"
+title: "jsx-a11y/role-has-required-aria-props | Oxlint"
+rule: "jsx-a11y/role-has-required-aria-props"
 category: "Correctness"
 version: "0.2.0"
 default: false

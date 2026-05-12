@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/click-events-have-key-events"
+title: "jsx-a11y/click-events-have-key-events | Oxlint"
+rule: "jsx-a11y/click-events-have-key-events"
 category: "Correctness"
 version: "0.2.1"
 default: false

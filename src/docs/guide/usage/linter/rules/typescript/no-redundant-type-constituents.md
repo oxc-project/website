@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-redundant-type-constituents"
+title: "typescript/no-redundant-type-constituents | Oxlint"
+rule: "typescript/no-redundant-type-constituents"
 category: "Correctness"
 version: "1.12.0"
 default: true

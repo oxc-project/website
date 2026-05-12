@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-ending-with-an-expect"
+title: "jest/prefer-ending-with-an-expect | Oxlint"
+rule: "jest/prefer-ending-with-an-expect"
 category: "Style"
 version: "1.60.0"
 default: false

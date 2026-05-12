@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-fallthrough"
+title: "eslint/no-fallthrough | Oxlint"
+rule: "eslint/no-fallthrough"
 category: "Pedantic"
 version: "0.0.14"
 default: false

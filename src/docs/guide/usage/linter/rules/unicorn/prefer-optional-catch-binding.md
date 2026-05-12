@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-optional-catch-binding"
+title: "unicorn/prefer-optional-catch-binding | Oxlint"
+rule: "unicorn/prefer-optional-catch-binding"
 category: "Style"
 version: "0.0.17"
 default: false

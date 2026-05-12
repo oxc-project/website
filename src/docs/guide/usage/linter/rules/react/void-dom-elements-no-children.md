@@ -1,5 +1,6 @@
 ---
-title: "react/void-dom-elements-no-children"
+title: "react/void-dom-elements-no-children | Oxlint"
+rule: "react/void-dom-elements-no-children"
 category: "Correctness"
 version: "0.2.11"
 default: false

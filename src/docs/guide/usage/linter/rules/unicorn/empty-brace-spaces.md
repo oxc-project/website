@@ -1,5 +1,6 @@
 ---
-title: "unicorn/empty-brace-spaces"
+title: "unicorn/empty-brace-spaces | Oxlint"
+rule: "unicorn/empty-brace-spaces"
 category: "Style"
 version: "0.0.18"
 default: false

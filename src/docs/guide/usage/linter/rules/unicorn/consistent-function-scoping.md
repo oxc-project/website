@@ -1,5 +1,6 @@
 ---
-title: "unicorn/consistent-function-scoping"
+title: "unicorn/consistent-function-scoping | Oxlint"
+rule: "unicorn/consistent-function-scoping"
 category: "Suspicious"
 version: "0.8.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-shadow-restricted-names"
+title: "eslint/no-shadow-restricted-names | Oxlint"
+rule: "eslint/no-shadow-restricted-names"
 category: "Correctness"
 version: "0.0.3"
 default: true

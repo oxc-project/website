@@ -1,5 +1,6 @@
 ---
-title: "oxc/bad-min-max-func"
+title: "oxc/bad-min-max-func | Oxlint"
+rule: "oxc/bad-min-max-func"
 category: "Correctness"
 version: "0.0.3"
 default: true

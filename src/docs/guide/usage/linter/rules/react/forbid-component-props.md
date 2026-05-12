@@ -1,5 +1,6 @@
 ---
-title: "react/forbid-component-props"
+title: "react/forbid-component-props | Oxlint"
+rule: "react/forbid-component-props"
 category: "Restriction"
 version: "1.62.0"
 default: false

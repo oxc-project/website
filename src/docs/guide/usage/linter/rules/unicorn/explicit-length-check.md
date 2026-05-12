@@ -1,5 +1,6 @@
 ---
-title: "unicorn/explicit-length-check"
+title: "unicorn/explicit-length-check | Oxlint"
+rule: "unicorn/explicit-length-check"
 category: "Pedantic"
 version: "0.0.19"
 default: false

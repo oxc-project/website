@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-var"
+title: "eslint/no-var | Oxlint"
+rule: "eslint/no-var"
 category: "Restriction"
 version: "0.1.1"
 default: false

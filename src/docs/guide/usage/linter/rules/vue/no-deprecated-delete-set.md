@@ -1,5 +1,6 @@
 ---
-title: "vue/no-deprecated-delete-set"
+title: "vue/no-deprecated-delete-set | Oxlint"
+rule: "vue/no-deprecated-delete-set"
 category: "Correctness"
 version: "1.62.0"
 default: false

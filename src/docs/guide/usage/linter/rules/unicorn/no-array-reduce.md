@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-array-reduce"
+title: "unicorn/no-array-reduce | Oxlint"
+rule: "unicorn/no-array-reduce"
 category: "Restriction"
 version: "0.0.19"
 default: false

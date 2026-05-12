@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-useless-default-assignment"
+title: "typescript/no-useless-default-assignment | Oxlint"
+rule: "typescript/no-useless-default-assignment"
 category: "Correctness"
 version: "1.49.0"
 default: true

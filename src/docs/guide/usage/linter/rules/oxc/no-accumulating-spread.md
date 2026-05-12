@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-accumulating-spread"
+title: "oxc/no-accumulating-spread | Oxlint"
+rule: "oxc/no-accumulating-spread"
 category: "Perf"
 version: "0.0.19"
 default: false

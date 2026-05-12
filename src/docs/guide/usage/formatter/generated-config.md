@@ -226,16 +226,23 @@ type: `string[]`
 
 Glob patterns to exclude from this override.
 
+A set of glob patterns.
+Patterns are matched against paths relative to the configuration file's directory.
+
 #### overrides[n].files
 
 type: `string[]`
 
 Glob patterns to match files for this override.
-All patterns are relative to the Oxfmt configuration file.
+
+A set of glob patterns.
+Patterns are matched against paths relative to the configuration file's directory.
 
 #### overrides[n].options
 
 type: `object`
+
+Format options to apply for matched files.
 
 ##### overrides[n].options.arrowParens
 
@@ -786,6 +793,48 @@ NOTE: Paths are resolved relative to the Oxfmt configuration file.
 
 - Default: Installed Tailwind CSS's `theme.css`
 
+##### overrides[n].options.svelte
+
+type: `object | boolean`
+
+Options for `prettier-plugin-svelte`.
+
+Pass `true` or an object to enable `.svelte` file formatting,
+or `false` (handy in overrides) / omit to disable.
+Setting `true` resets to defaults — any options inherited from a parent scope are dropped.
+
+NOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,
+but Oxfmt does NOT bundle or auto-install it.
+You must install `svelte` yourself in your project, formatting will fail at runtime otherwise.
+
+- Default: Disabled
+
+###### overrides[n].options.svelte.allowShorthand
+
+type: `boolean`
+
+Whether to allow attribute shorthand if attribute name and expression are same.
+
+- Default: `true`
+
+###### overrides[n].options.svelte.indentScriptAndStyle
+
+type: `boolean`
+
+Whether to indent code inside `<script>` and `<style>` tags.
+
+- Default: `true`
+
+###### overrides[n].options.svelte.sortOrder
+
+type: `string`
+
+The order in which Svelte component sections are printed.
+Format: join the keywords `options`, `scripts`, `markup`, `styles` with a `-` in the order you want;
+or `none` if you don't want to reorder anything.
+
+- Default: `"options-scripts-markup-styles"`
+
 ##### overrides[n].options.tabWidth
 
 type: `integer`
@@ -1179,6 +1228,48 @@ Path to your Tailwind CSS stylesheet (v4).
 NOTE: Paths are resolved relative to the Oxfmt configuration file.
 
 - Default: Installed Tailwind CSS's `theme.css`
+
+## svelte
+
+type: `object | boolean`
+
+Options for `prettier-plugin-svelte`.
+
+Pass `true` or an object to enable `.svelte` file formatting,
+or `false` (handy in overrides) / omit to disable.
+Setting `true` resets to defaults — any options inherited from a parent scope are dropped.
+
+NOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`) at runtime,
+but Oxfmt does NOT bundle or auto-install it.
+You must install `svelte` yourself in your project, formatting will fail at runtime otherwise.
+
+- Default: Disabled
+
+### svelte.allowShorthand
+
+type: `boolean`
+
+Whether to allow attribute shorthand if attribute name and expression are same.
+
+- Default: `true`
+
+### svelte.indentScriptAndStyle
+
+type: `boolean`
+
+Whether to indent code inside `<script>` and `<style>` tags.
+
+- Default: `true`
+
+### svelte.sortOrder
+
+type: `string`
+
+The order in which Svelte component sections are printed.
+Format: join the keywords `options`, `scripts`, `markup`, `styles` with a `-` in the order you want;
+or `none` if you don't want to reorder anything.
+
+- Default: `"options-scripts-markup-styles"`
 
 ## tabWidth
 

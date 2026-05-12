@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-implicit-coercion"
+title: "eslint/no-implicit-coercion | Oxlint"
+rule: "eslint/no-implicit-coercion"
 category: "Style"
 version: "1.33.0"
 default: false

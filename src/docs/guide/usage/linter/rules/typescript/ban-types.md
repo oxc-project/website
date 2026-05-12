@@ -1,5 +1,6 @@
 ---
-title: "typescript/ban-types"
+title: "typescript/ban-types | Oxlint"
+rule: "typescript/ban-types"
 category: "Pedantic"
 version: "0.0.14"
 default: false

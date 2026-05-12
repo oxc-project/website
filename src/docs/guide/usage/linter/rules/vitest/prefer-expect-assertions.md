@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-expect-assertions"
+title: "vitest/prefer-expect-assertions | Oxlint"
+rule: "vitest/prefer-expect-assertions"
 category: "Style"
 version: "1.62.0"
 default: false

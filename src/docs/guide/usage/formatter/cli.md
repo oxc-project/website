@@ -1,4 +1,5 @@
 ---
+title: "Command-line Interface | Oxfmt"
 editLink: false
 ---
 

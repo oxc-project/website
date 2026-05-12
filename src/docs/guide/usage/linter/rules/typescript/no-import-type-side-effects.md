@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-import-type-side-effects"
+title: "typescript/no-import-type-side-effects | Oxlint"
+rule: "typescript/no-import-type-side-effects"
 category: "Restriction"
 version: "0.5.0"
 default: false

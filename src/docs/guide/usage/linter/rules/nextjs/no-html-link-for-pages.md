@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-html-link-for-pages"
+title: "nextjs/no-html-link-for-pages | Oxlint"
+rule: "nextjs/no-html-link-for-pages"
 category: "Correctness"
 version: "1.7.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-string-trim-start-end"
+title: "unicorn/prefer-string-trim-start-end | Oxlint"
+rule: "unicorn/prefer-string-trim-start-end"
 category: "Style"
 version: "0.0.16"
 default: false

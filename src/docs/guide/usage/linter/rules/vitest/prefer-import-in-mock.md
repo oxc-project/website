@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-import-in-mock"
+title: "vitest/prefer-import-in-mock | Oxlint"
+rule: "vitest/prefer-import-in-mock"
 category: "Style"
 version: "1.49.0"
 default: false

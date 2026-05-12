@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-mock-return-shorthand"
+title: "jest/prefer-mock-return-shorthand | Oxlint"
+rule: "jest/prefer-mock-return-shorthand"
 category: "Style"
 version: "1.49.0"
 default: false

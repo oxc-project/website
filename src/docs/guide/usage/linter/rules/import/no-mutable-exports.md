@@ -1,5 +1,6 @@
 ---
-title: "import/no-mutable-exports"
+title: "import/no-mutable-exports | Oxlint"
+rule: "import/no-mutable-exports"
 category: "Style"
 version: "0.15.13"
 default: false

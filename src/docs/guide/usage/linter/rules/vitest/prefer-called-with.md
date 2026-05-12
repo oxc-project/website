@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-called-with"
+title: "vitest/prefer-called-with | Oxlint"
+rule: "vitest/prefer-called-with"
 category: "Style"
 version: "0.2.5"
 default: false

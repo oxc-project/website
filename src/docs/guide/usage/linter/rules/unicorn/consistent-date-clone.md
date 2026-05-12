@@ -1,5 +1,6 @@
 ---
-title: "unicorn/consistent-date-clone"
+title: "unicorn/consistent-date-clone | Oxlint"
+rule: "unicorn/consistent-date-clone"
 category: "Style"
 version: "0.15.13"
 default: false

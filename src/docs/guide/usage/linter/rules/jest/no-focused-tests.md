@@ -1,5 +1,6 @@
 ---
-title: "jest/no-focused-tests"
+title: "jest/no-focused-tests | Oxlint"
+rule: "jest/no-focused-tests"
 category: "Correctness"
 version: "0.0.8"
 default: false

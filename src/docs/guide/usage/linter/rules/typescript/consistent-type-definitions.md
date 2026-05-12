@@ -1,5 +1,6 @@
 ---
-title: "typescript/consistent-type-definitions"
+title: "typescript/consistent-type-definitions | Oxlint"
+rule: "typescript/consistent-type-definitions"
 category: "Style"
 version: "0.2.17"
 default: false

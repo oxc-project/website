@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-global-assign"
+title: "eslint/no-global-assign | Oxlint"
+rule: "eslint/no-global-assign"
 category: "Correctness"
 version: "0.0.7"
 default: true

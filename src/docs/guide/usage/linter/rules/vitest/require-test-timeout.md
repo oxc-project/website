@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-test-timeout"
+title: "vitest/require-test-timeout | Oxlint"
+rule: "vitest/require-test-timeout"
 category: "Restriction"
 version: "1.58.0"
 default: false

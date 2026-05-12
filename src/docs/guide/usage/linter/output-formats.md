@@ -1,5 +1,5 @@
 ---
-title: Output formats
+title: "Output formats | Oxlint"
 description: Output linting results in various formats for CI or human consumption
 ---
 

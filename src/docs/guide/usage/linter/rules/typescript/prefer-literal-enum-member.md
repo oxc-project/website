@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-literal-enum-member"
+title: "typescript/prefer-literal-enum-member | Oxlint"
+rule: "typescript/prefer-literal-enum-member"
 category: "Restriction"
 version: "0.3.2"
 default: false

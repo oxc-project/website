@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-find"
+title: "typescript/prefer-find | Oxlint"
+rule: "typescript/prefer-find"
 category: "Style"
 version: "1.49.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-to-contain"
+title: "jest/prefer-to-contain | Oxlint"
+rule: "jest/prefer-to-contain"
 category: "Style"
 version: "0.2.14"
 default: false

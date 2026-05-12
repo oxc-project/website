@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-assignment"
+title: "typescript/no-unsafe-assignment | Oxlint"
+rule: "typescript/no-unsafe-assignment"
 category: "Pedantic"
 version: "1.12.0"
 default: false

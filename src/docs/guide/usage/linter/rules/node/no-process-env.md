@@ -1,5 +1,6 @@
 ---
-title: "node/no-process-env"
+title: "node/no-process-env | Oxlint"
+rule: "node/no-process-env"
 category: "Restriction"
 version: "1.23.0"
 default: false

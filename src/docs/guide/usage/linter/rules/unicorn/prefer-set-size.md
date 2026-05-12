@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-set-size"
+title: "unicorn/prefer-set-size | Oxlint"
+rule: "unicorn/prefer-set-size"
 category: "Correctness"
 version: "0.0.19"
 default: true

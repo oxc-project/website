@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-member-access"
+title: "typescript/no-unsafe-member-access | Oxlint"
+rule: "typescript/no-unsafe-member-access"
 category: "Pedantic"
 version: "1.12.0"
 default: false

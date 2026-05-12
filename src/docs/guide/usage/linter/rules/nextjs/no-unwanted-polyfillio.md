@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-unwanted-polyfillio"
+title: "nextjs/no-unwanted-polyfillio | Oxlint"
+rule: "nextjs/no-unwanted-polyfillio"
 category: "Correctness"
 version: "0.2.7"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vue/require-typed-ref"
+title: "vue/require-typed-ref | Oxlint"
+rule: "vue/require-typed-ref"
 category: "Style"
 version: "1.17.0"
 default: false

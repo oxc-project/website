@@ -1,5 +1,6 @@
 ---
-title: "unicorn/require-module-specifiers"
+title: "unicorn/require-module-specifiers | Oxlint"
+rule: "unicorn/require-module-specifiers"
 category: "Suspicious"
 version: "1.20.0"
 default: false

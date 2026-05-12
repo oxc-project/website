@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-no-duplicate-props"
+title: "react/jsx-no-duplicate-props | Oxlint"
+rule: "react/jsx-no-duplicate-props"
 category: "Correctness"
 version: "0.0.14"
 default: false

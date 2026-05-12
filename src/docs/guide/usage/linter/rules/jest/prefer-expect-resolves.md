@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-expect-resolves"
+title: "jest/prefer-expect-resolves | Oxlint"
+rule: "jest/prefer-expect-resolves"
 category: "Style"
 version: "0.2.14"
 default: false

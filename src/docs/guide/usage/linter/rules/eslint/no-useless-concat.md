@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-concat"
+title: "eslint/no-useless-concat | Oxlint"
+rule: "eslint/no-useless-concat"
 category: "Suspicious"
 version: "0.4.2"
 default: false

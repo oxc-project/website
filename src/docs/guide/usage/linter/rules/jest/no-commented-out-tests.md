@@ -1,5 +1,6 @@
 ---
-title: "jest/no-commented-out-tests"
+title: "jest/no-commented-out-tests | Oxlint"
+rule: "jest/no-commented-out-tests"
 category: "Suspicious"
 version: "0.0.8"
 default: false

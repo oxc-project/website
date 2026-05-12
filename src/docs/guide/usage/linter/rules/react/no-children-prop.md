@@ -1,5 +1,6 @@
 ---
-title: "react/no-children-prop"
+title: "react/no-children-prop | Oxlint"
+rule: "react/no-children-prop"
 category: "Correctness"
 version: "0.0.14"
 default: false

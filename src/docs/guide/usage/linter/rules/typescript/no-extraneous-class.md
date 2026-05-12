@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-extraneous-class"
+title: "typescript/no-extraneous-class | Oxlint"
+rule: "typescript/no-extraneous-class"
 category: "Suspicious"
 version: "0.7.0"
 default: false

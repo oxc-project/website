@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-zero-fractions"
+title: "unicorn/no-zero-fractions | Oxlint"
+rule: "unicorn/no-zero-fractions"
 category: "Style"
 version: "0.0.18"
 default: false

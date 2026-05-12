@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-expect-resolves"
+title: "vitest/prefer-expect-resolves | Oxlint"
+rule: "vitest/prefer-expect-resolves"
 category: "Style"
 version: "0.2.14"
 default: false

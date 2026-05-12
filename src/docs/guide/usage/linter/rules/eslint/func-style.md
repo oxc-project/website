@@ -1,5 +1,6 @@
 ---
-title: "eslint/func-style"
+title: "eslint/func-style | Oxlint"
+rule: "eslint/func-style"
 category: "Style"
 version: "0.15.11"
 default: false
@@ -176,6 +177,8 @@ When true, functions with type annotations are allowed regardless of the style s
 #### overrides
 
 type: `object`
+
+Override the style specifically for named exports. Can be "expression", "declaration", or "ignore" (default).
 
 ##### overrides.namedExports
 

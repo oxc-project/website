@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-new-array"
+title: "unicorn/no-new-array | Oxlint"
+rule: "unicorn/no-new-array"
 category: "Correctness"
 version: "0.0.16"
 default: true

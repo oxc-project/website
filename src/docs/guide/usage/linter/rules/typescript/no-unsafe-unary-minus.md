@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unsafe-unary-minus"
+title: "typescript/no-unsafe-unary-minus | Oxlint"
+rule: "typescript/no-unsafe-unary-minus"
 category: "Correctness"
 version: "1.12.0"
 default: true

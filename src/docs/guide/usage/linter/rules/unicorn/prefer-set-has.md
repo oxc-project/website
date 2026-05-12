@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-set-has"
+title: "unicorn/prefer-set-has | Oxlint"
+rule: "unicorn/prefer-set-has"
 category: "Perf"
 version: "0.13.2"
 default: false

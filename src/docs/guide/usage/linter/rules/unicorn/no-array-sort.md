@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-array-sort"
+title: "unicorn/no-array-sort | Oxlint"
+rule: "unicorn/no-array-sort"
 category: "Suspicious"
 version: "1.15.0"
 default: false

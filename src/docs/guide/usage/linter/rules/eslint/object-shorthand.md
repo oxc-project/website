@@ -1,5 +1,6 @@
 ---
-title: "eslint/object-shorthand"
+title: "eslint/object-shorthand | Oxlint"
+rule: "eslint/object-shorthand"
 category: "Style"
 version: "1.59.0"
 default: false

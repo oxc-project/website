@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-array-method-this-argument"
+title: "unicorn/no-array-method-this-argument | Oxlint"
+rule: "unicorn/no-array-method-this-argument"
 category: "Style"
 version: "0.16.12"
 default: false

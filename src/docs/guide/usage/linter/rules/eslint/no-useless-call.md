@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-useless-call"
+title: "eslint/no-useless-call | Oxlint"
+rule: "eslint/no-useless-call"
 category: "Perf"
 version: "0.15.9"
 default: false

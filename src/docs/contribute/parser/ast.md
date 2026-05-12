@@ -102,20 +102,57 @@ visitor.visit_program(&program);
 
 ### Mutable Visitor
 
-For transformations, use the mutable visitor:
+`VisitMut` can be used to modify the AST during traversal.
+
+For example, to transform binary addition of string literals into a single string literal:
 
 ```rust
-use oxc_ast::visit::{VisitMut, walk_mut};
+use oxc_ast::AstBuilder;
+use oxc_ast_visit::{VisitMut, walk_mut};
+use oxc_str::Str;
 
-struct MyTransformer;
+struct MyTransformer<'a> {
+    pub builder: &'a AstBuilder<'a>,
+}
 
-impl<'a> VisitMut<'a> for MyTransformer {
-    fn visit_binary_expression(&mut self, expr: &mut BinaryExpression<'a>) {
-        // Transform the expression
-        if expr.operator == BinaryOperator::Addition {
-            // Modify the AST node
+impl<'a> VisitMut<'a> for MyTransformer<'a> {
+    fn visit_expression(&mut self, expr: &mut Expression<'a>) {
+        // Detect the expression type which you want to modify when changing from one enum variant to another.
+        if let Expression::BinaryExpression(bin_expr) = expr
+            && let (
+                BinaryOperator::Addition,
+                Expression::StringLiteral(sl),
+                Expression::StringLiteral(sr),
+            ) = (bin_expr.operator, &bin_expr.left, &bin_expr.right)
+        {
+            let value = Str::from_strs_array_in(
+                [sl.value.as_str(), sr.value.as_str()],
+                self.builder.allocator,
+            );
+            *expr = self.builder.expression_string_literal(SPAN, value, None);
         }
-        walk_mut::walk_binary_expression_mut(self, expr);
+
+        walk_mut::walk_expression(self, expr);
+    }
+}
+```
+
+For example, to modify a binary expression without changing its type:
+
+```rust
+use oxc_ast::AstBuilder;
+use oxc_ast_visit::{VisitMut, walk_mut};
+
+struct MyTransformer<'a> {
+    pub builder: &'a AstBuilder<'a>,
+}
+
+impl<'a> VisitMut<'a> for MyTransformer<'a> {
+    fn visit_binary_expression(&mut self, expr: &mut BinaryExpression<'a>) {
+        if expr.operator == BinaryOperator::Addition {
+            // Modify the AST node. You can modify only left/right and operator parts, not the type of expression itself.
+        }
+        walk_mut::walk_binary_expression(self, expr);
     }
 }
 ```

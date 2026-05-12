@@ -1,5 +1,6 @@
 ---
-title: "react/prefer-es6-class"
+title: "react/prefer-es6-class | Oxlint"
+rule: "react/prefer-es6-class"
 category: "Style"
 version: "0.5.0"
 default: false

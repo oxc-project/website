@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-mixed-enums"
+title: "typescript/no-mixed-enums | Oxlint"
+rule: "typescript/no-mixed-enums"
 category: "Pedantic"
 version: "1.12.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-called-times"
+title: "vitest/prefer-called-times | Oxlint"
+rule: "vitest/prefer-called-times"
 category: "Style"
 version: "1.35.0"
 default: false

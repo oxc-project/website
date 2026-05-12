@@ -1,5 +1,6 @@
 ---
-title: "react/no-direct-mutation-state"
+title: "react/no-direct-mutation-state | Oxlint"
+rule: "react/no-direct-mutation-state"
 category: "Correctness"
 version: "0.2.0"
 default: false

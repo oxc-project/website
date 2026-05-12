@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/alt-text"
+title: "jsx-a11y/alt-text | Oxlint"
+rule: "jsx-a11y/alt-text"
 category: "Correctness"
 version: "0.0.16"
 default: false

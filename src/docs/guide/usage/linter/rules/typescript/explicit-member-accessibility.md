@@ -1,5 +1,6 @@
 ---
-title: "typescript/explicit-member-accessibility"
+title: "typescript/explicit-member-accessibility | Oxlint"
+rule: "typescript/explicit-member-accessibility"
 category: "Restriction"
 version: "1.61.0"
 default: false

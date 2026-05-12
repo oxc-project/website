@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-object-constructor"
+title: "eslint/no-object-constructor | Oxlint"
+rule: "eslint/no-object-constructor"
 category: "Pedantic"
 version: "0.13.2"
 default: false

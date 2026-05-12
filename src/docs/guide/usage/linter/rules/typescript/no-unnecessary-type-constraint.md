@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-type-constraint"
+title: "typescript/no-unnecessary-type-constraint | Oxlint"
+rule: "typescript/no-unnecessary-type-constraint"
 category: "Suspicious"
 version: "0.0.6"
 default: false

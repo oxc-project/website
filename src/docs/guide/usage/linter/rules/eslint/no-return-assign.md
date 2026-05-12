@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-return-assign"
+title: "eslint/no-return-assign | Oxlint"
+rule: "eslint/no-return-assign"
 category: "Style"
 version: "0.9.10"
 default: false

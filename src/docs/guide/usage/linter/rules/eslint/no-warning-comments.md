@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-warning-comments"
+title: "eslint/no-warning-comments | Oxlint"
+rule: "eslint/no-warning-comments"
 category: "Pedantic"
 version: "1.24.0"
 default: false

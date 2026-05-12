@@ -1,5 +1,6 @@
 ---
-title: "jest/no-interpolation-in-snapshots"
+title: "jest/no-interpolation-in-snapshots | Oxlint"
+rule: "jest/no-interpolation-in-snapshots"
 category: "Style"
 version: "0.0.13"
 default: false

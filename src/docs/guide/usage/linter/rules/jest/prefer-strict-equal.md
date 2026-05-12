@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-strict-equal"
+title: "jest/prefer-strict-equal | Oxlint"
+rule: "jest/prefer-strict-equal"
 category: "Style"
 version: "0.2.13"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/aria-activedescendant-has-tabindex"
+title: "jsx-a11y/aria-activedescendant-has-tabindex | Oxlint"
+rule: "jsx-a11y/aria-activedescendant-has-tabindex"
 category: "Correctness"
 version: "0.2.1"
 default: false

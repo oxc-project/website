@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-async-client-component"
+title: "nextjs/no-async-client-component | Oxlint"
+rule: "nextjs/no-async-client-component"
 category: "Correctness"
 version: "0.2.0"
 default: false

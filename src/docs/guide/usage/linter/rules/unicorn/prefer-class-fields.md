@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-class-fields"
+title: "unicorn/prefer-class-fields | Oxlint"
+rule: "unicorn/prefer-class-fields"
 category: "Style"
 version: "1.20.0"
 default: false

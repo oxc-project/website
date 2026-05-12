@@ -1,5 +1,6 @@
 ---
-title: "vitest/max-expects"
+title: "vitest/max-expects | Oxlint"
+rule: "vitest/max-expects"
 category: "Style"
 version: "0.0.18"
 default: false

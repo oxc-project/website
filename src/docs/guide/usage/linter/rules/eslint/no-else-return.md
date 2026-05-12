@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-else-return"
+title: "eslint/no-else-return | Oxlint"
+rule: "eslint/no-else-return"
 category: "Pedantic"
 version: "0.9.10"
 default: false

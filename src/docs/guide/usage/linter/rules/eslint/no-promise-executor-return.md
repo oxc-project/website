@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-promise-executor-return"
+title: "eslint/no-promise-executor-return | Oxlint"
+rule: "eslint/no-promise-executor-return"
 category: "Pedantic"
 version: "1.33.0"
 default: false

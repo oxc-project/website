@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-loop-func"
+title: "eslint/no-loop-func | Oxlint"
+rule: "eslint/no-loop-func"
 category: "Pedantic"
 version: "1.33.0"
 default: false

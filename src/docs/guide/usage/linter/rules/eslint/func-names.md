@@ -1,5 +1,6 @@
 ---
-title: "eslint/func-names"
+title: "eslint/func-names | Oxlint"
+rule: "eslint/func-names"
 category: "Style"
 version: "0.7.0"
 default: false

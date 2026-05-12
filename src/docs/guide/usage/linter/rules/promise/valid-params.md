@@ -1,5 +1,6 @@
 ---
-title: "promise/valid-params"
+title: "promise/valid-params | Oxlint"
+rule: "promise/valid-params"
 category: "Correctness"
 version: "0.7.1"
 default: false

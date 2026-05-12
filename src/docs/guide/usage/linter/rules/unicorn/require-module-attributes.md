@@ -1,5 +1,6 @@
 ---
-title: "unicorn/require-module-attributes"
+title: "unicorn/require-module-attributes | Oxlint"
+rule: "unicorn/require-module-attributes"
 category: "Style"
 version: "1.35.0"
 default: false

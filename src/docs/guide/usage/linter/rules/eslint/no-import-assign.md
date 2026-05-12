@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-import-assign"
+title: "eslint/no-import-assign | Oxlint"
+rule: "eslint/no-import-assign"
 category: "Correctness"
 version: "0.0.5"
 default: true

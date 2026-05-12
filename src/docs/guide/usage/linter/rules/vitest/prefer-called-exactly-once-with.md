@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-called-exactly-once-with"
+title: "vitest/prefer-called-exactly-once-with | Oxlint"
+rule: "vitest/prefer-called-exactly-once-with"
 category: "Style"
 version: "1.58.0"
 default: false

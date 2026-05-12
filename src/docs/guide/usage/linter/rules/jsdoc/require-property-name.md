@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/require-property-name"
+title: "jsdoc/require-property-name | Oxlint"
+rule: "jsdoc/require-property-name"
 category: "Correctness"
 version: "0.2.18"
 default: false

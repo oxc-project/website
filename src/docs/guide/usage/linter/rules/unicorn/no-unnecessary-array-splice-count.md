@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-unnecessary-array-splice-count"
+title: "unicorn/no-unnecessary-array-splice-count | Oxlint"
+rule: "unicorn/no-unnecessary-array-splice-count"
 category: "Pedantic"
 version: "1.20.0"
 default: false

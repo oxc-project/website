@@ -1,5 +1,6 @@
 ---
-title: "react/no-will-update-set-state"
+title: "react/no-will-update-set-state | Oxlint"
+rule: "react/no-will-update-set-state"
 category: "Correctness"
 version: "1.37.0"
 default: false

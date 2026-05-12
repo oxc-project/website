@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-array-reverse"
+title: "unicorn/no-array-reverse | Oxlint"
+rule: "unicorn/no-array-reverse"
 category: "Suspicious"
 version: "1.15.0"
 default: false

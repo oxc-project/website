@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/require-returns-type"
+title: "jsdoc/require-returns-type | Oxlint"
+rule: "jsdoc/require-returns-type"
 category: "Pedantic"
 version: "0.4.3"
 default: false

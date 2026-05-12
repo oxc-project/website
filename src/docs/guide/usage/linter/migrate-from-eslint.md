@@ -1,3 +1,7 @@
+---
+title: "Migrate from ESLint | Oxlint"
+---
+
 # Migrate from ESLint
 
 This guide is for existing JavaScript and TypeScript projects that currently use ESLint and want to migrate to Oxlint.

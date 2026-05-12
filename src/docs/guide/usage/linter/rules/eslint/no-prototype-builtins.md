@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-prototype-builtins"
+title: "eslint/no-prototype-builtins | Oxlint"
+rule: "eslint/no-prototype-builtins"
 category: "Pedantic"
 version: "0.0.5"
 default: false

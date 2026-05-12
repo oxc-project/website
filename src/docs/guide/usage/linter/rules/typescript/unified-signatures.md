@@ -1,5 +1,6 @@
 ---
-title: "typescript/unified-signatures"
+title: "typescript/unified-signatures | Oxlint"
+rule: "typescript/unified-signatures"
 category: "Style"
 version: "1.48.0"
 default: false

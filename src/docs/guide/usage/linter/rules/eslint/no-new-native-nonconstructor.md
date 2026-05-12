@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-new-native-nonconstructor"
+title: "eslint/no-new-native-nonconstructor | Oxlint"
+rule: "eslint/no-new-native-nonconstructor"
 category: "Correctness"
 version: "0.3.3"
 default: true

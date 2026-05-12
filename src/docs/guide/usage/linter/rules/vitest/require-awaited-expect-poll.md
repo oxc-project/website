@@ -1,5 +1,6 @@
 ---
-title: "vitest/require-awaited-expect-poll"
+title: "vitest/require-awaited-expect-poll | Oxlint"
+rule: "vitest/require-awaited-expect-poll"
 category: "Correctness"
 version: "1.58.0"
 default: false

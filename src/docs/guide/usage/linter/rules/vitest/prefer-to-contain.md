@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-contain"
+title: "vitest/prefer-to-contain | Oxlint"
+rule: "vitest/prefer-to-contain"
 category: "Style"
 version: "0.2.14"
 default: false

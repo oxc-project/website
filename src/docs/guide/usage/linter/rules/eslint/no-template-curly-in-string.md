@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-template-curly-in-string"
+title: "eslint/no-template-curly-in-string | Oxlint"
+rule: "eslint/no-template-curly-in-string"
 category: "Style"
 version: "0.2.14"
 default: false

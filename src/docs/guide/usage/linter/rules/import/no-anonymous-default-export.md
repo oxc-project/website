@@ -1,5 +1,6 @@
 ---
-title: "import/no-anonymous-default-export"
+title: "import/no-anonymous-default-export | Oxlint"
+rule: "import/no-anonymous-default-export"
 category: "Style"
 version: "0.15.14"
 default: false

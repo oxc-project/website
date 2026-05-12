@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-regexp-exec"
+title: "typescript/prefer-regexp-exec | Oxlint"
+rule: "typescript/prefer-regexp-exec"
 category: "Style"
 version: "1.49.0"
 default: false

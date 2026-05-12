@@ -140,18 +140,24 @@ export const sharedConfig = {
       provider: "local",
       options: {
         async _render(src: string, env: MarkdownEnv, md: AsyncMarkdownRenderer) {
-          const html = await md.renderAsync(src, env);
+          let html = await md.renderAsync(src, env);
           // Filter out pages with `search: false` in the frontmatter.
           if (env.frontmatter?.search === false) {
             return "";
           }
 
-          // This is necessary because the page title for rules is stored
-          // in `frontmatter.title` instead of in the markdown itself.
-          // If we don't do this, the search index will not have the rule
-          // name as a header.
-          if (env.frontmatter?.title && !env.title) {
-            return (await md.renderAsync(`# ${(env.frontmatter as any).title}`)) + html;
+          // Always prefer `frontmatter.title` as the H1 in the search index when set,
+          // so the breadcrumb reflects the canonical page title (including product context).
+          if (env.frontmatter?.title) {
+            const title = (env.frontmatter as any).title;
+            // Pages without a markdown H1 (e.g., auto-generated rule pages): inject one.
+            if (!env.title) {
+              return (await md.renderAsync(`# ${title}`)) + html;
+            }
+            // Pages with their own H1: replace it in the indexed source so the
+            // search section title comes from frontmatter.title.
+            const prepared = src.replace(/^# .+$/m, `# ${title}`);
+            return await md.renderAsync(prepared, env);
           }
           return html;
         },

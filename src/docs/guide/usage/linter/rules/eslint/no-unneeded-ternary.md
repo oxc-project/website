@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unneeded-ternary"
+title: "eslint/no-unneeded-ternary | Oxlint"
+rule: "eslint/no-unneeded-ternary"
 category: "Suspicious"
 version: "0.15.12"
 default: false

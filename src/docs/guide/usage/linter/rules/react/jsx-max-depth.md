@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-max-depth"
+title: "react/jsx-max-depth | Oxlint"
+rule: "react/jsx-max-depth"
 category: "Style"
 version: "1.36.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "react/require-render-return"
+title: "react/require-render-return | Oxlint"
+rule: "react/require-render-return"
 category: "Nursery"
 version: "0.2.0"
 default: false

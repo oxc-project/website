@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-array-some"
+title: "unicorn/prefer-array-some | Oxlint"
+rule: "unicorn/prefer-array-some"
 category: "Pedantic"
 version: "0.0.18"
 default: false

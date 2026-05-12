@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-be-falsy"
+title: "vitest/prefer-to-be-falsy | Oxlint"
+rule: "vitest/prefer-to-be-falsy"
 category: "Style"
 version: "0.7.1"
 default: false

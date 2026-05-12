@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-extra-bind"
+title: "eslint/no-extra-bind | Oxlint"
+rule: "eslint/no-extra-bind"
 category: "Suspicious"
 version: "1.1.0"
 default: false

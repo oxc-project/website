@@ -1,5 +1,6 @@
 ---
-title: "import/no-unassigned-import"
+title: "import/no-unassigned-import | Oxlint"
+rule: "import/no-unassigned-import"
 category: "Suspicious"
 version: "0.16.11"
 default: false

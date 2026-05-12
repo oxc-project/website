@@ -1,5 +1,6 @@
 ---
-title: "eslint/getter-return"
+title: "eslint/getter-return | Oxlint"
+rule: "eslint/getter-return"
 category: "Correctness"
 version: "0.0.3"
 default: true

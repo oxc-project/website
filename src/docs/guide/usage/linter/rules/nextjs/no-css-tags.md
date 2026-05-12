@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-css-tags"
+title: "nextjs/no-css-tags | Oxlint"
+rule: "nextjs/no-css-tags"
 category: "Correctness"
 version: "0.2.0"
 default: false

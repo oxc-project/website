@@ -1,5 +1,5 @@
 ---
-title: Inline ignore comments
+title: "Inline ignore comments | Oxlint"
 description: Disable specific rules inline using Oxlint ignore comments
 ---
 

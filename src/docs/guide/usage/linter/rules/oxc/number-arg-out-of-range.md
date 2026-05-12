@@ -1,5 +1,6 @@
 ---
-title: "oxc/number-arg-out-of-range"
+title: "oxc/number-arg-out-of-range | Oxlint"
+rule: "oxc/number-arg-out-of-range"
 category: "Correctness"
 version: "0.0.3"
 default: true

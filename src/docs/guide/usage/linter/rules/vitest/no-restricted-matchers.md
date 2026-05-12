@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-restricted-matchers"
+title: "vitest/no-restricted-matchers | Oxlint"
+rule: "vitest/no-restricted-matchers"
 category: "Style"
 version: "0.2.3"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "oxc/only-used-in-recursion"
+title: "oxc/only-used-in-recursion | Oxlint"
+rule: "oxc/only-used-in-recursion"
 category: "Correctness"
 version: "0.1.1"
 default: true

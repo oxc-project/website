@@ -1,5 +1,6 @@
 ---
-title: "eslint/sort-vars"
+title: "eslint/sort-vars | Oxlint"
+rule: "eslint/sort-vars"
 category: "Pedantic"
 version: "0.9.3"
 default: false

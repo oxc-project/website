@@ -1,5 +1,6 @@
 ---
-title: "eslint/vars-on-top"
+title: "eslint/vars-on-top | Oxlint"
+rule: "eslint/vars-on-top"
 category: "Style"
 version: "0.15.4"
 default: false

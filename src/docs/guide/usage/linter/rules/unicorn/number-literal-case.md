@@ -1,5 +1,6 @@
 ---
-title: "unicorn/number-literal-case"
+title: "unicorn/number-literal-case | Oxlint"
+rule: "unicorn/number-literal-case"
 category: "Style"
 version: "0.0.18"
 default: false

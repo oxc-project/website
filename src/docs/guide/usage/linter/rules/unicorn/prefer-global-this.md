@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-global-this"
+title: "unicorn/prefer-global-this | Oxlint"
+rule: "unicorn/prefer-global-this"
 category: "Style"
 version: "0.16.12"
 default: false

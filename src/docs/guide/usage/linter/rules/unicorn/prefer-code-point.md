@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-code-point"
+title: "unicorn/prefer-code-point | Oxlint"
+rule: "unicorn/prefer-code-point"
 category: "Pedantic"
 version: "0.0.16"
 default: false

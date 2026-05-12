@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-length-check"
+title: "unicorn/no-useless-length-check | Oxlint"
+rule: "unicorn/no-useless-length-check"
 category: "Correctness"
 version: "0.0.19"
 default: true

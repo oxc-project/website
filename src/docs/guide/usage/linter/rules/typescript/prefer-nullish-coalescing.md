@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-nullish-coalescing"
+title: "typescript/prefer-nullish-coalescing | Oxlint"
+rule: "typescript/prefer-nullish-coalescing"
 category: "Pedantic"
 version: "1.33.0"
 default: false

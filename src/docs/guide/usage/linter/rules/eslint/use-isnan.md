@@ -1,5 +1,6 @@
 ---
-title: "eslint/use-isnan"
+title: "eslint/use-isnan | Oxlint"
+rule: "eslint/use-isnan"
 category: "Correctness"
 version: "0.0.3"
 default: true

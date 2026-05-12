@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-dom-node-text-content"
+title: "unicorn/prefer-dom-node-text-content | Oxlint"
+rule: "unicorn/prefer-dom-node-text-content"
 category: "Style"
 version: "0.0.21"
 default: false

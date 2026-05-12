@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-called-with"
+title: "jest/prefer-called-with | Oxlint"
+rule: "jest/prefer-called-with"
 category: "Style"
 version: "0.2.5"
 default: false

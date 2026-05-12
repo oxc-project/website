@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-lone-blocks"
+title: "eslint/no-lone-blocks | Oxlint"
+rule: "eslint/no-lone-blocks"
 category: "Style"
 version: "0.15.6"
 default: false

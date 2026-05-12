@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-duplicate-hooks"
+title: "vitest/no-duplicate-hooks | Oxlint"
+rule: "vitest/no-duplicate-hooks"
 category: "Style"
 version: "0.4.0"
 default: false

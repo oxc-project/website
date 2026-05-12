@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-underscore-dangle"
+title: "eslint/no-underscore-dangle | Oxlint"
+rule: "eslint/no-underscore-dangle"
 category: "Suspicious"
 version: "1.62.0"
 default: false

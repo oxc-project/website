@@ -1,5 +1,6 @@
 ---
-title: "typescript/switch-exhaustiveness-check"
+title: "typescript/switch-exhaustiveness-check | Oxlint"
+rule: "typescript/switch-exhaustiveness-check"
 category: "Pedantic"
 version: "1.12.0"
 default: false

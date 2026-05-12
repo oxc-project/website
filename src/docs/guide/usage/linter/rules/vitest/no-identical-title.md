@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-identical-title"
+title: "vitest/no-identical-title | Oxlint"
+rule: "vitest/no-identical-title"
 category: "Style"
 version: "0.0.14"
 default: false

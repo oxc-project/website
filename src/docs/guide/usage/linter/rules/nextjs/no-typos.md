@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-typos"
+title: "nextjs/no-typos | Oxlint"
+rule: "nextjs/no-typos"
 category: "Correctness"
 version: "0.2.1"
 default: false

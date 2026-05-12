@@ -1,5 +1,6 @@
 ---
-title: "eslint/func-name-matching"
+title: "eslint/func-name-matching | Oxlint"
+rule: "eslint/func-name-matching"
 category: "Style"
 version: "1.62.0"
 default: false

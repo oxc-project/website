@@ -1,5 +1,6 @@
 ---
-title: "oxc/const-comparisons"
+title: "oxc/const-comparisons | Oxlint"
+rule: "oxc/const-comparisons"
 category: "Correctness"
 version: "0.0.22"
 default: true

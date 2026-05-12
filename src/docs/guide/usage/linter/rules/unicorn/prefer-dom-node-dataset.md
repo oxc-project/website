@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-dom-node-dataset"
+title: "unicorn/prefer-dom-node-dataset | Oxlint"
+rule: "unicorn/prefer-dom-node-dataset"
 category: "Pedantic"
 version: "0.0.18"
 default: false

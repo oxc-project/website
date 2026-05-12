@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-loss-of-precision"
+title: "eslint/no-loss-of-precision | Oxlint"
+rule: "eslint/no-loss-of-precision"
 category: "Correctness"
 version: "0.0.7"
 default: true

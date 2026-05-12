@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unsafe-negation"
+title: "eslint/no-unsafe-negation | Oxlint"
+rule: "eslint/no-unsafe-negation"
 category: "Correctness"
 version: "0.0.3"
 default: true

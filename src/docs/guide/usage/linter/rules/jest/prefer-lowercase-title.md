@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-lowercase-title"
+title: "jest/prefer-lowercase-title | Oxlint"
+rule: "jest/prefer-lowercase-title"
 category: "Style"
 version: "0.15.9"
 default: false

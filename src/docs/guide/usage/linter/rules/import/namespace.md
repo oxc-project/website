@@ -1,5 +1,6 @@
 ---
-title: "import/namespace"
+title: "import/namespace | Oxlint"
+rule: "import/namespace"
 category: "Correctness"
 version: "0.2.11"
 default: false

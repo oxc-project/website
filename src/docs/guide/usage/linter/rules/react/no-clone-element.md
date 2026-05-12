@@ -1,5 +1,6 @@
 ---
-title: "react/no-clone-element"
+title: "react/no-clone-element | Oxlint"
+rule: "react/no-clone-element"
 category: "Restriction"
 version: "1.53.0"
 default: false

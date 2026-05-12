@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-hooks-in-order"
+title: "vitest/prefer-hooks-in-order | Oxlint"
+rule: "vitest/prefer-hooks-in-order"
 category: "Style"
 version: "0.6.0"
 default: false

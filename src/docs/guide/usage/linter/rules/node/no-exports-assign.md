@@ -1,5 +1,6 @@
 ---
-title: "node/no-exports-assign"
+title: "node/no-exports-assign | Oxlint"
+rule: "node/no-exports-assign"
 category: "Style"
 version: "0.9.3"
 default: false

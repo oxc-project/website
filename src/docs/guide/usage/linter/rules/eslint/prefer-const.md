@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-const"
+title: "eslint/prefer-const | Oxlint"
+rule: "eslint/prefer-const"
 category: "Style"
 version: "1.43.0"
 default: false
@@ -67,6 +68,8 @@ for (const i in [1, 2, 3]) {
 ### destructuring
 
 type: `"any" | "all"`
+
+Configures how destructuring assignments are handled.
 
 #### `"any"`
 

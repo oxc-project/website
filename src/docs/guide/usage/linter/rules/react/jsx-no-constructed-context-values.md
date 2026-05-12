@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-no-constructed-context-values"
+title: "react/jsx-no-constructed-context-values | Oxlint"
+rule: "react/jsx-no-constructed-context-values"
 category: "Perf"
 version: "1.48.0"
 default: false

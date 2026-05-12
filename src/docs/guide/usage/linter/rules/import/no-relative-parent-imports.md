@@ -1,5 +1,6 @@
 ---
-title: "import/no-relative-parent-imports"
+title: "import/no-relative-parent-imports | Oxlint"
+rule: "import/no-relative-parent-imports"
 category: "Restriction"
 version: "1.43.0"
 default: false

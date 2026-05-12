@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-async-promise-executor"
+title: "eslint/no-async-promise-executor | Oxlint"
+rule: "eslint/no-async-promise-executor"
 category: "Correctness"
 version: "0.0.3"
 default: true

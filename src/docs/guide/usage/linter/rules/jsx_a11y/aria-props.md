@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/aria-props"
+title: "jsx-a11y/aria-props | Oxlint"
+rule: "jsx-a11y/aria-props"
 category: "Correctness"
 version: "0.0.22"
 default: false

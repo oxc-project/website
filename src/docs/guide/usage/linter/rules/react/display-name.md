@@ -1,5 +1,6 @@
 ---
-title: "react/display-name"
+title: "react/display-name | Oxlint"
+rule: "react/display-name"
 category: "Pedantic"
 version: "1.42.0"
 default: false

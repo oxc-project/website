@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-restricted-exports"
+title: "eslint/no-restricted-exports | Oxlint"
+rule: "eslint/no-restricted-exports"
 category: "Nursery"
 version: "1.59.0"
 default: false

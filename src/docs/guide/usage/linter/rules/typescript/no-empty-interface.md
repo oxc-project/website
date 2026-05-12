@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-empty-interface"
+title: "typescript/no-empty-interface | Oxlint"
+rule: "typescript/no-empty-interface"
 category: "Style"
 version: "0.0.6"
 default: false

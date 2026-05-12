@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-hex-escape"
+title: "unicorn/no-hex-escape | Oxlint"
+rule: "unicorn/no-hex-escape"
 category: "Pedantic"
 version: "0.0.18"
 default: false

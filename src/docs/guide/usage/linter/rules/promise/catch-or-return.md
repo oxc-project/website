@@ -1,5 +1,6 @@
 ---
-title: "promise/catch-or-return"
+title: "promise/catch-or-return | Oxlint"
+rule: "promise/catch-or-return"
 category: "Restriction"
 version: "0.9.2"
 default: false

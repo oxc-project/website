@@ -1,5 +1,6 @@
 ---
-title: "import/default"
+title: "import/default | Oxlint"
+rule: "import/default"
 category: "Correctness"
 version: "0.0.13"
 default: false

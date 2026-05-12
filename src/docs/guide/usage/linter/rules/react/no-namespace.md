@@ -1,5 +1,6 @@
 ---
-title: "react/no-namespace"
+title: "react/no-namespace | Oxlint"
+rule: "react/no-namespace"
 category: "Suspicious"
 version: "0.15.13"
 default: false

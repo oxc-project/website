@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-filename-extension"
+title: "react/jsx-filename-extension | Oxlint"
+rule: "react/jsx-filename-extension"
 category: "Restriction"
 version: "0.15.14"
 default: false

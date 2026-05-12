@@ -1,5 +1,6 @@
 ---
-title: "react/no-render-return-value"
+title: "react/no-render-return-value | Oxlint"
+rule: "react/no-render-return-value"
 category: "Correctness"
 version: "0.0.15"
 default: false

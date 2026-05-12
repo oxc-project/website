@@ -1,5 +1,6 @@
 ---
-title: "unicorn/throw-new-error"
+title: "unicorn/throw-new-error | Oxlint"
+rule: "unicorn/throw-new-error"
 category: "Style"
 version: "0.0.14"
 default: false

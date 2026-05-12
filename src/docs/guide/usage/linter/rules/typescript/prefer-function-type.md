@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-function-type"
+title: "typescript/prefer-function-type | Oxlint"
+rule: "typescript/prefer-function-type"
 category: "Style"
 version: "0.2.11"
 default: false

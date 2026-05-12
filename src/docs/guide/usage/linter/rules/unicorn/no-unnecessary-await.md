@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-unnecessary-await"
+title: "unicorn/no-unnecessary-await | Oxlint"
+rule: "unicorn/no-unnecessary-await"
 category: "Correctness"
 version: "0.0.12"
 default: true

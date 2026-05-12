@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-depth"
+title: "eslint/max-depth | Oxlint"
+rule: "eslint/max-depth"
 category: "Pedantic"
 version: "0.15.12"
 default: false

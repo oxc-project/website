@@ -1,5 +1,6 @@
 ---
-title: "react-perf/jsx-no-jsx-as-prop"
+title: "react-perf/jsx-no-jsx-as-prop | Oxlint"
+rule: "react-perf/jsx-no-jsx-as-prop"
 category: "Perf"
 version: "0.2.3"
 default: false

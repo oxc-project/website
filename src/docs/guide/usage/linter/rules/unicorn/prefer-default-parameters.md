@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-default-parameters"
+title: "unicorn/prefer-default-parameters | Oxlint"
+rule: "unicorn/prefer-default-parameters"
 category: "Style"
 version: "1.33.0"
 default: false

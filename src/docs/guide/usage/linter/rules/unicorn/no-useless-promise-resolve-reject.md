@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-useless-promise-resolve-reject"
+title: "unicorn/no-useless-promise-resolve-reject | Oxlint"
+rule: "unicorn/no-useless-promise-resolve-reject"
 category: "Pedantic"
 version: "0.0.18"
 default: false

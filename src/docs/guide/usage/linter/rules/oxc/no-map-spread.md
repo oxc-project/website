@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-map-spread"
+title: "oxc/no-map-spread | Oxlint"
+rule: "oxc/no-map-spread"
 category: "Perf"
 version: "0.11.0"
 default: false

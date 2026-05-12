@@ -1,5 +1,6 @@
 ---
-title: "node/no-new-require"
+title: "node/no-new-require | Oxlint"
+rule: "node/no-new-require"
 category: "Restriction"
 version: "0.10.0"
 default: false

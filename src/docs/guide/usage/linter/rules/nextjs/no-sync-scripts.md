@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-sync-scripts"
+title: "nextjs/no-sync-scripts | Oxlint"
+rule: "nextjs/no-sync-scripts"
 category: "Correctness"
 version: "0.2.0"
 default: false

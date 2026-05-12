@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-comparison-matcher"
+title: "jest/prefer-comparison-matcher | Oxlint"
+rule: "jest/prefer-comparison-matcher"
 category: "Style"
 version: "0.2.15"
 default: false

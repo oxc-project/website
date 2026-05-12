@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-console"
+title: "eslint/no-console | Oxlint"
+rule: "eslint/no-console"
 category: "Restriction"
 version: "0.0.13"
 default: false

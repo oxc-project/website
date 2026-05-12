@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-props-no-spreading"
+title: "react/jsx-props-no-spreading | Oxlint"
+rule: "react/jsx-props-no-spreading"
 category: "Style"
 version: "1.33.0"
 default: false

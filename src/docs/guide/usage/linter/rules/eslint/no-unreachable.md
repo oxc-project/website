@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-unreachable"
+title: "eslint/no-unreachable | Oxlint"
+rule: "eslint/no-unreachable"
 category: "Correctness"
 version: "0.4.4"
 default: true

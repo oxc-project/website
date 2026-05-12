@@ -1,5 +1,6 @@
 ---
-title: "vue/no-multiple-slot-args"
+title: "vue/no-multiple-slot-args | Oxlint"
+rule: "vue/no-multiple-slot-args"
 category: "Restriction"
 version: "1.15.0"
 default: false

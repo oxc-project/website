@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-confusing-non-null-assertion"
+title: "typescript/no-confusing-non-null-assertion | Oxlint"
+rule: "typescript/no-confusing-non-null-assertion"
 category: "Suspicious"
 version: "0.6.1"
 default: false

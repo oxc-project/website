@@ -1,5 +1,6 @@
 ---
-title: "import/consistent-type-specifier-style"
+title: "import/consistent-type-specifier-style | Oxlint"
+rule: "import/consistent-type-specifier-style"
 category: "Style"
 version: "0.16.11"
 default: false

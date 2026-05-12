@@ -1,5 +1,6 @@
 ---
-title: "import/first"
+title: "import/first | Oxlint"
+rule: "import/first"
 category: "Style"
 version: "0.11.1"
 default: false

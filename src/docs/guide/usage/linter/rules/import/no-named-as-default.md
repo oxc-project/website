@@ -1,5 +1,6 @@
 ---
-title: "import/no-named-as-default"
+title: "import/no-named-as-default | Oxlint"
+rule: "import/no-named-as-default"
 category: "Suspicious"
 version: "0.2.3"
 default: false

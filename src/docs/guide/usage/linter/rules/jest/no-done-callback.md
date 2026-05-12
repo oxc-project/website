@@ -1,5 +1,6 @@
 ---
-title: "jest/no-done-callback"
+title: "jest/no-done-callback | Oxlint"
+rule: "jest/no-done-callback"
 category: "Style"
 version: "0.0.13"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vue/define-props-declaration"
+title: "vue/define-props-declaration | Oxlint"
+rule: "vue/define-props-declaration"
 category: "Style"
 version: "1.15.0"
 default: false

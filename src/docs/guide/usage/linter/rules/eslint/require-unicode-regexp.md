@@ -1,5 +1,6 @@
 ---
-title: "eslint/require-unicode-regexp"
+title: "eslint/require-unicode-regexp | Oxlint"
+rule: "eslint/require-unicode-regexp"
 category: "Pedantic"
 version: "1.63.0"
 default: false

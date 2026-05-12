@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-caller"
+title: "eslint/no-caller | Oxlint"
+rule: "eslint/no-caller"
 category: "Correctness"
 version: "0.0.3"
 default: true

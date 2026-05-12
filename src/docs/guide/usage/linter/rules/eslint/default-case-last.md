@@ -1,5 +1,6 @@
 ---
-title: "eslint/default-case-last"
+title: "eslint/default-case-last | Oxlint"
+rule: "eslint/default-case-last"
 category: "Style"
 version: "0.0.16"
 default: false

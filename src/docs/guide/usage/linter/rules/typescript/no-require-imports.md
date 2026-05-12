@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-require-imports"
+title: "typescript/no-require-imports | Oxlint"
+rule: "typescript/no-require-imports"
 category: "Restriction"
 version: "0.13.0"
 default: false

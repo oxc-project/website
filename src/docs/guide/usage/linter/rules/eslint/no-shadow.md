@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-shadow"
+title: "eslint/no-shadow | Oxlint"
+rule: "eslint/no-shadow"
 category: "Suspicious"
 version: "1.48.0"
 default: false

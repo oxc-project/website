@@ -1,5 +1,6 @@
 ---
-title: "jest/no-identical-title"
+title: "jest/no-identical-title | Oxlint"
+rule: "jest/no-identical-title"
 category: "Style"
 version: "0.0.14"
 default: false

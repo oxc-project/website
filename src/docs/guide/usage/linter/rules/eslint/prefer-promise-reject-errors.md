@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-promise-reject-errors"
+title: "eslint/prefer-promise-reject-errors | Oxlint"
+rule: "eslint/prefer-promise-reject-errors"
 category: "Style"
 version: "0.15.7"
 default: false

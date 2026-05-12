@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-spread"
+title: "unicorn/prefer-spread | Oxlint"
+rule: "unicorn/prefer-spread"
 category: "Style"
 version: "0.0.17"
 default: false

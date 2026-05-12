@@ -1,5 +1,6 @@
 ---
-title: "typescript/promise-function-async"
+title: "typescript/promise-function-async | Oxlint"
+rule: "typescript/promise-function-async"
 category: "Restriction"
 version: "1.12.0"
 default: false

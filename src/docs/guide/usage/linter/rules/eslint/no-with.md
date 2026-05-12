@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-with"
+title: "eslint/no-with | Oxlint"
+rule: "eslint/no-with"
 category: "Correctness"
 version: "0.2.14"
 default: true

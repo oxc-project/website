@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-reduce-type-parameter"
+title: "typescript/prefer-reduce-type-parameter | Oxlint"
+rule: "typescript/prefer-reduce-type-parameter"
 category: "Style"
 version: "1.12.0"
 default: false

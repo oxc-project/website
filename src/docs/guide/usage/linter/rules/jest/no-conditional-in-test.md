@@ -1,5 +1,6 @@
 ---
-title: "jest/no-conditional-in-test"
+title: "jest/no-conditional-in-test | Oxlint"
+rule: "jest/no-conditional-in-test"
 category: "Pedantic"
 version: "0.8.0"
 default: false

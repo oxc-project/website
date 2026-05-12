@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-array-flat-map"
+title: "unicorn/prefer-array-flat-map | Oxlint"
+rule: "unicorn/prefer-array-flat-map"
 category: "Perf"
 version: "0.0.14"
 default: false

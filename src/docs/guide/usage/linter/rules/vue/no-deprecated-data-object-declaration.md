@@ -1,5 +1,6 @@
 ---
-title: "vue/no-deprecated-data-object-declaration"
+title: "vue/no-deprecated-data-object-declaration | Oxlint"
+rule: "vue/no-deprecated-data-object-declaration"
 category: "Correctness"
 version: "1.62.0"
 default: false

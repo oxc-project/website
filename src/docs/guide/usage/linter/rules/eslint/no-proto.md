@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-proto"
+title: "eslint/no-proto | Oxlint"
+rule: "eslint/no-proto"
 category: "Restriction"
 version: "0.2.14"
 default: false

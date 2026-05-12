@@ -1,5 +1,6 @@
 ---
-title: "jest/padding-around-test-blocks"
+title: "jest/padding-around-test-blocks | Oxlint"
+rule: "jest/padding-around-test-blocks"
 category: "Style"
 version: "1.13.0"
 default: false

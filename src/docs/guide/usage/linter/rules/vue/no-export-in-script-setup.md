@@ -1,5 +1,6 @@
 ---
-title: "vue/no-export-in-script-setup"
+title: "vue/no-export-in-script-setup | Oxlint"
+rule: "vue/no-export-in-script-setup"
 category: "Correctness"
 version: "1.20.0"
 default: false

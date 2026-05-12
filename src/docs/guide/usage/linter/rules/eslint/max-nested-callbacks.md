@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-nested-callbacks"
+title: "eslint/max-nested-callbacks | Oxlint"
+rule: "eslint/max-nested-callbacks"
 category: "Pedantic"
 version: "0.15.12"
 default: false

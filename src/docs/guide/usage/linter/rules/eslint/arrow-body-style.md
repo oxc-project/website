@@ -1,5 +1,6 @@
 ---
-title: "eslint/arrow-body-style"
+title: "eslint/arrow-body-style | Oxlint"
+rule: "eslint/arrow-body-style"
 category: "Style"
 version: "1.4.0"
 default: false

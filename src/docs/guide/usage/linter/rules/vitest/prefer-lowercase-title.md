@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-lowercase-title"
+title: "vitest/prefer-lowercase-title | Oxlint"
+rule: "vitest/prefer-lowercase-title"
 category: "Style"
 version: "0.15.9"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/unbound-method"
+title: "typescript/unbound-method | Oxlint"
+rule: "typescript/unbound-method"
 category: "Correctness"
 version: "1.12.0"
 default: true

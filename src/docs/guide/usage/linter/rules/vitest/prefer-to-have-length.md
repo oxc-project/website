@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-to-have-length"
+title: "vitest/prefer-to-have-length | Oxlint"
+rule: "vitest/prefer-to-have-length"
 category: "Style"
 version: "0.2.13"
 default: false

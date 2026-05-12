@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-this-before-super"
+title: "eslint/no-this-before-super | Oxlint"
+rule: "eslint/no-this-before-super"
 category: "Correctness"
 version: "0.2.6"
 default: true

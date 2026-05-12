@@ -1,5 +1,6 @@
 ---
-title: "jsdoc/require-param-name"
+title: "jsdoc/require-param-name | Oxlint"
+rule: "jsdoc/require-param-name"
 category: "Pedantic"
 version: "0.4.3"
 default: false

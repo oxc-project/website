@@ -1,5 +1,6 @@
 ---
-title: "react/iframe-missing-sandbox"
+title: "react/iframe-missing-sandbox | Oxlint"
+rule: "react/iframe-missing-sandbox"
 category: "Suspicious"
 version: "0.10.0"
 default: false

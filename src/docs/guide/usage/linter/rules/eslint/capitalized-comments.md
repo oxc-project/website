@@ -1,5 +1,6 @@
 ---
-title: "eslint/capitalized-comments"
+title: "eslint/capitalized-comments | Oxlint"
+rule: "eslint/capitalized-comments"
 category: "Style"
 version: "1.34.0"
 default: false

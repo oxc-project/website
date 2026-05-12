@@ -1,5 +1,6 @@
 ---
-title: "nextjs/no-page-custom-font"
+title: "nextjs/no-page-custom-font | Oxlint"
+rule: "nextjs/no-page-custom-font"
 category: "Correctness"
 version: "0.3.3"
 default: false

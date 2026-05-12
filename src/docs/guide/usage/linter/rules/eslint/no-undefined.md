@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-undefined"
+title: "eslint/no-undefined | Oxlint"
+rule: "eslint/no-undefined"
 category: "Restriction"
 version: "0.5.3"
 default: false

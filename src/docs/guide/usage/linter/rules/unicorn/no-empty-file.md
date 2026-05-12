@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-empty-file"
+title: "unicorn/no-empty-file | Oxlint"
+rule: "unicorn/no-empty-file"
 category: "Correctness"
 version: "0.0.15"
 default: true

@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-unnecessary-boolean-literal-compare"
+title: "typescript/no-unnecessary-boolean-literal-compare | Oxlint"
+rule: "typescript/no-unnecessary-boolean-literal-compare"
 category: "Suspicious"
 version: "1.12.0"
 default: false

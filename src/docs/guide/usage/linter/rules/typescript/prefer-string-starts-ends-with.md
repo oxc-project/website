@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-string-starts-ends-with"
+title: "typescript/prefer-string-starts-ends-with | Oxlint"
+rule: "typescript/prefer-string-starts-ends-with"
 category: "Style"
 version: "0.0.8"
 default: true

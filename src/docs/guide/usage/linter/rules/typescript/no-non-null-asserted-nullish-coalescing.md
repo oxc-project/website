@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-non-null-asserted-nullish-coalescing"
+title: "typescript/no-non-null-asserted-nullish-coalescing | Oxlint"
+rule: "typescript/no-non-null-asserted-nullish-coalescing"
 category: "Restriction"
 version: "0.5.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jest/no-unneeded-async-expect-function"
+title: "jest/no-unneeded-async-expect-function | Oxlint"
+rule: "jest/no-unneeded-async-expect-function"
 category: "Style"
 version: "1.39.0"
 default: false

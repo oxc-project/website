@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-no-useless-fragment"
+title: "react/jsx-no-useless-fragment | Oxlint"
+rule: "react/jsx-no-useless-fragment"
 category: "Pedantic"
 version: "0.0.14"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/consistent-template-literal-escape"
+title: "unicorn/consistent-template-literal-escape | Oxlint"
+rule: "unicorn/consistent-template-literal-escape"
 category: "Style"
 version: "1.60.0"
 default: false

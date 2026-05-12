@@ -1,5 +1,6 @@
 ---
-title: "jest/require-top-level-describe"
+title: "jest/require-top-level-describe | Oxlint"
+rule: "jest/require-top-level-describe"
 category: "Style"
 version: "0.4.2"
 default: false

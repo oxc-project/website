@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-lines-per-function"
+title: "eslint/max-lines-per-function | Oxlint"
+rule: "eslint/max-lines-per-function"
 category: "Pedantic"
 version: "0.15.12"
 default: false

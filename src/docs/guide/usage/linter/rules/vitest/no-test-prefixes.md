@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-test-prefixes"
+title: "vitest/no-test-prefixes | Oxlint"
+rule: "vitest/no-test-prefixes"
 category: "Style"
 version: "0.0.7"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-namespace"
+title: "typescript/no-namespace | Oxlint"
+rule: "typescript/no-namespace"
 category: "Restriction"
 version: "0.0.8"
 default: false

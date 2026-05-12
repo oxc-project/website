@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-mock-return-shorthand"
+title: "vitest/prefer-mock-return-shorthand | Oxlint"
+rule: "vitest/prefer-mock-return-shorthand"
 category: "Style"
 version: "1.49.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-nested-ternary"
+title: "unicorn/no-nested-ternary | Oxlint"
+rule: "unicorn/no-nested-ternary"
 category: "Style"
 version: "0.0.18"
 default: false

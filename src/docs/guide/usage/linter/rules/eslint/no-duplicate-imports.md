@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-duplicate-imports"
+title: "eslint/no-duplicate-imports | Oxlint"
+rule: "eslint/no-duplicate-imports"
 category: "Style"
 version: "0.13.2"
 default: false

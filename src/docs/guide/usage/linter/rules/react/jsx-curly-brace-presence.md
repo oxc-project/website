@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-curly-brace-presence"
+title: "react/jsx-curly-brace-presence | Oxlint"
+rule: "react/jsx-curly-brace-presence"
 category: "Style"
 version: "0.7.0"
 default: false

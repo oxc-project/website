@@ -1,5 +1,6 @@
 ---
-title: "promise/prefer-catch"
+title: "promise/prefer-catch | Oxlint"
+rule: "promise/prefer-catch"
 category: "Style"
 version: "0.15.14"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/anchor-ambiguous-text"
+title: "jsx-a11y/anchor-ambiguous-text | Oxlint"
+rule: "jsx-a11y/anchor-ambiguous-text"
 category: "Restriction"
 version: "0.13.2"
 default: false

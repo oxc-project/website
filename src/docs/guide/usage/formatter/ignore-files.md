@@ -1,3 +1,7 @@
+---
+title: "Ignore files | Oxfmt"
+---
+
 # Ignore files
 
 Oxfmt provides several ways to exclude files from formatting.

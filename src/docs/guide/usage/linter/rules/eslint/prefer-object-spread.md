@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-object-spread"
+title: "eslint/prefer-object-spread | Oxlint"
+rule: "eslint/prefer-object-spread"
 category: "Style"
 version: "0.15.9"
 default: false

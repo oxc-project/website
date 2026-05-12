@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-array-constructor"
+title: "eslint/no-array-constructor | Oxlint"
+rule: "eslint/no-array-constructor"
 category: "Pedantic"
 version: "0.0.3"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "unicorn/no-negated-condition"
+title: "unicorn/no-negated-condition | Oxlint"
+rule: "unicorn/no-negated-condition"
 category: "Pedantic"
 version: "0.0.18"
 default: false

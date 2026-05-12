@@ -1,5 +1,6 @@
 ---
-title: "jest/no-disabled-tests"
+title: "jest/no-disabled-tests | Oxlint"
+rule: "jest/no-disabled-tests"
 category: "Correctness"
 version: "0.0.7"
 default: false

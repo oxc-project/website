@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-snapshot-hint"
+title: "jest/prefer-snapshot-hint | Oxlint"
+rule: "jest/prefer-snapshot-hint"
 category: "Correctness"
 version: "1.59.0"
 default: false

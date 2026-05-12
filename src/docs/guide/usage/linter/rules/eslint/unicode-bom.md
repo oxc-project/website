@@ -1,5 +1,6 @@
 ---
-title: "eslint/unicode-bom"
+title: "eslint/unicode-bom | Oxlint"
+rule: "eslint/unicode-bom"
 category: "Restriction"
 version: "0.3.3"
 default: false

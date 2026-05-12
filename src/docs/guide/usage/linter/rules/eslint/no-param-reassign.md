@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-param-reassign"
+title: "eslint/no-param-reassign | Oxlint"
+rule: "eslint/no-param-reassign"
 category: "Restriction"
 version: "1.20.0"
 default: false

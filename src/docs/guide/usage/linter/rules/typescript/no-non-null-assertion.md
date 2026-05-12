@@ -1,5 +1,6 @@
 ---
-title: "typescript/no-non-null-assertion"
+title: "typescript/no-non-null-assertion | Oxlint"
+rule: "typescript/no-non-null-assertion"
 category: "Restriction"
 version: "0.5.0"
 default: false

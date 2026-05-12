@@ -1,5 +1,6 @@
 ---
-title: "vitest/prefer-comparison-matcher"
+title: "vitest/prefer-comparison-matcher | Oxlint"
+rule: "vitest/prefer-comparison-matcher"
 category: "Style"
 version: "0.2.15"
 default: false

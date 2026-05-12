@@ -1,5 +1,6 @@
 ---
-title: "react/forbid-elements"
+title: "react/forbid-elements | Oxlint"
+rule: "react/forbid-elements"
 category: "Restriction"
 version: "0.16.11"
 default: false

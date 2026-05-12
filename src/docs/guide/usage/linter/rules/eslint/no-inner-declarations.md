@@ -1,5 +1,6 @@
 ---
-title: "eslint/no-inner-declarations"
+title: "eslint/no-inner-declarations | Oxlint"
+rule: "eslint/no-inner-declarations"
 category: "Pedantic"
 version: "0.0.5"
 default: false
@@ -68,6 +69,8 @@ This option is an object with the following properties:
 #### blockScopedFunctions
 
 type: `"allow" | "disallow"`
+
+Controls whether function declarations in nested blocks are allowed in strict mode (ES6+ behavior).
 
 ##### `"allow"`
 

@@ -1,5 +1,6 @@
 ---
-title: "jest/no-mocks-import"
+title: "jest/no-mocks-import | Oxlint"
+rule: "jest/no-mocks-import"
 category: "Style"
 version: "0.0.13"
 default: false

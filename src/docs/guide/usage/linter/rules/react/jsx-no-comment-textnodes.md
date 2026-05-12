@@ -1,5 +1,6 @@
 ---
-title: "react/jsx-no-comment-textnodes"
+title: "react/jsx-no-comment-textnodes | Oxlint"
+rule: "react/jsx-no-comment-textnodes"
 category: "Suspicious"
 version: "0.0.14"
 default: false

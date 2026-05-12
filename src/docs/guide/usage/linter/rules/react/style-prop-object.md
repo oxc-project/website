@@ -1,5 +1,6 @@
 ---
-title: "react/style-prop-object"
+title: "react/style-prop-object | Oxlint"
+rule: "react/style-prop-object"
 category: "Suspicious"
 version: "0.11.0"
 default: false

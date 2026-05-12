@@ -1,5 +1,6 @@
 ---
-title: "unicorn/switch-case-break-position"
+title: "unicorn/switch-case-break-position | Oxlint"
+rule: "unicorn/switch-case-break-position"
 category: "Style"
 version: "1.59.0"
 default: false

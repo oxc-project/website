@@ -1,5 +1,6 @@
 ---
-title: "jest/prefer-hooks-in-order"
+title: "jest/prefer-hooks-in-order | Oxlint"
+rule: "jest/prefer-hooks-in-order"
 category: "Style"
 version: "0.6.0"
 default: false

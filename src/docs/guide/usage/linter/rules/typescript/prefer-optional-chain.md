@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-optional-chain"
+title: "typescript/prefer-optional-chain | Oxlint"
+rule: "typescript/prefer-optional-chain"
 category: "Nursery"
 version: "1.39.0"
 default: false

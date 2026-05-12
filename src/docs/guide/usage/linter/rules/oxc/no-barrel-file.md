@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-barrel-file"
+title: "oxc/no-barrel-file | Oxlint"
+rule: "oxc/no-barrel-file"
 category: "Restriction"
 version: "0.3.0"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "vitest/max-nested-describe"
+title: "vitest/max-nested-describe | Oxlint"
+rule: "vitest/max-nested-describe"
 category: "Style"
 version: "0.4.4"
 default: false

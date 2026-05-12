@@ -1,5 +1,6 @@
 ---
-title: "jsx-a11y/no-noninteractive-tabindex"
+title: "jsx-a11y/no-noninteractive-tabindex | Oxlint"
+rule: "jsx-a11y/no-noninteractive-tabindex"
 category: "Correctness"
 version: "0.15.4"
 default: false

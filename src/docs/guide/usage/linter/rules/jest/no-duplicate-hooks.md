@@ -1,5 +1,6 @@
 ---
-title: "jest/no-duplicate-hooks"
+title: "jest/no-duplicate-hooks | Oxlint"
+rule: "jest/no-duplicate-hooks"
 category: "Style"
 version: "0.4.0"
 default: false

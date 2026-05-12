@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-bigint-literals"
+title: "unicorn/prefer-bigint-literals | Oxlint"
+rule: "unicorn/prefer-bigint-literals"
 category: "Style"
 version: "1.30.0"
 default: false

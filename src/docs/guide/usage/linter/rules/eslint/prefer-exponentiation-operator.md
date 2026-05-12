@@ -1,5 +1,6 @@
 ---
-title: "eslint/prefer-exponentiation-operator"
+title: "eslint/prefer-exponentiation-operator | Oxlint"
+rule: "eslint/prefer-exponentiation-operator"
 category: "Style"
 version: "0.4.0"
 default: false

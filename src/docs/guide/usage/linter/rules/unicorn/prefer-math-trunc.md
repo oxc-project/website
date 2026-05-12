@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-math-trunc"
+title: "unicorn/prefer-math-trunc | Oxlint"
+rule: "unicorn/prefer-math-trunc"
 category: "Pedantic"
 version: "0.0.18"
 default: false

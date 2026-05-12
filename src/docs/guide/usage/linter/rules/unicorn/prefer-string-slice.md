@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-string-slice"
+title: "unicorn/prefer-string-slice | Oxlint"
+rule: "unicorn/prefer-string-slice"
 category: "Pedantic"
 version: "0.0.18"
 default: false

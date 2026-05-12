@@ -1,3 +1,7 @@
+---
+title: "Migrate from Prettier | Oxfmt"
+---
+
 # Migrate from Prettier
 
 This guide covers migrating from Prettier to Oxfmt.

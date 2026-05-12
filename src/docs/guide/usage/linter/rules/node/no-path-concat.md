@@ -1,5 +1,6 @@
 ---
-title: "node/no-path-concat"
+title: "node/no-path-concat | Oxlint"
+rule: "node/no-path-concat"
 category: "Restriction"
 version: "1.49.0"
 default: false

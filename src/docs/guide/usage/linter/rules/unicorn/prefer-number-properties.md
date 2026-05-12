@@ -1,5 +1,6 @@
 ---
-title: "unicorn/prefer-number-properties"
+title: "unicorn/prefer-number-properties | Oxlint"
+rule: "unicorn/prefer-number-properties"
 category: "Restriction"
 version: "0.0.19"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "oxc/no-const-enum"
+title: "oxc/no-const-enum | Oxlint"
+rule: "oxc/no-const-enum"
 category: "Restriction"
 version: "0.4.2"
 default: false

@@ -1,5 +1,6 @@
 ---
-title: "typescript/prefer-return-this-type"
+title: "typescript/prefer-return-this-type | Oxlint"
+rule: "typescript/prefer-return-this-type"
 category: "Style"
 version: "1.12.0"
 default: false

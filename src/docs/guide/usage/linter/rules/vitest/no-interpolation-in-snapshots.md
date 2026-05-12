@@ -1,5 +1,6 @@
 ---
-title: "vitest/no-interpolation-in-snapshots"
+title: "vitest/no-interpolation-in-snapshots | Oxlint"
+rule: "vitest/no-interpolation-in-snapshots"
 category: "Style"
 version: "0.0.13"
 default: false

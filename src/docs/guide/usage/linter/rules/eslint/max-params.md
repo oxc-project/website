@@ -1,5 +1,6 @@
 ---
-title: "eslint/max-params"
+title: "eslint/max-params | Oxlint"
+rule: "eslint/max-params"
 category: "Style"
 version: "0.2.14"
 default: false
