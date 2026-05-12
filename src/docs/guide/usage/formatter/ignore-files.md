@@ -46,10 +46,13 @@ Files matching `ignorePatterns` **cannot be formatted**, even if explicitly spec
 
 ## `.gitignore`
 
-Oxfmt respects `.gitignore` files in the current directory tree.
+Oxfmt respects the same Git ignore rules as Git itself:
 
-- Global gitignore and parent `.gitignore` files are not read
-- A `.git` directory is not required
+- `.gitignore` files in the current directory tree
+- `.gitignore` files in parent directories (up to the repository boundary)
+- `.git/info/exclude`
+
+However, global gitignore (`core.excludesFile`) is not read.
 
 Files ignored by `.gitignore` **can still be formatted** if explicitly specified.
 
