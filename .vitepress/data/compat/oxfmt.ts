@@ -29,11 +29,16 @@ const angularHtmlIssue = {
 export const NOTE_ID_PRETTIER_PLUGINS = 3;
 export const NOTE_ID_NO_GJS_GTS = 6;
 export const NOTE_ID_ANGULAR_HTML = 7;
+export const NOTE_ID_NEEDS_SVELTE_COMPILER = 8;
 
 const needsPluginSupport = {
   noteId: NOTE_ID_PRETTIER_PLUGINS,
   notes: "Requires Prettier plugin support (not yet available)",
   sources: [prettierPluginsIssue],
+};
+const needsSvelteCompiler = {
+  noteId: NOTE_ID_NEEDS_SVELTE_COMPILER,
+  notes: "Requires installing `svelte/compiler` separately",
 };
 const noGjsGtsNote = {
   noteId: NOTE_ID_NO_GJS_GTS,
@@ -55,7 +60,7 @@ export const oxfmtEntries: CompatEntry[] = [
     frameworkId: "svelte",
     toolId: "oxfmt",
     featureId: "format",
-    status: { level: "none", ...needsPluginSupport },
+    status: { level: "full", ...needsSvelteCompiler },
   },
   {
     frameworkId: "angular",
@@ -93,7 +98,7 @@ export const oxfmtEntries: CompatEntry[] = [
     frameworkId: "sveltekit",
     toolId: "oxfmt",
     featureId: "format",
-    status: { level: "none", ...needsPluginSupport },
+    status: { level: "full", ...needsSvelteCompiler },
   },
   {
     frameworkId: "tanstack-start",
