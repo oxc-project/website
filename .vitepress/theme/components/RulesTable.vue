@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 // Import the generated rules data
 import rules from "@data/rules.json" with { type: "json" };
 import fixEmoji from "./utils/fixEmoji";
@@ -40,7 +40,9 @@ const toggleSort = (column: SortColumn) => {
 
 const resetFilters = () => {
   // Workaround for VoidZero base button focus style issue
-  (window.document.activeElement as HTMLButtonElement)?.blur();
+  if (typeof window !== "undefined") {
+    (window.document.activeElement as HTMLButtonElement)?.blur();
+  }
 
   categoryFilter.value = "all";
   scopeFilter.value = "all";
@@ -82,11 +84,17 @@ const handleInitialQueryParams = () => {
   }
 };
 
-handleInitialQueryParams();
+onMounted(() => {
+  handleInitialQueryParams();
+});
 
 watch(
   [sortColumn, sortDirection, categoryFilter, scopeFilter, includeTypeAware, hasFixOnly],
   () => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
     const params = new URLSearchParams(location.search);
     params.set("sort", sortColumn.value);
     params.set("dir", sortDirection.value);

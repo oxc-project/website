@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev",
-    "prebuild": "vp run sponsors",
+    "prebuild": "pnpm run sponsors",
     "build": "vitepress build",
     "preview": "vitepress preview",
     "lint": "vp lint --deny-warnings",
