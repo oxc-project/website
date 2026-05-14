@@ -1,5 +1,8 @@
 packages:
   - "!sponsors"
+allowBuilds:
+  esbuild: true
+  vue-demi: true
 catalog:
   vite-plus: ^0.1.13
 overrides:
