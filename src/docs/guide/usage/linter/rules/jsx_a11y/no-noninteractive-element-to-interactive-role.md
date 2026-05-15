@@ -2,7 +2,7 @@
 title: "jsx-a11y/no-noninteractive-element-to-interactive-role | Oxlint"
 rule: "jsx-a11y/no-noninteractive-element-to-interactive-role"
 category: "Correctness"
-version: "next"
+version: "1.64.0"
 default: false
 type_aware: false
 fix: "none"
@@ -86,7 +86,7 @@ Defaults are:
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.64.0.
 
 ## References
 

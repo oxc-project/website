@@ -2,7 +2,7 @@
 title: "eslint/prefer-regex-literals | Oxlint"
 rule: "eslint/prefer-regex-literals"
 category: "Style"
-version: "next"
+version: "1.64.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -116,7 +116,7 @@ new RegExp(/abc/, flags);
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.64.0.
 
 ## References
 

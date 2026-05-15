@@ -636,7 +636,7 @@ Specifies a prefix for identifying internal imports.
 
 This is useful for distinguishing your own modules from external dependencies.
 
-- Default: `["~/", "@/"]`
+- Default: `["~/", "@/", "#"]`
 
 ###### overrides[n].options.sortImports.newlinesBetween
 
@@ -1072,7 +1072,7 @@ Specifies a prefix for identifying internal imports.
 
 This is useful for distinguishing your own modules from external dependencies.
 
-- Default: `["~/", "@/"]`
+- Default: `["~/", "@/", "#"]`
 
 ### sortImports.newlinesBetween
 

@@ -731,6 +731,16 @@
   },
   {
     "scope": "eslint",
+    "value": "no-implicit-globals",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implicit-globals.html"
+  },
+  {
+    "scope": "eslint",
     "value": "no-import-assign",
     "category": "correctness",
     "version": "0.0.5",
@@ -1541,6 +1551,16 @@
   },
   {
     "scope": "eslint",
+    "value": "prefer-arrow-callback",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-arrow-callback.html"
+  },
+  {
+    "scope": "eslint",
     "value": "prefer-const",
     "category": "style",
     "version": "1.43.0",
@@ -1613,7 +1633,7 @@
     "scope": "eslint",
     "value": "prefer-regex-literals",
     "category": "style",
-    "version": "next",
+    "version": "1.64.0",
     "type_aware": false,
     "fix": "pending",
     "default": false,
@@ -2881,6 +2901,26 @@
   },
   {
     "scope": "jsdoc",
+    "value": "require-throws-description",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-throws-description.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-throws-type",
+    "category": "pedantic",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-throws-type.html"
+  },
+  {
+    "scope": "jsdoc",
     "value": "require-yields",
     "category": "correctness",
     "version": "0.3.2",
@@ -2888,6 +2928,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-yields.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-yields-type",
+    "category": "pedantic",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-yields-type.html"
   },
   {
     "scope": "jsx_a11y",
@@ -2998,6 +3048,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/click-events-have-key-events.html"
+  },
+  {
+    "scope": "jsx_a11y",
+    "value": "control-has-associated-label",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/control-has-associated-label.html"
   },
   {
     "scope": "jsx_a11y",
@@ -3131,9 +3191,29 @@
   },
   {
     "scope": "jsx_a11y",
-    "value": "no-noninteractive-element-to-interactive-role",
+    "value": "no-interactive-element-to-noninteractive-role",
     "category": "correctness",
     "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-interactive-element-to-noninteractive-role.html"
+  },
+  {
+    "scope": "jsx_a11y",
+    "value": "no-noninteractive-element-interactions",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-noninteractive-element-interactions.html"
+  },
+  {
+    "scope": "jsx_a11y",
+    "value": "no-noninteractive-element-to-interactive-role",
+    "category": "correctness",
+    "version": "1.64.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -5285,7 +5365,7 @@
     "category": "restriction",
     "version": "1.12.0",
     "type_aware": true,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/non-nullable-type-assertion-style.html"
   },

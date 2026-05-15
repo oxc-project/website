@@ -116,6 +116,10 @@ Arguments:
 
 - **`-f`**, **`--format`**=_`ARG`_ &mdash;
   Use a specific output format. Possible values: `checkstyle`, `default`, `agent`, `github`, `gitlab`, `json`, `junit`, `sarif`, `stylish`, `unix`
+- **`    --debug`**=_`OPTIONS`_ &mdash;
+  Enable debug output options. Options are comma-separated. Possible values:
+
+* `timings` - Enable per-rule timing information.
 
 ## Miscellaneous
 
