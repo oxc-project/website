@@ -2,7 +2,7 @@
 title: "eslint/prefer-arrow-callback | Oxlint"
 rule: "eslint/prefer-arrow-callback"
 category: "Style"
-version: "next"
+version: "1.65.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -99,7 +99,7 @@ default: `true`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.65.0.
 
 ## References
 

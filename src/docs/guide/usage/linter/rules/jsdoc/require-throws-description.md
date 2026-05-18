@@ -2,7 +2,7 @@
 title: "jsdoc/require-throws-description | Oxlint"
 rule: "jsdoc/require-throws-description"
 category: "Style"
-version: "next"
+version: "1.65.0"
 default: false
 type_aware: false
 fix: "none"
@@ -55,7 +55,7 @@ function quux() {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.65.0.
 
 ## References
 

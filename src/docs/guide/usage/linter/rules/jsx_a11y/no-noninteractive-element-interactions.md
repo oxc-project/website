@@ -2,7 +2,7 @@
 title: "jsx-a11y/no-noninteractive-element-interactions | Oxlint"
 rule: "jsx-a11y/no-noninteractive-element-interactions"
 category: "Correctness"
-version: "next"
+version: "1.65.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,7 +66,7 @@ An array of event handler names that should trigger this rule.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.65.0.
 
 ## References
 

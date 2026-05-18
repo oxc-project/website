@@ -28,6 +28,13 @@ non-sighted users alike. It can be disorienting when focus is shifted
 without user input and can interfere with assistive technologies.
 Users should control when and where focus moves on a page.
 
+### Exceptions
+
+`<dialog>` elements, elements with `role="dialog"`, and elements with the
+`popover` attribute (and their descendants) are exempt, since directing
+focus into them when opened is the expected behavior.
+See [MDN: `<dialog>` accessibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#accessibility).
+
 ### Examples
 
 Examples of **incorrect** code for this rule:
@@ -43,6 +50,9 @@ Examples of **correct** code for this rule:
 
 ```jsx
 <div />
+<dialog><input autoFocus /></dialog>
+<div role="dialog"><input autoFocus /></div>
+<div popover><input autoFocus /></div>
 ```
 
 ## Configuration

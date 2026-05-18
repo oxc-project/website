@@ -2,7 +2,7 @@
 title: "eslint/no-implicit-globals | Oxlint"
 rule: "eslint/no-implicit-globals"
 category: "Restriction"
-version: "next"
+version: "1.65.0"
 default: false
 type_aware: false
 fix: "none"
@@ -61,7 +61,7 @@ default: `false`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.65.0.
 
 ## References
 

@@ -107,6 +107,14 @@ default: `true`
 
 Whether to allow dangling underscores in variable names assigned by object destructuring.
 
+### allowInUsingDeclarations
+
+type: `boolean`
+
+default: `false`
+
+Whether to allow dangling underscores in `using` and `await using` declarations.
+
 ### enforceInClassFields
 
 type: `boolean`

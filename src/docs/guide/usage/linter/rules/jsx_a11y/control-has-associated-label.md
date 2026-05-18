@@ -2,7 +2,7 @@
 title: "jsx-a11y/control-has-associated-label | Oxlint"
 rule: "jsx-a11y/control-has-associated-label"
 category: "Correctness"
-version: "next"
+version: "1.65.0"
 default: false
 type_aware: false
 fix: "none"
@@ -105,7 +105,7 @@ Additional attributes to check for accessible label text.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.65.0.
 
 ## References
 

@@ -211,6 +211,16 @@
   },
   {
     "scope": "eslint",
+    "value": "id-match",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/id-match.html"
+  },
+  {
+    "scope": "eslint",
     "value": "init-declarations",
     "category": "style",
     "version": "0.15.11",
@@ -733,11 +743,21 @@
     "scope": "eslint",
     "value": "no-implicit-globals",
     "category": "restriction",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implicit-globals.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-implied-eval",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implied-eval.html"
   },
   {
     "scope": "eslint",
@@ -1553,7 +1573,7 @@
     "scope": "eslint",
     "value": "prefer-arrow-callback",
     "category": "style",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
@@ -1908,6 +1928,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/namespace.html"
+  },
+  {
+    "scope": "import",
+    "value": "newline-after-import",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/newline-after-import.html"
   },
   {
     "scope": "import",
@@ -2903,7 +2933,7 @@
     "scope": "jsdoc",
     "value": "require-throws-description",
     "category": "style",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -2913,7 +2943,7 @@
     "scope": "jsdoc",
     "value": "require-throws-type",
     "category": "pedantic",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -2933,7 +2963,7 @@
     "scope": "jsdoc",
     "value": "require-yields-type",
     "category": "pedantic",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -3053,7 +3083,7 @@
     "scope": "jsx_a11y",
     "value": "control-has-associated-label",
     "category": "correctness",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -3193,7 +3223,7 @@
     "scope": "jsx_a11y",
     "value": "no-interactive-element-to-noninteractive-role",
     "category": "correctness",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -3203,7 +3233,7 @@
     "scope": "jsx_a11y",
     "value": "no-noninteractive-element-interactions",
     "category": "correctness",
-    "version": "next",
+    "version": "1.65.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -4381,6 +4411,16 @@
   },
   {
     "scope": "react",
+    "value": "no-object-type-as-default-prop",
+    "category": "perf",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-object-type-as-default-prop.html"
+  },
+  {
+    "scope": "react",
     "value": "no-react-children",
     "category": "restriction",
     "version": "1.53.0",
@@ -4468,6 +4508,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unsafe.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-unstable-nested-components",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unstable-nested-components.html"
   },
   {
     "scope": "react",
@@ -7298,6 +7348,16 @@
     "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-unneeded-async-expect-function.html"
+  },
+  {
+    "scope": "vitest",
+    "value": "padding-around-after-all-blocks",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/padding-around-after-all-blocks.html"
   },
   {
     "scope": "vitest",
