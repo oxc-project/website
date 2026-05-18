@@ -50,3 +50,4 @@ jobs:
       - run: vp run void deploy
         env:
           VOID_TOKEN: ${{ secrets.VOID_TOKEN }}
+          VOID_PROJECT: oxc-project
