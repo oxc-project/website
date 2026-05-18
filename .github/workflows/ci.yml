@@ -55,3 +55,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+
+  deploy-void:
+    name: Deploy to Void
+    needs: [lint]
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    environment: void
+    steps:
+      - uses: taiki-e/checkout-action@7d1e50e93dc4fb3bba58f85018fadf77898aee8b # v1.4.2
+      - uses: voidzero-dev/setup-vp@ca1c46663915d6c1042ae23bd39ab85718bfb0fa # v1.10.0
+        with:
+          cache: ${{ github.ref_name == 'main' }}
+      - run: pnpm void deploy
+        env:
+          VOID_TOKEN: ${{ secrets.VOID_TOKEN }}

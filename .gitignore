@@ -3,9 +3,12 @@
 
 # Production
 /build
+/dist
 
 # Generated files
 /.vitepress/cache
+/.void
+/.wrangler
 
 # Misc
 .DS_Store

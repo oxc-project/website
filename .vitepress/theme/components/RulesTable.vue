@@ -82,7 +82,9 @@ const handleInitialQueryParams = () => {
   }
 };
 
-handleInitialQueryParams();
+if (!import.meta.env.SSR) {
+  handleInitialQueryParams();
+}
 
 watch(
   [sortColumn, sortDirection, categoryFilter, scopeFilter, includeTypeAware, hasFixOnly],
