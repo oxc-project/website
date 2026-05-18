@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6cedad30-edc5-4e4b-b9a1-991721587e70/deploy-status)](https://app.netlify.com/sites/oxc-project/deploys)
-
 # Oxc Website
 
 - Netlify: [oxc.rs](https://oxc.rs)
