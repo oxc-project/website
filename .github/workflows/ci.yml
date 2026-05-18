@@ -67,6 +67,6 @@ jobs:
       - uses: voidzero-dev/setup-vp@ca1c46663915d6c1042ae23bd39ab85718bfb0fa # v1.10.0
         with:
           cache: ${{ github.ref_name == 'main' }}
-      - run: pnpm void deploy
+      - run: vp run void deploy
         env:
           VOID_TOKEN: ${{ secrets.VOID_TOKEN }}
