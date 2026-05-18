@@ -61,10 +61,6 @@ const head: HeadConfig[] = [
   ],
 ];
 
-if (process.env.NODE_ENV === "production" && process.env.REDIRECT) {
-  head.unshift(["meta", { "http-equiv": "refresh", content: "0; URL=https://oxc.rs" }]);
-}
-
 export const sharedConfig = {
   srcDir: "src",
   srcExclude: [],

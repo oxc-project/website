@@ -36,26 +36,6 @@ jobs:
         with:
           files: .
 
-  build-and-deploy:
-    name: Build and Deploy
-    needs: [lint]
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: taiki-e/checkout-action@7d1e50e93dc4fb3bba58f85018fadf77898aee8b # v1.4.2
-      - uses: voidzero-dev/setup-vp@ca1c46663915d6c1042ae23bd39ab85718bfb0fa # v1.10.0
-        with:
-          cache: ${{ github.ref_name == 'main' }}
-      - run: vp run build
-        env:
-          REDIRECT: true
-      - uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
-        if: github.ref_name == 'main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-
   deploy-void:
     name: Deploy to Void
     needs: [lint]
