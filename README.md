@@ -1,7 +1,7 @@
 # Oxc Website
 
 - Netlify: [oxc.rs](https://oxc.rs)
-- Void: [oxc-project.void.app](https://oxc-project.void.app)
+- Void: [oxc.void.app](http://oxc.void.app/)
 
 ### Contributing
 
