@@ -375,7 +375,7 @@ const pluginDisplayNames: Record<string, string> = {
     </thead>
     <tbody>
       <tr v-for="r in filteredAndSorted" :key="`${r.scope}:${r.value}`">
-        <td class="rule-name-cell">
+        <td>
           <a :href="`/docs/guide/usage/linter/rules/${r.scope}/${r.value}`">{{ r.value }}</a>
           <span v-if="r.type_aware" title="Type-aware rule">💭</span>
         </td>
@@ -489,11 +489,5 @@ input[type="checkbox"]:focus {
   font-variant-numeric: tabular-nums;
   text-align: right;
   white-space: nowrap;
-}
-
-.rule-name-cell {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 </style>
