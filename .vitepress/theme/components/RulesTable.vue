@@ -234,13 +234,13 @@ const filteredAndSorted = computed(() => {
         break;
       }
       case "version": {
-        // Rules without a version sort last.
-        if (a.version && b.version) {
+        // Rules without a version always sort last regardless of sort direction.
+        if (!a.version && b.version) {
+          return 1;
+        } else if (a.version && !b.version) {
+          return -1;
+        } else if (a.version && b.version) {
           comparison = compareVersions(a.version, b.version);
-        } else if (a.version) {
-          comparison = -1;
-        } else if (b.version) {
-          comparison = 1;
         }
         if (comparison === 0) comparison = a.value.localeCompare(b.value);
         break;
