@@ -4,7 +4,7 @@ import { computed, ref, watch } from "vue";
 import rules from "@data/rules.json" with { type: "json" };
 import fixEmoji from "./utils/fixEmoji";
 
-// Comapre two semver versions like "0.1.3" and "1.23.5"
+// Compare two semver versions like "0.1.3" and "1.23.5"
 const compareVersions = (a: string, b: string) => {
   const pa = a.split(".").map(Number);
   const pb = b.split(".").map(Number);
