@@ -487,7 +487,6 @@ input[type="checkbox"]:focus {
 
 .rule-version-cell {
   font-variant-numeric: tabular-nums;
-  text-align: right;
   white-space: nowrap;
 }
 </style>
