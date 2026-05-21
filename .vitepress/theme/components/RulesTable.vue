@@ -377,7 +377,7 @@ const pluginDisplayNames: Record<string, string> = {
       <tr v-for="r in filteredAndSorted" :key="`${r.scope}:${r.value}`">
         <td>
           <a :href="`/docs/guide/usage/linter/rules/${r.scope}/${r.value}`">{{ r.value }}</a>
-          <span v-if="r.type_aware" title="Type-aware rule">💭</span>
+          <span v-if="r.type_aware" title="Type-aware rule" style="margin-left: 0.4rem">💭</span>
         </td>
         <td>{{ pluginDisplayNames[r.scope] || r.scope }}</td>
         <td>{{ r.category }}</td>
