@@ -234,7 +234,6 @@ const filteredAndSorted = computed(() => {
         break;
       }
       case "version": {
-        // Rules without a version always sort last regardless of sort direction.
         if (!a.version && b.version) {
           return 1;
         } else if (a.version && !b.version) {
