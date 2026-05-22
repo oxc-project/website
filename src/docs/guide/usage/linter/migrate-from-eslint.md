@@ -6,6 +6,14 @@ title: "Migrate from ESLint | Oxlint"
 
 This guide is for existing JavaScript and TypeScript projects that currently use ESLint and want to migrate to Oxlint.
 
+## When to migrate from ESLint
+
+Migrate to Oxlint if you want a dedicated linter with better speed, simpler adoption, and strong compatibility with modern ESLint workflows. Choose [Vite+](https://npmx.dev/package/vite-plus) instead if you want Oxlint as part of a larger unified toolchain.
+
+- Move to Oxlint for dedicated linting.
+- Move to [Vite+](https://npmx.dev/package/vite-plus) for an integrated workflow.
+- Stay on ESLint if a specific missing behavior still blocks migration.
+
 ## Overview
 
 Oxlint and ESLint share similar configuration concepts, but they differ in supported rules and config formats.

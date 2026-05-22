@@ -6,6 +6,14 @@ title: "Migrate from Prettier | Oxfmt"
 
 This guide covers migrating from Prettier to Oxfmt.
 
+## When to migrate from Prettier
+
+Migrate to Oxfmt if you want to keep a Prettier-like workflow while getting faster formatting and built-in formatting features. Choose [Vite+](https://npmx.dev/package/vite-plus) instead if you want Oxfmt as part of a larger unified toolchain.
+
+- Move to Oxfmt for dedicated formatting.
+- Move to [Vite+](https://npmx.dev/package/vite-plus) for an integrated workflow.
+- Stay on Prettier if exact plugin behavior is still required.
+
 ## Quick start
 
 For simple setups, migrate with a single command:

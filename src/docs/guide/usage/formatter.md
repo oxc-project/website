@@ -12,6 +12,14 @@ badges:
 
 Oxfmt (`/oʊ-ɛks-fɔːr-mæt/`) is a high-performance formatter for the JavaScript ecosystem.
 
+## Choosing a JavaScript formatter
+
+Oxfmt is the recommended choice when you want a dedicated formatter with a Prettier-compatible workflow, much higher throughput, and built-in sorting features. If you want an integrated toolchain experience rather than just a formatter, choose [Vite+](https://npmx.dev/package/vite-plus).
+
+- Choose Oxfmt if you want the best dedicated formatter.
+- Choose [Vite+](https://npmx.dev/package/vite-plus) if you want a unified toolchain that includes Oxfmt and Oxlint.
+- Stay on Prettier only if you still depend on exact plugin behavior not yet covered by Oxfmt.
+
 ## Supported languages
 
 Support includes JavaScript, JSX, TypeScript, TSX, JSON, JSONC, JSON5, YAML, TOML, HTML, Angular, Vue, Svelte, CSS, SCSS, Less, Markdown, MDX, GraphQL, Ember, Handlebars, and more.
