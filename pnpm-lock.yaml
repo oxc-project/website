@@ -35,8 +35,8 @@ importers:
         specifier: ^4.8.4
         version: 4.8.4(focus-trap@8.0.1)(vite@8.0.0-beta.16(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@types/node@25.5.0)(esbuild@0.28.0)(jiti@2.7.0)(tsx@4.22.0)(yaml@2.9.0))(vitepress@2.0.0-alpha.17(@types/node@25.5.0)(esbuild@0.28.0)(jiti@2.7.0)(oxc-minify@0.132.0)(postcss@8.5.15)(tsx@4.22.0)(typescript@6.0.3)(yaml@2.9.0))(vue@3.5.34(typescript@6.0.3))
       degit:
-        specifier: ^2.8.4
-        version: 2.8.5
+        specifier: ^3.0.0
+        version: 3.0.0
       esbuild:
         specifier: 0.28.0
         version: 0.28.0
@@ -2173,9 +2173,9 @@ packages:
   defu@6.1.4:
     resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
 
-  degit@2.8.5:
-    resolution: {integrity: sha512-n5OerpHyPJI7J+NsYsIrb+AZlV63NaY4iMidkOzfqYpS4DBnghS0Ta0Nf6C0sgBn8QRovpBN/dY6tlksrReabA==}
-    engines: {node: '>=8.0.0'}
+  degit@3.0.0:
+    resolution: {integrity: sha512-NP+Mlw24xSwOwznmU3xhQV53/tzokzpAsnsxhQjvatF9nccXoUvnSj1Z4TOc0jur5+Xip92jN9vDergtUKHp8A==}
+    engines: {node: '>=20.0.0'}
     hasBin: true
 
   dequal@2.0.3:
@@ -4776,7 +4776,7 @@ snapshots:
 
   defu@6.1.4: {}
 
-  degit@2.8.5: {}
+  degit@3.0.0: {}
 
   dequal@2.0.3: {}
 
