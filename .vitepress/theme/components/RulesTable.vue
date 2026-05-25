@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 // Import the generated rules data
 import rules from "@data/rules.json" with { type: "json" };
 import fixEmoji from "./utils/fixEmoji";
@@ -93,9 +93,7 @@ const handleInitialQueryParams = () => {
   }
 };
 
-if (!import.meta.env.SSR) {
-  handleInitialQueryParams();
-}
+onMounted(handleInitialQueryParams);
 
 watch(
   [sortColumn, sortDirection, categoryFilter, scopeFilter, includeTypeAware, hasFixOnly],
