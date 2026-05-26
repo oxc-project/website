@@ -2,7 +2,7 @@
 title: "react/no-object-type-as-default-prop | Oxlint"
 rule: "react/no-object-type-as-default-prop"
 category: "Perf"
-version: "next"
+version: "1.66.0"
 default: false
 type_aware: false
 fix: "none"
@@ -70,7 +70,7 @@ function Baz({ onClick }) {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.66.0.
 
 ## References
 

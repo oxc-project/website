@@ -2,7 +2,7 @@
 title: "import/newline-after-import | Oxlint"
 rule: "import/newline-after-import"
 category: "Style"
-version: "next"
+version: "1.66.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -194,7 +194,7 @@ default: `false`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.66.0.
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "eslint/no-implied-eval | Oxlint"
 rule: "eslint/no-implied-eval"
 category: "Suspicious"
-version: "next"
+version: "1.66.0"
 default: true
 type_aware: false
 fix: "none"
@@ -52,7 +52,7 @@ window.setTimeout(doWork, 100);
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.66.0.
 
 ## References
 

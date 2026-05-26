@@ -19,41 +19,42 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce using [`expectTypeOf`](https://vitest.dev/api/expect-typeof) instead of `expect(typeof ...)`.
+Enforce using [`toBeTypeOf`](https://vitest.dev/api/expect#tobetypeof) instead of `expect(typeof ...).toBe(...)`.
 
 ### Why is this bad?
 
-Vitest provides a more expressive, type-safe way to test types than using `expect(typeof ...)`.
+`expect(typeof value).toBe(type)` works but is awkward and produces poor failure messages.
+Vitest's built-in `toBeTypeOf` matcher performs the same `typeof` comparison with a clearer API and better error output.
 
 ### Examples
 
 Examples of **incorrect** code for this rule:
 
 ```js
-test('type checking', () => {
-  expect(typeof 'hello').toBe('string')
-  expect(typeof 42).toBe('number')
-  expect(typeof true).toBe('boolean')
-  expect(typeof {}).toBe('object')
-  expect(typeof () => {}).toBe('function')
-  expect(typeof Symbol()).toBe('symbol')
-  expect(typeof 123n).toBe('bigint')
-  expect(typeof undefined).toBe('undefined')
-})
+test("type checking", () => {
+  expect(typeof "hello").toBe("string");
+  expect(typeof 42).toBe("number");
+  expect(typeof true).toBe("boolean");
+  expect(typeof {}).toBe("object");
+  expect(typeof (() => {})).toBe("function");
+  expect(typeof Symbol()).toBe("symbol");
+  expect(typeof 123n).toBe("bigint");
+  expect(typeof undefined).toBe("undefined");
+});
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
 test("type checking", () => {
-  expectTypeOf("hello").toBeString();
-  expectTypeOf(42).toBeNumber();
-  expectTypeOf(true).toBeBoolean();
-  expectTypeOf({}).toBeObject();
-  expectTypeOf(() => {}).toBeFunction();
-  expectTypeOf(Symbol()).toBeSymbol();
-  expectTypeOf(123n).toBeBigInt();
-  expectTypeOf(undefined).toBeUndefined();
+  expect("hello").toBeTypeOf("string");
+  expect(42).toBeTypeOf("number");
+  expect(true).toBeTypeOf("boolean");
+  expect({}).toBeTypeOf("object");
+  expect(() => {}).toBeTypeOf("function");
+  expect(Symbol()).toBeTypeOf("symbol");
+  expect(123n).toBeTypeOf("bigint");
+  expect(undefined).toBeTypeOf("undefined");
 });
 ```
 

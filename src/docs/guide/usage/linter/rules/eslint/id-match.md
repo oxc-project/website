@@ -2,7 +2,7 @@
 title: "eslint/id-match | Oxlint"
 rule: "eslint/id-match"
 category: "Style"
-version: "next"
+version: "1.66.0"
 default: false
 type_aware: false
 fix: "none"
@@ -131,7 +131,7 @@ member names such as `obj.prop = value` are checked.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.66.0.
 
 ## References
 

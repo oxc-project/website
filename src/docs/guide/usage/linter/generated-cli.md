@@ -119,6 +119,7 @@ Arguments:
 - **`    --debug`**=_`OPTIONS`_ &mdash;
   Enable debug output options. Options are comma-separated. Possible values:
 
+* `files` - Print the list of files that will be linted, then exit.
 * `timings` - Enable per-rule timing information.
 
 ## Miscellaneous

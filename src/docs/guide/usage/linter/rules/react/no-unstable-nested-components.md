@@ -2,7 +2,7 @@
 title: "react/no-unstable-nested-components | Oxlint"
 rule: "react/no-unstable-nested-components"
 category: "Suspicious"
-version: "next"
+version: "1.66.0"
 default: false
 type_aware: false
 fix: "none"
@@ -87,7 +87,7 @@ Glob pattern for render-prop names that may receive inline component definitions
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.66.0.
 
 ## References
 
