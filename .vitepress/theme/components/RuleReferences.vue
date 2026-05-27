@@ -7,6 +7,7 @@ const { frontmatter } = useData();
 
 const rule = computed(() => frontmatter.value.rule as string);
 const hasTsgolint = computed(() => frontmatter.value.type_aware === true);
+const upstream = computed(() => frontmatter.value.upstream as string | undefined);
 
 function toSnakeCase(str: string): string {
   return str.replace(/-/g, "_");
@@ -42,6 +43,9 @@ const playgroundUrl = computed(() => {
   <ul>
     <li>
       <a :href="source" target="_blank" rel="noreferrer">Rule Source</a>
+    </li>
+    <li v-if="upstream">
+      <a :href="upstream" target="_blank" rel="noreferrer">Upstream rule docs</a>
     </li>
     <li v-if="hasTsgolint">
       <a :href="tsgolintSource" target="_blank" rel="noreferrer">Rule Source (tsgolint)</a>
