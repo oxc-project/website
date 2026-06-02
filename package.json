@@ -28,7 +28,7 @@
     "knip": "^6.0.2",
     "markdown-it-container": "^4.0.0",
     "markdown-it-task-lists": "^2.1.1",
-    "oxc-minify": "^0.133.0",
+    "oxc-minify": "^0.134.0",
     "typescript": "~6.0.0",
     "vite-plus": "catalog:",
     "vitepress": "2.0.0-alpha.17",
