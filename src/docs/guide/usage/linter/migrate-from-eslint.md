@@ -30,13 +30,13 @@ When migrating, expect the following:
 
 ## Migrate with Skills
 
-You can migrate interactively using the [`migrate-oxlint`](https://skills.sh/oxc-project/oxc/migrate-oxlint) skill:
+The [`migrate-oxlint`](https://skills.sh/oxc-project/oxc/migrate-oxlint) skill provides an interactive, agent-guided migration. Install it into your coding agent:
 
 ```bash
 npx skills add https://github.com/oxc-project/oxc --skill migrate-oxlint
 ```
 
-Once installed, run `/migrate-oxlint` and the agent will walk you through the full migration.
+Once installed, run `/migrate-oxlint` to perform the migration.
 
 ## Migrating from an ESLint flat config
 

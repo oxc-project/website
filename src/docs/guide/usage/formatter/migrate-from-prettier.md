@@ -40,13 +40,13 @@ $ bun add -D oxfmt@latest && bunx oxfmt --migrate=prettier && bunx oxfmt
 
 ## Migrate with Skills
 
-You can migrate interactively using the [`migrate-oxfmt`](https://skills.sh/oxc-project/oxc/migrate-oxfmt) skill:
+The [`migrate-oxfmt`](https://skills.sh/oxc-project/oxc/migrate-oxfmt) skill provides an interactive, agent-guided migration. Install it into your coding agent:
 
 ```bash
 npx skills add https://github.com/oxc-project/oxc --skill migrate-oxfmt
 ```
 
-Once installed, run `/migrate-oxfmt` and the agent will walk you through the full migration.
+Once installed, run `/migrate-oxfmt` to perform the migration.
 
 ## Before you migrate
 
