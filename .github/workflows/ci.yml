@@ -7,13 +7,9 @@ on:
     types:
       - opened
       - synchronize
-    paths-ignore:
-      - README.md
   push:
     branches:
       - main
-    paths-ignore:
-      - README.md
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
