@@ -1,5 +1,4 @@
 import { defineConfig } from "vite-plus";
-import { voidPlugin } from "void";
 
 export default defineConfig({
   staged: {
@@ -15,5 +14,4 @@ export default defineConfig({
       typeCheck: true,
     },
   },
-  plugins: [voidPlugin()],
 });
