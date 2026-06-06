@@ -41,10 +41,13 @@ jobs:
   oxlint:
     runs-on: ubuntu-latest
     steps:
+      # NOTE: For security, it is strongly recommended to pin all
+      # actions to a specific SHA hash instead of using a version
+      # tag like this.
       - uses: actions/checkout@v6
-
+        with:
+          persist-credentials: false
       - uses: pnpm/action-setup@v4
-
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
@@ -55,15 +58,7 @@ jobs:
       - run: pnpm run lint
 ```
 
-You can, alternatively, output using the github format option, for [better warning/error annotations](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message):
-
-```json [package.json]
-{
-  "scripts": {
-    "lint:github": "oxlint --format=github"
-  }
-}
-```
+By default, Oxlint will enable [better warning/error annotations](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message) when it detects that it is running in a GitHub Actions environment. You can override this behavior by providing the `--format` flag with a different formatter option.
 
 ### GitLab CI
 
