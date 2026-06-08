@@ -78,6 +78,14 @@ default: `false`
 
 When set to `true`, enforces the rule for unused JSX expressions also.
 
+### ignoreDirectives
+
+type: `boolean`
+
+default: `false`
+
+When set to `true`, allows directive prologues.
+
 ## How to use
 
 <RuleHowToUse />

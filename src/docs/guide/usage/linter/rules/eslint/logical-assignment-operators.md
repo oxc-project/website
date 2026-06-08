@@ -79,17 +79,6 @@ a = a ?? b;
 
 type: `"always" | "never"`
 
-#### `"always"`
-
-This option checks for expressions that can be shortened using logical assignment operator.
-For example, `a = a || b` can be shortened to `a ||= b`.
-Expressions with associativity such as `a = a || b || c` are reported as being able to be shortened to `a ||= b || c` unless the evaluation order is explicitly defined using parentheses, such as `a = (a || b) || c`.
-
-#### `"never"`
-
-This option disallows logical assignment operator shorthand.
-For example, `a ||= b` should be written as `a = a || b`.
-
 ### The 2nd option
 
 This option is an object with the following properties:

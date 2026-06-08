@@ -172,6 +172,8 @@ An array of numbers to ignore if used as magic numbers. Can include floats or Bi
 
 #### ignore[n]
 
+type: `number | string`
+
 ### ignoreArrayIndexes
 
 type: `boolean`

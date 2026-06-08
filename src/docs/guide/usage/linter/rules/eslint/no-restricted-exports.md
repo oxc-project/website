@@ -32,10 +32,6 @@ In a project, certain names may be disallowed from being used as exported names 
 
 This rule accepts a configuration object with the following properties:
 
-### hasDefaultRestrictedNamedExport
-
-type: `boolean`
-
 ### restrictDefaultExports
 
 type: `object`

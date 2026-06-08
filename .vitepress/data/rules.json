@@ -1613,7 +1613,7 @@
     "scope": "eslint",
     "value": "prefer-named-capture-group",
     "category": "style",
-    "version": "next",
+    "version": "1.68.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -2973,7 +2973,7 @@
     "scope": "jsdoc",
     "value": "require-yields-description",
     "category": "style",
-    "version": "next",
+    "version": "1.68.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
@@ -3735,7 +3735,7 @@
     "category": "correctness",
     "version": "0.0.22",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/double-comparisons.html"
   },
@@ -3825,7 +3825,7 @@
     "category": "perf",
     "version": "0.11.0",
     "type_aware": false,
-    "fix": "conditional_safe_fix_or_suggestion",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-map-spread.html"
   },
@@ -4883,7 +4883,7 @@
     "scope": "typescript",
     "value": "method-signature-style",
     "category": "style",
-    "version": "next",
+    "version": "1.68.0",
     "type_aware": false,
     "fix": "pending",
     "default": false,
@@ -7833,7 +7833,7 @@
     "scope": "vue",
     "value": "component-definition-name-casing",
     "category": "style",
-    "version": "next",
+    "version": "1.68.0",
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
@@ -7878,6 +7878,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/max-props.html"
+  },
+  {
+    "scope": "vue",
+    "value": "next-tick-style",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/next-tick-style.html"
   },
   {
     "scope": "vue",
@@ -8033,11 +8043,31 @@
     "scope": "vue",
     "value": "no-reserved-component-names",
     "category": "correctness",
-    "version": "next",
+    "version": "1.68.0",
     "type_aware": false,
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/no-reserved-component-names.html"
+  },
+  {
+    "scope": "vue",
+    "value": "no-reserved-keys",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/no-reserved-keys.html"
+  },
+  {
+    "scope": "vue",
+    "value": "no-reserved-props",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/no-reserved-props.html"
   },
   {
     "scope": "vue",
@@ -8081,6 +8111,16 @@
   },
   {
     "scope": "vue",
+    "value": "prop-name-casing",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/prop-name-casing.html"
+  },
+  {
+    "scope": "vue",
     "value": "require-default-export",
     "category": "suspicious",
     "version": "1.21.0",
@@ -8091,13 +8131,33 @@
   },
   {
     "scope": "vue",
+    "value": "require-direct-export",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/require-direct-export.html"
+  },
+  {
+    "scope": "vue",
     "value": "require-prop-type-constructor",
     "category": "correctness",
-    "version": "next",
+    "version": "1.68.0",
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/require-prop-type-constructor.html"
+  },
+  {
+    "scope": "vue",
+    "value": "require-prop-types",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/require-prop-types.html"
   },
   {
     "scope": "vue",

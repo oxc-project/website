@@ -71,13 +71,7 @@ x.y = x.y / a.b;
 
 This rule accepts one of the following string values:
 
-### `"always"`
-
-Requires assignment operator shorthand where possible.
-
-### `"never"`
-
-Disallows assignment operator shorthand.
+type: `"always" | "never"`
 
 ## How to use
 

@@ -187,13 +187,9 @@ var global_var = 42;
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### args
 
 type: `"after-used" | "all" | "none"`
-
-default: `"after-used"`
 
 Controls how unused arguments are checked.
 
@@ -212,6 +208,8 @@ All named arguments must be used
 Do not check arguments
 
 ### argsIgnorePattern
+
+type: `string`
 
 Specifies exceptions to this rule for unused arguments. Arguments whose
 names match this pattern will be ignored.
@@ -248,6 +246,8 @@ Do not check error objects.
 
 ### caughtErrorsIgnorePattern
 
+type: `string`
+
 Specifies exceptions to this rule for errors caught within a `catch` block.
 Variables declared within a `catch` block whose names match this pattern
 will be ignored.
@@ -265,6 +265,8 @@ try {
 ```
 
 ### destructuredArrayIgnorePattern
+
+type: `string`
 
 This option specifies exceptions within destructuring patterns that will
 not be checked for usage. Variables declared within array destructuring
@@ -296,7 +298,12 @@ foo.forEach((item) => {
 
 type: `object`
 
-default: `{"imports":"suggestion", "variables":"suggestion"}`
+Controls which `no-unused-vars` auto-fixes are emitted.
+
+When omitted, both `imports` and `variables` default to `"suggestion"`,
+preserving the current behavior.
+
+NOTE: This option is experimental and may change based on feedback.
 
 Fine-grained auto-fix controls for `no-unused-vars`.
 
@@ -512,8 +519,6 @@ function foo(): typeof foo {}
 
 type: `"all" | "local"`
 
-default: `"all"`
-
 Controls how usage of a variable in the global scope is checked.
 
 #### `"all"`
@@ -526,6 +531,8 @@ Checks only that locally-declared variables are used but will allow
 global variables to be unused.
 
 ### varsIgnorePattern
+
+type: `string`
 
 Specifies exceptions to this rule for unused variables. Variables whose
 names match this pattern will be ignored.

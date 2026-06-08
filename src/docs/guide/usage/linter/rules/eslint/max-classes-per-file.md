@@ -48,8 +48,6 @@ function foo() {
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### ignoreExpressions
 
 type: `boolean`

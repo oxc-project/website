@@ -91,14 +91,7 @@ class Foo extends React.Component {
 
 This rule accepts one of the following string values:
 
-### `"always"`
-
-Enforce state initialization in the constructor.
-This is the default mode.
-
-### `"never"`
-
-Enforce state initialization with a class property.
+type: `"always" | "never"`
 
 ## How to use
 

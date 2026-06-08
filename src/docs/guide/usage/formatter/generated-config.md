@@ -13,6 +13,7 @@ type: `"always" | "avoid"`
 
 Include parentheses around a sole arrow function parameter.
 
+- Languages: JS, JSX, TS, TSX
 - Default: `"always"`
 
 ## bracketSameLine
@@ -22,6 +23,7 @@ type: `boolean`
 Put the `>` of a multi-line HTML (HTML, JSX, Vue, Angular) element at the end of the last line,
 instead of being alone on the next line (does not apply to self closing elements).
 
+- Languages: JSX, TSX, HTML, Angular, Vue, MJML, Svelte
 - Default: `false`
 
 ## bracketSpacing
@@ -30,6 +32,7 @@ type: `boolean`
 
 Print spaces between brackets in object literals.
 
+- Languages: JS, JSX, TS, TSX, JSON, JSONC, JSON5, GraphQL, YAML
 - Default: `true`
 
 ## embeddedLanguageFormatting
@@ -38,8 +41,7 @@ type: `"auto" | "off"`
 
 Control whether to format embedded parts (For example, CSS-in-JS, or JS-in-Vue, etc.) in the file.
 
-NOTE: XXX-in-JS support is incomplete.
-
+- Languages: JS, JSX, TS, TSX, HTML, Vue, Angular, Svelte, Markdown, MDX (languages with embedded code)
 - Default: `"auto"`
 
 ## endOfLine
@@ -50,6 +52,7 @@ Which end of line characters to apply.
 
 NOTE: `"auto"` is not supported.
 
+- Languages: All
 - Default: `"lf"`
 - Overrides `.editorconfig.end_of_line`
 
@@ -59,6 +62,7 @@ type: `"css" | "strict" | "ignore"`
 
 Specify the global whitespace sensitivity for HTML, Vue, Angular, and Handlebars.
 
+- Languages: HTML, Angular, Vue, Handlebars, Svelte
 - Default: `"css"`
 
 ## ignorePatterns
@@ -76,6 +80,7 @@ type: `boolean`
 
 Whether to insert a final newline at the end of the file.
 
+- Languages: All
 - Default: `true`
 - Overrides `.editorconfig.insert_final_newline`
 
@@ -91,6 +96,7 @@ long lines are wrapped, and short comments are collapsed to single-line.
 
 Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
+- Languages: JS, JSX, TS, TSX
 - Default: Disabled
 
 ### jsdoc.addDefaultToDescription
@@ -194,6 +200,7 @@ type: `boolean`
 
 Use single quotes instead of double quotes in JSX.
 
+- Languages: JSX, TSX
 - Default: `false`
 
 ## objectWrap
@@ -205,6 +212,7 @@ How to wrap object literals when they could fit on one line or span multiple lin
 By default, formats objects as multi-line if there is a newline prior to the first property.
 Authors can use this heuristic to contextually improve readability, though it has some downsides.
 
+- Languages: JS, JSX, TS, TSX, JSON, JSONC, JSON5
 - Default: `"preserve"`
 
 ## overrides
@@ -250,6 +258,7 @@ type: `"always" | "avoid"`
 
 Include parentheses around a sole arrow function parameter.
 
+- Languages: JS, JSX, TS, TSX
 - Default: `"always"`
 
 ##### overrides[n].options.bracketSameLine
@@ -259,6 +268,7 @@ type: `boolean`
 Put the `>` of a multi-line HTML (HTML, JSX, Vue, Angular) element at the end of the last line,
 instead of being alone on the next line (does not apply to self closing elements).
 
+- Languages: JSX, TSX, HTML, Angular, Vue, MJML, Svelte
 - Default: `false`
 
 ##### overrides[n].options.bracketSpacing
@@ -267,6 +277,7 @@ type: `boolean`
 
 Print spaces between brackets in object literals.
 
+- Languages: JS, JSX, TS, TSX, JSON, JSONC, JSON5, GraphQL, YAML
 - Default: `true`
 
 ##### overrides[n].options.embeddedLanguageFormatting
@@ -275,8 +286,7 @@ type: `"auto" | "off"`
 
 Control whether to format embedded parts (For example, CSS-in-JS, or JS-in-Vue, etc.) in the file.
 
-NOTE: XXX-in-JS support is incomplete.
-
+- Languages: JS, JSX, TS, TSX, HTML, Vue, Angular, Svelte, Markdown, MDX (languages with embedded code)
 - Default: `"auto"`
 
 ##### overrides[n].options.endOfLine
@@ -287,6 +297,7 @@ Which end of line characters to apply.
 
 NOTE: `"auto"` is not supported.
 
+- Languages: All
 - Default: `"lf"`
 - Overrides `.editorconfig.end_of_line`
 
@@ -296,6 +307,7 @@ type: `"css" | "strict" | "ignore"`
 
 Specify the global whitespace sensitivity for HTML, Vue, Angular, and Handlebars.
 
+- Languages: HTML, Angular, Vue, Handlebars, Svelte
 - Default: `"css"`
 
 ##### overrides[n].options.insertFinalNewline
@@ -304,6 +316,7 @@ type: `boolean`
 
 Whether to insert a final newline at the end of the file.
 
+- Languages: All
 - Default: `true`
 - Overrides `.editorconfig.insert_final_newline`
 
@@ -319,6 +332,7 @@ long lines are wrapped, and short comments are collapsed to single-line.
 
 Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
+- Languages: JS, JSX, TS, TSX
 - Default: Disabled
 
 ###### overrides[n].options.jsdoc.addDefaultToDescription
@@ -422,6 +436,7 @@ type: `boolean`
 
 Use single quotes instead of double quotes in JSX.
 
+- Languages: JSX, TSX
 - Default: `false`
 
 ##### overrides[n].options.objectWrap
@@ -433,6 +448,7 @@ How to wrap object literals when they could fit on one line or span multiple lin
 By default, formats objects as multi-line if there is a newline prior to the first property.
 Authors can use this heuristic to contextually improve readability, though it has some downsides.
 
+- Languages: JS, JSX, TS, TSX, JSON, JSONC, JSON5
 - Default: `"preserve"`
 
 ##### overrides[n].options.printWidth
@@ -443,6 +459,7 @@ Specify the line length that the printer will wrap on.
 
 If you don't want line wrapping when formatting Markdown, you can set the `proseWrap` option to disable it.
 
+- Languages: All
 - Default: `100`
 - Overrides `.editorconfig.max_line_length`
 
@@ -456,6 +473,7 @@ By default, formatter will not change wrapping in markdown text since some servi
 To wrap prose to the print width, change this option to "always".
 If you want to force all prose blocks to be on a single line and rely on editor/viewer soft wrapping instead, you can use "never".
 
+- Languages: Markdown, MDX, YAML
 - Default: `"preserve"`
 
 ##### overrides[n].options.quoteProps
@@ -464,6 +482,7 @@ type: `"as-needed" | "consistent" | "preserve"`
 
 Change when properties in objects are quoted.
 
+- Languages: JS, JSX, TS, TSX
 - Default: `"as-needed"`
 
 ##### overrides[n].options.semi
@@ -472,6 +491,7 @@ type: `boolean`
 
 Print semicolons at the ends of statements.
 
+- Languages: JS, JSX, TS, TSX
 - Default: `true`
 
 ##### overrides[n].options.singleAttributePerLine
@@ -480,6 +500,7 @@ type: `boolean`
 
 Enforce single attribute per line in HTML, Vue, and JSX.
 
+- Languages: JSX, TSX, HTML, Angular, Vue, MJML, Svelte
 - Default: `false`
 
 ##### overrides[n].options.singleQuote
@@ -490,6 +511,7 @@ Use single quotes instead of double quotes.
 
 For JSX, you can set the `jsxSingleQuote` option.
 
+- Languages: JS, JSX, TS, TSX, CSS, Less, SCSS, Markdown, MDX, YAML, Handlebars, Svelte
 - Default: `false`
 - Overrides `.editorconfig.quote_type`
 
@@ -504,6 +526,7 @@ For details, see each field's documentation.
 
 Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
+- Languages: JS, JSX, TS, TSX
 - Default: Disabled
 
 ###### overrides[n].options.sortImports.customGroups
@@ -711,6 +734,7 @@ The algorithm is NOT compatible with [prettier-plugin-sort-packagejson](https://
 But we believe it is clearer and easier to navigate.
 For details, see each field's documentation.
 
+- Languages: JSON (`package.json` only)
 - Default: `true`
 
 ###### overrides[n].options.sortPackageJson.sortScripts
@@ -733,6 +757,7 @@ For details, see each field's documentation.
 
 Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
+- Languages: JS, JSX, TS, TSX, HTML, Vue, Angular, Handlebars, CSS, SCSS, Less, Svelte
 - Default: Disabled
 
 ###### overrides[n].options.sortTailwindcss.attributes
@@ -807,6 +832,7 @@ NOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`)
 but Oxfmt does NOT bundle or auto-install it.
 You must install `svelte` yourself in your project, formatting will fail at runtime otherwise.
 
+- Languages: Svelte
 - Default: Disabled
 
 ###### overrides[n].options.svelte.allowShorthand
@@ -841,6 +867,7 @@ type: `integer`
 
 Specify the number of spaces per indentation-level.
 
+- Languages: All
 - Default: `2`
 - Overrides `.editorconfig.indent_size` (falls back to `.editorconfig.tab_width`)
 
@@ -852,6 +879,7 @@ Print trailing commas wherever possible in multi-line comma-separated syntactic 
 
 A single-line array, for example, never gets trailing commas.
 
+- Languages: JS, JSX, TS, TSX, JSONC, JSON5, TOML, CSS, Less, SCSS, YAML
 - Default: `"all"`
 
 ##### overrides[n].options.useTabs
@@ -860,6 +888,7 @@ type: `boolean`
 
 Indent lines with tabs instead of spaces.
 
+- Languages: All
 - Default: `false`
 - Overrides `.editorconfig.indent_style`
 
@@ -869,6 +898,7 @@ type: `boolean`
 
 Whether or not to indent the code inside `<script>` and `<style>` tags in Vue files.
 
+- Languages: Vue
 - Default: `false`
 
 ## printWidth
@@ -879,6 +909,7 @@ Specify the line length that the printer will wrap on.
 
 If you don't want line wrapping when formatting Markdown, you can set the `proseWrap` option to disable it.
 
+- Languages: All
 - Default: `100`
 - Overrides `.editorconfig.max_line_length`
 
@@ -892,6 +923,7 @@ By default, formatter will not change wrapping in markdown text since some servi
 To wrap prose to the print width, change this option to "always".
 If you want to force all prose blocks to be on a single line and rely on editor/viewer soft wrapping instead, you can use "never".
 
+- Languages: Markdown, MDX, YAML
 - Default: `"preserve"`
 
 ## quoteProps
@@ -900,6 +932,7 @@ type: `"as-needed" | "consistent" | "preserve"`
 
 Change when properties in objects are quoted.
 
+- Languages: JS, JSX, TS, TSX
 - Default: `"as-needed"`
 
 ## semi
@@ -908,6 +941,7 @@ type: `boolean`
 
 Print semicolons at the ends of statements.
 
+- Languages: JS, JSX, TS, TSX
 - Default: `true`
 
 ## singleAttributePerLine
@@ -916,6 +950,7 @@ type: `boolean`
 
 Enforce single attribute per line in HTML, Vue, and JSX.
 
+- Languages: JSX, TSX, HTML, Angular, Vue, MJML, Svelte
 - Default: `false`
 
 ## singleQuote
@@ -926,6 +961,7 @@ Use single quotes instead of double quotes.
 
 For JSX, you can set the `jsxSingleQuote` option.
 
+- Languages: JS, JSX, TS, TSX, CSS, Less, SCSS, Markdown, MDX, YAML, Handlebars, Svelte
 - Default: `false`
 - Overrides `.editorconfig.quote_type`
 
@@ -940,6 +976,7 @@ For details, see each field's documentation.
 
 Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
+- Languages: JS, JSX, TS, TSX
 - Default: Disabled
 
 ### sortImports.customGroups
@@ -1147,6 +1184,7 @@ The algorithm is NOT compatible with [prettier-plugin-sort-packagejson](https://
 But we believe it is clearer and easier to navigate.
 For details, see each field's documentation.
 
+- Languages: JSON (`package.json` only)
 - Default: `true`
 
 ### sortPackageJson.sortScripts
@@ -1169,6 +1207,7 @@ For details, see each field's documentation.
 
 Pass `true` or an object to enable with defaults, or omit/set `false` to disable.
 
+- Languages: JS, JSX, TS, TSX, HTML, Vue, Angular, Handlebars, CSS, SCSS, Less, Svelte
 - Default: Disabled
 
 ### sortTailwindcss.attributes
@@ -1243,6 +1282,7 @@ NOTE: `prettier-plugin-svelte` requires the `svelte` package (`svelte/compiler`)
 but Oxfmt does NOT bundle or auto-install it.
 You must install `svelte` yourself in your project, formatting will fail at runtime otherwise.
 
+- Languages: Svelte
 - Default: Disabled
 
 ### svelte.allowShorthand
@@ -1277,6 +1317,7 @@ type: `integer`
 
 Specify the number of spaces per indentation-level.
 
+- Languages: All
 - Default: `2`
 - Overrides `.editorconfig.indent_size` (falls back to `.editorconfig.tab_width`)
 
@@ -1288,6 +1329,7 @@ Print trailing commas wherever possible in multi-line comma-separated syntactic 
 
 A single-line array, for example, never gets trailing commas.
 
+- Languages: JS, JSX, TS, TSX, JSONC, JSON5, TOML, CSS, Less, SCSS, YAML
 - Default: `"all"`
 
 ## useTabs
@@ -1296,6 +1338,7 @@ type: `boolean`
 
 Indent lines with tabs instead of spaces.
 
+- Languages: All
 - Default: `false`
 - Overrides `.editorconfig.indent_style`
 
@@ -1305,4 +1348,5 @@ type: `boolean`
 
 Whether or not to indent the code inside `<script>` and `<style>` tags in Vue files.
 
+- Languages: Vue
 - Default: `false`

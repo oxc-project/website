@@ -97,14 +97,6 @@ for (var i = 0; i < 1; i++) {}
 
 type: `"always" | "never"`
 
-#### `"always"`
-
-Requires that variables be initialized on declaration. This is the default behavior.
-
-#### `"never"`
-
-Disallows initialization during declaration.
-
 ### The 2nd option
 
 This option is an object with the following properties:

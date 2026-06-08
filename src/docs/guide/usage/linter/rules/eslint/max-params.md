@@ -63,8 +63,6 @@ let foo = (bar, baz, qux) => {
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### countThis
 
 type: `"always" | "never" | "except-void"`

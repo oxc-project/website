@@ -2,7 +2,7 @@
 title: "vue/require-prop-type-constructor | Oxlint"
 rule: "vue/require-prop-type-constructor"
 category: "Correctness"
-version: "next"
+version: "1.68.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -63,7 +63,7 @@ export default {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.68.0.
 
 ## References
 

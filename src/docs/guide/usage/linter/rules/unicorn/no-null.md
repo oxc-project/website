@@ -48,6 +48,14 @@ let foo;
 
 This rule accepts a configuration object with the following properties:
 
+### checkArguments
+
+type: `boolean`
+
+default: `true`
+
+When set to `true`, disallow the use of `null` as a direct function call or constructor argument.
+
 ### checkStrictEquality
 
 type: `boolean`

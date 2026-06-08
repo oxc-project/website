@@ -53,8 +53,6 @@ import b from "./b"; // Allowed: 2 dependencies (max: 2)
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### ignoreTypeImports
 
 type: `boolean`

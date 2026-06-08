@@ -181,14 +181,6 @@ default: `"always"`
 
 Whether to check property names for length.
 
-#### `"always"`
-
-Property names are checked just like other identifiers
-
-#### `"never"`
-
-Property names are not checked for length.
-
 ## How to use
 
 <RuleHowToUse />

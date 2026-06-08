@@ -32,8 +32,6 @@ Recommendations usually range from 100 to 500 lines.
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### max
 
 type: `integer`

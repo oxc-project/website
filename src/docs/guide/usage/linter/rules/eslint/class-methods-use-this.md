@@ -95,14 +95,6 @@ default: `null`
 
 Whether to ignore classes that implement interfaces.
 
-#### `"all"`
-
-Ignores all classes that implement interfaces
-
-#### `"public-fields"`
-
-Only ignores public fields in classes that implement interfaces
-
 ### ignoreOverrideMethods
 
 type: `boolean`

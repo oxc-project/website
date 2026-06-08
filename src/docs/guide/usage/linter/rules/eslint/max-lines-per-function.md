@@ -67,8 +67,6 @@ function foo() {
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### IIFEs
 
 type: `boolean`

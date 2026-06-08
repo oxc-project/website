@@ -2,7 +2,7 @@
 title: "vue/component-definition-name-casing | Oxlint"
 rule: "vue/component-definition-name-casing"
 category: "Style"
-version: "next"
+version: "1.68.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -63,7 +63,7 @@ type: `"PascalCase" | "kebab-case"`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.68.0.
 
 ## References
 

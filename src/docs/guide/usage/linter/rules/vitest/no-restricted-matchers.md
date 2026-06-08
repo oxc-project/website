@@ -83,15 +83,7 @@ describe("when an error happens", () => {
 
 This rule accepts a configuration object with the following properties:
 
-### restrictedMatchers
-
-type: `Record<string, string>`
-
-default: `{}`
-
-A map of restricted matchers/modifiers to custom messages.
-The key is the matcher/modifier name (e.g., "toBeFalsy", "resolves", "not.toHaveBeenCalledWith").
-The value is an optional custom message to display when the matcher/modifier is used.
+type: `object`
 
 ## How to use
 

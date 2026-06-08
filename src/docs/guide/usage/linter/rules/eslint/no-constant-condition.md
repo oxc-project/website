@@ -71,15 +71,7 @@ This rule accepts a configuration object with the following properties:
 
 ### checkLoops
 
-type: `"all" | "allExceptWhileTrue" | "none"`
-
-default: `"allExceptWhileTrue"`
-
-Configuration option to specify whether to check for constant conditions in loops.
-
-- `"all"` or `true` disallows constant expressions in loops
-- `"allExceptWhileTrue"` disallows constant expressions in loops except while loops with expression `true`
-- `"none"` or `false` allows constant expressions in loops
+type: `boolean | "all" | "allExceptWhileTrue" | "none"`
 
 ## How to use
 

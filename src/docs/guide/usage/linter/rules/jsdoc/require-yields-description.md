@@ -2,7 +2,7 @@
 title: "jsdoc/require-yields-description | Oxlint"
 rule: "jsdoc/require-yields-description"
 category: "Style"
-version: "next"
+version: "1.68.0"
 default: false
 type_aware: false
 fix: "none"
@@ -56,7 +56,7 @@ function* quux() {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.68.0.
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "typescript/method-signature-style | Oxlint"
 rule: "typescript/method-signature-style"
 category: "Style"
-version: "next"
+version: "1.68.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -122,7 +122,7 @@ Enforce using method signature for functions. Use this if you aren't using TypeS
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.68.0.
 
 ## References
 

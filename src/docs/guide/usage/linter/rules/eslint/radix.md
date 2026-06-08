@@ -57,6 +57,18 @@ Examples of **correct** code for this rule:
 let num = parseInt("071", 10); // 71
 ```
 
+## Configuration
+
+This rule accepts one of the following string values:
+
+### `"always"`
+
+Always require the radix parameter when using `parseInt()`.
+
+### `"as-needed"`
+
+Only require the radix parameter when necessary.
+
 ## How to use
 
 <RuleHowToUse />

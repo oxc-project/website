@@ -92,8 +92,6 @@ function foo() {
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### max
 
 type: `integer`
@@ -105,8 +103,6 @@ Maximum amount of cyclomatic complexity
 ### variant
 
 type: `"classic" | "modified"`
-
-default: `"classic"`
 
 The cyclomatic complexity variant to use
 

@@ -46,13 +46,7 @@ var Hello = createReactClass({
 
 This rule accepts one of the following string values:
 
-### `"always"`
-
-Always prefer ES2015 class-style components.
-
-### `"never"`
-
-Do not allow ES2015 class-style, prefer `createReactClass`.
+type: `"always" | "never"`
 
 ## How to use
 

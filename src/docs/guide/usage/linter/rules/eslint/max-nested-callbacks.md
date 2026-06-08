@@ -71,8 +71,6 @@ function handleFoo4() {
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### max
 
 type: `integer`

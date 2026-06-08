@@ -2,7 +2,7 @@
 title: "vue/no-reserved-component-names | Oxlint"
 rule: "vue/no-reserved-component-names"
 category: "Correctness"
-version: "next"
+version: "1.68.0"
 default: false
 type_aware: false
 fix: "none"
@@ -86,7 +86,7 @@ the capitalized form of an HTML element (e.g. `Div`) is also reported.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.68.0.
 
 ## References
 

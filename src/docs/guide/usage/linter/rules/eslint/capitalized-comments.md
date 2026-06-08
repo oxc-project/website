@@ -60,30 +60,6 @@ type: `"always" | "never"`
 
 This option is an object with the following properties:
 
-#### block
-
-type: `object`
-
-Configuration options specific to block comments.
-
-##### block.ignoreConsecutiveComments
-
-type: `boolean`
-
-If true, consecutive comments will be ignored after the first comment.
-
-##### block.ignoreInlineComments
-
-type: `boolean`
-
-If true, inline comments (comments in the middle of code) will be ignored.
-
-##### block.ignorePattern
-
-type: `string`
-
-A regex pattern. Comments that match the pattern will not cause violations.
-
 #### ignoreConsecutiveComments
 
 type: `boolean`
@@ -97,30 +73,6 @@ type: `boolean`
 If true, inline comments (comments in the middle of code) will be ignored.
 
 #### ignorePattern
-
-type: `string`
-
-A regex pattern. Comments that match the pattern will not cause violations.
-
-#### line
-
-type: `object`
-
-Configuration options specific to line comments.
-
-##### line.ignoreConsecutiveComments
-
-type: `boolean`
-
-If true, consecutive comments will be ignored after the first comment.
-
-##### line.ignoreInlineComments
-
-type: `boolean`
-
-If true, inline comments (comments in the middle of code) will be ignored.
-
-##### line.ignorePattern
 
 type: `string`
 

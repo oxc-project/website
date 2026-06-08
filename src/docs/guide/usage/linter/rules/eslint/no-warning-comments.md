@@ -82,6 +82,22 @@ Where to check for the terms:
 An array of characters to ignore at the start of comments when `location` is `"start"`.
 Useful for ignoring common comment decorations like `*` in JSDoc-style comments.
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### decoration
+
+type: `string[]`
+
+### location
+
+type: `"start" | "anywhere"`
+
+### terms
+
+type: `string[]`
+
 ## How to use
 
 <RuleHowToUse />
