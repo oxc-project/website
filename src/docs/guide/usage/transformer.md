@@ -4,12 +4,19 @@ A high-performance transformer that rewrites unsupported syntax into forms suppo
 
 ## Features
 
-- [Lowering ESNext to ES2015.](./transformer/lowering)
-- [Transforming TypeScript to JavaScript.](./transformer/typescript)
-- [Transforming JSX to JavaScript, with built-in React Refresh.](./transformer/jsx)
-- [Built-in support for popular plugins like styled-components.](./transformer/plugins)
-- [Replacing global variables.](./transformer/global-variable-replacement)
-- [TypeScript Isolated Declarations Emit without using the TypeScript compiler.](./transformer/isolated-declarations)
+The features below run in a fixed order, regardless of the order of the options:
+
+1. **[React Compiler](./transformer/react-compiler)** — runs first, on the original source.
+2. **[TypeScript](./transformer/typescript)** — type stripping.
+3. **[Decorators](./transformer/typescript#decorators)**.
+4. **[Plugins](./transformer/plugins)** — e.g. styled-components.
+5. **[React Refresh](./transformer/jsx#react-refresh)** — component instrumentation, runs just before the JSX transform.
+6. **[JSX](./transformer/jsx)** — JSX to JavaScript.
+7. **[Lowering](./transformer/lowering)** — ES2026 down to ES2015.
+8. **[Inject](./transformer/global-variable-replacement#inject)** — global variable injection.
+9. **[Define](./transformer/global-variable-replacement#define)** — global variable replacement.
+
+Oxc also supports [TypeScript Isolated Declarations emit](./transformer/isolated-declarations) without using the TypeScript compiler.
 
 ## General Options
 

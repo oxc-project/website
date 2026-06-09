@@ -219,6 +219,10 @@ export const enConfig = defineLocaleConfig("root", {
               link: "/docs/guide/usage/transformer/jsx",
             },
             {
+              text: "React Compiler",
+              link: "/docs/guide/usage/transformer/react-compiler",
+            },
+            {
               text: "Plugins",
               link: "/docs/guide/usage/transformer/plugins",
             },
