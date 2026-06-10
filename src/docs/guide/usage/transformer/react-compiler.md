@@ -6,7 +6,7 @@ Oxc has experimental support for the [React Compiler](https://react.dev/learn/re
 This feature is experimental and under active development. Options and behaviour may change.
 :::
 
-Under the hood, Oxc integrates the [Rust port of the React Compiler](https://github.com/facebook/react/pull/36173) rather than the Babel-based `babel-plugin-react-compiler`. Because that port is an unmerged React PR and unpublished, Oxc vendors it as releasable crates at [oxc-project/forked-react-compiler](https://github.com/oxc-project/forked-react-compiler).
+Under the hood, Oxc integrates the [Rust port of the React Compiler](https://github.com/facebook/react/pull/36173) rather than the Babel-based `babel-plugin-react-compiler`. Because that port is an merged React PR, but unpublished, Oxc vendors it as releasable crates at [oxc-project/forked-react-compiler](https://github.com/oxc-project/forked-react-compiler).
 
 ## General Usage
 
