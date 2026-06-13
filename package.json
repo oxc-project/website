@@ -23,7 +23,7 @@
     "@types/node": "^25.5.0",
     "@voidzero-dev/vitepress-theme": "^4.8.4",
     "degit": "^3.0.0",
-    "esbuild": "0.28.0",
+    "esbuild": "0.28.1",
     "feed": "^5.2.0",
     "knip": "^6.0.2",
     "markdown-it-container": "^4.0.0",

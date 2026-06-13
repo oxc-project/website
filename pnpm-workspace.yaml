@@ -11,7 +11,7 @@ catalog:
 overrides:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
-  esbuild: 0.28.0
+  esbuild: 0.28.1
 peerDependencyRules:
   allowAny:
     - vite
