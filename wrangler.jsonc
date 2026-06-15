@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "oxc-website",
+  "compatibility_date": "2026-02-24",
+  "assets": {
+    // VitePress static output (outDir in .vitepress/config). Build with `vp run build`.
+    "directory": "./build",
+    // Serve build/404.html for unmatched routes.
+    "not_found_handling": "404-page",
+  },
+}
