@@ -62,24 +62,7 @@ Examples of **correct** code for this rule:
 
 This rule accepts a configuration object with the following properties:
 
-### allowed_roles
-
 type: `Record<string, array>`
-
-A mapping of HTML element names to arrays of ARIA role strings that are
-allowed overrides for that element. For example, `{ "ul": ["menu", "tablist"] }`
-permits `<ul role="menu" />` without triggering the rule.
-
-Defaults are:
-
-```json
-{
-  "ul": ["menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
-  "ol": ["menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
-  "li": ["menuitem", "menuitemcheckbox", "menuitemradio", "row", "tab", "treeitem"],
-  "fieldset": ["radiogroup", "presentation"]
-}
-```
 
 ## How to use
 

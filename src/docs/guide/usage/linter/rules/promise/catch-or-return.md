@@ -69,13 +69,21 @@ default: `false`
 
 Whether to allow `then()` with two arguments as a termination method.
 
+### allowThenStrict
+
+type: `boolean`
+
+default: `false`
+
+Whether to allow `then(null, handler)` as a termination method.
+
 ### terminationMethod
 
-type: `string[]`
+type: `array | string`
 
-default: `["catch"]`
+#### terminationMethod[n]
 
-List of allowed termination methods (e.g., `catch`, `done`).
+type: `string`
 
 ## How to use
 

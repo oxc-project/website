@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow asynchronously registered `watch`.
+Disallow asynchronously-registered `watch`.
 
 ### Why is this bad?
 

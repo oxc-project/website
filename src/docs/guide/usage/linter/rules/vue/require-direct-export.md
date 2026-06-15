@@ -2,7 +2,7 @@
 title: "vue/require-direct-export | Oxlint"
 rule: "vue/require-direct-export"
 category: "Style"
-version: "next"
+version: "1.69.0"
 default: false
 type_aware: false
 fix: "none"
@@ -86,7 +86,7 @@ When set `true`, disallow functional component functions.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.69.0.
 
 ## References
 

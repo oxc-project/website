@@ -20,18 +20,18 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows JSX context provider values from taking values that will cause needless rerenders.
+Disallows JSX context provider values that cause needless re-renders.
 
 ### Why is this bad?
 
-React Context and all its child nodes and Consumers are rerendered whenever the value prop
+React Context and all its child nodes and Consumers are re-rendered whenever the value prop
 changes. Because each JavaScript object carries its own identity, things like object
 expressions (`{foo: 'bar'}`) or function expressions get a new identity on every render.
-This makes the context think it has gotten a new object and can cause needless rerenders
+This makes the context think it has gotten a new object and can cause needless re-renders
 and unintended consequences.
 
 This can be a large performance hit because not only will it cause the context providers
-and consumers to rerender with all the elements in its subtree, the processing for the
+and consumers to re-render with all the elements in its subtree, the processing for the
 tree scan React does to render the provider and find consumers is also wasted.
 
 ### Examples

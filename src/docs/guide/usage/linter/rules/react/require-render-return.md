@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce ES5 or ES2015 class for returning value in the `render` function.
+Require render methods in ES5 and ES2015 React components to return a value.
 
 This rule is not relevant for function components, and so can potentially be
 disabled for modern React codebases.

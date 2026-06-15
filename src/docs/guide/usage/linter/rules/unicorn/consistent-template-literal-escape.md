@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce consistent style for escaping ${ in template literals.
+Enforce consistent style for escaping `${` in template literals.
 
 ### Why is this bad?
 

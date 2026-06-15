@@ -2,7 +2,7 @@
 title: "vue/no-reserved-props | Oxlint"
 rule: "vue/no-reserved-props"
 category: "Correctness"
-version: "next"
+version: "1.69.0"
 default: false
 type_aware: false
 fix: "none"
@@ -74,7 +74,7 @@ more names (`is`, `slot`, `class`, `style`, ...) than Vue 3.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.69.0.
 
 ## References
 

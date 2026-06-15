@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforces valid definition of new and constructor. This rule prevents classes from defining
+Enforces valid definitions of `new` and `constructor`. This rule prevents classes from defining
 a method named `new`, interfaces from defining a method named `constructor`, and interfaces
 from defining a construct signature that returns the interface itself.
 

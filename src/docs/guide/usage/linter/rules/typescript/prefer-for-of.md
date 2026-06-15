@@ -20,12 +20,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforces the use of for-of loop instead of a for loop with a simple iteration.
+Enforces the use of a `for...of` loop instead of a `for` loop with simple iteration.
 
 ### Why is this bad?
 
-Using a for loop with a simple iteration over an array can be replaced with a more concise
-and readable for-of loop. For-of loops are easier to read and less error-prone, as they
+Using a `for` loop with a simple iteration over an array can be replaced with a more concise
+and readable `for...of` loop. `for...of` loops are easier to read and less error-prone, as they
 eliminate the need for an index variable and manual array access.
 
 ### Examples

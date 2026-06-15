@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow precision loss of number literal.
+Disallow precision loss in numeric literals.
 
 ### Why is this bad?
 

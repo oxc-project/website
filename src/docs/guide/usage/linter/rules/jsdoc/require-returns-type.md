@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Requires that `@returns` tag has a type value (in curly brackets).
+Requires that the `@returns` tag has a type value (in curly brackets).
 
 ### Why is this bad?
 

@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefer `includes()` over `indexOf()` when checking for existence or non-existence.
+Prefer `includes()` over `indexOf()` when checking for existence/non-existence.
 All built-ins have `.includes()` in addition to `.indexOf()`.
 
 ### Why is this bad?

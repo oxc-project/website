@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-The rule disallow `new` operators with the `Function` object.
+Disallow `new` operators with the `Function` object.
 
 ### Why is this bad?
 

@@ -20,12 +20,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prevent Arrays that are local to the current method from being used
+Prevent arrays that are local to the current method from being used
 as values of JSX props.
 
 ### Why is this bad?
 
-Using locally defined Arrays as values for props can lead to unintentional
+Using locally defined arrays as values for props can lead to unintentional
 re-renders and performance issues. Every time the parent component renders,
 a new instance of the Array is created, causing unnecessary re-renders of
 child components. This also leads to harder-to-maintain code as the
@@ -48,6 +48,18 @@ Examples of **correct** code for this rule:
 ```jsx
 <Item list={this.props.list} />
 ```
+
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### nativeAllowList
+
+type: `array | "all"`
+
+#### nativeAllowList[n]
+
+type: `string`
 
 ## How to use
 

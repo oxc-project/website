@@ -21,7 +21,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Requires [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) Vitest APIs
-(`vi.mock`, `vi.unmock`, and `vi.hoisted`) to appear in the top-level of the file.
+(`vi.mock`, `vi.unmock`, and `vi.hoisted`) to appear at the top level of the file.
 
 ### Why is this bad?
 

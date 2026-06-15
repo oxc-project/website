@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule enforces a minimum and/or maximum identifier length convention by counting the
+Enforce a minimum and/or maximum identifier length convention by counting the
 graphemes for a given identifier.
 
 ### Why is this bad?

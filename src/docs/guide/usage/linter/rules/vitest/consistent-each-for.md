@@ -1,7 +1,7 @@
 ---
 title: "vitest/consistent-each-for | Oxlint"
 rule: "vitest/consistent-each-for"
-category: "Correctness"
+category: "Style"
 version: "1.39.0"
 default: false
 type_aware: false

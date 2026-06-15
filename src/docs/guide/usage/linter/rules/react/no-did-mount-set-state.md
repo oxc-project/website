@@ -68,13 +68,7 @@ var Hello = createReactClass({
 
 This rule accepts one of the following string values:
 
-### `"allowed"`
-
-Allow `setState` calls in nested functions within `componentDidMount`, the default behavior.
-
-### `"disallow-in-func"`
-
-When set, also disallows `setState` calls in nested functions within `componentDidMount`.
+type: `"allowed" | "disallow-in-func"`
 
 ## How to use
 

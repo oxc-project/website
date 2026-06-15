@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule reports on any usage of Jasmine globals, which is not ported to
+This rule reports on any usage of Jasmine globals, which are not ported to
 Jest, and suggests alternatives from Jest's own API.
 
 ### Why is this bad?

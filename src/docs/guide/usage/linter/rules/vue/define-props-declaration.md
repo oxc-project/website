@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule enforces `defineProps` typing style which you should use `type-based` or `runtime` declaration.
+Enforce consistent declaration style for `defineProps` in Vue.
 This rule only works in `<script setup>` with `lang="ts"`.
 
 ### Why is this bad?

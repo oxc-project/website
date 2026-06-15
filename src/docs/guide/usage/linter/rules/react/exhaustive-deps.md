@@ -59,8 +59,6 @@ This rule accepts a configuration object with the following properties:
 
 type: `string`
 
-default: `null`
-
 Optionally provide a regex of additional hooks to check.
 
 ## How to use

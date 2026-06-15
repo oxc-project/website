@@ -49,7 +49,7 @@ Examples of **correct** code for this rule:
 
 This rule accepts a configuration object with the following properties:
 
-type: `object`
+type: `Record<string, array>`
 
 ## How to use
 

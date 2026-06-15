@@ -20,11 +20,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows nested ternary expressions to improve code readability and maintainability.
+Disallow nested ternary expressions.
 
 ### Why is this bad?
 
-Nested ternary expressions make code harder to read and understand. They can lead to complex, difficult-to-debug logic.
+Nested ternary expressions make code harder to read and understand. Nesting of these expressions can lead
+to complex logic that is difficult to understand.
 
 ### Examples
 

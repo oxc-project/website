@@ -34,7 +34,6 @@ Examples of **incorrect** code for this rule:
 
 ```jsx
 <button />
-<input type="text" />
 <a href="/path" />
 <th />
 <div role="button" />
@@ -78,19 +77,19 @@ Defaults to `2`.
 
 type: `string[]`
 
-default: `[]`
+default: `["audio", "canvas", "embed", "input", "textarea", "tr", "video"]`
 
-Elements to ignore (in addition to the default ignore list).
-Defaults to `[]`.
+Elements to ignore.
+Defaults to `["audio", "canvas", "embed", "input", "textarea", "tr", "video"]`.
 
 ### ignoreRoles
 
 type: `string[]`
 
-default: `[]`
+default: `["grid", "listbox", "menu", "menubar", "radiogroup", "row", "tablist", "toolbar", "tree", "treegrid"]`
 
 Interactive roles to ignore.
-Defaults to `[]`.
+Defaults to `["grid", "listbox", "menu", "menubar", "radiogroup", "row", "tablist", "toolbar", "tree", "treegrid"]`.
 
 ### labelAttributes
 

@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prevent the usage of `<img>` element due to slower
+Prevent the usage of the `<img>` element due to slower
 [LCP](https://nextjs.org/learn/seo/lcp) and higher bandwidth.
 
 ### Why is this bad?

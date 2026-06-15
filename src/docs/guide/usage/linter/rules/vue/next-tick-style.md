@@ -2,7 +2,7 @@
 title: "vue/next-tick-style | Oxlint"
 rule: "vue/next-tick-style"
 category: "Style"
-version: "next"
+version: "1.69.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -80,7 +80,7 @@ Require passing a callback function to `nextTick`.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.69.0.
 
 ## References
 

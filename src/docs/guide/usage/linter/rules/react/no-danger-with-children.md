@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows when a DOM element is using both `children` and `dangerouslySetInnerHTML` properties.
+Disallows DOM elements from using both `children` and `dangerouslySetInnerHTML` properties.
 
 ### Why is this bad?
 

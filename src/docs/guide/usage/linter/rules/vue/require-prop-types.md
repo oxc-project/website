@@ -2,7 +2,7 @@
 title: "vue/require-prop-types | Oxlint"
 rule: "vue/require-prop-types"
 category: "Style"
-version: "next"
+version: "1.69.0"
 default: false
 type_aware: false
 fix: "none"
@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule enforces that a props statement contains type definition.
+This rule enforces that a props statement contains a type definition.
 
 ### Why is this bad?
 
@@ -64,7 +64,7 @@ const props = defineProps({
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.69.0.
 
 ## References
 

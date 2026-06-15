@@ -45,8 +45,6 @@ new A();
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### allowNamedExports
 
 type: `boolean`

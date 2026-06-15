@@ -38,7 +38,8 @@ Examples of **correct** code for this rule:
 
 ```js
 foo.replace(/a/, bar);
-foo.replaceAll(/a/, bar);
+foo.replaceAll("a", bar);
+foo.replaceAll(/a|b/g, bar);
 
 const pattern = "not-a-regexp";
 foo.replace(pattern, bar);

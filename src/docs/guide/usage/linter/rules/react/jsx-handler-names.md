@@ -46,7 +46,7 @@ Examples of **correct** code for this rule:
 
 This rule accepts a configuration object with the following properties:
 
-### checkInlineFunctions
+### checkInlineFunction
 
 type: `boolean`
 
@@ -62,33 +62,21 @@ default: `false`
 
 Whether to check for local variables in JSX attributes.
 
-### eventHandlerPrefixes
+### eventHandlerPrefix
 
-type: `string`
+type: `string | boolean`
 
 default: `"handle"`
 
 Event handler prefixes to check against.
 
-### eventHandlerPropPrefixes
+### eventHandlerPropPrefix
 
-type: `string`
+type: `string | boolean`
 
 default: `"on"`
 
 Event handler prop prefixes to check against.
-
-### eventHandlerPropRegex
-
-type: `string`
-
-Compiled regex for event handler prop prefixes.
-
-### eventHandlerRegex
-
-type: `string`
-
-Compiled regex for event handler prefixes.
 
 ### ignoreComponentNames
 

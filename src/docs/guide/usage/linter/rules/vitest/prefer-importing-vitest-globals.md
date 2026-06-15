@@ -20,11 +20,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforces explicit imports from 'vitest' instead of using vitest globals.
+Enforces explicit imports from 'vitest' instead of using Vitest globals.
 
 ### Why is this bad?
 
-Using vitest globals without importing them relies on implicit global configuration
+Using Vitest globals without importing them relies on implicit global configuration
 (`globals: true` in vitest config). Explicit imports make dependencies clear,
 improve IDE support, and ensure compatibility across different setups.
 

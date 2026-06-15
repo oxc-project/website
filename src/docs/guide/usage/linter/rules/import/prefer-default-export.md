@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-In exporting files, this rule checks if there is default export or not.
+Checks whether there is a default export.
 
 ### Why is this bad?
 

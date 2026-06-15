@@ -57,7 +57,7 @@ This rule accepts a configuration object with the following properties:
 
 type: `string[]`
 
-default: `null`
+default: `["onError", "onLoad", "onKeyPress", "onKeyDown", "onKeyUp", "onFocus", "onBlur", "onClick", "onContextMenu", "onDblClick", "onDoubleClick", "onDrag", "onDragEnd", "onDragEnter", "onDragExit", "onDragLeave", "onDragOver", "onDragStart", "onDrop", "onMouseDown", "onMouseEnter", "onMouseLeave", "onMouseMove", "onMouseOut", "onMouseOver", "onMouseUp"]`
 
 An array of event handler names that should trigger this rule.
 

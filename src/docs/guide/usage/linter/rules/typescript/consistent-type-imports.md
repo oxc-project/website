@@ -143,7 +143,7 @@ Control whether to enforce type imports or value imports.
 
 #### `"type-imports"`
 
-Will enforce that you always use `import type Foo from '...'` except referenced by metadata of decorators.
+Enforces that you always use `import type Foo from '...'`, except when referenced by decorator metadata.
 
 #### `"no-type-imports"`
 

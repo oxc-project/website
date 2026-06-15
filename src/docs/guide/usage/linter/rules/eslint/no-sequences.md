@@ -28,11 +28,6 @@ The comma operator evaluates each of its operands (from left to right)
 and returns the value of the last operand. However, this frequently
 obscures side effects, and its use is often an accident.
 
-### Options
-
-- `allowInParentheses` (default: `true`): If set to `false`, disallows
-  the comma operator even when wrapped in parentheses.
-
 ### Examples
 
 Examples of **incorrect** code for this rule:
@@ -77,7 +72,6 @@ default: `true`
 
 If this option is set to `false`, this rule disallows the comma operator
 even when the expression sequence is explicitly wrapped in parentheses.
-Default is `true`.
 
 ## How to use
 

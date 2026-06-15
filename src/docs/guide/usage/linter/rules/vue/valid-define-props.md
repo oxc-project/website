@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule checks whether `defineProps` compiler macro is valid.
+Enforce valid usage of the `defineProps` compiler macro in Vue.
 
 This rule reports `defineProps` compiler macros in the following cases:
 

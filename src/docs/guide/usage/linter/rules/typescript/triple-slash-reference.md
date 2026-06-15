@@ -47,14 +47,6 @@ default: `"always"`
 
 What to enforce for `/// <reference lib="..." />` references.
 
-#### `"always"`
-
-Allow triple-slash `lib` references.
-
-#### `"never"`
-
-Disallow triple-slash `lib` references.
-
 ### path
 
 type: `"always" | "never"`

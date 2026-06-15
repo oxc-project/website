@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce properties of `$slots` to be used as a function.
+Enforce properties of `$slots` to be used as functions.
 
 ### Why is this bad?
 

@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce the use of `as const` over literal type.
+Enforce the use of `as const` over literal types.
 
 ### Why is this bad?
 

@@ -31,8 +31,6 @@ Dead stores add noise and can hide real bugs (e.g., you meant to use that value 
 Examples of **incorrect** code for this rule:
 
 ```js
-/* eslint no-useless-assignment: "error" */
-
 function fn1() {
   let v = "used";
   doSomething(v);

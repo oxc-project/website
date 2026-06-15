@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-The lang prop on the `<html>` element must be a valid IETF's BCP 47 language tag.
+The lang prop on the `<html>` element must be a valid IETF BCP 47 language tag.
 
 ### Why is this bad?
 

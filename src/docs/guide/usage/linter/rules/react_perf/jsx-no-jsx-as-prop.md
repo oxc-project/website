@@ -47,6 +47,18 @@ Examples of **correct** code for this rule:
 <Item callback={this.props.jsx} />
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### nativeAllowList
+
+type: `array | "all"`
+
+#### nativeAllowList[n]
+
+type: `string`
+
 ## How to use
 
 <RuleHowToUse />

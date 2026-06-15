@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows the usages of empty static blocks.
+Disallow empty static blocks.
 
 ### Why is this bad?
 

@@ -68,7 +68,7 @@ This rule accepts a configuration object with the following properties:
 
 type: `"kebabCase" | "camelCase" | "snakeCase" | "pascalCase"`
 
-default: `"kebabCase"`
+default: `null`
 
 The case style to enforce for filenames.
 
@@ -89,7 +89,7 @@ You can set the `case` option like this:
 
 type: `object`
 
-default: `{"kebabCase":true, "camelCase":false, "snakeCase":false, "pascalCase":false}`
+default: `null`
 
 The case style(s) to allow/enforce for filenames. `true` means the case style is allowed, `false` means it is banned.
 
@@ -121,7 +121,7 @@ Whether camel case is allowed, e.g. `someFileName.js`.
 
 type: `boolean`
 
-default: `true`
+default: `false`
 
 Whether kebab case is allowed, e.g. `some-file-name.js`.
 
@@ -143,9 +143,9 @@ Whether snake case is allowed, e.g. `some_file_name.js`.
 
 ### ignore
 
-type: `string`
+type: `string[]`
 
-A regular expression pattern for filenames to ignore.
+An array of regular expression patterns for filenames to ignore.
 
 You can set the `ignore` option like this:
 
@@ -154,7 +154,7 @@ You can set the `ignore` option like this:
   "unicorn/filename-case": [
     "error",
     {
-      "ignore": "^foo.*$"
+      "ignore": ["^foo.*$"]
     }
   ]
 }

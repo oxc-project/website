@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.9.3"
 default: false
 type_aware: false
-fix: "pending"
+fix: "conditional_fix"
 upstream: "https://eslint.org/docs/latest/rules/sort-vars"
 ---
 
@@ -20,10 +20,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-When declaring multiple variables within the same block, sorting variable names make it
-easier to find necessary variable easier at a later time.
+Enforce sorting of variable declarations within the same block.
 
 ### Why is this bad?
+
+When declaring multiple variables within the same block, sorting variable names can make it
+easier to find necessary variables at a later time.
 
 Unsorted variable declarations can make the code harder to read and maintain.
 

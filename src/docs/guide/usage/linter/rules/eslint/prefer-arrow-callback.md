@@ -30,26 +30,6 @@ Arrow functions are generally better suited for callbacks because they:
 - are shorter and easier to read;
 - cannot be used as constructors, which is desirable for callbacks.
 
-### Options
-
-```json
-{
-  "prefer-arrow-callback": [
-    "error",
-    {
-      "allowNamedFunctions": false,
-      "allowUnboundThis": true
-    }
-  ]
-}
-```
-
-- `allowNamedFunctions` (default `false`) — when `true`, named function
-  expressions are allowed.
-- `allowUnboundThis` (default `true`) — when `false`, function
-  expressions that reference `this` are reported even when they are not
-  bound to a `this` value.
-
 ### Examples
 
 Examples of **incorrect** code for this rule:
@@ -88,11 +68,15 @@ type: `boolean`
 
 default: `false`
 
+If this option is set to `true`, named function expressions are allowed.
+
 ### allowUnboundThis
 
 type: `boolean`
 
 default: `true`
+
+If this option is set to `false`, function expressions that reference `this` are reported even when they are not bound to a `this` value.
 
 ## How to use
 

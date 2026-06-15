@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallow object declaration on `data` (in Vue.js 3.0.0+).
+Disallow object declarations for `data` (in Vue.js 3.0.0+).
 
 ### Why is this bad?
 

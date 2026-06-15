@@ -20,8 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Require or disallow "Yoda" conditions.
-This rule aims to enforce consistent style of conditions which compare a variable to a literal value.
+Require or disallow "Yoda" conditions. This rule aims to enforce consistent style of conditions which compare a variable to a literal value.
 
 ### Why is this bad?
 

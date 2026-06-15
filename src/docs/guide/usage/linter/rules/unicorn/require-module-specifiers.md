@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce non-empty specifier list in `import` and `export` statements.
+Enforce a non-empty specifier list in `import` and `export` statements.
 
 ### Why is this bad?
 

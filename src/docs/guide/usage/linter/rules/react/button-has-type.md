@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforces explicit `type` attribute for all the `button` HTML elements.
+Enforces an explicit `type` attribute for all HTML `button` elements.
 
 ### Why is this bad?
 

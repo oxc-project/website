@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce valid `defineOptions` compiler macro.
+Enforce valid use of the `defineOptions` compiler macro.
 
 ### Why is this bad?
 

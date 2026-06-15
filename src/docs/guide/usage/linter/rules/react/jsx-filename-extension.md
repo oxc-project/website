@@ -62,11 +62,11 @@ Set this to `as-needed` to only allow JSX file extensions in files that contain 
 
 #### `"always"`
 
-Always allow a `.jsx` file extension.
+Always allow a JSX filename extension.
 
 #### `"as-needed"`
 
-Only allow `.jsx` file extension for files that contain JSX syntax.
+Only allow JSX filename extension for files that contain JSX syntax.
 
 ### extensions
 

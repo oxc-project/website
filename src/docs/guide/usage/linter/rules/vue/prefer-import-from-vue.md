@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce `import from 'vue'` instead of `import from '@vue/*'`.
+Enforce imports from `vue` instead of `@vue/*`.
 
 ### Why is this bad?
 

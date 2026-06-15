@@ -20,8 +20,8 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefers usage of `String.prototype.codePointAt` over `String.prototype.charCodeAt`.
-Prefers usage of `String.fromCodePoint` over `String.fromCharCode`.
+Prefer usage of `String#codePointAt` over `String#charCodeAt`.
+Prefer usage of `String.fromCodePoint` over `String.fromCharCode`.
 
 ### Why is this bad?
 

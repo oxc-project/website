@@ -46,26 +46,13 @@ const a: Foo<string> = new Foo(); // prefer type annotation
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
+This rule accepts one of the following string values:
 
-### option
-
-type: `"constructor" | "type-annotation"`
-
-default: `"constructor"`
-
-Specifies where the generic type should be specified.
-
-Possible values:
-
-- `"constructor"` (default): Type arguments that only appear on the type annotation are disallowed.
-- `"type-annotation"`: Type arguments that only appear on the constructor are disallowed.
-
-#### `"constructor"`
+### `"constructor"`
 
 Type arguments that only appear on the type annotation are disallowed.
 
-#### `"type-annotation"`
+### `"type-annotation"`
 
 Type arguments that only appear on the constructor are disallowed.
 

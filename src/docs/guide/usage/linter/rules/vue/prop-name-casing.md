@@ -2,7 +2,7 @@
 title: "vue/prop-name-casing | Oxlint"
 rule: "vue/prop-name-casing"
 category: "Style"
-version: "next"
+version: "1.69.0"
 default: false
 type_aware: false
 fix: "none"
@@ -77,7 +77,7 @@ default: `[]`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.69.0.
 
 ## References
 

@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-The rule disallows importing any vitest global functions.
+The rule disallows importing any Vitest global functions.
 
 ### Why is this bad?
 

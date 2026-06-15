@@ -62,6 +62,16 @@ default: `[]`
 
 Custom components to check for alt text on `area` elements.
 
+### elements
+
+type: `array`
+
+Custom components to check for alt text on any of the supported elements.
+
+#### elements[n]
+
+type: `"img" | "object" | "area" | "input[type="image"]"`
+
 ### img
 
 type: `string[]`

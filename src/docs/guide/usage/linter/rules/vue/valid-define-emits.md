@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule checks whether `defineEmits` compiler macro is valid.
+Enforce valid usage of the `defineEmits` compiler macro in Vue.
 
 This rule reports `defineEmits` compiler macros in the following cases:
 

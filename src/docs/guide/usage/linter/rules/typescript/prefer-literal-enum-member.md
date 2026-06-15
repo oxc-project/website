@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Explicit enum value must only be a literal value (string, number, boolean, etc).
+Explicit enum values must only be literal values (string, number, boolean, etc.).
 
 ### Why is this bad?
 

@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Disallows shorthand type conversions using operators like `!!`, `+`, `""+ `, etc.
+Disallow shorthand type conversions using operators like `!!`, unary `+`, and `"" +`.
 
 ### Why is this bad?
 

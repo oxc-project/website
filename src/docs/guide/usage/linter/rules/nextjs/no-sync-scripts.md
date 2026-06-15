@@ -20,8 +20,8 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule prevents the use of synchronous `<script>` tags in Next.js applications.
-It requires that any `<script>` tag with a `src` attribute must also have either
+Prevent the use of synchronous `<script>` tags in Next.js applications.
+Require any `<script>` tag with a `src` attribute to also have either
 the `async` or `defer` attribute.
 
 ### Why is this bad?

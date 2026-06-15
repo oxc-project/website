@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule warns of paths that resolve multiple times in executor functions that Promise constructors.
+This rule warns of paths that resolve multiple times in executor functions of Promise constructors.
 
 ### Why is this bad?
 

@@ -20,10 +20,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Ensures that there is no resolvable path back to this module via its dependencies.
+Disallow cyclic dependencies. The rule ensures that there is no resolvable path back
+to this module via its dependencies.
 
-This includes cycles of depth 1 (imported module imports me) to an effectively
-infinite value, if the `maxDepth` option is not set.
+This includes cycles of depth 1 (imported module imports me), up to an effectively
+infinite value when the `maxDepth` option is not set.
 
 ### Why is this bad?
 
@@ -104,7 +105,7 @@ Ignore type-only imports
 
 type: `integer`
 
-default: `4294967295`
+default: `Infinity`
 
 Maximum dependency depth to traverse
 

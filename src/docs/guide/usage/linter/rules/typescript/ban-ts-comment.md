@@ -74,19 +74,35 @@ Minimum description length required when using directives with `allow-with-descr
 
 ### ts-check
 
-How to handle the `@ts-check` directive.
+type: `object | boolean | "allow-with-description"`
+
+#### ts-check.descriptionFormat
+
+type: `string`
 
 ### ts-expect-error
 
-How to handle the `@ts-expect-error` directive.
+type: `object | boolean | "allow-with-description"`
+
+#### ts-expect-error.descriptionFormat
+
+type: `string`
 
 ### ts-ignore
 
-How to handle the `@ts-ignore` directive.
+type: `object | boolean | "allow-with-description"`
+
+#### ts-ignore.descriptionFormat
+
+type: `string`
 
 ### ts-nocheck
 
-How to handle the `@ts-nocheck` directive.
+type: `object | boolean | "allow-with-description"`
+
+#### ts-nocheck.descriptionFormat
+
+type: `string`
 
 ## How to use
 

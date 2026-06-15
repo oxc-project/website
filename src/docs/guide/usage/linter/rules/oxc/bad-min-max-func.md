@@ -19,7 +19,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Checks whether the clamp function `Math.min(Math.max(x, y), z)` always evaluate to a
+Checks whether the clamp function `Math.min(Math.max(x, y), z)` always evaluates to a
 constant result because the arguments are in the wrong order.
 
 ### Why is this bad?

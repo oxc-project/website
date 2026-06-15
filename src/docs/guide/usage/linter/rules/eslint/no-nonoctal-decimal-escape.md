@@ -20,11 +20,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-This rule disallows \8 and \9 escape sequences in string literals.
+Disallow `\8` and `\9` escape sequences in string literals.
 
 ### Why is this bad?
 
-ECMAScript specification treats \8 and \9 in string literals as a legacy feature
+ECMAScript specification treats `\8` and `\9` in string literals as a legacy feature
 
 ### Examples
 

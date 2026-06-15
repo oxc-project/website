@@ -37,6 +37,7 @@ Examples of **incorrect** code for this rule:
 throw Error("🦄");
 throw TypeError("unicorn");
 throw lib.TypeError("unicorn");
+const e = Error("message");
 ```
 
 Examples of **correct** code for this rule:
@@ -45,6 +46,7 @@ Examples of **correct** code for this rule:
 throw new Error("🦄");
 throw new TypeError("unicorn");
 throw new lib.TypeError("unicorn");
+const e = new Error("message");
 ```
 
 ## How to use

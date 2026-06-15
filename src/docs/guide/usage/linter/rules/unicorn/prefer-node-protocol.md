@@ -20,11 +20,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefer using the `node:protocol` when importing Node.js builtin modules.
+Prefer using the `node:` protocol when importing Node.js built-in modules.
 
 ### Why is this bad?
 
-Node.js builtin modules should be imported using the `node:` protocol to avoid ambiguity with local modules.
+Node.js built-in modules should be imported using the `node:` protocol to avoid ambiguity with local modules.
 
 ### Examples
 

@@ -20,9 +20,10 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Forbids a module from having default exports. This helps your editor
-provide better auto-import functionality, as named exports offer more
-explicit and predictable imports compared to default exports.
+Disallow modules from having default exports.
+
+This can help your editor provide better auto-import functionality, as named exports
+offer more explicit and predictable imports compared to default exports.
 
 ### Why is this bad?
 

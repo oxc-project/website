@@ -241,8 +241,6 @@ children as well as the use of unnecessary JSX expressions.
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
-
 ### children
 
 type: `"always" | "never" | "ignore"`

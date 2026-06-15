@@ -2,7 +2,7 @@
 title: "vue/no-reserved-keys | Oxlint"
 rule: "vue/no-reserved-keys"
 category: "Correctness"
-version: "next"
+version: "1.69.0"
 default: false
 type_aware: false
 fix: "none"
@@ -85,7 +85,7 @@ Extra reserved key names to disallow, on top of the built-in list.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.69.0.
 
 ## References
 

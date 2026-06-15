@@ -32,25 +32,41 @@ Redundant roles can lead to confusion and verbosity in the codebase.
 
 This rule applies for the following elements and their implicit roles:
 
-- `<nav>`: `navigation`
 - `<button>`: `button`
-- `<main>`: `main`
 
 Examples of **incorrect** code for this rule:
 
 ```jsx
-<nav role="navigation"></nav>
 <button role="button"></button>
-<main role="main"></main>
 ```
 
 Examples of **correct** code for this rule:
 
 ```jsx
-<nav></nav>
 <button></button>
-<main></main>
 ```
+
+### Options
+
+This rule takes an object whose keys are element names and whose values
+are arrays of redundant roles to allow on that element. Providing an
+entry overrides the default exceptions for that element.
+
+By default `role="navigation"` is allowed on `<nav>`. Additional roles
+can be allowed, for example to keep explicit list semantics that some
+browsers drop when `list-style: none` is applied:
+
+```json
+{
+  "jsx-a11y/no-redundant-roles": ["error", { "ul": ["list"], "ol": ["list"], "li": ["listitem"] }]
+}
+```
+
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+type: `Record<string, array>`
 
 ## How to use
 
