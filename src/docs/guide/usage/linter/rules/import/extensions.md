@@ -112,59 +112,17 @@ monorepo setup will be more capable with regards to resolving file paths.
 
 ## Configuration
 
-This rule accepts three types of configuration:
+### [0]
 
-1. **Global rule** (string): `"always"`, `"never"`, or `"ignorePackages"`
+type: `"always" | "never" | "ignorePackages"`
 
-```jsonc
-{
-  "rules": {
-    // this would require extensions for all imports, *including from packages*
-    // e.g. `import React from 'react';` would be disallowed.
-    // You should generally always set `ignorePackages` to `true` when using `always`.
-    "import/extensions": ["error", "always"],
-  },
-}
-```
+Extension rule configuration; Copy to avoid extra indirection.
 
-2. **Per-extension rules** (object): `{ "js": "always", "jsx": "never", ... }`
+### [1]
 
-```jsonc
-{
-  "rules": {
-    "import/extensions": [
-      "error",
-      // per-extension rules:
-      // require extensions for .js imports and disallow them for .ts imports
-      { "js": "always", "ts": "never", "ignorePackages": true },
-    ],
-  },
-}
-```
+type: `object`
 
-3. **Combined** (array): `["error", "always", { "js": "never" }]` or `["error", { "js": "always" }]`
-
-```jsonc
-{
-  "rules": {
-    "import/extensions": [
-      "error",
-      "always", // by default, require extensions for all imports
-      {
-        "ts": "never", // override the global value and disallow extensions on imports for specific file types
-        "ignorePackages": true,
-      },
-    ],
-  },
-}
-```
-
-**Default behavior (no configuration)**: All imports - of all kinds - pass.
-Unconfigured file extensions are ignored, to avoid false positives.
-
-This rule accepts a configuration object with the following properties:
-
-### checkTypeImports
+#### [1].checkTypeImports
 
 type: `boolean`
 
@@ -172,14 +130,7 @@ default: `false`
 
 Whether to check type imports when enforcing extension rules.
 
-```ts
-// If checkTypeImports is `false`, we don't care about
-// whether these imports have file extensions or not, both are always allowed:
-import type { Foo } from "./foo";
-import type { Foo } from "./foo.ts";
-```
-
-### ignorePackages
+#### [1].ignorePackages
 
 type: `boolean`
 
@@ -187,61 +138,17 @@ default: `false`
 
 Whether to ignore package imports when enforcing extension rules.
 
-> [!IMPORTANT]
-> When setting this rule to `always`, you should also set `ignorePackages` to `true`.
-> Otherwise, package imports without extensions (such as `import React from 'react';`)
-> will be disallowed, which is not desirable and is not fixable.
-
-A boolean option (not per-extension) that exempts package imports from the "always" rule.
-
-Can be set in the config object: `["error", "always", { "ignorePackages": true }]`
-
-Legacy shorthand: `["error", "ignorePackages"]` is equivalent to `["error", "always", { "ignorePackages": true }]`
-
-- **With "always"**: When `true`, package imports (e.g., `lodash`, `@babel/core`) don't require extensions
-- **With "never"**: This option has no effect; extensions are still forbidden on package imports
-
-Example: `["error", "always", { "ignorePackages": true }]` allows `import foo from "lodash"` but requires `import bar from "./bar.js"`
-
-### pathGroupOverrides
+#### [1].pathGroupOverrides
 
 type: `array`
 
-default: `[]`
-
 Path group overrides for bespoke import specifiers.
 
-Array of pattern-action pairs for custom import protocols (monorepo tools, custom resolvers).
-Each override has: `{ "pattern": "<glob-pattern>", "action": "enforce" | "ignore" }`
-
-**Pattern matching**: Uses glob patterns (`*`, `**`, `{a,b}`) to match import specifiers.
-Note that the pattern matching is done in Rust with the fast-glob library, and so may differ
-from the JavaScript glob library used by the original ESLint rule.
-
-**Actions**:
-
-- `"enforce"`: Apply normal extension validation (respect global/per-extension rules)
-- `"ignore"`: Skip all extension validation for matching imports
-
-**Precedence**: First matching pattern wins.
-
-**Examples:**
-
-```json
-{
-  "pattern": "rootverse{*,*/**}",
-  "action": "ignore"
-}
-```
-
-Matches imports from `rootverse+debug:src`, `rootverse+bfe:src/symbols` and
-ignores whether or not they have an extension.
-
-#### pathGroupOverrides[n]
+##### [1].pathGroupOverrides[n]
 
 type: `object`
 
-##### pathGroupOverrides[n].action
+###### [1].pathGroupOverrides[n].action
 
 type: `"enforce" | "ignore"`
 
@@ -251,19 +158,25 @@ Action to take for path group overrides.
 
 Determines how import extensions are validated for matching bespoke import specifiers.
 
-###### `"enforce"`
+####### `"enforce"`
 
 Enforce extension validation for matching imports (require extensions based on config).
 
-###### `"ignore"`
+####### `"ignore"`
 
 Ignore matching imports entirely (skip all extension validation).
 
-##### pathGroupOverrides[n].pattern
+###### [1].pathGroupOverrides[n].pattern
 
 type: `string`
 
-Glob pattern to match import specifiers. This uses Rust's fast-glob library for matching.
+Glob pattern to match import specifiers.
+
+#### [1].pattern
+
+type: `Record<string, string>`
+
+Per-extension rules.
 
 ## How to use
 

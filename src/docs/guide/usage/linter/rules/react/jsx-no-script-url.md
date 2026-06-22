@@ -48,17 +48,31 @@ Examples of **correct** code for this rule:
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
+### [0]
 
-### components
+type: `array`
 
-type: `Record<string, array>`
+#### [0][n]
 
-default: `{}`
+type: `object`
 
-Additional components to check.
+##### [0][n].name
 
-### includeFromSettings
+type: `string`
+
+Component name.
+
+##### [0][n].props
+
+type: `string[]`
+
+List of properties that should be validated.
+
+### [1]
+
+type: `object`
+
+#### [1].includeFromSettings
 
 type: `boolean`
 

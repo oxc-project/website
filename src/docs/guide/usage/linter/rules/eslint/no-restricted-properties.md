@@ -109,55 +109,6 @@ Examples of **correct** code for this rule:
 legacyApi.stableMethod();
 ```
 
-## Configuration
-
-###
-
-type: `object`
-
-#### allowObjects
-
-type: `string[]`
-
-default: `null`
-
-Objects where property access should be allowed. This must be used with `property` and
-cannot be used with `object`.
-
-#### allowProperties
-
-type: `string[]`
-
-default: `null`
-
-Properties where property access should be allowed. This must be used with `object` and
-cannot be used with `property`.
-
-#### message
-
-type: `string`
-
-default: `null`
-
-A custom message to display.
-
-#### object
-
-type: `string`
-
-default: `null`
-
-The object on which the property is being accessed.
-
-#### property
-
-type: `string`
-
-default: `null`
-
-The property being accessed. If `object` is not specified, this applies to the named
-property on all objects.
-
 ## How to use
 
 <RuleHowToUse />

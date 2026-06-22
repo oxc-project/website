@@ -42,6 +42,28 @@ Examples of **correct** code for this rule:
 function quux(foo) {}
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### defaultDestructuredRootDescription
+
+type: `string`
+
+default: `"The root object"`
+
+The description string to set by default for destructured roots. Defaults to "The root object".
+
+### setDefaultDestructuredRootDescription
+
+type: `boolean`
+
+default: `false`
+
+Whether to set a default destructured root description.
+For example, you may wish to avoid manually having to set the description for a @param corresponding to a destructured root object as it should always be the same type of object.
+Uses `defaultDestructuredRootDescription` for the description string. Defaults to `false`.
+
 ## How to use
 
 <RuleHowToUse />

@@ -2,7 +2,7 @@
 title: "vue/require-default-prop | Oxlint"
 rule: "vue/require-default-prop"
 category: "Style"
-version: "next"
+version: "1.70.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,7 +66,7 @@ export default {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

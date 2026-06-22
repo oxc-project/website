@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.4.4"
 default: false
 type_aware: false
-fix: "pending"
+fix: "fixable_fix"
 upstream: "https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/requireParamType.md"
 ---
 
@@ -41,6 +41,26 @@ Examples of **correct** code for this rule:
 /** @param {SomeType} foo */
 function quux(foo) {}
 ```
+
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### defaultDestructuredRootType
+
+type: `string`
+
+default: `"object"`
+
+The type string to set by default for destructured roots. Defaults to "object".
+
+### setDefaultDestructuredRootType
+
+type: `boolean`
+
+default: `false`
+
+Whether to set a default destructured root type. For example, you may wish to avoid manually having to set the type for a `@param` corresponding to a destructured root object as it is always going to be an object. Uses `defaultDestructuredRootType` for the type string. Defaults to `false`.
 
 ## How to use
 

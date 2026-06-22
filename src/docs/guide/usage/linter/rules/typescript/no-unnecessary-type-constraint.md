@@ -5,7 +5,7 @@ category: "Suspicious"
 version: "0.0.6"
 default: false
 type_aware: false
-fix: "pending"
+fix: "fixable_suggestion"
 upstream: "https://typescript-eslint.io/rules/no-unnecessary-type-constraint/"
 ---
 

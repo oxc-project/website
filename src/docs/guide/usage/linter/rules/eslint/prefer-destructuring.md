@@ -56,55 +56,27 @@ const obj = object.bar;
 
 ## Configuration
 
-This rule accepts a configuration object with the following properties:
+### The 1st option
 
-### AssignmentExpression
+This option is an object with the following properties:
 
-type: `object`
-
-default: `{"array":true, "object":true}`
-
-Configuration for destructuring in assignment expressions, configured for arrays and objects independently.
-
-#### AssignmentExpression.array
+#### array
 
 type: `boolean`
 
-default: `true`
-
-#### AssignmentExpression.object
+#### object
 
 type: `boolean`
 
-default: `true`
+### The 2nd option
 
-### VariableDeclarator
+This option is an object with the following properties:
 
-type: `object`
-
-default: `{"array":true, "object":true}`
-
-Configuration for destructuring in variable declarations, configured for arrays and objects independently.
-
-#### VariableDeclarator.array
-
-type: `boolean`
-
-default: `true`
-
-#### VariableDeclarator.object
-
-type: `boolean`
-
-default: `true`
-
-### enforceForRenamedProperties
+#### enforceForRenamedProperties
 
 type: `boolean`
 
 default: `false`
-
-Determines whether the object destructuring rule applies to renamed variables.
 
 ## How to use
 

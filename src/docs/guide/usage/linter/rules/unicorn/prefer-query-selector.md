@@ -46,7 +46,7 @@ Examples of **correct** code for this rule:
 document.querySelector("#foo");
 document.querySelector(".bar");
 document.querySelector("main #foo .bar");
-document.querySelectorAll(".foo .bar");
+document.querySelectorAll(".foo.bar");
 document.querySelectorAll("li a");
 document.querySelector("li").querySelectorAll("a");
 ```

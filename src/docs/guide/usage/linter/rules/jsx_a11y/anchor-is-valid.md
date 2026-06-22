@@ -95,13 +95,31 @@ Examples of **invalid** code for this rule:
 
 This rule accepts a configuration object with the following properties:
 
-### validHrefs
+### aspects
+
+type: `array`
+
+Sub-rule aspects to run.
+
+#### aspects[n]
+
+type: `"noHref" | "invalidHref" | "preferButton"`
+
+### components
 
 type: `string[]`
 
 default: `[]`
 
-List of strings that are valid href values.
+Custom components to treat as anchor elements.
+
+### specialLink
+
+type: `string[]`
+
+default: `[]`
+
+Custom prop names to treat as link destinations.
 
 ## How to use
 

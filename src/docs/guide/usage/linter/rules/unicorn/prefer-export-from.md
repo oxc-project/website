@@ -2,7 +2,7 @@
 title: "unicorn/prefer-export-from | Oxlint"
 rule: "unicorn/prefer-export-from"
 category: "Style"
-version: "next"
+version: "1.70.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -76,7 +76,7 @@ When false, if any import binding is used somewhere other than a re-export, all 
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

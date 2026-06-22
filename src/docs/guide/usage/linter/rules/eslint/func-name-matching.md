@@ -135,17 +135,15 @@ module.exports = function foo(name) {};
 
 ## Configuration
 
-This rule takes an optional string of `"always"` or `"never"` (when omitted, it defaults to `"always"`), and an optional options object with two properties `considerPropertyDescriptor` and `includeCommonJSModuleExports`.
-
-### The 1st option
+### [0]
 
 type: `"always" | "never"`
 
-### The 2nd option
+### [1]
 
-This option is an object with the following properties:
+type: `object`
 
-#### considerPropertyDescriptor
+#### [1].considerPropertyDescriptor
 
 type: `boolean`
 
@@ -153,7 +151,7 @@ default: `false`
 
 If `considerPropertyDescriptor` is set to `true`, the check will take into account the use of `Object.create`, `Object.defineProperty`, `Object.defineProperties`, and `Reflect.defineProperty`.
 
-#### includeCommonJSModuleExports
+#### [1].includeCommonJSModuleExports
 
 type: `boolean`
 

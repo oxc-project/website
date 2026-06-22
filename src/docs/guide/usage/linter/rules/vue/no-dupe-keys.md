@@ -2,7 +2,7 @@
 title: "vue/no-dupe-keys | Oxlint"
 rule: "vue/no-dupe-keys"
 category: "Correctness"
-version: "next"
+version: "1.70.0"
 default: true
 type_aware: false
 fix: "none"
@@ -73,7 +73,7 @@ built-in `props`, `computed`, `data`, `methods` and `setup` groups.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

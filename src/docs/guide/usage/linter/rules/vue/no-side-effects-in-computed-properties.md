@@ -2,7 +2,7 @@
 title: "vue/no-side-effects-in-computed-properties | Oxlint"
 rule: "vue/no-side-effects-in-computed-properties"
 category: "Correctness"
-version: "next"
+version: "1.70.0"
 default: false
 type_aware: false
 fix: "none"
@@ -64,7 +64,7 @@ export default {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

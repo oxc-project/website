@@ -2,7 +2,7 @@
 title: "unicorn/no-array-fill-with-reference-type | Oxlint"
 rule: "unicorn/no-array-fill-with-reference-type"
 category: "Suspicious"
-version: "next"
+version: "1.70.0"
 default: false
 type_aware: false
 fix: "none"
@@ -50,7 +50,7 @@ const rows = Array.from({ length: 3 }, () => ({}));
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

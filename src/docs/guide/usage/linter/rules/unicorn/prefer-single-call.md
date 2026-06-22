@@ -2,7 +2,7 @@
 title: "unicorn/prefer-single-call | Oxlint"
 rule: "unicorn/prefer-single-call"
 category: "Pedantic"
-version: "next"
+version: "1.70.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -79,7 +79,7 @@ Methods to ignore.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "react/jsx-no-literals | Oxlint"
 rule: "react/jsx-no-literals"
 category: "Restriction"
-version: "next"
+version: "1.70.0"
 default: false
 type_aware: false
 fix: "none"
@@ -104,7 +104,7 @@ An array of unique attribute names where string literals should be restricted. O
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.70.0.
 
 ## References
 

@@ -61,12 +61,16 @@ This rule accepts a configuration object with the following properties:
 
 type: `object`
 
+default: `{"groupLength":4, "minimumDigits":0}`
+
 Configuration for binary literals (e.g. `0b1010_0001` and bigint variants).
 Controls how digits are grouped and when separators are applied.
 
 #### binary.groupLength
 
 type: `integer`
+
+default: `0`
 
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
@@ -75,12 +79,25 @@ For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
 type: `integer`
 
+default: `0`
+
 The minimum number of digits required before grouping is applied.
 Values with fewer digits than this threshold will not be grouped.
+
+#### binary.onlyIfContainsSeparator
+
+type: `boolean`
+
+Only enforce the rule when the numeric literal already contains a separator (`_`).
+
+When `true`, numbers without separators are left as-is; when `false` (default),
+grouping will be enforced for eligible numbers even if they don't include separators yet.
 
 ### hexadecimal
 
 type: `object`
+
+default: `{"groupLength":2, "minimumDigits":0}`
 
 Configuration for hexadecimal literals (e.g. `0xAB_CD`, `0Xab_cd`, and bigint variants).
 Controls how digits are grouped and when separators are applied.
@@ -89,6 +106,8 @@ Controls how digits are grouped and when separators are applied.
 
 type: `integer`
 
+default: `0`
+
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
@@ -96,8 +115,19 @@ For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
 type: `integer`
 
+default: `0`
+
 The minimum number of digits required before grouping is applied.
 Values with fewer digits than this threshold will not be grouped.
+
+#### hexadecimal.onlyIfContainsSeparator
+
+type: `boolean`
+
+Only enforce the rule when the numeric literal already contains a separator (`_`).
+
+When `true`, numbers without separators are left as-is; when `false` (default),
+grouping will be enforced for eligible numbers even if they don't include separators yet.
 
 ### number
 
@@ -106,9 +136,19 @@ type: `object`
 Configuration for decimal numbers (integers, fraction parts, and exponents).
 Controls how digits are grouped and when separators are applied.
 
+#### number.fractionGroupLength
+
+type: `integer`
+
+default: `Infinity`
+
+The size a group of digits in the fractional part (after the decimal point) should be.
+
 #### number.groupLength
 
 type: `integer`
+
+default: `0`
 
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
@@ -117,12 +157,25 @@ For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
 type: `integer`
 
+default: `0`
+
 The minimum number of digits required before grouping is applied.
 Values with fewer digits than this threshold will not be grouped.
+
+#### number.onlyIfContainsSeparator
+
+type: `boolean`
+
+Only enforce the rule when the numeric literal already contains a separator (`_`).
+
+When `true`, numbers without separators are left as-is; when `false` (default),
+grouping will be enforced for eligible numbers even if they don't include separators yet.
 
 ### octal
 
 type: `object`
+
+default: `{"groupLength":4, "minimumDigits":0}`
 
 Configuration for octal literals (e.g. `0o1234_5670` and bigint variants).
 Controls how digits are grouped and when separators are applied.
@@ -131,6 +184,8 @@ Controls how digits are grouped and when separators are applied.
 
 type: `integer`
 
+default: `0`
+
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
@@ -138,8 +193,19 @@ For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
 type: `integer`
 
+default: `0`
+
 The minimum number of digits required before grouping is applied.
 Values with fewer digits than this threshold will not be grouped.
+
+#### octal.onlyIfContainsSeparator
+
+type: `boolean`
+
+Only enforce the rule when the numeric literal already contains a separator (`_`).
+
+When `true`, numbers without separators are left as-is; when `false` (default),
+grouping will be enforced for eligible numbers even if they don't include separators yet.
 
 ### onlyIfContainsSeparator
 
