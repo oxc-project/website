@@ -9,7 +9,7 @@ description: The fastest toolchain for JavaScript and TypeScript.
 
 The Oxidation Compiler is a collection of high-performance tools for JavaScript and TypeScript written in Rust.
 
-Oxc is part of [VoidZero](https://voidzero.dev)'s vision for a unified, high-performance toolchain for JavaScript. It powers [Rolldown](https://rolldown.rs) ([Vite](https://vitejs.dev)'s future bundler) and enables the next generation of ultra-fast development tools that work seamlessly together.
+Oxc is part of [VoidZero](https://voidzero.dev)'s vision for a unified, high-performance toolchain for JavaScript. It powers [Rolldown](https://rolldown.rs) ([Vite 8's bundler](https://vite.dev/blog/announcing-vite8)) and enables the next generation of ultra-fast development tools that work seamlessly together.
 
 <sub>\* Oxidation is the chemical process that creates rust</sub>
 
