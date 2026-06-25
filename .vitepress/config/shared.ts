@@ -49,16 +49,6 @@ const head: HeadConfig[] = [
   ],
   // banner
   ["script", {}, bannerScript],
-  // Fathom Analytics
-  [
-    "script",
-    {
-      src: "https://cdn.usefathom.com/script.js",
-      "data-site": "XPSGWNDW",
-      "data-spa": "auto",
-      defer: "",
-    },
-  ],
 ];
 
 export const sharedConfig = {
