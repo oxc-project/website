@@ -44,7 +44,7 @@ jobs:
       # NOTE: For security, it is strongly recommended to pin all
       # actions to a specific SHA hash instead of using a version
       # tag like this.
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - uses: pnpm/action-setup@v4
