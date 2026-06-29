@@ -2,7 +2,7 @@
 title: "node/no-mixed-requires | Oxlint"
 rule: "node/no-mixed-requires"
 category: "Style"
-version: "next"
+version: "1.71.0"
 default: false
 type_aware: false
 fix: "none"
@@ -73,7 +73,7 @@ default: `false`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.71.0.
 
 ## References
 

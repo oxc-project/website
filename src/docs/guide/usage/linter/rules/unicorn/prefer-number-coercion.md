@@ -2,7 +2,7 @@
 title: "unicorn/prefer-number-coercion | Oxlint"
 rule: "unicorn/prefer-number-coercion"
 category: "Pedantic"
-version: "next"
+version: "1.71.0"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -49,7 +49,7 @@ const integer = Math.trunc(Number(input));
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.71.0.
 
 ## References
 

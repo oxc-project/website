@@ -2,7 +2,7 @@
 title: "vue/no-async-in-computed-properties | Oxlint"
 rule: "vue/no-async-in-computed-properties"
 category: "Correctness"
-version: "next"
+version: "1.71.0"
 default: false
 type_aware: false
 fix: "none"
@@ -88,7 +88,7 @@ a builder API, not a Promise method.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.71.0.
 
 ## References
 

@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.0.18"
 default: false
 type_aware: false
-fix: "pending"
+fix: "fixable_fix"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md"
 ---
 

@@ -2,7 +2,7 @@
 title: "node/no-sync | Oxlint"
 rule: "node/no-sync"
 category: "Style"
-version: "next"
+version: "1.71.0"
 default: false
 type_aware: false
 fix: "none"
@@ -78,7 +78,7 @@ Function names to ignore.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.71.0.
 
 ## References
 

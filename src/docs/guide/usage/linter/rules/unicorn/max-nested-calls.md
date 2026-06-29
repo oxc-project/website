@@ -2,7 +2,7 @@
 title: "unicorn/max-nested-calls | Oxlint"
 rule: "unicorn/max-nested-calls"
 category: "Style"
-version: "next"
+version: "1.71.0"
 default: false
 type_aware: false
 fix: "none"
@@ -66,7 +66,7 @@ The maximum allowed nested call depth.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.71.0.
 
 ## References
 
