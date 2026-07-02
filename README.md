@@ -1,12 +1,10 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6cedad30-edc5-4e4b-b9a1-991721587e70/deploy-status)](https://app.netlify.com/sites/oxc-project/deploys)
-
 # Oxc Website
 
-- Netlify: [oxc.rs](https://oxc.rs)
+[oxc.rs](oxc.rs) powered by [oxc.void.app](http://oxc.void.app)
 
 ### Contributing
 
-Install [vite-plus](https://viteplus.dev/) if you don't have it already.
+Install [vite-plus](https://viteplus.dev) if you don't have it already.
 
 Then run:
 

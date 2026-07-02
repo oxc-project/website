@@ -1,5 +1,5 @@
 ---
-title: Quickstart
+title: "Quickstart | Oxfmt"
 description: Install Oxfmt and learn the common workflows.
 ---
 

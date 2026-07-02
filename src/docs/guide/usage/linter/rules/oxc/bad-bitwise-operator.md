@@ -1,6 +1,8 @@
 ---
-title: "oxc/bad-bitwise-operator"
+title: "oxc/bad-bitwise-operator | Oxlint"
+rule: "oxc/bad-bitwise-operator"
 category: "Restriction"
+version: "0.0.3"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -57,6 +59,10 @@ input ||= "";
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

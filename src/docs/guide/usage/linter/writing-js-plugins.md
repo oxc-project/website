@@ -1,4 +1,5 @@
 ---
+title: "Writing JS Plugins | Oxlint"
 outline: deep
 ---
 

@@ -1,6 +1,8 @@
 ---
-title: "oxc/bad-min-max-func"
+title: "oxc/bad-min-max-func | Oxlint"
+rule: "oxc/bad-min-max-func"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -17,7 +19,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Checks whether the clamp function `Math.min(Math.max(x, y), z)` always evaluate to a
+Checks whether the clamp function `Math.min(Math.max(x, y), z)` always evaluates to a
 constant result because the arguments are in the wrong order.
 
 ### Why is this bad?
@@ -44,6 +46,10 @@ Math.min(1000, Math.max(0, z));
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

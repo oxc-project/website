@@ -1,6 +1,8 @@
 ---
-title: "oxc/number-arg-out-of-range"
+title: "oxc/number-arg-out-of-range | Oxlint"
+rule: "oxc/number-arg-out-of-range"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -17,7 +19,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Checks whether the radix or precision arguments of number-related functions exceeds the limit.
+Checks whether the radix or precision arguments of number-related functions exceed the limit.
 
 ### Why is this bad?
 
@@ -45,6 +47,10 @@ var s_radix_16 = x.toString(16);
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

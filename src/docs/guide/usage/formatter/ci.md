@@ -1,5 +1,5 @@
 ---
-title: Setup CI and other integrations
+title: "Setup CI and other integrations | Oxfmt"
 description: Run Oxfmt in CI or as a git hook.
 ---
 
@@ -39,7 +39,7 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: pnpm/action-setup@v4
 
@@ -76,7 +76,7 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: pnpm/action-setup@v4
 

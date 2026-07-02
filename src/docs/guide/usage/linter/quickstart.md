@@ -1,5 +1,5 @@
 ---
-title: Quickstart
+title: "Quickstart | Oxlint"
 description: Install Oxlint and learn the common workflows.
 ---
 

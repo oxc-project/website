@@ -1,6 +1,8 @@
 ---
-title: "oxc/bad-array-method-on-arguments"
+title: "oxc/bad-array-method-on-arguments | Oxlint"
+rule: "oxc/bad-array-method-on-arguments"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -59,6 +61,10 @@ function sum(...args) {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

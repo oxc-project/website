@@ -1,6 +1,8 @@
 ---
-title: "oxc/no-rest-spread-properties"
+title: "oxc/no-rest-spread-properties | Oxlint"
+rule: "oxc/no-rest-spread-properties"
 category: "Restriction"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "none"
@@ -59,6 +61,10 @@ A message to display when object spread properties are found.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

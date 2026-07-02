@@ -1,6 +1,8 @@
 ---
-title: "oxc/uninvoked-array-callback"
+title: "oxc/uninvoked-array-callback | Oxlint"
+rule: "oxc/uninvoked-array-callback"
 category: "Correctness"
+version: "0.0.3"
 default: true
 type_aware: false
 fix: "none"
@@ -41,6 +43,10 @@ const list = new Array(5).fill().map((_) => createElement());
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.3.
 
 ## References
 

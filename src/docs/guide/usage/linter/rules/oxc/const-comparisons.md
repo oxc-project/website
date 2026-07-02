@@ -1,6 +1,8 @@
 ---
-title: "oxc/const-comparisons"
+title: "oxc/const-comparisons | Oxlint"
+rule: "oxc/const-comparisons"
 category: "Correctness"
+version: "0.0.22"
 default: true
 type_aware: false
 fix: "none"
@@ -55,6 +57,10 @@ a <= b;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.0.22.
 
 ## References
 

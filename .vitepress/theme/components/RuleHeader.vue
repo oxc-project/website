@@ -5,7 +5,7 @@ import { computed } from "vue";
 import fixEmoji from "./utils/fixEmoji";
 
 const { frontmatter } = useData();
-const title = frontmatter.value.title;
+const rule = frontmatter.value.rule;
 const category = frontmatter.value.category;
 const fix = frontmatter.value.fix;
 const typeAware = frontmatter.value.type_aware;
@@ -69,7 +69,7 @@ const fixMessage = computed(() => {
       <a class="back-to-rules" href="/docs/guide/usage/linter/rules" aria-label="Back to rules"
         >← Back to rules</a
       >
-      <h1>{{ title }} <Badge type="info" :text="category" /></h1>
+      <h1>{{ rule }} <Badge type="info" :text="category" /></h1>
     </header>
 
     <div class="rule-meta">

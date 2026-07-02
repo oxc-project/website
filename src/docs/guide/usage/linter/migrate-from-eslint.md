@@ -1,6 +1,18 @@
+---
+title: "Migrate from ESLint | Oxlint"
+---
+
 # Migrate from ESLint
 
 This guide is for existing JavaScript and TypeScript projects that currently use ESLint and want to migrate to Oxlint.
+
+## When to migrate from ESLint
+
+Migrate to Oxlint if you want a dedicated linter with better speed, simpler adoption, and strong compatibility with modern ESLint workflows. Choose [Vite+](https://npmx.dev/package/vite-plus) instead if you want Oxlint as part of a larger unified toolchain.
+
+- Move to Oxlint for dedicated linting.
+- Move to [Vite+](https://npmx.dev/package/vite-plus) for an integrated workflow.
+- Stay on ESLint if a specific missing behavior still blocks migration.
 
 ## Overview
 
@@ -18,13 +30,13 @@ When migrating, expect the following:
 
 ## Migrate with Skills
 
-You can migrate interactively using the [`migrate-oxlint`](https://skills.sh/oxc-project/oxc/migrate-oxlint) skill:
+The [`migrate-oxlint`](https://skills.sh/oxc-project/oxc/migrate-oxlint) skill provides an interactive, agent-guided migration. Install it into your coding agent:
 
 ```bash
 npx skills add https://github.com/oxc-project/oxc --skill migrate-oxlint
 ```
 
-Once installed, run `/migrate-oxlint` and the agent will walk you through the full migration.
+Once installed, run `/migrate-oxlint` to perform the migration.
 
 ## Migrating from an ESLint flat config
 

@@ -341,7 +341,7 @@ and
 To test your rule whenever you make a change, run:
 
 ```bash
-just watch "test -p oxc_linter -- rule-name"
+just watch "cargo test -p oxc_linter -- rule-name"
 ```
 
 Or to just test it once, run:

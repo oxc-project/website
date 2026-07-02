@@ -2,6 +2,10 @@
 
 Oxc transformer supports replacing global variables.
 
+::: tip Evaluation order
+`inject` runs before `define`, and both run after all other transforms. See the [transformer overview](../transformer#features) for the full order.
+:::
+
 ## Define
 
 "Define" feature provides a way to replace global variables with constant expressions. This feature is similar to [Terser](https://terser.org/)'s `global_defs` option and [esbuild's `define` option](https://esbuild.github.io/api/#define).

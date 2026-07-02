@@ -1,6 +1,8 @@
 ---
-title: "oxc/no-async-await"
+title: "oxc/no-async-await | Oxlint"
+rule: "oxc/no-async-await"
 category: "Restriction"
+version: "0.4.2"
 default: false
 type_aware: false
 fix: "none"
@@ -43,6 +45,10 @@ async function foo() {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.4.2.
 
 ## References
 

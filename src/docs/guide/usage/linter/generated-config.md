@@ -132,6 +132,8 @@ Example
 
 type: `Record<string, boolean>`
 
+Environments enable and disable collections of global variables.
+
 Predefine global variables.
 
 Environments specify what global variables are predefined.
@@ -193,6 +195,8 @@ overriding the previous ones.
 ## globals
 
 type: `Record<string, string>`
+
+Enabled or disabled specific global variables.
 
 Add or remove global variables.
 
@@ -275,7 +279,12 @@ by giving the JS plugin an alias.
 ```json
 {
   "plugins": ["import"],
-  "jsPlugins": [{ "name": "import-js", "specifier": "eslint-plugin-import" }],
+  "jsPlugins": [
+    {
+      "name": "import-js",
+      "specifier": "eslint-plugin-import"
+    }
+  ],
   "rules": {
     "import/no-cycle": "error",
     "import-js/no-unresolved": "warn"
@@ -303,7 +312,7 @@ Note: The following plugin names are reserved because they are implemented nativ
 - jsdoc
 - jest
 - vitest
-- jsx-a11y
+- jsx-a11y (includes jsx-a11y-x)
 - nextjs
 - react-perf
 - promise
@@ -322,6 +331,8 @@ Path or package name of the plugin
 ## options
 
 type: `object`
+
+Oxlint config options.
 
 Options for the linter.
 
@@ -351,6 +362,16 @@ Equivalent to passing `--report-unused-disable-directives-severity` on the CLI.
 CLI flags take precedence over this value when both are set.
 Only supported in the root configuration file.
 
+### options.respectEslintDisableDirectives
+
+type: `boolean`
+
+Whether oxlint should respect `eslint-disable*` and `eslint-enable*`
+directives in addition to its native `oxlint-*` directives.
+
+Defaults to `true`.
+Only supported in the root configuration file.
+
 ### options.typeAware
 
 type: `boolean`
@@ -375,6 +396,8 @@ Note that this requires the `oxlint-tsgolint` package to be installed.
 
 type: `array`
 
+Add, remove, or otherwise reconfigure rules for specific files or groups of files.
+
 ### overrides[n]
 
 type: `object`
@@ -385,11 +408,34 @@ type: `object`
 
 Environments enable and disable collections of global variables.
 
+#### overrides[n].excludeFiles
+
+type: `string[]`
+
+A list of glob patterns to exclude from this override.
+
+Files matching these patterns are not globally ignored; this override
+simply does not apply to them.
+
+## Example
+
+`[ "*.generated.ts", "fixtures/**" ]`
+
+A set of glob patterns.
+Patterns are matched against paths relative to the configuration file's directory.
+
 #### overrides[n].files
 
 type: `string[]`
 
+A list of glob patterns to override.
+
+## Example
+
+`[ "*.test.ts", "*.spec.ts" ]`
+
 A set of glob patterns.
+Patterns are matched against paths relative to the configuration file's directory.
 
 #### overrides[n].globals
 
@@ -428,7 +474,7 @@ Note: The following plugin names are reserved because they are implemented nativ
 - jsdoc
 - jest
 - vitest
-- jsx-a11y
+- jsx-a11y (includes jsx-a11y-x)
 - nextjs
 - react-perf
 - promise
@@ -484,11 +530,38 @@ type: `"eslint" | "react" | "unicorn" | "typescript" | "oxc" | "import" | "jsdoc
 
 type: `object`
 
+Example
+
+`.oxlintrc.json`
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "rules": {
+    "eqeqeq": "warn",
+    "import/no-cycle": "error",
+    "prefer-const": [
+      "error",
+      {
+        "ignoreReadBeforeAssign": true
+      }
+    ]
+  }
+}
+```
+
+See [Oxlint Rules](https://oxc.rs/docs/guide/usage/linter/rules.html) for the list of
+rules.
+
 See [Oxlint Rules](https://oxc.rs/docs/guide/usage/linter/rules.html)
 
 ## settings
 
 type: `object`
+
+Plugin-specific configuration for both built-in and custom plugins.
+This includes settings for built-in plugins such as `react` and `jsdoc`
+as well as configuring settings for JS custom plugins loaded via `jsPlugins`.
 
 Configure the behavior of linter plugins.
 
@@ -529,14 +602,15 @@ configuration for a full reference.
 
 #### settings.jest.version
 
-type: `integer`
+type: `integer | string`
 
 default: `null`
 
 Jest version — accepts a number (`29`) or a semver string (`"29.1.0"` or `"v29.1.0"`),
 storing only the major version.
 ::: warning
-Using this config will override the `no-deprecated-functions`' config set.
+Using this config will override the `no-deprecated-functions` config set.
+:::
 
 ### settings.jsdoc
 
@@ -687,6 +761,23 @@ Configure Next.js plugin rules.
 #### settings.next.rootDir
 
 type: `array | string`
+
+The root directory of the Next.js project.
+
+This is particularly useful when you have a monorepo and your Next.js
+project is in a subfolder.
+
+Example:
+
+```json
+{
+  "settings": {
+    "next": {
+      "rootDir": "apps/dashboard/"
+    }
+  }
+}
+```
 
 ##### settings.next.rootDir[n]
 

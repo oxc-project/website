@@ -1,6 +1,8 @@
 ---
-title: "oxc/approx-constant"
+title: "oxc/approx-constant | Oxlint"
+rule: "oxc/approx-constant"
 category: "Suspicious"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -44,6 +46,10 @@ let log10e = Math.LOG10E;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

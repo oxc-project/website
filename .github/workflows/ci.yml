@@ -7,13 +7,9 @@ on:
     types:
       - opened
       - synchronize
-    paths-ignore:
-      - README.md
   push:
     branches:
       - main
-    paths-ignore:
-      - README.md
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
@@ -25,33 +21,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: taiki-e/checkout-action@7d1e50e93dc4fb3bba58f85018fadf77898aee8b # v1.4.2
-      - uses: voidzero-dev/setup-vp@4f5aa3e38c781f1b01e78fb9255527cee8a6efa6 # v1.8.0
+      - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
         with:
           cache: ${{ github.ref_name == 'main' }}
       - run: vp run lint --format github
       - run: vp run fmt
       - run: vp run knip
       - run: git diff --exit-code # Must commit everything
-      - uses: crate-ci/typos@cf5f1c29a8ac336af8568821ec41919923b05a83 # v1.45.1
+      - uses: crate-ci/typos@37bb98842b0d8c4ffebdb75301a13db0267cef89 # v1.47.2
         with:
           files: .
 
-  build-and-deploy:
-    name: Build and Deploy
+  deploy-void:
+    name: Deploy to Void
     needs: [lint]
+    if: github.ref_name == 'main'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    environment: void
     steps:
       - uses: taiki-e/checkout-action@7d1e50e93dc4fb3bba58f85018fadf77898aee8b # v1.4.2
-      - uses: voidzero-dev/setup-vp@4f5aa3e38c781f1b01e78fb9255527cee8a6efa6 # v1.8.0
+      - uses: voidzero-dev/setup-vp@2dec1e33f4ab2c6d5bce1b0c4607961bb1a3f7a1 # v1.12.0
         with:
           cache: ${{ github.ref_name == 'main' }}
-      - run: vp run build
+      - run: vp run void deploy
         env:
-          REDIRECT: true
-      - uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
-        if: github.ref_name == 'main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          VOID_TOKEN: ${{ secrets.VOID_TOKEN }}
+          VOID_PROJECT: oxc

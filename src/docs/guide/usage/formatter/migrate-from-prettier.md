@@ -1,6 +1,18 @@
+---
+title: "Migrate from Prettier | Oxfmt"
+---
+
 # Migrate from Prettier
 
 This guide covers migrating from Prettier to Oxfmt.
+
+## When to migrate from Prettier
+
+Migrate to Oxfmt if you want to keep a Prettier-like workflow while getting faster formatting and built-in formatting features. Choose [Vite+](https://npmx.dev/package/vite-plus) instead if you want Oxfmt as part of a larger unified toolchain.
+
+- Move to Oxfmt for dedicated formatting.
+- Move to [Vite+](https://npmx.dev/package/vite-plus) for an integrated workflow.
+- Stay on Prettier if exact plugin behavior is still required.
 
 ## Quick start
 
@@ -28,13 +40,13 @@ $ bun add -D oxfmt@latest && bunx oxfmt --migrate=prettier && bunx oxfmt
 
 ## Migrate with Skills
 
-You can migrate interactively using the [`migrate-oxfmt`](https://skills.sh/oxc-project/oxc/migrate-oxfmt) skill:
+The [`migrate-oxfmt`](https://skills.sh/oxc-project/oxc/migrate-oxfmt) skill provides an interactive, agent-guided migration. Install it into your coding agent:
 
 ```bash
 npx skills add https://github.com/oxc-project/oxc --skill migrate-oxfmt
 ```
 
-Once installed, run `/migrate-oxfmt` and the agent will walk you through the full migration.
+Once installed, run `/migrate-oxfmt` to perform the migration.
 
 ## Before you migrate
 
@@ -205,3 +217,9 @@ Add the reformatting commit SHA to `.git-blame-ignore-revs` to hide it from `git
 ### Replace `.prettierignore` with `"ignorePatterns"`
 
 If you no longer use Prettier, you can optionally move its contents from `.prettierignore` to `"ignorePatterns"` in your Oxfmt config. Note that `.prettierignore` applies globally, while `ignorePatterns` is scoped to the config file it belongs to. In a [nested config](./config#create-a-config-file) setup, this may change which files are ignored. See [Ignore files](/docs/guide/usage/formatter/ignore-files) for more information.
+
+### Update `// prettier-ignore` comments
+
+Oxfmt supports `// prettier-ignore` comments, but also supports `// oxfmt-ignore` comments.
+
+However, `// oxfmt-ignore` will only work for JS and TS files. See [Inline ignore comments](/docs/guide/usage/formatter/ignore-comments) for more information.

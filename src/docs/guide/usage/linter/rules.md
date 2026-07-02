@@ -1,4 +1,5 @@
 ---
+title: "Rules | Oxlint"
 editLink: false
 ---
 

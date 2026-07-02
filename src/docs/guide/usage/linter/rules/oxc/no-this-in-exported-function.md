@@ -1,6 +1,8 @@
 ---
-title: "oxc/no-this-in-exported-function"
+title: "oxc/no-this-in-exported-function | Oxlint"
+rule: "oxc/no-this-in-exported-function"
 category: "Suspicious"
+version: "1.33.0"
 default: false
 type_aware: false
 fix: "none"
@@ -60,6 +62,10 @@ export const bar = () => {
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v1.33.0.
 
 ## References
 

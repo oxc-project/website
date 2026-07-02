@@ -15,6 +15,16 @@
   --color-brand: #0d6a73;
 }
 
+.button:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.vp-code-group:has(.tabs input:focus-visible) {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
 /*  Override unusual GitHub avatars */
 .VPTeamMembersItem {
   --member-item-avatar-size-small: 64px;

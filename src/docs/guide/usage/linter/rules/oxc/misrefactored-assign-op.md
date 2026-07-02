@@ -1,6 +1,8 @@
 ---
-title: "oxc/misrefactored-assign-op"
+title: "oxc/misrefactored-assign-op | Oxlint"
+rule: "oxc/misrefactored-assign-op"
 category: "Suspicious"
+version: "0.1.1"
 default: false
 type_aware: false
 fix: "fixable_suggestion"
@@ -44,6 +46,10 @@ a -= b;
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.1.1.
 
 ## References
 

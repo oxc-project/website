@@ -1,6 +1,8 @@
 ---
-title: "oxc/no-barrel-file"
+title: "oxc/no-barrel-file | Oxlint"
+rule: "oxc/no-barrel-file"
 category: "Restriction"
+version: "0.3.0"
 default: false
 type_aware: false
 fix: "none"
@@ -18,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Disallow the use of barrel files where the file contains `export *` statements,
-and the total number of modules exceed a threshold.
+and the total number of modules exceeds a threshold.
 
 The default threshold is 100.
 
@@ -66,6 +68,10 @@ before the rule is triggered.
 ## How to use
 
 <RuleHowToUse />
+
+## Version
+
+This rule was added in v0.3.0.
 
 ## References
 

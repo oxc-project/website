@@ -1,5 +1,5 @@
 ---
-title: Automatic fixes
+title: "Automatic fixes | Oxlint"
 description: Apply safe, suggested, and dangerous fixes with Oxlint.
 ---
 
