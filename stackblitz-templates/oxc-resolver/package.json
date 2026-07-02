@@ -1,0 +1,17 @@
+{
+  "name": "oxc-resolver-template",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "oxc-resolver": "latest"
+  },
+  "packageManager": "pnpm@10.33.2",
+  "stackblitz": {
+    "startCommand": "pnpm i && pnpm test",
+    "installDependencies": false
+  }
+}

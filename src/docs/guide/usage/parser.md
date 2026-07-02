@@ -22,7 +22,7 @@ A high-performance JavaScript / TypeScript parser written in Rust, powering othe
 ### Node.js
 
 - Use the node binding [oxc-parser][url-oxc-parser-npm].
-- Try on [stackblitz](https://stackblitz.com/edit/oxc-parser).
+- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/oxc/tree/main/stackblitz-templates/oxc-parser).
 
 ### Rust
 
