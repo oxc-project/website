@@ -26,7 +26,7 @@ If you are using [Rolldown][url-rolldown], `oxc-minify` will be used for minific
 ### Node.js
 
 - Use the node binding [oxc-minify][url-oxc-minify-npm].
-- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/oxc/tree/main/stackblitz-templates/oxc-minify).
+- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/website/tree/main/stackblitz-templates/oxc-minify).
 
 ### Rust
 

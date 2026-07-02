@@ -55,7 +55,7 @@ The `transform` function is async. A synchronous `transformSync` variant is also
 ### Node.js
 
 - Use the node binding [oxc-transform][url-oxc-transform-npm].
-- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/oxc/tree/main/stackblitz-templates/oxc-transform).
+- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/website/tree/main/stackblitz-templates/oxc-transform).
 
 ### Rust
 

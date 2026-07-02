@@ -23,7 +23,7 @@ A high-performance module resolver that primarily supports the Node.js resolutio
 ### Node.js
 
 - Use the node binding [oxc-resolver][url-oxc-resolver-npm].
-- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/oxc/tree/main/stackblitz-templates/oxc-resolver).
+- Try on [stackblitz](https://stackblitz.com/fork/github/oxc-project/website/tree/main/stackblitz-templates/oxc-resolver).
 
 ### Rust
 
