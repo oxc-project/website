@@ -24,7 +24,7 @@ Oxfmt is the recommended choice when you want a dedicated formatter with a Prett
 
 Support includes JavaScript, JSX, TypeScript, TSX, JSON, JSONC, JSON5, YAML, TOML, HTML, Angular, Vue, Svelte, CSS, SCSS, Less, Markdown, MDX, GraphQL, Ember, Handlebars, and more.
 
-See the [compatibility matrix](/compatibility) for detailed framework and file type support.
+See [Language support](./formatter/language-support) for the full list and which languages are formatted natively in Rust, and the [compatibility matrix](/compatibility) for detailed framework and file type support.
 
 ## Built for scale
 
@@ -97,4 +97,5 @@ pnpm run fmt:check
 
 - [CLI reference](./formatter/cli)
 - [Config file reference](./formatter/config-file-reference)
+- [Language support](./formatter/language-support)
 - [Unsupported features](./formatter/unsupported-features)

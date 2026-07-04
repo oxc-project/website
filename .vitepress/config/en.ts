@@ -187,6 +187,10 @@ export const enConfig = defineLocaleConfig("root", {
                   link: "/docs/guide/usage/formatter/config-file-reference",
                 },
                 {
+                  text: "Language support",
+                  link: "/docs/guide/usage/formatter/language-support",
+                },
+                {
                   text: "Unsupported features",
                   link: "/docs/guide/usage/formatter/unsupported-features",
                 },
