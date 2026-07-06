@@ -50,6 +50,10 @@ const foo = [1, 2, 3];
 for (const element of foo) {
   /* ... */
 }
+
+for (const [index, element] of foo.entries()) {
+  /* ... */
+}
 ```
 
 ## How to use

@@ -82,6 +82,8 @@ A forbidden prop, either as a plain prop name string or with options.
 
 type: `string[]`
 
+default: `[]`
+
 Component names for which this prop is **allowed** (all others are
 forbidden).
 
@@ -89,11 +91,15 @@ forbidden).
 
 type: `string[]`
 
+default: `[]`
+
 Glob patterns for component names where the prop is **allowed**.
 
 ##### forbid[n].disallowedFor
 
 type: `string[]`
+
+default: `[]`
 
 Component names for which this prop is **disallowed** (all others are
 allowed).
@@ -101,6 +107,8 @@ allowed).
 ##### forbid[n].disallowedForPatterns
 
 type: `string[]`
+
+default: `[]`
 
 Glob patterns for component names where the prop is **disallowed**.
 

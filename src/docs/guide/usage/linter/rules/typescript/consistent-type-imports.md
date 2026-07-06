@@ -20,7 +20,14 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce consistent usage of type imports.
+Enforce consistent usage of type imports by adding or removing the
+`type` keyword from imports.
+
+The `fixStyle` option controls where newly added `type` keywords are
+placed when this rule auto-fixes imports. It does not enforce the
+placement of `type` keywords that are already present in the code. To
+enforce consistent placement, use
+[`import/consistent-type-specifier-style`](https://oxc.rs/docs/guide/usage/linter/rules/import/consistent-type-specifier-style.html).
 
 #### Ignored Files
 

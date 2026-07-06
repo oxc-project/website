@@ -114,6 +114,31 @@ default: `["inheritdoc"]`
 
 List of JSDoc tags that exempt functions from `@param` checking.
 
+### ignoreWhenAllParamsMissing
+
+type: `boolean`
+
+default: `false`
+
+Set to `true` to ignore reporting when all params are missing. Defaults to `false`.
+
+### interfaceExemptsParamsCheck
+
+type: `boolean`
+
+default: `false`
+
+Set if you wish TypeScript interfaces to exempt checks for the existence of `@param`'s.
+Will check for a type defining the function itself (on a variable declaration) or if there is a single destructured object with a type. Defaults to `false`.
+
+### useDefaultObjectProperties
+
+type: `boolean`
+
+default: `false`
+
+Set to `true` if you wish to expect documentation of properties on objects supplied as default values. Defaults to `false`.
+
 ## How to use
 
 <RuleHowToUse />

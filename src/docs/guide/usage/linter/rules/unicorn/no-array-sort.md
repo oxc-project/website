@@ -45,6 +45,21 @@ const sorted = [...array].toSorted();
 
 This rule accepts a configuration object with the following properties:
 
+### allowAfterSpread
+
+type: `boolean`
+
+default: `false`
+
+When set to `true`, allows sorting a fresh array created by a spread, e.g. `[...iterable].sort()`.
+This avoids the double allocation of `toSorted()` when sorting an iterable such as a `Set`.
+
+Example of **correct** code for this rule with `allowAfterSpread` set to `true`:
+
+```js
+const sorted = [...mySet].sort();
+```
+
 ### allowExpressionStatement
 
 type: `boolean`

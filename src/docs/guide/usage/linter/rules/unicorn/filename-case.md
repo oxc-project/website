@@ -60,13 +60,27 @@ Examples of **correct** filenames for each case:
 - `SomeFileName.Test.js`
 - `SomeFileName.TestUtils.js`
 
+#### `lowercase`
+
+Only rejects uppercase letters; separators are allowed.
+
+- `somefilename.js`
+- `some-file-name.js`
+- `some_file_name.js`
+
+#### `screamingSnakeCase`
+
+- `SOME_FILE_NAME.js`
+- `SOME_FILE_NAME.TEST.js`
+- `SOME_FILE_NAME.TEST_UTILS.js`
+
 ## Configuration
 
 This rule accepts a configuration object with the following properties:
 
 ### case
 
-type: `"kebabCase" | "camelCase" | "snakeCase" | "pascalCase"`
+type: `"kebabCase" | "camelCase" | "snakeCase" | "pascalCase" | "lowercase" | "screamingSnakeCase"`
 
 default: `null`
 
@@ -125,6 +139,14 @@ default: `false`
 
 Whether kebab case is allowed, e.g. `some-file-name.js`.
 
+#### cases.lowercase
+
+type: `boolean`
+
+default: `false`
+
+Whether lowercase is allowed, e.g. `somefilename.js`.
+
 #### cases.pascalCase
 
 type: `boolean`
@@ -132,6 +154,14 @@ type: `boolean`
 default: `false`
 
 Whether pascal case is allowed, e.g. `SomeFileName.js`.
+
+#### cases.screamingSnakeCase
+
+type: `boolean`
+
+default: `false`
+
+Whether screaming snake case is allowed, e.g. `SOME_FILE_NAME.js`.
 
 #### cases.snakeCase
 

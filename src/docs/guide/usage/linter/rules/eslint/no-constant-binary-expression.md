@@ -26,6 +26,8 @@ Disallow expressions where the operation doesn't affect the value.
 
 Comparisons which will always evaluate to true or false and logical expressions (`||`, `&&`, `??`) which either always
 short-circuit or never short-circuit are both likely indications of programmer error.
+By default, this rule also reports relational comparisons
+(`<`, `<=`, `>`, `>=`) where both sides are literal values.
 
 These errors are especially common in complex expressions where operator precedence is easy to misjudge.
 
@@ -57,6 +59,16 @@ const x = a + (b ?? c);
 
 const isEmpty = x.length === 0;
 ```
+
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### checkRelationalComparisons
+
+type: `boolean`
+
+default: `true`
 
 ## How to use
 

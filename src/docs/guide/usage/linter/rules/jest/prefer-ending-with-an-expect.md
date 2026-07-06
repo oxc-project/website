@@ -124,9 +124,8 @@ An array of function names that should also be treated as test blocks.
 
 type: `string[]`
 
-default: `["expect"]`
-
 A list of function names that should be treated as assertion functions.
+Default: `["expect"]`
 
 ## How to use
 

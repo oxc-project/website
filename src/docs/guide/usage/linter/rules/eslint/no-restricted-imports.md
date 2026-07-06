@@ -21,7 +21,8 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 This rule allows you to specify imports that you don’t want to use in your application.
-It applies to static imports only, not dynamic ones.
+It applies to static imports and to dynamic `import()` with a string-literal source;
+computed sources like `import(bar)` are ignored.
 
 ### Why is this bad?
 

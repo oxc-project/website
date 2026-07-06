@@ -1331,6 +1331,16 @@
   },
   {
     "scope": "eslint",
+    "value": "no-unreachable-loop",
+    "category": "nursery",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unreachable-loop.html"
+  },
+  {
+    "scope": "eslint",
     "value": "no-unsafe-finally",
     "category": "correctness",
     "version": "0.0.5",
@@ -4555,7 +4565,7 @@
     "category": "restriction",
     "version": "0.2.0",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unknown-property.html"
   },
@@ -5961,6 +5971,16 @@
   },
   {
     "scope": "unicorn",
+    "value": "explicit-timer-delay",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-timer-delay.html"
+  },
+  {
+    "scope": "unicorn",
     "value": "filename-case",
     "category": "style",
     "version": "0.0.14",
@@ -6118,6 +6138,16 @@
     "fix": "fixable_suggestion",
     "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-in-promise-methods.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-confusing-array-with",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-confusing-array-with.html"
   },
   {
     "scope": "unicorn",
