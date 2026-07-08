@@ -42,3 +42,4 @@ minimumReleaseAgeExclude:
   - vite
   - vite-plus
   - vitest
+  - void@0.10.8

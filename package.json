@@ -34,7 +34,7 @@
     "vitepress": "2.0.0-alpha.17",
     "vitepress-plugin-group-icons": "^1.7.1",
     "vitepress-plugin-llms": "^1.12.0",
-    "void": "^0.10.0",
+    "void": "^0.10.8",
     "vue": "^3.5.30"
   },
   "packageManager": "pnpm@11.9.0"
