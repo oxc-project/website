@@ -1,0 +1,28 @@
+name: Deploy to Void
+
+permissions:
+  id-token: write # Required for the OIDC exchange performed by `void deploy`.
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+
+# Latest push wins: a newer commit cancels an in-flight deploy.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy to Void
+    runs-on: ubuntu-latest
+    steps:
+      - uses: taiki-e/checkout-action@7d1e50e93dc4fb3bba58f85018fadf77898aee8b # v1.4.2
+      - uses: voidzero-dev/setup-vp@35171c92dd08b67d5a9d3f2a4327800e58396f2a # v1.13.0
+        with:
+          cache: true
+      - run: vp run void deploy
+        env:
+          VOID_PROJECT: oxc
