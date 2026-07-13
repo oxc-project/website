@@ -12,8 +12,8 @@ outline: deep
 - [Cloudflare Agents](https://github.com/cloudflare/agents) (Both) - Cloudflare Agents SDK
 - [BBC Simorgh](https://github.com/bbc/simorgh) (Oxlint) - BBC online rendering platform
 - [Turborepo](https://github.com/vercel/turborepo) (Both) - High-performance build system for JavaScript and TypeScript codebases
-- [Sentry JavaScript](https://github.com/getsentry/sentry-javascript) (Oxfmt) - Official Sentry SDKs for JavaScript
-- [Vue.js](https://github.com/vuejs/core) (Oxfmt) - The progressive JavaScript framework
+- [Sentry JavaScript](https://github.com/getsentry/sentry-javascript) (Both) - Official Sentry SDKs for JavaScript
+- [Vue.js](https://github.com/vuejs/core) (Both) - The progressive JavaScript framework
 - [Hugging Face JS](https://github.com/huggingface/huggingface.js) (Oxfmt) - Hugging Face JS libraries
 - [Bun](https://github.com/oven-sh/bun) (Oxlint) - JavaScript runtime and toolkit
 - [Mastodon](https://github.com/mastodon/mastodon) (Oxfmt) - Decentralized social networking server
