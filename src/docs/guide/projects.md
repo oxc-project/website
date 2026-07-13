@@ -32,7 +32,7 @@ outline: deep
 - [nuxt-auth](https://github.com/sidebase/nuxt-auth) (Oxlint) - Authentication built for Nuxt 3
 - [OpenClaw](https://github.com/openclaw/openclaw) (Both) - Open source personal AI assistant
 - [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Both) - npm package explorer
-- [Bluesky](github.com/bluesky-social/social-app) (Oxlint) - Social media network
+- [Bluesky](https://github.com/bluesky-social/social-app) (Oxlint) - Social media network
 
 ## Resolver
 
@@ -49,7 +49,7 @@ outline: deep
 - [nuxt](https://nuxt.com) - Uses `oxc-parser` to [parse code in plugins](https://github.com/nuxt/nuxt/pull/30066)
 - [Elide](https://elide.dev) - Uses `oxc` to strip TypeScript types before execution
 - [Storybook](https://github.com/storybookjs/storybook) - for parsing as part of change detection
- 
+
 ## Transformer
 
 - [unplugin-isolated-decl](https://npmx.dev/package/unplugin-isolated-decl) - A blazing-fast tool for generating isolated declarations
