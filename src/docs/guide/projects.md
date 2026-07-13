@@ -31,7 +31,7 @@ outline: deep
 - [Hey API](https://heyapi.dev/) (Oxlint) - OpenAPI to TypeScript codegen ecosystem
 - [nuxt-auth](https://github.com/sidebase/nuxt-auth) (Oxlint) - Authentication built for Nuxt 3
 - [OpenClaw](https://github.com/openclaw/openclaw) (Both) - Open source personal AI assistant
-- [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Oxfmt) - npm package explorer
+- [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Both) - npm package explorer
 - [Bluesky](github.com/bluesky-social/social-app) (Oxlint) - Social media network
 
 ## Resolver
