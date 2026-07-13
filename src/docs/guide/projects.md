@@ -7,7 +7,6 @@ outline: deep
 
 ## Oxlint / Oxfmt / Both
 
-- [Microsoft VS Code](https://github.com/microsoft/vscode) (Oxlint) - Microsoft's VS Code editor
 - [Google Neuroglancer](https://github.com/google/neuroglancer) (Oxlint) - WebGL volumetric data visualization tool
 - [Shopify](https://www.shopify.com/news/performance%F0%9F%91%86-complexity%F0%9F%91%87-killer-updates-from-shopify-engineering) (Oxlint) - Reduced hour of workload to seconds
 - [Cloudflare Agents](https://github.com/cloudflare/agents) (Both) - Cloudflare Agents SDK
@@ -33,6 +32,7 @@ outline: deep
 - [nuxt-auth](https://github.com/sidebase/nuxt-auth) (Oxlint) - Authentication built for Nuxt 3
 - [OpenClaw](https://github.com/openclaw/openclaw) (Both) - Open source personal AI assistant
 - [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Oxfmt) - npm package explorer
+- [Bluesky](github.com/bluesky-social/social-app) (Oxlint) - Social media network
 
 ## Resolver
 
@@ -41,13 +41,15 @@ outline: deep
 - [turborepo](https://github.com/vercel/turborepo/pull/9134) - for `turbo-trace`
 - [dts-resolver](https://npmx.dev/package/dts-resolver) - Resolves TypeScript declaration files for dependencies
 - [codemod](https://github.com/codemod/codemod) - For module resolution in jssg codemods
+- [Storybook](https://github.com/storybookjs/storybook) - for module resolution as part of change detection
 
 ## Parser
 
 - [todoctor](https://github.com/azat-io/todoctor) - CLI tool to track and visualize TODO comments in Git repositories and make report
 - [nuxt](https://nuxt.com) - Uses `oxc-parser` to [parse code in plugins](https://github.com/nuxt/nuxt/pull/30066)
 - [Elide](https://elide.dev) - Uses `oxc` to strip TypeScript types before execution
-
+- [Storybook](https://github.com/storybookjs/storybook) - for parsing as part of change detection
+ 
 ## Transformer
 
 - [unplugin-isolated-decl](https://npmx.dev/package/unplugin-isolated-decl) - A blazing-fast tool for generating isolated declarations
