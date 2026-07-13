@@ -23,7 +23,8 @@ This rule warns when the `replaceAll` method is called with a regular expression
 
 ### Why is this bad?
 
-The `replaceAll` method replaces all occurrences of a string with another string. If the global flag (g) is not used in the regular expression, only the first occurrence of the string will be replaced.
+When called with a regular expression, the `replaceAll` method requires the global flag (g).
+Otherwise, it throws a `TypeError` at runtime instead of performing a replacement.
 
 ### Examples
 

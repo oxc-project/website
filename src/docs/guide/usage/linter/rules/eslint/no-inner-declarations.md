@@ -81,6 +81,20 @@ Allow function declarations in nested blocks in strict mode (ES6+ behavior).
 
 Disallow function declarations in nested blocks regardless of strict mode.
 
+#### namespaces
+
+type: `"allow" | "disallow"`
+
+Controls whether declarations directly inside TypeScript namespace or module bodies are allowed.
+
+##### `"allow"`
+
+Allow declarations directly inside TypeScript namespace or module bodies.
+
+##### `"disallow"`
+
+Disallow declarations directly inside TypeScript namespace or module bodies.
+
 ## How to use
 
 <RuleHowToUse />

@@ -2,7 +2,7 @@
 title: "unicorn/no-confusing-array-with | Oxlint"
 rule: "unicorn/no-confusing-array-with"
 category: "Suspicious"
-version: "next"
+version: "1.73.0"
 default: false
 type_aware: false
 fix: "none"
@@ -51,7 +51,7 @@ array.with(index, value);
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.73.0.
 
 ## References
 

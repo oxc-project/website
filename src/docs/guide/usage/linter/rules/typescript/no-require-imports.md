@@ -69,8 +69,6 @@ This rule accepts a configuration object with the following properties:
 
 type: `string[]`
 
-default: `[]`
-
 These strings will be compiled into regular expressions with the u flag and be used to test against the imported path.
 A common use case is to allow importing `package.json`. This is because `package.json` commonly lives outside of the TS root directory,
 so statically importing it would lead to root directory conflicts, especially with `resolveJsonModule` enabled.

@@ -70,7 +70,8 @@ Specify the global whitespace sensitivity for HTML, Vue, Angular, and Handlebars
 type: `string[]`
 
 Ignore files matching these glob patterns.
-Patterns are based on the location of the Oxfmt configuration file.
+Patterns use gitignore-style matching, rooted at the directory containing the configuration file.
+Files outside that directory cannot be matched; patterns containing `..` are rejected as a configuration error.
 
 - Default: `[]`
 

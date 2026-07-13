@@ -5,7 +5,7 @@ category: "Style"
 version: "0.2.11"
 default: false
 type_aware: false
-fix: "none"
+fix: "conditional_fix"
 upstream: "https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md"
 ---
 

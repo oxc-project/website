@@ -69,7 +69,7 @@ This option is an object with the following properties:
 
 type: `string[]`
 
-default: `[]`
+Prop names to ignore, as regular expression patterns.
 
 ## How to use
 
