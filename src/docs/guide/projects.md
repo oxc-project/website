@@ -19,7 +19,7 @@ outline: deep
 - [Mastodon](https://github.com/mastodon/mastodon) (Oxfmt) - Decentralized social networking server
 - [Preact](https://github.com/preactjs/preact) (Oxlint) - Fast 3kB React alternative with the same modern API
 - [PostHog](https://github.com/PostHog/posthog) (Oxlint) - Open-source product analytics platform
-- [Lichess](https://github.com/lichess-org/lila) (Oxfmt) - Lichess chess server/frontend
+- [Lichess](https://github.com/lichess-org/lila) (Both) - Lichess chess server/frontend
 - [Rolldown](https://github.com/rolldown/rolldown) (Both) - Rust bundler in the VoidZero/Vite ecosystem
 - [Renovate](https://github.com/renovatebot/renovate) (Oxlint) - Dependency update automation bot
 - [Vue Pinia](https://github.com/vuejs/pinia) (Oxfmt) - Vue's official state management library
