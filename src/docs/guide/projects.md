@@ -33,7 +33,8 @@ outline: deep
 - [OpenClaw](https://github.com/openclaw/openclaw) (Both) - Open source personal AI assistant
 - [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Both) - npm package explorer
 - [Bluesky](https://github.com/bluesky-social/social-app) (Oxlint) - Social media network
-- [Electron](https://github.com/electron/electron) (Both) - framework for cross-platform apps
+- [Electron](https://github.com/electron/electron) (Both) - Framework for cross-platform apps
+- [SWR](https://github.com/vercel/swr) (Both) - Library for data fetching in React
 
 ## Resolver
 
