@@ -17,6 +17,10 @@ const oxlintPlugins = {
   title: "Built-in Plugins",
   url: "https://oxc.rs/docs/guide/usage/linter/plugins.html",
 };
+const reactCompilerRule = {
+  title: "react/react-compiler",
+  url: "https://oxc.rs/docs/guide/usage/linter/rules/react/react-compiler.html",
+};
 const sfcIssue = {
   title: "SFC Template Support",
   url: "https://github.com/oxc-project/oxc/issues/15761",
@@ -33,8 +37,8 @@ const noTemplateLintNote = {
 };
 const compilerRulesNote = {
   noteId: NOTE_ID_COMPILER_RULES,
-  notes: "React Compiler-related rules available via JS plugins",
-  sources: [oxlintPlugins],
+  notes: "React Compiler rules supported natively (experimental, off by default)",
+  sources: [reactCompilerRule],
 };
 const solidRulesNote = {
   noteId: NOTE_ID_SOLID_RULES,

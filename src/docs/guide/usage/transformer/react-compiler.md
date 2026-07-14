@@ -40,3 +40,5 @@ The React Compiler [requires the original source](https://react.dev/learn/react-
 This is why Oxc runs the React Compiler before its own JSX transform.
 
 Code that breaks the [Rules of React](https://react.dev/reference/rules) is also skipped rather than optimized — for example interior mutability, or libraries built on observable mutation such as MobX's `observer()`.
+
+To find that code, Oxlint has an experimental [`react/react-compiler`](../linter/rules/react/react-compiler) rule that runs the same analysis in lint-only mode and reports the violations.
