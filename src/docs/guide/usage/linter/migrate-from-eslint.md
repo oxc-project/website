@@ -18,7 +18,7 @@ Migrate to Oxlint if you want a dedicated linter with better speed, simpler adop
 
 Oxlint and ESLint share similar configuration concepts, but they differ in supported rules and config formats.
 
-Oxlint already supports more than 700 rules from ESLint core and various popular plugins. We intend to support nearly all existing ESLint core rules, and this work is ongoing. Check the [compatibility matrix](/compatibility) to verify support for your frameworks and file types.
+Oxlint already supports more than 800 rules from ESLint core and various popular plugins. We intend to support nearly all existing ESLint core rules, and this work is ongoing. Check the [compatibility matrix](/compatibility) to verify support for your frameworks and file types.
 
 When migrating, expect the following:
 
