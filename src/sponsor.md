@@ -6,7 +6,9 @@ editLink: false
 
 ## 🤝 How to Sponsor
 
-You may sponsor through [GitHub Sponsors](https://github.com/sponsors/Boshen) or [OpenCollective](https://opencollective.com/oxc).
+You may sponsor through [OpenCollective](https://opencollective.com/oxc). Sponsorships received there are paid out to core team members who are not part of [VoidZero](https://voidzero.dev).
+
+Our [GitHub Sponsors](https://github.com/sponsors/oxc-project) page hit a bug during setup and is still pending, so it is not available yet.
 
 ## 💚 Why sponsor?
 
