@@ -17,7 +17,7 @@ vp run dev
 
 https://github.com/oxc-project/playground
 
-## ❤ Who's [Sponsoring Oxc](https://oxc.rs/sponsor)?
+# [Sponsored By](https://oxc.rs/sponsor)
 
 <p align="center">
   <a href="https://oxc.rs/sponsor">
