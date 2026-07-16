@@ -17,7 +17,7 @@ To generate a starter config in the current directory (JSON):
 oxlint --init
 ```
 
-Oxlint automatically looks for a `.oxlintrc.json` or `oxlint.config.ts` in the current working directory. You can also pass a config explicitly (note that this will disable nested config lookup):
+Oxlint automatically looks for a `.oxlintrc.json`, `.oxlintrc.jsonc`, `oxlint.config.ts`, or `oxlint.config.mts` in the current working directory. You can also pass a config explicitly (note that this will disable nested config lookup):
 
 ```sh
 oxlint -c ./oxlintrc.json
@@ -29,7 +29,7 @@ Notes:
 
 - `.oxlintrc.json` supports comments (like jsonc).
 - The configuration format aims to be compatible with ESLint v8's format (`eslintrc.json`).
-- You can use either `.oxlintrc.json` or `oxlint.config.ts` in a directory, but not both.
+- You can use only one config file per directory: JSON and TypeScript configs cannot coexist, nor can `oxlint.config.ts` and `oxlint.config.mts`.
 
 A minimal configuration looks like this:
 
@@ -47,7 +47,7 @@ A minimal configuration looks like this:
 
 ### TypeScript config file (`oxlint.config.ts`)
 
-Oxlint also supports a TypeScript configuration file named `oxlint.config.ts`.
+Oxlint also supports a TypeScript configuration file named `oxlint.config.ts` or `oxlint.config.mts`.
 
 ```ts [oxlint.config.ts]
 import { defineConfig } from "oxlint";
@@ -64,7 +64,7 @@ export default defineConfig({
 
 Notes:
 
-- The file must be named `oxlint.config.ts` (including when passed via `--config`).
+- For auto-discovery, the file must be named `oxlint.config.ts` or `oxlint.config.mts`. When passed via `--config`, any path with a JS/TS extension (`.js`, `.mjs`, `.cjs`, `.ts`, `.mts`, `.cts`) is accepted.
 - The default export must be an object and should be wrapped with `defineConfig` for typing.
 - TypeScript configs require the Node-based `oxlint` package (JS runtime). If you're using a standalone binary, use `.oxlintrc.json` instead.
 - TypeScript configs require a Node runtime that can execute TypeScript (Node v22.18+ or v24+).

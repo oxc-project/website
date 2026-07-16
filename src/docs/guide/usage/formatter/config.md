@@ -22,6 +22,9 @@ Oxfmt automatically looks for the following files starting from the directory of
 - `.oxfmtrc.json`
 - `.oxfmtrc.jsonc`
 - `oxfmt.config.ts`
+- `oxfmt.config.mts`
+
+You can use only one config file per directory: JSON and TypeScript configs cannot coexist, nor can `oxfmt.config.ts` and `oxfmt.config.mts`.
 
 The nearest config file to each formatted file wins. This means you can place different config files at different levels of your project tree.
 For example, a root config for the whole repo and a more specific one inside a subdirectory:

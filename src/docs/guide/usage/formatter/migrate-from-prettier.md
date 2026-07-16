@@ -92,7 +92,7 @@ $ deno add -D npm:oxfmt@latest
 
 ## Step 3: Migrate configuration
 
-Oxfmt uses `.oxfmtrc.json`, `.oxfmtrc.jsonc`, or `oxfmt.config.ts`. Basic example:
+Oxfmt uses `.oxfmtrc.json`, `.oxfmtrc.jsonc`, `oxfmt.config.ts`, or `oxfmt.config.mts`. Basic example:
 
 ```jsonc [.oxfmtrc.jsonc]
 {

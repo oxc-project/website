@@ -146,7 +146,7 @@ oxlint --init
 
 Then customize `.oxlintrc.json` as needed. See [Configuration](/docs/guide/usage/linter/config).
 
-Alternatively, Oxlint supports a TypeScript config file named `oxlint.config.ts`. See [Configuration](/docs/guide/usage/linter/config#typescript-config) for details.
+Alternatively, Oxlint supports a TypeScript config file named `oxlint.config.ts` or `oxlint.config.mts`. See [Configuration](/docs/guide/usage/linter/config#typescript-config) for details.
 
 Then run Oxlint:
 

@@ -5,7 +5,7 @@ description: Use multiple configuration files to apply different Oxlint settings
 
 # Nested configuration files
 
-Oxlint can use multiple configuration files in the same repository. It automatically detects configuration files named `.oxlintrc.json` or `oxlint.config.ts` and applies them based on where files live in the directory tree.
+Oxlint can use multiple configuration files in the same repository. It automatically detects configuration files named `.oxlintrc.json`, `.oxlintrc.jsonc`, `oxlint.config.ts`, or `oxlint.config.mts` and applies them based on where files live in the directory tree.
 
 This is useful in monorepos where packages need their own settings, while still keeping a shared baseline.
 
@@ -13,7 +13,7 @@ If you only need to exclude files or folders, use [Ignores](./ignore-files) inst
 
 ## How it works
 
-For each file being linted, Oxlint uses the nearest config file (`.oxlintrc.json` or `oxlint.config.ts`) relative to that file.
+For each file being linted, Oxlint uses the nearest config file (e.g. `.oxlintrc.json` or `oxlint.config.ts`) relative to that file.
 
 Given the following structure:
 
@@ -109,7 +109,7 @@ A config can reuse settings from other configs using `extends`.
 
 In `.oxlintrc.json`, `extends` is an array of file paths, resolved relative to the config file that declares them. Extended files can have any name. They do not need to be named `.oxlintrc.json`, as long as they are valid JSON configuration files. Package imports are not supported in the `.oxlintrc.json` format.
 
-In `oxlint.config.ts`, import the config objects you want to extend and pass them to `extends`. The file with the `extends` property must be named `oxlint.config.ts`. Use `oxlint.config.ts` when extending config objects imported from a shared package.
+In `oxlint.config.ts`, import the config objects you want to extend and pass them to `extends` (file paths are not supported). The imported files can have any name; only the entry config that Oxlint loads must be auto-discoverable (`oxlint.config.ts` or `oxlint.config.mts`) or passed via `--config`. Use a TypeScript config when extending config objects imported from a shared package.
 
 Example:
 
