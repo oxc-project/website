@@ -165,6 +165,7 @@ Oxlint is used in production by popular projects such as:
 ## Migration
 
 - [Migrate from ESLint](/docs/guide/usage/linter/migrate-from-eslint)
+
 <!-- - [Migrate from Biome](/docs/guide/usage/linter/migrate-from-biome) -->
 
 ## References

@@ -35,13 +35,13 @@ Examples of **incorrect** code for this rule:
 ```jsx
 import Head from "next/head";
 
-export default Test = () => {
+export default (Test = () => {
   return (
     <Head>
       <link href="https://fonts.googleapis.com/css2?family=Krona+One" rel="stylesheet" />
     </Head>
   );
-};
+});
 ```
 
 Examples of **correct** code for this rule:
@@ -49,7 +49,7 @@ Examples of **correct** code for this rule:
 ```jsx
 import Head from "next/head";
 
-export default Test = () => {
+export default (Test = () => {
   return (
     <Head>
       <link
@@ -58,7 +58,7 @@ export default Test = () => {
       />
     </Head>
   );
-};
+});
 ```
 
 ## How to use

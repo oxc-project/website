@@ -36,9 +36,7 @@ Examples of **incorrect** code for this rule:
 ```vue
 <script setup>
 await doSomething();
-defineExpose({
-  /* ... */
-}); // error
+defineExpose({/* ... */}); // error
 </script>
 ```
 
@@ -46,9 +44,7 @@ Examples of **correct** code for this rule:
 
 ```vue
 <script setup>
-defineExpose({
-  /* ... */
-}); // ok
+defineExpose({/* ... */}); // ok
 await doSomething();
 </script>
 ```
