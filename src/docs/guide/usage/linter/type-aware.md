@@ -206,6 +206,42 @@ export default defineConfig({
 
 :::
 
+## Rule timings
+
+Use `--debug timings` to find the most expensive rules in your configuration:
+
+```bash
+oxlint --type-aware --debug timings
+```
+
+The report orders rules by total time and includes their relative share, call count, and execution source:
+
+```text
+Rule timings:
+Rule                                                         Time (ms)  Relative  Calls  Source
+----------------------------------------------------------  ----------  --------  -----  ----------
+typescript/unbound-method                                      108.620     46.5%  12450  type-aware
+typescript/no-floating-promises                                 65.606     28.1%   7327  type-aware
+eslint/no-unused-vars                                            2.187      0.9%    372  native
+typescript/no-duplicate-type-constituents                        1.505      0.6%    870  type-aware
+typescript/no-meaningless-void-operator                          1.445      0.6%    383  type-aware
+vitest/no-standalone-expect                                      0.978      0.4%    372  native
+vitest/expect-expect                                             0.951      0.4%   4682  native
+typescript/no-implied-eval                                       0.401      0.2%  13809  type-aware
+oxc/no-map-spread                                                0.383      0.2%  12545  native
+react/no-did-update-set-state                                    0.382      0.2%  12545  native
+eslint/no-misleading-character-class                             0.380      0.2%  13524  native
+typescript/no-redundant-type-constituents                        0.371      0.2%    870  type-aware
+unicorn/no-single-promise-in-promise-methods                     0.362      0.2%  12545  native
+eslint/no-useless-backreference                                  0.360      0.2%  13524  native
+typescript/no-useless-default-assignment                         0.258      0.1%   3110  type-aware
+eslint/no-console                                                0.256      0.1%  12484  native
+eslint/no-caller                                                 0.253      0.1%  11603  native
+...
+```
+
+`native` rules run inside Oxlint, while rules run by tsgolint are labelled `type-aware`. Timing collection has no overhead unless it is enabled. When enabled, it adds measurement overhead, so use the report to compare rules within the same run rather than as an end-to-end benchmark.
+
 ## Disable comments
 
 Type-aware rules support inline disable comments:
