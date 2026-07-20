@@ -1,0 +1,19 @@
+src/blog/2026-07-20-tsgolint-v7.md
+  s_36f0324eae25ce::t_87a872f8231b6c 20-25,29-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "e25445184053470d752d960605afb9d39ca9a677",
+  "prompts": {},
+  "sessions": {
+    "s_36f0324eae25ce": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7ecc-5578-74e3-95e7-44ea4ce9d92a",
+        "model": "unknown"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
