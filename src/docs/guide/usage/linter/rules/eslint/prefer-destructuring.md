@@ -72,6 +72,12 @@ type: `boolean`
 
 This option is an object with the following properties:
 
+#### enforceForDeclarationWithTypeAnnotation
+
+type: `boolean`
+
+default: `false`
+
 #### enforceForRenamedProperties
 
 type: `boolean`

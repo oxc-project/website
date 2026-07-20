@@ -27,7 +27,7 @@ This rule allows you to disallow access to certain properties on certain objects
 Certain properties on objects may be disallowed in a codebase. This is useful for
 deprecating an API or restricting usage of a module’s methods. For example, you may want
 to disallow using describe.only when using Mocha or telling people to use Object.assign
-instead of \_.extend.
+instead of _.extend.
 
 If you want to disallow APIs marked with `@deprecated`, consider using the type-aware
 `typescript/no-deprecated` rule instead.

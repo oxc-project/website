@@ -72,7 +72,7 @@ default: `false`
 Whether to check for the non-prefixed lifecycle methods.
 If `true`, this means `componentWillMount`, `componentWillReceiveProps`,
 and `componentWillUpdate` will also be flagged, rather than just the
-UNSAFE\_ versions. It is recommended to set this to `true` to fully
+UNSAFE_ versions. It is recommended to set this to `true` to fully
 avoid unsafe lifecycle methods.
 
 ## How to use

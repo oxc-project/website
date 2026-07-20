@@ -40,15 +40,30 @@ import Foo, { type Bar } from "Foo";
 Examples of correct code for the default option:
 
 ```typescript
-import type { Foo } from "Foo";
-import type Foo, { Bar } from "Foo";
+import type { Foo } from 'Foo';
+import type Foo, { Bar } from 'Foo';
+```
+
+Examples of incorrect code for the `prefer-top-level-if-only-type-imports` option:
+
+```typescript
+import { type Foo } from "Foo";
+import { type Foo, type Bar } from "Foo";
+```
+
+Examples of correct code for the `prefer-top-level-if-only-type-imports` option:
+
+```typescript
+import type { Foo } from 'Foo';
+import { type Foo, someValue } from 'Foo';
+import type Foo, { Bar } from 'Foo';
 ```
 
 Examples of incorrect code for the `prefer-inline` option:
 
 ```typescript
-import type { Foo } from "Foo";
-import type Foo, { Bar } from "Foo";
+import type { Foo } from 'Foo';
+import type Foo, { Bar } from 'Foo';
 ```
 
 Examples of correct code for the `prefer-inline` option:
@@ -69,6 +84,11 @@ Prefer `import type { Foo } from 'foo'` for type imports.
 ### `"prefer-inline"`
 
 Prefer `import { type Foo } from 'foo'` for type imports.
+
+### `"prefer-top-level-if-only-type-imports"`
+
+Prefer `import type { Foo } from 'foo'` when all named imports are types, but allow
+`import { type Foo, bar } from 'foo'` when value imports are present.
 
 ## How to use
 

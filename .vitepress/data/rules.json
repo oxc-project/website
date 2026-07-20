@@ -3660,6 +3660,16 @@
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-sync.html"
   },
   {
+    "scope": "node",
+    "value": "no-top-level-await",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-top-level-await.html"
+  },
+  {
     "scope": "oxc",
     "value": "approx-constant",
     "category": "suspicious",
@@ -4158,6 +4168,16 @@
     "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/forward-ref-uses-ref.html"
+  },
+  {
+    "scope": "react",
+    "value": "function-component-definition",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/function-component-definition.html"
   },
   {
     "scope": "react",
@@ -7528,6 +7548,16 @@
     "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/padding-around-after-all-blocks.html"
+  },
+  {
+    "scope": "vitest",
+    "value": "padding-around-test-blocks",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/padding-around-test-blocks.html"
   },
   {
     "scope": "vitest",

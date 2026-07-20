@@ -35,7 +35,6 @@ as `(!a) in b` instead of `!(a in b)`, which is not the intended logic.
 ### Examples
 
 Examples of **incorrect** code for this rule:
-
 <!-- prettier-ignore-start -->
 ```javascript
 if (!key in object) {}

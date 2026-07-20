@@ -25,7 +25,7 @@ graphemes for a given identifier.
 
 ### Why is this bad?
 
-Very short identifier names like e, x, \_t or very long ones like
+Very short identifier names like e, x, _t or very long ones like
 hashGeneratorResultOutputContainerObject can make code harder to read and potentially less
 maintainable. To prevent this, one may enforce a minimum and/or maximum identifier length.
 

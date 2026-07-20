@@ -20,7 +20,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce a convention of not using namespaced (a.k.a. "wildcard" \*) imports.
+Enforce a convention of not using namespaced (a.k.a. "wildcard" *) imports.
 
 ### Why is this bad?
 
