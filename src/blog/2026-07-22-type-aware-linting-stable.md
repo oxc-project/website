@@ -38,7 +38,7 @@ v7.0.2000
         ^ tsgolint patch version
 ```
 
-In other words, `v7.0.2000` is tsgolint patch `0` for TypeScript `v7.0.200`. If we need to ship another tsgolint fix while staying on that TypeScript version, the next release will be `v7.0.2001`. When we update TypeScript, the TypeScript portion changes and the tsgolint patch resets.
+In other words, `v7.0.2000` is tsgolint patch `0` for TypeScript `v7.0.2`. If we need to ship another tsgolint fix while staying on that TypeScript version, the next release will be `v7.0.2001`. When we update TypeScript, the TypeScript portion changes and the tsgolint patch resets.
 
 ## 16 new rules since alpha
 
