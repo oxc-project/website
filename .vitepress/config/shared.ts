@@ -110,7 +110,7 @@ export const sharedConfig = {
 
     banner: {
       id: latestBlog.link,
-      text: latestBlog.text,
+      text: `Announcing ${latestBlog.text}`,
       url: latestBlog.link,
     },
 
