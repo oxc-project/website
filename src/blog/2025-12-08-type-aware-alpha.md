@@ -8,6 +8,12 @@ authors:
 
 <AppBlogPostHeader />
 
+<Alert type="info">
+
+**This post announces the alpha release of type-aware linting.** Type-aware linting has since reached stable! See the [Type-Aware Linting Stable announcement](/blog/2026-07-22-type-aware-linting-stable) for the latest features and improvements.
+
+</Alert>
+
 <br>
 
 We're excited to announce the alpha release of type-aware linting in Oxlint!
