@@ -1,5 +1,5 @@
 ---
-title: "Announcing tsgolint v7"
+title: "Type-Aware Linting Stable"
 outline: deep
 authors:
   - cameron
