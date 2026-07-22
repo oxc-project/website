@@ -12,6 +12,9 @@ type AsyncMarkdownRenderer = {
 };
 
 const latestBlog = BLOG_SIDEBAR[0];
+const latestBlogBannerText = latestBlog.text.startsWith("Announcing ")
+  ? latestBlog.text
+  : `Announcing ${latestBlog.text}`;
 const bannerScript = `(() => {
   const saved = localStorage.getItem("oxc-banner-dismissed-${latestBlog.link}");
   if (saved === "true") {
@@ -110,7 +113,7 @@ export const sharedConfig = {
 
     banner: {
       id: latestBlog.link,
-      text: `Announcing ${latestBlog.text}`,
+      text: latestBlogBannerText,
       url: latestBlog.link,
     },
 
