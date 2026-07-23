@@ -20,9 +20,9 @@ oxlint --init
 Oxlint automatically looks for a `.oxlintrc.json`, `.oxlintrc.jsonc`, `oxlint.config.ts`, or `oxlint.config.mts` in the current working directory. You can also pass a config explicitly (note that this will disable nested config lookup):
 
 ```sh
-oxlint -c ./oxlintrc.json
+oxlint -c ./.oxlintrc.json
 # or
-oxlint --config ./oxlintrc.json
+oxlint --config ./.oxlintrc.json
 ```
 
 Notes:
