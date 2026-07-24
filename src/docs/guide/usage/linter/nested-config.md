@@ -187,6 +187,8 @@ This means extending a config with a narrower `plugins` list than the defaults i
 
 To inherit exactly the plugins of the extended config, declare an empty array:
 
+::: code-group
+
 ```json [.oxlintrc.json]
 {
   "extends": ["./base.json"],
@@ -194,4 +196,18 @@ To inherit exactly the plugins of the extended config, declare an empty array:
 }
 ```
 
-The empty array is an empty contribution, so the result is exactly the plugins declared by `base.json`. Declaring a non-empty list works the same way: the union of that list and the extended config's list, without the defaults.
+```ts [oxlint.config.ts]
+import baseConfig from "./base.config.ts";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [baseConfig],
+  plugins: [],
+});
+```
+
+:::
+
+The empty array is an empty contribution, so the result is exactly the plugins declared by `base.json`. Declaring a non-empty list works the same way: the union of that list and the extended lists, with the defaults only appearing if some config in the chain omits `plugins`.
+
+This is the same mechanism as [disabling the default plugins](./plugins) with `"plugins": []` in a standalone config: an explicit array replaces the config's default contribution.
