@@ -45,7 +45,6 @@ Download the official Oxc VS Code extension from:
 
 ```json [.vscode/settings.json]
 {
-  "oxc.fmt.configPath": ".oxfmtrc.json",
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true
 }
