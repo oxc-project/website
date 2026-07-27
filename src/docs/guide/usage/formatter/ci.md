@@ -142,3 +142,9 @@ For [lint-staged](https://npmx.dev/package/lint-staged), add to `package.json`:
 ```
 
 To automatically install the git hook when installing dependencies, considering also using [husky](https://typicode.github.io/husky/get-started.html).
+
+## Other integrations
+
+### Coding agents
+
+Run Oxfmt automatically after a coding agent edits files with the [coding agent setup guide](/docs/guide/usage/coding-agents).

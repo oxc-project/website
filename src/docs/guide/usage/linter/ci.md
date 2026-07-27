@@ -129,6 +129,10 @@ Replace `v0.0.0` with the latest version.
 
 ## Other integrations
 
+### Coding agents
+
+Run Oxlint automatically after a coding agent edits files with the [coding agent setup guide](/docs/guide/usage/coding-agents).
+
 ### Unplugin
 
 Unplugin is supported via a [third-party package](https://npmx.dev/package/unplugin-oxlint)

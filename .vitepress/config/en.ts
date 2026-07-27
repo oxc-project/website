@@ -282,6 +282,7 @@ export const enConfig = defineLocaleConfig("root", {
           collapsed: false,
           items: [
             { text: "Troubleshooting", link: "/docs/guide/troubleshooting" },
+            { text: "Coding agents", link: "/docs/guide/usage/coding-agents" },
             { text: "Benchmarks", link: "/docs/guide/benchmarks" },
             { text: "Projects using Oxc", link: "/docs/guide/projects" },
             { text: "Talks & media", link: "/docs/guide/media" },
