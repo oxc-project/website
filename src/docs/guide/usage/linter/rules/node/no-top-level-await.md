@@ -2,7 +2,7 @@
 title: "node/no-top-level-await | Oxlint"
 rule: "node/no-top-level-await"
 category: "Restriction"
-version: "next"
+version: "1.75.0"
 default: false
 type_aware: false
 fix: "none"
@@ -70,7 +70,7 @@ importable modules.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.75.0.
 
 ## References
 

@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.1.1"
 default: true
 type_aware: false
-fix: "none"
+fix: "pending"
 upstream: "https://eslint.org/docs/latest/rules/no-unused-private-class-members"
 ---
 

@@ -2,7 +2,7 @@
 title: "react/function-component-definition | Oxlint"
 rule: "react/function-component-definition"
 category: "Style"
-version: "next"
+version: "1.75.0"
 default: false
 type_aware: false
 fix: "conditional_suggestion"
@@ -67,7 +67,7 @@ type: `"arrow-function" | "function-expression"`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.75.0.
 
 ## References
 
