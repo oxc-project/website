@@ -47,7 +47,7 @@ Oxc includes end-user tools and reusable compiler building blocks:
 - [Transformer](/docs/guide/usage/transformer) provides fastest TS, JSX, and modern JavaScript transforms.
 - [Minifier](/docs/guide/usage/minifier) is the fastest minifier for production output.
 - [Resolver](/docs/guide/usage/resolver) is the fastest module resolver for JS and TS projects.
-- [TypeScript Runner (Experimental)](/docs/guide/usage/oxc-node) runs TypeScript and JSX directly in Node.js.
+- [TypeScript Runner](/docs/guide/usage/oxc-node) runs TypeScript and JSX directly in Node.js.
 
 You can use each tool on its own, or use them together as one toolchain.
 
