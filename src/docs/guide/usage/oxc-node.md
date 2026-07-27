@@ -1,16 +1,16 @@
 ---
-title: TypeScript Runner (Experimental)
+title: TypeScript Runner
 description: Run TypeScript and JSX directly in Node.js with Oxc.
 outline: deep
 ---
 
 # TypeScript Runner
 
-[`oxc-node`](https://github.com/oxc-project/oxc-node) is Oxc's TypeScript runner. It runs TypeScript and JSX without a separate build step while preserving the standard Node.js command-line workflow.
-
-::: warning Experimental
+::: info Experimental
 The TypeScript runner is experimental and under active development. APIs and behavior may change between releases.
 :::
+
+[`oxc-node`](https://github.com/oxc-project/oxc-node) is Oxc's TypeScript runner. It runs TypeScript and JSX without a separate build step while preserving the standard Node.js command-line workflow.
 
 The runner provides:
 
