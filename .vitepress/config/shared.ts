@@ -176,6 +176,7 @@ export const sharedConfig = {
             { text: "Transformer", link: "/docs/guide/usage/transformer" },
             { text: "Minifier", link: "/docs/guide/usage/minifier" },
             { text: "Resolver", link: "/docs/guide/usage/resolver" },
+            { text: "TypeScript Runner", link: "/docs/guide/usage/oxc-node" },
           ],
         },
         {
