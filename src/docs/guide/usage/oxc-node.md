@@ -109,32 +109,6 @@ Because this uses Node.js's register hook, it composes with other Node.js comman
 node --import @oxc-node/core/register --test ./test.ts
 ```
 
-## Programmatic transformation
-
-The core package exposes a synchronous `transform` function:
-
-```ts
-import { transform } from "@oxc-node/core";
-
-const output = transform("example.ts", "const answer: number = 42;");
-
-console.log(output.source());
-console.log(output.sourceMap());
-```
-
-Create an `OxcTransformer` when you want to reuse a working directory or transform asynchronously:
-
-```ts
-import { OxcTransformer } from "@oxc-node/core";
-
-const transformer = new OxcTransformer(process.cwd());
-const output = await transformer.transformAsync("example.ts", "const answer: number = 42;");
-
-console.log(output.source());
-```
-
-The filename determines how the source is parsed. `source()` returns the generated JavaScript, and `sourceMap()` returns a JSON source map or `null`.
-
 ## Supported files
 
 The register hook transforms the following extensions:
