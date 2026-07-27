@@ -49,17 +49,17 @@ This behavior aligns with TypeScript and SWC, which both restrict pragma scannin
 
 ## Runtime
 
-By default, the automatic runtime transform is used. This transform was [introduced in React 17+](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html). This transform injects the required `import` statements automatically.
+By default, the `"automatic"` runtime transform is used. This transform was [introduced in React 17+](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html). In this mode, Oxc injects the required `import` statements automatically, so `import React from 'react';` is unnecessary in `.jsx`/`.tsx` files.
 
 You can also use the classic runtime transform by setting `jsx.runtime` option to `"classic"`.
 
-`// @jsxRuntime classic` / `// @jsxRuntime automatic` are the way to configure this via pragma comments.
+`// @jsxRuntime classic` / `// @jsxRuntime automatic` at the start of a file are pragma comments that can be used to configure this.
 
 ## Common Options for Both Runtimes
 
 ### Development Transform
 
-By default, the development specific transforms are disabled. You can enable them by setting `jsx.development` option to `true`.
+By default, the development-specific transforms are disabled. You can enable them by setting the `jsx.development` option to `true`.
 
 ### XML Namespaced Tag Names
 
