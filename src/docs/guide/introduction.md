@@ -17,7 +17,7 @@ title: Getting Started
 - Transform TypeScript, JSX, and modern JavaScript: [Transformer](/docs/guide/usage/transformer)
 - Minify JavaScript for production builds: [Minifier](/docs/guide/usage/minifier)
 - Resolve modules for JavaScript and TypeScript: [Resolver](/docs/guide/usage/resolver)
-- Run TypeScript and JSX directly in Node.js: [Oxc Node](/docs/guide/usage/oxc-node)
+- Run TypeScript and JSX directly in Node.js: [TypeScript Runner](/docs/guide/usage/oxc-node)
 
 ## Contribute or learn
 

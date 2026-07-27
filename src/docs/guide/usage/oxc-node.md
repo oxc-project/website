@@ -1,14 +1,14 @@
 ---
-title: Oxc Node
+title: TypeScript Runner
 description: Run TypeScript and JSX directly in Node.js with Oxc.
 outline: deep
 ---
 
-# Oxc Node
+# TypeScript Runner
 
-[Oxc Node](https://github.com/oxc-project/oxc-node) is a fast Node.js development tool powered by the Oxc transformer and resolver. It runs TypeScript and JSX without a separate build step while preserving the standard Node.js command-line workflow.
+[`oxc-node`](https://github.com/oxc-project/oxc-node) is Oxc's TypeScript runner. It runs TypeScript and JSX without a separate build step while preserving the standard Node.js command-line workflow.
 
-Oxc Node provides:
+The runner provides:
 
 - The `oxnode` command for running scripts and starting a REPL.
 - A Node.js register hook for use with `node --import`.
@@ -42,7 +42,7 @@ $ bun add -D @oxc-node/cli
 :::
 
 ::: tip
-A project-local installation keeps the Oxc Node version consistent across your team. You can instead install `@oxc-node/cli` globally if you want to invoke `oxnode` outside a project or package script.
+A project-local installation keeps the runner version consistent across your team. You can instead install `@oxc-node/cli` globally if you want to invoke `oxnode` outside a project or package script.
 :::
 
 Run a TypeScript entry point:
@@ -143,16 +143,16 @@ Module format is inferred from the file extension, the nearest `package.json`, a
 
 ## TypeScript configuration
 
-Oxc Node reads `tsconfig.json` from the current working directory. Set `OXC_TSCONFIG_PATH` or `TS_NODE_PROJECT` to use a different file:
+The runner reads `tsconfig.json` from the current working directory. Set `OXC_TSCONFIG_PATH` or `TS_NODE_PROJECT` to use a different file:
 
 ```sh
 OXC_TSCONFIG_PATH=./config/tsconfig.dev.json oxnode ./src/index.ts
 ```
 
-The transformer uses relevant compiler options for module format, JSX, decorators, class fields, and rewriting relative import extensions. TypeScript types are stripped during transformation; Oxc Node does not type-check your program.
+The transformer uses relevant compiler options for module format, JSX, decorators, class fields, and rewriting relative import extensions. TypeScript types are stripped during transformation; the runner does not type-check your program.
 
 ## Links
 
-- [Oxc Node repository](https://github.com/oxc-project/oxc-node)
+- [`oxc-node` repository](https://github.com/oxc-project/oxc-node)
 - [`@oxc-node/cli`](https://npmx.dev/package/@oxc-node/cli)
 - [`@oxc-node/core`](https://npmx.dev/package/@oxc-node/core)
