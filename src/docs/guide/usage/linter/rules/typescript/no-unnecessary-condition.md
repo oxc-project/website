@@ -5,7 +5,7 @@ category: "Nursery"
 version: "1.48.0"
 default: false
 type_aware: true
-fix: "none"
+fix: "pending"
 upstream: "https://typescript-eslint.io/rules/no-unnecessary-condition/"
 ---
 

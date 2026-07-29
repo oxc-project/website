@@ -47,37 +47,6 @@ function onClick() {
 }
 ```
 
-## Configuration
-
-This rule accepts a configuration object with the following properties:
-
-### checkGlobalObject
-
-type: `boolean`
-
-default: `false`
-
-A boolean option that enables detection of restricted globals accessed via global objects. Default is `false`.
-
-### globalObjects
-
-type: `string[]`
-
-default: `["globalThis", "self", "window"]`
-
-An array option that specifies additional global object names to check when `checkGlobalObject` is enabled.
-By default, the rule checks these global objects: `globalThis`, `self`, and `window`.
-
-### globals
-
-type: `Record<string, string>`
-
-default: `{}`
-
-Objects in the format
-`{ "name": "event", "message": "Use local parameter instead." }`, which define what globals
-are restricted from use.
-
 ## How to use
 
 <RuleHowToUse />
