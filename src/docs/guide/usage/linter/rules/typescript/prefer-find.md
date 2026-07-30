@@ -5,7 +5,7 @@ category: "Style"
 version: "1.49.0"
 default: false
 type_aware: true
-fix: "none"
+fix: "pending"
 upstream: "https://typescript-eslint.io/rules/prefer-find/"
 ---
 

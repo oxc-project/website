@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.0.19"
 default: false
 type_aware: false
-fix: "none"
+fix: "pending"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md"
 ---
 

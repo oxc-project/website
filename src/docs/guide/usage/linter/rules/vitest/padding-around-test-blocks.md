@@ -2,7 +2,7 @@
 title: "vitest/padding-around-test-blocks | Oxlint"
 rule: "vitest/padding-around-test-blocks"
 category: "Style"
-version: "next"
+version: "1.75.0"
 default: false
 type_aware: false
 fix: "fixable_fix"
@@ -70,7 +70,7 @@ it("bar", () => {});
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.75.0.
 
 ## References
 

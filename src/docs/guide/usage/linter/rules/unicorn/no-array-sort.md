@@ -5,7 +5,7 @@ category: "Suspicious"
 version: "1.15.0"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort.md"
 ---
 

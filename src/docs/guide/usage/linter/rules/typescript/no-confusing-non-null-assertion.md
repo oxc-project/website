@@ -24,7 +24,10 @@ Disallow non-null assertion in locations that may be confusing.
 
 ### Why is this bad?
 
-Using a non-null assertion (!) next to an assign or equals check (= or == or ===) creates code that is confusing as it looks similar to a not equals check (!= !==).
+Using a non-null assertion (`!`) next to an assignment or equality check (`=` or `==` or
+`===`) creates code that is confusing as it looks similar to an inequality check (`!=` or
+`!==`). Using one next to an `in` or `instanceof` check is also confusing because it may
+look like the operator is negated.
 
 ### Examples
 
@@ -34,6 +37,8 @@ Examples of **incorrect** code for this rule:
 a! == b; // a non-null assertions(`!`) and an equals test(`==`)
 a !== b; // not equals test(`!==`)
 a! === b; // a non-null assertions(`!`) and an triple equals test(`===`)
+a! in b;
+a! instanceof b;
 ```
 
 Examples of **correct** code for this rule:
