@@ -16,7 +16,7 @@
   "devDependencies": {
     "vite": "latest"
   },
-  "packageManager": "pnpm@10.34.5",
+  "packageManager": "pnpm@11.17.0",
   "stackblitz": {
     "startCommand": "pnpm i && pnpm dev",
     "installDependencies": false
