@@ -36,5 +36,5 @@
     "void": "^0.10.8",
     "vue": "^3.5.30"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.17.0"
 }
