@@ -11,7 +11,6 @@ export const compatData: CompatData = {
 
 export type {
   CompatData,
-  CompatEntry,
   Framework,
   FrameworkCategory,
   SupportLevel,
