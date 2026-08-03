@@ -47,7 +47,7 @@ Arguments:
 - **`-A`**, **`--allow`**=_`NAME`_ &mdash;
   Allow the rule or category (suppress the lint)
 - **`-W`**, **`--warn`**=_`NAME`_ &mdash;
-  Deny the rule or category (emit a warning)
+  Warn on the rule or category (emit a warning)
 - **`-D`**, **`--deny`**=_`NAME`_ &mdash;
   Deny the rule or category (emit an error)
 
