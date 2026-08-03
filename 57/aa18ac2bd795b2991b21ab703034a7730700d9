@@ -1,0 +1,19 @@
+AGENTS.md
+  s_c5dbea8ff5e7a3::t_484b12df1c4126 9-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "57aa18ac2bd795b2991b21ab703034a7730700d9",
+  "prompts": {},
+  "sessions": {
+    "s_c5dbea8ff5e7a3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc6a5-65b6-7e32-a174-d3c92d35ab70",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
