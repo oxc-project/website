@@ -40,6 +40,7 @@ Examples of **incorrect** code for this rule:
 ```javascript
 const foo = new String("hello world");
 const bar = Array(1, 2, 3);
+const now = Date();
 ```
 
 Examples of **correct** code for this rule:
@@ -47,6 +48,7 @@ Examples of **correct** code for this rule:
 ```javascript
 const foo = String("hello world");
 const bar = new Array(1, 2, 3);
+const now = String(new Date());
 ```
 
 ## How to use

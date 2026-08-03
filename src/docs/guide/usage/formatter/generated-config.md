@@ -126,7 +126,7 @@ Capitalize the first letter of tag descriptions.
 
 ### jsdoc.commentLineStrategy
 
-type: `string`
+type: `"singleLine" | "multiline" | "keep"`
 
 How to format comment blocks.
 
@@ -162,7 +162,7 @@ Preserve indentation in unparsable `@example` code.
 
 ### jsdoc.lineWrappingStyle
 
-type: `string`
+type: `"greedy" | "balance"`
 
 Strategy for wrapping description lines at print width.
 
@@ -362,7 +362,7 @@ Capitalize the first letter of tag descriptions.
 
 ###### overrides[n].options.jsdoc.commentLineStrategy
 
-type: `string`
+type: `"singleLine" | "multiline" | "keep"`
 
 How to format comment blocks.
 
@@ -398,7 +398,7 @@ Preserve indentation in unparsable `@example` code.
 
 ###### overrides[n].options.jsdoc.lineWrappingStyle
 
-type: `string`
+type: `"greedy" | "balance"`
 
 Strategy for wrapping description lines at print width.
 

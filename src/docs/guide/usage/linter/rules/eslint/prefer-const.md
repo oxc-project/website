@@ -23,6 +23,15 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 Requires `const` declarations for variables that are never
 reassigned after their initial declaration.
 
+#### Ignored Files
+
+This rule ignores `.svelte` and `.vue` files entirely. Oxlint only parses the
+`<script>` blocks of these files, so a binding that the template reassigns looks
+like it is never reassigned, and turning it into a `const` makes the framework
+compiler fail. In Svelte the template writes through `bind:this={el}` and
+`bind:value={x}`; in Vue a `<script setup>` `let` is a `setup-let` binding that
+`v-model="x"` and inline handlers such as `@click="x = 1"` assign to directly.
+
 ### Why is this bad?
 
 If a variable is never reassigned, using the `const` declaration is better.

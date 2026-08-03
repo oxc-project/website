@@ -90,7 +90,20 @@ type: `boolean`
 
 default: `false`
 
-Whether to check type predicate functions.
+Whether to check arguments passed to type predicate and assertion functions.
+
+When enabled, the rule reports a call if the argument already satisfies the predicate or
+if an assertion function receives an argument that is always truthy or always falsy.
+
+For example, `narrow(value)` is unnecessary because `value` already has type `true`:
+
+```ts
+declare const narrow: (value: unknown) => value is true;
+const value = true;
+if (narrow(value)) {
+  // ...
+}
+```
 
 ## How to use
 

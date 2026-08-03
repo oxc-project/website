@@ -54,34 +54,6 @@ function doSomething() {}
 const x = 1;
 ```
 
-### Options
-
-This rule has an options object with the following defaults:
-
-```json
-{
-  "terms": ["todo", "fixme", "xxx"],
-  "location": "start",
-  "decoration": []
-}
-```
-
-#### `terms`
-
-An array of terms to match. The matching is case-insensitive.
-
-#### `location`
-
-Where to check for the terms:
-
-- `"start"` (default): Terms must appear at the start of the comment (after any decoration)
-- `"anywhere"`: Terms can appear anywhere in the comment
-
-#### `decoration`
-
-An array of characters to ignore at the start of comments when `location` is `"start"`.
-Useful for ignoring common comment decorations like `*` in JSDoc-style comments.
-
 ## Configuration
 
 This rule accepts a configuration object with the following properties:
@@ -90,13 +62,35 @@ This rule accepts a configuration object with the following properties:
 
 type: `string[]`
 
+default: `[]`
+
+An array of characters to ignore at the start of comments when `location` is `"start"`.
+
+Useful for ignoring common comment decorations like `*` in JSDoc-style comments.
+
 ### location
 
 type: `"start" | "anywhere"`
 
+default: `"start"`
+
+Where to check for the terms.
+
+#### `"start"`
+
+Terms must appear at the start of the comment, after any decoration.
+
+#### `"anywhere"`
+
+Terms can appear anywhere in the comment.
+
 ### terms
 
 type: `string[]`
+
+default: `["todo", "fixme", "xxx"]`
+
+An array of terms to match. The matching is case-insensitive.
 
 ## How to use
 
