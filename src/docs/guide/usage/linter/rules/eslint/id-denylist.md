@@ -2,7 +2,7 @@
 title: "eslint/id-denylist | Oxlint"
 rule: "eslint/id-denylist"
 category: "Style"
-version: "next"
+version: "1.76.0"
 default: false
 type_aware: false
 fix: "none"
@@ -101,7 +101,7 @@ default: `[]`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.76.0.
 
 ## References
 

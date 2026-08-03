@@ -1,7 +1,7 @@
 ---
 title: "eslint/prefer-promise-reject-errors | Oxlint"
 rule: "eslint/prefer-promise-reject-errors"
-category: "Style"
+category: "Pedantic"
 version: "0.15.7"
 default: false
 type_aware: false
@@ -21,6 +21,12 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Require using Error objects as Promise rejection reasons.
+
+::: warning
+This rule is not as accurate as the type-aware
+[typescript/prefer-promise-reject-errors](https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-promise-reject-errors.html)
+rule. We recommend using the TypeScript rule when type information is available.
+:::
 
 ### Why is this bad?
 

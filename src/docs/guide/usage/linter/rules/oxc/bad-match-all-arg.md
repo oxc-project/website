@@ -2,7 +2,7 @@
 title: "oxc/bad-match-all-arg | Oxlint"
 rule: "oxc/bad-match-all-arg"
 category: "Correctness"
-version: "next"
+version: "1.76.0"
 default: true
 type_aware: false
 fix: "none"
@@ -47,7 +47,7 @@ text.matchAll(/pattern/g);
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.76.0.
 
 ## References
 
