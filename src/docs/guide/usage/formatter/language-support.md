@@ -30,6 +30,10 @@ Detection also covers many well-known config files by name. For example `.babelr
 
 Delegated to the bundled Prettier. No separate `prettier` install is required.
 
+:::warning
+These formats require Node.js and are only available with the `oxfmt` npm package. The standalone binary from GitHub Releases skips these files. See [Quickstart](./quickstart#install) for details.
+:::
+
 :::tip
 These are being actively ported to Rust. As each native formatter lands, its language moves to the [Native](#native) list above for maximum performance. No change needed on your side.
 :::

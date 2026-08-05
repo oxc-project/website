@@ -31,6 +31,12 @@ $ bun add -D oxfmt
 
 :::
 
+::: warning Standalone binary
+Oxfmt is also available as a standalone binary. It works as a pure CLI without Node.js, but does not support [Prettier-backed formats](./language-support#prettier-backed) (these files are skipped), dynamic config files (`oxfmt.config.ts`), [Tailwind CSS class sorting](./sorting#sort-tailwind-css-classes), [LSP](./editors) mode, etc.
+
+The npm package is the recommended way to install Oxfmt and supports all features for now.
+:::
+
 Add scripts to `package.json`:
 
 ```json [package.json]
