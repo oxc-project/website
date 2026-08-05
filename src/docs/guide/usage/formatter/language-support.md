@@ -22,6 +22,7 @@ Formatted directly by Oxfmt, with no Prettier dependency:
 | CSS / SCSS / Less    | `.css`, `.scss`, `.less`, `.pcss`, `.postcss` |
 | GraphQL              | `.graphql`, `.gql`, `.graphqls`               |
 | TOML                 | `.toml`                                       |
+| YAML                 | `.yml`, `.yaml`                               |
 
 Detection also covers many well-known config files by name. For example `.babelrc` and `.swcrc` are treated as JSON.
 
@@ -41,15 +42,14 @@ These are being actively ported to Rust. As each native formatter lands, its lan
 | Svelte     | `.svelte`                 |
 | Markdown   | `.md`, `.markdown`        |
 | MDX        | `.mdx`                    |
-| YAML       | `.yml`, `.yaml`           |
 | Handlebars | `.hbs`, `.handlebars`     |
 | MJML       | `.mjml`                   |
 
 ## Embedded languages
 
-Oxfmt also formats code embedded inside JS/TS template literals. CSS and GraphQL are formatted natively; HTML and Markdown go through Prettier. See [Embedded Formatting](./embedded-formatting) for details and examples.
+Oxfmt also formats code embedded inside JS/TS template literals. The same split as above applies: languages in the [Native](#native) list are formatted natively, while those in the [Prettier-backed](#prettier-backed) list go through Prettier. See [Embedded Formatting](./embedded-formatting) for details and examples.
 
-For Vue and Svelte files, embedded JavaScript and TypeScript (such as `<script>` blocks) is formatted by Oxfmt's native engine rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as `<script>` tags in HTML) is still formatted by Prettier.
+For Vue and Svelte files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as `<script>` tags in HTML) is still formatted by Prettier.
 
 ## See also
 
