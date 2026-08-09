@@ -304,6 +304,42 @@ This enables the above optimizations.
 To be clear, the `create` API was _not_ a poor design decision on ESLint's part. It just presents some difficulties once
 Rust-JS interop comes into play.
 
+## Writing tests for custom rules
+
+Oxlint provides a `RuleTester` API based on ESLint's `RuleTester`. This can be used to write unit tests for custom rules, to ensure that the custom rule you've written covers all relevant cases.
+
+For example, with Vitest as the test runner you can write tests for the "no more than 5 classes" rule like this:
+
+```js
+import { RuleTester } from "oxlint/plugins-dev";
+import { describe, it } from "vitest";
+import { maxClasses } from "./max-classes.js";
+
+RuleTester.describe = describe;
+RuleTester.it = it;
+
+const ruleTester = new RuleTester({ languageOptions: { parserOptions: { lang: "ts" } } });
+
+// List valid and invalid cases, including the expected error messages for invalid cases.
+ruleTester.run("max-classes", maxClasses, {
+  valid: [
+    "class A {}",
+    // Exactly at the limit.
+    "class A {} class B {} class C {} class D {} class E {}",
+    // Expressions are not declarations, so they never count.
+    "const a = class {}; const b = class {}; const c = class {}; const d = class {}; const e = class {}; const f = class {};",
+  ],
+  invalid: [
+    {
+      name: "the sixth declaration",
+      code: "class A {} class B {} class C {} class D {} class E {} class F {}",
+      // Columns are 0-indexed; the span covers the whole class declaration.
+      errors: [{ messageId: "maxClasses", line: 1, column: 55, endColumn: 65 }],
+    },
+  ],
+});
+```
+
 ## Next steps
 
 See the [API Support](./js-plugins#api-support) section for the ESLint APIs which are supported for usage in Oxlint plugins.
