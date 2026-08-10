@@ -6,9 +6,7 @@ editLink: false
 
 ## 🤝 How to Sponsor
 
-You can sponsor us on [OpenCollective](https://opencollective.com/oxc).
-
-Our [GitHub Sponsors](https://github.com/sponsors/oxc-project) page hit a bug during setup and is still pending, so OpenCollective is the only option for now.
+You can sponsor us on [GitHub Sponsors](https://github.com/sponsors/oxc-project) or [OpenCollective](https://opencollective.com/oxc).
 
 ## 💚 Why sponsor?
 
