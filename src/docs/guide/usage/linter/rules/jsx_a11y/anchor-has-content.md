@@ -49,6 +49,18 @@ Examples of **incorrect** code for this rule:
 <a><TextWrapper aria-hidden /></a>
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### components
+
+type: `string[]`
+
+default: `[]`
+
+Additional custom component names to treat as anchor elements.
+
 ## How to use
 
 <RuleHowToUse />

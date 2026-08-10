@@ -1581,6 +1581,16 @@
   },
   {
     "scope": "eslint",
+    "value": "one-var",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/one-var.html"
+  },
+  {
+    "scope": "eslint",
     "value": "operator-assignment",
     "category": "style",
     "version": "0.15.13",
@@ -2838,6 +2848,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/implements-on-classes.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "no-blank-blocks",
+    "category": "style",
+    "version": "next",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/no-blank-blocks.html"
   },
   {
     "scope": "jsdoc",
@@ -6745,7 +6765,7 @@
     "category": "pedantic",
     "version": "0.0.16",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_dangerous_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-code-point.html"
   },
