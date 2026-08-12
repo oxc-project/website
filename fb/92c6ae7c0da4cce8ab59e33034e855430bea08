@@ -1,0 +1,41 @@
+.vitepress/config/en.ts
+  s_fc6fbb8b9444ab::t_66b1c424ef3feb 22,209-214
+.vitepress/config/shared.ts
+  s_fc6fbb8b9444ab::t_ba58ceb40eb4f6 176
+src/docs/guide/usage/codegen.md
+  s_6b5aa3ca33a1b5::t_b32b4e3e7d02e7 1-67
+src/docs/guide/usage/parser.md
+  s_3c6867790db3e8::t_666ab60d836145 35,37,41,43-44,46,50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "fb92c6ae7c0da4cce8ab59e33034e855430bea08",
+  "prompts": {},
+  "sessions": {
+    "s_3c6867790db3e8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff6b7-8fbe-7091-b5f5-e47bcd0fb165",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    },
+    "s_6b5aa3ca33a1b5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff6a6-3a1d-7362-b56f-38418919cb33",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    },
+    "s_fc6fbb8b9444ab": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff6b6-fd57-7601-8711-b74245ccfb17",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
