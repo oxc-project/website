@@ -63,6 +63,10 @@ Use the umbrella crate [oxc][url-oxc-crate] with the `transformer` feature.
 
 Rust usage example can be found [here](https://github.com/oxc-project/oxc/blob/main/crates/oxc_transformer/examples/transformer.rs).
 
+## Runtime Helpers
+
+The transformer may inject imports from [`@oxc-project/runtime`](./transformer/runtime-helpers), a package containing Oxc's runtime helpers. See the [runtime helpers guide](./transformer/runtime-helpers) for how to handle this.
+
 ## Integrations
 
 - [`unplugin-oxc`](https://npmx.dev/package/unplugin-oxc)
