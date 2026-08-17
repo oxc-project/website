@@ -98,7 +98,7 @@ Our initial integration showed that React Compiler added [more than 5 MiB to the
 
 Our first attempt was to maintain a [synchronized fork](https://github.com/oxc-project/forked-react-compiler) and publish it as crates. The goal was to let the Rust tooling ecosystem, including SWC, Bun, and Biome, use and maintain one shared fork.
 
-We then discovered that this version of React Compiler maintained its own Babel-shaped AST. Oxc had to convert its AST into that representation before running the compiler, then convert it back afterwards. This was not performant. The Rust port also contained unfinished code and bugs, and did not yet conform to the original Babel implementation.
+We then discovered that this version of React Compiler maintained its own Babel-shaped AST. Oxc had to convert its AST into that representation before running the compiler, then convert it back afterwards. We were convinced that tighter integration with Oxc's AST could improve its performance. The Rust port also contained unfinished code and bugs, and did not yet conform to the original Babel implementation.
 
 We eventually decided to [vendor React Compiler into Oxc](https://github.com/oxc-project/oxc/tree/main/crates/oxc_react_compiler) for tighter integration. This allowed us to remove the intermediate Babel AST and make React Compiler operate directly on the Oxc AST.
 
