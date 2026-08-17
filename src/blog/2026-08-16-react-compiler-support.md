@@ -161,7 +161,9 @@ We have compared our output against `babel-plugin-react-compiler` across more th
 
 ## Benchmark
 
-TODO
+Our [preliminary benchmark](https://github.com/oxc-project/bench-transformer#react-compiler) shows that `oxc-transform-react` is more than 10 times faster than `babel-plugin-react-compiler`.
+
+The benchmark compares synchronous React Compiler transforms targeting React 19 across two TSX fixtures, with source maps and JSX lowering disabled for both implementations.
 
 ## Background
 
