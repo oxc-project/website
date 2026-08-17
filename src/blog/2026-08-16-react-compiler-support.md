@@ -9,6 +9,8 @@ authors:
 
 We are excited to announce React Compiler support in Oxlint and Oxc Transform.
 
+**Oxlint now includes 24 React Compiler-powered rules, while `oxc-transform-react` runs the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+
 ## Getting started
 
 ### Oxlint
