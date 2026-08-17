@@ -7,9 +7,9 @@ authors:
 
 <AppBlogPostHeader />
 
-We are excited to announce React Compiler support in Oxlint and Oxc Transform.
+We are excited to announce React Compiler support in Oxlint, Oxc Transform, and `@vitejs/plugin-react`.
 
-**Oxlint now includes 23 React Compiler-powered rules, while `oxc-transform-react` runs the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+**Oxlint now includes 23 React Compiler-powered rules, while Oxc Transform and `@vitejs/plugin-react` use `oxc-transform-react` to run the compiler directly on Oxc's AST without adding Babel to the toolchain.**
 
 ## Getting started
 
@@ -106,6 +106,48 @@ export function Component(t0) {
   return t1;
 }
 ```
+
+### `@vitejs/plugin-react`
+
+Install `oxc-transform-react` alongside [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react):
+
+```sh
+pnpm add -D @vitejs/plugin-react oxc-transform-react
+```
+
+Enable the native compiler in your Vite config:
+
+```js [vite.config.js]
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react({ compiler: true })],
+});
+```
+
+## Improvements
+
+### Diagnostics
+
+We converted React Compiler errors into [native Oxc diagnostics](https://github.com/oxc-project/oxc/pull/25742). Oxlint now shows compact codeframes, points to related source locations, and includes actionable help instead of exposing internal compiler messages.
+
+```text
+⚠ react(refs): Cannot access refs during render
+ ╭─[Component.tsx:3:3]
+2 │ const ref = useRef(null);
+3 │ ref.current = 1;
+  · ─┬─────┬───
+  ·  │     ╰── Cannot update ref value during render
+  ·  ╰── This value is a ref
+  ╰────
+```
+
+### Binary size
+
+Our [first fork-based integration](https://github.com/oxc-project/oxc/pull/22942) produced an 8.66 MiB macOS ARM64 native binding. After removing the Babel AST and JSON round-trip, replacing the full regex engine, and removing unused compiler code, the published [`oxc-transform-react` v0.144.0 binding](https://npmx.dev/package/@oxc-transform-react/binding-darwin-arm64) is 3.97 MiB.
+
+React Compiler remains in a separate optional package, so it does not increase the binary size for Oxc Transform or `@vitejs/plugin-react` users who do not enable it.
 
 ## Conformance
 
