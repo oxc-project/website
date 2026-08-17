@@ -2,7 +2,7 @@
 title: "eslint/one-var | Oxlint"
 rule: "eslint/one-var"
 category: "Style"
-version: "next"
+version: "1.78.0"
 default: false
 type_aware: false
 fix: "conditional_fix"
@@ -56,7 +56,7 @@ type: `object`
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.78.0.
 
 ## References
 
