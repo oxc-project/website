@@ -1,5 +1,9 @@
 [
   {
+    "text": "React Compiler Support",
+    "link": "/blog/2026-08-16-react-compiler-support"
+  },
+  {
     "text": "Type-Aware Linting Stable",
     "link": "/blog/2026-07-22-type-aware-linting-stable"
   },
