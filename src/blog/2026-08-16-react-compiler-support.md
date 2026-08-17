@@ -149,6 +149,12 @@ Our [first fork-based integration](https://github.com/oxc-project/oxc/pull/22942
 
 React Compiler remains in a separate optional package, so it does not increase the binary size for Oxc Transform or `@vitejs/plugin-react` users who do not enable it.
 
+### Source maps
+
+`oxc-transform-react` generates source maps across React Compiler, TypeScript, JSX, and React Fast Refresh in one transform. This avoids composing source maps from multiple transform passes and keeps browser diagnostics and debugging locations mapped to the original source.
+
+`@vitejs/plugin-react` enables source maps during development and follows Vite's [`build.sourcemap`](https://vite.dev/config/build-options.html#build-sourcemap) setting for production builds.
+
 ## Conformance
 
 We have compared our output against `babel-plugin-react-compiler` across more than 100 large and popular repositories, covering over 100,000 source files. Both pipelines use the same compiler options and Oxc's code generator, so printer-only differences do not affect the comparison. We use these comparisons to find conformance issues and keep the Oxc implementation aligned with the Babel version.
