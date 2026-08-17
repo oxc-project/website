@@ -179,7 +179,7 @@ We then discovered that this version of React Compiler maintained its own Babel-
 
 We eventually decided to [vendor React Compiler into Oxc](https://github.com/oxc-project/oxc/tree/main/crates/oxc_react_compiler) for tighter integration. This allowed us to remove the intermediate Babel AST and make React Compiler operate directly on the Oxc AST.
 
-We are confident that we have eliminated most bugs and completed most TODOs. We believe we now have a maintained version of the Rust port.
+We are confident that we have eliminated most bugs and completed most TODOs. At the time of writing, the original Rust crates contain [16 literal `TODO` markers](https://github.com/oxc-project/forked-react-compiler/tree/39b638ccbb0ac5f87a1420523707fc463d35a824/react-compiler/crates), compared with [10 in Oxc's vendored compiler](https://github.com/oxc-project/oxc/tree/794891d93afabfb4a61dbf4b7ada4cca984b7190/crates/oxc_react_compiler). We believe we now have a maintained version of the Rust port.
 
 In the future, we want to continue fixing bugs. Along the way, we have also discovered bugs in the original Babel implementation. We welcome bug reports and other improvements.
 
