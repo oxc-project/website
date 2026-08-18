@@ -7,9 +7,9 @@ authors:
 
 <AppBlogPostHeader />
 
-We are excited to announce React Compiler support in Oxlint, Oxc Transform, and `@vitejs/plugin-react`.
+We are excited to announce React Compiler support in Oxlint, Oxc Transform, and [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react).
 
-**Oxlint now includes 22 React Compiler-powered rules, while Oxc Transform and `@vitejs/plugin-react` use `oxc-transform-react` to run the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+**Oxlint now includes 22 React Compiler-powered rules, while Oxc Transform and [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) use [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) to run the compiler directly on Oxc's AST without adding Babel to the toolchain.**
 
 ## Getting started
 
@@ -26,7 +26,7 @@ Enable the React plugin and its correctness rules:
 }
 ```
 
-React Compiler rule categories are now aligned with the ESLint presets in `babel-plugin-react-compiler@0.0.0-experimental-a1856f3-20260507`. Rules that are off upstream no longer use Oxlint's default correctness category, while `incompatible-library` uses correctness because it is recommended upstream.
+React Compiler rule categories are now aligned with the ESLint presets in [`babel-plugin-react-compiler@0.0.0-experimental-a1856f3-20260507`](https://npmx.dev/package/babel-plugin-react-compiler). Rules that are off upstream no longer use Oxlint's default correctness category, while `incompatible-library` uses correctness because it is recommended upstream.
 
 | Rule name                        | ESLint preset        | Oxlint category | Note                                                                            |
 | -------------------------------- | -------------------- | --------------- | ------------------------------------------------------------------------------- |
@@ -112,9 +112,9 @@ export function Component(t0) {
 }
 ```
 
-### `@vitejs/plugin-react`
+### [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react)
 
-Install `oxc-transform-react` alongside [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react):
+Install [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) alongside [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react):
 
 ```sh
 pnpm add -D @vitejs/plugin-react oxc-transform-react
@@ -152,21 +152,21 @@ We converted React Compiler errors into [native Oxc diagnostics](https://github.
 
 Our [first fork-based integration](https://github.com/oxc-project/oxc/pull/22942) produced an 8.66 MiB macOS ARM64 native binding. After removing the Babel AST and JSON round-trip, replacing the full regex engine, and removing unused compiler code, the published [`oxc-transform-react` v0.144.0 binding](https://npmx.dev/package/@oxc-transform-react/binding-darwin-arm64) is 3.97 MiB.
 
-React Compiler remains in a separate optional package, so it does not increase the binary size for Oxc Transform or `@vitejs/plugin-react` users who do not enable it.
+React Compiler remains in a separate optional package, so it does not increase the binary size for Oxc Transform or [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) users who do not enable it.
 
 ### Source maps
 
-`oxc-transform-react` generates source maps across React Compiler, TypeScript, JSX, and React Fast Refresh in one transform. This avoids composing source maps from multiple transform passes and keeps browser diagnostics and debugging locations mapped to the original source.
+[`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) generates source maps across React Compiler, TypeScript, JSX, and React Fast Refresh in one transform. This avoids composing source maps from multiple transform passes and keeps browser diagnostics and debugging locations mapped to the original source.
 
-`@vitejs/plugin-react` enables source maps during development and follows Vite's [`build.sourcemap`](https://vite.dev/config/build-options.html#build-sourcemap) setting for production builds.
+[`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) enables source maps during development and follows Vite's [`build.sourcemap`](https://vite.dev/config/build-options.html#build-sourcemap) setting for production builds.
 
 ## Conformance
 
-We have compared our output against `babel-plugin-react-compiler` across more than 100 large and popular repositories, covering over 100,000 source files. Both pipelines use the same compiler options and Oxc's code generator, so printer-only differences do not affect the comparison. We use these comparisons to find conformance issues and keep the Oxc implementation aligned with the Babel version.
+We have compared our output against [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler) across more than 100 large and popular repositories, covering over 100,000 source files. Both pipelines use the same compiler options and Oxc's code generator, so printer-only differences do not affect the comparison. We use these comparisons to find conformance issues and keep the Oxc implementation aligned with the Babel version.
 
 ## Benchmark
 
-Our [preliminary benchmark](https://github.com/oxc-project/bench-transformer#react-compiler) shows that `oxc-transform-react` is more than 10 times faster than `babel-plugin-react-compiler`.
+Our [preliminary benchmark](https://github.com/oxc-project/bench-transformer#react-compiler) shows that [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) is more than 10 times faster than [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler).
 
 The benchmark compares synchronous React Compiler transforms targeting React 19 across two TSX fixtures, with source maps and JSX lowering disabled for both implementations.
 
@@ -174,7 +174,7 @@ Measuring locally, the original Rust port of React Compiler is about 2 times slo
 
 ## Background
 
-React Compiler is a build-time compiler that automatically memoizes React components and hooks. [React Compiler 1.0](https://react.dev/blog/2025/10/07/react-compiler-1) was released last year as `babel-plugin-react-compiler`.
+React Compiler is a build-time compiler that automatically memoizes React components and hooks. [React Compiler 1.0](https://react.dev/blog/2025/10/07/react-compiler-1) was released last year as [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler).
 
 Earlier this year, the React team [ported React Compiler to Rust](https://github.com/react/react/pull/36173). We started looking for ways to integrate it into Oxc.
 
