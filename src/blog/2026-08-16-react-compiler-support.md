@@ -9,7 +9,7 @@ authors:
 
 We are excited to announce React Compiler support in Oxlint, Oxc Transform, and `@vitejs/plugin-react`.
 
-**Oxlint now includes 23 React Compiler-powered rules, while Oxc Transform and `@vitejs/plugin-react` use `oxc-transform-react` to run the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+**Oxlint now includes 22 React Compiler-powered rules, while Oxc Transform and `@vitejs/plugin-react` use `oxc-transform-react` to run the compiler directly on Oxc's AST without adding Babel to the toolchain.**
 
 ## Getting started
 
@@ -26,31 +26,36 @@ Enable the React plugin and its correctness rules:
 }
 ```
 
-The following rules are available:
+React Compiler rule categories are now aligned with the ESLint presets in `babel-plugin-react-compiler@0.0.0-experimental-a1856f3-20260507`. Rules that are off upstream no longer use Oxlint's default correctness category, while `incompatible-library` uses correctness because it is recommended upstream.
 
-- `react/capitalized-calls`
-- `react/error-boundaries`
-- `react/exhaustive-effect-dependencies`
-- `react/gating`
-- `react/globals`
-- `react/hooks`
-- `react/immutability`
-- `react/incompatible-library`
-- `react/invariant`
-- `react/memo-dependencies`
-- `react/no-deriving-state-in-effects`
-- `react/preserve-manual-memoization`
-- `react/purity`
-- `react/refs`
-- `react/rule-suppression`
-- `react/set-state-in-effect`
-- `react/set-state-in-render`
-- `react/static-components`
-- `react/syntax`
-- `react/todo`
-- `react/unsupported-syntax`
-- `react/use-memo`
-- `react/void-use-memo`
+| Rule name                        | ESLint preset        | Oxlint category | Note                                                                            |
+| -------------------------------- | -------------------- | --------------- | ------------------------------------------------------------------------------- |
+| `error-boundaries`               | `recommended`        | `correctness`   |                                                                                 |
+| `globals`                        | `recommended`        | `correctness`   |                                                                                 |
+| `immutability`                   | `recommended`        | `correctness`   |                                                                                 |
+| `incompatible-library`           | `recommended`        | `correctness`   |                                                                                 |
+| `preserve-manual-memoization`    | `recommended`        | `correctness`   |                                                                                 |
+| `purity`                         | `recommended`        | `correctness`   |                                                                                 |
+| `refs`                           | `recommended`        | `correctness`   |                                                                                 |
+| `set-state-in-effect`            | `recommended`        | `correctness`   |                                                                                 |
+| `set-state-in-render`            | `recommended`        | `correctness`   |                                                                                 |
+| `static-components`              | `recommended`        | `correctness`   |                                                                                 |
+| `use-memo`                       | `recommended`        | `correctness`   |                                                                                 |
+| `unsupported-syntax`             | `recommended`        | `restriction`   | Compiler support boundary.                                                      |
+| `config`                         | `recommended`        | Not implemented | Oxlint uses fixed, valid compiler options.                                      |
+| `gating`                         | `recommended`        | Not implemented | Oxlint does not expose compiler gating options.                                 |
+| `void-use-memo`                  | `recommended-latest` | `correctness`   | Enabled by the newer upstream preset.                                           |
+| `no-deriving-state-in-effects`   | `off`                | `perf`          | Performance and derived-state guidance.                                         |
+| `invariant`                      | `off`                | `restriction`   | Internal compiler invariant.                                                    |
+| `rule-suppression`               | `off`                | `restriction`   | Compiler policy restriction.                                                    |
+| `syntax`                         | `off`                | `restriction`   | Compiler syntax restriction.                                                    |
+| `todo`                           | `off`                | `restriction`   | Unimplemented-feature diagnostic; a hint upstream.                              |
+| `capitalized-calls`              | `off`                | `suspicious`    | Kept out of default correctness.                                                |
+| `exhaustive-effect-dependencies` | `off`                | `suspicious`    | Dependency diagnostic, not default correctness.                                 |
+| `hooks`                          | `off`                | `suspicious`    | Overlaps the non-compiler `rules-of-hooks` rule.                                |
+| `memo-dependencies`              | `off`                | `suspicious`    | Overlaps the non-compiler `exhaustive-deps` rule.                               |
+| `fbt`                            | `off`                | Not implemented | This is a Meta-internal FBT category.                                           |
+| `memoized-effect-dependencies`   | `off`                | Not implemented | Upstream's `EffectDependencies` category is absent from the Rust compiler port. |
 
 ### Transform
 
