@@ -26,6 +26,7 @@ What's considered a **non-breaking** change:
 
 The following features are not subject to semantic versioning. They may introduce breaking changes at any time, even in patch or minor releases:
 
+- **Nursery rules** - Nursery rules are experimental. Their behavior may change, and they may be renamed or removed without notice.
 - **JavaScript custom plugins** - The plugin API and behavior may change without notice.
 - **Type-aware linting** - Type-aware rules and their behavior may change as this feature evolves.
 
