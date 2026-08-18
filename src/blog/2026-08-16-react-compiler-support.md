@@ -7,9 +7,11 @@ authors:
 
 <AppBlogPostHeader />
 
-We are excited to announce React Compiler support in Oxlint, Oxc Transform, and [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react).
+We are excited to announce React Compiler support in Oxlint and Oxc Transform.
 
-**Oxlint now includes 22 React Compiler-powered rules, while Oxc Transform and [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) use [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) to run the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+**Oxlint now includes 22 React Compiler-powered rules, while [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) runs the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+
+Integration with [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) is coming soon.
 
 ## Getting started
 
@@ -114,13 +116,15 @@ export function Component(t0) {
 
 ### [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react)
 
-Install [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) alongside [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react):
+Native integration is waiting for [vitejs/vite-plugin-react#1419](https://github.com/vitejs/vite-plugin-react/pull/1419) to land. Until then, use [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) directly as shown above.
+
+After the integration lands, install [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) alongside [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react):
 
 ```sh
 pnpm add -D @vitejs/plugin-react oxc-transform-react
 ```
 
-Enable the native compiler in your Vite config:
+Then enable the native compiler in your Vite config:
 
 ```js [vite.config.js]
 import { defineConfig } from "vite";
@@ -158,7 +162,7 @@ React Compiler remains in a separate optional package, so it does not increase t
 
 [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) generates source maps across React Compiler, TypeScript, JSX, and React Fast Refresh in one transform. This avoids composing source maps from multiple transform passes and keeps browser diagnostics and debugging locations mapped to the original source.
 
-[`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) enables source maps during development and follows Vite's [`build.sourcemap`](https://vite.dev/config/build-options.html#build-sourcemap) setting for production builds.
+The upcoming [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) integration enables source maps during development and follows Vite's [`build.sourcemap`](https://vite.dev/config/build-options.html#build-sourcemap) setting for production builds.
 
 ## Conformance
 
