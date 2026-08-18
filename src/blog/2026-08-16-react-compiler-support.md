@@ -7,9 +7,11 @@ authors:
 
 <AppBlogPostHeader />
 
-We are excited to announce React Compiler support in Oxlint and Oxc Transform.
+We are excited to announce [React Compiler](https://react.dev/learn/react-compiler) support in Oxlint and Oxc Transform.
 
-**Oxlint now includes 22 React Compiler-powered rules, while [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) runs the compiler directly on Oxc's AST without adding Babel to the toolchain.**
+Oxlint now includes 22 React Compiler-powered rules that use the compiler's validation passes to catch violations of the Rules of React.
+
+Oxc Transform uses [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) to apply React Compiler's automatic memoization directly to Oxc's AST without adding Babel to the toolchain. It is more than 10 times faster than Babel in our preliminary benchmark.
 
 Integration with [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) is coming soon.
 
@@ -28,7 +30,9 @@ Enable the React plugin and its correctness rules:
 }
 ```
 
-React Compiler rule categories are now aligned with the ESLint presets in [`babel-plugin-react-compiler@0.0.0-experimental-a1856f3-20260507`](https://npmx.dev/package/babel-plugin-react-compiler). Rules that are off upstream no longer use Oxlint's default correctness category, while `incompatible-library` uses correctness because it is recommended upstream.
+React Compiler rule categories are aligned with the upstream ESLint presets. We added all recommended rules to Oxlint's correctness category.
+
+If you enabled the previous nursery `react/react-compiler` rule, remove it from your configuration. It has been replaced by the category-specific rules below.
 
 | Rule name                        | ESLint preset        | Oxlint category | Note                                                                            |
 | -------------------------------- | -------------------- | --------------- | ------------------------------------------------------------------------------- |
@@ -43,19 +47,19 @@ React Compiler rule categories are now aligned with the ESLint presets in [`babe
 | `set-state-in-render`            | `recommended`        | `correctness`   |                                                                                 |
 | `static-components`              | `recommended`        | `correctness`   |                                                                                 |
 | `use-memo`                       | `recommended`        | `correctness`   |                                                                                 |
-| `unsupported-syntax`             | `recommended`        | `restriction`   | Compiler support boundary.                                                      |
+| `unsupported-syntax`             | `recommended`        | `restriction`   |                                                                                 |
 | `config`                         | `recommended`        | Not implemented | Oxlint uses fixed, valid compiler options.                                      |
-| `gating`                         | `recommended`        | Not implemented | Oxlint does not expose compiler gating options.                                 |
-| `void-use-memo`                  | `recommended-latest` | `correctness`   | Enabled by the newer upstream preset.                                           |
-| `no-deriving-state-in-effects`   | `off`                | `perf`          | Performance and derived-state guidance.                                         |
-| `invariant`                      | `off`                | `restriction`   | Internal compiler invariant.                                                    |
-| `rule-suppression`               | `off`                | `restriction`   | Compiler policy restriction.                                                    |
-| `syntax`                         | `off`                | `restriction`   | Compiler syntax restriction.                                                    |
-| `todo`                           | `off`                | `restriction`   | Unimplemented-feature diagnostic; a hint upstream.                              |
-| `capitalized-calls`              | `off`                | `suspicious`    | Kept out of default correctness.                                                |
-| `exhaustive-effect-dependencies` | `off`                | `suspicious`    | Dependency diagnostic, not default correctness.                                 |
-| `hooks`                          | `off`                | `suspicious`    | Overlaps the non-compiler `rules-of-hooks` rule.                                |
-| `memo-dependencies`              | `off`                | `suspicious`    | Overlaps the non-compiler `exhaustive-deps` rule.                               |
+| `gating`                         | `recommended`        | Not implemented | Oxlint does not expose compiler gating options yet.                             |
+| `void-use-memo`                  | `recommended-latest` | `correctness`   |                                                                                 |
+| `no-deriving-state-in-effects`   | `off`                | `perf`          |                                                                                 |
+| `invariant`                      | `off`                | `restriction`   |                                                                                 |
+| `rule-suppression`               | `off`                | `restriction`   |                                                                                 |
+| `syntax`                         | `off`                | `restriction`   |                                                                                 |
+| `todo`                           | `off`                | `restriction`   |                                                                                 |
+| `capitalized-calls`              | `off`                | `suspicious`    |                                                                                 |
+| `exhaustive-effect-dependencies` | `off`                | `suspicious`    |                                                                                 |
+| `hooks`                          | `off`                | `suspicious`    |                                                                                 |
+| `memo-dependencies`              | `off`                | `suspicious`    |                                                                                 |
 | `fbt`                            | `off`                | Not implemented | This is a Meta-internal FBT category.                                           |
 | `memoized-effect-dependencies`   | `off`                | Not implemented | Upstream's `EffectDependencies` category is absent from the Rust compiler port. |
 
@@ -94,91 +98,23 @@ if (result.fatal) {
 }
 ```
 
-The compiler adds a memoization cache to the component:
-
-```js [Output]
-import { c as _c } from "react/compiler-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
-export function Component(t0) {
-  const $ = _c(2);
-  const { name } = t0;
-  let t1;
-  if ($[0] !== name) {
-    t1 = /* @__PURE__ */ _jsxs("div", { children: ["Hello ", name] });
-    $[0] = name;
-    $[1] = t1;
-  } else {
-    t1 = $[1];
-  }
-  return t1;
-}
-```
-
 ### [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react)
 
-Native integration is waiting for [vitejs/vite-plugin-react#1419](https://github.com/vitejs/vite-plugin-react/pull/1419) to land. Until then, use [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) directly as shown above.
+Native integration is waiting for [vitejs/vite-plugin-react#1419](https://github.com/vitejs/vite-plugin-react/pull/1419) to land.
 
-After the integration lands, install [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) alongside [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react):
-
-```sh
-pnpm add -D @vitejs/plugin-react oxc-transform-react
-```
-
-Then enable the native compiler in your Vite config:
-
-```js [vite.config.js]
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-
-export default defineConfig({
-  plugins: [react({ compiler: true })],
-});
-```
-
-## Improvements
-
-### Diagnostics
-
-We converted React Compiler errors into [native Oxc diagnostics](https://github.com/oxc-project/oxc/pull/25742). Oxlint now shows compact codeframes, points to related source locations, and includes actionable help instead of exposing internal compiler messages.
-
-```text
-⚠ react(refs): Cannot access refs during render
- ╭─[Component.tsx:3:3]
-2 │ const ref = useRef(null);
-3 │ ref.current = 1;
-  · ─┬─────┬───
-  ·  │     ╰── Cannot update ref value during render
-  ·  ╰── This value is a ref
-  ╰────
-```
-
-### Binary size
-
-Our [first fork-based integration](https://github.com/oxc-project/oxc/pull/22942) produced an 8.66 MiB macOS ARM64 native binding. After removing the Babel AST and JSON round-trip, replacing the full regex engine, and removing unused compiler code, the published [`oxc-transform-react` v0.144.0 binding](https://npmx.dev/package/@oxc-transform-react/binding-darwin-arm64) is 3.97 MiB.
-
-React Compiler remains in a separate optional package, so it does not increase the binary size for Oxc Transform or [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) users who do not enable it.
-
-### Source maps
-
-[`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) generates source maps across React Compiler, TypeScript, JSX, and React Fast Refresh in one transform. This avoids composing source maps from multiple transform passes and keeps browser diagnostics and debugging locations mapped to the original source.
-
-The upcoming [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) integration enables source maps during development and follows Vite's [`build.sourcemap`](https://vite.dev/config/build-options.html#build-sourcemap) setting for production builds.
+We keep this framework-specific integration in [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react), rather than adding it to Vite or Rolldown, so the core toolchain remains vendor-neutral.
 
 ## Conformance
 
-Oxc conforms to the latest experimental release of [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler), while its default options remain aligned with React Compiler v1.
+Oxc conforms to the [latest experimental release of `babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler/v/0.0.0-experimental-a1856f3-20260507), while its default options remain aligned with Babel React Compiler v1.
 
-We have compared our output against this version across more than 100 large and popular repositories, covering over 100,000 source files. Both pipelines use the same compiler options and Oxc's code generator, so printer-only differences do not affect the comparison. We use these comparisons to find conformance issues and keep the Oxc implementation aligned with the Babel version.
+We have compared our output against this version across more than 100 large and popular repositories, covering over 100,000 source files.
 
 ## Benchmark
 
 Our [preliminary benchmark](https://github.com/oxc-project/bench-transformer#react-compiler) shows that [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) is more than 10 times faster than [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler).
 
-The benchmark compares synchronous React Compiler transforms targeting React 19 across two TSX fixtures, with source maps and JSX lowering disabled for both implementations.
-
-Measuring locally, the original Rust port of React Compiler is about 2 times slower than Oxc's version.
-
-Even with these improvements, enabling React Compiler incurs a small build-time performance cost compared with transforming without it.
+Measuring locally, the [original Rust port of React Compiler](https://github.com/react/react/pull/36173) is about 2 times slower than Oxc's version.
 
 ## Background
 
@@ -194,12 +130,51 @@ We then discovered that this version of React Compiler maintained its own Babel-
 
 We eventually decided to [vendor React Compiler into Oxc](https://github.com/oxc-project/oxc/tree/main/crates/oxc_react_compiler) for tighter integration. This allowed us to remove the intermediate Babel AST and make React Compiler operate directly on the Oxc AST.
 
-We are confident that we have eliminated most bugs and completed most TODOs. At the time of writing, the [original Rust crates](https://github.com/oxc-project/forked-react-compiler/tree/39b638ccbb0ac5f87a1420523707fc463d35a824/react-compiler/crates) contain 16 literal `TODO` markers and 62 code paths that emit `Todo` diagnostics. [Oxc's vendored compiler](https://github.com/oxc-project/oxc/tree/794891d93afabfb4a61dbf4b7ada4cca984b7190/crates/oxc_react_compiler) contains 10 literal `TODO` markers and 57 centralized `Todo` diagnostic constructors. We believe we now have a maintained version of the Rust port.
+## Improvements
 
-In the future, we want to continue fixing bugs. Along the way, we have also discovered bugs in the original Babel implementation. We welcome bug reports and other improvements.
+The original Rust port was unfinished when it was merged. Since integrating it into Oxc, we have completed missing pieces, fixed bugs, and made many improvements.
+
+### Diagnostics
+
+We improved React Compiler diagnostics so coding agents can understand and fix issues more easily. Oxlint now shows compact codeframes, points to related source locations, and includes actionable help instead of exposing internal compiler messages.
+
+```text
+⚠ react(immutability): This value cannot be modified
+ ╭─[immutability.tsx:7:11]
+6 │           const [state, setState] = useState({a: 0});
+7 │           state.a = 1;
+  ·           ──┬──
+  ·             ╰── value cannot be modified
+8 │           return <div>{props.foo}</div>;
+  ╰────
+help: Modifying a value returned from 'useState()', which should not be modified directly. Use the setter function to update instead
+note: React Compiler skipped optimizing this component or hook. Additional guidance: https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability
+```
+
+### Binary size
+
+Our [first fork-based integration](https://github.com/oxc-project/oxc/pull/22942) produced an 8.66 MiB macOS ARM64 binary. After removing the Babel AST and JSON round-trip, replacing the full regex engine, and removing unused compiler code, the published [`oxc-transform-react` v0.144.0 binding](https://npmx.dev/package/@oxc-transform-react/binding-darwin-arm64) is 3.97 MiB.
+
+React Compiler remains in a separate optional package, so it does not increase the binary size for Oxc Transform.
+
+### Source maps
+
+The original Rust port had incomplete source map support.
+
+We made sure source maps work correctly across React Compiler, TypeScript, JSX, and React Fast Refresh.
+
+## Future work
+
+There are still many TODOs in the code. At the time of writing, the [original Rust crates](https://github.com/oxc-project/forked-react-compiler/tree/39b638ccbb0ac5f87a1420523707fc463d35a824/react-compiler/crates) contain 16 literal `TODO` markers and 62 code paths that emit `Todo` diagnostics. [Oxc's vendored compiler](https://github.com/oxc-project/oxc/tree/794891d93afabfb4a61dbf4b7ada4cca984b7190/crates/oxc_react_compiler) contains 10 literal `TODO` markers and 57 centralized `Todo` diagnostic constructors.
+
+We are committed to maintaining the Rust port by completing the remaining TODOs and triaging and fixing React Compiler issues. Along the way, we have also discovered bugs in the original Babel implementation, which we are keen to investigate and fix. We welcome bug reports and other improvements.
 
 ## Acknowledgements
 
 Thank you to the React Compiler team, especially [Joseph Savona](https://github.com/josephsavona), for developing and open sourcing the Rust port that made this integration possible.
+
+Thank you to [Lauren Tan](https://github.com/poteto) for answering our questions.
+
+---
 
 Please try it and [report any issues](https://github.com/oxc-project/oxc/issues) with a minimal reproduction.
