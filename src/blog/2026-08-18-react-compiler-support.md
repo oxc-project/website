@@ -11,7 +11,7 @@ We are excited to announce [React Compiler](https://react.dev/learn/react-compil
 
 Oxlint now includes 22 React Compiler-powered rules that use the compiler's validation passes to catch violations of the Rules of React.
 
-Oxc Transform uses [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) to apply React Compiler's automatic memoization directly to Oxc's AST. It is more than 10 times faster than Babel in our preliminary benchmark.
+The package [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) applies React Compiler's automatic memoization. It is more than 10 times faster than Babel in our preliminary benchmark.
 
 Integration with [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) is coming soon.
 
@@ -138,7 +138,7 @@ Running directly on Oxc's AST also reduced memory allocations.
 
 ### Conformance
 
-Oxc conforms to the [latest experimental release of `babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler/v/0.0.0-experimental-a1856f3-20260507), while its default options remain aligned with Babel React Compiler v1.
+Oxc conforms to the [latest experimental release of `babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler/v/0.0.0-experimental-a1856f3-20260507), while its default options remain aligned with Babel React Compiler v1 because the latest experimental release changed some defaults.
 
 We have compared our output against this version across more than 100 large and popular repositories, covering over 100,000 source files, and made sure all files compile to the same output.
 
