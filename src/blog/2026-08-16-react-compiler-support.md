@@ -166,7 +166,9 @@ The upcoming [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-re
 
 ## Conformance
 
-We have compared our output against [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler) across more than 100 large and popular repositories, covering over 100,000 source files. Both pipelines use the same compiler options and Oxc's code generator, so printer-only differences do not affect the comparison. We use these comparisons to find conformance issues and keep the Oxc implementation aligned with the Babel version.
+Oxc conforms to the latest experimental release of [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler), while its default options remain aligned with React Compiler v1.
+
+We have compared our output against this version across more than 100 large and popular repositories, covering over 100,000 source files. Both pipelines use the same compiler options and Oxc's code generator, so printer-only differences do not affect the comparison. We use these comparisons to find conformance issues and keep the Oxc implementation aligned with the Babel version.
 
 ## Benchmark
 
