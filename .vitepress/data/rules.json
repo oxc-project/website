@@ -1583,7 +1583,7 @@
     "scope": "eslint",
     "value": "one-var",
     "category": "style",
-    "version": "next",
+    "version": "1.78.0",
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
@@ -2853,7 +2853,7 @@
     "scope": "jsdoc",
     "value": "no-blank-blocks",
     "category": "style",
-    "version": "next",
+    "version": "1.78.0",
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
@@ -4151,6 +4151,16 @@
   },
   {
     "scope": "react",
+    "value": "capitalized-calls",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/capitalized-calls.html"
+  },
+  {
+    "scope": "react",
     "value": "checked-requires-onchange-or-readonly",
     "category": "pedantic",
     "version": "0.2.15",
@@ -4171,6 +4181,16 @@
   },
   {
     "scope": "react",
+    "value": "error-boundaries",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/error-boundaries.html"
+  },
+  {
+    "scope": "react",
     "value": "exhaustive-deps",
     "category": "correctness",
     "version": "0.12.0",
@@ -4178,6 +4198,16 @@
     "fix": "fixable_dangerous_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html"
+  },
+  {
+    "scope": "react",
+    "value": "exhaustive-effect-dependencies",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-effect-dependencies.html"
   },
   {
     "scope": "react",
@@ -4231,6 +4261,16 @@
   },
   {
     "scope": "react",
+    "value": "globals",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html"
+  },
+  {
+    "scope": "react",
     "value": "hook-use-state",
     "category": "style",
     "version": "1.59.0",
@@ -4241,6 +4281,16 @@
   },
   {
     "scope": "react",
+    "value": "hooks",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/hooks.html"
+  },
+  {
+    "scope": "react",
     "value": "iframe-missing-sandbox",
     "category": "suspicious",
     "version": "0.10.0",
@@ -4248,6 +4298,36 @@
     "fix": "pending",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/iframe-missing-sandbox.html"
+  },
+  {
+    "scope": "react",
+    "value": "immutability",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/immutability.html"
+  },
+  {
+    "scope": "react",
+    "value": "incompatible-library",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/incompatible-library.html"
+  },
+  {
+    "scope": "react",
+    "value": "invariant",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/invariant.html"
   },
   {
     "scope": "react",
@@ -4431,6 +4511,16 @@
   },
   {
     "scope": "react",
+    "value": "memo-dependencies",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/memo-dependencies.html"
+  },
+  {
+    "scope": "react",
     "value": "no-array-index-key",
     "category": "perf",
     "version": "0.13.0",
@@ -4478,6 +4568,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-danger-with-children.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-deriving-state-in-effects",
+    "category": "perf",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-deriving-state-in-effects.html"
   },
   {
     "scope": "react",
@@ -4701,13 +4801,23 @@
   },
   {
     "scope": "react",
-    "value": "react-compiler",
-    "category": "nursery",
-    "version": "1.70.0",
+    "value": "preserve-manual-memoization",
+    "category": "correctness",
+    "version": "next",
     "type_aware": false,
     "fix": "none",
     "default": false,
-    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/react-compiler.html"
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/preserve-manual-memoization.html"
+  },
+  {
+    "scope": "react",
+    "value": "purity",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html"
   },
   {
     "scope": "react",
@@ -4721,6 +4831,16 @@
   },
   {
     "scope": "react",
+    "value": "refs",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/refs.html"
+  },
+  {
+    "scope": "react",
     "value": "require-render-return",
     "category": "nursery",
     "version": "0.2.0",
@@ -4728,6 +4848,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/require-render-return.html"
+  },
+  {
+    "scope": "react",
+    "value": "rule-suppression",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rule-suppression.html"
   },
   {
     "scope": "react",
@@ -4751,6 +4881,26 @@
   },
   {
     "scope": "react",
+    "value": "set-state-in-effect",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-effect.html"
+  },
+  {
+    "scope": "react",
+    "value": "set-state-in-render",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-render.html"
+  },
+  {
+    "scope": "react",
     "value": "state-in-constructor",
     "category": "style",
     "version": "1.26.0",
@@ -4758,6 +4908,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/state-in-constructor.html"
+  },
+  {
+    "scope": "react",
+    "value": "static-components",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/static-components.html"
   },
   {
     "scope": "react",
@@ -4771,6 +4931,46 @@
   },
   {
     "scope": "react",
+    "value": "syntax",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/syntax.html"
+  },
+  {
+    "scope": "react",
+    "value": "todo",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/todo.html"
+  },
+  {
+    "scope": "react",
+    "value": "unsupported-syntax",
+    "category": "restriction",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/unsupported-syntax.html"
+  },
+  {
+    "scope": "react",
+    "value": "use-memo",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html"
+  },
+  {
+    "scope": "react",
     "value": "void-dom-elements-no-children",
     "category": "correctness",
     "version": "0.2.11",
@@ -4778,6 +4978,16 @@
     "fix": "none",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/void-dom-elements-no-children.html"
+  },
+  {
+    "scope": "react",
+    "value": "void-use-memo",
+    "category": "correctness",
+    "version": "next",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/void-use-memo.html"
   },
   {
     "scope": "react_perf",
@@ -5105,7 +5315,7 @@
     "category": "restriction",
     "version": "0.12.0",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-empty-object-type.html"
   },
@@ -5415,7 +5625,7 @@
     "category": "suspicious",
     "version": "1.49.0",
     "type_aware": true,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-conversion.html"
   },
@@ -6785,7 +6995,7 @@
     "category": "style",
     "version": "1.33.0",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-default-parameters.html"
   },

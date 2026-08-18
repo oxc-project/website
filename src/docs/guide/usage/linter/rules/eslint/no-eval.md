@@ -79,7 +79,7 @@ This rule accepts a configuration object with the following properties:
 
 type: `boolean`
 
-default: `true`
+default: `false`
 
 This `allowIndirect` option allows indirect `eval()` calls.
 
