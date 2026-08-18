@@ -176,6 +176,8 @@ The benchmark compares synchronous React Compiler transforms targeting React 19 
 
 Measuring locally, the original Rust port of React Compiler is about 2 times slower than Oxc's version.
 
+Even with these improvements, enabling React Compiler incurs a small build-time performance cost compared with transforming without it.
+
 ## Background
 
 React Compiler is a build-time compiler that automatically memoizes React components and hooks. [React Compiler 1.0](https://react.dev/blog/2025/10/07/react-compiler-1) was released last year as [`babel-plugin-react-compiler`](https://npmx.dev/package/babel-plugin-react-compiler).
