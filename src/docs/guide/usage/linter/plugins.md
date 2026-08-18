@@ -127,7 +127,7 @@ This table lists the built-in plugins and where they come from.
 
 For the current status of rule coverage, see the linter [product plan issue](https://github.com/oxc-project/oxc/issues/481). For framework and file type support, see the [compatibility matrix](/compatibility).
 
-\* The React Compiler rules are implemented natively as the [`react/react-compiler`](./rules/react/react-compiler) rule, which runs the React Compiler's analysis in lint-only mode. It is experimental and off by default, so it must be enabled explicitly.
+\* The [React Compiler rules](/blog/2026-08-18-react-compiler-support#oxlint) are implemented natively as category-specific `react/*` rules, which run the React Compiler's analysis in lint-only mode. They are experimental and off by default, so the React plugin and the desired rule categories must be enabled explicitly.
 
 ## Adding new plugins
 
