@@ -90,7 +90,7 @@ line 51
 `;
 ```
 
-Examples of **incorrect** code for this rule:
+Examples of **correct** code for this rule:
 
 ```js
 exports[`a more manageable and readable snapshot 1`] = `
@@ -112,13 +112,14 @@ type: `Record<string, array>`
 default: `{}`
 
 A map of snapshot file paths to arrays of snapshot names that are allowed to exceed the size limit.
-Snapshot names can be specified as regular expressions.
+Each snapshot name is interpreted as a Rust regular expression. If it is not a valid regular
+expression, it is matched as an exact literal string instead.
 
 ### inlineMaxSize
 
 type: `integer`
 
-default: `50`
+default: `null`
 
 Maximum number of lines allowed for inline snapshots.
 

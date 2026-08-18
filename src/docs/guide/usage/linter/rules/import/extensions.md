@@ -158,11 +158,11 @@ Action to take for path group overrides.
 
 Determines how import extensions are validated for matching bespoke import specifiers.
 
-####### `"enforce"`
+###### `"enforce"`
 
 Enforce extension validation for matching imports (require extensions based on config).
 
-####### `"ignore"`
+###### `"ignore"`
 
 Ignore matching imports entirely (skip all extension validation).
 
