@@ -14,7 +14,7 @@ Not currently supported:
 
 - `prettier` field in `package.json`
 - Nested `.editorconfig` in sub directories
-- `experimentalTernaries` and `experimentalOperatorPosition` options
+- `experimentalTernaries` option
 
 Note: Default `printWidth` is `100` (Prettier uses `80`).
 
