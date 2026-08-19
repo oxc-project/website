@@ -41,7 +41,7 @@ import { parseSync } from "oxc-parser";
 import { printSync } from "oxc-codegen";
 
 const { program } = parseSync("test.js", 'alert("hello oxc");');
-const code = printSync(program);
+const { code } = printSync(program);
 
 console.log(code); // alert("hello oxc");
 ```
