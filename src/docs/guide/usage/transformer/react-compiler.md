@@ -6,20 +6,24 @@ Oxc has experimental support for the [React Compiler](https://react.dev/learn/re
 This feature is experimental and under active development. Options and behaviour may change.
 :::
 
-Under the hood, Oxc integrates the [Rust port of the React Compiler](https://github.com/facebook/react/pull/36173) rather than the Babel-based `babel-plugin-react-compiler`. Because that port is an merged React PR, but unpublished, Oxc vendors it as releasable crates at [oxc-project/forked-react-compiler](https://github.com/oxc-project/forked-react-compiler).
+Under the hood, Oxc integrates the [Rust port of the React Compiler](https://github.com/facebook/react/pull/36173) rather than the Babel-based `babel-plugin-react-compiler`. Oxc [vendors and maintains the compiler in-tree](https://github.com/oxc-project/oxc/tree/main/crates/oxc_react_compiler), allowing it to operate directly on Oxc's AST.
 
 ## General Usage
 
+Install the dedicated React transform package:
+
+```sh
+pnpm add -D oxc-transform-react
+```
+
 ```js
-import { transform } from "oxc-transform";
+import { transform } from "oxc-transform-react";
 
-// Enable with default options.
-const result = await transform("App.jsx", sourceCode, {
-  reactCompiler: true,
-});
+// React Compiler is enabled by default with a React 19 target.
+const result = await transform("App.jsx", sourceCode);
 
-// Or enable with options.
-const result = await transform("App.jsx", sourceCode, {
+// Or configure it explicitly.
+const configuredResult = await transform("App.jsx", sourceCode, {
   reactCompiler: {
     // React runtime version target. `'17'` and `'18'` require the
     // `react-compiler-runtime` package; `'19'` ships the runtime in `react`.
@@ -28,7 +32,9 @@ const result = await transform("App.jsx", sourceCode, {
 });
 ```
 
-Pass `false` or omit the option to disable the React Compiler.
+Pass `reactCompiler: false` to disable the React Compiler. Omitting the option enables it with the default configuration.
+
+Files whose filename contains `node_modules` are skipped by default. Providing a `reactCompiler.sources` allowlist replaces that default filter, so dependencies can be opted in explicitly.
 
 ## When the React Compiler won't work
 

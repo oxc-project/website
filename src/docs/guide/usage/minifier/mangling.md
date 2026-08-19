@@ -22,10 +22,8 @@ import { minify } from "oxc-minify";
 
 const result = await minify("lib.js", code, {
   module: false, // non-module code
-  compress: {
-    mangle: {
-      toplevel: true,
-    },
+  mangle: {
+    toplevel: true,
   },
 });
 ```
@@ -47,10 +45,8 @@ var foo = function () {};
 import { minify } from "oxc-minify";
 
 const result = await minify("lib.js", code, {
-  compress: {
-    mangle: {
-      keepNames: true, // shorthand of { function: true, class: true }
-    },
+  mangle: {
+    keepNames: true, // shorthand of { function: true, class: true }
   },
 });
 ```
@@ -78,10 +74,8 @@ var slot_0 = 1;
 import { minify } from "oxc-minify";
 
 const result = await minify("lib.js", code, {
-  compress: {
-    mangle: {
-      debug: true,
-    },
+  mangle: {
+    debug: true,
   },
 });
 ```

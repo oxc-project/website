@@ -4,7 +4,7 @@ A high-performance transformer that rewrites unsupported syntax into forms suppo
 
 ## Features
 
-The features below run in a fixed order, regardless of the order of the options:
+Oxc's transform pipelines run their supported features in a fixed order, regardless of the order of the options:
 
 1. **[React Compiler](./transformer/react-compiler)** — runs first, on the original source.
 2. **[TypeScript](./transformer/typescript)** — type stripping.
@@ -15,6 +15,8 @@ The features below run in a fixed order, regardless of the order of the options:
 7. **[Lowering](./transformer/lowering)** — ES2026 down to ES2015.
 8. **[Inject](./transformer/global-variable-replacement#inject)** — global variable injection.
 9. **[Define](./transformer/global-variable-replacement#define)** — global variable replacement.
+
+`oxc-transform` exposes steps 2–9. The dedicated `oxc-transform-react` package runs the React Compiler first, followed by TypeScript syntax removal, React Refresh, and JSX transformation.
 
 Oxc also supports [TypeScript Isolated Declarations emit](./transformer/isolated-declarations) without using the TypeScript compiler.
 
