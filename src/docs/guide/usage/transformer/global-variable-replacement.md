@@ -29,7 +29,20 @@ const result = await transform("lib.js", sourceCode, {
 });
 ```
 
-Each `define` entry maps an expression to a string of code containing an expression. The keys of it must be an identifier (e.g. `__DEV__`), or a dotted sequence of identifiers (e.g. `process.env.NODE_ENV`, `import.meta.env.MODE`). The values of it must be a valid expression.
+Each `define` entry maps an expression to a string of code containing an expression. A key can be
+an identifier (for example, `__DEV__`), a dotted sequence of identifiers (for example,
+`process.env.NODE_ENV` or `import.meta.env.MODE`), or a `typeof` expression over either form (for
+example, `typeof window` or `typeof globalThis.process`). The value must be a valid expression.
+
+```js
+import { transform } from "oxc-transform";
+
+const result = await transform("lib.js", sourceCode, {
+  define: {
+    "typeof window": '"undefined"',
+  },
+});
+```
 
 ::: tip Always quote the values
 

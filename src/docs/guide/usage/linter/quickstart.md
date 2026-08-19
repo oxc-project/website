@@ -194,7 +194,7 @@ Add ignore patterns from the command line:
 oxlint --ignore-pattern "dist/**" --ignore-pattern "*.min.js"
 ```
 
-Disable ignore handling:
+Disable `.eslintignore` and CLI ignore options:
 
 ```sh
 oxlint --no-ignore
