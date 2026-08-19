@@ -1,0 +1,21 @@
+src/docs/guide/usage/codegen.md
+  s_e55b8469cfc191::t_c89baf5547ca29 3,9,15,21-22,29-33,36,42-44,48-56,61,67-82
+src/docs/guide/usage/parser.md
+  s_e55b8469cfc191::t_a8e5b143f54c56 44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "583ab16671fce1f46dd93ae6b0a7d637ed5a4ee7",
+  "prompts": {},
+  "sessions": {
+    "s_e55b8469cfc191": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01940-1993-7293-862a-e0e39400d7cc",
+        "model": "unknown"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
