@@ -117,12 +117,6 @@ export default defineConfig({
 });
 ```
 
-The integration runs React Compiler, TypeScript and JSX transforms, and React Fast Refresh in a single Oxc transform pass. You can also pass [React Compiler options](https://react.dev/reference/react-compiler/configuration) directly:
-
-```js [vite.config.js]
-react({ compiler: { compilationMode: "annotation" } });
-```
-
 We keep this framework-specific integration in [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react), rather than adding it to Vite or Rolldown, so the core toolchain remains vendor-neutral.
 
 ## Benchmark
