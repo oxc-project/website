@@ -13,7 +13,7 @@ Oxlint now includes 22 React Compiler-powered rules that use the compiler's vali
 
 The package [`oxc-transform-react`](https://npmx.dev/package/oxc-transform-react) applies React Compiler's automatic memoization. It is more than 10 times faster than Babel in our preliminary benchmark.
 
-Integration with [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react) is coming soon.
+Vite integration is available in [`@vitejs/plugin-react` v6.1.0](https://npmx.dev/package/@vitejs/plugin-react/v/6.1.0).
 
 ## Getting started
 
@@ -98,9 +98,24 @@ if (result.fatal) {
 }
 ```
 
-### [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react)
+### Vite
 
-Native integration is waiting for [vitejs/vite-plugin-react#1419](https://github.com/vitejs/vite-plugin-react/pull/1419) to land.
+Vite integration is available in [`@vitejs/plugin-react` v6.1.0](https://npmx.dev/package/@vitejs/plugin-react/v/6.1.0) for Vite 8. Install the plugin and its optional `oxc-transform-react` peer dependency:
+
+```sh
+pnpm add -D @vitejs/plugin-react@^6.1.0 oxc-transform-react
+```
+
+Enable the experimental integration with the `compiler` option:
+
+```js [vite.config.js]
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react({ compiler: true })],
+});
+```
 
 We keep this framework-specific integration in [`@vitejs/plugin-react`](https://npmx.dev/package/@vitejs/plugin-react), rather than adding it to Vite or Rolldown, so the core toolchain remains vendor-neutral.
 
