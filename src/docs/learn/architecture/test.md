@@ -17,9 +17,11 @@ We spend a great deal of time strengthening the test infrastructure to prevent p
 
 Parser tests from [Test262](https://github.com/tc39/test262), [Babel](https://github.com/babel/babel), and [TypeScript](https://github.com/microsoft/TypeScript) are used to test JavaScript, TypeScript, and JSX syntax.
 
+The shared [`tasks/coverage`](https://github.com/oxc-project/oxc/tree/main/tasks/coverage) harness reuses these fixture collections across parser, semantic analysis, code generation, transformation, minification, and ESTree tests.
+
 For Test262, all stage 4 and regular expression tests are included.
 
-All conformance results are stored in a snapshot file for tracking changes:
+All conformance results are stored in snapshot files for tracking changes:
 
 - [test262.snap](https://github.com/oxc-project/oxc/blob/main/tasks/coverage/snapshots/parser_test262.snap).
 - [babel.snap](https://github.com/oxc-project/oxc/blob/main/tasks/coverage/snapshots/parser_babel.snap).
@@ -31,25 +33,25 @@ All syntax errors are written to these snapshot files for diffing changes.
 
 To ensure that the parser does not panic when encountering random data, three fuzzers are used:
 
-1. [cargo fuzz](https://github.com/rust-fuzz/cargo-fuzz) for [sending random bytes](https://github.com/oxc-project/oxc-fuzz-parser/blob/main/fuzz/fuzz_targets/parser.rs) to the parser.
+1. [`cargo-fuzz`](https://github.com/oxc-project/fuzz-oxc) for sending random data to the parser.
 2. [shift-fuzzer-js](https://github.com/shapesecurity/shift-fuzzer-js) by [bakkot](https://github.com/bakkot) for producing random but valid ASTs.
 3. [Automated-Fuzzer](https://github.com/qarmin/Automated-Fuzzer) by [qarmin](https://github.com/qarmin), which [actively reports](https://github.com/oxc-project/oxc/issues?q=is%3Aissue+author%3Aqarmin+) crashes.
 
 ### Memory Safety
 
-Oxc uses an arena allocator based around [`bumpalo`](https://docs.rs/bumpalo/latest/bumpalo) as the memory allocator for its AST, and other data.
+Oxc uses an arena allocator as the memory allocator for its AST and other data.
 None of the AST node types have a `Drop` implementation.
-This is enforced at compile time by Oxc's allocator, which causes a compile-time error if any code attempts to allocate types in the arena which are `Drop`.This statically ensures that types which own heap-allocated data cannot be stored in the arena, which would result in memory leaks.
+This is enforced at compile time by Oxc's allocator, which causes a compile-time error if any code attempts to allocate types in the arena which are `Drop`. This statically ensures that types which own heap-allocated data cannot be stored in the arena, which would result in memory leaks.
 
 ### Unsafe code
 
-Oxc uses `unsafe` code for performance optimizations. We aim to contain `unsafe` to within self-contained data structures which present safe APIs externally. Miri [is run](https://github.com/oxc-project/oxc/actions/workflows/miri.yml) on the crates containing these structures on every PR.
+Oxc uses `unsafe` code for performance optimizations. We aim to contain `unsafe` to within self-contained data structures which present safe APIs externally. [Miri](https://github.com/oxc-project/oxc/blob/main/.github/workflows/miri.yml) runs on relevant changes to the crates containing these structures.
 
 ## Linter
 
 ### Snapshot Diagnostics
 
-All linter diagnostics are written to a [snapshot file](https://github.com/oxc-project/oxc/tree/main/crates/oxc_linter/src/snapshots) for testing against regressions.
+All linter diagnostics are written to [snapshot files](https://github.com/oxc-project/oxc/tree/main/crates/oxc_linter/src/snapshots) for testing against regressions.
 
 For example:
 
@@ -68,7 +70,7 @@ For example:
 
 ### Ecosystem CI
 
-[oxc-ecosystem-ci](https://github.com/oxc-project/oxc-ecosystem-ci) runs `oxlint` against large repositories to check for false positives, regressions, and panics. The repositories tested include:
+[oxc-ecosystem-ci](https://github.com/oxc-project/oxc-ecosystem-ci) runs Oxlint and Oxfmt against large repositories. Oxlint checks for false positives, regressions, and panics. Oxfmt checks for formatting differences, dropped code, errors, and panics. The repositories tested include:
 
 - [rolldown/rolldown](https://github.com/rolldown-rs/rolldown)
 - [napi-rs/napi-rs](https://github.com/napi-rs/napi-rs)
@@ -94,7 +96,7 @@ assert(printed == printed2);
 
 For example, idempotently minifying a piece of code should yield the same result.
 
-All tools (parser, transformer, minifer, etc.) are idempotently tested on Test262, Babel and TypeScript test files.
+Codegen, transformer, minifier, and formatter are idempotently tested on Test262, Babel, and TypeScript test files.
 
 ## Integration Tests
 
@@ -108,7 +110,9 @@ line coverage.
 
 The repository [monitor-oxc](https://github.com/oxc-project/monitor-oxc) performs end-to-end tests against the top 3000 npm packages from [npm-high-impact](https://github.com/wooorm/npm-high-impact).
 
-Its `package.json` has 3000 dependencies:
+It runs codegen, transformation, compression, mangling, whitespace removal, and formatting over the package files.
+
+Its `package.json` lists the packages as dependencies:
 
 ```json
 "devDependencies": {
@@ -144,13 +148,13 @@ test("zwitch", () => import("zwitch").then(assert.ok));
 
 This test file is run after each of the tools (codegen, transformer, minifier, etc.) rewrites all the files in `node_modules`.
 
-The packages are updated to their latest versions daily.
+The workflow runs every three hours.
 
-This setup has caught many obscure bugs that the conformance test suites missed.
+Isolated declarations are also tested against Vue.
 
 ---
 
-If you any ideas on how to improve our test infrastructure,
+If you have any ideas on how to improve our test infrastructure,
 feel free to contact us on [Discord][discord-url].
 
 [discord-url]: https://discord.gg/9uXCAwqQZW
