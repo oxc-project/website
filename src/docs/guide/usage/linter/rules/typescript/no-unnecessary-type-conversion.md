@@ -5,7 +5,7 @@ category: "Suspicious"
 version: "1.49.0"
 default: false
 type_aware: true
-fix: "pending"
+fix: "fixable_suggestion"
 upstream: "https://typescript-eslint.io/rules/no-unnecessary-type-conversion/"
 ---
 

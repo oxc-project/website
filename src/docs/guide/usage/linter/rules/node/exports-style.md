@@ -2,7 +2,7 @@
 title: "node/exports-style | Oxlint"
 rule: "node/exports-style"
 category: "Style"
-version: "next"
+version: "1.76.0"
 default: false
 type_aware: false
 fix: "pending"
@@ -104,7 +104,7 @@ If this option is set to `true`, `module.exports = exports = obj` are allowed.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.76.0.
 
 ## References
 

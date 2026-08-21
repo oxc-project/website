@@ -5,7 +5,7 @@ category: "Restriction"
 version: "0.12.0"
 default: false
 type_aware: false
-fix: "pending"
+fix: "conditional_suggestion"
 upstream: "https://typescript-eslint.io/rules/no-empty-object-type/"
 ---
 

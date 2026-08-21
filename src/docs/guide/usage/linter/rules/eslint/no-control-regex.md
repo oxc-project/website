@@ -55,6 +55,7 @@ var pattern5 = /\n/;
 var pattern6 = new RegExp("\x20");
 var pattern7 = new RegExp("\\t");
 var pattern8 = new RegExp("\\n");
+var pattern9 = /\0/;
 ```
 
 ## How to use

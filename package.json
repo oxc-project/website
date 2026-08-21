@@ -23,18 +23,18 @@
     "@types/node": "^25.5.0",
     "@voidzero-dev/vitepress-theme": "^5.0.0",
     "degit": "^3.0.0",
-    "esbuild": "0.28.1",
+    "esbuild": "0.28.2",
     "feed": "^6.0.0",
     "knip": "^6.0.2",
     "markdown-it-container": "^4.0.0",
     "markdown-it-task-lists": "^2.1.1",
     "typescript": "~7.0.0",
     "vite-plus": "catalog:",
-    "vitepress": "2.0.0-alpha.18",
+    "vitepress": "2.0.0-alpha.19",
     "vitepress-plugin-group-icons": "^1.7.1",
     "vitepress-plugin-llms": "^1.12.0",
     "void": "^0.10.8",
     "vue": "^3.5.30"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.17.0"
 }

@@ -58,14 +58,18 @@ const Button = styled.div`
 
 **Output (with default options):**
 
+<!-- prettier-ignore-start -->
+
 ```jsx
 import styled from "styled-components";
 
 const Button = styled.div.withConfig({
   displayName: "Button",
   componentId: "sc-1234567-0",
-})(["color:blue;padding:10px;"]);
+})`color:blue;padding:10px;`;
 ```
+
+<!-- prettier-ignore-end -->
 
 ### Configuration Options
 
@@ -79,10 +83,14 @@ const Button = styled.div.withConfig({
 
 #### Template Literal Options
 
-| Option                      | Type      | Default | Description                                                                    |
-| --------------------------- | --------- | ------- | ------------------------------------------------------------------------------ |
-| `transpileTemplateLiterals` | `boolean` | `true`  | Converts template literals to a smaller representation for reduced bundle size |
-| `minify`                    | `boolean` | `true`  | Minifies CSS content by removing whitespace and comments                       |
+| Option                      | Type      | Default | Description                                                  |
+| --------------------------- | --------- | ------- | ------------------------------------------------------------ |
+| `transpileTemplateLiterals` | `boolean` | `false` | Converts tagged template literals to an array representation |
+| `minify`                    | `boolean` | `true`  | Minifies CSS content by removing whitespace and comments     |
+
+`transpileTemplateLiterals` is disabled by default because Oxc does not lower template literals
+to ES5. Without that subsequent lowering, the array representation increases output size. Enable
+it only when a downstream transform will lower template literals.
 
 #### Advanced Options
 

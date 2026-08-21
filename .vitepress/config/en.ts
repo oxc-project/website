@@ -66,6 +66,7 @@ export const enConfig = defineLocaleConfig("root", {
               items: [
                 { text: "Quickstart", link: "/docs/guide/usage/linter/quickstart" },
                 { text: "Configuration", link: "/docs/guide/usage/linter/config" },
+                { text: "Coding agents", link: "/docs/guide/usage/coding-agents" },
                 { text: "Editor setup", link: "/docs/guide/usage/linter/editors" },
                 { text: "CI & other setup", link: "/docs/guide/usage/linter/ci" },
                 {
@@ -142,6 +143,7 @@ export const enConfig = defineLocaleConfig("root", {
                   text: "Configuration",
                   link: "/docs/guide/usage/formatter/config",
                 },
+                { text: "Coding agents", link: "/docs/guide/usage/coding-agents" },
                 { text: "Editor setup", link: "/docs/guide/usage/formatter/editors" },
                 { text: "CI & other setup", link: "/docs/guide/usage/formatter/ci" },
               ],

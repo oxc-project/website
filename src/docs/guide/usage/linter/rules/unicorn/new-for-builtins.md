@@ -21,7 +21,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Enforces the use of `new` for the following builtins: `Object`, `Array`, `ArrayBuffer`, `BigInt64Array`,
-`BigUint64Array`, `DataView`, `Date`, `Error`, `Float32Array`, `Float64Array`, `Function`, `Int8Array`,
+`BigUint64Array`, `DataView`, `Date`, `Error`, `Float16Array`, `Float32Array`, `Float64Array`, `Function`, `Int8Array`,
 `Int16Array`, `Int32Array`, `Map`, `WeakMap`, `Set`, `WeakSet`, `Promise`, `RegExp`, `Uint8Array`,
 `Uint16Array`, `Uint32Array`, `Uint8ClampedArray`, `SharedArrayBuffer`, `Proxy`, `WeakRef`, `FinalizationRegistry`.
 
@@ -40,6 +40,7 @@ Examples of **incorrect** code for this rule:
 ```javascript
 const foo = new String("hello world");
 const bar = Array(1, 2, 3);
+const now = Date();
 ```
 
 Examples of **correct** code for this rule:
@@ -47,6 +48,7 @@ Examples of **correct** code for this rule:
 ```javascript
 const foo = String("hello world");
 const bar = new Array(1, 2, 3);
+const now = String(new Date());
 ```
 
 ## How to use

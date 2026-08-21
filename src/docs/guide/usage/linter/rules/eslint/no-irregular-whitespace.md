@@ -55,7 +55,7 @@ This rule accepts a configuration object with the following properties:
 
 type: `boolean`
 
-default: `true`
+default: `false`
 
 Whether to skip irregular whitespace in comments.
 

@@ -16,9 +16,11 @@ Oxlint automatically ignores:
 
 - `.git` directories
 - Minified files containing `.min.`, `-min.`, or `_min.` in the file name
-- Files matched by `.gitignore` (global gitignore files are not respected)
+- Files discovered through directory traversal that are matched by `.gitignore` (global gitignore files are not respected)
 
 Hidden files are not automatically ignored.
+
+`.gitignore` scopes file discovery. An explicitly named file is still linted even if it is matched by `.gitignore`, while an explicitly named ignored directory is skipped because its contents would need to be discovered.
 
 ## `ignorePatterns`
 
@@ -100,8 +102,10 @@ This keeps traversal possible while still ignoring almost everything.
 
 ## Disable ignoring
 
-To disable all ignore behavior, including ignore files and CLI ignore options, use `--no-ignore`:
+To disable `.eslintignore`, `--ignore-path`, and `--ignore-pattern`, use `--no-ignore`:
 
 ```bash
 oxlint --no-ignore
 ```
+
+This does not disable `ignorePatterns` from the Oxlint config or `.gitignore` filtering during directory discovery.
