@@ -2,7 +2,7 @@
 title: "react/void-use-memo | Oxlint"
 rule: "react/void-use-memo"
 category: "Correctness"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -25,7 +25,7 @@ memoized result is actually used by the component or hook.
 
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
-[`react-hooks/void-use-memo`](https://react.dev/reference/eslint-plugin-react-hooks/lints/void-use-memo).
+`react-hooks/void-use-memo`.
 
 ### Why is this bad?
 
@@ -63,7 +63,7 @@ function Component({ a }) {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 

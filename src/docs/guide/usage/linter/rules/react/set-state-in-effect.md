@@ -2,7 +2,7 @@
 title: "react/set-state-in-effect | Oxlint"
 rule: "react/set-state-in-effect"
 category: "Correctness"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -64,7 +64,7 @@ function Component({ value }) {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "react/todo | Oxlint"
 rule: "react/todo"
 category: "Restriction"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -26,7 +26,7 @@ optimizations (bail-outs), not rule violations.
 
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
-[`react-hooks/todo`](https://react.dev/reference/eslint-plugin-react-hooks/lints/todo).
+`react-hooks/todo`.
 
 ### Why is this bad?
 
@@ -40,7 +40,7 @@ ships it as an off-by-default hint.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 

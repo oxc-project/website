@@ -2,7 +2,7 @@
 title: "react/exhaustive-effect-dependencies | Oxlint"
 rule: "react/exhaustive-effect-dependencies"
 category: "Suspicious"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -25,7 +25,7 @@ extraneous values.
 
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
-[`react-hooks/exhaustive-effect-dependencies`](https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-effect-dependencies).
+`react-hooks/exhaustive-effect-dependencies`.
 
 ### Why is this bad?
 
@@ -38,7 +38,7 @@ render; extraneous dependencies re-fire the effect needlessly.
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 
