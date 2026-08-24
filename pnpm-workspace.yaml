@@ -7,7 +7,7 @@ allowBuilds:
   vue-demi: true
   workerd: true
 catalog:
-  vite-plus: ^0.2.0
+  vite-plus: ^0.3.0
 overrides:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vitest: 4.1.11
