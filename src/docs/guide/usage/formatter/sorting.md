@@ -146,6 +146,9 @@ export default defineConfig({
 
 :::
 
+Not every `perfectionist` option is available. In particular, options that rely on information outside the source file are not supported.
+e.g. `tsconfigPath`, which resolves TypeScript path aliases via `tsconfig.json`. To classify aliased imports as internal, list their prefixes in `internalPattern`, or match them with `customGroups`.
+
 ## Sort Tailwind CSS classes
 
 Sorts Tailwind utility classes.
