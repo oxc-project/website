@@ -2,7 +2,7 @@
 title: "react/hooks | Oxlint"
 rule: "react/hooks"
 category: "Suspicious"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -26,7 +26,7 @@ component or hook, and not be used as first-class values.
 
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
-[`react-hooks/hooks`](https://react.dev/reference/eslint-plugin-react-hooks/lints/hooks).
+`react-hooks/hooks`.
 
 This rule overlaps with `react/rules-of-hooks`; upstream ships it
 disabled for that reason.
@@ -66,7 +66,7 @@ function Component(props) {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 

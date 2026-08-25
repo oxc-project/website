@@ -2,7 +2,7 @@
 title: "react/set-state-in-render | Oxlint"
 rule: "react/set-state-in-render"
 category: "Correctness"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -62,7 +62,7 @@ function Component() {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "react/no-deriving-state-in-effects | Oxlint"
 rule: "react/no-deriving-state-in-effects"
 category: "Perf"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -26,7 +26,7 @@ instead.
 
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
-[`react-hooks/no-deriving-state-in-effects`](https://react.dev/reference/eslint-plugin-react-hooks/lints/no-deriving-state-in-effects).
+`react-hooks/no-deriving-state-in-effects`.
 
 ### Why is this bad?
 
@@ -65,7 +65,7 @@ function Component({ firstName, lastName }) {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 

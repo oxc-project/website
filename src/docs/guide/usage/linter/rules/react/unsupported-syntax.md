@@ -2,7 +2,7 @@
 title: "react/unsupported-syntax | Oxlint"
 rule: "react/unsupported-syntax"
 category: "Restriction"
-version: "next"
+version: "1.79.0"
 default: false
 type_aware: false
 fix: "none"
@@ -57,7 +57,7 @@ function Component(props) {
 
 ## Version
 
-This rule was added in vnext.
+This rule was added in v1.79.0.
 
 ## References
 
