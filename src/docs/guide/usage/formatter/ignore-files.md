@@ -56,6 +56,10 @@ However, global gitignore (`core.excludesFile`) is not read.
 
 Files ignored by `.gitignore` **can still be formatted** if explicitly specified.
 
+Note that this exception applies to explicitly specified **files** only.
+A directory target is still traversed with `.gitignore` applied, so `oxfmt dist` does not format files under an ignored `dist/`.
+To format them, specify files: `oxfmt dist/index.js`, or use a shell-expanded (unquoted) glob like `oxfmt dist/**/*.js`.
+
 ## VCS directories and `node_modules`
 
 Ignored by default: `.git`, `.svn`, `.jj`, `node_modules`
