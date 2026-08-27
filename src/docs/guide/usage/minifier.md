@@ -6,7 +6,7 @@ A high-performance minifier that shrinks your code by removing unused code and t
 
 - [Eliminate dead code.](./minifier/dead-code-elimination)
 - [Transforms syntaxes to make the output shorter and repetitive.](./minifier/syntax-normalization)
-- [Mangle variable names.](./minifier/mangling)
+- [Mangle variable names and selected property names.](./minifier/mangling)
 - [Remove whitespace and comments.](./minifier/whitespace-stripping)
 
 ## Assumptions
