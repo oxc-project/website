@@ -19,6 +19,7 @@ export const enConfig = defineLocaleConfig("root", {
           { text: "Linter (Oxlint)", link: "/docs/guide/usage/linter" },
           { text: "Formatter (Oxfmt)", link: "/docs/guide/usage/formatter" },
           { text: "Parser", link: "/docs/guide/usage/parser" },
+          { text: "Code Generator", link: "/docs/guide/usage/codegen" },
           { text: "Transformer", link: "/docs/guide/usage/transformer" },
           { text: "Minifier", link: "/docs/guide/usage/minifier" },
           { text: "Resolver", link: "/docs/guide/usage/resolver" },
@@ -206,6 +207,12 @@ export const enConfig = defineLocaleConfig("root", {
           collapsed: true,
           link: "/docs/guide/usage/parser",
           items: [{ text: "Overview", link: "/docs/guide/usage/parser" }],
+        },
+        {
+          text: "Code Generator",
+          collapsed: true,
+          link: "/docs/guide/usage/codegen",
+          items: [{ text: "Overview", link: "/docs/guide/usage/codegen" }],
         },
         {
           text: "Transformer",
