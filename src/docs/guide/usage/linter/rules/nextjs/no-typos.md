@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.2.1"
 default: false
 type_aware: false
-fix: "pending"
+fix: "fixable_suggestion"
 upstream: "https://nextjs.org/docs/messages/no-typos"
 ---
 

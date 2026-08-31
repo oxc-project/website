@@ -140,9 +140,11 @@ even if not all union members are handled explicitly.
 
 type: `string`
 
-Regular expression pattern that when matched in a default case comment,
-will suppress the exhaustiveness check.
-Example: `"@skip-exhaustive-check"` to allow `default: // @skip-exhaustive-check`
+Regular expression pattern for a comment that acts as an omitted `default` case.
+The comment must appear after the final case and the switch must not have a `default` case.
+For union types, it suppresses the exhaustiveness check only when
+`considerDefaultExhaustiveForUnions` is enabled.
+Example: `"^skip default$"` to allow a switch ending in `// skip default`.
 
 ### requireDefaultForNonUnion
 

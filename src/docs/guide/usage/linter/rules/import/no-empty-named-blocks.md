@@ -5,7 +5,7 @@ category: "Suspicious"
 version: "0.16.1"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_safe_fix_or_suggestion"
 upstream: "https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md"
 ---
 
