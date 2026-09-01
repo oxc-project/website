@@ -167,18 +167,23 @@ impl<'a> VisitMut<'a> for MyTransformer {
 Use the AST builder for creating nodes:
 
 ```rust
-use oxc_ast::AstBuilder;
+use oxc_ast::{
+    ast::{BinaryOperator, Expression},
+    builder::AstBuilder,
+};
+use oxc_span::SPAN;
 
 let ast = AstBuilder::new(&allocator);
 
 // Create a binary expression: a + b
-let left = ast.expression_identifier_reference(SPAN, "a");
-let right = ast.expression_identifier_reference(SPAN, "b");
-let expr = ast.expression_binary_expression(
+let left = Expression::new_identifier(SPAN, "a", &ast);
+let right = Expression::new_identifier(SPAN, "b", &ast);
+let expr = Expression::new_binary_expression(
     SPAN,
     left,
     BinaryOperator::Addition,
     right,
+    &ast,
 );
 ```
 
@@ -187,13 +192,20 @@ let expr = ast.expression_binary_expression(
 Common patterns are provided as helpers:
 
 ```rust
-impl<'a> AstBuilder<'a> {
-    pub fn expression_numeric_literal(&self, span: Span, value: f64) -> Expression<'a> {
-        self.alloc(Expression::NumericLiteral(
-            self.alloc(NumericLiteral { span, value, raw: None })
-        ))
-    }
-}
+use oxc_ast::{
+    ast::{Expression, NumberBase},
+    builder::AstBuilder,
+};
+use oxc_span::SPAN;
+
+let ast = AstBuilder::new(&allocator);
+let number = Expression::new_numeric_literal(
+    SPAN,
+    42.0,
+    None,
+    NumberBase::Decimal,
+    &ast,
+);
 ```
 
 ## Development Workflow
@@ -204,9 +216,13 @@ impl<'a> AstBuilder<'a> {
 
    ```rust
    #[ast(visit)]
+   #[derive(Debug)]
+   #[generate_derive(CloneIn, Dummy, ReplaceWith, TakeIn)]
+   #[generate_derive(ContentEq, ESTree, GetSpan, GetSpanMut, UnstableAddress)]
    pub struct MyNewNode<'a> {
+       pub node_id: Cell<NodeId>,
        pub span: Span,
-       pub name: Atom<'a>,
+       pub name: Ident<'a>,
        pub value: Expression<'a>,
    }
    ```
@@ -216,7 +232,7 @@ impl<'a> AstBuilder<'a> {
    ```rust
    pub enum Statement<'a> {
        // ... existing variants
-       MyNewStatement(Box<'a, MyNewNode<'a>>),
+       MyNewStatement(Box<'a, MyNewNode<'a>>) = 18,
    }
    ```
 
@@ -228,8 +244,8 @@ impl<'a> AstBuilder<'a> {
 
 4. **Implement parsing logic**:
    ```rust
-   impl<'a> Parser<'a> {
-       fn parse_my_new_node(&mut self) -> Result<MyNewNode<'a>> {
+   impl<'a, C: ParserConfig> ParserImpl<'a, C> {
+       fn parse_my_new_statement(&mut self) -> Statement<'a> {
            // Parsing implementation
        }
    }
