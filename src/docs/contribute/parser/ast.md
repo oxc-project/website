@@ -41,15 +41,11 @@ Every AST node follows a consistent pattern:
 
 ```rust
 #[ast(visit)]
-pub struct FunctionDeclaration<'a> {
+pub struct IdentifierReference<'a> {
+    pub node_id: Cell<NodeId>,
     pub span: Span,
-    pub id: Option<BindingIdentifier<'a>>,
-    pub generator: bool,
-    pub r#async: bool,
-    pub params: FormalParameters<'a>,
-    pub body: Option<FunctionBody<'a>>,
-    pub type_parameters: Option<TSTypeParameterDeclaration<'a>>,
-    pub return_type: Option<TSTypeAnnotation<'a>>,
+    pub name: Ident<'a>,
+    pub reference_id: Cell<Option<ReferenceId>>,
 }
 ```
 
@@ -65,9 +61,11 @@ The AST uses a memory arena for efficient allocation:
 
 ```rust
 use oxc_allocator::Allocator;
+use oxc_parser::Parser;
 
 let allocator = Allocator::default();
-let ast = parser.parse(&allocator, source_text, source_type)?;
+let parsed = Parser::new(&allocator, source_text, source_type).parse();
+let ast = parsed.program;
 ```
 
 Benefits:
@@ -111,29 +109,32 @@ visitor.visit_program(&program);
 For example, to transform binary addition of string literals into a single string literal:
 
 ```rust
-use oxc_ast::AstBuilder;
+use oxc_ast::{
+    ast::{BinaryOperator, Expression},
+    builder::AstBuilder,
+};
 use oxc_ast_visit::{VisitMut, walk_mut};
+use oxc_span::SPAN;
 use oxc_str::Str;
 
 struct MyTransformer<'a> {
-    pub builder: &'a AstBuilder<'a>,
+    builder: &'a AstBuilder<'a>,
 }
 
 impl<'a> VisitMut<'a> for MyTransformer<'a> {
     fn visit_expression(&mut self, expr: &mut Expression<'a>) {
-        // Detect the expression type which you want to modify when changing from one enum variant to another.
-        if let Expression::BinaryExpression(bin_expr) = expr
+        if let Expression::BinaryExpression(binary) = expr
             && let (
                 BinaryOperator::Addition,
-                Expression::StringLiteral(sl),
-                Expression::StringLiteral(sr),
-            ) = (bin_expr.operator, &bin_expr.left, &bin_expr.right)
+                Expression::StringLiteral(left),
+                Expression::StringLiteral(right),
+            ) = (binary.operator, &binary.left, &binary.right)
         {
             let value = Str::from_strs_array_in(
-                [sl.value.as_str(), sr.value.as_str()],
-                self.builder.allocator,
+                [left.value.as_str(), right.value.as_str()],
+                self.builder,
             );
-            *expr = self.builder.expression_string_literal(SPAN, value, None);
+            *expr = Expression::new_string_literal(SPAN, value, None, self.builder);
         }
 
         walk_mut::walk_expression(self, expr);
@@ -144,17 +145,15 @@ impl<'a> VisitMut<'a> for MyTransformer<'a> {
 For example, to modify a binary expression without changing its type:
 
 ```rust
-use oxc_ast::AstBuilder;
+use oxc_ast::ast::{BinaryExpression, BinaryOperator};
 use oxc_ast_visit::{VisitMut, walk_mut};
 
-struct MyTransformer<'a> {
-    pub builder: &'a AstBuilder<'a>,
-}
+struct MyTransformer;
 
-impl<'a> VisitMut<'a> for MyTransformer<'a> {
+impl<'a> VisitMut<'a> for MyTransformer {
     fn visit_binary_expression(&mut self, expr: &mut BinaryExpression<'a>) {
         if expr.operator == BinaryOperator::Addition {
-            // Modify the AST node. You can modify only left/right and operator parts, not the type of expression itself.
+            // Modify expr.left, expr.right, or expr.operator.
         }
         walk_mut::walk_binary_expression(self, expr);
     }
