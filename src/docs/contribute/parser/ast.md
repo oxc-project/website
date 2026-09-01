@@ -84,14 +84,18 @@ Benefits:
 Use the generated visitor for AST traversal:
 
 ```rust
-use oxc_ast::visit::{Visit, walk_mut};
+use oxc_ast::ast::Function;
+use oxc_ast_visit::{Visit, walk};
+use oxc_syntax::scope::ScopeFlags;
 
 struct MyVisitor;
 
 impl<'a> Visit<'a> for MyVisitor {
-    fn visit_function_declaration(&mut self, func: &FunctionDeclaration<'a>) {
-        println!("Found function: {:?}", func.id);
-        walk_mut::walk_function_declaration(self, func);
+    fn visit_function(&mut self, func: &Function<'a>, flags: ScopeFlags) {
+        if func.is_function_declaration() {
+            println!("Found function: {:?}", func.id);
+        }
+        walk::walk_function(self, func, flags);
     }
 }
 
