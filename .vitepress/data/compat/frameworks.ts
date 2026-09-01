@@ -124,6 +124,13 @@ export const frameworks: Framework[] = [
     website: "https://svelte.dev/docs/kit",
   },
   {
+    id: "solidstart",
+    name: "SolidStart",
+    category: "meta-framework",
+    icon: "tabler:brand-solidjs", // Using Tabler icon for SolidStart as there is no official icon. TODO: Replace with official icon when available.
+    website: "https://start.solidjs.com/",
+  },
+  {
     id: "tanstack-start",
     name: "TanStack Start",
     category: "meta-framework",

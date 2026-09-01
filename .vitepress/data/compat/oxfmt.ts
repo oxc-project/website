@@ -101,6 +101,12 @@ export const oxfmtEntries: CompatEntry[] = [
     status: { level: "full", ...needsSvelteCompiler },
   },
   {
+    frameworkId: "solidstart",
+    toolId: "oxfmt",
+    featureId: "format",
+    status: { level: "full" },
+  },
+  {
     frameworkId: "tanstack-start",
     toolId: "oxfmt",
     featureId: "format",

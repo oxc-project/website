@@ -173,6 +173,12 @@ export const oxlintEntries: CompatEntry[] = [
     status: { level: "partial", ...noTemplateLintNote },
   },
   {
+    frameworkId: "solidstart",
+    toolId: "oxlint",
+    featureId: "lint",
+    status: { level: "full", ...solidRulesNote },
+  },
+  {
     frameworkId: "tanstack-start",
     toolId: "oxlint",
     featureId: "lint",
