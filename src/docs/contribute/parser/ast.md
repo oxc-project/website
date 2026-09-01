@@ -269,15 +269,15 @@ For comparing with other parsers, use [ast-explorer.dev](https://ast-explorer.de
 The AST is designed for cache efficiency:
 
 ```rust
-// Good: Compact representation
-struct CompactNode<'a> {
-    span: Span,           // 8 bytes
-    flags: u8,            // 1 byte
-    name: Atom<'a>,       // 8 bytes
+// Good: Box large enum payloads
+pub enum Expression<'a> {
+    NumericLiteral(Box<'a, NumericLiteral<'a>>) = 2,
+    StringLiteral(Box<'a, StringLiteral<'a>>) = 5,
+    // ... other variants
 }
 
-// Avoid: Large enums without boxing
-enum LargeEnum {
+// Avoid: Store large payloads inline
+pub enum LargeEnum {
     Small,
     Large { /* 200 bytes of data */ },
 }
@@ -288,11 +288,13 @@ enum LargeEnum {
 All AST nodes are allocated in the arena:
 
 ```rust
-// Automatically handled by #[ast] macro
-let node = self.ast.alloc(MyNode {
-    span: SPAN,
-    value: 42,
-});
+let node = Expression::new_numeric_literal(
+    SPAN,
+    42.0,
+    None,
+    NumberBase::Decimal,
+    &ast,
+);
 ```
 
 ### Enum Size Testing
@@ -300,10 +302,11 @@ let node = self.ast.alloc(MyNode {
 We enforce small enum sizes:
 
 ```rust
-#[cfg(all(target_arch = "x86_64", target_pointer_width = "64"))]
+#[cfg(target_pointer_width = "64")]
 #[test]
-fn no_bloat_enum_sizes() {
+fn size_asserts() {
     use std::mem::size_of;
+
     assert_eq!(size_of::<Statement>(), 16);
     assert_eq!(size_of::<Expression>(), 16);
     assert_eq!(size_of::<Declaration>(), 16);
@@ -318,11 +321,15 @@ Add custom attributes for specific tools:
 
 ```rust
 #[ast(visit)]
-#[cfg_attr(feature = "serialize", derive(Serialize))]
+#[derive(Debug)]
+#[generate_derive(CloneIn, Dummy, ReplaceWith, TakeIn)]
+#[generate_derive(ContentEq, ESTree, GetSpan, GetSpanMut, UnstableAddress)]
 pub struct MyNode<'a> {
-    #[cfg_attr(feature = "serialize", serde(skip))]
+    pub node_id: Cell<NodeId>,
+    pub span: Span,
+    #[estree(skip)]
     pub internal_data: u32,
-    pub public_field: Atom<'a>,
+    pub public_field: Str<'a>,
 }
 ```
 
@@ -333,9 +340,9 @@ Link AST nodes with semantic information:
 ```rust
 #[ast(visit)]
 pub struct IdentifierReference<'a> {
+    pub node_id: Cell<NodeId>,
     pub span: Span,
-    pub name: Atom<'a>,
-    #[ast(ignore)]
+    pub name: Ident<'a>,
     pub reference_id: Cell<Option<ReferenceId>>,
 }
 ```
@@ -349,7 +356,7 @@ This allows tools to access binding information, scope context, and type informa
 Use the debug formatter to inspect AST:
 
 ```rust
-println!("{:#?}", ast_node);
+println!("{ast_node:#?}");
 ```
 
 ### Span Information
@@ -357,6 +364,8 @@ println!("{:#?}", ast_node);
 Track source locations for error reporting:
 
 ```rust
+use oxc_span::GetSpan;
+
 let span = node.span();
 println!("Error at {}:{}", span.start, span.end);
 ```
