@@ -41,15 +41,11 @@ Every AST node follows a consistent pattern:
 
 ```rust
 #[ast(visit)]
-pub struct FunctionDeclaration<'a> {
+pub struct IdentifierReference<'a> {
+    pub node_id: Cell<NodeId>,
     pub span: Span,
-    pub id: Option<BindingIdentifier<'a>>,
-    pub generator: bool,
-    pub r#async: bool,
-    pub params: FormalParameters<'a>,
-    pub body: Option<FunctionBody<'a>>,
-    pub type_parameters: Option<TSTypeParameterDeclaration<'a>>,
-    pub return_type: Option<TSTypeAnnotation<'a>>,
+    pub name: Ident<'a>,
+    pub reference_id: Cell<Option<ReferenceId>>,
 }
 ```
 
@@ -65,9 +61,11 @@ The AST uses a memory arena for efficient allocation:
 
 ```rust
 use oxc_allocator::Allocator;
+use oxc_parser::Parser;
 
 let allocator = Allocator::default();
-let ast = parser.parse(&allocator, source_text, source_type)?;
+let parsed = Parser::new(&allocator, source_text, source_type).parse();
+let ast = parsed.program;
 ```
 
 Benefits:
@@ -111,29 +109,32 @@ visitor.visit_program(&program);
 For example, to transform binary addition of string literals into a single string literal:
 
 ```rust
-use oxc_ast::AstBuilder;
+use oxc_ast::{
+    ast::{BinaryOperator, Expression},
+    builder::AstBuilder,
+};
 use oxc_ast_visit::{VisitMut, walk_mut};
+use oxc_span::SPAN;
 use oxc_str::Str;
 
 struct MyTransformer<'a> {
-    pub builder: &'a AstBuilder<'a>,
+    builder: &'a AstBuilder<'a>,
 }
 
 impl<'a> VisitMut<'a> for MyTransformer<'a> {
     fn visit_expression(&mut self, expr: &mut Expression<'a>) {
-        // Detect the expression type which you want to modify when changing from one enum variant to another.
-        if let Expression::BinaryExpression(bin_expr) = expr
+        if let Expression::BinaryExpression(binary) = expr
             && let (
                 BinaryOperator::Addition,
-                Expression::StringLiteral(sl),
-                Expression::StringLiteral(sr),
-            ) = (bin_expr.operator, &bin_expr.left, &bin_expr.right)
+                Expression::StringLiteral(left),
+                Expression::StringLiteral(right),
+            ) = (binary.operator, &binary.left, &binary.right)
         {
             let value = Str::from_strs_array_in(
-                [sl.value.as_str(), sr.value.as_str()],
-                self.builder.allocator,
+                [left.value.as_str(), right.value.as_str()],
+                self.builder,
             );
-            *expr = self.builder.expression_string_literal(SPAN, value, None);
+            *expr = Expression::new_string_literal(SPAN, value, None, self.builder);
         }
 
         walk_mut::walk_expression(self, expr);
@@ -144,17 +145,15 @@ impl<'a> VisitMut<'a> for MyTransformer<'a> {
 For example, to modify a binary expression without changing its type:
 
 ```rust
-use oxc_ast::AstBuilder;
+use oxc_ast::ast::{BinaryExpression, BinaryOperator};
 use oxc_ast_visit::{VisitMut, walk_mut};
 
-struct MyTransformer<'a> {
-    pub builder: &'a AstBuilder<'a>,
-}
+struct MyTransformer;
 
-impl<'a> VisitMut<'a> for MyTransformer<'a> {
+impl<'a> VisitMut<'a> for MyTransformer {
     fn visit_binary_expression(&mut self, expr: &mut BinaryExpression<'a>) {
         if expr.operator == BinaryOperator::Addition {
-            // Modify the AST node. You can modify only left/right and operator parts, not the type of expression itself.
+            // Modify expr.left, expr.right, or expr.operator.
         }
         walk_mut::walk_binary_expression(self, expr);
     }
@@ -168,18 +167,23 @@ impl<'a> VisitMut<'a> for MyTransformer<'a> {
 Use the AST builder for creating nodes:
 
 ```rust
-use oxc_ast::AstBuilder;
+use oxc_ast::{
+    ast::{BinaryOperator, Expression},
+    builder::AstBuilder,
+};
+use oxc_span::SPAN;
 
 let ast = AstBuilder::new(&allocator);
 
 // Create a binary expression: a + b
-let left = ast.expression_identifier_reference(SPAN, "a");
-let right = ast.expression_identifier_reference(SPAN, "b");
-let expr = ast.expression_binary_expression(
+let left = Expression::new_identifier(SPAN, "a", &ast);
+let right = Expression::new_identifier(SPAN, "b", &ast);
+let expr = Expression::new_binary_expression(
     SPAN,
     left,
     BinaryOperator::Addition,
     right,
+    &ast,
 );
 ```
 
@@ -188,13 +192,20 @@ let expr = ast.expression_binary_expression(
 Common patterns are provided as helpers:
 
 ```rust
-impl<'a> AstBuilder<'a> {
-    pub fn expression_numeric_literal(&self, span: Span, value: f64) -> Expression<'a> {
-        self.alloc(Expression::NumericLiteral(
-            self.alloc(NumericLiteral { span, value, raw: None })
-        ))
-    }
-}
+use oxc_ast::{
+    ast::{Expression, NumberBase},
+    builder::AstBuilder,
+};
+use oxc_span::SPAN;
+
+let ast = AstBuilder::new(&allocator);
+let number = Expression::new_numeric_literal(
+    SPAN,
+    42.0,
+    None,
+    NumberBase::Decimal,
+    &ast,
+);
 ```
 
 ## Development Workflow
@@ -205,9 +216,13 @@ impl<'a> AstBuilder<'a> {
 
    ```rust
    #[ast(visit)]
+   #[derive(Debug)]
+   #[generate_derive(CloneIn, Dummy, ReplaceWith, TakeIn)]
+   #[generate_derive(ContentEq, ESTree, GetSpan, GetSpanMut, UnstableAddress)]
    pub struct MyNewNode<'a> {
+       pub node_id: Cell<NodeId>,
        pub span: Span,
-       pub name: Atom<'a>,
+       pub name: Ident<'a>,
        pub value: Expression<'a>,
    }
    ```
@@ -217,7 +232,7 @@ impl<'a> AstBuilder<'a> {
    ```rust
    pub enum Statement<'a> {
        // ... existing variants
-       MyNewStatement(Box<'a, MyNewNode<'a>>),
+       MyNewStatement(Box<'a, MyNewNode<'a>>) = 18,
    }
    ```
 
@@ -229,8 +244,8 @@ impl<'a> AstBuilder<'a> {
 
 4. **Implement parsing logic**:
    ```rust
-   impl<'a> Parser<'a> {
-       fn parse_my_new_node(&mut self) -> Result<MyNewNode<'a>> {
+   impl<'a, C: ParserConfig> ParserImpl<'a, C> {
+       fn parse_my_new_statement(&mut self) -> Statement<'a> {
            // Parsing implementation
        }
    }
@@ -254,15 +269,15 @@ For comparing with other parsers, use [ast-explorer.dev](https://ast-explorer.de
 The AST is designed for cache efficiency:
 
 ```rust
-// Good: Compact representation
-struct CompactNode<'a> {
-    span: Span,           // 8 bytes
-    flags: u8,            // 1 byte
-    name: Atom<'a>,       // 8 bytes
+// Good: Box large enum payloads
+pub enum Expression<'a> {
+    NumericLiteral(Box<'a, NumericLiteral<'a>>) = 2,
+    StringLiteral(Box<'a, StringLiteral<'a>>) = 5,
+    // ... other variants
 }
 
-// Avoid: Large enums without boxing
-enum LargeEnum {
+// Avoid: Store large payloads inline
+pub enum LargeEnum {
     Small,
     Large { /* 200 bytes of data */ },
 }
@@ -273,11 +288,13 @@ enum LargeEnum {
 All AST nodes are allocated in the arena:
 
 ```rust
-// Automatically handled by #[ast] macro
-let node = self.ast.alloc(MyNode {
-    span: SPAN,
-    value: 42,
-});
+let node = Expression::new_numeric_literal(
+    SPAN,
+    42.0,
+    None,
+    NumberBase::Decimal,
+    &ast,
+);
 ```
 
 ### Enum Size Testing
@@ -285,10 +302,11 @@ let node = self.ast.alloc(MyNode {
 We enforce small enum sizes:
 
 ```rust
-#[cfg(all(target_arch = "x86_64", target_pointer_width = "64"))]
+#[cfg(target_pointer_width = "64")]
 #[test]
-fn no_bloat_enum_sizes() {
+fn size_asserts() {
     use std::mem::size_of;
+
     assert_eq!(size_of::<Statement>(), 16);
     assert_eq!(size_of::<Expression>(), 16);
     assert_eq!(size_of::<Declaration>(), 16);
@@ -303,11 +321,15 @@ Add custom attributes for specific tools:
 
 ```rust
 #[ast(visit)]
-#[cfg_attr(feature = "serialize", derive(Serialize))]
+#[derive(Debug)]
+#[generate_derive(CloneIn, Dummy, ReplaceWith, TakeIn)]
+#[generate_derive(ContentEq, ESTree, GetSpan, GetSpanMut, UnstableAddress)]
 pub struct MyNode<'a> {
-    #[cfg_attr(feature = "serialize", serde(skip))]
+    pub node_id: Cell<NodeId>,
+    pub span: Span,
+    #[estree(skip)]
     pub internal_data: u32,
-    pub public_field: Atom<'a>,
+    pub public_field: Str<'a>,
 }
 ```
 
@@ -318,9 +340,9 @@ Link AST nodes with semantic information:
 ```rust
 #[ast(visit)]
 pub struct IdentifierReference<'a> {
+    pub node_id: Cell<NodeId>,
     pub span: Span,
-    pub name: Atom<'a>,
-    #[ast(ignore)]
+    pub name: Ident<'a>,
     pub reference_id: Cell<Option<ReferenceId>>,
 }
 ```
@@ -334,7 +356,7 @@ This allows tools to access binding information, scope context, and type informa
 Use the debug formatter to inspect AST:
 
 ```rust
-println!("{:#?}", ast_node);
+println!("{ast_node:#?}");
 ```
 
 ### Span Information
@@ -342,6 +364,8 @@ println!("{:#?}", ast_node);
 Track source locations for error reporting:
 
 ```rust
+use oxc_span::GetSpan;
+
 let span = node.span();
 println!("Error at {}:{}", span.start, span.end);
 ```
