@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.10.1"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-min-max.md"
 ---
 

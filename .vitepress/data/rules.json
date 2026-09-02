@@ -2065,7 +2065,7 @@
     "category": "suspicious",
     "version": "0.16.1",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-empty-named-blocks.html"
   },
@@ -3585,7 +3585,7 @@
     "category": "correctness",
     "version": "0.2.1",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-typos.html"
   },
@@ -7115,7 +7115,7 @@
     "category": "pedantic",
     "version": "0.10.1",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-min-max.html"
   },

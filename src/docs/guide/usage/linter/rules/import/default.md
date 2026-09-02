@@ -48,7 +48,7 @@ Examples of **correct** code for this rule:
 
 ```javascript
 // ./bar.js
-export default function bar() {
+export function bar() {
   return null;
 }
 
