@@ -46,7 +46,59 @@ Passing an explicit config file location using `-c` or `--config` disables neste
 
 You can also disable nested configs with the `--disable-nested-config` flag.
 
-`options.typeAware` and `options.typeCheck` are root-config-only. If either is set in a nested config file, Oxlint reports an error.
+## Linter options in nested configs
+
+Most `options` are resolved per file, from the config that governs it, falling back to the root config when the nested config leaves them unset:
+
+- `options.typeAware` — type-aware linting is enabled only for the files the config governs. This lets a single package in a monorepo opt into type-aware rules without slowing down the rest of the repository.
+- `options.reportUnusedDisableDirectives`
+- `options.respectEslintDisableDirectives`
+
+CLI flags and editor settings still take precedence over every config, and apply to every file. `oxlint --type-aware` runs type-aware linting on the whole repository, including the packages whose config does not set `options.typeAware`.
+
+Two options cannot be scoped to a directory:
+
+- `options.denyWarnings` and `options.maxWarnings` decide the exit code of the whole run. They are only supported in the root config. Setting either in a nested config prints a warning and ignores that option; the rest of the config still applies.
+- `options.typeCheck` is reported per run by `tsgolint`, not per directory. Setting it in a nested config enables type checking for the whole run, and prints a warning saying so. It belongs in the root config.
+
+### Type-aware linting for a single package
+
+```
+my-project/
+├── .oxlintrc.json
+├── package1/
+│   ├── .oxlintrc.json
+│   └── index.ts
+└── package2/
+    └── index.ts
+```
+
+::: code-group
+
+```json [my-project/.oxlintrc.json]
+{
+  "rules": {
+    "no-debugger": "error"
+  }
+}
+```
+
+```json [my-project/package1/.oxlintrc.json]
+{
+  "extends": ["../.oxlintrc.json"],
+  "plugins": [],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "typescript/no-floating-promises": "error"
+  }
+}
+```
+
+:::
+
+`package1/index.ts` is linted with type-aware rules, `package2/index.ts` is not.
 
 ## Monorepo pattern: share a base config with extends
 
