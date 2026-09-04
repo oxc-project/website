@@ -86,6 +86,8 @@ When enabled, Oxlint runs standard rules and type-aware rules in the `typescript
 
 `options.typeAware` can also be set in a [nested config](./nested-config), where it enables type-aware linting only for the files that config governs. This is how a single package in a monorepo opts in. `--type-aware` still applies to every file.
 
+It is not inherited from the root config: a package config that does not set it, and does not `extends` a config that does, runs no type-aware rules — Oxlint warns when such a config enables type-aware rules anyway. This keeps a file's result independent of which directory Oxlint was started from.
+
 `options.typeCheck` is different: `tsgolint` reports type checking diagnostics per run, not per directory, so setting it in a nested config enables it for the whole run and Oxlint warns about it. Keep it in the root config file.
 
 In editor and LSP-based integrations like VS Code, type-aware linting can be enabled by setting the `typeAware` option to `true`, see the [Editors](./editors) page for more information.
