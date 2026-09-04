@@ -48,13 +48,19 @@ You can also disable nested configs with the `--disable-nested-config` flag.
 
 ## Linter options in nested configs
 
-Most `options` are resolved per file, from the config that governs it, falling back to the root config when the nested config leaves them unset:
+Most `options` are resolved from the config that governs the file:
 
 - `options.typeAware` — type-aware linting is enabled only for the files the config governs. This lets a single package in a monorepo opt into type-aware rules without slowing down the rest of the repository.
 - `options.reportUnusedDisableDirectives`
 - `options.respectEslintDisableDirectives`
 
-CLI flags and editor settings still take precedence over every config, and apply to every file. `oxlint --type-aware` runs type-aware linting on the whole repository, including the packages whose config does not set `options.typeAware`.
+These options are **not** inherited from the root config. An option a config does not set takes its default, so a file is linted the same way whether you open the repository root or the package folder on its own, and whether CI runs Oxlint from the root or from the package. To share an option across packages, put it in a config the package files `extends`; a package config can still override it.
+
+CLI flags and editor settings take precedence over every config, and apply to every file. `oxlint --type-aware` runs type-aware linting on the whole repository, including the packages whose config does not set `options.typeAware`.
+
+::: warning
+A nested config that enables type-aware rules without setting `options.typeAware` — and without extending a config that does — runs none of them. Oxlint prints a warning naming the rules when this happens.
+:::
 
 Two options cannot be scoped to a directory:
 
@@ -99,6 +105,18 @@ my-project/
 :::
 
 `package1/index.ts` is linted with type-aware rules, `package2/index.ts` is not.
+
+For the opposite — type-aware everywhere except one package — move `"options": { "typeAware": true }` into `my-project/.oxlintrc.json`, give every package a config that extends it, and turn the option off in the one package that should opt out:
+
+```json [my-project/package2/.oxlintrc.json]
+{
+  "extends": ["../.oxlintrc.json"],
+  "plugins": [],
+  "options": {
+    "typeAware": false
+  }
+}
+```
 
 ## Monorepo pattern: share a base config with extends
 
