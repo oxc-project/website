@@ -10,7 +10,7 @@ catalog:
   vite-plus: ^0.3.0
 overrides:
   vite: npm:@voidzero-dev/vite-plus-core@latest
-  vitest: 4.1.11
+  vitest: 5.0.0
   esbuild: 0.28.2
 peerDependencyRules:
   allowAny:
