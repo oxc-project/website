@@ -766,7 +766,7 @@
     "version": "1.66.0",
     "type_aware": false,
     "fix": "none",
-    "default": true,
+    "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implied-eval.html"
   },
   {
@@ -5976,7 +5976,7 @@
     "version": "0.0.8",
     "type_aware": true,
     "fix": "none",
-    "default": true,
+    "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-string-starts-ends-with.html"
   },
   {
@@ -8406,7 +8406,7 @@
     "version": "1.70.0",
     "type_aware": false,
     "fix": "none",
-    "default": true,
+    "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vue/no-dupe-keys.html"
   },
   {

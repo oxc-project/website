@@ -25,6 +25,9 @@ Accessible means that it is not hidden using the `aria-hidden` prop.
 
 Alternatively, you may use the `title` prop or the `aria-label` prop.
 
+Anchors passed directly as JSX prop values to custom components are ignored,
+since the receiving component may supply their content.
+
 ### Why is this bad?
 
 Anchor elements without content can be confusing for users relying
@@ -40,6 +43,7 @@ Examples of **correct** code for this rule:
 <a dangerouslySetInnerHTML={{ __html: 'foo' }} />
 <a title='foo' />
 <a aria-label='foo' />
+<Button render={<a href='/home' />}>Home</Button>
 ```
 
 Examples of **incorrect** code for this rule:

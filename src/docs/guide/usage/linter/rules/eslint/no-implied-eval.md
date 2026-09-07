@@ -3,7 +3,7 @@ title: "eslint/no-implied-eval | Oxlint"
 rule: "eslint/no-implied-eval"
 category: "Suspicious"
 version: "1.66.0"
-default: true
+default: false
 type_aware: false
 fix: "none"
 upstream: "https://eslint.org/docs/latest/rules/no-implied-eval"
