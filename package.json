@@ -7,7 +7,6 @@
     "dev": "vitepress dev",
     "prebuild": "pnpm run sponsors",
     "build": "vitepress build",
-    "build:cloudflare": "pnpm prebuild && pnpm build",
     "preview": "vitepress preview",
     "lint": "vp lint --deny-warnings",
     "lint:fix": "vp run lint --fix && typos -w",
