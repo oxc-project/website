@@ -3,7 +3,7 @@
   "entry": [".vitepress/config/index.ts", "src/**/*.md!", ".vitepress/theme/**/*.vue!"],
   "project": [".vitepress/**/*.{ts,vue}", "src/**/*.md"],
   "ignore": [".vitepress/cache/**", ".vitepress/dist/**", "build/**"],
-  "ignoreDependencies": ["esbuild"],
+  "ignoreDependencies": ["esbuild", "wrangler"],
   "ignoreBinaries": ["typos"],
   "ignoreExportsUsedInFile": true,
   "ignoreIssues": {
