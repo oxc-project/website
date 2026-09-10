@@ -47,6 +47,19 @@ while (!done) {
 }
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### checkConditionalExpressions
+
+type: `boolean`
+
+default: `false`
+
+Whether references in each branch of a conditional expression should be checked
+independently instead of checking the result of the entire expression.
+
 ## How to use
 
 <RuleHowToUse />

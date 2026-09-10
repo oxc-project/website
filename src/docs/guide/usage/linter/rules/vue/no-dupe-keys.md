@@ -3,7 +3,7 @@ title: "vue/no-dupe-keys | Oxlint"
 rule: "vue/no-dupe-keys"
 category: "Correctness"
 version: "1.70.0"
-default: true
+default: false
 type_aware: false
 fix: "none"
 upstream: "https://eslint.vuejs.org/rules/no-dupe-keys.html"

@@ -3,7 +3,7 @@ title: "typescript/prefer-string-starts-ends-with | Oxlint"
 rule: "typescript/prefer-string-starts-ends-with"
 category: "Style"
 version: "0.0.8"
-default: true
+default: false
 type_aware: true
 fix: "none"
 upstream: "https://typescript-eslint.io/rules/prefer-string-starts-ends-with/"
