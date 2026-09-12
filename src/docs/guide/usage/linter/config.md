@@ -573,6 +573,7 @@ export default defineConfig({
 
 - [Ignore files](/docs/guide/usage/linter/ignore-files): Ignore files and patterns, `.gitignore` and `.eslintignore` workflows, and symlink behavior.
 - [Inline ignore comments](/docs/guide/usage/linter/ignore-comments): Inline suppressions and scoped exceptions.
+- [Bulk suppressions](/docs/guide/usage/linter/bulk-suppressions): Suppress rules that have existing errors so you can incrementally fix them later.
 - [Nested configs](/docs/guide/usage/linter/nested-config): Monorepos and per-package configuration.
 - [Config file reference](/docs/guide/usage/linter/config-file-reference.html): Full schema and field documentation.
 - [CLI reference](/docs/guide/usage/linter/cli.html): Complete list of flags and output formats.
