@@ -101,10 +101,13 @@ If set, it disables auto discovery for tsconfig files.
 type: `boolean`
 
 Whether to enable/disable type-aware linting.
-It will override the root config's `typeAware` option if set.
+If set, it applies to every file and overrides the `typeAware` option of every config.
+If unset, each file follows the `typeAware` option of the config which governs it.
 
 ## unusedDisableDirectives
 
 type: `"allow" | "warn" | "deny"`
 
 How to handle unused disable directives. By default, they are allowed and ignored.
+If unset, the `reportUnusedDisableDirectives` option of the config which governs each file
+is used.
