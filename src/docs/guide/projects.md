@@ -7,34 +7,35 @@ outline: deep
 
 ## Oxlint / Oxfmt / Both
 
-- [Google Neuroglancer](https://github.com/google/neuroglancer) (Oxlint) - WebGL volumetric data visualization tool
-- [Shopify](https://www.shopify.com/news/performance%F0%9F%91%86-complexity%F0%9F%91%87-killer-updates-from-shopify-engineering) (Oxlint) - Reduced hour of workload to seconds
+- [Sentry](https://github.com/getsentry/sentry) (Both) - Error tracking and performance monitoring application
+- [Vue.js](https://github.com/vuejs/core) (Both) - The progressive JavaScript framework
+- [Kibana](https://github.com/elastic/kibana) (Oxlint) - Data visualization tool for Elasticsearch
+- [Electron](https://github.com/electron/electron) (Both) - Framework for cross-platform apps
 - [Cloudflare Agents](https://github.com/cloudflare/agents) (Both) - Cloudflare Agents SDK
-- [BBC Simorgh](https://github.com/bbc/simorgh) (Oxlint) - BBC online rendering platform
+- [Renovate](https://github.com/renovatebot/renovate) (Oxlint) - Dependency update automation bot
+- [Bluesky](https://github.com/bluesky-social/social-app) (Oxlint) - Social media network
+- [Shopify](https://www.shopify.com/news/performance%F0%9F%91%86-complexity%F0%9F%91%87-killer-updates-from-shopify-engineering) (Oxlint) - Reduced hour of workload to seconds
+- [Google Neuroglancer](https://github.com/google/neuroglancer) (Oxlint) - WebGL volumetric data visualization tool
 - [Turborepo](https://github.com/vercel/turborepo) (Both) - High-performance build system for JavaScript and TypeScript codebases
 - [Sentry JavaScript](https://github.com/getsentry/sentry-javascript) (Both) - Official Sentry SDKs for JavaScript
-- [Vue.js](https://github.com/vuejs/core) (Both) - The progressive JavaScript framework
 - [Hugging Face JS](https://github.com/huggingface/huggingface.js) (Oxfmt) - Hugging Face JS libraries
 - [Bun](https://github.com/oven-sh/bun) (Oxlint) - JavaScript runtime and toolkit
 - [Mastodon](https://github.com/mastodon/mastodon) (Oxfmt) - Decentralized social networking server
 - [Preact](https://github.com/preactjs/preact) (Oxlint) - Fast 3kB React alternative with the same modern API
-- [PostHog](https://github.com/PostHog/posthog) (Oxlint) - Open-source product analytics platform
+- [PostHog](https://github.com/PostHog/posthog) (Both) - Open-source product analytics platform
 - [Lichess](https://github.com/lichess-org/lila) (Both) - Lichess chess server/frontend
 - [Rolldown](https://github.com/rolldown/rolldown) (Both) - Rust bundler in the VoidZero/Vite ecosystem
-- [Renovate](https://github.com/renovatebot/renovate) (Oxlint) - Dependency update automation bot
 - [Vue Pinia](https://github.com/vuejs/pinia) (Oxfmt) - Vue's official state management library
-- [AFFiNE](https://github.com/toeverything/affine) (Oxlint) - Next-gen knowledge base
+- [AFFiNE](https://github.com/toeverything/affine) (Both) - Next-gen knowledge base
 - [FormatJS](https://github.com/formatjs/formatjs) (Both) - JavaScript internationalization libraries
 - [napi-rs](https://github.com/napi-rs/napi-rs) (Oxlint) - A framework for building compiled Node.js add-ons in Rust via Node-API
 - [ComfyUI Frontend](https://github.com/Comfy-Org/ComfyUI_frontend) (Oxfmt) - Frontend for ComfyUI
 - [Actual](https://github.com/actualbudget/actual) (Both) - Open-source budgeting app
 - [Hey API](https://heyapi.dev/) (Oxlint) - OpenAPI to TypeScript codegen ecosystem
-- [nuxt-auth](https://github.com/sidebase/nuxt-auth) (Oxlint) - Authentication built for Nuxt 3
 - [OpenClaw](https://github.com/openclaw/openclaw) (Both) - Open source personal AI assistant
 - [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Both) - npm package explorer
-- [Bluesky](https://github.com/bluesky-social/social-app) (Oxlint) - Social media network
-- [Electron](https://github.com/electron/electron) (Both) - Framework for cross-platform apps
 - [SWR](https://github.com/vercel/swr) (Both) - Library for data fetching in React
+- [Redux](https://github.com/reduxjs/redux) (Both) - State management for JavaScript applications
 
 ## Resolver
 

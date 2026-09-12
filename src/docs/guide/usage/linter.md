@@ -153,7 +153,8 @@ See the [compatibility matrix](/compatibility) for detailed framework support.
 Oxlint is used in production by popular projects such as:
 
 - [elastic/kibana](https://github.com/elastic/kibana)
-- [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript)
+- [getsentry/sentry](https://github.com/getsentry/sentry)
+- [electron/electron](https://github.com/electron/electron)
 - [renovatebot/renovate](https://github.com/renovatebot/renovate)
 - [preactjs/preact](https://github.com/preactjs/preact)
 - [date-fns/date-fns](https://github.com/date-fns/date-fns)
