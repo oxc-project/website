@@ -8,6 +8,7 @@ A high-performance minifier that shrinks your code by removing unused code and t
 - [Transforms syntaxes to make the output shorter and repetitive.](./minifier/syntax-normalization)
 - [Mangle variable names and selected property names.](./minifier/mangling)
 - [Remove whitespace and comments.](./minifier/whitespace-stripping)
+- [Escape non-ASCII characters.](./minifier/ascii-only)
 
 ## Assumptions
 

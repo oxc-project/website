@@ -269,6 +269,10 @@ export const enConfig = defineLocaleConfig("root", {
               link: "/docs/guide/usage/minifier/whitespace-stripping",
             },
             {
+              text: "ASCII Escaping",
+              link: "/docs/guide/usage/minifier/ascii-only",
+            },
+            {
               text: "FAQ",
               link: "/docs/guide/usage/minifier/faq",
             },
