@@ -1,8 +1,18 @@
-# ASCII Escaping
+# Code Generation
+
+The `codegen` options control how Oxc minifier prints the output.
+
+## Whitespace Stripping
+
+Oxc minifier removes whitespace by default. Set `codegen.removeWhitespace` to `false` to keep the output formatted.
+
+Comments are removed by default. Use `codegen.legalComments` to control whether legal comments are preserved, moved to the end of the file, or extracted.
+
+## ASCII Escaping
 
 Set `codegen.asciiOnly` to `true` to escape non-ASCII characters in string literals, untagged template literals, regular expression literals, and identifier names. The option defaults to `false` and works with or without whitespace stripping.
 
-## Node.js
+### Node.js
 
 ```js
 import { minifySync } from "oxc-minify";
@@ -25,7 +35,7 @@ export let \u03C0 = "\u2615";
 
 The async `minify` function accepts the same option.
 
-## Rust
+### Rust
 
 Set `ascii_only` on `oxc_codegen::CodegenOptions` when generating code:
 
@@ -40,7 +50,7 @@ let output = Codegen::new()
     .build(&program);
 ```
 
-## Escapes and Limitations
+### Escapes and Limitations
 
 Characters up to U+FFFF use `\uXXXX` escapes. Higher code points use `\u{...}` escapes, which require ES2015 or later. This option does not provide ES5-compatible output.
 
