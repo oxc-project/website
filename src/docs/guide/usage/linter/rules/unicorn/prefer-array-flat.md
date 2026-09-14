@@ -36,11 +36,9 @@ Examples of **incorrect** code for this rule:
 const foo = array.flatMap((x) => x);
 const foo = array.reduce((a, b) => a.concat(b), []);
 const foo = array.reduce((a, b) => [...a, ...b], []);
-const foo = [].concat(maybeArray);
 const foo = [].concat(...array);
 const foo = [].concat.apply([], array);
 const foo = Array.prototype.concat.apply([], array);
-const foo = Array.prototype.concat.call([], maybeArray);
 const foo = Array.prototype.concat.call([], ...array);
 ```
 
