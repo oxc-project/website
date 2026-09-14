@@ -31,7 +31,7 @@ While it is valid JavaScript to await a non-Promise-like value (it will resolve 
 
 Examples of **incorrect** code for this rule:
 
-```
+```ts
 await 12;
 await (() => {});
 
@@ -42,23 +42,27 @@ await { then() {} };
 // this is not a Promise - it's a function that returns a Promise
 declare const getPromise: () => Promise<string>;
 await getPromise;
+await getPromise;
+await getPromise;
 ```
 
 Examples of **correct** code for this rule:
 
-```
-await Promise.resolve('value');
+```ts
+await Promise.resolve("value");
 await Promise.reject(new Error());
 
 // Promise-like values
 await {
   then(onfulfilled, onrejected) {
-    onfulfilled('value');
+    onfulfilled("value");
   },
 };
 
 // this is a Promise - produced by calling a function
 declare const getPromise: () => Promise<string>;
+await getPromise();
+await getPromise();
 await getPromise();
 ```
 

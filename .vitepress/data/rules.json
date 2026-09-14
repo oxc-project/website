@@ -5635,7 +5635,7 @@
     "category": "suspicious",
     "version": "1.49.0",
     "type_aware": true,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-parameters.html"
   },
@@ -5835,7 +5835,7 @@
     "category": "style",
     "version": "1.49.0",
     "type_aware": true,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-find.html"
   },
@@ -6895,7 +6895,7 @@
     "category": "perf",
     "version": "0.0.14",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat-map.html"
   },
@@ -6925,7 +6925,7 @@
     "category": "pedantic",
     "version": "1.20.0",
     "type_aware": false,
-    "fix": "fixable_dangerous_fix",
+    "fix": "fixable_dangerous_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-at.html"
   },

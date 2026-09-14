@@ -70,7 +70,7 @@ Controls how digits are grouped and when separators are applied.
 
 type: `integer`
 
-default: `0`
+default: `4`
 
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
@@ -106,7 +106,7 @@ Controls how digits are grouped and when separators are applied.
 
 type: `integer`
 
-default: `0`
+default: `2`
 
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
@@ -148,7 +148,7 @@ The size a group of digits in the fractional part (after the decimal point) shou
 
 type: `integer`
 
-default: `0`
+default: `3`
 
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
@@ -157,7 +157,7 @@ For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
 
 type: `integer`
 
-default: `0`
+default: `5`
 
 The minimum number of digits required before grouping is applied.
 Values with fewer digits than this threshold will not be grouped.
@@ -184,7 +184,7 @@ Controls how digits are grouped and when separators are applied.
 
 type: `integer`
 
-default: `0`
+default: `4`
 
 The number of digits per group when inserting numeric separators.
 For example, a `groupLength` of 3 formats `1234567` as `1_234_567`.
