@@ -47,13 +47,13 @@ await getPromise;
 Examples of **correct** code for this rule:
 
 ```
-await Promise.resolve('value');
+await Promise.resolve("value");
 await Promise.reject(new Error());
 
 // Promise-like values
 await {
   then(onfulfilled, onrejected) {
-    onfulfilled('value');
+    onfulfilled("value");
   },
 };
 

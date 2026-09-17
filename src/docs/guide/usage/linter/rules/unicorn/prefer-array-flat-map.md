@@ -5,7 +5,7 @@ category: "Perf"
 version: "0.0.14"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_safe_fix_or_suggestion"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md"
 ---
 
@@ -20,11 +20,11 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Prefers the use of `.flatMap()` when `map().flat()` are used together.
+Prefers a single `.flatMap()` over `.map().flat()` or `.filter().flatMap()`.
 
 ### Why is this bad?
 
-It is slightly more efficient to use `.flatMap(…)` instead of `.map(…).flat()`.
+A single `.flatMap(…)` avoids creating an intermediate array.
 
 ### Examples
 
@@ -32,12 +32,14 @@ Examples of **incorrect** code for this rule:
 
 ```javascript
 const bar = [1, 2, 3].map((i) => [i]).flat();
+const result = values.filter((value) => value > 0).flatMap((value) => [value, value]);
 ```
 
 Examples of **correct** code for this rule:
 
 ```javascript
 const bar = [1, 2, 3].flatMap((i) => [i]);
+const result = values.flatMap((value) => (value > 0 ? [value, value] : []));
 ```
 
 ## How to use

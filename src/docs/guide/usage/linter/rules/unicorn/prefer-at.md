@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "1.20.0"
 default: false
 type_aware: false
-fix: "fixable_dangerous_fix"
+fix: "fixable_dangerous_fix_or_suggestion"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md"
 ---
 
@@ -25,6 +25,7 @@ Prefer the [`Array#at()`](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 methods for index access.
 
 This rule also discourages using [`String#charAt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt).
+It also checks `String#substring()` calls that extract a single character.
 
 ### Why is this bad?
 
