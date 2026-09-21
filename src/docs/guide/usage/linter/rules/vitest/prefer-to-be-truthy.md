@@ -5,7 +5,7 @@ category: "Style"
 version: "0.7.1"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md"
 ---
 
@@ -21,13 +21,14 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 This rule warns when `toBe(true)` is used with `expect` or `expectTypeOf`.
-With `--fix`, it will be replaced with `toBeTruthy()`.
+With `--fix-suggestions`, it will be replaced with `toBeTruthy()`.
 
 ### Why is this bad?
 
-Using `toBe(true)` is less flexible and may not account for other truthy
-values like non-empty strings or objects. `toBeTruthy()` checks for any
-truthy value, which makes the tests more comprehensive and robust.
+When testing for truthiness, `toBeTruthy()` expresses that intent directly.
+Unlike `toBe(true)`, it also accepts non-boolean truthy values such as
+non-empty strings and objects. The replacement is a suggestion because
+it changes which values pass the assertion.
 
 ### Examples
 
