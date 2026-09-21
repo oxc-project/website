@@ -2665,7 +2665,7 @@
     "category": "style",
     "version": "0.2.13",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-strict-equal.html"
   },
@@ -6735,7 +6735,7 @@
     "category": "pedantic",
     "version": "0.0.19",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-iife.html"
   },
@@ -8035,7 +8035,7 @@
     "category": "style",
     "version": "0.2.13",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-strict-equal.html"
   },
@@ -8055,7 +8055,7 @@
     "category": "style",
     "version": "0.7.1",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-be-falsy.html"
   },
@@ -8075,7 +8075,7 @@
     "category": "style",
     "version": "0.7.1",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-be-truthy.html"
   },

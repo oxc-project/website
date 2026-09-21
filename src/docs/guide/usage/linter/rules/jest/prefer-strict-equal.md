@@ -5,7 +5,7 @@ category: "Style"
 version: "0.2.13"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-strict-equal.md"
 ---
 

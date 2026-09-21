@@ -5,7 +5,7 @@ category: "Style"
 version: "0.7.1"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-falsy.md"
 ---
 
@@ -21,13 +21,14 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 This rule warns when `toBe(false)` is used with `expect` or `expectTypeOf`.
-With `--fix`, it will be replaced with `toBeFalsy()`.
+With `--fix-suggestions`, it will be replaced with `toBeFalsy()`.
 
 ### Why is this bad?
 
-Using `toBe(false)` is less expressive and may not account for other falsy
-values like `0`, `null`, or `undefined`. `toBeFalsy()` provides a more
-comprehensive check for any falsy value, improving the robustness of the tests.
+When testing for falsiness, `toBeFalsy()` expresses that intent directly.
+Unlike `toBe(false)`, it also accepts non-boolean falsy values such as
+`0`, `null`, and `undefined`. The replacement is a suggestion because
+it changes which values pass the assertion.
 
 ### Examples
 
