@@ -39,7 +39,7 @@ Our [benchmarks](https://github.com/oxc-project/bench-formatter) show Oxfmt to b
 Oxfmt includes built-in features that typically require external Prettier plugins:
 
 - [Import sorting](./formatter/sorting#sort-imports)
-- [Tailwind CSS class sorting](./formatter/sorting#tailwind-css-class-sorting)
+- [Tailwind CSS class sorting](./formatter/sorting#sort-tailwind-css-classes)
 - [package.json field sorting](./formatter/sorting#sort-package-json-fields)
 - [Embedded formatting](./formatter/embedded-formatting) (CSS-in-JS, GraphQL, etc.)
 
