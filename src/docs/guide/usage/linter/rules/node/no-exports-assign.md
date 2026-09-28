@@ -1,7 +1,7 @@
 ---
 title: "node/no-exports-assign | Oxlint"
 rule: "node/no-exports-assign"
-category: "Style"
+category: "Suspicious"
 version: "0.9.3"
 default: false
 type_aware: false

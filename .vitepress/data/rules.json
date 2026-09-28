@@ -3642,7 +3642,7 @@
   {
     "scope": "node",
     "value": "no-exports-assign",
-    "category": "style",
+    "category": "suspicious",
     "version": "0.9.3",
     "type_aware": false,
     "fix": "fixable_fix",
@@ -5368,6 +5368,16 @@
     "fix": "none",
     "default": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-for-in-array.html"
+  },
+  {
+    "scope": "typescript",
+    "value": "no-generated-empty-object-type",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": true,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-generated-empty-object-type.html"
   },
   {
     "scope": "typescript",

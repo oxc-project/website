@@ -98,6 +98,24 @@ createRoot(document.getElementById("root")).render(<App />);
 
 This rule accepts a configuration object with the following properties:
 
+### allowCompoundComponents
+
+type: `boolean`
+
+default: `false`
+
+Allow an exported object when every property is a React component.
+This matches Vite's compound component support. The object must be non-empty,
+contain no nested objects, spreads, or accessors, and anonymous functions
+must use a component name as a static property key.
+
+```jsx
+// Allowed when allowCompoundComponents: true
+const Root = () => <div />;
+const Label = () => <span />;
+export const Tag = { Root, Label };
+```
+
 ### allowConstantExport
 
 type: `boolean`

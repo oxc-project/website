@@ -21,6 +21,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Reports if a resolved path is imported more than once in the same module.
+Imports with different import attributes are treated as distinct modules.
 This helps avoid unnecessary duplicate imports and keeps the code clean.
 
 ### Why is this bad?
