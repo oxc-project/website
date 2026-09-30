@@ -26,3 +26,4 @@ jobs:
       - run: vp run void deploy
         env:
           VOID_PROJECT: oxc
+          VOID_API_URL: https://api.void.cloud
