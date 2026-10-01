@@ -5,6 +5,12 @@ authors:
   - boshen
 ---
 
+<!--
+TODO:
+- Benchmark
+- Running it dashboard
+-->
+
 <AppBlogPostHeader />
 
 We are excited to announce [React Compiler](https://react.dev/learn/react-compiler) support in Oxlint and Oxc Transform.
