@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.2.5"
 default: false
 type_aware: false
-fix: "pending"
+fix: "conditional_suggestion"
 upstream: "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md"
 ---
 

@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.0.15"
 default: false
 type_aware: false
-fix: "pending"
+fix: "fixable_suggestion"
 upstream: "https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md"
 ---
 
