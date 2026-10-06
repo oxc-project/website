@@ -137,6 +137,23 @@ vim.lsp.enable('oxlint')
 
 - [oxc-project/coc-oxc](https://github.com/oxc-project/coc-oxc)
 
+## Helix
+
+Register oxlint to your `languages.toml` file. The language server expects an active node runtime to work, so one will safely be spawned from your `node_modules folder` via `npx`.
+
+```toml
+[language-server.oxlint]
+command = "npx"
+args = ["oxlint", "--lsp"]
+
+[[language]]
+name = "tsx"
+file-types = ["ts", "tsx"]
+language-servers = [
+  { name = "oxlint" }
+]
+```
+
 ## Other editors
 
 For editors with LSP support (Emacs, Helix, Sublime), you can use `oxlint --lsp` as your language server.
