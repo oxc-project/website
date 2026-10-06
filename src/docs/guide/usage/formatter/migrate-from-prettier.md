@@ -50,7 +50,7 @@ Once installed, run `/migrate-oxfmt` to perform the migration.
 
 ## Before you migrate
 
-Oxfmt is compatible with Prettier v3.8 for many configurations.
+Oxfmt is compatible with Prettier v3.9.9 for many configurations.
 
 Key differences:
 
@@ -60,9 +60,21 @@ Key differences:
 
 See [Unsupported features](/docs/guide/usage/formatter/unsupported-features) for details, and the [compatibility matrix](/compatibility) for file type support.
 
-## Step 1: Upgrade Prettier to v3.8 (optional)
+### Known divergences
 
-Oxfmt's output is closest to Prettier v3.8. Upgrading first minimizes formatting differences.
+Oxfmt may intentionally differ from Prettier's output where Prettier's behavior is clearly a bug or inconsistent across similar cases.
+Each case is documented with its reason:
+
+- [JavaScript / TypeScript](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter/DIVERGENCES.md)
+- [CSS / SCSS / Less](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_css/DIVERGENCES.md)
+- [GraphQL](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_graphql/DIVERGENCES.md)
+- [YAML](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_yaml/DIVERGENCES.md)
+- [Markdown](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_markdown/DIVERGENCES.md)
+- [Embedded formatting](https://github.com/oxc-project/oxc/blob/main/apps/oxfmt/DIVERGENCES.md)
+
+## Step 1: Upgrade Prettier to v3.9.9 (optional)
+
+Oxfmt's output is closest to Prettier v3.9.9. Upgrading first minimizes formatting differences.
 
 ## Step 2: Install Oxfmt
 
