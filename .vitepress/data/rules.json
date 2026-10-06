@@ -4455,7 +4455,7 @@
     "category": "pedantic",
     "version": "0.2.5",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-target-blank.html"
   },
@@ -4725,7 +4725,7 @@
     "category": "pedantic",
     "version": "0.0.15",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unescaped-entities.html"
   },
@@ -6825,7 +6825,7 @@
     "category": "pedantic",
     "version": "0.0.18",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "fixable_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-switch-case.html"
   },
