@@ -86,6 +86,10 @@ export const enConfig = defineLocaleConfig("root", {
                   link: "/docs/guide/usage/linter/ignore-comments",
                 },
                 {
+                  text: "Bulk suppressions",
+                  link: "/docs/guide/usage/linter/bulk-suppressions",
+                },
+                {
                   text: "Multi-file analysis",
                   link: "/docs/guide/usage/linter/multi-file-analysis",
                 },
