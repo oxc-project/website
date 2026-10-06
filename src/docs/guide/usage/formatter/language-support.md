@@ -23,6 +23,7 @@ Formatted directly by Oxfmt, with no Prettier dependency:
 | GraphQL              | `.graphql`, `.gql`, `.graphqls`               |
 | TOML                 | `.toml`                                       |
 | YAML                 | `.yml`, `.yaml`                               |
+| Markdown             | `.md`, `.markdown`                            |
 
 Detection also covers many well-known config files by name. For example `.babelrc` and `.swcrc` are treated as JSON.
 
@@ -44,18 +45,19 @@ These are being actively ported to Rust. As each native formatter lands, its lan
 | Angular    | `*.component.html`        |
 | Vue        | `.vue`                    |
 | Svelte     | `.svelte`                 |
-| Markdown   | `.md`, `.markdown`        |
 | MDX        | `.mdx`                    |
 | Handlebars | `.hbs`, `.handlebars`     |
 | MJML       | `.mjml`                   |
 
 ## Embedded languages
 
-Oxfmt also formats code embedded inside JS/TS template literals. The same split as above applies: languages in the [Native](#native) list are formatted natively, while those in the [Prettier-backed](#prettier-backed) list go through Prettier. See [Embedded Formatting](./embedded-formatting) for details and examples.
+Oxfmt also formats code embedded inside JS/TS template literals and Markdown code blocks.
 
-For Vue and Svelte files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as `<script>` tags in HTML) is still formatted by Prettier.
+The same split as above applies: languages in the [Native](#native) list are formatted natively, while those in the [Prettier-backed](#prettier-backed) list go through Prettier. See [Embedded Formatting](./embedded-formatting) for details and examples.
+
+For `.vue` and `.svelte` files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as `<script>` tags in HTML) is still formatted by Prettier. This also applies to Vue and Svelte code embedded in other files (such as a `vue` code block in Markdown), since the whole block is delegated to Prettier.
 
 ## See also
 
-- [Compatibility matrix](/compatibility) — framework- and file-type-level support at a glance
+- [Compatibility matrix](/compatibility): framework and file-type-level support at a glance
 - [Unsupported features](./unsupported-features)
