@@ -10,7 +10,7 @@
     "test": "node ./src/main.js"
   },
   "dependencies": {
-    "@oxc-transform/binding-wasm32-wasi": "latest",
+    "@oxc-transform/binding-wasm32-wasip1": "latest",
     "oxc-transform": "latest"
   },
   "devDependencies": {
