@@ -42,4 +42,9 @@ minimumReleaseAgeExclude:
   - vite
   - vite-plus
   - vitest
-  - void@0.10.8
+  - void@0.10.8 || 0.27.0
+  - "@void/deploy-cloudflare@0.27.0"
+  - "@void/deploy-core@0.27.0"
+  - "@void/edge@0.27.0"
+  - "@void/isr@0.27.0"
+  - "@void/platform@0.27.0"
