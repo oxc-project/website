@@ -66,3 +66,4 @@ outline: deep
 - [Tauri](https://github.com/tauri-apps/tauri/blob/8c6d1e8e6c852667bb223b5f4823948868c26d98/crates/tauri-cli/src/migrate/migrations/v1/frontend.rs) - Uses the parser for its codemod
 - [tree-shaker](https://github.com/KermanX/tree-shaker) - An experimental tree shaker for JavaScript
 - [Tyvm](https://github.com/zackradisic/tyvm) - An experimental bytecode interpreter for type-level TypeScript
+- [detangle](https://github.com/debug-diary-1/detangle) - Import cycles and dependency rules for JavaScript and TypeScript, using the parser and resolver
