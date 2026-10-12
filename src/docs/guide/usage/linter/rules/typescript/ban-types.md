@@ -31,7 +31,7 @@ Prefer these replacement rules:
 - `typescript/no-unsafe-function-type`
 - `typescript/no-wrapper-object-types`
 - `typescript/no-restricted-types` (for custom type bans)
-  :::
+:::
 
 ### Why is this bad?
 

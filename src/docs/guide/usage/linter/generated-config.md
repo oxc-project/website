@@ -625,6 +625,7 @@ default: `null`
 
 Jest version — accepts a number (`29`) or a semver string (`"29.1.0"` or `"v29.1.0"`),
 storing only the major version.
+
 ::: warning
 Using this config will override the `no-deprecated-functions` config set.
 :::
