@@ -36,6 +36,7 @@ outline: deep
 - [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Both) - npm package explorer
 - [SWR](https://github.com/vercel/swr) (Both) - Library for data fetching in React
 - [Redux](https://github.com/reduxjs/redux) (Both) - State management for JavaScript applications
+- [Juno](https://junocompanion.com/) (Both) - Companion app for people living with chronic illness (React Native and Node.js)
 
 ## Resolver
 
