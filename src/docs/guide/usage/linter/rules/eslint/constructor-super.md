@@ -39,23 +39,23 @@ Examples of **incorrect** code for this rule:
 ```js
 // Missing super() call
 class A extends B {
-    constructor() { }
+  constructor() {}
 }
 
 // super() in non-derived class
 class A {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 }
 
 // super() only in some code paths
 class C extends D {
-    constructor() {
-        if (condition) {
-            super();
-        }
+  constructor() {
+    if (condition) {
+      super();
     }
+  }
 }
 ```
 

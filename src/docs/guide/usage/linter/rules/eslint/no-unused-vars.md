@@ -47,7 +47,7 @@ true:
   (`doSomething(function() { foo(); })`)
 - It is exported (`export const foo = 42`)
 - It is used as an operand to TypeScript's `typeof` operator (`const bar:
-typeof foo = 4`)
+  typeof foo = 4`)
 
 A variable is _not_ considered to be used if it is only ever declared
 (`var foo = 5`) or assigned to (`foo = 7`).
