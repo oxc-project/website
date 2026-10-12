@@ -5,7 +5,7 @@ category: "Style"
 version: "0.0.8"
 default: false
 type_aware: true
-fix: "none"
+fix: "conditional_fix"
 upstream: "https://typescript-eslint.io/rules/prefer-string-starts-ends-with/"
 ---
 

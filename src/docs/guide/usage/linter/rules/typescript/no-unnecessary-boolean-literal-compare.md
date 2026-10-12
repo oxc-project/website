@@ -5,7 +5,7 @@ category: "Suspicious"
 version: "1.12.0"
 default: false
 type_aware: true
-fix: "pending"
+fix: "fixable_fix"
 upstream: "https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare/"
 ---
 
