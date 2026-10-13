@@ -31,11 +31,11 @@ In general, we should always export constants
 Examples of **incorrect** code for this rule:
 
 ```js
-export let count = 2;
-export var count = 3;
+export let count = 2
+export var count = 3
 
-let count = 4;
-export { count };
+let count = 4
+export { count }
 ```
 
 Examples of **correct** code for this rule:

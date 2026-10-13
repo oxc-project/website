@@ -5155,7 +5155,7 @@
     "category": "style",
     "version": "0.0.8",
     "type_aware": true,
-    "fix": "none",
+    "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-type-exports.html"
   },
@@ -5175,7 +5175,7 @@
     "category": "style",
     "version": "1.49.0",
     "type_aware": true,
-    "fix": "none",
+    "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/dot-notation.html"
   },
@@ -5555,7 +5555,7 @@
     "category": "suspicious",
     "version": "1.12.0",
     "type_aware": true,
-    "fix": "pending",
+    "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-boolean-literal-compare.html"
   },
@@ -5565,7 +5565,7 @@
     "category": "nursery",
     "version": "1.48.0",
     "type_aware": true,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-condition.html"
   },
@@ -5935,7 +5935,7 @@
     "category": "style",
     "version": "0.0.8",
     "type_aware": true,
-    "fix": "none",
+    "fix": "fixable_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-readonly.html"
   },
@@ -5985,7 +5985,7 @@
     "category": "style",
     "version": "0.0.8",
     "type_aware": true,
-    "fix": "none",
+    "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-string-starts-ends-with.html"
   },

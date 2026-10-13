@@ -51,6 +51,27 @@ document.querySelectorAll("li a");
 document.querySelector("li").querySelectorAll("a");
 ```
 
+Examples of **correct** code for this rule with `{ "allowWithVariables": true }`:
+
+```javascript
+document.getElementById(someId);
+document.getElementsByClassName(someClass);
+document.getElementsByClassName(`${someClass}`);
+```
+
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### allowWithVariables
+
+type: `boolean`
+
+default: `false`
+
+When set to `true`, allows using `.getElementById()` and `.getElementsByClassName()` when called with a variable or expression.
+This avoids the need to manually compose a CSS selector string, which can be less readable.
+
 ## How to use
 
 <RuleHowToUse />
