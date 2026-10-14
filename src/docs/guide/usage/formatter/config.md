@@ -188,6 +188,55 @@ Options are applied in order (lowest to highest priority):
 3. Config file `overrides` options
 4. fallback to options supported by `.editorconfig` for unset fields
 
+## Associations
+
+Use the `associations` field to format matched files as a specific language, instead of detecting it from the file name.
+This is the equivalent of Prettier's `overrides[].options.parser`.
+
+::: code-group
+
+```json [.oxfmtrc.json]
+{
+  "associations": [
+    {
+      "files": ["*.svg", "*.wxml"],
+      "language": "html"
+    },
+    {
+      "files": ["src/app/**/*.html"],
+      "language": "angular-html"
+    }
+  ]
+}
+```
+
+```ts [oxfmt.config.ts]
+import { defineConfig } from "oxfmt";
+
+export default defineConfig({
+  associations: [
+    {
+      files: ["*.svg", "*.wxml"],
+      language: "html",
+    },
+    {
+      files: ["src/app/**/*.html"],
+      language: "angular-html",
+    },
+  ],
+});
+```
+
+:::
+
+Each association entry has:
+
+- `files` (required): Glob patterns to match files
+- `excludeFiles` (optional): Glob patterns to exclude from this association
+- `language` (required): The language to format matched files as, named by its [Shiki language id](https://shiki.style/languages) (as in Markdown code fences), not a Prettier parser name (e.g. `angular-html` instead of `angular`, `typescript` instead of `babel-ts`). See [config file reference](./config-file-reference#associations) for available values
+
+When a file matches multiple associations, the later one takes precedence.
+
 ## Oxfmt-specific options
 
 ### `insertFinalNewline`

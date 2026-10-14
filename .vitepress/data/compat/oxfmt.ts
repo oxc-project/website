@@ -13,28 +13,23 @@ export const oxfmtTool: Tool = {
   ],
 };
 
-const prettierPluginsIssue = {
-  title: "Prettier Plugins Support",
-  url: "https://github.com/oxc-project/oxc/issues/15665",
-};
 const gjsGtsIssue = {
   title: ".gjs/.gts File Support",
   url: "https://github.com/oxc-project/oxc/issues/19964",
 };
-const angularHtmlIssue = {
-  title: "Parser option for .html files",
-  url: "https://github.com/oxc-project/oxc/issues/17852",
+const associationsDoc = {
+  title: "associations",
+  url: "/docs/guide/usage/formatter/config#associations",
 };
 
-export const NOTE_ID_PRETTIER_PLUGINS = 3;
+export const NOTE_ID_NEEDS_ASTRO_COMPILER = 3;
 export const NOTE_ID_NO_GJS_GTS = 6;
 export const NOTE_ID_ANGULAR_HTML = 7;
 export const NOTE_ID_NEEDS_SVELTE_COMPILER = 8;
 
-const needsPluginSupport = {
-  noteId: NOTE_ID_PRETTIER_PLUGINS,
-  notes: "Requires Prettier plugin support (not yet available)",
-  sources: [prettierPluginsIssue],
+const needsAstroCompiler = {
+  noteId: NOTE_ID_NEEDS_ASTRO_COMPILER,
+  notes: "Requires installing `@astrojs/compiler-rs` separately",
 };
 const needsSvelteCompiler = {
   noteId: NOTE_ID_NEEDS_SVELTE_COMPILER,
@@ -47,8 +42,8 @@ const noGjsGtsNote = {
 };
 const angularHtmlNote = {
   noteId: NOTE_ID_ANGULAR_HTML,
-  notes: ".component.html only, .html requires config override",
-  sources: [angularHtmlIssue],
+  notes: "Other than .component.html, requires `associations` config",
+  sources: [associationsDoc],
 };
 
 export const oxfmtEntries: CompatEntry[] = [
@@ -66,7 +61,7 @@ export const oxfmtEntries: CompatEntry[] = [
     frameworkId: "angular",
     toolId: "oxfmt",
     featureId: "format",
-    status: { level: "partial", ...angularHtmlNote },
+    status: { level: "full", ...angularHtmlNote },
   },
   { frameworkId: "solid", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "qwik", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
@@ -91,7 +86,7 @@ export const oxfmtEntries: CompatEntry[] = [
     frameworkId: "astro",
     toolId: "oxfmt",
     featureId: "format",
-    status: { level: "none", ...needsPluginSupport },
+    status: { level: "full", ...needsAstroCompiler },
   },
   { frameworkId: "remix", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   {
@@ -122,7 +117,7 @@ export const oxfmtEntries: CompatEntry[] = [
     frameworkId: "analogjs",
     toolId: "oxfmt",
     featureId: "format",
-    status: { level: "partial", ...angularHtmlNote },
+    status: { level: "full", ...angularHtmlNote },
   },
   { frameworkId: "css", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
   { frameworkId: "scss", toolId: "oxfmt", featureId: "format", status: { level: "full" } },
