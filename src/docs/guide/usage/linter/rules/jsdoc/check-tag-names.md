@@ -72,7 +72,6 @@ You can add custom tags by adding a key-value pair where both match the name of 
   }
 }
 ```
-
 :::
 
 Examples of correct code for this rule with the above configuration, adding the `customTagName` tag:

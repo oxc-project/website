@@ -77,15 +77,11 @@ myPromise().finally(() => Promise.resolve(4));
 Examples of **correct** code for this rule:
 
 ```js
-myPromise().then(() => 4);
-myPromise().then(function () {
-  return 4;
-});
+myPromise().then(() => 4)
+myPromise().then(function() { return 4 })
 
-myPromise().then(() => throw "err");
-myPromise().then(function () {
-  throw "err";
-});
+myPromise().then(() => throw "err")
+myPromise().then(function() { throw "err" })
 ```
 
 ```js

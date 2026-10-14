@@ -35,7 +35,7 @@ option.
 Examples of **incorrect** code for this rule:
 
 ```javascript
-var a = 123;
+﻿var a = 123;
 ```
 
 ## Configuration
