@@ -115,6 +115,25 @@ Oxfmt uses `.oxfmtrc.json`, `.oxfmtrc.jsonc`, `oxfmt.config.ts`, or `oxfmt.confi
 
 Run `oxfmt --migrate prettier` to convert your Prettier config automatically.
 
+It reads the Prettier config in the current directory and creates `.oxfmtrc.json`:
+
+- Supported config formats:
+  - `prettier` field in `package.json`, including shareable configs
+  - `.prettierrc` (JSON only), `.prettierrc.json`
+  - JS/TS configs (`.prettierrc.*`, `prettier.config.*`)
+- YAML, JSON5 and TOML configs are not supported. Convert them to JSON or JS first.
+- Only Prettier-compatible options are migrated. Others are skipped with a warning.
+- `overrides` are migrated, and `overrides[].options.parser` becomes [`associations`](./config#associations).
+- `.prettierignore` patterns are migrated to `ignorePatterns`.
+- Options of `prettier-plugin-tailwindcss`, `prettier-plugin-svelte`, `prettier-plugin-astro` and `prettier-plugin-packagejson` are migrated to the built-in equivalents. Other plugins are skipped with a warning.
+- `printWidth` is set to `80` if not specified, to keep Prettier's default.
+
+Things to do manually:
+
+- JS/TS configs are evaluated and migrated as static values. Port any logic (e.g. environment branches) to `oxfmt.config.ts`.
+- Nested configs are not searched. Run `oxfmt --migrate prettier` in each directory that has a Prettier config.
+- Review the warnings printed at the end.
+
 ### `prettierrc.js` example
 
 Before:
@@ -228,7 +247,7 @@ Add the reformatting commit SHA to `.git-blame-ignore-revs` to hide it from `git
 
 ### Replace `.prettierignore` with `"ignorePatterns"`
 
-If you no longer use Prettier, you can optionally move its contents from `.prettierignore` to `"ignorePatterns"` in your Oxfmt config. Note that `.prettierignore` applies globally, while `ignorePatterns` is scoped to the config file it belongs to. In a [nested config](./config#create-a-config-file) setup, this may change which files are ignored. See [Ignore files](/docs/guide/usage/formatter/ignore-files) for more information.
+If you no longer use Prettier, you can optionally move its contents from `.prettierignore` to `"ignorePatterns"` in your Oxfmt config. `oxfmt --migrate prettier` already does this, so you can delete `.prettierignore` afterward. Note that `.prettierignore` applies globally, while `ignorePatterns` is scoped to the config file it belongs to. In a [nested config](./config#create-a-config-file) setup, this may change which files are ignored. See [Ignore files](/docs/guide/usage/formatter/ignore-files) for more information.
 
 ### Update `// prettier-ignore` comments
 

@@ -7,7 +7,11 @@ title: "Language support | Oxfmt"
 Oxfmt formats a wide range of file types. Most are handled by Oxfmt's own **native** engine, written in Rust. The rest are delegated to a **bundled Prettier** for languages Oxfmt has not yet reimplemented natively. We are actively porting every language to Rust for maximum performance, so the Prettier-backed list keeps shrinking as native support lands.
 
 :::info
-Native formats run entirely in Rust with no Node.js round-trip, so they are the fastest. Prettier-backed formats ship inside the `oxfmt` package and need no extra setup. Except `.svelte`, which additionally requires the `svelte` package to be installed and the [`svelte`](./config-file-reference) option to be enabled.
+Native formats run entirely in Rust with no Node.js round-trip, so they are the fastest. Prettier-backed formats ship inside the `oxfmt` package and need no extra setup. Except:
+
+- `.svelte` requires the `svelte` package to be installed and the [`svelte`](./config-file-reference#svelte) option to be enabled.
+- `.astro` requires the `@astrojs/compiler-rs` package to be installed and the [`astro`](./config-file-reference#astro) option to be enabled.
+
 :::
 
 ## Native
@@ -27,6 +31,8 @@ Formatted directly by Oxfmt, with no Prettier dependency:
 
 Detection also covers many well-known config files by name. For example `.babelrc` and `.swcrc` are treated as JSON.
 
+To format other files as a specific language (e.g. Angular templates named `*.html`), use [`associations`](./config#associations).
+
 ## Prettier-backed
 
 Delegated to the bundled Prettier. No separate `prettier` install is required.
@@ -45,6 +51,7 @@ These are being actively ported to Rust. As each native formatter lands, its lan
 | Angular    | `*.component.html`        |
 | Vue        | `.vue`                    |
 | Svelte     | `.svelte`                 |
+| Astro      | `.astro`                  |
 | MDX        | `.mdx`                    |
 | Handlebars | `.hbs`, `.handlebars`     |
 | MJML       | `.mjml`                   |
