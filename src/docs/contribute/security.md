@@ -11,6 +11,10 @@ Please inform [@boshen](https://github.com/Boshen) if you notice any oversights.
 
 https://www.npmjs.com/~boshen and https://crates.io/users/Boshen are the only accounts with publish access to our packages and crates.
 
+## Reporting a vulnerability
+
+To report a security vulnerability, follow our [organization security policy](https://github.com/oxc-project/.github/blob/main/SECURITY.md).
+
 ## github.com
 
 - Required two-factor authentication for everyone in the organization
