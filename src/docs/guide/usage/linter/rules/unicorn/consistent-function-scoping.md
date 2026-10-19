@@ -41,7 +41,9 @@ export function doFoo(foo) {
   }
   return doBar;
 }
+```
 
+```js
 function doFoo(foo) {
   const doBar = (bar) => {
     return bar === "bar";
@@ -53,16 +55,18 @@ Examples of **correct** code for this rule:
 
 ```js
 function doBar(bar) {
-  return bar === 'bar';
+  return bar === "bar";
 }
 
 export function doFoo(foo) {
   return doBar;
 }
+```
 
+```js
 export function doFoo(foo) {
   function doBar(bar) {
-    return bar === 'bar' && foo.doBar(bar);
+    return bar === "bar" && foo.doBar(bar);
   }
   return doBar;
 }
