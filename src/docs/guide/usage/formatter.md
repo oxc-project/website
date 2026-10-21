@@ -43,13 +43,18 @@ Oxfmt includes built-in features that typically require external Prettier plugin
 - [package.json field sorting](./formatter/sorting#sort-package-json-fields)
 - [Embedded formatting](./formatter/embedded-formatting) (CSS-in-JS, GraphQL, etc.)
 
+See [Beyond Prettier](./formatter/beyond-prettier) for the full list.
+
 ## Prettier-compatible
 
 Oxfmt integrates into existing Prettier-based workflows.
 
 The Oxfmt CLI follows Prettier's conventions closely enough that most scripts and tooling require little or no modification, though some defaults and CLI options differ.
 
-Oxfmt aims to match Prettier's output, so migrating from recent versions of Prettier should produce few or no formatting differences. Unexpected differences are treated as bugs. Where Prettier's behavior is clearly a bug or inconsistent across similar cases, Oxfmt may intentionally diverge in favor of correct and consistent output. See [Known divergences](./formatter/migrate-from-prettier#known-divergences) for the list.
+Oxfmt uses Prettier's output as its baseline, so migrating from recent versions of Prettier produces few formatting differences.
+Unexpected differences are treated as bugs.
+Where Prettier's behavior is a bug or inconsistent across similar cases, Oxfmt deliberately diverges in favor of correct and consistent output.
+See [Known divergences](./formatter/migrate-from-prettier#known-divergences) for the list.
 
 Oxfmt is tested against Prettier's own test suite for each natively supported language. For formatting inconsistencies found in Prettier, we have [reported them to the Prettier team](https://github.com/oxc-project/oxc/issues/18717) and are collaborating to converge on expected behavior.
 

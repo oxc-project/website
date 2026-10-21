@@ -31,6 +31,9 @@ Formatted directly by Oxfmt, with no Prettier dependency:
 
 Detection also covers many well-known config files by name. For example `.babelrc` and `.swcrc` are treated as JSON.
 
+TOML is supported natively, while Prettier needs a plugin for it.
+See [Beyond Prettier](./beyond-prettier#toml).
+
 To format other files as a specific language (e.g. Angular templates named `*.html`), use [`associations`](./config#associations).
 
 ## Prettier-backed

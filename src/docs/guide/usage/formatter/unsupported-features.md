@@ -20,21 +20,8 @@ Note: Default `printWidth` is `100` (Prettier uses `80`).
 
 ## Prettier plugins
 
-Not supported. However, Oxfmt provides built-in alternatives:
-
-- `sortImports`
-  - Based on `eslint-plugin-perfectionist/sort-imports`
-  - Disabled by default
-- `sortTailwindcss`
-  - Based on `prettier-plugin-tailwindcss`
-  - Disabled by default
-- `sortPackageJson`
-  - Based on `prettier-plugin-packagejson`
-  - Enabled by default
-- `jsdoc`
-  - Based on `prettier-plugin-jsdoc`
-  - Disabled by default
-
-See [Configuration file reference](./config-file-reference) for details.
+Not supported.
+However, popular plugins are built in.
+See [Beyond Prettier](./beyond-prettier#built-in-plugins).
 
 For what Oxfmt does support across frameworks and file types, see the [compatibility matrix](/compatibility).
