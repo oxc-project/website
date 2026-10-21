@@ -167,6 +167,10 @@ export const enConfig = defineLocaleConfig("root", {
                   text: "Embedded formatting",
                   link: "/docs/guide/usage/formatter/embedded-formatting",
                 },
+                {
+                  text: "Beyond Prettier",
+                  link: "/docs/guide/usage/formatter/beyond-prettier",
+                },
               ],
             },
             {

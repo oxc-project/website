@@ -62,7 +62,9 @@ See [Unsupported features](/docs/guide/usage/formatter/unsupported-features) for
 
 ### Known divergences
 
-Oxfmt may intentionally differ from Prettier's output where Prettier's behavior is clearly a bug or inconsistent across similar cases.
+For features Prettier does not have (built-in plugins, TOML, Markdown container directives, etc.), see [Beyond Prettier](/docs/guide/usage/formatter/beyond-prettier).
+
+Oxfmt deliberately differs from Prettier's output where Prettier's behavior is a bug or inconsistent across similar cases.
 Each case is documented with its reason:
 
 - [JavaScript / TypeScript](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter/DIVERGENCES.md)
