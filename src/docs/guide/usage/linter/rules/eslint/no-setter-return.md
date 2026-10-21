@@ -22,8 +22,8 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 Setters cannot return values.
 
-This rule can be disabled for TypeScript code, as the TypeScript compiler
-enforces this check.
+TypeScript checks setter syntax, but does not check return values from
+setters in property descriptors.
 
 ### Why is this bad?
 
