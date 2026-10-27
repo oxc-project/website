@@ -62,6 +62,20 @@ declare const getPromise: () => Promise<string>;
 await getPromise();
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### allowMixedPromiseArrays
+
+type: `boolean`
+
+default: `false`
+
+Allow Promise aggregators such as `Promise.all` to receive mixed arrays or
+iterables containing at least one potentially Promise-like value.
+Inputs containing only synchronous values are still reported.
+
 ## How to use
 
 <RuleHowToUse />
