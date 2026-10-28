@@ -5691,6 +5691,16 @@
   },
   {
     "scope": "typescript",
+    "value": "no-unsafe-enum-assignment",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": true,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-enum-assignment.html"
+  },
+  {
+    "scope": "typescript",
     "value": "no-unsafe-enum-comparison",
     "category": "suspicious",
     "version": "1.12.0",
