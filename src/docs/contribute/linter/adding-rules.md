@@ -201,7 +201,7 @@ The default value and the type of each option will be automatically extracted fr
 
 See [this issue](https://github.com/oxc-project/oxc/issues/14743) for dozens of examples of how to properly document configuration options in all kinds of rules.
 
-You can view the generated documentation by running `cargo run -p website -- linter-rules --rule-docs target/rule-docs --git-ref $(git rev-parse HEAD)` and then opening `target/rule-docs/<plugin-name>/<rule-name>.md`.
+You can view the generated documentation by running `cargo run -p website_linter rules --rule-docs target/rule-docs --git-ref $(git rev-parse HEAD)` and then opening `target/rule-docs/<plugin-name>/<rule-name>.md`.
 
 ### Rule Category
 
