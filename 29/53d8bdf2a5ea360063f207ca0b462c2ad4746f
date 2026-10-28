@@ -1,0 +1,19 @@
+AGENTS.md
+  s_c645eeea336d91::t_c6852f404c569f 13-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2953d8bdf2a5ea360063f207ca0b462c2ad4746f",
+  "prompts": {},
+  "sessions": {
+    "s_c645eeea336d91": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1831b-13e8-7e42-b396-5e515002bfd1",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
