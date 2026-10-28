@@ -1,0 +1,19 @@
+pnpm-lock.yaml
+  s_b3e13c13aa897c::t_1bcd35807a9280 76-78,206,209,213,227,236,243-249,255-261,267-273,279-285,291-297,303,2903-2906,3503-3509,3513,3709-3715,3722,3731-3733,3737-3739,3743-3745,3749-3751,3755-3757,5740-5751,6511,6530,6610-6618,6621,6624,6627
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c36aafb79185ee8bf20fc1827b1416d30e946f18",
+  "prompts": {},
+  "sessions": {
+    "s_b3e13c13aa897c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a07f08-9f45-7cd3-a504-cdcc996cf763",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "mdong <mdong@cloudflare.com>"
+    }
+  }
+}
