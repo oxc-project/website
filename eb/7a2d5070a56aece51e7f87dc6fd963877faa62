@@ -1,0 +1,27 @@
+src/docs/contribute/linter/adding-rules.md
+  s_c645eeea336d91::t_a3ac63db09fb17 204
+src/docs/guide/usage/formatter/config-file-reference.md
+  s_c645eeea336d91::t_d6a172c02c0248 6
+src/docs/guide/usage/linter/cli.md
+  s_c645eeea336d91::t_e301453aaab044 8
+src/docs/guide/usage/linter/config-file-reference.md
+  s_c645eeea336d91::t_764a5c83275918 6
+src/docs/guide/usage/linter/lsp-config-reference.md
+  s_c645eeea336d91::t_dbb0ac453fe90e 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "eb7a2d5070a56aece51e7f87dc6fd963877faa62",
+  "prompts": {},
+  "sessions": {
+    "s_c645eeea336d91": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1831b-13e8-7e42-b396-5e515002bfd1",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Cameron <cclark@cloudflare.com>"
+    }
+  }
+}
