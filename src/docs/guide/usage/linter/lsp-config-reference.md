@@ -10,5 +10,5 @@ This document describe the native LSP options for `oxlint`. Depending on your ed
 See [Editor setup](/docs/guide/usage/linter/editors.md) to configure your editor options.
 :::
 
-<!-- in oxc: `cargo run -p website linter-schema-markdown-lsp > /path/to/linter/generated-lsp-config.md` -->
+<!-- in oxc: `cargo run -p website_linter schema-markdown-lsp > /path/to/website/src/docs/guide/usage/linter/generated-lsp-config.md` -->
 <!--@include: ./generated-lsp-config.md-->
