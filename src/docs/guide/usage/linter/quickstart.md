@@ -31,7 +31,13 @@ $ bun add -D oxlint
 
 :::
 
+::: tip Vite+ caveat
+Vite+ includes Oxlint and it doesn't need to be installed separately. See the [Vite+ docs](https://viteplus.dev/guide/) for more information.
+:::
+
 Add lint commands to `package.json`:
+
+::: code-group
 
 ```json [package.json]
 {
@@ -41,6 +47,17 @@ Add lint commands to `package.json`:
   }
 }
 ```
+
+```json [package.json with Vite+]
+{
+  "scripts": {
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix"
+  }
+}
+```
+
+:::
 
 Run it:
 
@@ -60,6 +77,10 @@ yarn run lint
 
 ```sh [bun]
 bun run lint
+```
+
+```sh [vite+]
+vp run lint
 ```
 
 :::
@@ -82,6 +103,10 @@ yarn run lint:fix
 
 ```sh [bun]
 bun run lint:fix
+```
+
+```sh [vite+]
+vp run lint:fix
 ```
 
 :::
@@ -136,6 +161,20 @@ If `PATH` is omitted, Oxlint lints the current working directory.
 
 :::
 
+### Pre-commit with [Vite+ staged](https://viteplus.dev/config/staged)
+
+[Vite+'s `check` command](https://viteplus.dev/guide/check) runs Oxlint as one of its static checks. Configure it in your Vite+ config file:
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  staged: {
+    "*": "vp check --fix",
+  },
+});
+```
+
 ### Create a config file
 
 Initialize the `.oxlintrc.json` config with default values:
@@ -146,7 +185,7 @@ oxlint --init
 
 Then customize `.oxlintrc.json` as needed. See [Configuration](/docs/guide/usage/linter/config).
 
-Alternatively, Oxlint supports a TypeScript config file named `oxlint.config.ts` or `oxlint.config.mts`. See [Configuration](/docs/guide/usage/linter/config#typescript-config) for details.
+Alternatively, Oxlint supports a TypeScript config file named `oxlint.config.ts` or `oxlint.config.mts`, or the `lint` property in a [Vite+ config](https://viteplus.dev/config/lint). See [Configuration](/docs/guide/usage/linter/config#typescript-config) for details.
 
 Then run Oxlint:
 

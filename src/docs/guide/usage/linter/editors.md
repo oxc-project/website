@@ -75,6 +75,18 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    options: {
+      typeAware: true,
+    },
+  },
+});
+```
+
 :::
 
 Or set it in `.vscode/settings.json`:

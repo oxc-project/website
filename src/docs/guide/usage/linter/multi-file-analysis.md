@@ -54,6 +54,19 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    plugins: ["import"],
+    rules: {
+      "import/no-cycle": ["error", { maxDepth: 3 }],
+    },
+  },
+});
+```
+
 :::
 
 ## TypeScript path aliases

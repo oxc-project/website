@@ -43,6 +43,10 @@ $ yarn add -D @oxc-node/cli
 $ bun add -D @oxc-node/cli
 ```
 
+```sh [vite+]
+$ vp add -D @oxc-node/cli
+```
+
 :::
 
 ::: tip
@@ -93,6 +97,10 @@ $ yarn add -D @oxc-node/core
 
 ```sh [bun]
 $ bun add -D @oxc-node/core
+```
+
+```sh [vite+]
+$ vp add -D @oxc-node/core
 ```
 
 :::
