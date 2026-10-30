@@ -36,6 +36,16 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  fmt: {
+    ignorePatterns: ["dist/**", "*.min.js"],
+  },
+});
+```
+
 :::
 
 - Uses `.gitignore` syntax

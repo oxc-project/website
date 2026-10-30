@@ -117,6 +117,20 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    options: {
+      typeAware: true,
+      typeCheck: true,
+      maxWarnings: 10,
+    },
+  },
+});
+```
+
 :::
 
 - `options.typeAware` is equivalent to passing `--type-aware` on the CLI.
@@ -164,6 +178,21 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    rules: {
+      "no-alert": "error",
+      "oxc/approx-constant": "warn",
+      "no-plusplus": "off",
+      "eslint/prefer-const": ["error", { destructuring: "any" }],
+    },
+  },
+});
+```
+
 :::
 
 ### Severity values
@@ -194,6 +223,18 @@ import { defineConfig } from "oxlint";
 export default defineConfig({
   rules: {
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+  },
+});
+```
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    rules: {
+      "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    },
   },
 });
 ```
@@ -246,6 +287,20 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    categories: {
+      correctness: "error",
+      suspicious: "warn",
+      pedantic: "off",
+    },
+  },
+});
+```
+
 :::
 
 Available categories include:
@@ -288,6 +343,16 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    plugins: ["unicorn", "typescript", "oxc"],
+  },
+});
+```
+
 :::
 
 To disable all default plugins:
@@ -305,6 +370,16 @@ import { defineConfig } from "oxlint";
 
 export default defineConfig({
   plugins: [],
+});
+```
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    plugins: [],
+  },
 });
 ```
 
@@ -341,6 +416,19 @@ export default defineConfig({
     "eslint-plugin-playwright",
     { name: "my-eslint-react", specifier: "eslint-plugin-react" },
   ],
+});
+```
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    jsPlugins: [
+      "eslint-plugin-playwright",
+      { name: "my-eslint-react", specifier: "eslint-plugin-react" },
+    ],
+  },
 });
 ```
 
@@ -436,6 +524,43 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    rules: {
+      "no-console": "error",
+    },
+    overrides: [
+      {
+        files: ["scripts/*.js"],
+        rules: {
+          "no-console": "off",
+        },
+      },
+      {
+        files: ["**/*.{ts,tsx}"],
+        plugins: ["typescript"],
+        rules: {
+          "typescript/no-explicit-any": "error",
+        },
+      },
+      {
+        files: ["**/test/**"],
+        plugins: ["jest"],
+        env: {
+          jest: true,
+        },
+        rules: {
+          "jest/no-disabled-tests": "off",
+        },
+      },
+    ],
+  },
+});
+```
+
 :::
 
 ## Extend shared configs
@@ -461,6 +586,18 @@ import { defineConfig } from "oxlint";
 
 export default defineConfig({
   extends: [baseConfig, frontendConfig],
+});
+```
+
+```ts [vite.config.ts]
+import baseConfig from "./configs/base.ts";
+import frontendConfig from "./configs/frontend.ts";
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    extends: [baseConfig, frontendConfig],
+  },
 });
 ```
 
@@ -507,6 +644,22 @@ export default defineConfig({
   globals: {
     MY_GLOBAL: "readonly",
     Promise: "off",
+  },
+});
+```
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    env: {
+      es6: true,
+    },
+    globals: {
+      MY_GLOBAL: "readonly",
+      Promise: "off",
+    },
   },
 });
 ```
@@ -561,6 +714,29 @@ export default defineConfig({
       components: {
         Link: "a",
         Button: "button",
+      },
+    },
+  },
+});
+```
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    settings: {
+      next: {
+        rootDir: "apps/dashboard/",
+      },
+      react: {
+        linkComponents: [{ name: "Link", linkAttribute: "to" }],
+      },
+      "jsx-a11y": {
+        components: {
+          Link: "a",
+          Button: "button",
+        },
       },
     },
   },

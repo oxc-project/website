@@ -160,6 +160,20 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import typescriptConfig from "./oxlint-typescript.config.ts";
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    extends: [typescriptConfig],
+    rules: {
+      "no-unused-vars": "warn",
+    },
+  },
+});
+```
+
 :::
 
 Shared packages work the same way in `oxlint.config.ts`:
@@ -203,6 +217,18 @@ import { defineConfig } from "oxlint";
 export default defineConfig({
   extends: [baseConfig],
   plugins: [],
+});
+```
+
+```ts [vite.config.ts]
+import baseConfig from "./base.config.ts";
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    extends: [baseConfig],
+    plugins: [],
+  },
 });
 ```
 

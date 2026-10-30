@@ -58,6 +58,24 @@ export default defineConfig({
 });
 ```
 
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    jsPlugins: ["./path/to/my-plugin.js", "eslint-plugin-whatever", "@foobar/eslint-plugin"],
+    rules: {
+      "my-plugin/rule1": "error",
+      "my-plugin/rule2": "warn",
+      "whatever/rule1": "error",
+      "whatever/rule2": "warn",
+      "@foobar/rule1": "error",
+    },
+    // ... other config ...
+  },
+});
+```
+
 :::
 
 ### Plugin aliases
@@ -116,6 +134,34 @@ export default defineConfig({
     "jsdoc-js/check-alignment": "error",
     "short/rule1": "error",
     "whatever/rule2": "error",
+  },
+});
+```
+
+```ts [vite.config.ts]
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    jsPlugins: [
+      // `jsdoc` is a reserved name, as Oxlint supports it natively
+      {
+        name: "jsdoc-js",
+        specifier: "eslint-plugin-jsdoc",
+      },
+      // Shorten name
+      {
+        name: "short",
+        specifier: "eslint-plugin-with-name-so-very-very-long",
+      },
+      // List plugins you don't want to alias as just specifiers
+      "eslint-plugin-whatever",
+    ],
+    rules: {
+      "jsdoc-js/check-alignment": "error",
+      "short/rule1": "error",
+      "whatever/rule2": "error",
+    },
   },
 });
 ```
