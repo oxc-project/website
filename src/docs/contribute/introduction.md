@@ -101,5 +101,6 @@ Ready to contribute? Here are some great places to start:
 - 💬 **Join the Community**: Connect with us on [Discord](https://discord.gg/9uXCAwqQZW)
 - 🛠️ **Pick a Tool**: Dive into [parser](./parser.md), [linter](./linter.md), [transformer](./transformer.md), or [other tools](./formatter.md)
 - ⚡️ **Open a Pull Request**: Review our [PR Rules and Policies](./rules.md) to get started.
+- 🧩 **Create a Plugin**: Extend Oxlint with custom rules using our [JS plugin writing guide](../guide/usage/linter/writing-js-plugins.md)
 
 We can't wait to see what you'll build with us! 🚀
