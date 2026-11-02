@@ -169,31 +169,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    printWidth: 100,
-    overrides: [
-      {
-        files: ["*.test.js", "*.spec.ts"],
-        options: {
-          printWidth: 120,
-        },
-      },
-      {
-        files: ["*.md", "*.html"],
-        excludeFiles: ["*.min.js"],
-        options: {
-          tabWidth: 4,
-        },
-      },
-    ],
-  },
-});
-```
-
 :::
 
 Each override entry has:
@@ -249,25 +224,6 @@ export default defineConfig({
       language: "angular-html",
     },
   ],
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    associations: [
-      {
-        files: ["*.svg", "*.wxml"],
-        language: "html",
-      },
-      {
-        files: ["src/app/**/*.html"],
-        language: "angular-html",
-      },
-    ],
-  },
 });
 ```
 

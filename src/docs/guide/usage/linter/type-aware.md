@@ -41,10 +41,6 @@ yarn add -D oxlint-tsgolint@latest
 bun add -D oxlint-tsgolint@latest
 ```
 
-```sh [vite+]
-vp add -D oxlint-tsgolint@latest
-```
-
 :::
 
 ## Running type-aware linting
@@ -78,18 +74,6 @@ import { defineConfig } from "oxlint";
 export default defineConfig({
   options: {
     typeAware: true,
-  },
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    options: {
-      typeAware: true,
-    },
   },
 });
 ```
@@ -151,19 +135,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    options: {
-      typeAware: true,
-      typeCheck: true,
-    },
-  },
-});
-```
-
 :::
 
 `--type-check` takes precedence over config files. For example, `oxlint --type-check -c .oxlintrc.json` enables type checking even if that config sets `options.typeCheck` to `false`.
@@ -207,19 +178,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    plugins: ["typescript"],
-    rules: {
-      "typescript/no-floating-promises": "error",
-      "typescript/no-unsafe-assignment": "warn",
-    },
-  },
-});
-```
 :::
 
 Rules support the same options as their `typescript-eslint` equivalents.
@@ -242,19 +200,6 @@ export default defineConfig({
   plugins: ["typescript"],
   rules: {
     "typescript/no-floating-promises": ["error", { ignoreVoid: true }],
-  },
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    plugins: ["typescript"],
-    rules: {
-      "typescript/no-floating-promises": ["error", { ignoreVoid: true }],
-    },
   },
 });
 ```

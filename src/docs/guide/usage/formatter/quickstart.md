@@ -43,8 +43,6 @@ See the [Vite+ docs](https://viteplus.dev/guide/) for setup and usage informatio
 
 Add scripts to `package.json`:
 
-::: code-group
-
 ```json [package.json]
 {
   "scripts": {
@@ -53,17 +51,6 @@ Add scripts to `package.json`:
   }
 }
 ```
-
-```json [package.json with Vite+]
-{
-  "scripts": {
-    "fmt": "vp format",
-    "fmt:check": "vp format --check"
-  }
-}
-```
-
-:::
 
 Format files:
 
@@ -83,10 +70,6 @@ yarn run fmt
 
 ```sh [bun]
 bun run fmt
-```
-
-```sh [vite+]
-vp run fmt
 ```
 
 :::
@@ -109,10 +92,6 @@ yarn run fmt:check
 
 ```sh [bun]
 bun run fmt:check
-```
-
-```sh [vite+]
-vp run fmt:check
 ```
 
 :::

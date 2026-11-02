@@ -45,16 +45,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    ignorePatterns: ["dist/**", "coverage/**", "vendor/**", "test/snapshots/**"],
-  },
-});
-```
-
 :::
 
 In monorepos, nested configs can ignore package specific output without affecting the rest of the repository.
@@ -103,16 +93,6 @@ import { defineConfig } from "oxlint";
 
 export default defineConfig({
   ignorePatterns: ["build/**/*", "!build/keep.js"],
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    ignorePatterns: ["build/**/*", "!build/keep.js"],
-  },
 });
 ```
 

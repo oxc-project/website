@@ -71,19 +71,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    jsPlugins: ["./plugin.js"],
-    rules: {
-      "best-plugin-ever/max-classes": "error",
-    },
-  },
-});
-```
-
 :::
 
 ## Alternative API

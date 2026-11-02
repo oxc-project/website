@@ -39,16 +39,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    plugins: ["import"],
-  },
-});
-```
-
 :::
 
 Setting `plugins` **overwrites the default plugin set**. The list should include every plugin you want enabled.
@@ -94,16 +84,6 @@ import { defineConfig } from "oxlint";
 
 export default defineConfig({
   plugins: [],
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  lint: {
-    plugins: [],
-  },
 });
 ```
 

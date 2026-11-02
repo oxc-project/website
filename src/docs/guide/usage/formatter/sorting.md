@@ -58,26 +58,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    sortImports: {
-      groups: [
-        "type-import",
-        ["value-builtin", "value-external"],
-        "type-internal",
-        "value-internal",
-        ["type-parent", "type-sibling", "type-index"],
-        ["value-parent", "value-sibling", "value-index"],
-        "unknown",
-      ],
-    },
-  },
-});
-```
-
 :::
 
 Use `"newlinesBetween": false` at the top level to disable newlines between groups, then use `{ "newlinesBetween": true }` within `groups` to insert a newline at a specific point.
@@ -112,25 +92,6 @@ export default defineConfig({
       "type-import",
       "unknown",
     ],
-  },
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    sortImports: {
-      newlinesBetween: false,
-      groups: [
-        ["value-builtin", "value-external"],
-        ["value-internal", "value-parent", "value-sibling", "value-index"],
-        { newlinesBetween: true },
-        "type-import",
-        "unknown",
-      ],
-    },
   },
 });
 ```
@@ -183,30 +144,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    sortImports: {
-      customGroups: [
-        {
-          groupName: "react-libs",
-          elementNamePattern: ["react", "react-**"],
-        },
-      ],
-      groups: [
-        "react-libs",
-        ["value-builtin", "value-external"],
-        "value-internal",
-        ["value-parent", "value-sibling", "value-index"],
-        "unknown",
-      ],
-    },
-  },
-});
-```
-
 :::
 
 Not every `perfectionist` option is available. In particular, options that rely on information outside the source file are not supported.
@@ -246,20 +183,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    sortTailwindcss: {
-      stylesheet: "./path/to/stylesheet.css",
-      functions: ["clsx", "cn"],
-      preserveWhitespace: true,
-    },
-  },
-});
-```
-
 :::
 
 Regex patterns for `attributes` and `functions` are not supported.
@@ -292,16 +215,6 @@ export default defineConfig({
 });
 ```
 
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    sortPackageJson: false,
-  },
-});
-```
-
 :::
 
 To sort `scripts` alphabetically:
@@ -322,18 +235,6 @@ import { defineConfig } from "oxfmt";
 export default defineConfig({
   sortPackageJson: {
     sortScripts: true,
-  },
-});
-```
-
-```ts [vite.config.ts]
-import { defineConfig } from "vite-plus";
-
-export default defineConfig({
-  fmt: {
-    sortPackageJson: {
-      sortScripts: true,
-    },
   },
 });
 ```
