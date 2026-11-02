@@ -1,7 +1,7 @@
 ---
 title: "typescript/no-non-null-asserted-nullish-coalescing | Oxlint"
 rule: "typescript/no-non-null-asserted-nullish-coalescing"
-category: "Restriction"
+category: "Suspicious"
 version: "0.5.0"
 default: false
 type_aware: false

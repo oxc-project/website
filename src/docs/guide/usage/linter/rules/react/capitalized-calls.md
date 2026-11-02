@@ -58,6 +58,29 @@ function Component() {
 }
 ```
 
+## Configuration
+
+This rule accepts a configuration object with the following properties:
+
+### allow
+
+type: `string[]`
+
+default: `[]`
+
+Exact names of capitalized functions that may be called directly.
+Forwarded to the React Compiler's `validateNoCapitalizedCalls`
+environment option.
+
+### allowPattern
+
+type: `string`
+
+A regex pattern; capitalized functions whose name matches may be called
+directly, checked alongside `allow`. Useful when a codebase has a
+naming convention for capitalized non-component factories, such as
+generated event or schema builders (e.g. `"Event$"`).
+
 ## How to use
 
 <RuleHowToUse />
