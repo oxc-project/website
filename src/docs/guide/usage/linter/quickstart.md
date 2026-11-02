@@ -31,8 +31,8 @@ $ bun add -D oxlint
 
 :::
 
-::: tip Vite+ caveat
-Vite+ includes Oxlint and it doesn't need to be installed separately. See the [Vite+ docs](https://viteplus.dev/guide/) for more information.
+::: tip Vite+ users
+See the [Vite+ docs](https://viteplus.dev/guide/) for setup and usage information.
 :::
 
 Add lint commands to `package.json`:

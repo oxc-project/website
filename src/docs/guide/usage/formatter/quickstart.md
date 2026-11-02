@@ -37,8 +37,8 @@ Oxfmt is also available as a standalone binary. It works as a pure CLI without N
 The npm package is the recommended way to install Oxfmt and supports all features for now.
 :::
 
-::: tip Vite+ caveat
-Vite+ includes Oxfmt and it doesn't need to be installed separately. See the [Vite+ docs](https://viteplus.dev/guide/) for more information.
+::: tip Vite+ users
+See the [Vite+ docs](https://viteplus.dev/guide/) for setup and usage information.
 :::
 
 Add scripts to `package.json`:
