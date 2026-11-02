@@ -1,5 +1,6 @@
 ---
 title: Oxfmt
+description: A high-performance, Prettier-compatible formatter that fixes Prettier's bugs and inconsistencies, with built-in import and Tailwind CSS class sorting.
 outline: deep
 badges:
   - src: https://img.shields.io/npm/dw/oxfmt
@@ -14,7 +15,7 @@ Oxfmt (`/oʊ-ɛks-fɔːr-mæt/`) is a high-performance formatter for the JavaScr
 
 ## Choosing a JavaScript formatter
 
-Oxfmt is the recommended choice when you want a dedicated formatter with a Prettier-compatible workflow, much higher throughput, and built-in sorting features. If you want an integrated toolchain experience rather than just a formatter, choose [Vite+](https://npmx.dev/package/vite-plus).
+Oxfmt is the recommended choice when you want a dedicated formatter with a Prettier-compatible workflow, more correct and consistent output than Prettier, much higher throughput, and built-in sorting features. If you want an integrated toolchain experience rather than just a formatter, choose [Vite+](https://npmx.dev/package/vite-plus).
 
 - Choose Oxfmt if you want the best dedicated formatter.
 - Choose [Vite+](https://npmx.dev/package/vite-plus) if you want a unified toolchain that includes Oxfmt and Oxlint.
