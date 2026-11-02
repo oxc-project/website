@@ -119,6 +119,34 @@ Some **text** that is long.
 
 Prettier treats the fences as plain text and merges them into the paragraph, which breaks the container.
 
+## HTML
+
+### Dynamic end tags in HTML in JS
+
+In `html` tagged templates (Lit, Solid, etc.), an element whose end tag is a `${}` expression is formatted:
+
+<!-- oxfmt-ignore-start -->
+```js
+// input
+const view = html`
+  <${Show} when=${loggedIn}>
+      <p>Welcome back!</p>
+   <button   onclick=${logout}>Log out</button>
+  </${Show}>
+`;
+
+// Oxfmt
+const view = html`
+  <${Show} when=${loggedIn}>
+    <p>Welcome back!</p>
+    <button onclick=${logout}>Log out</button>
+  </${Show}>
+`;
+```
+<!-- oxfmt-ignore-end -->
+
+Prettier fails to parse the end tag and leaves the whole template as-is.
+
 ## Options
 
 - [`insertFinalNewline`](./config-file-reference#insertfinalnewline)

@@ -42,7 +42,7 @@ const a    = 42; // oxfmt-ignore
 
 Other [native](./language-support#native) languages also support `oxfmt-ignore` in their own comment syntax:
 
-- `<!-- oxfmt-ignore -->` for Markdown
+- `<!-- oxfmt-ignore -->` for HTML and Markdown
 - `/* oxfmt-ignore */` for CSS, SCSS, and Less
 - `# oxfmt-ignore` for YAML and GraphQL
 
