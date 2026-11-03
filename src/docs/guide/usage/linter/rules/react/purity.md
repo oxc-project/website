@@ -24,6 +24,10 @@ Validates that components and hooks are pure by checking that they do
 not call known-impure functions such as `Math.random()`, `Date.now()`,
 or `performance.now()` during render.
 
+Async function components are exempt, including impure calls in nested
+callbacks. An async component is a Server Component: it renders once per
+request and does not re-render. Async hooks are still checked.
+
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
 [`react-hooks/purity`](https://react.dev/reference/eslint-plugin-react-hooks/lints/purity).
@@ -51,6 +55,16 @@ import { useState } from "react";
 function Component() {
   const [rand, setRand] = useState(0);
   return <button onClick={() => setRand(Math.random())}>{rand}</button>;
+}
+
+async function Posts({ posts }) {
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>{Date.now()}</li>
+      ))}
+    </ul>
+  );
 }
 ```
 
