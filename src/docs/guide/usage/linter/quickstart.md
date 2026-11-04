@@ -7,6 +7,11 @@ description: Install Oxlint and learn the common workflows.
 
 This page shows the recommended setup for Oxlint and the most common workflows, with copy-paste commands.
 
+::: tip Vite+ users
+Oxlint is bundled with Vite+, so there is no need to install it separately.
+See the [Vite+ docs](https://viteplus.dev/guide/lint) for setup and usage information.
+:::
+
 ## Install
 
 Install `oxlint` as a dev dependency:
