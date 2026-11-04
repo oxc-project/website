@@ -21,7 +21,7 @@ const x = () => { return 2; };
 ```
 <!-- prettier-ignore-end -->
 
-For JS-in-Vue, use `oxfmt-ignore` inside the `<script>` tag:
+For JS in Vue, Svelte, and Astro files, use `oxfmt-ignore` inside the `<script>` tag:
 
 <!-- prettier-ignore-start -->
 ```vue
@@ -40,7 +40,13 @@ const a    = 42; // oxfmt-ignore
 ```
 <!-- prettier-ignore-end -->
 
-For other files and non-JS parts of Vue files (e.g., `<template>`, `<style>`), use `prettier-ignore` comment. See also Prettier's [ignore documentation](https://prettier.io/docs/ignore#html).
+Other [native](./language-support#native) languages also support `oxfmt-ignore` in their own comment syntax:
+
+- `<!-- oxfmt-ignore -->` for Markdown
+- `/* oxfmt-ignore */` for CSS, SCSS, and Less
+- `# oxfmt-ignore` for YAML and GraphQL
+
+For the rest of Vue, Svelte, and Astro files (e.g., markup, `<style>`) and other [Prettier-backed](./language-support#prettier-backed) files, use `prettier-ignore` comment. See also Prettier's [ignore documentation](https://prettier.io/docs/ignore).
 
 Currently, TOML files do not support ignore comments.
 

@@ -1,7 +1,7 @@
 ---
 title: "unicorn/no-useless-error-capture-stack-trace | Oxlint"
 rule: "unicorn/no-useless-error-capture-stack-trace"
-category: "Restriction"
+category: "Suspicious"
 version: "1.20.0"
 default: false
 type_aware: false

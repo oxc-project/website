@@ -5482,7 +5482,7 @@
   {
     "scope": "typescript",
     "value": "no-non-null-asserted-nullish-coalescing",
-    "category": "restriction",
+    "category": "suspicious",
     "version": "0.5.0",
     "type_aware": false,
     "fix": "fixable_suggestion",
@@ -6772,7 +6772,7 @@
   {
     "scope": "unicorn",
     "value": "no-useless-error-capture-stack-trace",
-    "category": "restriction",
+    "category": "suspicious",
     "version": "1.20.0",
     "type_aware": false,
     "fix": "fixable_suggestion",
