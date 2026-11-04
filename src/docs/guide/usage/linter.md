@@ -144,6 +144,7 @@ See the [compatibility matrix](/compatibility) for detailed framework support.
 - [Automatic fixes](/docs/guide/usage/linter/automatic-fixes) to apply safe changes quickly.
 - [Ignore files](/docs/guide/usage/linter/ignore-files) to control which paths are linted.
 - [Inline ignore comments](/docs/guide/usage/linter/ignore-comments) for ignoring rules within a file.
+- [Bulk suppressions](/docs/guide/usage/linter/bulk-suppressions) for managing incremental adoption of new lint rules within existing codebaes.
 - [Multi-file analysis](/docs/guide/usage/linter/multi-file-analysis) for rules that require project-wide context such as import analysis like [no-cycle](/docs/guide/usage/linter/rules/import/no-cycle.html).
 - [Type-aware linting](/docs/guide/usage/linter/type-aware) for rules that require TypeScript type information.
 - [JS plugins](/docs/guide/usage/linter/js-plugins) (**alpha**) for compatibility with existing ESLint plugins.
