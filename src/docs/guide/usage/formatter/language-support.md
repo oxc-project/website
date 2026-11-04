@@ -28,6 +28,7 @@ Formatted directly by Oxfmt, with no Prettier dependency:
 | TOML                 | `.toml`                                       |
 | YAML                 | `.yml`, `.yaml`                               |
 | Markdown             | `.md`, `.markdown`                            |
+| HTML                 | `.html`, `.htm`, `.xhtml`, and more           |
 
 Detection also covers many well-known config files by name. For example `.babelrc` and `.swcrc` are treated as JSON.
 
@@ -48,16 +49,15 @@ These formats require Node.js and are only available with the `oxfmt` npm packag
 These are being actively ported to Rust. As each native formatter lands, its language moves to the [Native](#native) list above for maximum performance. No change needed on your side.
 :::
 
-| Language   | Extensions                |
-| ---------- | ------------------------- |
-| HTML       | `.html`, `.htm`, `.xhtml` |
-| Angular    | `*.component.html`        |
-| Vue        | `.vue`                    |
-| Svelte     | `.svelte`                 |
-| Astro      | `.astro`                  |
-| MDX        | `.mdx`                    |
-| Handlebars | `.hbs`, `.handlebars`     |
-| MJML       | `.mjml`                   |
+| Language   | Extensions            |
+| ---------- | --------------------- |
+| Angular    | `*.component.html`    |
+| Vue        | `.vue`                |
+| Svelte     | `.svelte`             |
+| Astro      | `.astro`              |
+| MDX        | `.mdx`                |
+| Handlebars | `.hbs`, `.handlebars` |
+| MJML       | `.mjml`               |
 
 ## Embedded languages
 
@@ -65,7 +65,7 @@ Oxfmt also formats code embedded inside JS/TS template literals and Markdown cod
 
 The same split as above applies: languages in the [Native](#native) list are formatted natively, while those in the [Prettier-backed](#prettier-backed) list go through Prettier. See [Embedded Formatting](./embedded-formatting) for details and examples.
 
-For `.vue`, `.svelte`, and `.astro` files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as `<script>` tags in HTML) is still formatted by Prettier. This also applies to Vue and Svelte code embedded in other files (such as a `vue` code block in Markdown), since the whole block is delegated to Prettier.
+For `.vue`, `.svelte`, and `.astro` files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as Angular templates and MDX) is still formatted by Prettier. This also applies to Vue and Svelte code embedded in other files (such as a `vue` code block in Markdown), since the whole block is delegated to Prettier.
 
 ## See also
 
