@@ -7,6 +7,10 @@ description: Install Oxfmt and learn the common workflows.
 
 Recommended setup and common workflows.
 
+::: tip Vite+ users
+See the [Vite+ docs](https://viteplus.dev/guide/fmt) for setup and usage information.
+:::
+
 ## Install
 
 Install `oxfmt` as a dev dependency:
@@ -35,10 +39,6 @@ $ bun add -D oxfmt
 Oxfmt is also available as a standalone binary. It works as a pure CLI without Node.js, but does not support [Prettier-backed formats](./language-support#prettier-backed) (these files are skipped), dynamic config files (`oxfmt.config.ts`), [Tailwind CSS class sorting](./sorting#sort-tailwind-css-classes), [LSP](./editors) mode, etc.
 
 The npm package is the recommended way to install Oxfmt and supports all features for now.
-:::
-
-::: tip Vite+ users
-See the [Vite+ docs](https://viteplus.dev/guide/) for setup and usage information.
 :::
 
 Add scripts to `package.json`:

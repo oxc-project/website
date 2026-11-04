@@ -7,6 +7,10 @@ description: Install Oxlint and learn the common workflows.
 
 This page shows the recommended setup for Oxlint and the most common workflows, with copy-paste commands.
 
+::: tip Vite+ users
+See the [Vite+ docs](https://viteplus.dev/guide/lint) for setup and usage information.
+:::
+
 ## Install
 
 Install `oxlint` as a dev dependency:
@@ -29,10 +33,6 @@ $ yarn add -D oxlint
 $ bun add -D oxlint
 ```
 
-:::
-
-::: tip Vite+ users
-See the [Vite+ docs](https://viteplus.dev/guide/) for setup and usage information.
 :::
 
 Add lint commands to `package.json`:
