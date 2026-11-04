@@ -23,6 +23,7 @@ export const enConfig = defineLocaleConfig("root", {
           { text: "Minifier", link: "/docs/guide/usage/minifier" },
           { text: "Resolver", link: "/docs/guide/usage/resolver" },
           { text: "TypeScript Runner", link: "/docs/guide/usage/oxc-node" },
+          { text: "Type Checker", link: "/docs/guide/usage/typechecker" },
         ],
       },
       { text: "Contribute", link: "/docs/contribute/introduction" },
@@ -289,6 +290,12 @@ export const enConfig = defineLocaleConfig("root", {
           collapsed: true,
           link: "/docs/guide/usage/oxc-node",
           items: [{ text: "Overview", link: "/docs/guide/usage/oxc-node" }],
+        },
+        {
+          text: "Type Checker",
+          collapsed: true,
+          link: "/docs/guide/usage/typechecker",
+          items: [{ text: "Overview", link: "/docs/guide/usage/typechecker" }],
         },
         {
           text: "Resources",
