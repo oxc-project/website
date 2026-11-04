@@ -15,6 +15,7 @@ outline: deep
 - [Renovate](https://github.com/renovatebot/renovate) (Oxlint) - Dependency update automation bot
 - [Bluesky](https://github.com/bluesky-social/social-app) (Oxlint) - Social media network
 - [Shopify](https://www.shopify.com/news/performance%F0%9F%91%86-complexity%F0%9F%91%87-killer-updates-from-shopify-engineering) (Oxlint) - Reduced hour of workload to seconds
+- [Back Market](https://www.backmarket.com/en-us) (Oxfmt) — Refurbished tech marketplace
 - [Google Neuroglancer](https://github.com/google/neuroglancer) (Oxlint) - WebGL volumetric data visualization tool
 - [Turborepo](https://github.com/vercel/turborepo) (Both) - High-performance build system for JavaScript and TypeScript codebases
 - [Sentry JavaScript](https://github.com/getsentry/sentry-javascript) (Both) - Official Sentry SDKs for JavaScript
