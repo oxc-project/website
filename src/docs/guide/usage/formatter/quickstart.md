@@ -8,6 +8,7 @@ description: Install Oxfmt and learn the common workflows.
 Recommended setup and common workflows.
 
 ::: tip Vite+ users
+Oxfmt is bundled with Vite+, so there is no need to install it separately.
 See the [Vite+ docs](https://viteplus.dev/guide/fmt) for setup and usage information.
 :::
 
