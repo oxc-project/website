@@ -32,23 +32,22 @@ Rust usage example can be found [here](https://github.com/oxc-project/oxc/blob/m
 
 ## Print
 
-After parsing and transforming, you can print code.
+After parsing or transforming, use [`oxc-codegen`](./codegen) to print the ESTree AST as source code.
 
-Here's a direct example using [esrap](https://npmx.dev/package/esrap) _(`parse` in reverse!)_:
+For example:
 
 ```js
-import { print } from "esrap";
-import ts from "esrap/languages/ts";
 import { parseSync } from "oxc-parser";
+import { printSync } from "oxc-codegen";
 
-const { program } = parseSync("test.js", 'alert("hello oxc & esrap");');
-const { code } = print(program, ts());
+const { program } = parseSync("test.js", 'alert("hello oxc");');
+const { code } = printSync(program);
 
-console.log(code); // alert("hello oxc & esrap");
+console.log(code); // alert("hello oxc");
 ```
 
 :::info
-Today, comments are not printed. _It will be supported thanks to [oxc-parser #13285](https://github.com/oxc-project/oxc/pull/13285)._
+`oxc-codegen` currently does not print comments. See the [Code Generator guide](./codegen#current-limitations) for the other current limitations.
 :::
 
 <!-- Links -->
