@@ -7325,7 +7325,7 @@
     "category": "pedantic",
     "version": "1.70.0",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "conditional_fix",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-single-call.html"
   },

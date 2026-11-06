@@ -56,6 +56,15 @@ default: `true`
 
 When set `true`, it flags redeclaring built-in globals (e.g., `let Object = 1;`).
 
+### ignoreDeclarationMerge
+
+type: `boolean`
+
+default: `true`
+
+When `true`, automatically merged declarations like namespace, class, etc. will be
+ignored when checking for redeclarations.
+
 ## How to use
 
 <RuleHowToUse />
