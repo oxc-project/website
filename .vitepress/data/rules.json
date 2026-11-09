@@ -4115,7 +4115,7 @@
     "category": "style",
     "version": "0.15.14",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-catch.html"
   },
@@ -6845,7 +6845,7 @@
     "category": "pedantic",
     "version": "0.6.1",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-undefined.html"
   },
@@ -7285,7 +7285,7 @@
     "category": "pedantic",
     "version": "0.0.16",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-regexp-test.html"
   },

@@ -5,7 +5,7 @@ category: "Style"
 version: "0.15.14"
 default: false
 type_aware: false
-fix: "pending"
+fix: "conditional_suggestion"
 upstream: "https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/prefer-catch.md"
 ---
 
