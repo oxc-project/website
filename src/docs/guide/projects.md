@@ -36,6 +36,7 @@ outline: deep
 - [npmx.dev](https://github.com/npmx-dev/npmx.dev) (Both) - npm package explorer
 - [SWR](https://github.com/vercel/swr) (Both) - Library for data fetching in React
 - [Redux](https://github.com/reduxjs/redux) (Both) - State management for JavaScript applications
+- [Formstep](https://formstep.io) (Both) - Forms and information requests for teams, workflows and AI agents
 
 ## Resolver
 
