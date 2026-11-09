@@ -147,6 +147,36 @@ const view = html`
 
 Prettier fails to parse the end tag and leaves the whole template as-is.
 
+## Vue
+
+### TypeScript in templates of `lang="tsx"`
+
+In a Vue file whose `<script>` is `lang="tsx"`, template expressions are parsed as TSX, as Vue's compiler does:
+
+<!-- oxfmt-ignore-start -->
+```vue
+<!-- input -->
+<script setup lang="tsx">
+const a = <div />;
+</script>
+
+<template>
+  <p>{{ (value  as  Item).name }}</p>
+</template>
+
+<!-- Oxfmt -->
+<script setup lang="tsx">
+const a = <div />;
+</script>
+
+<template>
+  <p>{{ (value as Item).name }}</p>
+</template>
+```
+<!-- oxfmt-ignore-end -->
+
+Prettier parses them as TypeScript only for `lang="ts"`, and leaves TypeScript syntax as-is for `lang="tsx"`.
+
 ## Options
 
 - [`insertFinalNewline`](./config-file-reference#insertfinalnewline)

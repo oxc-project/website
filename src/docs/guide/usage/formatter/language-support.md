@@ -29,6 +29,7 @@ Formatted directly by Oxfmt, with no Prettier dependency:
 | YAML                 | `.yml`, `.yaml`                               |
 | Markdown             | `.md`, `.markdown`                            |
 | HTML                 | `.html`, `.htm`, `.xhtml`, and more           |
+| Vue                  | `.vue`                                        |
 
 Detection also covers many well-known config files by name. For example `.babelrc` and `.swcrc` are treated as JSON.
 
@@ -52,7 +53,6 @@ These are being actively ported to Rust. As each native formatter lands, its lan
 | Language   | Extensions            |
 | ---------- | --------------------- |
 | Angular    | `*.component.html`    |
-| Vue        | `.vue`                |
 | Svelte     | `.svelte`             |
 | Astro      | `.astro`              |
 | MDX        | `.mdx`                |
@@ -65,7 +65,7 @@ Oxfmt also formats code embedded inside JS/TS template literals and Markdown cod
 
 The same split as above applies: languages in the [Native](#native) list are formatted natively, while those in the [Prettier-backed](#prettier-backed) list go through Prettier. See [Embedded Formatting](./embedded-formatting) for details and examples.
 
-For `.vue`, `.svelte`, and `.astro` files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as Angular templates and MDX) is still formatted by Prettier. This also applies to Vue and Svelte code embedded in other files (such as a `vue` code block in Markdown), since the whole block is delegated to Prettier.
+For `.svelte` and `.astro` files, embedded JS/TS (such as `<script>` blocks) is formatted by native formatter rather than Prettier. Embedded JS/TS in the other Prettier-backed formats (such as Angular templates and MDX) is still formatted by Prettier. This also applies to Svelte code embedded in other files (such as a `svelte` code block in Markdown), since the whole block is delegated to Prettier.
 
 ## See also
 
