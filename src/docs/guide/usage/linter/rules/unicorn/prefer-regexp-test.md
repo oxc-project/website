@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.0.16"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_safe_fix_or_suggestion"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md"
 ---
 
