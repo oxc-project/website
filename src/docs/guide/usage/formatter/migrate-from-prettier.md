@@ -74,7 +74,7 @@ Each fix is documented with its reason and an example:
 - [GraphQL](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_graphql/DIVERGENCES.md)
 - [YAML](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_yaml/DIVERGENCES.md)
 - [Markdown](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_markdown/DIVERGENCES.md)
-- [HTML](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_htmlish/DIVERGENCES.md)
+- [HTML / Vue](https://github.com/oxc-project/oxc/blob/main/crates/oxc_formatter_htmlish/DIVERGENCES.md)
 - [Embedded formatting](https://github.com/oxc-project/oxc/blob/main/apps/oxfmt/DIVERGENCES.md)
 
 ## Step 1: Upgrade Prettier to v3.9.9 (optional)
