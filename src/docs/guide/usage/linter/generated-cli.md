@@ -156,7 +156,7 @@ Arguments:
 - **`    --type-aware`** &mdash;
   Enable rules that require type information
 - **`    --type-check`** &mdash;
-  Enable experimental type checking (includes TypeScript compiler diagnostics)
+  Enable type checking (includes TypeScript compiler diagnostics)
 - **`-h`**, **`--help`** &mdash;
   Prints help information
 - **`-V`**, **`--version`** &mdash;

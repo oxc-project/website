@@ -120,7 +120,7 @@ export default defineConfig({
 :::
 
 - `options.typeAware` is equivalent to passing `--type-aware` on the CLI.
-- `options.typeCheck` (experimental) is equivalent to passing `--type-check` on the CLI.
+- `options.typeCheck` is equivalent to passing `--type-check` on the CLI.
 - `options.maxWarnings` is equivalent to passing `--max-warnings` on the CLI.
 
 CLI flags take precedence when both CLI and config values are present.
