@@ -2,6 +2,9 @@
   "worker": {
     "compatibility_date": "2026-02-24"
   },
+  "routing": {
+    "alwaysUseHttps": true
+  },
   "inference": {
     "appType": "static",
     "outputDir": "build"
