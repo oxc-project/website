@@ -112,6 +112,14 @@ export const CORE_MEMBERS: TeamMember[] = [
     ],
   },
   {
+    id: "nrayburn-tech",
+    type: "core",
+    name: "Nicholas Rayburn",
+    title: "Member",
+    avatar: "https://www.github.com/nrayburn-tech.png",
+    links: [{ icon: "github", link: "https://github.com/nrayburn-tech" }],
+  },
+  {
     id: "mysteryven",
     type: "emeriti",
     name: "Mysteryven",
