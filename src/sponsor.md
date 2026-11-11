@@ -12,11 +12,18 @@ You can sponsor us on [GitHub Sponsors](https://github.com/sponsors/oxc-project)
 
 Sponsorship lets us keep improving the JavaScript and Rust ecosystems without burning out.
 
-Everything we receive on OpenCollective is paid out to core team members who are not part of [VoidZero](https://voidzero.dev).
-
 As a sponsor, your avatar is displayed across all [oxc-project repositories](https://github.com/oxc-project) and on the [landing page](/) of this website.
 
 If our work has improved your development experience, your CI pipelines, your build times, or your learning, please consider sponsoring. It helps more than you might think, and it keeps the motivation alive.
+
+## Paying back to contributors
+
+Everything we receive on OpenCollective is paid out to core team members who are not part of [VoidZero](https://voidzero.dev).
+
+### Eligibility rules
+
+- $40 per hour.
+- A maximum of $4,000 per month.
 
 ## Current Sponsors
 
