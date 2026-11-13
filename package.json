@@ -9,7 +9,7 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "lint": "vp lint --deny-warnings",
-    "lint:fix": "vp run lint --fix && typos -w",
+    "lint:fix": "vp run lint --fix",
     "fmt": "vp fmt",
     "knip": "knip --no-config-hints",
     "sponsors": "degit oxc-project/sponsors sponsors --force && node scripts/generate-sponsors.js",

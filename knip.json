@@ -4,7 +4,6 @@
   "project": [".vitepress/**/*.{ts,vue}", "src/**/*.md"],
   "ignore": [".vitepress/cache/**", ".vitepress/dist/**", "build/**"],
   "ignoreDependencies": ["esbuild", "wrangler"],
-  "ignoreBinaries": ["typos"],
   "ignoreExportsUsedInFile": true,
   "ignoreIssues": {
     ".vitepress/theme/constants/team.ts": ["exports", "types"]
