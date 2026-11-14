@@ -63,6 +63,7 @@ outline: deep
 - [Andromeda](https://github.com/tryandromeda/andromeda) - A modern, and secure JavaScript & TypeScript runtime built with The Nova Engine and oxc crates
 - [Rolldown](https://rolldown.rs) - Uses all compiler components
 - [sovra](https://github.com/oblador/sovra) - Test decider for large JavaScript projects
+- [Spirolo](https://github.com/spirolo/spirolo) - Analyzer for JavaScript and TypeScript test suites
 - [Tauri](https://github.com/tauri-apps/tauri/blob/8c6d1e8e6c852667bb223b5f4823948868c26d98/crates/tauri-cli/src/migrate/migrations/v1/frontend.rs) - Uses the parser for its codemod
 - [tree-shaker](https://github.com/KermanX/tree-shaker) - An experimental tree shaker for JavaScript
 - [Tyvm](https://github.com/zackradisic/tyvm) - An experimental bytecode interpreter for type-level TypeScript
