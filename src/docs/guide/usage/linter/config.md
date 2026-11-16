@@ -125,7 +125,7 @@ export default defineConfig({
 
 CLI flags take precedence when both CLI and config values are present.
 
-`options.typeAware` and `options.typeCheck` are only supported in the root config file.
+`options.denyWarnings`, `options.maxWarnings` and `options.typeCheck` apply to the whole run and belong in the root config file. The other options can also be set in a [nested config](./nested-config), where they apply to the files that config governs.
 
 ## Configure rules
 
