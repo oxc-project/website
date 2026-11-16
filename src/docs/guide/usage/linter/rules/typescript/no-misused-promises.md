@@ -75,12 +75,20 @@ This rule accepts a configuration object with the following properties:
 
 ### checksConditionals
 
-type: `boolean`
+type: `object | boolean`
 
-default: `true`
+#### checksConditionals.flagUnions
 
-Whether to check if Promises are used in conditionals.
-When true, disallows using Promises in conditions where a boolean is expected.
+type: `"none" | "strict" | "all"`
+
+default: `"none"`
+
+Controls which union types are reported in conditionals.
+
+- `"none"` only reports values that are always Promise-like.
+- `"strict"` also reports unions where the non-Promise types match the awaited Promise types,
+  such as `Promise<number> | number`.
+- `"all"` reports any union containing a Promise-like type.
 
 ### checksSpreads
 

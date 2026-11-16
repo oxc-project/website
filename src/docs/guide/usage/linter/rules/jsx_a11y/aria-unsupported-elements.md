@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.1.1"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "conditional_safe_fix_or_suggestion"
 upstream: "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/aria-unsupported-elements.md"
 ---
 

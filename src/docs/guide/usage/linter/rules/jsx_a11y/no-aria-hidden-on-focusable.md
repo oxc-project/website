@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.0.22"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/no-aria-hidden-on-focusable.md"
 ---
 

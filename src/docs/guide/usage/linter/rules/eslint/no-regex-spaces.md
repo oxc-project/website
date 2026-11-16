@@ -5,7 +5,7 @@ category: "Restriction"
 version: "0.0.18"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://eslint.org/docs/latest/rules/no-regex-spaces"
 ---
 

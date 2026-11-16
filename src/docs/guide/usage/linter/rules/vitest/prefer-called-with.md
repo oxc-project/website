@@ -5,7 +5,7 @@ category: "Style"
 version: "0.2.5"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-with.md"
 ---
 
@@ -20,7 +20,10 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
+Suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`.
+
+With `--fix-suggestions`, this rule will rewrite `toBeCalled()` and
+`toHaveBeenCalled()` to their `...With()` counterparts.
 
 ### Why is this bad?
 

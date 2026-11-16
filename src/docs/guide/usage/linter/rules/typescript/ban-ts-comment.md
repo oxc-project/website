@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.0.8"
 default: false
 type_aware: false
-fix: "conditional_fix"
+fix: "conditional_suggestion"
 upstream: "https://typescript-eslint.io/rules/ban-ts-comment/"
 ---
 
