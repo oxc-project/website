@@ -5,7 +5,7 @@ category: "Restriction"
 version: "0.5.0"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://typescript-eslint.io/rules/no-import-type-side-effects/"
 ---
 

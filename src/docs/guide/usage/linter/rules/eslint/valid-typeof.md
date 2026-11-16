@@ -36,8 +36,8 @@ Examples of **incorrect** code for this rule:
 ```js
 typeof foo === "strnig";
 typeof foo == "undefimed";
-typeof bar != "nunber"; // spellchecker:disable-line
-typeof bar !== "fucntion"; // spellchecker:disable-line
+typeof bar != "nunber";
+typeof bar !== "fucntion";
 ```
 
 Examples of **correct** code for this rule:

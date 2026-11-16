@@ -34,9 +34,10 @@ and access website in more than one language.
 Examples of **incorrect** code for this rule:
 
 ```jsx
-<html>
 <html lang="foo">
 ```
+
+A missing `lang` attribute is reported by `jsx-a11y/html-has-lang`.
 
 Examples of **correct** code for this rule:
 

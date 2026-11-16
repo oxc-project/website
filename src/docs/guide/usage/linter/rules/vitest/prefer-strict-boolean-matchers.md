@@ -5,7 +5,7 @@ category: "Style"
 version: "1.57.0"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-boolean-matchers.md"
 ---
 
@@ -20,12 +20,14 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 
 ### What it does
 
-Enforce using `toBe(true)` and `toBe(false)` over matchers that coerce types to boolean.
+This rule warns when `toBeTruthy()` or `toBeFalsy()` is used with `expect` or `expectTypeOf`.
+With `--fix-suggestions`, it will be replaced with `toBe(true)` or `toBe(false)`.
 
 ### Why is this bad?
 
 Truthy/falsy matchers coerce values to boolean and can hide type mistakes.
 Strict boolean assertions make intent explicit and avoid accidental coercion.
+The replacement is a suggestion because it changes which values pass the assertion.
 
 ### Examples
 

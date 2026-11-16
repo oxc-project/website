@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.2.11"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://typescript-eslint.io/rules/prefer-ts-expect-error/"
 ---
 

@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.12.0"
 default: false
 type_aware: false
-fix: "fixable_dangerous_fix_or_suggestion"
+fix: "fixable_dangerous_suggestion"
 upstream: "https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md"
 ---
 

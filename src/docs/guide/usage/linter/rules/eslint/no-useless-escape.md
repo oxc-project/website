@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.0.5"
 default: true
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_dangerous_suggestion"
 upstream: "https://eslint.org/docs/latest/rules/no-useless-escape"
 ---
 

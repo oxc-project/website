@@ -5,7 +5,7 @@ category: "Style"
 version: "0.2.14"
 default: false
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be.md"
 ---
 
@@ -25,11 +25,7 @@ matchers for `null`, `undefined`, and `NaN`.
 
 ### Why is this bad?
 
-When asserting against primitive literals such as numbers and strings,
-the equality matchers all operate the same, but read slightly
-differently in code.
-
-This rule recommends using the `toBe` matcher in these situations, as
+This rule recommends using the `toBe` matcher for primitive literals, as
 it forms the most grammatically natural sentence. For `null`,
 `undefined`, and `NaN` this rule recommends using their specific `toBe`
 matchers, as they give better error messages as well.

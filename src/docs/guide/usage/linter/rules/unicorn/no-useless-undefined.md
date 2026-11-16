@@ -5,7 +5,7 @@ category: "Pedantic"
 version: "0.6.1"
 default: false
 type_aware: false
-fix: "fixable_safe_fix_or_suggestion"
+fix: "fixable_dangerous_fix_or_suggestion"
 upstream: "https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md"
 ---
 
@@ -27,6 +27,9 @@ This rule can conflict with the default behaviors of the `eslint/array-callback-
 and `eslint/getter-return` rules. For both rules, you can set
 the `allowImplicit` option to avoid conflicts.
 :::
+
+Removing trailing `undefined` arguments can change a function's behavior when it
+inspects the number of arguments. These fixes require `--fix-dangerously`.
 
 ### Why is this bad?
 

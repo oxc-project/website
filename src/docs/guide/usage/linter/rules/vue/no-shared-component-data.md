@@ -5,7 +5,7 @@ category: "Correctness"
 version: "1.67.0"
 default: false
 type_aware: false
-fix: "pending"
+fix: "fixable_suggestion"
 upstream: "https://eslint.vuejs.org/rules/no-shared-component-data.html"
 ---
 
