@@ -173,11 +173,16 @@ export default defineConfig({
 });
 ```
 
-Only some properties can be extended. The supported properties are:
+Only some properties can be extended. The supported properties, and how each one merges, are:
 
-- `rules`
-- `plugins`
-- `overrides`
+- `rules`: merged per rule; the extending config wins when both set the same rule
+- `plugins`: unioned across the chain, with the default plugins contributed by any config that declares none (see below)
+- `jsPlugins`: unioned across the chain
+- `categories`: merged per category; the extending config wins
+- `overrides`: concatenated, with the extended configs' overrides applied first
+- `options`: each option falls back to the extended config when the extending config leaves it unset (`typeAware` and `typeCheck` remain root-config-only)
+
+Properties not listed here are not inherited. In particular, `settings`, `env`, `globals`, and `ignorePatterns` come only from the config being loaded: an `ignorePatterns` list in an extended file has no effect on the configs that extend it.
 
 ### How `plugins` merges
 
