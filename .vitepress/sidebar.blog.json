@@ -1,5 +1,9 @@
 [
   {
+    "text": "Faster type-aware linting with tsrs",
+    "link": "/blog/2026-11-17-faster-type-aware-linting-with-tsrs"
+  },
+  {
     "text": "React Compiler Support",
     "link": "/blog/2026-08-18-react-compiler-support"
   },
