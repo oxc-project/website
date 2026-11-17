@@ -33,7 +33,7 @@ Compared with running typescript-eslint and `tsc` separately, Oxlint with tsrs i
 
 ![Combined typechecking and type-aware linting runtime and memory comparison between Oxlint with tsrs, Oxlint with tsgolint, Oxlint with tsgolint and tsgo, and typescript-eslint with tsc](/blog/2026-11-17-faster-type-aware-linting-with-tsrs/typecheck-lint-performance.png)
 
-[Fast mode](https://github.com/oxc-project/tsrs#fast-mode) adapts checker counts, groups related work, enables additional caches and memory optimizations to improve performance.
+[Fast mode](https://github.com/oxc-project/tsrs#fast-mode) is enabled by default, it adapts checker counts, groups related work, enables additional caches and memory optimizations to improve performance.
 
 ## Compatibility
 
