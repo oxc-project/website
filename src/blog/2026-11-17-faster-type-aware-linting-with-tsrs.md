@@ -9,7 +9,7 @@ authors:
 
 We’re adding `tsrs` as an alternative to `tsgolint` for type-aware linting in Oxlint. It’s the Rust port of TypeScript [announced by Cloudflare and VoidZero in October](https://blog.cloudflare.com/typescript-rust-port/). Teams at Cloudflare, Owner.com and OpenAI are already using it for type-aware linting.
 
-Our goal is to make Oxlint the best possible linter for developers and agents. Resolving types accounts for much of the cost of type-aware linting. `tsrs` makes that work faster and more memory-efficient, shortening feedback loops in editors, CI, and agent workflows.
+Our goal is to make Oxlint the best possible linter for developers and agents. tsrs enables up to 7x faster and a 75% reduction in memory, shortening feedback loops in editors, CI, and agent workflows.
 
 The new backend comes with the `tsrs` npm package and works through Oxlint’s existing CLI and configuration. It can be used as a drop-in replacement for a project that already uses Oxlint’s type-aware linting.
 
@@ -21,7 +21,19 @@ Have your coding agent set up tsrs and measure the difference in your project.
 
 ## Performance
 
+`tsrs` delivers up to 5× the speed of tsgolint v7.0.2007, with memory reductions of around 70%.
 
+Compared with typescript-eslint, the gap is even larger. `tsrs` is up to 98× faster, with a reduction of up to 82% in peak memory.
+
+![Type-aware linting runtime and memory comparison between tsrs, tsgolint, and typescript-eslint](/blog/2026-11-17-faster-type-aware-linting-with-tsrs/lint-performance.png)
+
+With tsrs inside Oxlint, you can run typechecking and type-aware linting through a single TypeScript analysis and avoid doing the same work twice. This way, the largest speedup grows to 7×, with memory reductions of up to 75%.
+
+Compared with running typescript-eslint and `tsc` separately, Oxlint with tsrs is up to 122× faster, with a reduction of up to 82% in peak memory.
+
+![Combined typechecking and type-aware linting runtime and memory comparison between Oxlint with tsrs, Oxlint with tsgolint, Oxlint with tsgolint and tsgo, and typescript-eslint with tsc](/blog/2026-11-17-faster-type-aware-linting-with-tsrs/typecheck-lint-performance.png)
+
+[Fast mode](https://github.com/oxc-project/tsrs#fast-mode) adapts checker counts, groups related work, enables additional caches and memory optimizations to improve performance.
 
 ## Compatibility
 
