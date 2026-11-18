@@ -81,23 +81,22 @@ const result = await transform("lib.js", sourceCode, {
 "Inject" feature provides a way to replace global variables with an import from a module. This feature is similar to [esbuild's `inject` option](https://esbuild.github.io/api/#inject) and [`@rollup/plugin-inject`](https://github.com/rollup/plugins/tree/master/packages/inject).
 
 ```js
-// input
-const foo = new Promise((resolve) => resolve(1));
-
-// output
-import { Promise as P } from "es6-promise";
-const foo = new P((resolve) => resolve(1));
-```
-
-```js
-// Example
 import { transform } from "oxc-transform";
 
+const sourceCode = "const foo = new Promise((resolve) => resolve(1));";
 const result = await transform("lib.js", sourceCode, {
   inject: {
-    P: ["es6-promise", "Promise"],
+    Promise: ["es6-promise", "Promise"],
   },
 });
+console.log(result.code);
+```
+
+Output:
+
+```js
+import { Promise } from "es6-promise";
+const foo = new Promise((resolve) => resolve(1));
 ```
 
 Each `inject` entry maps an expression to an imported identifier. The keys of it must be an identifier (e.g. `__DEV__`), or a dotted sequence of identifiers (e.g. `process.env.NODE_ENV`). The values of it must be a string of the import source, or a tuple of strings of the import source and the import name (`*` is namespace import).
