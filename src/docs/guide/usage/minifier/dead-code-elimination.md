@@ -1,8 +1,8 @@
 # Dead Code Elimination
 
-Oxc minifier supports eliminating dead code. For example, it removes the statements inside a `if (false)` block and the unused private class fields.
+Oxc minifier supports eliminating dead code. For example, it removes statements inside an `if (false)` block and unused private class fields.
 
-This feature is always enabled, but you can remove more code by enabling some options.
+Dead code elimination is enabled by default. Set `compress: false` to disable it.
 
 ::: tip Useful features in the transformer
 
@@ -12,7 +12,7 @@ Other than the options below, you can also use [the `define` feature in the tran
 
 ## Drop Console
 
-You can remove all `console.*` calls by enabling the `dropConsole` option. This option behaves similar to [Terser](https://terser.org/)'s `drop_console` option and [esbuild's `drop: ['console']` option](https://esbuild.github.io/api/#drop).
+`dropConsole` removes direct calls such as `console.log(...)`, even when `console` is a local binding. It does not remove optional-chain calls.
 
 ```js
 // input
@@ -36,7 +36,7 @@ const result = await minify("lib.js", code, {
 
 ::: warning The whole call expression is removed
 
-Note that this option removes the whole call expression including the arguments. This is intentional because removing the evaluation of call arguments is useful for improving the runtime performance if those are expensive to compute. However, if any of those arguments have side effects, this transformation will change the behavior of your code. If you want to keep the arguments, you can use [`compress.treeshake.manualPureFunctions: ['console']`](#define-pure-functions) option.
+Dropping a call also drops its arguments and their side effects. To retain argument side effects when the result is unused, use [`compress.treeshake.manualPureFunctions: ['console']`](#define-pure-functions) instead.
 
 :::
 
@@ -88,58 +88,39 @@ const result = await minify("lib.js", code, {
 
 ## Unused Declarations
 
-All unused function / class / variable declarations are removed by default. You can keep them by using the `unused` option.
+Set `compress.unused: false` to keep unused declarations. The `"keep_assign"` setting still removes unused declarations, but counts simple assignments as uses.
 
 ```js
-// input
-{
-  function foo() {}
-}
-
-// output
-```
-
-```js
-// Example
 import { minify } from "oxc-minify";
 
-const result = await minify("lib.js", code, {
-  compress: {
-    unused: true, // or "keep_assign"
-  },
+const code = "function unused() {}";
+
+const defaults = await minify("lib.mjs", code);
+console.log(defaults.code); // ""
+
+const kept = await minify("lib.mjs", code, {
+  compress: { unused: false },
+  mangle: false,
 });
+console.log(kept.code); // "function unused(){}"
 ```
 
 ## Keep `name` Property Values
 
-By default, Oxc minifier assumes that your code does not rely on the `name` property of functions / classes. This is because the `name` property is inferred from the function / class name or the variable name and keeping the original name would prevent reducing the output size.
-
-To keep the `name` property values, you can use the `keepNames` option.
+Compression can drop function and class names, and mangling can rename them. Configure `compress.keepNames` and [`mangle.keepNames`](./mangling#keep-name-property-values) to preserve them.
 
 ```js
-// input
-var bar = function foo() {};
-
-// output
-var bar = function foo() {};
-```
-
-```js
-// Example
 import { minify } from "oxc-minify";
 
-const result = await minify("lib.js", code, {
+const code = "export const bar = function foo() {};";
+const result = await minify("lib.mjs", code, {
   compress: {
-    keepNames: true, // shorthand of { function: true, class: true }
+    keepNames: { function: true, class: true },
   },
+  mangle: { keepNames: true },
 });
+console.log(result.code); // "export const bar=function foo(){};"
 ```
-
-::: tip `mangle.keepNames` option
-
-If you are using the mangling feature, you may also want to enable [the `mangle.keepNames` option](./mangling#keep-name-property-values).
-
-:::
 
 ## Controlling Side Effect Detection
 
@@ -249,30 +230,27 @@ foo.bar;
 
 By default, Oxc minifier assumes that global variable accesses have side effects. This is because accessing a non-existent global variable throws an error. Also there's a case where a global variable is a getter and the getter might have a side effect. You can tell Oxc minifier to ignore those possibilities by setting `compress.treeshake.unknownGlobalSideEffects` option to `false`. This feature is similar to [Rollup's `treeshake.unknownGlobalSideEffects` option](https://rollupjs.org/configuration-options/#treeshake-unknownglobalsideeffects).
 
-```js
+```js [lib.mjs]
 // input
 const jQuery = $;
 
-// output (with `compress.treeshake.propertyReadSideEffects: false`)
+// output (with `compress.treeshake.unknownGlobalSideEffects: false`)
 ```
 
 ### Ignoring Invalid Import Statement Side Effects
 
-By default, Oxc minifier assumes that import statements don't have side effects. Import statements have side effects in the following cases:
-
-- the import cannot be resolved
-- the import name is not exported from the imported module
-
-If these side effects need to be preserved, you can tell Oxc minifier to preserve them by setting `compress.treeshake.invalidImportSideEffects` option to `true`.
+By default, Oxc can strip unused specifiers from regular imports, leaving a bare import if none remain. This can suppress missing-export errors, but not module resolution errors. Set `compress.treeshake.invalidImportSideEffects: true` to keep the specifiers.
 
 ```js
-// input
-import { existing } from "cannot-be-resolved";
-import { missing } from "somewhere";
+// input (assume ./dependency.js exists but does not export `missing`)
+import { missing } from "./dependency.js";
+import { unused } from "missing-package";
 
-// output (with `compress.treeshake.invalidImportSideEffects: true`)
-import { existing } from "cannot-be-resolved";
-import { missing } from "somewhere";
+// output (with `compress.treeshake.invalidImportSideEffects: true` and `mangle: false`)
+import { missing } from "./dependency.js";
+import { unused } from "missing-package";
 
 // output (with `compress.treeshake.invalidImportSideEffects: false`)
+import "./dependency.js";
+import "missing-package";
 ```
