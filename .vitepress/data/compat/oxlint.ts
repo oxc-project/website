@@ -18,8 +18,8 @@ const oxlintPlugins = {
   url: "https://oxc.rs/docs/guide/usage/linter/plugins.html",
 };
 const reactCompilerRule = {
-  title: "react/react-compiler",
-  url: "https://oxc.rs/docs/guide/usage/linter/rules/react/react-compiler.html",
+  title: "React Compiler rules",
+  url: "https://oxc.rs/blog/2026-08-18-react-compiler-support.html#oxlint",
 };
 const sfcIssue = {
   title: "SFC Template Support",

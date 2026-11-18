@@ -243,7 +243,7 @@ Use it to clean up any expensive resources used during the rule's AST traversal.
 
 If `before` hook returns `false` to skip running the rule on the file, `after` hook will be skipped too.
 
-Same as `before` hook, `after` hook is NOT guaranteed to run on every file (see [above](#when-before-hook-runs)).
+Like [`before`](#before-hook), `after` may not run on every file.
 
 ## Why is the alternative API faster?
 

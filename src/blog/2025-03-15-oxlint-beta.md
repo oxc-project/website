@@ -58,7 +58,7 @@ For more detailed instructions on how to use Oxlint and integrate it with your p
 - Significant performance improvements, up to twice as fast compared to the previous release
 - Includes over 500 rules built-in, with no extra installation required
 - Many rules from the `typescript`, `unicorn`, `react`, `react-perf`, `nextjs`, `import`, `jsdoc`, `jsx-a11y`, `node`, `promise`, `jest`, `vitest` plugins are now complete.
-- Support for configuration via [`.oxlintrc.json` files](/docs/guide/usage/linter/nested-config.html#configuration-file-format), including [nested configuration files](/docs/guide/usage/linter/nested-config.html), using `extends` to share configuration between files, applying `overrides` to specific files, and more.
+- Support for configuration via [`.oxlintrc.json` files](/docs/guide/usage/linter/config#configuration-file-format), including [nested configuration files](/docs/guide/usage/linter/nested-config.html), using `extends` to share configuration between files, applying `overrides` to specific files, and more.
 - Supports linting `<script>` content in `.astro`, `.svelte` and `.vue` files with no additional configuration needed.
 - Allows applying [automatic fixes](/docs/guide/usage/linter/automatic-fixes.html) and suggestions to files.
 
