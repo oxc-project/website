@@ -52,6 +52,7 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
+      # Or yarn, npm, etc.
       - run: pnpm install --frozen-lockfile
       - run: pnpm run fmt:check
 ```
@@ -90,13 +91,15 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
+      # Or yarn, npm, etc.
       - run: pnpm install --frozen-lockfile
 
       # Run oxfmt to write changes, autofix.ci will commit them if there are any differences.
       # Be sure to add a `fmt` script to your `package.json` if you haven't already.
       - run: pnpm run fmt
 
-      - uses: autofix-ci/action@c5b2d67aa2274e7b5a18224e8171550871fc7e4a
+      # NOTE: It is strongly recommended to use the latest SHA hash for this action instead of the version number. (See https://autofix.ci/setup for more details.)
+      - uses: autofix-ci/action@1.3.2
 ```
 
 ### GitLab CI
