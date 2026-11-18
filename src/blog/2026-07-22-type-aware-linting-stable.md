@@ -7,6 +7,14 @@ authors:
 
 <AppBlogPostHeader />
 
+<Alert type="info">
+
+Oxlint now also supports `tsrs` as a type-aware linting backend. See the [current setup guide](/docs/guide/usage/linter/type-aware#installation) for how to use it instead of `tsgolint`.
+
+</Alert>
+
+<br>
+
 Today we're releasing [tsgolint](https://github.com/oxc-project/tsgolint) v7, the type-aware linting engine behind Oxlint.
 
 This release tracks [TypeScript v7.0.2](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) and brings tsgolint to 59 of typescript-eslint's 61 type-aware rules. Since our [alpha release](/blog/2025-12-08-type-aware-alpha), we have added 16 rules, per-rule timings, improved configuration, and another round of performance work.

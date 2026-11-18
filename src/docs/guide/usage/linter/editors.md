@@ -87,7 +87,7 @@ Or set it in `.vscode/settings.json`:
 
 When `oxc.typeAware` is unset, the editor uses the root config's `options.typeAware` value. When set explicitly, it overrides the config value.
 
-You also need to ensure `oxlint-tsgolint` is installed in your project. See [the type-aware linting docs](/docs/guide/usage/linter/type-aware) for more details.
+You also need to install `tsrs` or `oxlint-tsgolint` in your project. See [the type-aware linting installation guide](/docs/guide/usage/linter/type-aware#installation) for details.
 
 ### Reference
 

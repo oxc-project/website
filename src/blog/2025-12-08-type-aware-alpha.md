@@ -10,7 +10,7 @@ authors:
 
 <Alert type="info">
 
-**This post announces the alpha release of type-aware linting.** Type-aware linting has since reached stable! See the [Type-Aware Linting Stable announcement](/blog/2026-07-22-type-aware-linting-stable) for the latest features and improvements.
+**This post announces the alpha release of type-aware linting.** Type-aware linting has since reached [stable](/blog/2026-07-22-type-aware-linting-stable). See the [current setup guide](/docs/guide/usage/linter/type-aware#installation) for how to use `tsrs` instead of `tsgolint`.
 
 </Alert>
 
