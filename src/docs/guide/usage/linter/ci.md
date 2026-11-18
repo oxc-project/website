@@ -15,10 +15,13 @@ These instructions assume you have already set up Oxlint in your project by addi
 
 ### GitHub Actions
 
-First, add a `lint` script to your `package.json` if you don't have one already:
+This workflow uses pnpm. Commit your `pnpm-lock.yaml` and set `packageManager` in `package.json` to the pnpm version your project uses so `pnpm/action-setup` can install it.
+
+Add a `lint` script to your `package.json` if you don't have one already:
 
 ```json [package.json]
 {
+  "packageManager": "pnpm@11.24.0",
   "scripts": {
     "lint": "oxlint"
   }
@@ -35,7 +38,8 @@ on:
   push:
     branches: [main]
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   oxlint:
@@ -53,7 +57,6 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
-      # alternatively use npm install / yarn install here
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint
 ```

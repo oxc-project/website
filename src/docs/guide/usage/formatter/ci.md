@@ -13,10 +13,13 @@ This page also covers other integrations you may want to include, like git pre-c
 
 ### GitHub Actions
 
-First, add a `fmt:check` script to your `package.json` if you don't have one already:
+Both workflows below use pnpm. Commit your `pnpm-lock.yaml` and set `packageManager` in `package.json` to the pnpm version your project uses so `pnpm/action-setup` can install it.
+
+Add a `fmt:check` script to your `package.json` if you don't have one already:
 
 ```json [package.json]
 {
+  "packageManager": "pnpm@11.24.0",
   "scripts": {
     "fmt:check": "oxfmt --check"
   }
@@ -33,13 +36,16 @@ on:
   push:
     branches: [main]
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - uses: pnpm/action-setup@v4
 
@@ -48,7 +54,6 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
-      # Or yarn, npm, etc.
       - run: pnpm install --frozen-lockfile
       - run: pnpm run fmt:check
 ```
@@ -77,6 +82,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - uses: pnpm/action-setup@v4
 
@@ -85,15 +92,13 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
-      # Or yarn, npm, etc.
       - run: pnpm install --frozen-lockfile
 
       # Run oxfmt to write changes, autofix.ci will commit them if there are any differences.
       # Be sure to add a `fmt` script to your `package.json` if you haven't already.
       - run: pnpm run fmt
 
-      # NOTE: It is strongly recommended to use the latest SHA hash for this action instead of the version number. (See https://autofix.ci/setup for more details.)
-      - uses: autofix-ci/action@1.3.2
+      - uses: autofix-ci/action@c5b2d67aa2274e7b5a18224e8171550871fc7e4a
 ```
 
 ### GitLab CI
