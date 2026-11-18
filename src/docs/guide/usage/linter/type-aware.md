@@ -141,18 +141,11 @@ export default defineConfig({
 
 :::
 
-`--type-check` takes precedence over config files. For example, `oxlint --type-check -c .oxlintrc.json` enables type checking even if that config sets `options.typeCheck` to `false`.
+`--type-check` takes precedence over `options.typeCheck` in config files. It requires type-aware linting, enabled with `--type-aware` or `options.typeAware: true`.
 
-This mode can replace a separate `tsc --noEmit` step in CI:
+Oxlint respects your [ignore patterns](./ignore-files) when selecting files to lint. With `tsgolint`, this also limits which files report type errors, even if those files are included in `tsconfig.json`. With `tsrs`, type errors can still be reported in ignored files.
 
-```bash
-# before
-tsc --noEmit
-oxlint
-
-# after
-oxlint --type-aware --type-check
-```
+Before switching CI from `tsc --noEmit` to Oxlint type checking, run both on your project and check that Oxlint reports errors in the files you want covered. Keep the separate `tsc --noEmit` step if you need type errors from files that Oxlint skips.
 
 ## Configuring type-aware rules
 
