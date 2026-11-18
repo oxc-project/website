@@ -95,7 +95,7 @@ jobs:
       - run: pnpm run fmt
 
       # NOTE: It is strongly recommended to use the latest SHA hash for this action instead of the version number. (See https://autofix.ci/setup for more details.)
-      - uses: autofix-ci/action@1.3.2
+      - uses: autofix-ci/action@v1.3.2
 ```
 
 ### GitLab CI
