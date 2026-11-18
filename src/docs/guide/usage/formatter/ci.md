@@ -13,10 +13,11 @@ This page also covers other integrations you may want to include, like git pre-c
 
 ### GitHub Actions
 
-First, add a `fmt:check` script to your `package.json` if you don't have one already:
+Commit `pnpm-lock.yaml` and set your pnpm version and `fmt:check` script in `package.json`:
 
 ```json [package.json]
 {
+  "packageManager": "pnpm@11.24.0",
   "scripts": {
     "fmt:check": "oxfmt --check"
   }
@@ -33,7 +34,8 @@ on:
   push:
     branches: [main]
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   format:

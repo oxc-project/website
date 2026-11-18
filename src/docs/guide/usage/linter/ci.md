@@ -15,10 +15,11 @@ These instructions assume you have already set up Oxlint in your project by addi
 
 ### GitHub Actions
 
-First, add a `lint` script to your `package.json` if you don't have one already:
+Commit `pnpm-lock.yaml` and set your pnpm version and `lint` script in `package.json`:
 
 ```json [package.json]
 {
+  "packageManager": "pnpm@11.24.0",
   "scripts": {
     "lint": "oxlint"
   }
@@ -35,7 +36,8 @@ on:
   push:
     branches: [main]
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   oxlint:
@@ -45,8 +47,6 @@ jobs:
       # actions to a specific SHA hash instead of using a version
       # tag like this.
       - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v6
         with:
