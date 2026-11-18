@@ -2,7 +2,9 @@
 
 ## Top level variables are removed
 
-Top level variables are removed when the source type is `module`. This is because top level variables in module code are not accessible from other modules. Contrary to that, top level variables in script code are treated as global variables and are accessible from other scripts. If you expect the top level variables to be kept, you should not use a `.mjs` filename nor enable the `module` option.
+Compression can remove unused, unexported top-level bindings in ES modules and CommonJS files. `module: true` forces ES module mode; `module: false` does not force script mode. Oxc still uses the filename and, when applicable, the source syntax to determine the source type.
+
+Set [`compress.unused: false`](./dead-code-elimination#unused-declarations) to keep unused declarations. If you also need to keep their original names, set [`mangle.toplevel: false`](./mangling#top-level-variables) or disable mangling with `mangle: false`.
 
 ## New lines in strings are not removed
 
