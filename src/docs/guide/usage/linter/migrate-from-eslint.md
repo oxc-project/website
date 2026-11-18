@@ -75,7 +75,7 @@ npx @oxlint/migrate --type-aware
 
 This ensures the generated Oxlint config includes type-aware rules.
 
-Note that type-aware linting requires [oxlint-tsgolint](https://github.com/oxc-project/tsgolint), and is based on the TypeScript native rewrite (aka TypeScript 7), but should be possible to adopt in most TypeScript projects without too much upgrade work.
+Type-aware linting requires either `tsrs` or `oxlint-tsgolint`. See the [installation guide](/docs/guide/usage/linter/type-aware#installation) to choose a backend.
 
 For further information on Oxlint's type-aware support, see [the Type-Aware Linting page](/docs/guide/usage/linter/type-aware).
 

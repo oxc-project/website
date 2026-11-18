@@ -5,7 +5,7 @@ description: Linting with type information.
 
 # Type-Aware Linting
 
-Type-aware linting enables rules that rely on TypeScript’s type system, such as detecting unhandled promises or unsafe assignments. In Oxlint, type-aware linting is provided by [`tsgolint`](https://github.com/oxc-project/tsgolint) and is integrated into the Oxlint CLI and configuration system.
+Type-aware linting enables rules that rely on TypeScript’s type system, such as detecting unhandled promises or unsafe assignments. Oxlint supports two backends for these rules: [`tsgolint`](https://github.com/oxc-project/tsgolint) and [`tsrs`](https://github.com/oxc-project/tsrs). Both use the same Oxlint CLI flags and configuration.
 
 Type-aware linting currently supports [60 of the 62](https://github.com/oxc-project/tsgolint/tree/main?tab=readme-ov-file#implemented-rules) type-aware rules from typescript-eslint. Rule coverage, performance, and compatibility continue to improve.
 
@@ -16,12 +16,16 @@ Oxlint separates responsibilities between two components:
 - **Oxlint (Rust)**
   Handles file traversal, ignore logic, configuration, non-type-aware rules, and reporting.
 
-- **tsgolint (Go)**
-  Builds TypeScript programs using [`typescript-go`](https://github.com/microsoft/typescript-go) and executes type-aware rules, returning structured diagnostics to Oxlint.
+- **Type-aware backend (`tsgolint` or `tsrs`)**
+  Builds TypeScript programs and executes type-aware rules, returning structured diagnostics to Oxlint.
 
 ## Installation
 
-Type-aware linting requires an additional dependency:
+::: tip Use tsrs instead of tsgolint
+To try the Rust-based backend, upgrade Oxlint and install `tsrs` instead of `oxlint-tsgolint`, for example with `pnpm add -D oxlint@latest tsrs@latest`. Oxlint automatically uses `tsrs` when it is installed. Keep using `--type-aware` or `options.typeAware: true` as before. See the [tsrs announcement](/blog/2026-11-17-faster-type-aware-linting-with-tsrs#try-it) for details.
+:::
+
+To use `tsgolint` as the backend, install `oxlint-tsgolint`:
 
 ::: code-group
 
@@ -240,7 +244,7 @@ eslint/no-caller                                                 0.253      0.1%
 ...
 ```
 
-`native` rules run inside Oxlint, while rules run by tsgolint are labelled `type-aware`. Timing collection has no overhead unless it is enabled. When enabled, it adds measurement overhead, so use the report to compare rules within the same run rather than as an end-to-end benchmark.
+`native` rules run inside Oxlint, while rules run by the type-aware backend are labelled `type-aware`. Timing collection has no overhead unless it is enabled. When enabled, it adds measurement overhead, so use the report to compare rules within the same run rather than as an end-to-end benchmark.
 
 ## Disable comments
 
@@ -259,9 +263,10 @@ oxlint --type-aware --report-unused-disable-directives
 
 ## TypeScript compatibility
 
-Type-aware linting is powered by `typescript-go`.
+`tsgolint` uses the Go implementation of TypeScript 7.0. `tsrs` is a Rust port based on TypeScript 7.1. You do not need to install TypeScript separately to use either backend.
 
-- TypeScript **7.0+** is required
+Both backends follow TypeScript 7's configuration rules:
+
 - Some legacy `tsconfig` options are not supported (like `baseUrl` in `tsconfig.json`)
 - If you're using config options/features that were deprecated in TypeScript 6.0 or removed in TypeScript 7.0, you'll need to migrate your codebase first
 - Invalid options are reported when `--type-check` is enabled
