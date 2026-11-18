@@ -15,9 +15,7 @@ These instructions assume you have already set up Oxlint in your project by addi
 
 ### GitHub Actions
 
-This workflow uses pnpm. Commit your `pnpm-lock.yaml` and set `packageManager` in `package.json` to the pnpm version your project uses so `pnpm/action-setup` can install it.
-
-Add a `lint` script to your `package.json` if you don't have one already:
+Commit `pnpm-lock.yaml` and set your pnpm version and `lint` script in `package.json`:
 
 ```json [package.json]
 {

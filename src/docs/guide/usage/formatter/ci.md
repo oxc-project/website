@@ -13,9 +13,7 @@ This page also covers other integrations you may want to include, like git pre-c
 
 ### GitHub Actions
 
-Both workflows below use pnpm. Commit your `pnpm-lock.yaml` and set `packageManager` in `package.json` to the pnpm version your project uses so `pnpm/action-setup` can install it.
-
-Add a `fmt:check` script to your `package.json` if you don't have one already:
+Commit `pnpm-lock.yaml` and set your pnpm version and `fmt:check` script in `package.json`:
 
 ```json [package.json]
 {
