@@ -1,6 +1,6 @@
 # Mangling
 
-Oxc minifier can shorten variable names and selected property names.
+Oxc minifier can shorten variable names, class private member names, and selected property names.
 
 ## Variable Names
 
@@ -80,6 +80,38 @@ const result = await minify("lib.js", code, {
     toplevel: true,
   },
 });
+```
+
+## Class Private Members
+
+Names of class private members (such as `#privateField`) are mangled by default. Set `mangle: false` to preserve them and disable variable-name mangling. Private member mangling does not require `mangleProps` and is not affected by its property-name filters.
+
+```js
+import { minify } from "oxc-minify";
+
+const code = `
+class Foo {
+  #privateField = 1;
+
+  method() {
+    return this.#privateField;
+  }
+}
+`;
+
+const result = await minify("lib.js", code, { compress: false });
+```
+
+The output shortens `#privateField` to `#e` in both the declaration and the access. The public method name is unchanged.
+
+```js
+class Foo {
+  #e = 1;
+
+  method() {
+    return this.#e;
+  }
+}
 ```
 
 ## Property Names
