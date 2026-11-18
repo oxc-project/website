@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 import { computed } from "vue";
-import { data } from "../../../src/docs/guide/usage/linter/rules/version.data.js";
+
+defineProps<{ source: string }>();
 
 const { frontmatter } = useData();
 
@@ -12,14 +13,6 @@ const upstream = computed(() => frontmatter.value.upstream as string | undefined
 function toSnakeCase(str: string): string {
   return str.replace(/-/g, "_");
 }
-
-const source = computed(() => {
-  const snaked = toSnakeCase(rule.value);
-  const slashIdx = snaked.indexOf("/");
-  const plugin = slashIdx !== -1 ? snaked.slice(0, slashIdx) : "eslint";
-  const ruleName = slashIdx !== -1 ? snaked.slice(slashIdx + 1) : snaked;
-  return `https://github.com/oxc-project/oxc/blob/${data}/crates/oxc_linter/src/rules/${plugin}/${ruleName}.rs`;
-});
 
 const tsgolintSource = computed(() => {
   if (!hasTsgolint.value) {
