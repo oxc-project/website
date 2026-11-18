@@ -263,9 +263,10 @@ oxlint --type-aware --report-unused-disable-directives
 
 ## TypeScript compatibility
 
-The `tsgolint` backend is powered by `typescript-go`.
+`tsgolint` uses the Go implementation of TypeScript 7.0. `tsrs` is a Rust port based on TypeScript 7.1. You do not need to install TypeScript separately to use either backend.
 
-- TypeScript **7.0+** is required
+Both backends follow TypeScript 7's configuration rules:
+
 - Some legacy `tsconfig` options are not supported (like `baseUrl` in `tsconfig.json`)
 - If you're using config options/features that were deprecated in TypeScript 6.0 or removed in TypeScript 7.0, you'll need to migrate your codebase first
 - Invalid options are reported when `--type-check` is enabled
