@@ -11,13 +11,13 @@ Type-aware linting currently supports [60 of the 62](https://github.com/oxc-proj
 
 ## Overview
 
-With `tsgolint`, Oxlint separates responsibilities between two components:
+Oxlint separates responsibilities between two components:
 
 - **Oxlint (Rust)**
   Handles file traversal, ignore logic, configuration, non-type-aware rules, and reporting.
 
-- **tsgolint (Go)**
-  Builds TypeScript programs using [`typescript-go`](https://github.com/microsoft/typescript-go) and executes type-aware rules, returning structured diagnostics to Oxlint.
+- **Type-aware backend (`tsgolint` or `tsrs`)**
+  Builds TypeScript programs and executes type-aware rules, returning structured diagnostics to Oxlint.
 
 ## Installation
 
