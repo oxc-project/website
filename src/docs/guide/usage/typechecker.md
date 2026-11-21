@@ -16,7 +16,7 @@ The goal is faster type checking and lower memory use while preserving upstream 
 
 ## Quickstart
 
-Install [`tsrs`](https://npmx.dev/package/tsrs) and run it from your project directory.
+Install [`tsrs`](https://npmx.dev/package/tsrs) and run it in place of `tsc` from your project directory.
 
 ::: code-group
 
@@ -42,29 +42,6 @@ bun run tsrs
 
 :::
 
-## Check a project
-
-Use `-p` (`--project`) to select a directory containing `tsconfig.json` or to pass a config file directly. Add `--watch` to recheck after files change.
-
-```sh
-pnpm exec tsrs --noEmit -p packages/web/tsconfig.json
-pnpm exec tsrs --noEmit --watch -p packages/web/tsconfig.json
-```
-
-Watch mode is available on Linux and macOS. See the [watch mode compatibility notes](https://github.com/oxc-project/tsrs/blob/main/docs/DEFAULTS.md#watch-mode).
-
-For local development and CI, add a script to `package.json` so both environments run the same check with the version from your lockfile.
-
-```json
-{
-  "scripts": {
-    "typecheck": "tsrs --noEmit"
-  }
-}
-```
-
-Run `pnpm run typecheck` after installing dependencies. The command exits with a nonzero status when it reports type errors. If incremental compilation is enabled, `--noEmit` can still write a `.tsbuildinfo` cache file. See the [emit documentation](https://github.com/oxc-project/tsrs/blob/main/docs/EMIT.md) for details.
-
 ## Emit JavaScript and declarations
 
 Run `tsrs -p` with emit enabled in your config to compile one project. Compiler options such as `outDir`, `declaration`, and `sourceMap` control where files are written and which outputs are generated. For a config with TypeScript project references, use `--build` to build the referenced projects in dependency order. [Compiler CLI guide](https://github.com/oxc-project/tsrs/blob/main/docs/USAGE.md)
@@ -74,6 +51,8 @@ pnpm exec tsrs -p packages/web/tsconfig.json
 pnpm exec tsrs --build tsconfig.json
 pnpm exec tsrs --build --watch tsconfig.json
 ```
+
+Watch mode is available on Linux and macOS. See the [watch mode compatibility notes](https://github.com/oxc-project/tsrs/blob/main/docs/DEFAULTS.md#watch-mode).
 
 ## Lint and type-check with Oxlint
 
