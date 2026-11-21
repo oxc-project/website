@@ -16,28 +16,28 @@ The goal is faster type checking and lower memory use while preserving upstream 
 
 ## Quickstart
 
-Install [`tsrs`](https://npmx.dev/package/tsrs) as a development dependency and run it from your project directory. The compiler reads your existing `tsconfig.json`. Pass `--noEmit` to check types without writing JavaScript or declaration files.
+Install [`tsrs`](https://npmx.dev/package/tsrs) and run it from your project directory.
 
 ::: code-group
 
 ```sh [npm]
 npm add -D tsrs
-npm exec -- tsrs --noEmit
+npm exec tsrs
 ```
 
 ```sh [pnpm]
 pnpm add -D tsrs
-pnpm exec tsrs --noEmit
+pnpm exec tsrs
 ```
 
 ```sh [yarn]
 yarn add -D tsrs
-yarn exec tsrs --noEmit
+yarn exec tsrs
 ```
 
 ```sh [bun]
 bun add -D tsrs
-bun run tsrs --noEmit
+bun run tsrs
 ```
 
 :::
