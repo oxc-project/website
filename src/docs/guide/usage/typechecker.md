@@ -65,6 +65,8 @@ pnpm exec oxlint --type-aware --type-check
 
 Use a standalone `tsrs --noEmit` check when CI needs diagnostics for every file in the TypeScript project, including files that Oxlint skips. [Type checking in the lint run](https://github.com/oxc-project/tsrs/blob/main/tools/tsgolint/README.md#type-checking-in-the-lint-run)
 
+In our type-aware linting benchmarks, Oxlint with `tsrs` ran up to 5× as fast as with `tsgolint` v7.0.2007 and used around 70% less memory. See the [benchmarks in the announcement](/blog/2026-11-17-faster-type-aware-linting-with-tsrs#performance).
+
 ## Fast mode
 
 The standalone compiler defaults to the checker settings of the TypeScript release it ports. Pass `--fast` to enable adaptive checker counts, additional caches, and memory optimizations. The preset keeps compiler options such as `strict` and `skipLibCheck` as configured.
