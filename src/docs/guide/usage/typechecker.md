@@ -93,7 +93,7 @@ For Windows and other editors, see the [language server setup guide](https://git
 - If your config uses legacy options such as `baseUrl`, check which options TypeScript 7 removed and how to migrate them. See the [TypeScript migration guide](https://github.com/microsoft/TypeScript/issues/62508#issuecomment-3348649259).
 - Use an existing config or create `tsconfig.json` by hand. `tsrs --init` is currently unsupported. See [differences from upstream TypeScript](https://github.com/oxc-project/tsrs/blob/main/docs/DEFAULTS.md).
 - If the launcher cannot find the native binary, check that your install includes optional dependencies. See the [compatibility table](https://github.com/oxc-project/tsrs/blob/main/docs/COMPATIBILITY.md) for supported platforms.
-- If diagnostics differ from upstream, run `pnpm exec tsrs --version` to identify the TypeScript version and commit to compare against. Include the version, command, and a minimal reproduction in your [bug report](https://github.com/oxc-project/tsrs/issues).
+- When comparing diagnostics, use TypeScript 7.1 beta at the upstream commit shown by `pnpm exec tsrs --version`. If the results differ, include the version, command, and a minimal reproduction in your [bug report](https://github.com/oxc-project/tsrs/issues).
 
 ## Links
 
