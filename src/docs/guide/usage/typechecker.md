@@ -16,7 +16,7 @@ The goal is faster type checking and lower memory use while preserving upstream 
 
 ## Quickstart
 
-Install [`tsrs`](https://npmx.dev/package/tsrs) and run it in place of `tsc` from your project directory.
+Install [`tsrs`](https://npmx.dev/package/tsrs) and use it as you would `tsc`.
 
 ::: code-group
 
@@ -41,18 +41,6 @@ bun run tsrs
 ```
 
 :::
-
-## Emit JavaScript and declarations
-
-Run `tsrs -p` with emit enabled in your config to compile one project. Compiler options such as `outDir`, `declaration`, and `sourceMap` control where files are written and which outputs are generated. For a config with TypeScript project references, use `--build` to build the referenced projects in dependency order. [Compiler CLI guide](https://github.com/oxc-project/tsrs/blob/main/docs/USAGE.md)
-
-```sh
-pnpm exec tsrs -p packages/web/tsconfig.json
-pnpm exec tsrs --build tsconfig.json
-pnpm exec tsrs --build --watch tsconfig.json
-```
-
-Watch mode is available on Linux and macOS. See the [watch mode compatibility notes](https://github.com/oxc-project/tsrs/blob/main/docs/DEFAULTS.md#watch-mode).
 
 ## Lint and type-check with Oxlint
 
