@@ -20,6 +20,27 @@ Oxlint automatically ignores:
 
 Hidden files are not automatically ignored.
 
+`node_modules` is not on that list. It is skipped only because a project's `.gitignore` usually matches it. A project without a `.gitignore`, or with one that does not match `node_modules`, gets diagnostics for every lintable file in `node_modules`. Add `node_modules` to `.gitignore`, or add it to `ignorePatterns`:
+
+::: code-group
+
+```json [.oxlintrc.json]
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["node_modules/**"]
+}
+```
+
+```ts [oxlint.config.ts]
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  ignorePatterns: ["node_modules/**"],
+});
+```
+
+:::
+
 `.gitignore` scopes file discovery. An explicitly named file is still linted even if it is matched by `.gitignore`, while an explicitly named ignored directory is skipped because its contents would need to be discovered.
 
 ## `ignorePatterns`
