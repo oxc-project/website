@@ -397,7 +397,7 @@ Enable rules that require type information.
 
 Equivalent to passing `--type-aware` on the CLI.
 
-Requires a [type-aware backend](/docs/guide/usage/linter/type-aware#installation): `tsrs` or `oxlint-tsgolint`.
+Note that this requires the `oxlint-tsgolint` package to be installed.
 
 ### options.typeCheck
 
@@ -407,7 +407,7 @@ Enable type checking (includes TypeScript compiler diagnostics).
 
 Equivalent to passing `--type-check` on the CLI.
 
-Requires a [type-aware backend](/docs/guide/usage/linter/type-aware#installation): `tsrs` or `oxlint-tsgolint`.
+Note that this requires the `oxlint-tsgolint` package to be installed.
 
 ## overrides
 
@@ -434,9 +434,7 @@ A list of glob patterns to exclude from this override.
 Files matching these patterns are not globally ignored; this override
 simply does not apply to them.
 
-## Example
-
-`[ "*.generated.ts", "fixtures/**" ]`
+Example: `[ "*.generated.ts", "fixtures/**" ]`
 
 A set of glob patterns.
 Patterns are matched against paths relative to the configuration file's directory.
@@ -447,9 +445,7 @@ type: `string[]`
 
 A list of glob patterns to override.
 
-## Example
-
-`[ "*.test.ts", "*.spec.ts" ]`
+Example: `[ "*.test.ts", "*.spec.ts" ]`
 
 A set of glob patterns.
 Patterns are matched against paths relative to the configuration file's directory.

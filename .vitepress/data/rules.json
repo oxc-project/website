@@ -1501,7 +1501,7 @@
     "category": "correctness",
     "version": "0.0.3",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": true,
     "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-negation.html"
@@ -2953,7 +2953,7 @@
     "category": "style",
     "version": "0.2.14",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-to-contain.html"
@@ -6249,6 +6249,17 @@
   },
   {
     "scope": "typescript",
+    "value": "no-unsafe-class-instance-assignment",
+    "category": "suspicious",
+    "version": "next",
+    "type_aware": true,
+    "fix": "none",
+    "default": false,
+    "recommended": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-class-instance-assignment.html"
+  },
+  {
+    "scope": "typescript",
     "value": "no-unsafe-declaration-merging",
     "category": "correctness",
     "version": "0.0.11",
@@ -8915,7 +8926,7 @@
     "category": "style",
     "version": "0.2.14",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
     "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-contain.html"

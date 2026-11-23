@@ -21,6 +21,7 @@ const source = `https://github.com/oxc-project/oxc/blob/${ data }/crates/oxc_lin
 ### What it does
 
 Checks that `expect()` is called correctly.
+`vitest/valid-expect` also checks that `expectTypeOf()` calls use valid modifiers and invoke a matcher.
 
 ### Why is this bad?
 
