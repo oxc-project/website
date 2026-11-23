@@ -26,6 +26,10 @@ component or hook. The React Compiler skips functions containing such
 suppressions, since the suppressed violation may make compilation
 unsafe.
 
+Like `eslint-plugin-react-hooks`, lint runs the compiler with its own
+hooks and memoization dependency validations, which replace the
+suppression check, so this rule currently reports nothing.
+
 Powered by the React Compiler, which runs once per file and is shared
 with the other React Compiler rules. Port of
 `react-hooks/rule-suppression`.

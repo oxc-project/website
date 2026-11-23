@@ -5,7 +5,7 @@ category: "Correctness"
 version: "0.0.3"
 default: true
 type_aware: false
-fix: "fixable_fix"
+fix: "fixable_suggestion"
 upstream: "https://eslint.org/docs/latest/rules/no-unsafe-negation"
 ---
 
