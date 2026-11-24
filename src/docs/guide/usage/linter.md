@@ -57,7 +57,7 @@ This breadth makes migration straightforward without sacrificing rule coverage. 
 
 ## Type-aware linting
 
-Oxlint supports two backends for type-aware linting. `tsgolint` uses the [Go implementation of TypeScript 7.0](https://github.com/microsoft/typescript-go), and `tsrs` uses a Rust port based on TypeScript 7.1. Read more about the Rust port in [VoidZero’s introduction to tsrs](https://voidzero.dev/posts/whats-new-oct-2026).
+Oxlint supports two backends for type-aware linting. `tsgolint` uses the [Go implementation of TypeScript 7.0](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/), and `tsrs` uses a Rust port based on TypeScript 7.1. Read more about the Rust port in [VoidZero’s introduction to tsrs](https://voidzero.dev/posts/whats-new-oct-2026).
 
 Both backends use TypeScript’s type system to run checks such as detecting floating promises.
 
