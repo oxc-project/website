@@ -237,21 +237,6 @@ eslint/no-caller                                                 0.253      0.1%
 
 `native` rules run inside Oxlint, while rules run by the type-aware backend are labelled `type-aware`. Timing collection has no overhead unless it is enabled. When enabled, it adds measurement overhead, so use the report to compare rules within the same run rather than as an end-to-end benchmark.
 
-## Disable comments
-
-Type-aware rules support inline disable comments:
-
-```ts
-// oxlint-disable-next-line typescript/no-floating-promises
-doSomethingAsync();
-```
-
-Report unused disable comments with:
-
-```bash
-oxlint --type-aware --report-unused-disable-directives
-```
-
 ## TypeScript compatibility
 
 `tsgolint` uses the Go implementation of TypeScript 7.0. `tsrs` is a Rust port based on TypeScript 7.1. You do not need to install TypeScript separately to use either backend.
