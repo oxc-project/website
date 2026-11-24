@@ -57,9 +57,9 @@ This breadth makes migration straightforward without sacrificing rule coverage. 
 
 ## Type-aware linting
 
-Oxlint leverages the native Go port of the TypeScript compiler ([tsgo](https://github.com/microsoft/typescript-go) aka TypeScript 7), providing full TypeScript compatibility and the same type system behavior you expect from TypeScript itself.
+Oxlint supports two backends for type-aware linting. `tsgolint` uses the [Go implementation of TypeScript 7.0](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/), and `tsrs` uses a Rust port based on TypeScript 7.1. Read more about the Rust port in [VoidZero’s introduction to tsrs](https://voidzero.dev/posts/whats-new-oct-2026).
 
-This enables mission critical checks that require types, such as detecting floating promises.
+Both backends use TypeScript’s type system to run checks such as detecting floating promises.
 
 In contrast, [Biome’s approach](https://biomejs.dev/blog/biome-v2) is to implement its own type inference instead of relying on the TypeScript compiler, and they note coverage is still improving.
 
