@@ -270,31 +270,18 @@ a = let[0];
 
 ## For-in / For-of and the [In] context
 
-If we look at the grammar for `for-in` and `for-of` in `#prod-ForInOfStatement`,
-it is immediately confusing to understand how to parse these.
+The [`ForInOfStatement` grammar](https://tc39.es/ecma262/#prod-ForInOfStatement) passes `[+In]` to the expression after the loop's `in` or `of` separator. This **allows** the relational `in` operator on the right-hand side:
 
-There are two major obstacles for us to understand: the `[lookahead ≠ let]` part and the `[+In]` part.
-
-If we have parsed to `for (let`, we need to check the peeking token is:
-
-- not `in` to disallow `for (let in)`
-- is `{`, `[` or an identifier to allow `for (let {} = foo)`, `for (let [] = foo)` and `for (let bar = foo)`
-
-Once reached the `of` or `in` keyword, the right-hand side expression needs to be passed with the correct [+In] context to disallow
-the two `in` expressions in `#prod-RelationalExpression`:
-
-```
-RelationalExpression[In, Yield, Await] :
-    [+In] RelationalExpression[+In, ?Yield, ?Await] in ShiftExpression[?Yield, ?Await]
-    [+In] PrivateIdentifier in ShiftExpression[?Yield, ?Await]
-
-Note 2: The [In] grammar parameter is needed to avoid confusing the in operator in a relational expression with the in operator in a for statement.
+```javascript
+for (const key in "enabled" in flags ? enabled : disabled) {
+}
+for (const value of "enabled" in flags ? enabled : disabled) {
+}
 ```
 
-And this is the only application for the `[In]` context in the entire specification.
+By contrast, the [three-clause `for` loop](https://tc39.es/ecma262/#prod-ForStatement) parses its initializer with `[~In]`. This prevents an unparenthesized `in` there from being consumed as a relational operator instead of a loop separator. Parentheses allow `in` again, so `for (let found = ("key" in obj); ; ) { break; }` is valid, but removing the parentheses around `"key" in obj` makes it a syntax error.
 
-Also to note, the grammar `[lookahead ∉ { let, async of }]` forbids `for (async of ...)`,
-and it needs to be explicitly guarded against.
+The `let` lookahead is a separate rule. `for (let key in obj) {}` declares `key`, but `for (let in obj) {}` assigns to an identifier named `let` and is only valid in non-strict code. The `for-of` lookahead rejects `for (let of values) {}` and `for (async of values) {}`.
 
 ---
 
